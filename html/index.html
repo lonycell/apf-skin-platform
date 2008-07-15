@@ -1,0 +1,509 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title></title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
+</head>
+<body>
+
+<!-- datagrid -->
+<div class="window" style="width: 700px;">
+	<div class="topLeft"></div>
+	<div class="topRight"></div>
+    <div class="topBar">Javeline</div>
+
+	<div class="borderRight">
+		<div class="content">
+			<div class="page view">
+				<div class="tree">
+					<ul class = "tree">
+						<li class="open"><label class="hover">My folders</label>
+					    	<ul>
+								<li><label>Misc</label></li>
+					        	<li class="open"><label>Media</label>
+					             	<ul>
+					                	<li><label>Video</label></li>
+										<li><label>Pictures1</label></li>
+										<li><label>Pictures2</label></li>
+									</ul>
+								</li>
+								<li>Websites</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<div class="list">
+                	<ul>
+                    	<li class="hover"><span>My Documents</span></li>
+						<li><span>Javeline Test Folder</span></li>
+						<li class="select"><span>Accounting</span></li>
+					</ul>
+				</div>
+
+				<div class="datagrid">
+					Here is the datagrid
+				</div>
+                <div class="buttons">
+					<div class="button"><div class="left"></div><div class="label">Undo</div><div class="right"></div></div>
+					<div class="button"><div class="left"></div><div class="label">Redo</div><div class="right"></div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="bottomLeft"></div>
+	<div class="bottomRight"></div>
+    <div class="bottomBar"></div>
+</div>
+
+<br /><br /><br />
+
+
+
+<!--- some controllers ------------------------------>
+<div class="window" style="width: 700px;">
+	<div class="topLeft"></div>
+	<div class="topRight"></div>
+    <div class="topBar">Javeline</div>
+
+	<div class="borderRight">
+		<div class="content">
+
+				<!-- Menu Bar : -->
+				<div class="menuBar">
+					<a href="">File</a>
+					<a href="">Edit</a>
+					<a href="">Project</a>
+					<a href="">Window</a>
+					<a href="" class="menuOptionHover">Help</a>
+
+           			<!-- submenu -->
+					<div class="submenu" style="left: 182px;">
+						<ul>
+							<li><div class="checkbox" id="tutorials"></div><label for="tutorials">Tutorials</label></li>
+	                    	<li><div class="checkbox" id="help"></div><label for="help">Live Help</label></li>
+	                    	<li class="submenuLabelHover"><div class="checkbox" id="shortcuts"></div><label for="shortcuts">Shortcuts</label></li>
+	                    	<li><div class="checkbox" id="ajax.org"></div><label for="ajax.org">Visit Ajax.org</label></li>
+	                    	<li><div class="checkbox" id="about"></div><label for="about">About us</label></li>
+						</ul>
+                        <!--
+							<div><div class="checkbox" id="tutorials"></div><label for="tutorials">Tutorials</label></div>
+	                    	<div><div class="checkbox" id="help"></div><label for="help">Live Help</label></div>
+	                    	<div class="submenuLabelHover"><div class="checkbox" id="shortcuts"></div><label for="shortcuts">Shortcuts</label></div>
+	                    	<div><div class="checkbox" id="ajax.org"></div><label for="ajax.org">Visit Ajax.org</label></div>
+	                    	<div><div class="checkbox" id="about"></div><label for="about">About us</label></div>
+                    	-->
+					</div>
+					<!-- end submenu -->
+
+				</div>
+                <!-- end menu bar -->
+
+                 <!-- page content -->
+				 <div class="page">
+
+					<br /><br /><br /><br /><br /><br /><br /><br /><br /><br  /><br />
+
+					<!-- input -->
+					<br /> Input : <br />
+
+					<input type="text" value="InputFiled" />
+					<input type="text" class="inputDisabled" value="Disabled" />
+					<input type="text" class="inputFocused" value="Focus" />
+					<input type="text" class="inputError" value="Error indication" />
+
+					<!-- end input -->
+
+					<!-- dropdown -->
+					<br /> Dropdown menu : <br />
+
+					<div class="dropdown">Dropdown</div>
+					<div class="dropdownDisabled">Disable</div>
+					<div class="dropdownFocused">Focus</div>
+					<div class="dropdownHover">Over/hit</div>
+					<div class="dropdownOpened">Open
+	                    <div class="optionList">
+							<div class="top"></div>
+                            <ul>
+                            	<li>Grid</li>
+								<li>ComboBox</li>
+								<li class="pipe"></li>
+								<li class="disabled">Tree</li>
+								<li>Tabstrip</li>
+								<li  class="hover">Fisheye</li>
+								<li>Callout</li>
+							</ul>
+
+						</div>
+					</div>
+					<!-- end dropdown -->
+                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+					<!-- textarea -->
+					<br /> Textarea : <br />
+                    <textarea>bla bla bla bla bla<br />bla bla bla bla<br /></textarea>
+					<!-- end textarea -->
+
+
+					<!-- rightClickMenu -->
+					<br /> Right Click Menu : <br />
+
+					<div class="rightClickMenu" style="left: 500px;" >
+                    	<div>Copy Selection</div>
+                    	<div>Paste Selection</div>
+                    	<div class="rightClickMenuOptionHover">Point Sample</div>
+                    	<div>3 by 3 Average</div>
+                    	<div>6 by 6 Average</div>
+						<div>Load Presets</div>
+					</div>
+
+					<!-- end rightclickmenu -->
+					<br /><br /><br /><br /><br /><br /><br /><br /><br /><br  /><br />
+				 </div>
+				 <!-- end page content-->
+				<!-- status bar -->
+				<div class="statusbar"><div><b>Statusbar</b></div><div>Last Action, Saved on Server at 17:58</div><div class="pipe"></div><div>Doc: 5,09Mb</div><div class="pipe"></div></div>
+                <!-- end status bar-->
+		</div>
+       </div>
+
+	<div class="bottomLeft"></div>
+	<div class="bottomRight"></div>
+    <div class="bottomBar"></div>
+</div>
+<!--------------------------------->
+
+<br clear="all"  />
+<br clear="all"  />
+<br clear="all"  />
+
+<!----------------------------->
+
+<div class="window" style="width: 700px;">
+	<div class="topLeft"></div>
+	<div class="topRight"></div>
+	<div class="topBar">Javeline</div>
+
+	<div class="borderRight">
+		<div class="content">
+
+				<!-- Menu Bar : -->
+				<div class="menuBar">
+					<a href="">File</a>
+					<a href="">Edit</a>
+					<a href="">Project</a>
+					<a href="">Window</a>
+					<a href="">Help</a>
+
+				</div>
+                <!-- end menu bar -->
+
+				<!-- Toolbar -->
+                <div class="toolbar">
+					<a href=""><img src="images/cut.png" alt="Cut" />Cut</a>
+					<a href=""><img src="images/copy.png" alt="Copy" />Copy</a>
+					<a href=""><img src="images/paste.png" alt="Paste" />Paste</a>
+					<a href=""><img src="images/undo.png" alt="Undo" />Undo</a>
+					<a href=""><img src="images/redo.png" alt="Redo" />Redo</a>
+					<div class="pipe"></div>
+					<a href="" class="small"><img src="images/bold.png" alt="Bold" /></a>
+					<a href="" class="small"><img src="images/italic.png" alt="Italic" /></a>
+					<a href="" class="small"><img src="images/underline.png" alt="Underline" /></a>
+                       <div class="right">
+					    <div class="pipe"></div>
+						<a href="">Tools<img src="images/tools.png" alt="Arrow" /></a>
+                       </div>
+					<div class="labelHover" style="left: 30px">
+						<span>Label Hover (U)</span>
+					</div>
+				</div>
+
+				<!-- end toolbar -->
+                 <!-- page content -->
+				 <div class="page">
+
+				 </div>
+				 <!-- end page content-->
+
+		</div>
+	</div>
+
+	<div class="bottomLeft"></div>
+	<div class="bottomRight"></div>
+    <div class="bottomBar"></div>
+</div>
+
+/* ----*/
+<br /> Error Box : <br />
+	<div class="error" style="width: 300px;">
+    	<div class="topLeft"></div>
+		<div class="topRight"></div>
+		<div class="topBorder"></div>
+
+		<div class="borderRight">
+			<div class="content">
+				<div class="titleBar"><div class="close"></div><span>Javeline Test Error</span></div>
+	            <img src="images/alert.png" alt="Alert" style="float: left;" />
+	            <span>This file contains characters in Unicode format which
+				will be lost if you safe this file as an ANSI encoded file.</span>
+
+				<div class="buttons">
+					<div class="button" style="float: left"><div class="left"></div><div class="label">OK</div><div class="right"></div></div>
+					<div class="button" style="float: left"><div class="left"></div><div class="label">Cancel</div><div class="right"></div></div>
+                </div>
+			</div>
+		</div>
+
+		<div class="bottomLeft"></div>
+		<div class="bottomRight"></div>
+		<div class="bottomBar"></div>
+
+	</div>
+
+/* ----*/
+<br /> File Upload Box : <br />
+	<div class="fileUploadBox" style="width: 300px;">
+    	<div class="topLeft"></div>
+		<div class="topRight"></div>
+		<div class="topBorder"></div>
+
+		<div class="borderRight">
+			<div class="content">
+				<div class="titleBar"><div class="close"></div><span>Uploading</span></div>
+				<span class="fileName">database.db</span>
+				<span class="from">From 'F:/' to '../database'</span>
+				<div class="statistics">
+                    <div class="button"><div class="left"></div><div class="label">Cancel</div><div class="right"></div></div>
+					<div class="progressbar">
+						<div class="uploadedPercent">36%</div>
+						<div class="uploaded">211Kb/s</div>
+						<div class="filledbar" style="width: 36%;"></div><div class="left"></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="bottomLeft"></div>
+		<div class="bottomRight"></div>
+		<div class="bottomBar"></div>
+
+	</div>
+
+/* ----*/
+<br /> Tooltip Box : <br />
+	<div class="tooltip" style="width: 300px;">
+    	<div class="topLeft"></div>
+		<div class="topRight"></div>
+		<div class="topBorder"><div></div></div>
+
+		<div class="borderRight">
+			<div class="content">
+				<div class="titleBar"><div class="close"></div><span>Incorect e-mail adress</span></div>
+	            <span>This field is required. Please enter a correct e-mail address and try again</span>
+			</div>
+		</div>
+
+		<div class="bottomLeft"></div>
+		<div class="bottomRight"></div>
+		<div class="bottomBar"></div>
+
+	</div>
+
+
+
+
+/* ---- */
+<br /> Menu Window : <br />
+	<div class="menuWin" style="width: 141px;">
+		<div class="top">Menu Name 02<div class="arrow"></div></div>
+		<div class="content">
+        	<div class="row"><div class="arrow"></div>Solutions</div>
+			<div class="row"><div class="arrow"></div>Services</div>
+
+		</div>
+	</div>
+
+<br /> Tree : <br />
+	<ul class = "tree">
+		<li class="open"><label class="hover">My folders</label>
+	    	<ul>
+				<li><label>Misc</label></li>
+	        	<li class="open"><label>Media</label>
+	             	<ul>
+	                	<li><label>Video</label></li>
+						<li><label>Pictures1</label></li>
+						<li><label>Pictures2</label></li>
+					</ul>
+				</li>
+				<li><label>Websites</label></li>
+			</ul>
+		</li>
+	</ul>
+
+<br /> Window : <br />
+	<div class="window" style="width: 500px;">
+			<div class="topLeft"></div>
+			<div class="topRight"></div>
+            <div class="topBar">Javeline</div>
+
+			<div class="borderRight">
+				<div class="content">
+					<div class="page">
+					Javeline B.V. <br /><br /><br /><br />
+					</div>
+				</div>
+			</div>
+
+			<div class="bottomLeft"></div>
+			<div class="bottomRight"></div>
+            <div class="bottomBar">Javeline</div>
+	</div>
+
+<!-- tab -->
+<br clear="all" /> Tab : <br />
+<div class="winTab" style="width:300px;">
+	<div class="winBtnContainer">
+    	<div><div>01 List</div></div>
+		<div class="active"><div>Widget</div></div>
+		<div><div>03 Button</div></div>
+	</div>
+
+	<div class="winTabContent">sdsfkdf</div>
+   	<div class="winTabFooter"><div><div></div></div></div>
+</div>
+
+
+<!-- lower tab -->
+<br clear="all" /> LowerTab : <br />
+<div class="winLowerTab" style="width: 300px">
+	<div class="winTabContent">sdsfkdf</div>
+	<div class="winBtnContainer">
+    	<div><div>01 List</div></div>
+		<div class="active"><div>Widget</div></div>
+		<div><div>03 Button</div></div>
+	</div>
+</div>
+
+<!-- double tab -->
+<br clear="all" /> Double Tab : <br />
+<div class="winDoubleTab" style="width: 500px;">
+	<div class="winBtnContainerTop">
+    	<div><div><!--button content--><div class="close"></div><span>Test.php</span><!--end button content--></div></div>
+		<div class="active"><div><div class="close"></div><span>portfolio.html</span></div></div>
+		<div><div><div class="close"></div><span>index.php</span></div></div>
+	</div>
+
+	<div class="winTabContent">
+    	<div class="page"> Here is the content</div>
+	</div>
+
+	<div class="winBtnContainerBottom">
+    	<div><div><div class="close"></div><span>Test.php</span></div></div>
+		<div class="active"><div><div class="close"></div><span>portfolio.html</span></div></div>
+		<div><div><div class="close"></div><span>index.php</span></div></div>
+	</div>
+
+</div>
+
+<!-- frame -->
+<br clear="all" /> Frame : <br />
+	<img src="images/girl.png" class="frame" />
+	<img src="images/girl.png" class="frameOver" />
+	<img src="images/girl.png" class="frameDisable" />
+
+<!-- checkbox -->
+<br clear="all" /> Checkbox : <br />
+	<div class="checkbox"></div>
+	<div class="checkbox chHover"></div>
+	<div class="checkbox chCheck"></div>
+
+<br clear="all" /> Checkbox 2 : <br />
+	<div class="checkbox2"></div>
+	<div class="checkbox2 chHover"></div>
+	<div class="checkbox2 chCheck"></div>
+
+<br clear="all" /> Checkbox 3 : <br />
+	<div class="checkbox3"></div>
+	<div class="checkbox3 chHover"></div>
+	<div class="checkbox3 chCheck"></div>
+
+<!-- radio -->
+<br clear="all" /> Radio : <br />
+	<div class="radio"></div>
+	<div class="radio radioHover"></div>
+	<div class="radio radioCheck"></div>
+
+
+<!-- button -->
+<br clear="all" /> Normal Button : <br />
+	<div class="button">
+		<div class="left"></div>
+		<div class="label">button</div>
+		<div class="right"></div>
+ 	</div>
+
+<br /> Hover Button : <br />
+	<div class="buttonHover">
+		<div class="left"></div>
+		<div class="label">buttonHover</div>
+		<div class="right"></div>
+ 	</div>
+
+<br /> Disabled Button : <br />
+	<div class="buttonDisabled">
+		<div class="left"></div>
+		<div class="label">buttonDisabled</div>
+		<div class="right"></div>
+ 	</div>
+
+<!-- progressbar and slider -->
+Progressbar:
+<br /> progressbar active : <br />
+	<div class="progressbar"><div class="filledbar" style="width: 30px;"></div><div class="left"></div></div>
+
+<br /> progressbar -> inactive : <br />
+	<div class="progressbar inactive"><div class="filledbar" style="width: 30px;"></div><div class="left"></div></div>
+
+Sliderbar
+<br /> slider  active : <br />
+	<div class="sliderbar"><div class="slider" style="left: 30px;"></div><div class="left"></div></div>
+
+<br /> slider -> inactive : <br />
+	<div class="sliderbar inactive"><div class="slider" style="left: 30px;"></div><div class="left"></div></div>
+
+<br /> slider high -> active : <br />
+	<div class="sliderbar"><div class="sliderHigh" style="left: 30px;"></div><div class="left"></div></div>
+
+<br /> slider high -> inactive : <br />
+	<div class="sliderbar inactive"><div class="sliderHigh" style="left: 30px;"></div><div class="left"></div></div>
+
+Sliderbar16x
+<br /> slider16x  active : <br />
+	<div class="sliderbar16x"><div class="slider" style="left: 50px;"></div><div class="left"></div></div>
+
+<br /> slider16x -> inactive : <br />
+	<div class="sliderbar16x inactive16x"><div class="slider" style="left: 50px;"></div><div class="left"></div></div>
+
+<br /> slider16x high -> active : <br />
+	<div class="sliderbar16x"><div class="sliderHigh" style="left: 30px;"></div><div class="sliderHigh" style="left: 100px;"></div><div class="left"></div></div>
+
+<br /> slider16 high -> inactive : <br />
+	<div class="sliderbar16x inactive16x"><div class="sliderHigh" style="left: 30px;"></div><div class="sliderHigh" style="left: 100px;"></div><div class="left"></div></div>
+
+Sliderbar11x
+<br /> slider11x  active : <br />
+	<div class="sliderbar11x"><div class="slider" style="left: 50px;"></div><div class="left"></div></div>
+
+<br /> slider11x -> inactive : <br />
+	<div class="sliderbar11x inactive11x"><div class="slider" style="left: 50px;"></div><div class="left"></div></div>
+
+<br /> slider11x high -> active : <br />
+	<div class="sliderbar11x"><div class="sliderHigh" style="left: 30px;"></div><div class="sliderHigh" style="left: 100px;"></div><div class="left"></div></div>
+
+<br /> slider11 high -> inactive : <br />
+	<div class="sliderbar11x inactive11x"><div class="sliderHigh" style="left: 10%;"></div><div class="sliderHigh" style="left: 90%;"></div><div class="left"></div></div>
+
+</body>
+</html>
