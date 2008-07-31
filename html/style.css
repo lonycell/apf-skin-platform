@@ -11,7 +11,6 @@
 	margin: 0;
 	padding: 0;
 	border: 0;
-	*margin-right: -6px;
 }
 
 .window .topRight {
@@ -22,7 +21,6 @@
 	margin: 0;
 	padding: 0;
 	border: 0;
-	*margin-left: -5px;
 }
 
 .window .topBar {
@@ -52,7 +50,6 @@
 	background: url("images/window_lb.png") no-repeat top left;
     width: 6px;
 	height: 22px;
-	*margin-right: -6px;
 }
 
 .window .bottomRight {
@@ -60,7 +57,6 @@
 	background: url("images/window_rb.png") no-repeat top left;
     width: 5px;
 	height: 22px;
-	*margin-left: -5px;
 }
 
 .window .bottomBar {
@@ -81,7 +77,6 @@
 .statusbar {
     border-top: 1px solid #b2b2b2;
 	overflow: hidden;
-	*height: 1%;
 	color: #4b4b4b;
 }
 
@@ -109,14 +104,12 @@
     background-color: #fafbfc;
 	border: 1px solid #c3c3c3;
 	padding: 5px 0 1px 0;
-	*padding: 1px 0 1px 0;
 	overflow: hidden;
    	color: #4b4b4b;
 }
 
 .winTab .winBtnContainer, .winDoubleTab .winBtnContainerTop {
 	padding-left: 2px;
-	*padding-top: 4px;
 }
 
 .winLowerTab .winBtnContainer {
@@ -126,7 +119,6 @@
 
 .winDoubleTab .winBtnContainerBottom {
     padding-left: 2px;
-	*height: 1%;
 }
 
 .winTab .winBtnContainer div,
@@ -139,7 +131,6 @@
 	font-family: Tahoma;
 	font-size: 11pt;
 	margin: 0 4px 0 0;
-	*margin: 0;
 	padding: 0 0 0 4px;
 }
 
@@ -198,7 +189,6 @@
 .winDoubleTab .winBtnContainerBottom div div{
 	padding: 0 4px 0 0;
 	margin-right: -4px;
-	*margin-right: 0;
 }
 
 .winTab .winBtnContainer div div {
@@ -241,7 +231,6 @@
 	background: #fafbfc;
 	padding: 7px;
 	overflow: hidden;
-	*height: 1%;
 }
 
 .winDoubleTab .winTabContent {
@@ -394,7 +383,6 @@
 	font-family: Tahoma;
 	font-size: 11px;
 	overflow: hidden;
-	*height: 1%;
 }
 
 .menuBar .submenu li.submenuLabelHover {
@@ -408,7 +396,6 @@
 	font-family: Tahoma;
 	font-size: 11px;
 	overflow: hidden;
-	*height: 1%;
 }
 
 .rightClickMenu .rightClickMenuOptionHover{
@@ -454,7 +441,6 @@
 	color: #000000;
 	text-align: center;
 	padding-top: 4px;
-	*padding-top: 2px;
 }
 
 .toolbar a.small {
@@ -525,7 +511,6 @@
 	margin: 0;
 	padding: 0;
 	border: 0;
-	*margin-right: -8px;
 }
 .error .topRight, .fileUploadBox .topRight, .tooltip .topRight {
 	background: url("images/error_box_rt.png") no-repeat top left;
@@ -535,7 +520,6 @@
 	margin: 0;
 	padding: 0;
 	border: 0;
-	*margin-left: -14px;
 }
 
 .error .topBorder, .fileUploadBox .topBorder, .tooltip .topBorder {
@@ -547,7 +531,6 @@
 
 .tooltip .topBorder {
 	position: relative;
-	*padding-top: 9px;
 }
 
 .tooltip .topBorder div {
@@ -572,7 +555,6 @@
 .error .borderRight, .fileUploadBox .borderRight, .tooltip .borderRight {
 	background: url("images/error_box_r.png") repeat-y top right;
 	overflow: hidden;
-	*margin-top: -9px;
 }
 
 .error .bottomLeft, .fileUploadBox .bottomLeft, .tooltip .bottomLeft{
@@ -583,7 +565,6 @@
 	margin: 0;
 	padding: 0;
 	border: 0;
-	*margin-right: -8px;
 }
 
 .error .bottomRight, .fileUploadBox .bottomRight, .tooltip .bottomRight{
@@ -594,7 +575,6 @@
 	margin: 0;
 	padding: 0;
 	border: 0;
-	*margin-left: -14px;
 }
 
 .error .bottomBar, .fileUploadBox .bottomBar, .tooltip .bottomBar{
@@ -647,7 +627,6 @@
 
 .fileUploadBox .statistics {
     overflow: hidden;
-	*height: 1%;
 }
 
 .fileUploadBox .statistics  .button{
@@ -673,7 +652,6 @@ ul.tree {
 	list-style-type: none;
 	margin: 0 7px;
 	padding: 0 0 0 10px;
-	*padding: 0 0 0 16px;
 	border: 0;
 	font-family: Tahoma;
 	font-size: 11px;
@@ -681,7 +659,6 @@ ul.tree {
 
 ul.tree ul{
     margin-left: -39px;
-	*margin-left: 0px;
 }
 
 ul.tree li{
@@ -1091,7 +1068,6 @@ textarea{
 /* ------ */
 .view {
     overflow: hidden;
-	*height: 1%;
 }
 
 .view div.tree, .view .list, .view .datagrid {
@@ -1120,8 +1096,6 @@ textarea{
 	background: url(images/win16x.png) no-repeat 0 0;
 	padding:  0 0 0 18px;
 	margin:  0 0 3px 0;
-	*margin: 0;
-	*border: 1px solid #FFFFFF; /* ie6 stupid stupid stupid */
 }
 
 .view .list ul li span {
