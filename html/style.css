@@ -707,7 +707,7 @@ input {
 	color: #fbfbfb;
 }
 /* --------- */
-.dropdown, .dropdownDisabled, .dropdownFocused, .dropdownHover, .dropdownOpened {
+.dropdown {
 	background: url("images/dropdown.png") no-repeat 0 0;
 	width:  154px;
 	height: 18px;
