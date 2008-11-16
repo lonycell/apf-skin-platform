@@ -154,7 +154,8 @@
             border : 1px solid white;
             padding : 2px;
             background-position : 2px -10px;
-            height : 10px
+            height : 10px;
+            background-color : transparent;
         }
         .window .title blockquote div.down{
             background-color : black;
@@ -200,8 +201,8 @@
     ]]></j:style>
 
     <j:presentation>
-        <!--  min-width="50" min-height="50"  -->
         <j:main collapsed-height="30" 
+          min-width="150" min-height="80"
           container="div[6]" drag="div[3]" title="div[3]/text()" 
           icon="div[3]/img" buttons="div[3]/blockquote">
             <div class="window">
@@ -473,6 +474,7 @@
         }
 
         .labelDisabled{
+            color: #bebebe;
         }
         
         .tiny {
@@ -749,7 +751,7 @@
 
     <j:presentation>
         <j:main pages="." buttons="div">
-            <div class="tab" style="width:300px;">
+            <div class="tab">
                 <div class="btncontainer">
                     
                 </div>
@@ -849,7 +851,7 @@
 <j:radiobutton name="radiobutton">
     <j:style><![CDATA[
         .rbcontainer {
-            padding: 2px 2px 2px 18px;
+            padding: 2px 2px 2px 16px;
             position: relative;
             min-height: 13px;
             color: #4b4b4b;
@@ -878,7 +880,7 @@
         	overflow: hidden;
             position: absolute;
             left: 2px;
-            top: 2px;
+            top: 3px;
             background: url("images/radio.png") no-repeat 0 -12px;
         }
 
@@ -1011,16 +1013,20 @@
             margin-top : -1px;
         }
         
-        .menu div.selected{
+        .menu div.selected u{
             background-image: url(images/radio.gif);
             background-repeat: no-repeat;
-            background-position: 7px 6px;
+            background-position: 0 0;
         }
         
-        .menu div.checked{
+        .menu div.checked u{
             background-image: url(images/check.gif);
             background-repeat: no-repeat;
-            background-position: 7px 6px;
+            background-position: 0 0;
+        }
+        
+        .menu div.hover u{
+            background-position : 0 -16px;
         }
     ]]></j:style>
 
@@ -1171,8 +1177,6 @@
 <j:list name="list">
     <j:style><![CDATA[
         .list{
-            width: 150px;
-            height: 180px;
             overflow: auto;
             position: relative;
             border: 1px solid #c3c3c3;
@@ -1265,6 +1269,141 @@
         </j:loading>
         <j:empty caption="text()">
             <div class="message">-</div>
+        </j:empty>
+    </j:presentation>
+</j:list>
+<j:list name="thumbnail">
+    <j:style><![CDATA[
+        .thumbs{
+            background-color: white;
+            border: 1px solid #c3c3c3;
+            overflow: auto;
+            cursor: default;
+            padding : 3px;
+            height : 200px;
+            position : relative;
+        }
+        
+        .dragthumb{
+            opacity : 0.7;
+        }
+        
+        .thumbs, .dragthumb{
+            font-family: Tahoma;
+            font-size: 11px;
+            text-align: center;
+            line-height : 11px;
+        }
+
+        .thumbs .thumb, .dragthumb{
+            padding: 0;
+            float: left;
+            display: inline;
+            margin: 3px 3px 0 3px;
+        }
+
+        .thumbs blockquote, .dragthumb blockquote{
+            width: 90px;
+            height: 90px;
+            border: 1px solid #dcdcdc;
+            margin: 2px 2px 2px 2px;
+
+            background: white no-repeat 50% 50%;
+        }
+        
+        .thumbs .selected blockquote, .dragthumb blockquote{
+            border: 3px solid #dcdcdc;
+            margin: 0 0 0 0;
+        }
+        .thumbs.thumbsFocus .selected blockquote, .dragthumb blockquote{
+            border-color: #25a8e7;
+        }
+
+        .thumbs label, .dragthumb label{
+            padding: 3px 0 0 0;
+            margin: 0 2px 0 2px;
+            height: 16px;
+            width: 92px;
+
+            overflow: hidden;
+            display: block;
+            text-align: center;
+        }
+
+        .thumbs span, .dragthumb span{
+            text-decoration: none;
+            color: black;
+            cursor: default;
+            padding: 1px 3px 2px 3px;
+            margin: 1px auto 0 auto;
+            white-space: nowrap;
+            /*float : left;*/
+            position : relative;
+            border-color : gray;
+            border-width : 0;
+        }
+        
+        .thumbsFocus .indicate span{
+            border-style : dotted;
+            border-width : 1px;
+            padding: 0px 2px 1px 2px;
+        }
+
+        .thumbs .selected span{
+            background-color: #dcdcdc;
+            color: black;
+            border-color : white;
+            border-style : dotted;
+        }
+
+        .thumbs.thumbsFocus .selected span, .dragthumb span{
+            color: white;
+            background-color: #25a8e7;
+        }
+
+        .thumbs #txt_rename{
+            border: 1px solid #25a8e7;
+            border-width : 1px 1px 1px 1px;
+            float: none;
+            margin-top : -2px;
+            padding: 2px 2px 2px 3px;
+            font-family: Tahoma;
+            font-size: 11px;
+            color: #4b4b4b;
+            word-break: keep-all;
+            overflow: visible;
+            cursor: text; 
+        }
+        
+        .thumbs input#txt_rename{
+            padding : 1px;
+            outline: none;
+            text-align : center;
+            width : 88px;
+        }
+    ]]></j:style>
+
+    <j:presentation>
+        <j:main container=".">
+            <div class='thumbs'>
+            </div>
+        </j:main>
+        <j:item
+            class    = "."
+            caption  = "label/span"
+            image    = "blockquote"
+            select   = "."
+        >
+            <div class="thumb"><blockquote> </blockquote><label><span>-</span></label></div>
+        </j:item>
+        <j:dragindicator>
+            <div class='dragthumb'><blockquote> </blockquote><label><span>-</span></label></div>
+        </j:dragindicator>
+        <j:loading>
+            <div class="loading">Loading...</div>
+        </j:loading>
+        <j:empty caption="text()">
+            <div class="empty">-</div>
         </j:empty>
     </j:presentation>
 </j:list>
@@ -1716,6 +1855,7 @@
         
         .progressbarDisabled {
             color: #bebebe;
+            background-position: right -8px;
         }
         
         .progressbarDisabled .lbl{
@@ -1733,6 +1873,8 @@
         	overflow: hidden;
         	padding : 0 0 0 3px;
         	border-right : 1px solid #327fbd;
+        	display : none;
+        	width : 0%;
         }
         
         .progressbarDisabled .filledbar {
@@ -2149,6 +2291,139 @@
         </j:main>
     </j:presentation>
 </j:errorbox>
+<!--
+    * Please optimize this skin (at least 2 elements less)
+-->
+<j:bar name="bar">
+    <j:style><![CDATA[
+        .bar{
+           	color: #4b4b4b;
+           	font-family : Tahoma;
+           	font-size : 8pt;
+           	padding : 20px 0 26px 0;
+        }
+        
+        .bar .contents {
+        	clear: both;
+           	border-top: 1px solid #c3c3c3;
+        	border-left: 1px solid #c3c3c3;
+        	border-right: 1px solid #c3c3c3;
+        	background: #fafbfc;
+        	padding: 7px;
+        	overflow: hidden;
+        	height : 100%;
+        	padding : 15px;
+        	margin-top : -20px;
+        }
+        
+        .bar .barFooter{
+        	clear: both;
+        	height: 15px;
+        	background: url(images/tab_pag_lb.png) no-repeat bottom left;
+        	position : absolute;
+        	bottom : 0;
+        	width : 100%;
+        }
+        
+        .bar .barFooter div{
+        	background: url(images/tab_pag_rb.png) no-repeat bottom right;
+        }
+        
+        .bar .barFooter div div{
+        	border-bottom: 1px solid #c3c3c3;
+        	background-color: #fafbfc;
+        	background-image: none;
+        	height: 14px;
+        	margin: 0 14px;
+        }
+    ]]></j:style>
+
+    <j:presentation>
+        <j:main container="div">
+            <div class="bar">
+                <div class="contents"> </div>
+                <div class="barFooter"><div><div> </div></div></div>
+            </div>
+        </j:main>
+    </j:presentation>
+</j:bar>
+<j:frame name="frame">
+    <j:alias>fieldset</j:alias>
+    <j:style><![CDATA[
+        .frame{
+            position: relative;
+            padding: 10px 7px 7px 7px;
+            display: block;
+            margin : 0 0 0 0;
+            border: 1px solid #dcd8d8;
+            color: #4b4b4b;
+        	font-family: Tahoma;
+        	font-size: 8pt;
+        	cursor : default;
+        }
+
+        .frame .legend{
+            margin-top: 0px;
+            position: absolute;
+            background : white;
+            left: 5px;
+            top: -8px;
+            padding: 0 2px 0 2px;
+            margin: 0px;
+        }
+    ]]></j:style>
+
+    <j:presentation>
+        <j:main container="." caption="div/text()">
+            <div class='frame'><div class="legend">-</div></div>
+        </j:main>
+    </j:presentation>
+</j:frame>
+<j:upload name="upload">
+    <j:style><![CDATA[
+        .upload{
+            /*border : 1px solid #dcdcdc;
+            padding : 2px;
+            font-family : Tahoma;
+            font-size : 11px;
+            color: #4b4b4b;
+            height : 13px;*/
+        }
+        
+        .upload form{
+            float: left;
+        }
+        
+        .upload .fileinput{
+            -moz-user-focus: ignore;
+            opacity: 0;
+            height: 22px;
+            margin: -5px 0pt 0pt -200px;
+            z-index: 1;
+            position: relative;
+        }
+        
+        .upload iframe{
+            visibility: hidden;
+            width: 0;
+            height: 0;
+        }
+    ]]></j:style>
+
+    <j:presentation>
+        <j:main label=".">
+            <div class="upload">
+                
+            </div>
+        </j:main>
+        <j:form inp_file="input[1]" inp_uid="input[2]">
+            <form frameborder='0' method='post' action='' enctype='multipart/form-data'>
+                <input class="fileinput" type='file' name='userfile'/>
+                <input type='hidden' name='uniqueid' value='' /><br />
+            </form>
+        </j:form>
+    </j:presentation>
+</j:upload>
 <!-- ********** END **********    -->
 
 <j:img name="img">
@@ -2363,16 +2638,6 @@
         </j:item>
     </j:presentation>
 </j:testobject>
-<j:bar name="bar">
-    <j:style><![CDATA[
-    ]]></j:style>
-
-    <j:presentation>
-        <j:main container=".">
-            <div class='bar'></div>
-        </j:main>
-    </j:presentation>
-</j:bar>
 <j:chart name="chart">
     <j:style><![CDATA[
     .chart {
@@ -2895,195 +3160,6 @@
         </j:empty>
     </j:presentation>
 </j:dropdown>
-<j:fileuploadbox name="fileuploadbox">
-    <!--
-        Classes:
-        - disabled
-        - focus
-
-        - btnup
-        - btndown
-        - btnover
-
-        - next
-        - previous
-        - finish
-    -->
-
-    <j:style><![CDATA[
-        .toolbar2005 .fileupload{
-            padding: 3px;
-            float: left;
-        }
-        
-        .fileupload{
-            position: relative;
-            height: 21px;
-            width: auto;
-        }
-
-        .fileupload div{
-            color: black;
-            cursor: default;
-            overflow: hidden;
-
-            padding: 3px 5px 0 0;
-            text-align: left;
-
-            height: 16px;
-            margin: 1px 1px 0px 4px;
-            position: relative;
-            left: 3px !important; left: 4px;
-            top: 0px !important; top: 1px;
-        }
-
-        .fileupload div span{
-            margin: -1px 2px 0 1px;
-            width: 16px;
-            height: 16px;
-            overflow: hidden;
-            display: block;
-            float: left;
-
-            background: no-repeat 50% 50%;
-        }
-
-        .fileupload div, .fileupload input{
-            font-family: MS Sans Serif;
-            font-size: 8pt;
-            float: left;
-        }
-
-        .fileupload.disabled{
-            color: gray;
-        }
-        .fileupload div.fileuploaddown{
-            border: 1px solid #0a246a;
-            background-color: #8592b5;
-            margin: 0px 0 0px 3px;
-            left: 3px;
-            top: 0px;
-        }
-        .fileupload div.fileuploadover{
-            border: 1px solid #0a246a;
-            background-color: #b6bdd2;
-            margin: 0px 0 0px 3px;
-            left: 3px;
-            top: 0px;
-        }
-
-        .fileupload input{
-            width: 120px;
-            height: 15px;
-            border: 1px solid gray;
-            float: left;
-            overflow: hidden;
-            padding: 2px;
-            background-color: white;
-            color: white;
-        }
-
-        .fileupload blockquote{
-            display: none;
-
-            overflow: hidden;
-            border: 1px solid gray;
-            padding: 2px 2px 0px 2px;
-            margin: 0 0 0 0px;
-            background-color: white;
-
-            position: absolute;
-            left: 0;
-            top: 0;
-
-            width: 120px;
-            height: 17px;
-        }
-        
-        .toolbar2005 .fileupload blockquote{
-            left: 3px;
-            top: 3px;
-        }
-
-        .fileupload blockquote span{
-            background-color: midnightblue;
-            height: 15px;
-            overflow: hidden;
-            width: 16px;
-            display: block;
-        }
-        
-        .fileupload form{
-            float: left;
-        }
-        
-        .fileupload .fileinput{
-            -moz-user-focus: ignore;
-            opacity: 0;
-            height: 22px;
-            margin: -5px 0pt 0pt -200px;
-            z-index: 1;
-            position: relative;
-        }
-        
-        .fileupload iframe{
-            visibility: hidden;
-            width: 0;
-            height: 0;
-        }
-    ]]></j:style>
-    <j:style condition="jpf.isIE">
-        .fileupload div{
-            margin: 0px 2px 0px 3px;
-        }
-    </j:style>
-
-    <j:presentation>
-        <j:main caption="div/text()" icon="div/span" button="div" value="input/@value" slider="blockquote" slidemove="blockquote/span">
-            <div class='fileupload'>
-                <input value='' onkeydown='return false' />
-                <div><span> </span>-</div>
-                <blockquote><span></span></blockquote>
-            </div>
-        </j:main>
-        <j:form inp_file="input[1]" inp_uid="input[2]">
-            <form frameborder='0' method='post' action='' enctype='multipart/form-data'>
-                <input class="fileinput" type='file' name='userfile'/>
-                <input type='hidden' name='uniqueid' value='' /><br />
-            </form>
-        </j:form>
-    </j:presentation>
-</j:fileuploadbox>
-
-<j:frame name="frame">
-    <j:style><![CDATA[
-        .frame{
-            position: relative;
-            padding: 10px;
-            display: block;
-            margin: 10px;
-            border: 1px solid white;
-        }
-
-        .frame dd{
-            font-size: 8pt;
-            font-family: Tahoma;
-            margin-top: 0px;
-            background-color: #3b93d3;
-            position: absolute;
-            left: 5px;
-            top: -18px !important; top: -7px;
-            padding: 0 2px 0 2px;
-            margin: 0px;
-        }
-    ]]></j:style>
-
-    <j:presentation>
-        <j:main container="." caption="dd/text()">
-            <fieldset class='frame'><dd>-</dd></fieldset>
-        </j:main>
-    </j:presentation>
-</j:frame>
 <j:picture name="picture">
     <j:style><![CDATA[
         .image{
@@ -3904,125 +3980,6 @@
         >
             <div><input type='checkbox' /><span><a href='#' onclick='return false'>-</a></span></div>
         </j:item>
-        <j:loading>
-            <div class="loading">Loading...</div>
-        </j:loading>
-        <j:empty caption="text()">
-            <div class="empty">-</div>
-        </j:empty>
-    </j:presentation>
-</j:list>
-<j:list name="listthumbs">
-    <j:style><![CDATA[
-        .thumbs{
-            border: 1px solid white;
-            border-color: gray white white gray;
-            background-color: white;
-            width: 450px;
-            height: 500px;
-            overflow: auto;
-        }
-        .thumbs, .dragthumb{
-            font-family: Tahoma;
-            font-size: 8pt;
-            text-align: center;
-        }
-
-        .thumbs DIV, .dragthumb{
-            padding: 0;
-            float: left;
-            display: inline;
-            margin: 10px 10px 0 10px;
-        }
-
-        .thumbs BLOCKQUOTE, .dragthumb BLOCKQUOTE{
-            width: 110px;
-            height: 110px;
-            border: 1px solid #CCCCCC;
-            margin: 2px 2px 2px 2px;
-
-            background: url(icons/icoMailFolder.gif) no-repeat 50% 50%;
-        }
-        .thumbs .selected BLOCKQUOTE, .dragthumb BLOCKQUOTE{
-            border: 3px solid #CCCCCC;
-            margin: 0 0 0 0;
-        }
-        .thumbs.thumbsfocus .selected BLOCKQUOTE{
-            border-color: midnightblue;
-        }
-
-        .thumbs INPUT{
-            float: left;
-            margin: -1px 0 0 0;
-            display: none;
-        }
-
-        .thumbs LABEL, .dragthumb LABEL{
-            padding: 0 0 0 0;
-            margin: 0 2px 0 2px;
-            height: 16px;
-            width: 110px;
-
-            overflow: hidden;
-            display: block;
-            text-align: center;
-        }
-
-        .thumbs SPAN, .dragthumb SPAN{
-            text-decoration: none;
-            color: black;
-            cursor: default;
-            padding: 0px 3px 2px 3px;
-            margin: 1px auto 0 auto;
-            white-space: nowrap;
-            float: left;
-        }
-
-        /* * html .thumbs SPAN{
-            width: 1px;
-            display: block;
-        }*/
-
-        .thumbs .selected SPAN{
-            background-color: #CCCCCC;
-            color: black;
-        }
-
-        .thumbs.thumbsfocus .selected SPAN, .dragthumb SPAN{
-            color: white;
-            background-color: midnightblue;
-        }
-
-        .thumbs #txt_rename{
-            border: 1px solid black;
-            float: none;
-            padding: 1px 5px 1px 1px;
-            font-family: Tahoma;
-            font-size: 8pt;
-            color: black;
-            word-break: keep-all;
-            overflow: visible;
-            margin : 0px;
-            cursor: text;
-        }
-    ]]></j:style>
-
-    <j:presentation>
-        <j:main container=".">
-            <div class='thumbs'>
-            </div>
-        </j:main>
-        <j:item
-            class            = "."
-            caption        = "label/span"
-            image            = "blockquote"
-            select        = "."
-        >
-            <div><blockquote></blockquote><label><span>-</span></label></div>
-        </j:item>
-        <j:dragindicator>
-            <div class='dragthumb'><blockquote></blockquote><label><span>-</span></label></div>
-        </j:dragindicator>
         <j:loading>
             <div class="loading">Loading...</div>
         </j:loading>
