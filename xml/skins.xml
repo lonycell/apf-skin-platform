@@ -11,19 +11,19 @@
     
         .window {
             font-family: Tahoma;
-        	font-size: 11px;
+            font-size: 11px;
             padding : 26px 0 23px 0;
         }
     
         .window .topLeft {
-        	float: left;
-        	background: url("images/window_lt.png") no-repeat top left;
+            float: left;
+            background: url("images/window_lt.png") no-repeat top left;
             width: 6px;
-        	height: 27px;
-        	margin: 0;
-        	padding: 0;
-        	border: 0;
-        	margin-top : -26px;
+            height: 27px;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            margin-top : -26px;
         }
         
         .windowFocus{
@@ -31,27 +31,27 @@
         }
         
         .window .topRight {
-        	float: right;
-        	background: url("images/window_rt.png") no-repeat top left;
+            float: right;
+            background: url("images/window_rt.png") no-repeat top left;
             width: 5px;
-        	height: 27px;
-        	margin: 0;
-        	padding: 0;
-        	border: 0;
-        	margin-top : -26px;
+            height: 27px;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            margin-top : -26px;
         }
         
         .window .title {
-        	background: url("images/window_mt.png") repeat-x top left;
-        	height: 21px;
-        	color: #eeeeee;
-        	position: relative;
-        	margin: 0 5px 0 6px;
-        	padding: 6px 0 0 20px;
-        	border: 0;
-        	font-weight: bold;
-        	margin-top : -26px;
-        	cursor : default;
+            background: url("images/window_mt.png") repeat-x top left;
+            height: 21px;
+            color: #eeeeee;
+            position: relative;
+            margin: 0 5px 0 6px;
+            padding: 6px 0 0 20px;
+            border: 0;
+            font-weight: bold;
+            margin-top : -26px;
+            cursor : default;
         }
         
         .window .title img{
@@ -62,10 +62,10 @@
         
         .window .content {
             background : #f5f5f5;
-        	margin-left: 3px;
-        	margin-right: 3px;
-        	position : relative;
-        	height : 100%;
+            margin-left: 3px;
+            margin-right: 3px;
+            position : relative;
+            height : 100%;
         }
         
         .windowMin .content{
@@ -81,33 +81,33 @@
         }
         
         .window .borderLeft {
-        	background: url("images/window_border.png") repeat-y top left;
-        	overflow: hidden;
-        	height : 100%;
-        	float : left;
-        	width : 3px;
+            background: url("images/window_border.png") repeat-y top left;
+            overflow: hidden;
+            height : 100%;
+            float : left;
+            width : 3px;
         }
         
         .window .bottomLeft {
-        	float: left;
-        	background: url("images/window_lb.png") no-repeat top left;
+            float: left;
+            background: url("images/window_lb.png") no-repeat top left;
             width: 6px;
-        	height: 22px;
+            height: 22px;
         }
         
         .window .bottomRight {
-        	float: right;
-        	background: url("images/window_rb.png") no-repeat top left;
+            float: right;
+            background: url("images/window_rb.png") no-repeat top left;
             width: 5px;
-        	height: 22px;
+            height: 22px;
         }
         
         .window .bottomBar {
-        	background: url("images/window_mb.png") repeat-x top left;
-        	height: 22px;
-        	color: #FFFFFF;
-        	position: relative;
-        	margin: 0 5px 0 6px;
+            background: url("images/window_mb.png") repeat-x top left;
+            height: 22px;
+            color: #FFFFFF;
+            position: relative;
+            margin: 0 5px 0 6px;
         }
         
         .window .bottom{
@@ -234,40 +234,40 @@
     <j:style><![CDATA[
         .alert{
             font-family: Tahoma;
-        	font-size: 11px;
+            font-size: 11px;
             padding : 27px 0 10px 0;
             text-align : left;
         }
     
         .alert .topLeft{
-        	background: url("images/error_box_lt.png") no-repeat top left;
-        	width: 8px;
-        	height: 27px;
-        	float:left;
-        	margin: -27px 0 0 0;
-        	padding: 0;
-        	border: 0;
+            background: url("images/error_box_lt.png") no-repeat top left;
+            width: 8px;
+            height: 27px;
+            float:left;
+            margin: -27px 0 0 0;
+            padding: 0;
+            border: 0;
         }
         .alert .topRight{
-        	background: url("images/error_box_rt.png") no-repeat top left;
-        	width: 14px;
-        	height: 27px;
-        	float: right;
-        	margin: -27px 0 0 0;
-        	padding: 0;
-        	border: 0;
+            background: url("images/error_box_rt.png") no-repeat top left;
+            width: 14px;
+            height: 27px;
+            float: right;
+            margin: -27px 0 0 0;
+            padding: 0;
+            border: 0;
         }
         
         .alert .title{
             border-top:1px solid #c3c3c3;
-        	height: 18px;
-        	margin: -27px 14px 0 8px;
-        	padding : 8px 0 0 3px;
-        	
-        	font-weight: bold;
-        	color : #0e9717;
-        	cursor : default;
-        	background : white;
+            height: 18px;
+            margin: -27px 14px 0 8px;
+            padding : 8px 0 0 3px;
+            
+            font-weight: bold;
+            color : #0e9717;
+            cursor : default;
+            background : white;
         }
         
         .error .title{ 
@@ -276,58 +276,58 @@
 
         .alert .content{
             border-left: 1px solid #c3c3c3;
-        	padding: 0 14px 0 10px;
-        	overflow: hidden;
-        	height : 100%;
-        	position : relative;
-        	background : white;
+            padding: 0 14px 0 10px;
+            overflow: hidden;
+            height : 100%;
+            position : relative;
+            background : white;
         }
         
         .alert .borderRight{
-        	background: url("images/error_box_r.png") repeat-y top right;
-        	overflow: hidden;
-        	height : 100%;
-        	float : right;
-        	width : 9px;
+            background: url("images/error_box_r.png") repeat-y top right;
+            overflow: hidden;
+            height : 100%;
+            float : right;
+            width : 9px;
         }
         
         .alert .bottomLeft{
-        	background: url("images/error_box_lb.png") no-repeat top left;
-        	width: 8px;
-        	height: 16px;
-        	float: left;
-        	margin: 0;
-        	padding: 0;
-        	border: 0;
+            background: url("images/error_box_lb.png") no-repeat top left;
+            width: 8px;
+            height: 16px;
+            float: left;
+            margin: 0;
+            padding: 0;
+            border: 0;
         }
         
         .alert .bottomRight{
-        	background: url("images/error_box_rb.png") no-repeat top right;
-        	width: 14px;
-        	height: 16px;
-        	float: right;
-        	margin: 0;
-        	padding: 0;
-        	border: 0;
+            background: url("images/error_box_rb.png") no-repeat top right;
+            width: 14px;
+            height: 16px;
+            float: right;
+            margin: 0;
+            padding: 0;
+            border: 0;
         }
         
         .alert .bottomBar{
-        	background: url("images/error_box_b.png") repeat-x bottom left;
-        	height: 16px;
-        	margin: 0 14px 0 8px;
-        	padding: 0;
-        	border: 0;
+            background: url("images/error_box_b.png") repeat-x bottom left;
+            height: 16px;
+            margin: 0 14px 0 8px;
+            padding: 0;
+            border: 0;
         }
         
         .alert .close{
-        	width: 13px;
-        	height: 13px;
-        	background: url("images/close.png") no-repeat top left;
-        	margin : -2px 1px 0 0;
-        	overflow: hidden;
-        	position : absolute;
-        	right : 14px;
-        	top : 9px;
+            width: 13px;
+            height: 13px;
+            background: url("images/close.png") no-repeat top left;
+            margin : -2px 1px 0 0;
+            overflow: hidden;
+            position : absolute;
+            right : 14px;
+            top : 9px;
         }
         
         .alert .title .hover{
@@ -341,19 +341,19 @@
           container="div[5]" drag="div[3]" title="div[3]/text()" 
           buttons="div[3]">
             <div class="alert">
-            	<div class="topLeft"> </div>
-        		<div class="topRight"> </div>
-        		<div class="title">-</div>
+                <div class="topLeft"> </div>
+                <div class="topRight"> </div>
+                <div class="title">-</div>
         
-        		<div class="borderRight"> </div>
-        		<div class="content">
-    			</div>
+                <div class="borderRight"> </div>
+                <div class="content">
+                </div>
         
-        		<div class="bottomLeft"> </div>
-        		<div class="bottomRight"> </div>
-        		<div class="bottomBar"> </div>
+                <div class="bottomLeft"> </div>
+                <div class="bottomRight"> </div>
+                <div class="bottomBar"> </div>
         
-        	</div>
+            </div>
         </j:main>
         <j:button>
             <div> </div>
@@ -368,61 +368,61 @@
     <alias>reset</alias>
     <j:style><![CDATA[
         .button{
-        	color: #4b4b4b;
-        	font-family: Tahoma;
-        	font-size: 8pt;
-        	height: 29px;
-        	width : 100px;
-        	overflow: hidden;
-        	cursor : default;
-        	margin : 0 -5px -2px 0;
+            color: #4b4b4b;
+            font-family: Tahoma;
+            font-size: 8pt;
+            height: 29px;
+            width : 100px;
+            overflow: hidden;
+            cursor : default;
+            margin : 0 -5px -2px 0;
         }
         
         .buttonDisabled  {
-        	color: #bebebe;
+            color: #bebebe;
         }
         
         .button .left{
-        	float: left;
+            float: left;
             width: 12px;
-        	height: 29px;
+            height: 29px;
         }
         
         .button .lbl{
-        	height: 29px;
-        	padding-top: 6px;
-        	text-align: center;
-        	margin : 0 14px 0 12px;
+            height: 29px;
+            padding-top: 6px;
+            text-align: center;
+            margin : 0 14px 0 12px;
         }
         
         .button .right{
-        	float: right;
+            float: right;
             width: 14px;
-        	height: 29px;
+            height: 29px;
         }
         
         .button .left{
-        	background: url("images/button_left.png") no-repeat top left;
+            background: url("images/button_left.png") no-repeat top left;
         }
         
         .button .lbl{
-        	background: url("images/button_middle.png") repeat-x top left;
+            background: url("images/button_middle.png") repeat-x top left;
         }
         
         .button .right{
-        	background: url("images/button_right.png") no-repeat top left;
+            background: url("images/button_right.png") no-repeat top left;
         }
         
         .buttonDefault .left {
-        	background: url("images/button_left.png") no-repeat bottom left;
+            background: url("images/button_left.png") no-repeat bottom left;
         }
         
         .buttonDefault .lbl {
-        	background: url("images/button_middle.png") repeat-x 0 -29px;
+            background: url("images/button_middle.png") repeat-x 0 -29px;
         }
         
         .buttonDefault .right {
-        	background: url("images/button_right.png") no-repeat bottom left;
+            background: url("images/button_right.png") no-repeat bottom left;
         }
         
         <!--
@@ -501,30 +501,30 @@
     <alias>input</alias>
     <j:style><![CDATA[
         .tb {
-        	background: white url("images/input.png") no-repeat 0 0;
-        	width:  161px;
-        	height: 16px;
-        	color: #4b4b4b;
-        	border: 0;
-        	margin: 0;
-        	padding: 3px 0 0 4px;
-        	outline: none;
-        	font-family: Tahoma;
-        	font-size: 11px;
+            background: white url("images/input.png") no-repeat 0 0;
+            width:  161px;
+            height: 16px;
+            color: #4b4b4b;
+            border: 0;
+            margin: 0;
+            padding: 3px 0 0 4px;
+            outline: none;
+            font-family: Tahoma;
+            font-size: 11px;
         }
         
         .tbFocus {
-        	background-position: 0 -19px;
+            background-position: 0 -19px;
         }
         
         .tbDisabled {
-        	background-position: 0 -19px;
-        	color: #bebebe;
+            background-position: 0 -19px;
+            color: #bebebe;
         }
         
         .tbError {
-        	background-color : #ffb500;
-        	color: #fbfbfb;
+            background-color : #ffb500;
+            color: #fbfbfb;
         }
 
         .tbautoc{
@@ -577,9 +577,9 @@
     <j:style><![CDATA[
         .ta{
             border: 1px solid #c3c3c3;
-        	background: white url("images/textarea_background.png") no-repeat top left;
-        	color: #4b4b4b;
-        	padding: 6px;
+            background: white url("images/textarea_background.png") no-repeat top left;
+            color: #4b4b4b;
+            padding: 6px;
             font-family: Tahoma;
             font-size: 8pt;
             overflow: auto;
@@ -613,62 +613,62 @@
 <j:tab name="tab">
     <j:style><![CDATA[
         .tab, .lowertab {
-           	color: #4b4b4b;
-           	font-family : Tahoma;
-           	font-size : 8pt;
-           	padding : 23px 0 26px 0;
+               color: #4b4b4b;
+               font-family : Tahoma;
+               font-size : 8pt;
+               padding : 23px 0 26px 0;
         }
         
         .tab .btncontainer{
-        	padding-left: 1px;
-        	margin-top : -19px;
-        	position : absolute;
-        	z-index : 100;
+            padding-left: 1px;
+            margin-top : -19px;
+            position : absolute;
+            z-index : 100;
         }
         
         .lowertab .btncontainer {
-        	padding-right: 6px;
-        	float: right;
-        	margin-bottom : -1px;
+            padding-right: 6px;
+            float: right;
+            margin-bottom : -1px;
         }
         
         .tab .btncontainer div,
         .lowertab .btncontainer div{
-        	cursor: default;
-        	display: block;
-        	float: left;
-        	margin: -1px 4px 0 -1px;
+            cursor: default;
+            display: block;
+            float: left;
+            margin: -1px 4px 0 -1px;
         }
         
         .tab .btncontainer div {
-        	background: url(images/tab_but_topleft.png) no-repeat 0 0;
-        	text-align : center;
-        	min-width : 50px;
+            background: url(images/tab_but_topleft.png) no-repeat 0 0;
+            text-align : center;
+            min-width : 50px;
         }
         
         .lowertab .btncontainer div {
-        	background: url(images/tab_but_bottomleft.png) no-repeat 0 0;
-        	height: 20px;
-        /*	margin-bottom: 5px; */
+            background: url(images/tab_but_bottomleft.png) no-repeat 0 0;
+            height: 20px;
+        /*    margin-bottom: 5px; */
         }
         
         .tab .btncontainer div.curbtn {
-        	margin-top: -4px;
-        	background-position: 0 -19px;
-        	height: 24px;
-        	margin-bottom: -1px;
-        	color: #327fbd;
-        	/*font-weight: bold;*/
+            margin-top: -4px;
+            background-position: 0 -19px;
+            height: 24px;
+            margin-bottom: -1px;
+            color: #327fbd;
+            /*font-weight: bold;*/
         }
         
         .lowertab .btncontainer div.curbtn {
-        	margin-top: -1px;
-        	background-position: 0 -20px;
-        	height: 25px;
-        	color: #327fbd;
-        	font-weight: bold;
-        	z-index: 100;
-        	position: relative;
+            margin-top: -1px;
+            background-position: 0 -20px;
+            height: 25px;
+            color: #327fbd;
+            font-weight: bold;
+            z-index: 100;
+            position: relative;
         }
         
         .tabFocus .curbtn{
@@ -683,40 +683,40 @@
         
         .tab .btncontainer div div,
         .lowertab .btncontainer div div {
-        	padding: 0 4px 0 0;
-        	margin: 0 -4px 0 8px;
-        	padding : 4px 8px 2px 0;
+            padding: 0 4px 0 0;
+            margin: 0 -4px 0 8px;
+            padding : 4px 8px 2px 0;
         }
         
         .tab .btncontainer div div {
-        	background: url(images/tab_but_topright.png) no-repeat right 0;
+            background: url(images/tab_but_topright.png) no-repeat right 0;
         }
         
         .lowertab .btncontainer div div{
-        	background: url(images/tab_but_bottomright.png) no-repeat right 0;
+            background: url(images/tab_but_bottomright.png) no-repeat right 0;
         }
         
         .tab .btncontainer div.curbtn div {
             background-position: right -19px;
-        	height: 24px;
+            height: 24px;
         }
         
         .lowertab .btncontainer div.curbtn div {
             background-position: right -20px;
-        	height: 25px;
+            height: 25px;
         }
         
         .tab .page,
         .lowertab .page {
-        	clear: both;
-           	border-top: 1px solid #d7d7df;
-        	border-left: 1px solid #c3c3c3;
-        	border-right: 1px solid #c3c3c3;
-        	background: #fafbfc;
-        	padding: 7px;
-        	overflow: hidden;
-        	display : none;
-        	height : 100%;
+            clear: both;
+               border-top: 1px solid #d7d7df;
+            border-left: 1px solid #c3c3c3;
+            border-right: 1px solid #c3c3c3;
+            background: #fafbfc;
+            padding: 7px;
+            overflow: hidden;
+            display : none;
+            height : 100%;
         }
         
         .tab .page.curpage{
@@ -724,28 +724,28 @@
         }
         
         .lowertab .page {
-        	border-bottom: 1px solid #c3c3c3;
+            border-bottom: 1px solid #c3c3c3;
         }
         
         .tab .tabFooter{
-        	clear: both;
-        	height: 15px;
-        	background: url(images/tab_pag_lb.png) no-repeat bottom left;
-        	position : absolute;
-        	bottom : 0;
-        	width : 100%;
+            clear: both;
+            height: 15px;
+            background: url(images/tab_pag_lb.png) no-repeat bottom left;
+            position : absolute;
+            bottom : 0;
+            width : 100%;
         }
         
         .tab .tabFooter div{
-        	background: url(images/tab_pag_rb.png) no-repeat bottom right;
+            background: url(images/tab_pag_rb.png) no-repeat bottom right;
         }
         
         .tab .tabFooter div div{
-        	border-bottom: 1px solid #c3c3c3;
-        	background-color: #fafbfc;
-        	background-image: none;
-        	height: 14px;
-        	margin: 0 14px;
+            border-bottom: 1px solid #c3c3c3;
+            background-color: #fafbfc;
+            background-image: none;
+            height: 14px;
+            margin: 0 14px;
         }
     ]]></j:style>
 
@@ -798,12 +798,12 @@
 
         .cbcontainer .checkbox{
             width: 12px;
-        	height: 12px;
-        	overflow: hidden;
+            height: 12px;
+            overflow: hidden;
             position: absolute;
             left: 2px;
             top: 2px;
-            background: url("images/checkbox3.png") no-repeat 0 -12px;
+            background: url("images/checkbox.png") no-repeat 0 -12px;
         }
 
         .cbcontainerDown .checkbox{
@@ -816,7 +816,7 @@
         
         .cbcontainerError span{
             background-color : #ffb500;
-        	color: #fbfbfb;
+            color: #fbfbfb;
         }
         
         .cbcontainerDisabled .checkbox{
@@ -876,8 +876,8 @@
 
         .rbcontainer .radio{
             width: 12px;
-        	height: 12px;
-        	overflow: hidden;
+            height: 12px;
+            overflow: hidden;
             position: absolute;
             left: 2px;
             top: 3px;
@@ -902,7 +902,7 @@
         
         .rbcontainerError span{
             background-color : #ffb500;
-        	color: #fbfbfb;
+            color: #fbfbfb;
         }
         
         .rbcontainer br{
@@ -926,24 +926,24 @@
 <j:menu name="menu">
     <j:style><![CDATA[
         .menu  {
-        	background: #FFFFFF url("images/menu_context_left.gif") repeat-y top left;
-        	margin: 0;
-        	padding: 0;
-        	z-index: 10000;
-        	position: absolute;
-        	font-family: Tahoma;
-        	font-size: 11px;
-        	color : #4b4b4b;
-        	border : 1px solid #c3c3c3;
-        	display : none;
+            background: #FFFFFF url("images/menu_context_left.gif") repeat-y top left;
+            margin: 0;
+            padding: 0;
+            z-index: 10000;
+            position: absolute;
+            font-family: Tahoma;
+            font-size: 11px;
+            color : #4b4b4b;
+            border : 1px solid #c3c3c3;
+            display : none;
         }
         
         .menu blockquote {
-        	list-style-type: none;
-        	margin: 0;
-        	padding: 0;
-        	border: 0;
-        	background: url("images/menu_context_right.gif") repeat-y top right;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background: url("images/menu_context_right.gif") repeat-y top right;
         }
         
         .menu div{
@@ -956,7 +956,7 @@
         }
         .menu div.hover{
             background: #25a8e7 url(images/menu_context_left_over.gif) repeat-y top left;
-        	color : white;
+            color : white;
         }
 
         .menu div.menu_divider{
@@ -1050,28 +1050,28 @@
     <j:style><![CDATA[
         .toolbar .menubar {
             background: url(images/menubar_row.png) repeat-x top left;
-        	height: 21px;
-        	font-family: Verdana;
-        	font-size: 11px;
-        	border-bottom: 1px solid #c3c3c3;
-        	position: relative;
+            height: 21px;
+            font-family: Verdana;
+            font-size: 11px;
+            border-bottom: 1px solid #c3c3c3;
+            position: relative;
         }
         
         .toolbar .bar {
             background: url(images/toolbar_row.png) repeat-x top left;
-        	height: 25px;
-        	font-family: Verdana;
-        	font-size: 11px;
-        	border-bottom: 1px solid #c3c3c3;
-        	position: relative;
+            height: 25px;
+            font-family: Verdana;
+            font-size: 11px;
+            border-bottom: 1px solid #c3c3c3;
+            position: relative;
         }
         
         .toolbar .divider {
-        	border-left: 1px solid #c3c3c3;
-        	border-right: 1px solid #FFFFFF;
-        	height: 17px;
-        	float: left;
-        	margin: 4px 10px 0 10px;
+            border-left: 1px solid #c3c3c3;
+            border-right: 1px solid #FFFFFF;
+            height: 17px;
+            float: left;
+            margin: 4px 10px 0 10px;
         }
     ]]></j:style>
 
@@ -1099,12 +1099,12 @@
 <j:button name="toolbarbutton">
     <j:style><![CDATA[
         .menubar .toolbarbutton{
-        	display: block;
-        	float: left;
-        	cursor: default;
+            display: block;
+            float: left;
+            cursor: default;
             padding: 4px 8px 4px 8px;
-        	text-decoration: none;
-        	color: #000000;
+            text-decoration: none;
+            color: #000000;
         }
         
         .menubar .toolbarbuttonOver, .menubar .toolbarbuttonDown{
@@ -1113,58 +1113,58 @@
         }
         
         .bar .toolbarbutton {
-        	display: block;
-        	height: 21px;
-        	float: left;
-        	cursor: default;
+            display: block;
+            height: 21px;
+            float: left;
+            cursor: default;
             /*padding: 4px 0; */
-        	margin-top: 2px;
-        	margin-left: 5px;
-        	text-decoration: none;
-        	color: #000000;
-        	text-align: center;
-        	padding-top: 4px;
+            margin-top: 2px;
+            margin-left: 5px;
+            text-decoration: none;
+            color: #000000;
+            text-align: center;
+            padding-top: 4px;
         }
         
         .bar .toolbarbuttonOver {
-        	background: url("images/toolbar_a_hover.png") no-repeat top left;
+            background: url("images/toolbar_a_hover.png") no-repeat top left;
         }
         
         /*
         .toolbar .bar img {
-        	margin: 0 3px 0 0;
-        	padding: 0;
-        	border: 0;
-        	vertical-align: middle;
+            margin: 0 3px 0 0;
+            padding: 0;
+            border: 0;
+            vertical-align: middle;
         }
         
         .toolbar .bar .labelHover {
-        	background: url("images/label_hover.png") no-repeat bottom right;
-        	position: absolute;
-        	top: 23px;
-        	padding: 0 6px 7px 0;
+            background: url("images/label_hover.png") no-repeat bottom right;
+            position: absolute;
+            top: 23px;
+            padding: 0 6px 7px 0;
         
         }
         
         .toolbar .bar .labelHover span{
-        	border-top: 1px solid #78c7f3;
-        	border-left: 1px solid #78c7f3;
-        	display: block;
-        	background-color: #e9f5ff;
-        	padding: 2px 6px;
+            border-top: 1px solid #78c7f3;
+            border-left: 1px solid #78c7f3;
+            display: block;
+            background-color: #e9f5ff;
+            padding: 2px 6px;
         }
         
         .toolbar .bar .right {
             float: right;
-        	margin-right: 10px;
+            margin-right: 10px;
         }
         
         .toolbar .bar .right a {
-        	margin-left: 2px;
+            margin-left: 2px;
         }
         
         .toolbar .bar .right img {
-        	margin: 0 -4px 0 0;
+            margin: 0 -4px 0 0;
         }*/
     ]]></j:style>
 
@@ -1212,7 +1212,7 @@
         }
         
         .listFocus .indicate U{
-            border: 1px dotted #25a8e7;
+            border: 1px dotted #BBB;/*#25a8e7;*/
             color : #4b4b4b;
             /*background-color : #e4f4fc;*/
             padding: 1px 3px 1px 1px;
@@ -1228,7 +1228,7 @@
         }
         
         .list #txt_rename{
-            border: 1px solid black;
+            border: 1px solid #bbb;
             padding: 1px 15px 1px 1px;
             font-family: Tahoma;
             font-size: 8pt;
@@ -1239,6 +1239,7 @@
             cursor: text;
             height: 13px;
             display: block;
+            outline : none;
         }
         
         .list .message{
@@ -1407,13 +1408,299 @@
         </j:empty>
     </j:presentation>
 </j:list>
+<j:list name="radiolist">
+    <j:style><![CDATA[
+        .radiolist{
+            overflow : auto;
+            position : relative;
+            cursor : default;
+        }
+        
+        .radiolist, .draglist{
+            font-family : Tahoma;
+            font-size : 8pt;
+        }
+        
+        .radiolist DIV, .draglist{
+            padding : 0;
+            height : 18px;
+            width : 80px;
+            margin-right : 4px;
+            float : left;
+            overflow : hidden;
+            white-space : nowrap;
+            padding : 0 0 0 16px;
+            position : relative;
+        }
+        
+        .radiolist U, .draglist U{
+            text-decoration : none;
+            color : black;
+            cursor : default;
+            display : block;
+            padding : 2px 4px 2px 2px;
+            text-decoration : none;
+            white-space : nowrap;
+            float : left;
+            overflow : hidden;
+            max-width : 100%;
+            text-overflow : ellipsis;
+        }
+        
+        .radiolist .selected U{
+            color : black;
+        }
+        .radiolistFocus .indicate U{
+            border: 1px dotted #BBB;
+            padding : 1px 3px 1px 1px;
+        }
+        
+        .radiolist .more u{
+            border : 1px solid #a5a5a5;
+            border-left : 0;
+            margin-left : -2px;
+            padding : 0 3px 1px 3px;
+            font-size : 11px;
+        }
+        
+        .radiolist .more b{
+            background : url(images/plusplain.gif) no-repeat 3px 3px;
+            border : 1px solid #a5a5a5;
+            border-right : 0;
+            width : 14px;
+            height : 14px;
+            margin : 0 0 0 2px;
+        }
+        
+        .radiolist .more_down u, .radiolist .more_down b{
+            background-color : #EFEFEF;
+        }
+        
+        .radiolist #txt_rename{
+            border : 1px solid #bbb;
+            padding : 1px 1px 1px 1px;
+            font-family : Tahoma;
+            font-size : 8pt;
+            color : black;
+            word-break : keep-all;
+            overflow : visible;
+            margin-top  : 0px;
+            cursor : text;
+            height : 13px;
+            width : auto;
+            float : left;
+        }
+        .radiolist input#txt_rename{
+            outline : none;
+            width : 75px;
+        }
+        
+        .radiolist .empty{
+            text-align : center;
+            padding : 3px 0 0 0;
+        }
+        
+        .radiolist b{
+            overflow : hidden;
+            margin : 2px;
+            
+            width: 12px;
+            height: 12px;
+            background: url("images/radio.png") no-repeat 0 -12px;
+            position : absolute;
+            left : 0;
+            top : 0;
+        }
+        
+        .radiolist .selected b {
+            background-position: 0 -24px;
+        }
+        
+        .radiolistDisabled .selected b {
+            background-position: 0 -0px;
+        }
+    ]]></j:style>
+    <!--j:style condition="!IS_IE"><![CDATA[
+        .radiolist #txt_rename{
+            display : block;
+            width : 100px;
+        }
+    ]]></j:style-->
+    
+    <j:presentation>
+        <j:main container="." type="2">
+            <div class='radiolist'>
+            </div>
+        </j:main>
+        <j:item 
+            class   = "."
+            caption = "u"
+            select  = "."
+        >
+            <div><b> </b><u>-</u></div>
+        </j:item>
+        <j:dragIndicator>
+            <div class='draglist'><span><u>-</u></span></div>
+        </j:dragIndicator>
+        <j:loading>
+            <div class="loading">Loading...</div>
+        </j:loading>
+        <j:empty caption="text()">
+            <div class="empty">-</div>
+        </j:empty>
+    </j:presentation>
+</j:list>
+<j:list name="checklist">
+    <j:style><![CDATA[
+        .checklist{
+            overflow : auto;
+            position : relative;
+            cursor : default;
+        }
+        
+        .checklist, .draglist{
+            font-family : Tahoma;
+            font-size : 8pt;
+        }
+        
+        .checklist DIV, .draglist{
+            padding : 0;
+            height : 18px;
+            width : 80px;
+            margin-right : 4px;
+            float : left;
+            overflow : hidden;
+            white-space : nowrap;
+            padding : 0 0 0 16px;
+            position : relative;
+        }
+        
+        .checklist U, .draglist U{
+            text-decoration : none;
+            color : black;
+            cursor : default;
+            display : block;
+            padding : 2px 4px 2px 2px;
+            text-decoration : none;
+            white-space : nowrap;
+            float : left;
+            overflow : hidden;
+            max-width : 100%;
+            text-overflow : ellipsis;
+        }
+        
+        .checklist .selected U{
+            color : black;
+        }
+        .checklistFocus .indicate U{
+            border: 1px dotted #BBB;
+            padding : 1px 3px 1px 1px;
+        }
+        
+        .checklist .more u{
+            border : 1px solid #a5a5a5;
+            border-left : 0;
+            margin-left : -2px;
+            padding : 0px 3px 1px 3px;
+            font-size : 11px;
+        }
+        
+        .checklist .more b{
+            background : url(images/plusplain.gif) no-repeat 3px 3px;
+            border : 1px solid #a5a5a5;
+            border-right : 0;
+            width : 14px;
+            height : 14px;
+            margin : 0 0 0 2px;
+        }
+        
+        .checklist .more_down u, .checklist .more_down b{
+            background-color : #EFEFEF;
+        }
+        
+        .checklist #txt_rename{
+            border : 1px solid #bbb;
+            padding : 1px 1px 1px 1px;
+            font-family : Tahoma;
+            font-size : 8pt;
+            color : black;
+            word-break : keep-all;
+            overflow : visible;
+            margin-top  : 0px;
+            cursor : text;
+            height : 13px;
+            width : auto;
+            float : left;
+        }
+        
+        .checklist input#txt_rename{
+            outline : none;
+            width : 75px;
+            padding-left : 0;
+        }
+        
+        .checklist .empty{
+            text-align : center;
+            padding : 3px 0 0 0;
+        }
+        
+        .checklist b{
+            overflow : hidden;
+            margin : 2px;
+            
+            width: 12px;
+            height: 12px;
+            background: url("images/checkbox.png") no-repeat 0 -12px;
+            position : absolute;
+            left : 0;
+            top : 0;
+        }
+        
+        .checklist .selected b {
+            background-position: 0 -24px;
+        }
+        
+        .checklistDisabled .selected b {
+            background-position: 0 -0px;
+        }
+    ]]></j:style>
+    <!--j:style condition="!IS_IE"><![CDATA[
+        .checklist #txt_rename{
+            display : block;
+            width : 100px;
+        }
+    ]]></j:style-->
+    
+    <j:presentation>
+        <j:main container="." type="2">
+            <div class='checklist'>
+            </div>
+        </j:main>
+        <j:item 
+            class   = "."
+            caption = "u"
+            select  = "."
+        >
+            <div><b> </b><u>-</u></div>
+        </j:item>
+        <j:dragIndicator>
+            <div class='draglist'><span><u>-</u></span></div>
+        </j:dragIndicator>
+        <j:loading>
+            <div class="loading">Loading...</div>
+        </j:loading>
+        <j:empty caption="text()">
+            <div class="empty">-</div>
+        </j:empty>
+    </j:presentation>
+</j:list>
 <j:statusbar name="statusbar">
     <j:style><![CDATA[
         .statusbar {
             border-top: 1px solid #b2b2b2;
-        	overflow: hidden;
-        	color: #4b4b4b;
-        	background : url(images/statusbar.gif);
+            overflow: hidden;
+            color: #4b4b4b;
+            background : url(images/statusbar.gif);
             height: 21px;
             width: 100%;
             overflow: hidden;
@@ -1433,7 +1720,7 @@
             margin : 2px 2px 0 0;
             
             border-right: 1px solid #c3c3c3;
-        	border-left: 1px solid #FFFFFF;
+            border-left: 1px solid #FFFFFF;
         }
         
         .statusbar .panelLast{
@@ -1473,15 +1760,11 @@
 <j:tree name="tree">
     <j:style><![CDATA[
         .tree{
-            border: 1px solid #c3c3c3;
-
-            background-color: white;
-            width: 200px;
-            height: 500px;
-            overflow: hidden;
-            cursor : default;
-            
             overflow: auto;
+            position: relative;
+            border: 1px solid #c3c3c3;
+            background-color: white;
+            cursor: default;
         }
 
         .tree SPAN, .dragtree SPAN{
@@ -1513,14 +1796,15 @@
         
         .dragtree{
             opacity : 0.5;
-            background : none;        }
-        
-        .tree DIV.root{
-            padding: 0;
+            background : none;
         }
+        
+        /*.tree DIV.root{
+            padding: 0;
+        }*/
 
         .tree LABEL, .dragtree LABEL{
-            padding: 1px 0 0 20px;
+            padding: 1px 0 0 18px;
             background: no-repeat 1px center;
             height: 16px;
             white-space: nowrap;
@@ -1539,7 +1823,7 @@
 
         .tree U, .dragtree U{
             text-decoration: none;
-            color: black;
+            color : black;
             cursor: default;
             display: inline !important; display: block;
             padding: 2px 4px 2px 2px;
@@ -1547,9 +1831,9 @@
 
         
         .treeFocus .indicate U{
-            border: 1px dotted #25a8e7;
+            border: 1px dotted #BBB;/*#25a8e7;*/
             padding: 1px 3px 1px 1px;
-            color : #4b4b4b;
+            color : black;
         }
         
         .tree .selected U, .tree .dragAppend U{
@@ -1570,7 +1854,7 @@
             overflow: hidden;
             background: repeat-y 0px center;
         }
-        .tree BLOCKQUOTE.root{padding:0}
+        /*.tree BLOCKQUOTE.root{padding:0}*/
 
         .tree #txt_rename{
             border: 1px solid black;
@@ -1584,6 +1868,7 @@
             *margin-top: 0;
             cursor: text;
             height: 13px;
+            outline : none;
         }
 
         .tree DIV.dragInsert label{
@@ -1631,6 +1916,183 @@
         </j:item>
         <j:dragindicator>
             <div class='dragtree'><span> </span><label><u>-</u></label></div>
+        </j:dragindicator>
+        <j:loading>
+            <div class="loading"><span> </span><label>Loading...</label></div>
+        </j:loading>
+        <j:empty caption=".">
+            <div class="message"></div>
+        </j:empty>
+    </j:presentation>
+</j:tree>
+<j:tree name="checktree">
+    <j:style><![CDATA[
+        .checktree{
+            overflow: auto;
+            position: relative;
+            background-color: white;
+            cursor: default;
+        }
+
+        .checktree SPAN, .dragchecktree SPAN{
+            width: 15px;
+            height: 18px;
+            background: no-repeat 3px 5px;
+            display: block;
+            margin-left: -29px;
+        }
+
+        .dragchecktree SPAN{
+            background : transparent;
+        }
+
+        .checktree DIV.pluslast SPAN,
+        .checktree DIV.plus SPAN{background-image:url(images/plus.png)}
+        
+        .checktree DIV.minlast SPAN,
+        .checktree DIV.min SPAN{background-image:url(images/min.png)}
+
+        .checktree DIV, .dragchecktree{
+            padding: 0;
+            height: 18px;
+            padding-left:29px;
+
+            font-family: Tahoma, Arial;
+            font-size: 8.5pt;
+            position : relative;
+        }
+        
+        .dragchecktree{
+            opacity : 0.5;
+            background : none;
+        }
+        
+
+        .checktree LABEL, .dragchecktree LABEL{
+            padding: 1px 0 0 18px;
+            background: no-repeat 1px center;
+            height: 16px;
+            white-space: nowrap;
+            margin-left: 0px;
+            display: block;
+            float: left;
+            margin-top: -18px;
+        }
+
+        .checktree DIV.loading LABEL{
+            background: url(icons/icoConnect.gif) no-repeat 1px center;
+        }
+        .checktree DIV.loading SPAN{
+            background: no-repeat 0px 0px;
+        }
+
+        .checktree U, .dragchecktree U{
+            text-decoration: none;
+            color : black;
+            cursor: default;
+            display: inline !important; display: block;
+            padding: 2px 4px 2px 2px;
+        }
+
+        
+        .checktreeFocus .indicate U{
+            border: 1px dotted #BBB;/*#25a8e7;*/
+            padding: 1px 3px 1px 1px;
+            color : black;
+        }
+        
+        .checktree BLOCKQUOTE{
+            margin: 0;
+            padding: 0 0 0 20px;
+            display: none;
+            height: 0;
+            overflow: hidden;
+            background: repeat-y 0px center;
+        }
+
+        .checktree #txt_rename{
+            border: 1px solid black;
+            padding: 1px 15px 1px 1px;
+            font-family: Tahoma;
+            font-size: 8pt;
+            color: black;
+            word-break: keep-all;
+            overflow: visible;
+            margin-top : -2px;
+            *margin-top: 0;
+            cursor: text;
+            height: 13px;
+            outline : none;
+        }
+
+        .checktree DIV.dragInsert label{
+            border-top: 2px solid black;
+            height: 14px;
+            overflow: hidden;
+        }
+
+        .checktree DIV.dragInsert U, .checktree DIV.dragDenied U{
+            padding-top: 0;
+        }
+
+        /*.checktree DIV.dragDenied label{
+            border-top: 2px solid red;
+            height: 14px;
+            overflow: hidden;
+            padding-top : 2px;
+            margin-top : -20px;
+            background-position : 1px 0;
+        }*/
+        
+        .checktree .message{
+            text-align: center;
+            padding: 8px 10px 0 0;
+            color: #AAA;
+        }
+        
+        .checktree b{
+            overflow : hidden;
+            margin : 2px;
+            
+            width: 12px;
+            height: 12px;
+            background: url("images/checkbox.png") no-repeat 0 -12px;
+            float : left;
+            margin-left : -31px;
+        }
+        
+        .checktree .selected b {
+            background-position: 0 -24px;
+        }
+        
+        .checktree .partial b {
+            background-position: 0 -48px;
+        }
+        
+        .checktreeDisabled .selected b {
+            background-position: 0 -0px;
+        }
+    ]]></j:style>
+
+    <j:presentation>
+        <j:main container="." startclosed="false">
+            <div class="checktree">
+
+            </div>
+        </j:main>
+        <j:item
+            class        = "."
+            caption      = "label/u/text()"
+            icon         = "label"
+            openclose    = "span"
+            select       = "label"
+            container    = "following-sibling::blockquote"
+        >
+            <div><span> </span><label><b> </b><u>-</u></label></div>
+            <blockquote> </blockquote>
+        </j:item>
+        <j:dragindicator>
+            <div class='dragchecktree'><span> </span><label><u>-</u></label></div>
         </j:dragindicator>
         <j:loading>
             <div class="loading"><span> </span><label>Loading...</label></div>
@@ -1699,15 +2161,15 @@
     <j:style><![CDATA[
         .dropdown{
             position: relative;
-        	background: url("images/dropdown.png") no-repeat 0 0;
-        	width:  134px;
-        	height: 17px;
-        	color: #4b4b4b;
-        	border: 0;
-        	margin: 0;
-        	padding : 2px 18px 0px 2px;
-        	font-family : Tahoma;
-        	font-size : 11px;
+            background: url("images/dropdown.png") no-repeat 0 0;
+            width:  134px;
+            height: 17px;
+            color: #4b4b4b;
+            border: 0;
+            margin: 0;
+            padding : 2px 18px 0px 2px;
+            font-family : Tahoma;
+            font-size : 11px;
         }
         
         .dropdownDisabled {
@@ -1715,16 +2177,16 @@
         }
         
         .dropdownFocus {
-        	background-position: 0 -19px;
+            background-position: 0 -19px;
         }
         
         .dropdownOver, .dropdownDown {
-        	
+            
         }
         
         .dropdownDown {
-        	position: relative;
-        	background-position: 0 -38px;
+            position: relative;
+            background-position: 0 -38px;
         }
         
         .dropdown .dropdownlabel{
@@ -1742,7 +2204,7 @@
         
         .dropdownFocus .dropdownlabel{
             background-color: #25a8e7;
-        	color: #ffffff;
+            color: #ffffff;
         }
         
         .dropdownDown .dropdownlabel{
@@ -1751,25 +2213,25 @@
         }
         
         .optionList{
-        	position: absolute;
-        	top: 0;
-        	left: 0;
-        	width: 120px;
-        	margin-top : -1px;
-        	border: 1px solid #327fbd;
-        	background: #ffffff url("images/dropdown_background.png") repeat-y top left;
-        	z-index: 1000;
-        	color: #0d5381;
-        	font-family : Tahoma;
-        	font-size : 11px;
-        	display : none;
-        	overflow : auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 120px;
+            margin-top : -1px;
+            border: 1px solid #327fbd;
+            background: #ffffff url("images/dropdown_background.png") repeat-y top left;
+            z-index: 1000;
+            color: #0d5381;
+            font-family : Tahoma;
+            font-size : 11px;
+            display : none;
+            overflow : auto;
         }
         
         .optionList .top{
-        	background: url("images/dropdown_background_top.png") no-repeat top left;
-        	width: 136px;
-        	height: 5px;
+            background: url("images/dropdown_background_top.png") no-repeat top left;
+            width: 136px;
+            height: 5px;
         }
         
         .optionList span{
@@ -1785,12 +2247,12 @@
         }
         
         .optionList span.hover {
-        	background-color: #25a8e7;
-        	color: #ffffff;
+            background-color: #25a8e7;
+            color: #ffffff;
         }
         
         .optionList .selected{
-        	background-color: #f0f0f0;
+            background-color: #f0f0f0;
         }
     ]]></j:style>
 
@@ -1824,18 +2286,18 @@
         .progressbar {
             width: 147px;
             height : 12px;
-        	position: relative;
-        	cursor : default;
+            position: relative;
+            cursor : default;
         }
         
         .progressbar .lbl {
             font-family : Tahoma;
-        	font-size : 9px;
-        	float : right;
-        	background: url("images/bar_right.png") no-repeat 2px left;
-        	height : 10px;
-        	padding : 0 0 0 6px;
-        	margin : -2px 0 0 0;
+            font-size : 9px;
+            float : right;
+            background: url("images/bar_right.png") no-repeat 2px left;
+            height : 10px;
+            padding : 0 0 0 6px;
+            margin : -2px 0 0 0;
         }
         
         .lowlabel{
@@ -1864,17 +2326,17 @@
         
         .progressbar .left{
             background: url("images/bar_left.png") no-repeat top left;
-        	height: 8px;
+            height: 8px;
         }
         
         .progressbar .filledbar {
             background: url("images/progressbar.png") no-repeat top left;
-        	height: 8px;
-        	overflow: hidden;
-        	padding : 0 0 0 3px;
-        	border-right : 1px solid #327fbd;
-        	display : none;
-        	width : 0%;
+            height: 8px;
+            overflow: hidden;
+            padding : 0 0 0 3px;
+            border-right : 1px solid #327fbd;
+            display : none;
+            width : 0%;
         }
         
         .progressbarDisabled .filledbar {
@@ -1895,10 +2357,10 @@
         <j:main progress="div[2]/div" caption="div[1]/text()">
             <div class="progressbar">
                 <div class="lbl">0%</div>
-				<div class="left"> 
-				    <div class="filledbar"> </div>
-				</div>
-			</div>
+                <div class="left"> 
+                    <div class="filledbar"> </div>
+                </div>
+            </div>
         </j:main>
     </j:presentation>
 </j:progressbar>
@@ -1910,12 +2372,12 @@
         .slider {
             background: url("images/bar_right.png") no-repeat top right;
             width: 150px;
-        	height: 8px;
-        	position: relative;
+            height: 8px;
+            position: relative;
 
-        	font-family : Tahoma;
-        	font-size : 9px;
-        	text-align : center;
+            font-family : Tahoma;
+            font-size : 9px;
+            text-align : center;
         }
         
         .sliderDisabled {
@@ -1924,9 +2386,9 @@
         
         .slider .left{
             background: url("images/bar_left.png") no-repeat top left;
-        	height: 8px;
-        	overflow: hidden;
-        	margin-right : 4px;
+            height: 8px;
+            overflow: hidden;
+            margin-right : 4px;
         }
         
         .sliderDisabled .left{
@@ -1939,10 +2401,10 @@
         
         .slider .grabber {
             background: url("images/slider.png") no-repeat top left;
-        	width: 20px;
-        	height: 8px;
-        	overflow: hidden;
-        	position: absolute;
+            width: 20px;
+            height: 8px;
+            overflow: hidden;
+            position: absolute;
         }
         
         .sliderDisabled .grabber {
@@ -1968,14 +2430,14 @@
         .sliderHigh {
             background: url("images/bar_right.png") no-repeat top right;
             width: 150px;
-        	height: 8px;
-        	margin-top : 8px;
-        	margin-bottom : 8px;
-        	position: relative;
+            height: 8px;
+            margin-top : 8px;
+            margin-bottom : 8px;
+            position: relative;
 
-        	font-family : Tahoma;
-        	font-size : 9px;
-        	text-align : center;
+            font-family : Tahoma;
+            font-size : 9px;
+            text-align : center;
         }
         
         .sliderHighDisabled {
@@ -1984,9 +2446,9 @@
         
         .sliderHigh .left{
             background: url("images/bar_left.png") no-repeat top left;
-        	height: 8px;
-        	overflow: hidden;
-        	margin-right : 4px;
+            height: 8px;
+            overflow: hidden;
+            margin-right : 4px;
         }
         
         .sliderHighDisabled .left{
@@ -1999,11 +2461,11 @@
         
         .sliderHigh .grabber {
             background: url("images/slider2.png") no-repeat top left;
-        	width: 7px;
-        	height: 16px;
-        	overflow: hidden;
-        	position: absolute;
-        	top : -4px;
+            width: 7px;
+            height: 16px;
+            overflow: hidden;
+            position: absolute;
+            top : -4px;
         }
         
         .sliderHighDisabled .grabber {
@@ -2029,13 +2491,13 @@
         .slider16 {
             background: url("images/bar16x_right.png") no-repeat top right;
             width: 300px;
-        	height: 16px;
-        	position: relative;
-        	padding-right: 7px;
-        	
-        	font-family : Tahoma;
-        	font-size : 9px;
-        	text-align : center;
+            height: 16px;
+            position: relative;
+            padding-right: 7px;
+            
+            font-family : Tahoma;
+            font-size : 9px;
+            text-align : center;
         }
         
         .slider16Disabled {
@@ -2044,8 +2506,8 @@
         
         .slider16 .left{
             background: url("images/bar16x_left.png") no-repeat top left;
-        	height: 16px;
-        	overflow: hidden;
+            height: 16px;
+            overflow: hidden;
         }
         
         .slider16Disabled .left{
@@ -2055,10 +2517,10 @@
         
         .slider16 .grabber {
             background: url("images/slider16x.png") no-repeat top right;
-        	width: 40px;
-        	height: 16px;
-        	overflow: hidden;
-        	position: absolute;
+            width: 40px;
+            height: 16px;
+            overflow: hidden;
+            position: absolute;
         }
         
         .slider16Disabled .grabber {
@@ -2084,13 +2546,13 @@
         .slider11 {
             background: url("images/bar11x_right.png") no-repeat top right;
             width: 300px;
-        	height: 11px;
-        	position: relative;
-        	padding-right: 5px;
-        	
-        	font-family : Tahoma;
-        	font-size : 9px;
-        	text-align : center;
+            height: 11px;
+            position: relative;
+            padding-right: 5px;
+            
+            font-family : Tahoma;
+            font-size : 9px;
+            text-align : center;
         }
         
         .slider11Disabled {
@@ -2099,8 +2561,8 @@
         
         .slider11 .left{
             background: url("images/bar11x_left.png") no-repeat top left;
-        	height: 11px;
-        	overflow: hidden;
+            height: 11px;
+            overflow: hidden;
         }
         
         .slider11Disabled .left{
@@ -2110,10 +2572,10 @@
         
         .slider11 .grabber {
             background: url("images/slider11x.png") no-repeat top right;
-        	width: 29px;
-        	height: 11px;
-        	overflow: hidden;
-        	position: absolute;
+            width: 29px;
+            height: 11px;
+            overflow: hidden;
+            position: absolute;
         }
         
         .slider11Disabled .grabber {
@@ -2151,106 +2613,106 @@
         }
                 
         .errorbox .tLeft{
-        	background: url("images/error_box_lt.png") no-repeat top left;
-        	width: 8px;
-        	height: 9px;
-        	float:left;
-        	margin: 0;
-        	padding: 0;
-        	border: 0;
+            background: url("images/error_box_lt.png") no-repeat top left;
+            width: 8px;
+            height: 9px;
+            float:left;
+            margin: 0;
+            padding: 0;
+            border: 0;
         }
         
         .errorbox .tRight {
-        	background: url("images/error_box_rt.png") no-repeat top left;
-        	width: 14px;
-        	height: 9px;
-        	float: right;
-        	margin: 0;
-        	padding: 0;
-        	border: 0;
+            background: url("images/error_box_rt.png") no-repeat top left;
+            width: 14px;
+            height: 9px;
+            float: right;
+            margin: 0;
+            padding: 0;
+            border: 0;
         }
         
         .errorbox .tBorder {
             border-top:1px solid #c3c3c3;
-        	height: 8px;
-        	margin: 0 14px 0 8px;
-        	padding: 0;
-        	background-color : white;
+            height: 8px;
+            margin: 0 14px 0 8px;
+            padding: 0;
+            background-color : white;
         }
         
         .errorbox .tBorder {
-        	position: relative;
+            position: relative;
         }
         
         .errorbox .tBorder div {
             background: url("images/tooltip_arrow.png") no-repeat top left;
-        	width: 19px;
-        	height: 11px;
-        	position: absolute;
-        	top: -11px;
-        	left: 8px;
-        	padding: 0;
-        	margin: 0;
-        	border: 0;
+            width: 19px;
+            height: 11px;
+            position: absolute;
+            top: -11px;
+            left: 8px;
+            padding: 0;
+            margin: 0;
+            border: 0;
         }
         
         
         .errorbox .ebcontent{
             border-left: 1px solid #c3c3c3;
-        	padding: 0 14px 0 10px;
-        	overflow: hidden;
-        	background-color : white;
-        	margin : 0 8px 0 0;
+            padding: 0 14px 0 10px;
+            overflow: hidden;
+            background-color : white;
+            margin : 0 8px 0 0;
         }
         
         .errorbox .mRight {
-        	background: url("images/error_box_r.png") repeat-y top right;
-        	overflow: hidden;
+            background: url("images/error_box_r.png") repeat-y top right;
+            overflow: hidden;
         }
         
         .errorbox .bLeft{
-        	background: url("images/error_box_lb.png") no-repeat top left;
-        	width: 8px;
-        	height: 16px;
-        	float: left;
-        	margin: 0;
-        	padding: 0;
-        	border: 0;
+            background: url("images/error_box_lb.png") no-repeat top left;
+            width: 8px;
+            height: 16px;
+            float: left;
+            margin: 0;
+            padding: 0;
+            border: 0;
         }
         
         .errorbox .bRight{
-        	background: url("images/error_box_rb.png") no-repeat top right;
-        	width: 14px;
-        	height: 16px;
-        	float: right;
-        	margin: 0;
-        	padding: 0;
-        	border: 0;
+            background: url("images/error_box_rb.png") no-repeat top right;
+            width: 14px;
+            height: 16px;
+            float: right;
+            margin: 0;
+            padding: 0;
+            border: 0;
         }
         
         .errorbox .bBar{
-        	background: url("images/error_box_b.png") repeat-x bottom left;
-        	height: 16px;
-        	margin: 0 14px 0 8px;
-        	padding: 0;
-        	border: 0;
+            background: url("images/error_box_b.png") repeat-x bottom left;
+            height: 16px;
+            margin: 0 14px 0 8px;
+            padding: 0;
+            border: 0;
         }
         
         .errorbox .ebcontent .titleBar {
             margin-bottom: 8px;
-        	font-weight: bold;
-        	color: #327fbd;
+            font-weight: bold;
+            color: #327fbd;
         }
         
         .errorbox .close {
-        	width: 13px;
-        	height: 13px;
-        	background: url("images/close.png") no-repeat top left;
-        	overflow: hidden;
-        	cursor : default;
-        	position : absolute;
-        	right : 13px;
-        	top : 6px;
+            width: 13px;
+            height: 13px;
+            background: url("images/close.png") no-repeat top left;
+            overflow: hidden;
+            cursor : default;
+            position : absolute;
+            right : 13px;
+            top : 6px;
         }
         
         .errorbox .close:hover{
@@ -2258,9 +2720,9 @@
         }
         
         .errorbox .ebcontent span{
-        	display: block;
-        	padding: 4px 0;
-        	
+            display: block;
+            padding: 4px 0;
+            
         }
         
         .errorbox strong{
@@ -2272,22 +2734,22 @@
 
     <j:presentation>
         <j:main container="div[4]/div/span" close="div[4]/div/div/a">
-        	<div class="errorbox">
-            	<div class="tLeft"> </div>
-        		<div class="tRight"> </div>
-        		<div class="tBorder"><div> </div></div>
+            <div class="errorbox">
+                <div class="tLeft"> </div>
+                <div class="tRight"> </div>
+                <div class="tBorder"><div> </div></div>
         
-        		<div class="mRight">
-        			<div class="ebcontent">
-        				<div class="titleBar"><a class="close" href="javascript:void(0)" onclick="return false"> </a></div>
-        	            <span> </span>
-        			</div>
-        		</div>
+                <div class="mRight">
+                    <div class="ebcontent">
+                        <div class="titleBar"><a class="close" href="javascript:void(0)" onclick="return false"> </a></div>
+                        <span> </span>
+                    </div>
+                </div>
         
-        		<div class="bLeft"> </div>
-        		<div class="bRight"> </div>
-        		<div class="bBar"> </div>
-        	</div>
+                <div class="bLeft"> </div>
+                <div class="bRight"> </div>
+                <div class="bBar"> </div>
+            </div>
         </j:main>
     </j:presentation>
 </j:errorbox>
@@ -2297,44 +2759,43 @@
 <j:bar name="bar">
     <j:style><![CDATA[
         .bar{
-           	color: #4b4b4b;
-           	font-family : Tahoma;
-           	font-size : 8pt;
-           	padding : 20px 0 26px 0;
+           color: #4b4b4b;
+           font-family : Tahoma;
+           font-size : 8pt;
+           padding : 20px 0 26px 0;
         }
         
         .bar .contents {
-        	clear: both;
-           	border-top: 1px solid #c3c3c3;
-        	border-left: 1px solid #c3c3c3;
-        	border-right: 1px solid #c3c3c3;
-        	background: #fafbfc;
-        	padding: 7px;
-        	overflow: hidden;
-        	height : 100%;
-        	padding : 15px;
-        	margin-top : -20px;
+            clear: both;
+            border-top: 1px solid #c3c3c3;
+            border-left: 1px solid #c3c3c3;
+            border-right: 1px solid #c3c3c3;
+            background: #fafbfc;
+            padding: 7px;
+            height : 100%;
+            padding : 15px;
+            margin-top : -20px;
         }
         
         .bar .barFooter{
-        	clear: both;
-        	height: 15px;
-        	background: url(images/tab_pag_lb.png) no-repeat bottom left;
-        	position : absolute;
-        	bottom : 0;
-        	width : 100%;
+            clear: both;
+            height: 15px;
+            background: url(images/tab_pag_lb.png) no-repeat bottom left;
+            position : absolute;
+            bottom : 0;
+            width : 100%;
         }
         
         .bar .barFooter div{
-        	background: url(images/tab_pag_rb.png) no-repeat bottom right;
+            background: url(images/tab_pag_rb.png) no-repeat bottom right;
         }
         
         .bar .barFooter div div{
-        	border-bottom: 1px solid #c3c3c3;
-        	background-color: #fafbfc;
-        	background-image: none;
-        	height: 14px;
-        	margin: 0 14px;
+            border-bottom: 1px solid #c3c3c3;
+            background-color: #fafbfc;
+            background-image: none;
+            height: 14px;
+            margin: 0 14px;
         }
     ]]></j:style>
 
@@ -2352,14 +2813,14 @@
     <j:style><![CDATA[
         .frame{
             position: relative;
-            padding: 10px 7px 7px 7px;
+            padding: 12px 7px 7px 7px;
             display: block;
             margin : 0 0 0 0;
             border: 1px solid #dcd8d8;
-            color: #4b4b4b;
-        	font-family: Tahoma;
-        	font-size: 8pt;
-        	cursor : default;
+            color: #333;
+            font-family: Tahoma;
+            font-size: 8pt;
+            cursor : default;
         }
 
         .frame .legend{
@@ -2427,24 +2888,24 @@
 <!-- ********** END **********    -->
 
 <j:img name="img">
-	<j:style><![CDATA[
-	    .img{
-	        padding : 10px;
-	        border : 1px solid #666;
-	    }
-	    
-	    .img img{
-	        margin : auto;
-	    }
-	]]></j:style>
-	
-	<j:presentation>
-		<j:main image="img/@src">
-		    <div class="img">
-			    <img src="" />
-			</div>
-		</j:main>
-	</j:presentation>
+    <j:style><![CDATA[
+        .img{
+            padding : 10px;
+            border : 1px solid #666;
+        }
+        
+        .img img{
+            margin : auto;
+        }
+    ]]></j:style>
+    
+    <j:presentation>
+        <j:main image="img/@src">
+            <div class="img">
+                <img src="" />
+            </div>
+        </j:main>
+    </j:presentation>
 </j:img>
 <j:markupedit name="markupedit">
     <j:style><![CDATA[
@@ -2641,13 +3102,13 @@
 <j:chart name="chart">
     <j:style><![CDATA[
     .chart {
-		top: 0px;
-		left: 0px;
-		width: 550px;
-    	height: 370px;  
-		padding: 0px 0px 0px 0px; 	 
-		background-color:white;	
-	}
+        top: 0px;
+        left: 0px;
+        width: 550px;
+        height: 370px;  
+        padding: 0px 0px 0px 0px;      
+        background-color:white;    
+    }
     ]]></j:style>
 
     <j:presentation>
@@ -5158,179 +5619,179 @@
 </j:button>
 
 <j:scrollbar name="scrollbar">
-	<j:style><![CDATA[
-		.scrollbar{
-			height: 150px;
-			position: absolute;
-			background: #D4D0C8 url(images/raster.gif);
-			width: 16px;
-			margin: 2px 0 0 -18px;
-			overflow: hidden;
-		}
-		
-		.scrollbar .btnup, .scrollbar .btndown, .scrollbar .indicator{
-			font-family: MS Sans Serif;
-			font-size: 8pt;
-			border: 2px outset;
-			width: 12px;
-			height: 12px;
-			overflow: hidden;
-			text-align: center;
-			font-weight: bold;
-			cursor: default;
-			
-			-moz-border-top-colors: #D4D0C8 #FFFFFF;
-			-moz-border-left-colors: #D4D0C8 #FFFFFF;
-			-moz-border-bottom-colors: black gray;
-			-moz-border-right-colors: black gray;
-		}
-		
-		body .scrollbar .btnup.btnupdown, body .scrollbar .btndown.btndowndown{
-			border: 1px solid gray;
-			padding: 1px 1px 1px 1px;
-			background-position: 4px 6px;
-		}
-		
-		.scrollbar .btnup{
-			background: #D4D0C8 url(images/scrollup.gif) no-repeat 2px 4px;
-		}
-		
-		.scrollbar .btndown{
-			background: #D4D0C8 url(images/scrolldown.gif) no-repeat 2px 4px;
-			position: absolute;
-			bottom: 0px;
-		}
-		
-		.scrollbar .indicator{
-			height: 10px;
-			position: absolute;
-			overflow: hidden;
-			background-color: #D4D0C8;
-		}
-		
-		.scrollbar .slidefast{
-			position: absolute;
-			overflow: hidden;
-			background-color: #353535;
-			height: 10px;
-			width: 16px;
-			display: none;
-			overflow: hidden;
-		}
-	]]></j:style>
-	
-	<j:presentation>
-		<j:main btnup="div[1]" indicator="div[2]" btndown="div[3]" slidefast="div[4]">
-			<div class='scrollbar'>
-				<div class='btnup'> </div>
-				<div class='indicator'> </div>
-				<div class='btndown'> </div>
-				<div class='slidefast'> </div>
-			</div>
-		</j:main>
-	</j:presentation>
+    <j:style><![CDATA[
+        .scrollbar{
+            height: 150px;
+            position: absolute;
+            background: #D4D0C8 url(images/raster.gif);
+            width: 16px;
+            margin: 2px 0 0 -18px;
+            overflow: hidden;
+        }
+        
+        .scrollbar .btnup, .scrollbar .btndown, .scrollbar .indicator{
+            font-family: MS Sans Serif;
+            font-size: 8pt;
+            border: 2px outset;
+            width: 12px;
+            height: 12px;
+            overflow: hidden;
+            text-align: center;
+            font-weight: bold;
+            cursor: default;
+            
+            -moz-border-top-colors: #D4D0C8 #FFFFFF;
+            -moz-border-left-colors: #D4D0C8 #FFFFFF;
+            -moz-border-bottom-colors: black gray;
+            -moz-border-right-colors: black gray;
+        }
+        
+        body .scrollbar .btnup.btnupdown, body .scrollbar .btndown.btndowndown{
+            border: 1px solid gray;
+            padding: 1px 1px 1px 1px;
+            background-position: 4px 6px;
+        }
+        
+        .scrollbar .btnup{
+            background: #D4D0C8 url(images/scrollup.gif) no-repeat 2px 4px;
+        }
+        
+        .scrollbar .btndown{
+            background: #D4D0C8 url(images/scrolldown.gif) no-repeat 2px 4px;
+            position: absolute;
+            bottom: 0px;
+        }
+        
+        .scrollbar .indicator{
+            height: 10px;
+            position: absolute;
+            overflow: hidden;
+            background-color: #D4D0C8;
+        }
+        
+        .scrollbar .slidefast{
+            position: absolute;
+            overflow: hidden;
+            background-color: #353535;
+            height: 10px;
+            width: 16px;
+            display: none;
+            overflow: hidden;
+        }
+    ]]></j:style>
+    
+    <j:presentation>
+        <j:main btnup="div[1]" indicator="div[2]" btndown="div[3]" slidefast="div[4]">
+            <div class='scrollbar'>
+                <div class='btnup'> </div>
+                <div class='indicator'> </div>
+                <div class='btndown'> </div>
+                <div class='slidefast'> </div>
+            </div>
+        </j:main>
+    </j:presentation>
 </j:scrollbar>
 <j:fastlist name="fastlist">
-	<j:style><![CDATA[
-		.fastlist{
-			width: 200px;
-			height: 500px;
-			position: relative;
-			border: 1px solid white;
-			border-color: gray white white gray;
-			background-color: white;
-			cursor: default;
-			overflow: hidden;
-		}
-		
-		.fastlist, .dragfastlist{
-			font-family: Tahoma;
-			font-size: 8pt;
-		}
-		
-		.fastlist INPUT{
-			float: left;
-			margin: -1px 0 0 0;
-			display: none;
-		}
-		
-		.fastlist DIV, .dragfastlist{
-			padding: 0;
-			height: 18px;
-		}
-		
-		.fastlist SPAN, .dragfastlist SPAN{
-			padding: 0 0 0 20px;
-			background: url(icons/icoMailFolder.gif) no-repeat 1px center;
-			height: 16px;
-			float: left;
-		}
-		
-		.fastlist U, .dragfastlist U{
-			text-decoration: none;
-			color: black;
-			cursor: default;
-			display: block;
-			padding: 2px 4px 2px 2px;
-			text-decoration: none;
-			white-space: nowrap;
-		}
-		
-		.fastlist .selected U{
-			background-color: #CCCCCC;
-			color: black;
-		}
-		.fastlist.fastlistFocus .selected U, .dragfastlist U{
-			color: white;
-			background-color: midnightblue;
-		}
-		.fastlist .indicate U{
-			border: 1px dotted gray;
-			padding: 1px 3px 1px 1px;
-		}
-		.fastlist.fastlistFocus .selected A:hover{color: white;}
-		
-		.fastlist #txt_rename{
-			border: 1px solid black;
-			padding: 1px 15px 1px 1px;
-			font-family: Tahoma;
-			font-size: 8pt;
-			color: black;
-			word-break: keep-all;
-			overflow: visible;
-			margin-top : 0px;
-			cursor: text;
-		}
-		
-		.fastlist .empty{
-			text-align: center;
-			padding: 3px 0 0 0;
-		}
-	]]></j:style>
-	
-	<j:presentation>
-		<j:main container=".">
-			<div class='fastlist'>
-			</div>
-		</j:main>
-		<j:item 
-			class			= "."
-			caption		= "span/u/node()"
-			icon			= "span"
-			select		= "span"
-		>
-			<div><span><u>-</u></span></div>
-		</j:item>
-		<j:dragindicator>
-			<div class='dragfastlist'><span><u>-</u></span></div>
-		</j:dragindicator>
-		<j:loading>
-			<div class="loading">Loading...</div>
-		</j:loading>
-		<j:empty caption="text()">
-			<div class="empty">-</div>
-		</j:empty>
-	</j:presentation>
+    <j:style><![CDATA[
+        .fastlist{
+            width: 200px;
+            height: 500px;
+            position: relative;
+            border: 1px solid white;
+            border-color: gray white white gray;
+            background-color: white;
+            cursor: default;
+            overflow: hidden;
+        }
+        
+        .fastlist, .dragfastlist{
+            font-family: Tahoma;
+            font-size: 8pt;
+        }
+        
+        .fastlist INPUT{
+            float: left;
+            margin: -1px 0 0 0;
+            display: none;
+        }
+        
+        .fastlist DIV, .dragfastlist{
+            padding: 0;
+            height: 18px;
+        }
+        
+        .fastlist SPAN, .dragfastlist SPAN{
+            padding: 0 0 0 20px;
+            background: url(icons/icoMailFolder.gif) no-repeat 1px center;
+            height: 16px;
+            float: left;
+        }
+        
+        .fastlist U, .dragfastlist U{
+            text-decoration: none;
+            color: black;
+            cursor: default;
+            display: block;
+            padding: 2px 4px 2px 2px;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        
+        .fastlist .selected U{
+            background-color: #CCCCCC;
+            color: black;
+        }
+        .fastlist.fastlistFocus .selected U, .dragfastlist U{
+            color: white;
+            background-color: midnightblue;
+        }
+        .fastlist .indicate U{
+            border: 1px dotted gray;
+            padding: 1px 3px 1px 1px;
+        }
+        .fastlist.fastlistFocus .selected A:hover{color: white;}
+        
+        .fastlist #txt_rename{
+            border: 1px solid black;
+            padding: 1px 15px 1px 1px;
+            font-family: Tahoma;
+            font-size: 8pt;
+            color: black;
+            word-break: keep-all;
+            overflow: visible;
+            margin-top : 0px;
+            cursor: text;
+        }
+        
+        .fastlist .empty{
+            text-align: center;
+            padding: 3px 0 0 0;
+        }
+    ]]></j:style>
+    
+    <j:presentation>
+        <j:main container=".">
+            <div class='fastlist'>
+            </div>
+        </j:main>
+        <j:item 
+            class            = "."
+            caption        = "span/u/node()"
+            icon            = "span"
+            select        = "span"
+        >
+            <div><span><u>-</u></span></div>
+        </j:item>
+        <j:dragindicator>
+            <div class='dragfastlist'><span><u>-</u></span></div>
+        </j:dragindicator>
+        <j:loading>
+            <div class="loading">Loading...</div>
+        </j:loading>
+        <j:empty caption="text()">
+            <div class="empty">-</div>
+        </j:empty>
+    </j:presentation>
 </j:fastlist>
 <j:notifier name="notifier">
     <j:style><![CDATA[
