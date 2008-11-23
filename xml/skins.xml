@@ -3388,6 +3388,27 @@
         .pointer{
             display : none;
         }
+        
+        .dginfo{
+            display : none;
+            overflow : hidden;
+            white-space : normal;
+            padding : 5px;
+            background-color : #f3f3f3;
+            margin-top : 3px;
+            margin-left : 6px;
+            position : relative;
+            left : -3px;
+            margin-bottom : 3px;
+        }
+        
+        .dginfo h3{
+            margin : 0 0 5px 0;
+        }
+        
+        .dginfo p{
+            margin : 0;
+        }
     ]]></j:style>
     <j:style condition="jpf.isIE"><![CDATA[
         .datagrid .headings div{
@@ -3427,6 +3448,8 @@
             rowhead     = "div[3]"
             body        = "div[4]"
             pointer     = "div[2]"
+            
+            widthdiff = "9"
         >
             <div class="datagrid">
                 <div class='headings'>
@@ -3442,18 +3465,10 @@
             <div>-<span></span></div>
         </j:headitem>
         
-        <j:dragheading class="." caption="text()">
-            <div class="dragheading">-<span></span></div>
-        </j:dragheading>
-
         <j:rowheaditem class="." caption="text()">
             <span>-</span>
         </j:rowheaditem>
         
-        <j:splitter>
-            <p class='dg_move_headers'> </p>
-        </j:splitter>
-
         <j:row class="." container=".">
             <div />
         </j:row>
@@ -3462,12 +3477,311 @@
             <div class='dragdg'> </div>
         </j:dragindicator>
 
-        <!-- requirement for column moving -->
         <j:cell caption="text()"><span>-</span></j:cell>
+
+        <j:container container=".">
+            <div class="dginfo">-</div>
+        </j:container>
 
         <j:loading>
             <div class="loading"><span></span><label>Loading...</label></div>
         </j:loading>
+        
+        <j:empty container=".">
+            <div class="empty"> </div>
+        </j:empty>
+    </j:presentation>
+</j:datagrid>
+<j:datagrid name="spreadsheet">
+    <j:style><![CDATA[
+        .spreadsheet{
+            position: relative;
+            border: 1px solid #c3c3c3;
+            background-color: white;
+            cursor: default;
+            
+            font-family: Tahoma;
+            font-size: 11px;
+            
+            padding: 18px 0 0 0;
+        }
+        
+        /*IE6 is all else fails .fixed {
+            overflow : auto;
+        }*/
+
+        .spreadsheet .headings{
+            position : relative;
+            top : 0;
+            left : 0;
+            height : 18px;
+            z-index : 10;
+            background-color : #e6e6e6;
+            margin : -18px 16px 0 0;
+            white-space : nowrap;
+        }
+        
+        .fixed .headings{
+            overflow : hidden;
+            z-index : 100;
+        }
+        
+        .spreadsheet .headings span{
+            display : inline-block;
+            height : 15px;
+        }
+        
+        .spreadsheet .headings span b{    
+            font-weight : normal;
+            padding : 1px 0 1px 0;
+            border : 1px solid #c3c3c3;
+            border-width : 0 1px 1px 1px;
+            
+            background : #e6e6e6 no-repeat 0 50%;
+            overflow : hidden;
+            text-overflow : ellipsis;
+            
+            padding : 1px 1px 1px 3px;
+            display : block;
+            height : 15px;
+            margin-left : -1px;
+            text-align : center;
+        }
+        
+        .spreadsheet .headings span.hover{
+        }
+        
+        .spreadsheet .headings span.down, .spreadsheet .headings span.drag{
+        }
+        
+        .spreadsheet .headings span.drag{
+            border : 1px solid white;
+        }
+        
+        .spreadsheet .records{
+            overflow-x: hidden;
+            overflow-y: scroll;
+            height : 100%;
+            padding : 17px 0 0 0;
+            position : relative;
+            top : -18px;
+            white-space : nowrap;
+        }
+        
+        .fixed .records{
+            overflow-x: auto;
+        }
+        
+        .spreadsheet .records div b{
+            font-weight : normal;
+            padding : 2px 1px 2px 3px;
+            display : block;
+            border : 1px solid #e6e6e6;
+            overflow : hidden;
+            height : 13px;
+            margin-left : -1px;
+        }
+        
+        .spreadsheet .records div span{
+            display : inline-block;
+            
+            height : 17px;
+            background : white no-repeat 0 50%;
+            text-overflow : ellipsis;
+            white-space : nowrap;
+            cursor : url(images/excel.cur);
+        }
+        
+        .spreadsheet .records div{
+            height : 18px;
+        }
+        
+        .spreadsheet .records .cellselected b{
+            border : 3px solid black;
+            margin : -1px -1px 0 -2px;
+            padding : 1px 0 1px 2px;
+            position : relative;
+            z-index : 10;
+        }
+        
+        /*.spreadsheet .records .cellselected{
+            background-color: #f0f0f0;
+            color: #4b4b4b;
+        }
+        .spreadsheetFocus .records .cellselected{
+            color: white;
+            background-color: #25a8e7;
+        }*/
+        
+        .spreadsheet .move_pointer{
+            height : 100px;
+            width : 2px;
+            position : absolute;
+            top : 0;
+            margin : -10px 0 0 -4px;
+            width : 9px;
+            height : 38px;
+            background : url(images/column_picker.gif) no-repeat 0 0;
+            overflow : hidden;
+            z-index : 1000;
+        }
+        
+        .spreadsheet .size_pointer{
+            border : 1px dotted gray;
+            border-width : 0 1px 0 1px;
+            height : 100%;
+            position : absolute;
+            top : 0px;
+            z-index : 1000;
+            cursor : w-resize;
+        }
+        
+        .pointer{
+            display : none;
+        }
+        
+        .spreadsheet #txt_rename{
+            font-family: Tahoma;
+            font-size: 8pt;
+            word-break: keep-all;
+            overflow: hidden;
+            cursor: text;
+            background-color: white;
+            
+            height : 14px;
+            border : 2px solid black;
+            margin : -1px -1px 0 -2px;
+            padding : 2px 1px 1px 3px;
+            position : relative;
+            z-index : 10;
+        }
+        
+        .spreadsheet input#txt_rename{
+            outline : none;
+            padding : 2px 0 1px 2px;
+        }
+    ]]></j:style>
+    <j:style condition="jpf.isIE"><![CDATA[
+        .spreadsheet .headings div{
+        }
+        
+        .spreadsheet .records div span{
+        }
+    ]]></j:style>
+    <j:style condition="jpf.isIE6"><![CDATA[
+        .spreadsheet{
+            overflow-x : hidden;
+            padding-right : 16px;
+        }
+        
+        .fixed .headings{
+            width : 100%;
+        }
+        
+        .fixed .records{
+            width : 100%;
+            padding-left : -16px;
+            text-index : expression(this.style.paddingLeft='16px');
+        }
+        
+        .fixed .records div{
+            margin-left : -16px;
+        }
+        
+        .fixed .records div span{
+            overflow : hidden;
+        }
+        
+        .fixed .records div span b{
+            width : expression(this.parentNode.offsetWidth - 6);
+        }
+        
+        .spreadsheet .records .cellselected b{
+        }
+    ]]></j:style>
+    <j:style condition="jpf.isGecko &amp;&amp; !jpf.isGecko3"><![CDATA[
+        .spreadsheet .headings{
+            padding-top : 2px;
+            height : 15px;
+        }
+        
+        .spreadsheet .headings span{
+            display : -moz-inline-box;
+            overflow : visible;
+            position : relative;
+        }
+        
+        .spreadsheet .records{
+        }
+        
+        .spreadsheet .records div span{
+            display : -moz-inline-box;
+            overflow : visible;
+            position : relative;
+        }
+    ]]></j:style>
+    <j:style condition="jpf.isGecko">
+        .spreadsheet .records .cellselected b{
+            margin : -1px -1px 0 -2px;
+            padding : 0 0 1px 2px;
+        }
+    
+        /* Firefox bug (3) */
+        .spreadsheet input#txt_rename{
+            position : relative;
+            top : -6px;
+            padding-top : 1px;
+        }
+    </j:style>
+
+    <j:presentation>
+        <j:main
+            interaction = "p"
+            head        = "div[1]"
+            rowhead     = "div[3]"
+            body        = "div[4]"
+            pointer     = "div[2]"
+            
+            widthdiff    = "2"
+            defaultwidth = "70"
+            scalerename  = "true"
+        >
+            <div class="spreadsheet">
+                <div class='headings'>
+
+                </div>
+                <div class='pointer'> </div>
+                <div class='row_headers'> </div>
+                <div class='records'> </div>
+            </div>
+        </j:main>
+
+        <j:headitem class="." caption="b/text()">
+            <span><b>-</b></span>
+        </j:headitem>
+        
+        <j:rowheaditem class="." caption="text()">
+            <span>-</span>
+        </j:rowheaditem>
+        
+        <j:row class="." container=".">
+            <div />
+        </j:row>
+        
+        <j:dragindicator>
+            <div class='dragdg'> </div>
+        </j:dragindicator>
+
+        <j:cell caption="b/text()"><span><b>-</b></span></j:cell>
+
+        <j:container container=".">
+            <div class="dginfo">-</div>
+        </j:container>
+
+        <j:loading>
+            <div class="loading"><span></span><label>Loading...</label></div>
+        </j:loading>
+        
         <j:empty container=".">
             <div class="empty"> </div>
         </j:empty>
