@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 <j:skin xmlns:j="http://www.javeline.com/2005/jml" xmlns="http://www.w3.org/1999/xhtml">
 <j:modalwindow name="modalwindow">
-    <alias>window</alias>
+    <j:alias>window</j:alias>
     <j:style><![CDATA[
         .north{cursor: url(cursor/n-point.cur);}
         .west{cursor: url(cursor/w-point.cur);}
@@ -242,7 +242,7 @@
     </j:presentation>
 </j:modalwindow>
 <j:modalwindow name="roundedged">
-    <alias>window</alias>
+    <j:alias>window</j:alias>
     <j:style><![CDATA[
         .north{cursor: url(cursor/n-point.cur);}
         .west{cursor: url(cursor/w-point.cur);}
@@ -1081,8 +1081,8 @@
     </j:presentation>
 </j:bar>
 <j:button name="button">
-    <alias>submit</alias>
-    <alias>reset</alias>
+    <j:alias>submit</j:alias>
+    <j:alias>reset</j:alias>
     <j:style><![CDATA[
         .jpf_btn{
             color: #4b4b4b;
@@ -1247,7 +1247,7 @@
     * Textbox isn't scalable - done
 -->
 <j:textbox name="textbox">
-    <alias>input</alias>
+    <j:alias>input</j:alias>
     <j:style><![CDATA[
         .tb {
             background: white url("images/textarea_background2.png") no-repeat 0 0;
@@ -3455,8 +3455,8 @@
     </j:presentation>
 </j:progressbar>
 <j:slider name="slider">
-    <alias>range</alias>
-    <alias>horizontal</alias>
+    <j:alias>range</j:alias>
+    <j:alias>horizontal</j:alias>
     
     <j:style><![CDATA[
         .slider {
@@ -4359,7 +4359,7 @@
     </j:presentation>
 </j:markupedit>
 <j:testobject name="testobject">
-    <alias>aliasofobject</alias>
+    <j:alias>aliasofobject</j:alias>
     
     <j:style><![CDATA[
         .testobject{
