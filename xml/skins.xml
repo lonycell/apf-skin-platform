@@ -133,6 +133,7 @@
             /*background: url(images/spacer.gif);*/
             background: white;
             opacity: 0.3;
+            filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);
 
             position: absolute;
             left: 0;
@@ -151,7 +152,7 @@
             padding: 4px 4px 2px 2px;
             top: 0;
             right: 0;
-            background: url(images/title.gif) repeat-x;
+            /*background: url(images/title.gif) repeat-x;*/
         }
 
         .window .title blockquote div{
@@ -205,12 +206,14 @@
             border: 1px solid black;
             background: #CCC;
             opacity: 0.4;
+            filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);
         }
         
         #jpf_outline.resize{
             border: 3px solid black;
             background: #CCC;
             opacity: 0.3;
+            filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);
         }
     ]]></j:style>
 
@@ -382,6 +385,7 @@
             /*background: url(images/spacer.gif);*/
             background: white;
             opacity: 0.3;
+            filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);
 
             position: absolute;
             left: 0;
@@ -455,12 +459,14 @@
             border: 1px solid black;
             background: #CCC;
             opacity: 0.4;
+            filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);
         }
         
         #jpf_outline.resize{
             border: 3px solid black;
             background: #CCC;
             opacity: 0.3;
+            filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);
         }
     ]]></j:style>
     <j:presentation>
@@ -616,6 +622,7 @@
             /*background: url(images/spacer.gif);*/
             background: white;
             opacity: 0.3;
+            filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);
 
             position: absolute;
             left: 0;
@@ -688,12 +695,14 @@
             border: 1px solid black;
             background: #CCC;
             opacity: 0.4;
+            filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);
         }
         
         #jpf_outline.resize{
             border: 3px solid black;
             background: #CCC;
             opacity: 0.3;
+            filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);
         }
     ]]></j:style>
 
@@ -775,7 +784,8 @@
 
         .alert .content{
             border-left: 1px solid #c3c3c3;
-            padding: 0 20px 0 10px;
+            padding: 0 0 0 10px;
+            margin : 0 9px 0 0;
             /*overflow: hidden;*/
             height : 100%;
             position : relative;
@@ -889,9 +899,10 @@
             position : relative;
             background : white;
 			overflow: visible;
+			margin : 0 8px 0 0;
         }
         
-        .hidden .content{
+        .hidden .content, .noscrollbar .content{
             overflow: hidden;
         }
         
@@ -988,10 +999,8 @@
     
         .searchbar .content{
             border-left: 1px solid #c3c3c3;
-            padding: 3px 13px 0 5px;
             height : 100%;
             position : relative;
-            background : white;
 			overflow: hidden;
         }
         
@@ -1005,6 +1014,7 @@
 			position: absolute;
 			top: 0;
 			right: 0;
+            z-index: 1;
         }
         .searchbar .footer{
 		    overflow: auto;
@@ -2186,6 +2196,7 @@
         
         .dragthumb{
             opacity : 0.7;
+            filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
         }
         
         .thumbs, .dragthumb{
@@ -2199,23 +2210,31 @@
             padding: 0;
             float: left;
             display: inline;
-            margin: 3px 3px 0 3px;
+            margin: 5px 5px 2px 5px;
+            padding: 0 0 1px 0;
+            border: 1px solid #dcdcdc;
         }
-
+        
         .thumbs blockquote, .dragthumb blockquote{
             width: 90px;
             height: 90px;
-            border: 1px solid #dcdcdc;
-            margin: 2px 2px 2px 2px;
+            margin : 1px;
+            border : 1px solid white;
 
             background: white no-repeat 50% 50%;
+            float : left;
         }
         
-        .thumbs .selected blockquote, .dragthumb blockquote{
-            border: 3px solid #dcdcdc;
-            margin: 0 0 0 0;
+        .thumbs .primary blockquote{
+            border : 1px solid gray;
+            margin : 1px;
         }
-        .thumbs.thumbsFocus .selected blockquote, .dragthumb blockquote{
+        
+        .thumbs .selected, .dragthumb{
+            border: 3px solid #dcdcdc;
+            margin : 3px 3px 0 3px;
+        }
+        .thumbs.thumbsFocus .selected, .dragthumb{
             border-color: #25a8e7;
         }
 
@@ -2289,9 +2308,8 @@
         }
         
         .thumbs .dragInsert{
-            margin-left : -1px;
+            margin-left : 4px;
             border-left : 2px solid gray;
-            padding-left : 2px;
         }
         
         .thumb_attach blockquote{
@@ -2666,8 +2684,12 @@
         .mnulist .loading, .mnulist .empty, .mnulist .offline{
             font-weight : normal;
             color : #aaa;
-            padding : 5px;
+            padding : 5px 5px 0 5px;
             text-align : center;
+        }
+        
+        .mnulist .stdel, .mnulistFocus .stdel{
+            color : #ccc;
         }
     ]]></j:style>
     
@@ -2745,7 +2767,6 @@
             right: 0;
             top: 7px;
             display: block;
-            background: url(images/dragcorner.gif);
         }
     ]]></j:style>
 
@@ -2978,6 +2999,7 @@
         
         .dragtree{
             opacity : 0.5;
+            filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
             background : none;
         }
         
@@ -3122,6 +3144,7 @@
             overflow: hidden;
             background: url(images/spacer.gif);
             padding: 1px;
+            background : #f1f1f1;
         }
         
         .splitterFocus{
@@ -3219,6 +3242,9 @@
             cursor : default;
             height: 15px;
             margin : 0 0 0 2px;
+            overflow : hidden;
+            white-space : nowrap;
+            text-overflow : ellipsis;
         }
         
         .dropdownError .dropdownLeftBorder {
@@ -3715,6 +3741,10 @@
             width: 250px;            
         }
         
+        .errorbox .errorboxContent span{
+            background : transparent;
+        }
+        
         .errorbox .errorboxTop {
             background: url("images/errorbox_top.png") no-repeat top left;
             width: 250px;
@@ -3726,7 +3756,6 @@
             width: 250px;
             height: 16px;
         }
-                
         
         .errorbox .errorboxTop div {
             background: url("images/tooltip_arrow.png") no-repeat top left;
@@ -3741,7 +3770,6 @@
             z-index: 10000000;
         }
  
-        
         .errorbox .close {
             width: 13px;
             height: 13px;
@@ -3772,6 +3800,14 @@
             border: 0; 
         }
         
+        .rightbox{
+            margin-left : -205px;
+        }
+        
+        .rightbox .errorboxTop div {
+            right : 20px;
+            left : auto;
+        }
     ]]></j:style>
 
     <j:presentation>
@@ -4021,9 +4057,19 @@
             font-family : Arial,Helvetica,Sans-serif;
             font-size : 12px;
 			border: 1px solid #c3c3c3;
-			overflow: auto;
 			background: white none repeat scroll 0 0;
+			overflow : hidden;
+			padding-top : 46px;
+        }
+        
+        .previewBar .toolbar{
+            margin-top : -46px;
+        }
+        
+        .previewBar .preview{
+            overflow: auto;
 			padding: 10px;
+			height : 100%;
         }
 
     ]]></j:style>
@@ -4047,6 +4093,7 @@
             display: block;
             margin : 13px 0 0 0;*/
             margin : 0 0 5px 0;
+            cursor : default;
         }
 
         .frame .legend{
@@ -4058,6 +4105,7 @@
             padding: 0 2px 0 2px;
             margin: 0px;*/
             margin : 0 0 7px -7px;
+            cursor : default;
         }
     ]]></j:style>
     <j:style condition="jpf.isIE6">
@@ -4065,6 +4113,12 @@
     	    height: 1%;
     	}
     </j:style>
+    <j:style condition="!jpf.isIE">
+    	.frame .legend{
+    	    margin : 5px 0 7px -3px;
+    	}
+    </j:style>    
+    
     <j:presentation>
         <j:main container="." caption="legend/text()">
             <fieldset class='frame'><legend class="legend">-</legend></fieldset>
@@ -4116,6 +4170,28 @@
             z-index : 10;
             position : relative;*/
         }
+        
+        .section .sectionhead div{
+            float : right;
+            width : 14px;
+            height : 14px;
+            margin : -1px 3px 0 0;
+            border : 1px solid transparent;
+            background : no-repeat 2px 2px;
+        }
+        
+        .section .sectionhead div.hover{
+            border : 1px solid white;
+        }
+        .section .sectionhead .max{
+            background-image: url(images/cmswin_max.gif);
+        }
+        .sectionMax .sectionhead .max{
+            background-image: url(images/cmswin_restore.gif);
+        }
+        .section .sectionhead div.down{
+            background-color : white;
+        }
     ]]></j:style>
     <j:presentation>
         <j:main collapsed-height="20" 
@@ -4150,6 +4226,8 @@
         .upload .fileinput{
             -moz-user-focus: ignore;
             opacity: 0;
+            filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+            
             height: 22px;
             margin: -5px 0pt 0pt -200px;
             z-index: 1;
@@ -4836,6 +4914,10 @@
         .noscrollbar .headings {
 		    margin : -21px 1px 0 0;
 		}
+		.noscrollbar .datagrid{
+		    background : transparant;
+		}
+		
         .datagrid .headings div{
             display : inline-block;
             height : 15px;
@@ -4888,7 +4970,7 @@
         }
         
         .noscrollbar .records{
-            overflow-y : auto;
+            overflow-y : hidden;
         }
         
         .datagrid .records div span{
@@ -4902,6 +4984,10 @@
             background : white no-repeat 0 50%;
             text-overflow : ellipsis;
             white-space : nowrap;
+        }
+        
+        .noscrollbar .datagrid .records div span{
+            background-color : transparent;
         }
         
         .datagrid .records div{
@@ -4991,6 +5077,23 @@
         .datagrid .records .stdel span, .datagridFocus .records .stdel span{
             color : #ccc;
         }
+        
+        .dragdg{
+            border : 2px solid black;
+            width : 10px;
+            height : 5px;
+        }
+        
+        .datagrid .records .dragInsert{
+            border-top : 2px solid gray;
+            height : 17px;
+        }
+        
+        .datagrid .records .dragInsert span{
+            padding-top : 0px;
+            margin-bottom : 0;
+            background-position : 0 0;
+        }
     ]]></j:style>
     <j:style condition="jpf.isIE"><![CDATA[
         .datagrid .headings div{
@@ -5025,10 +5128,8 @@
 
     <j:presentation>
         <j:main
-            interaction = "p"
             head        = "div[1]"
-            rowhead     = "div[3]"
-            body        = "div[4]"
+            body        = "div[3]"
             pointer     = "div[2]"
             
             widthdiff = "9"
@@ -5039,7 +5140,6 @@
 
                 </div>
                 <div class='pointer'> </div>
-                <div class='row_headers'> </div>
                 <div class='records'> </div>
             </div>
         </j:main>
@@ -8500,13 +8600,12 @@
             padding: 2px 0 0 6px;
             margin: 0;
             font-size: 11px;
-            font-family:
             height: 20px;
             width: auto;
             overflow: hidden;
         }
 
-        .editor_popup input.editor_input,
+        .editor_popup .editor_input,
         .editor_popup select,
         .editor_popup button{
             position: relative;
@@ -8516,8 +8615,13 @@
             width: 120px;
             overflow: hidden;
         }
+        
+        .editor_popup .editor_input{
+            font-family : Arial;
+            height : 16px;
+        }
 
-        .editor_popup input.editor_checkbox{
+        .editor_popup .editor_checkbox{
             position: relative;
             float: right;
             margin: 6px 4px 0 0;
@@ -8736,10 +8840,24 @@
         {
             margin: 8px;
         }
+        h1{
+            margin : 15px 0 15px 0;
+        }
+        p
+        {
+            margin: 0;
+            padding: 0;
+        }
     ]]></j:docstyle>
 
     <j:presentation>
-        <j:main toolbar="div[1]" editor="div[2]" linked="textarea" iframe="true">
+        <j:main 
+          toolbar    = "div[1]" 
+          editor     = "div[2]" 
+          linked     = "textarea" 
+          iframe     = "true"
+          erroffsetx = "0"
+          erroffsety = "100">
             <div class="editor">
                 <div class="toolbar_container">
 
@@ -8767,17 +8885,19 @@
         <j:toolbars>
             <j:toolbar>
                 Bold, Italic, Underline, Strikethrough, |,
-                Sub, Sup, |, Table, |, Code, |,
-                Link, Unlink, Charmap, |,
-                Forecolor, Backcolor
+                Sub, Sup, |,
+                Table, |, justifyleft, justifycenter, justifyright,
+                justifyfull, |, Code, |, Anchor, 
+                Link, Unlink, Charmap
             </j:toolbar>
             <j:toolbar>
-                FontStyle, Paragraph, Fonts, Fontsize, |, RemoveFormat
+                FontStyle,  Paragraph, Fonts, Fontsize, |, RemoveFormat
             </j:toolbar>
             <j:toolbar>
-                Cut, Copy, Paste, PasteText, PasteWord, |,
-                Search, Replace, Bullist, NumList, |,
-                Outdent, Indent
+                Cut, Copy, Paste, PasteText, |,
+                Bullist, NumList, |,
+                Forecolor, Backcolor, |,
+                Search, Replace, |, Outdent, Indent
             </j:toolbar>
         </j:toolbars>
         <j:fonts>
@@ -8803,7 +8923,7 @@
             1, 2, 3, 4, 5, 6, 7
         </j:fontsizes>
         <j:blockformats>
-            h1, h2, h3, h4, h5, h6, pre, address, p
+            normal, h1, h2, h3, h4, h5, h6, pre, address
         </j:blockformats>
         <j:fontstyles><![CDATA[
             style1 = .style1 {
@@ -8859,7 +8979,7 @@
                 FontStyle, Paragraph, Fonts, Fontsize, |, RemoveFormat
             </j:toolbar>
             <j:toolbar>
-                Cut, Copy, Paste, PasteText, PasteWord, |,
+                Cut, Copy, Paste, PasteText, |,
                 Search, Replace, Bullist, NumList, |,
                 Outdent, Indent, Blockquote, |,
                 Undo, Redo, |,
@@ -8901,7 +9021,7 @@
             1, 2, 3, 4, 5, 6, 7
         </j:fontsizes>
         <j:blockformats>
-            h1, h2, h3, h4, h5, h6, pre, address, p
+            normal, h1, h2, h3, h4, h5, h6, pre, address
         </j:blockformats>
         <j:fontstyles><![CDATA[
             style1 = .style1 {
@@ -9068,12 +9188,14 @@
         .slideshow div .thumbnails .picture {
             border  : 2px solid white;
             opacity : 0.3;
+            filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);
             position: relative;
             margin  : 5px;
         }
 
         .slideshow div .thumbnails .picture:hover {
             opacity: 1;
+            filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
             cursor : pointer;
             border : 2px solid #464646;
         }
@@ -9081,6 +9203,7 @@
         .slideshow div .thumbnails .selected {
             border : 2px solid #464646;
             opacity: 1;
+            filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
         }
 
         .slideshow div .thumbnails .tprevious {
@@ -9252,159 +9375,6 @@
         </j:empty>
     </j:presentation>
 </j:list>
-<j:tree name="searchtree">
-    <j:style><![CDATA[
-        .searchtree{
-            overflow: auto;
-            position: relative;
-            border: 1px solid #c3c3c3;
-            background-color: #FAFBFC;
-            cursor: default;
-            margin : -1px 0 0 0;
-        }
-
-        .searchtree DIV{
-            padding: 5px 1px 5px 8px;
-            font-size: 8pt;
-            background-color : #ddd;
-            position : relative;
-            font-weight : bold;
-            margin : 1px 0 1px 0;
-        }
-        
-        .searchtree blockquote div{
-            background : #FAFBFC no-repeat 5px 3px;
-            padding : 3px 20px 3px 3px;
-            border : 0;
-            margin : 0;
-            cursor : pointer;
-            font-weight : normal;
-            position : relative;
-            height : 36px;
-            overflow : hidden;
-        }
-        
-        .searchtree blockquote div.hover{
-            background-color : #eee;
-        }
-        
-        .searchtree blockquote div.indicate{
-            border : 1px dotted gray;
-            padding : 2px 20px 2px 2px;
-        }
-        
-        .searchtree blockquote div.indicate .plus{
-            right : 2px;
-            top : 2px;
-        }
-        
-        .searchtree BLOCKQUOTE{
-            margin: 0;
-            display: none;
-            height: 0;
-            overflow: hidden;
-            background: repeat-y 0px center;
-        }
-        
-        .searchtree .message{
-            text-align: center;
-            padding: 8px 10px 0 0;
-            color: #AAA;
-        }
-        
-        .searchtree .nav blockquote{
-            padding-left : 15px;
-        }
-        
-        .searchtree blockquote span.visual{
-            width : 35px;
-            height : 35px;
-            background : white no-repeat 50% 50%;
-            float : left;
-            border : 1px solid #ddd;
-            margin : 0 5px 0 0;
-            display : block;
-        }
-        
-        .searchtree div h2{
-            font-size : 8pt;
-            margin : -1px 0 0 43px;
-        }
-        
-        .searchtree div p{
-            margin : -1px 0 0 43px;
-        }
-        
-        .searchtree .plus{
-            display : block;
-            position : absolute;
-            overflow : hidden;
-            width : 10px;
-            height : 10px;
-            padding : 1px 1px 2px 2px;
-            border : 1px solid #ddd;
-            right : 3px;
-            top : 3px;
-            line-height : 10px;
-            background : white;
-        }
-        
-        .searchtree .plus:hover{
-            background-color : #bbb;
-            color : white;
-        }
-        
-        .searchtree a{
-            float : right;
-            text-decoration : none;
-            width : 10px;
-            height : 15px;
-            color : #333;
-            font-size : 7pt;
-            line-height : 10px;
-            text-align : center;
-            display : block;
-            padding : 6px 2px 2px 2px;
-            margin : -5px -1px 0 0;
-            border-left : 1px solid #bbb;
-            background : #e6e6e6;
-            position : relative;
-        }
-        
-        .searchtree a:hover{
-            color: white;
-            background-color: #25a8e7;
-        }
-        
-        .searchtree .message{
-            background : white;
-            font-weight : normal;
-        }
-    ]]></j:style>
-
-    <j:presentation>
-        <j:main container="." startclosed="false" openclose="onnever">
-            <div class="searchtree">
-
-            </div>
-        </j:main>
-        <j:item
-            class        = "."
-            caption      = "text()"
-            select       = "."
-            container    = "following-sibling::blockquote"
-        >
-            <div>-</div>
-            <blockquote> </blockquote>
-        </j:item>
-        <j:loading>
-            <div class="loading"><span> </span><label>Loading...</label></div>
-        </j:loading>
-        <j:empty caption=".">
-            <div class="message"> </div>
-        </j:empty>
-    </j:presentation>
-</j:tree>
 <j:bar name="basic">
     <j:style><![CDATA[
         .basic{
@@ -9677,6 +9647,7 @@
             border           : 1px solid #a09d9d;
             background-color : #cac8c9;
             opacity          : 0.7;
+            filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
         }
 
         .calSlider .row .active {
@@ -9693,7 +9664,7 @@
      ]]></j:style>
 
     <j:presentation>
-        <j:main label="div[2]/text()" button=".">
+        <j:main label="div[2]" button=".">
             <div class='caldropdown'>
                 <div class='caldropdownLeftBorder'> </div>
                 <div class='caldropdownlabel'>-</div>
@@ -9762,14 +9733,15 @@
         
         .propedit .headings span b{    
             font-weight : normal;
-            padding : 1px 0 1px 0;
             
             background : #e6e6e6 no-repeat 0 50%;
             overflow : hidden;
             text-overflow : ellipsis;
             
-            padding : 1px 1px 0px 3px;
+            padding : 2px 1px 0px 3px;
+            margin : 0 -1px 0 -1px;
             border-right : 1px solid #cfcbc2;
+            border-left : 1px solid #cfcbc2;
             display : block;
             height : 15px;
             font-weight : bold;
@@ -9798,16 +9770,6 @@
         .propedit .headings span.drag{
             border : 1px solid white;
         }
-        
-        /* Disabled this one when using an iframe 
-        .propedit .records{
-            overflow-x: hidden;
-            overflow-y: scroll;
-            height : 100%;
-            position : relative;
-            padding : 0;
-            white-space : nowrap;
-        }*/
         
         .virtual .records{
             overflow : hidden;
@@ -9844,51 +9806,51 @@
             overflow-x : auto;
         }
         
-        .propedit .records div b{
+        .propedit .records div dl{
             font-weight : normal;
             padding : 2px 1px 2px 3px;
             display : block;
             border : 1px solid #cfcbc2;
             overflow : hidden;
-            height : 13px;
-            margin-left : -1px;
+            min-height : 13px;
+            margin : 0 -1px 0 -1px;
             cursor : default;
         }
         
         .propedit .records div span{
             display : inline-block;
+            vertical-align : top;
             
-            height : 17px;
             background : white no-repeat 0 50%;
             text-overflow : ellipsis;
             white-space : nowrap;
         }
         
         .propedit .records div{
-            height : 18px;
+            margin-bottom : -1px;
         }
         
-        .propedit .records .tall b{height : 36px;}
+        .propedit .records .tall dl{height : 36px;}
         .propedit .records .tall span{height : 40px;}
         .propedit .records .tall{height : 41px;}
         
-        .propedit .records .selected .celllabel b{
+        .propedit .records .selected .celllabel dl{
             background-color: #f0f0f0;
             color: black;/*#4b4b4b;*/
         }
         
-        .propeditFocus .records .selected .celllabel b{
+        .propeditFocus .records .selected .celllabel dl{
             color: white;
             background-color: #25a8e7;
         }
         
-        .propedit .records .cellselected b{
+        .propedit .records .cellselected dl{
             background : white;
             color : black;
             cursor : text;
         }
         
-        .propeditFocus .records .cellselected b{
+        .propeditFocus .records .cellselected dl{
         }
         
         /*.propedit .records .cellselected{
@@ -9946,6 +9908,8 @@
         .propedit input#txt_rename{
             outline : none;
             padding : 2px 0 1px 2px;
+            margin : 0 -2px 0 -1px;
+            border-width : 1px 1px 1px 1px;
         }
         
         .propedit .ddbtn{
@@ -9961,13 +9925,15 @@
             text-decoration : none;
         }
         
-        .ddpropeditcontainer, .ddjmlcontainer{
+        .propeditcontainerdropdown, .propeditcontainerset, .ddjmlcontainer{
             display : none;
             text-decoration : none;
             border : 1px solid black;
             background : white;
             position : absolute;
             overflow : hidden;
+            margin : 0;
+            padding : 0;
         }
         
         .ddjmlcontainer{ 
@@ -9975,10 +9941,10 @@
             overflow : hidden;
         }
         
-        .ddpropeditcontainer div{
+        .propeditcontainerdropdown div, .propeditcontainerset div{
             display: block;
             height: 15px;
-            padding: 1px 3px 1px 4px;
+            padding: 1px 3px 1px 3px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -9987,9 +9953,30 @@
             cursor: default;
         }
         
-        .ddpropeditcontainer div.hover {
+        .propeditcontainerdropdown div.hover{
             background-color: #25a8e7;
             color: #ffffff;
+        }
+        
+        .propeditcontainerset div.hover{
+            background-color : #eee;
+        }
+        
+        .propeditcontainerset div{
+            padding : 2px 3px 0 1px;
+        }
+        
+        .propeditcontainerset div span{
+            width: 12px;
+            height: 12px;
+            overflow: hidden;
+            margin : 1px 3px 0 1px;
+            float : left;
+            background: url("images/checkbox.png") no-repeat 0 -12px;
+        }
+        
+        .propeditcontainerset div.checked span{
+            background-position: 0 -24px;
         }
         
         .propedit .btncustom{
@@ -10026,17 +10013,66 @@
             color: #AAA;
             font-weight : normal;
         }
+        
+        .propedit .item{
+            padding : 3px 4px 4px 2px;
+            /*border-bottom : 1px solid #eee;*/
+            margin : 0 -3px 0 -3px;
+            cursor : default;
+        }
+        
+        .propedit .item i{
+            overflow : hidden;
+            width : 14px;
+            height : 14px;
+            background : #eee;
+            text-align : center;
+            margin : 0 5px 0 2px;
+            font-size : 10px;
+            float : left;
+            font-style: normal; 
+        }
+        
+        .propedit .item i:hover{
+            color: white;
+            background-color: #25a8e7;
+        }
+        
+        .propedit .newitem{
+            padding : 2px;
+            margin : -1px 0 -1px 0;
+            cursor : text;
+            border-bottom : 1px dotted #cfcbc2;
+            height : 14px;
+        }
+        
+        .propedit div span.propedit_lookupmultiple dl{
+            padding : 0;
+        }
+        
+        .propedit div span.propedit_lookupmultiple dl div, .propedit div span.propedit_childrenmultiple dl div{
+            position : relative;
+            padding-left : 22px;
+        }
+        
+        .propedit div span.propedit_lookupmultiple dl div i, .propedit div span.propedit_childrenmultiple dl div i{
+            position : absolute;
+            left : 1px;
+        }
+        
+        .propedit div span.propedit_lookupmultiple dl div i{
+            left : 3px;
+        }
+        
+        .propedit div span.propedit_lookupmultiple #txt_rename{
+            margin : -1px;
+        }
     ]]></j:style>
     <j:style condition="jpf.isIE"><![CDATA[
         .propedit .headings div{
         }
         
         .propedit .records div span{
-        }
-        
-        .propedit .records .cellselected b{
-            margin : -1px -1px 0 -2px;
-            padding : 0px 0px 1px 1px;
         }
     ]]></j:style>
     <j:style condition="jpf.isIE6"><![CDATA[
@@ -10069,7 +10105,7 @@
             padding : 18px 0 0 0;
         }
         
-        .fixed .records div span b{
+        .fixed .records div span dl{
             width : expression(this.parentNode.offsetWidth - 5);
         }
         
@@ -10102,6 +10138,28 @@
             -moz-border-bottom-colors: #FFFFFF #D4D0C8;
             -moz-border-right-colors: #FFFFFF #D4D0C8;
         }
+        
+        .propedit .item i{
+            margin : 0 5px 0 3px;
+            font-size : 11px;
+            line-height : 11px;
+        }
+        
+        .propedit .records{
+            overflow-x: hidden;
+            overflow-y: auto;
+            height : 100%;
+            position : absolute;
+            top : 0;
+            left : 0;
+            width : 100%;
+            padding : 0;
+            white-space : nowrap;
+        }
+        
+        .propedit .records>div:first-child{
+            margin-top : 17px;
+        }
     ]]></j:style>
     <j:style condition="jpf.isGecko &amp;&amp; !jpf.isGecko3"><![CDATA[
         .propedit .headings{
@@ -10120,7 +10178,7 @@
             height : 18px;
         }
         
-        .propedit .records div span b{
+        .propedit .records div span dl{
             border-width : 0 1px 1px 0;
         }
         
@@ -10145,22 +10203,19 @@
         }
     ]]></j:style>
     <j:style condition="jpf.isGecko3">
-        .propedit .records .cellselected b{
+        .propedit .records .cellselected dl{
         }
     
         .propedit input#txt_rename{
             position : relative;
-            top : -6px;
-            padding-top : 1px;
+            padding-top : 2px;
         }
     </j:style>
 
     <j:presentation>
         <j:main
-            interaction = "p"
             head        = "div[1]"
-            rowhead     = "div[3]"
-            body        = "div[4]"
+            body        = "div[3]"
             pointer     = "div[2]"
             
             widthdiff    = "2"
@@ -10173,7 +10228,6 @@
 
                 </div>
                 <div class='pointer'> </div>
-                <div class='row_headers'> </div>
                 <div class='records'> </div>
             </div>
         </j:main>
@@ -10194,7 +10248,7 @@
             <div class='dragdg'> </div>
         </j:dragindicator>
 
-        <j:cell caption="b"><span><b> </b></span></j:cell>
+        <j:cell caption="dl"><span><dl> </dl></span></j:cell>
 
         <j:container container=".">
             <div class="dginfo">-</div>
@@ -10205,11 +10259,11 @@
         </j:dropdown>
         
         <j:dropdown_container item-height="17">
-            <u class="ddpropeditcontainer"> </u>
+            <ul class="propeditcontainerdropdown"> </ul>
         </j:dropdown_container>
         
         <j:jml_container jml="true">
-            <u class="ddjmlcontainer"> </u>
+            <ul class="ddjmlcontainer"> </ul>
         </j:jml_container>
         
         <j:custom>
