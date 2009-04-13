@@ -2744,6 +2744,9 @@
             
             border-right: 1px solid #c3c3c3;
             border-left: 1px solid #FFFFFF;
+            
+            position : relative;
+            overflow : hidden;
         }
         
         .statusbar .panelLast{
@@ -4995,6 +4998,14 @@
             padding-left : 5px;
         }
         
+        .datagrid .records .highlight span{
+        
+        }
+        
+        .datagrid .records .highlight{
+        
+        }
+        
         .datagridFocus .records .indicate span{
             border: 1px dotted #BBB;
             border-width : 1px 0 1px 0;
@@ -5008,6 +5019,7 @@
         
         .datagrid .records .selected, .datagrid .records .selected span{
             background-color: #f0f0f0;
+            color : #4b4b4b;
         }
         .datagridFocus .records .selected, .datagridFocus .records .selected span{
             color: white;
@@ -5337,7 +5349,7 @@
         
         .spreadsheetFocus .records .cellselected b{
             border : 3px solid black;/*#25a8e7;*/
-            background : white;
+            background : transparent;
         }
         
         /*.spreadsheet .records .cellselected{
@@ -5396,6 +5408,151 @@
             outline : none;
             padding : 2px 0 1px 2px;
         }
+        
+        .spreadsheet .ddbtn{
+            width : 10px;
+            height : 7px;
+            margin-top : -1px;
+            padding : 2px 0 2px 2.5px;
+            border : 2px outset;
+            display : none;
+            position : absolute;
+            right : 0;
+            overflow : hidden;
+            background : #cfcbc2 url(images/sort_asc.gif) no-repeat 2px 4px;
+            text-decoration : none;
+            cursor : default;
+        }
+        
+        .spreadsheetcontainerdropdown, .spreadsheetcontainerset, .ddjmlcontainer{
+            display : none;
+            text-decoration : none;
+            border : 1px solid black;
+            background : white;
+            position : absolute;
+            overflow : hidden;
+            margin : 0;
+            padding : 0;
+        }
+        
+        .ddjmlcontainer{ 
+            /*padding : 5px;*/
+            overflow : hidden;
+        }
+        
+        .spreadsheetcontainerdropdown div, .spreadsheetcontainerset div{
+            display: block;
+            height: 15px;
+            padding: 1px 3px 1px 1px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            background-color: white;
+            color: black;
+            cursor: default;
+        }
+        
+        .spreadsheetcontainerdropdown div.hover{
+            background-color: #25a8e7;
+            color: #ffffff;
+        }
+        
+        .spreadsheetcontainerset div.hover{
+            background-color : #eee;
+        }
+        
+        .spreadsheetcontainerset div{
+            padding-top : 2px;
+            padding-bottom : 0;
+        }
+        
+        .spreadsheetcontainerset div span{
+            width: 12px;
+            height: 12px;
+            overflow: hidden;
+            margin : 1px 3px 0 1px;
+            float : left;
+            background: url("images/checkbox.png") no-repeat 0 -12px;
+        }
+        
+        .spreadsheetcontainerset div.checked span{
+            background-position: 0 -24px;
+        }
+        
+        .spreadsheet .btncustom{
+            width : 11px;
+            height : 10px;
+            padding : 2px 0 2px 2.5px;
+            border : 2px outset;
+            background-color : #cfcbc2;
+            display : none;
+            position : absolute;
+            right : 0;
+            overflow : hidden;
+            line-height : 10px;
+            font-family : Tahoma;
+            font-size : 7pt;
+            font-weight : bold;
+            text-decoration : none;
+        }
+        
+        .spreadsheet u.down{
+            border : 2px inset;
+            padding : 3px 0 1px 2.5px;
+            width : 9px;
+            background-position : 2px 5px;
+        }
+        
+        /*.spreadsheetFocus .btncustom, .spreadsheetFocus .ddbtn{
+            display : block;
+        }*/
+        
+        .spreadsheet .empty, .spreadsheet .offline, .spreadsheet .loading{
+            text-align: center;
+            padding: 8px 0 0 5px;
+            color: #AAA;
+            font-weight : normal;
+        }
+        
+        .spreadsheet .item{
+            padding : 3px 4px 4px 2px;
+            /*border-bottom : 1px solid #eee;*/
+            margin : 0 -3px 0 -3px;
+            cursor : default;
+        }
+        
+        .spreadsheet .item i{
+            overflow : hidden;
+            width : 14px;
+            height : 14px;
+            background : #eee;
+            text-align : center;
+            margin : 0 5px 0 2px;
+            font-size : 10px;
+            float : left;
+            font-style: normal; 
+        }
+        
+        .spreadsheet .item i:hover{
+            color: white;
+            background-color: #25a8e7;
+        }
+        
+        .spreadsheet .newitem{
+            padding : 2px;
+            margin : 0 0 -1px 0;
+            cursor : text;
+            border-bottom : 1px dotted #cfcbc2;
+            height : 13px;
+        }
+        
+        .spreadsheet div span.spreadsheet_lookupmultiple dl{
+            padding : 0;
+        }
+        
+        .spreadsheet div span.spreadsheet_lookupmultiple #txt_rename{
+            margin : -1px;
+        }
     ]]></j:style>
     <j:style condition="jpf.isIE"><![CDATA[
         .spreadsheet .headings div{
@@ -5449,6 +5606,29 @@
         
         .spreadsheet .size_pointer{
             height : expression(this.parentNode.offsetHeight - 2);
+        }
+    ]]></j:style>
+    <j:style condition="!jpf.isIE"><![CDATA[
+        .spreadsheet .btncustom, .propedit .ddbtn{
+            -moz-border-top-colors: #D4D0C8 #FFFFFF;
+            -moz-border-left-colors: #D4D0C8 #FFFFFF;
+            -moz-border-bottom-colors: black gray;
+            -moz-border-right-colors: black gray;
+            
+            margin-top : -19px;
+        }
+        
+        .spreadsheet u.down{
+            -moz-border-top-colors: gray black;
+            -moz-border-left-colors: gray black;
+            -moz-border-bottom-colors: #FFFFFF #D4D0C8;
+            -moz-border-right-colors: #FFFFFF #D4D0C8;
+        }
+        
+        .spreadsheet .item i{
+            margin : 0 5px 0 3px;
+            font-size : 11px;
+            line-height : 11px;
         }
     ]]></j:style>
     <j:style condition="jpf.isGecko &amp;&amp; !jpf.isGecko3"><![CDATA[
@@ -5554,6 +5734,22 @@
         <j:container container=".">
             <div class="dginfo">-</div>
         </j:container>
+
+        <j:dropdown>
+            <u class="ddbtn"> </u>
+        </j:dropdown>
+        
+        <j:dropdown_container item-height="17">
+            <ul class="propeditcontainerdropdown"> </ul>
+        </j:dropdown_container>
+        
+        <j:jml_container jml="true">
+            <ul class="ddjmlcontainer"> </ul>
+        </j:jml_container>
+        
+        <j:custom>
+            <u class="btncustom">...</u>
+        </j:custom>
 
         <j:loading>
             <div class="loading"><span></span><label>Loading...</label></div>
