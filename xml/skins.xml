@@ -5609,13 +5609,15 @@
         }
     ]]></j:style>
     <j:style condition="!jpf.isIE"><![CDATA[
-        .spreadsheet .btncustom, .propedit .ddbtn{
+        .spreadsheet .btncustom, .spreadsheet .ddbtn{
             -moz-border-top-colors: #D4D0C8 #FFFFFF;
             -moz-border-left-colors: #D4D0C8 #FFFFFF;
             -moz-border-bottom-colors: black gray;
             -moz-border-right-colors: black gray;
             
-            margin-top : -19px;
+            margin-top : -13px;
+            height : 6px;
+            width : 10px;
         }
         
         .spreadsheet u.down{
