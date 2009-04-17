@@ -8728,7 +8728,7 @@
         .editor .editor_Toolbar div.fontpicker div.right,
         .editor .editor_Toolbar div.fontsizepicker div.right,
         .editor .editor_Toolbar div.fontstylepicker div.right,
-        .editor .editor_Toolbar div.paragraphpicker div.right,
+        .editor .editor_Toolbar div.blockformatpicker div.right,
         .editor .editor_Toolbar div.hover div.right{
             background-position: 0 0;
         }
@@ -8744,7 +8744,7 @@
         .editor .editor_Toolbar div.fontpicker,
         .editor .editor_Toolbar div.fontsizepicker,
         .editor .editor_Toolbar div.fontstylepicker,
-        .editor .editor_Toolbar div.paragraphpicker{
+        .editor .editor_Toolbar div.blockformatpicker{
             background-position: -4px 0px;
             margin-top: 2px;
             text-align: left !important;
@@ -8754,7 +8754,7 @@
 
         .editor .editor_Toolbar div.fontpicker,
         .editor .editor_Toolbar div.fontstylepicker,
-        .editor .editor_Toolbar div.paragraphpicker{
+        .editor .editor_Toolbar div.blockformatpicker{
             width: 120px !important;
         }
 
@@ -8812,7 +8812,7 @@
         .editor .editor_Toolbar span.fontpreview,
         .editor .editor_Toolbar span.fontsizepreview,
         .editor .editor_Toolbar span.fontstylepreview,
-        .editor .editor_Toolbar span.paragraphpreview{
+        .editor .editor_Toolbar span.blockformatpreview{
             width:100%;
             height:18px;
             font-size: 11px;
@@ -8912,7 +8912,7 @@
         .editor_popup a.editor_font,
         .editor_popup a.editor_fontsize,
         .editor_popup a.editor_fontstyle,
-        .editor_popup a.editor_paragraph{
+        .editor_popup a.editor_blockformat{
             display: block;
             height: 15px;
             padding: 3px;
@@ -8928,13 +8928,13 @@
             margin:0;
         }
 
-        .editor_popup a.editor_paragraph *{
+        .editor_popup a.editor_blockformat *{
             margin-top: 0;
             margin-bottom: 0;
         }
 
         .editor_popup a.editor_fontsize,
-        .editor_popup a.editor_paragraph{
+        .editor_popup a.editor_blockformat{
             height: auto;
             line-height: auto;
             vertical-align: baseline;
@@ -8943,7 +8943,7 @@
         .editor_popup a.editor_font:hover,
         .editor_popup a.editor_fontsize:hover,
         .editor_popup a.editor_fontstyle:hover,
-        .editor_popup a.editor_paragraph:hover{
+        .editor_popup a.editor_blockformat:hover{
             background-color: #25a8e7;
             color: #ffffff;
         }
@@ -9099,9 +9099,22 @@
             display: block;
         }
 
-        .editor textarea{
+        .editor .editor_code{
             position: absolute;
             z-index: 10000;
+            top: 0px;
+            left: 0px;
+        }
+
+        .editor .editor_code .toolbar_container{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 22px;
+        }
+
+        .editor .editor_code textarea{
+            position: absolute;
             bottom: 0px;
             left: 0px;
             border: 0;
@@ -9191,7 +9204,8 @@
         .editor_popup .editor_paneltoolbar span.editor_row_props {background-position:-780px -20px}
         .editor_popup .editor_panelbuttons span.editor_split_cells {background-position:-800px -20px}
         .editor .editor_Toolbar span.editor_template {background-position:-820px -20px}
-        .editor .editor_Toolbar span.editor_visualchars {background-position:-840px -20px}
+        .editor .editor_Toolbar span.editor_visualchars,
+        .editor .editor_Toolbar span.editor_paragraph {background-position:-840px -20px}
         .editor .editor_Toolbar span.editor_abbr {background-position:-860px -20px}
         .editor .editor_Toolbar span.editor_acronym {background-position:-880px -20px}
         .editor .editor_Toolbar span.editor_attribs {background-position:-900px -20px}
@@ -9200,6 +9214,9 @@
         .editor .editor_Toolbar span.editor_ins {background-position:-960px -20px}
         .editor .editor_Toolbar span.editor_pagebreak {background-position:0 -40px}
         .editor .editor_Toolbar span.editor_spellchecker {background-position:-540px -20px}
+        .editor .editor_Toolbar span.editor_break {background-position:-20px -40px}
+        .editor .editor_Toolbar span.editor_nbsp {background-position:-40px -40px}
+        .editor .editor_Toolbar span.editor_listitem {background-position:-60px -40px}
     ]]></j:style>
     <j:docstyle><![CDATA[
         html{
@@ -9261,6 +9278,12 @@
                 </div>
             </div>
         </j:main>
+        <j:code container=".">
+            <div class="editor_code">
+                <div class="toolbar_container"> </div>
+                <textarea class=""> </textarea>
+            </div>
+        </j:code>
         <j:toolbar container=".">
             <div class="editor_Toolbar">
                 <span class="TB_Start"> </span>
@@ -9285,7 +9308,7 @@
                 Link, Unlink, Charmap
             </j:toolbar>
             <j:toolbar>
-                FontStyle,  Paragraph, Fonts, Fontsize, |, RemoveFormat
+                FontStyle, BlockFormat, Fonts, Fontsize, |, RemoveFormat
             </j:toolbar>
             <j:toolbar>
                 Cut, Copy, Paste, PasteText, |,
@@ -9293,7 +9316,15 @@
                 Forecolor, Backcolor, |,
                 Search, Replace, |, Outdent, Indent
             </j:toolbar>
+            <j:codetoolbar>
+                Bullist, Numlist, Listitem, Nbsp, Break, Paragraph
+            </j:codetoolbar>
         </j:toolbars>
+        <j:emotions path="images/editor">
+            cool, cry, embarassed, foot-in-mouth, frown, innocent,
+            kiss, laughing, money-mouth, sealed, smile, surprised,
+            tongue-out, undecided, wink, yell
+        </j:emotions>
         <j:fonts>
             Andale Mono=andale mono,times;
             Arial=arial,helvetica,sans-serif;
@@ -9370,7 +9401,7 @@
             <j:toolbar>
                 Bold, Italic, Underline, Strikethrough, |,
                 JustifyLeft, JustifyCenter, JustifyRight, JustifyFull, |,
-                FontStyle, Paragraph, Fonts, Fontsize, |, RemoveFormat
+                FontStyle, BlockFormat, Fonts, Fontsize, |, RemoveFormat
             </j:toolbar>
             <j:toolbar>
                 Cut, Copy, Paste, PasteText, |,
