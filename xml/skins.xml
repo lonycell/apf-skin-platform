@@ -1,5 +1,201 @@
 <?xml version='1.0'?>
 <j:skin xmlns:j="http://www.javeline.com/2005/jml" xmlns="http://www.w3.org/1999/xhtml">
+<j:accordion name="accordion_horizontal">
+    <j:style><![CDATA[
+        .accordionHor {
+            overflow     : hidden;
+            color        : #4b4b4b;
+            height       : auto;
+            width        : auto;
+            position     : absolute;
+            padding      : 0;
+            border       : 1px solid #d7d7d7;
+        }
+
+        .accordionHor .panel {
+            padding          : 0;
+            font-size        : 11px;
+            font-family      : Tahoma;
+            background-color : white;
+            height           : 100%;
+            margin           : 0;
+            position         : relative;
+            overflow         : hidden;
+            float            : left;
+        }
+            
+        .accordionHor .panel .title {
+            background-image    : url(images/accordion_title_h.png);
+            background-position : 0 0;
+            width               : 16px;
+            color               : white;
+            font-size           : 11px;
+            padding             : 4px;
+            position            : relative;
+            display             : block;
+            height              : 100%;
+            float               : left;
+        }
+            
+        .accordionHor .panel .title .icon {
+            width    : 12px;
+            height   : 10px;
+            position : relative;
+            margin:0 auto;
+        }
+        
+        .accordionHor .panel .title:hover {
+            background-position : -48px 0;
+            color               : white;
+            cursor              : pointer;
+        }
+        
+        .accordionHor .panel .Active {
+            background-position : 0 0;
+        }
+        
+        .accordionHor .panel .NotActive {
+            background-position : -72px 0;
+            color               : white;
+        }
+            
+        .accordionHor .panel .body {
+            position      : relative;
+            display       : none;
+            float         : left;
+            height        : 100%;
+        }
+        
+        .accordionHor .panel .body .header {
+            font-size           : 14px;
+            font-weight         : bold;
+            background-image    : url(images/accordion_header.png);
+            background-position : 0 0;
+            background-repeat   : repeat-x;
+            padding             : 10px 10px 12px 10px;
+            color               : white;
+            margin-top          : 15px;
+            white-space         : nowrap;
+        }
+        .accordionHor .panel .body .content {
+            padding     : 5px;
+            overflow    : hidden;
+            white-space : nowrap;
+        }
+    ]]></j:style>
+    
+    <j:presentation>
+        <j:main container="." direction="horizontal">
+            <div class="accordionHor"> </div>
+        </j:main>
+        <j:panel
+            container = "div[2]/div[2]"
+            title     = "div"
+            body      = "div[2]"
+            icon      = "div/div"
+            header    = "div[2]/div"
+            content   = "div[2]/div[2]">
+            <div class="panel">
+                <div class="title NotActive">
+                    <div class="icon"> </div>
+                </div>
+                <div class="body">
+                    <div class="header"> </div>
+                    <div class="content"> </div>
+                </div>
+            </div>
+        </j:panel>
+    </j:presentation>
+</j:accordion>
+    
+<j:accordion name="accordion_vertical">
+    <j:style><![CDATA[
+        .accordionVer {
+            overflow     : hidden;
+            color        : #4b4b4b;
+            height       : auto;
+            width        : 100%;
+            position     : absolute;
+            padding      : 0;
+            border-top   : 1px solid #d7d7d7;
+            border-left  : 1px solid #d7d7d7;
+            border-right : 1px solid #d7d7d7;
+        }
+
+        .accordionVer .panel {
+            padding          : 0;
+            font-size        : 11px;
+            font-family      : Tahoma;
+            background-color : white;
+            height           : auto;
+            margin           : 0;
+            position         : relative;
+            overflow         : hidden;
+        }
+            
+        .accordionVer .panel .title {
+            background-image    : url(images/accordion_title.png);
+            background-position : 0 0;
+            height              : 16px;
+            color               : white;
+            font-size           : 11px;
+            padding             : 4px;
+            position            : relative;
+            display             : block;
+            cursor              : pointer;
+        }
+        
+        .accordionVer .panel .title .icon {
+            width    : 12px;
+            height   : 10px;
+            position : absolute;
+            right    : 7px;
+            top      : 7px;
+        }
+        
+        .accordionVer .panel .title:hover {
+            background-position : 0 -48px;
+            color               : white;
+            cursor              : pointer;
+        }
+            
+        .accordionVer .panel .Active {
+            background-position : 0 0;
+        }
+        
+        .accordionVer .panel .NotActive {
+            background-position : 0 -72px;
+            color               : white;
+        }
+        
+        .accordionVer .panel .body {
+            position      : relative;
+            padding       : 3px;
+            border-bottom : 1px solid #d7d7d7;
+            display       : none;
+            overflow      : hidden;
+            white-space   : nowrap;
+            height        : 100%;
+        }
+    ]]></j:style>
+    <j:presentation>
+        <j:main container="." direction="vertical">
+            <div class="accordionVer"> </div>
+        </j:main>
+        <j:panel 
+            container = "div[2]"
+            title     = "div"
+            body      = "div[2]"
+            icon      = "div/div">
+            <div class="panel">
+                <div class="title NotActive">
+                    <div class="icon"> </div>
+                </div>
+                <div class="body"> </div>
+            </div>
+        </j:panel>
+    </j:presentation>
+</j:accordion>
 <j:modalwindow name="modalwindow">
     <j:alias>window</j:alias>
     <j:style><![CDATA[
