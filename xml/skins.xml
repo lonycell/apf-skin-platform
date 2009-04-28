@@ -5596,6 +5596,14 @@
             z-index : 100;
         }
         
+        .spreadsheet .records .highlight span{
+        
+        }
+        
+        .spreadsheet .records .highlight{
+        
+        }
+        
         .spreadsheet .headings span{
             display : inline-block;
             height : 15px;
