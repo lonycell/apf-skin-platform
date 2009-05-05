@@ -5481,7 +5481,7 @@
             background-position : 0 0;
         }
     ]]></j:style>
-    <j:style condition="jpf.isIE &amp; &amp; !jpf.isIE8"><![CDATA[
+    <j:style condition="jpf.isIE &amp;&amp; !jpf.isIE8"><![CDATA[
         .datagrid .headings div{
             float : left;
         }
