@@ -117,7 +117,7 @@
             white-space : nowrap;
         }
     ]]></j:style>
-    <j:style condition="jpf.isIE">
+    <j:style condition="jpf.isIE6 &#38;&#38; jpf.isIE7">
         .accordion_menu .rounded {
             top : -4px;
         }
