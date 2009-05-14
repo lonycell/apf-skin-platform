@@ -7,7 +7,7 @@
             overflow-y   : hidden;
             color        : #4b4b4b;
             height       : 200px;
-            width        : 300px;
+            width        : auto;
             position     : absolute;
             padding      : 0;
             white-space  : nowrap;
@@ -115,7 +115,6 @@
             padding     : 5px;
             overflow    : hidden;
             white-space : nowrap;
-            width       : 280px;
         }
     ]]></j:style>
     <j:style condition="jpf.isIE">
