@@ -3849,6 +3849,82 @@
         </j:main>
     </j:presentation>
 </j:progressbar>
+<j:slider name="rangeMask">
+	<j:style><![CDATA[
+		.rangeMask{
+			border : 1px solid #f30808;
+			background : #EEE;
+			border : 1px solid #AAA;
+			height : 5px;
+			padding : 5px 2px 4px 2px;
+			width : 100px;
+			font-family : Tahoma;
+			font-size : 8px;
+		}
+		.rangeMask.disabled{
+			color : gray;
+		}
+		.rangeMask div{
+			position : absolute;
+			left : 0;
+			margin-top : -12px;
+			overflow : hidden;
+			
+			width : 30px;
+			height : 21px;
+			/*border-color : #ddebb0 #506119 #506119 #ddebb0;
+			border-width : 1px;
+			border-style : solid;*/
+			background : url(images/slider.png) no-repeat 0 0; /* #b9d55c */
+			cursor : pointer;
+			cursor : hand;
+		}
+		.rangeMask div.btndown{
+			/*background-color : #92b12a;
+			padding : 0;*/
+		}
+		.rangeMask div.btnover{
+			/*background-color : #e6fd9a;
+			padding : 0;*/
+		}
+		
+		.rangeMask label{
+			position : absolute;
+			width : 99%;
+			height : 100%;
+			text-align : center;
+			left : 0;
+			top : 2px;
+			font-size : 7pt;
+			font-family : Arial;
+			color : gray;
+		}
+		
+		.rangeMask u{
+			position : absolute;
+			display : block;
+			height : 6px;
+			border : 1px solid #AAA;
+			border-width : 0 1px 0 0;
+			width : 1px;
+		}
+		
+		.rangeMask blockquote{
+			margin : -1px 16px 0 16px;
+			height : 100%;
+			position : relative;
+		}
+	]]></j:style>
+	
+	<j:presentation>
+		<j:main slider="div" container="." status="label/text()" markers="blockquote" margin="5,2,5,3">
+			<div class='rangeMask'><blockquote> </blockquote><label>-</label><div> </div></div>
+		</j:main>
+		<j:marker>
+			<u> </u>
+		</j:marker>
+	</j:presentation>
+</j:slider>
 <j:slider name="slider">
     <j:alias>range</j:alias>
     <j:alias>horizontal</j:alias>
