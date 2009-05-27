@@ -9483,8 +9483,7 @@
             cursor: text;
             border: 0;
         }
-        body
-        {
+        body {
             margin: 8px;
             padding: 0;
             border: 0;
@@ -9494,8 +9493,7 @@
             background: #fff;
             word-wrap: break-word;
         }
-        .itemAnchor
-        {
+        .itemAnchor {
             background:url(images/editor/items.gif) no-repeat left bottom;
             line-height:6px;
             overflow:hidden;
@@ -9503,21 +9501,21 @@
             width:12px;
         }
         .visualAid table,
-        .visualAid table td
-        {
+        .visualAid table td {
             border: 1px dashed #bbb;
         }
-        .visualAid table td
-        {
+        .visualAid table td {
             margin: 8px;
         }
-        h1{
+        h1 {
             margin : 15px 0 15px 0;
         }
-        p
-        {
+        p {
             margin: 0;
             padding: 0;
+        }
+        sub, sup {
+            line-height: 1px;
         }
     ]]></j:docstyle>
 
