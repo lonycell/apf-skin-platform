@@ -1667,7 +1667,6 @@
             position: absolute;
             background-color: white;
             margin: 23px 0 0 0;
-            left: 136px;
 
             white-space: nowrap;
             display: none;
