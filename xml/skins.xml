@@ -3981,6 +3981,63 @@
         </marker>
     </j:presentation>
 </j:slider>
+<j:slider name="slider_ver">
+    <j:style><![CDATA[
+        .slider_ver {
+            background: url("images/bar_bottom.png") no-repeat -8px bottom;
+            height: 150px;
+            width: 8px;
+            position: relative;
+            font-family : Tahoma;
+            font-size : 9px;
+            text-align : center;
+        }
+        
+        .slider_verDisabled {
+            background-position: 0 bottom;
+        }
+        
+        .slider_ver .top {
+            background: url("images/bar_top.png") no-repeat -8px top;
+            width: 8px;
+            overflow: hidden;
+            top:0;
+            bottom:4px;
+            position:absolute;
+            z-index:1000;
+        }
+        
+        .slider_verDisabled .top{
+            background-position: 0 top;
+        }
+        
+        .slider_ver .grabber {
+            background: url("images/slider_vertical.png") no-repeat -8px 0;
+            height: 20px;
+            width: 8px;
+            overflow: hidden;
+            position: absolute;
+            z-index:2000;
+        }
+        
+        .slider_verDisabled .grabber {
+            background-position: 0 0;
+        }
+    ]]></j:style>
+    
+    <j:presentation>
+        <j:main slider="div[1]" container="." status2="div[2]/text()" 
+          markers="." direction="vertical">
+            <div class="slider_ver">
+                <div class="grabber"> </div>
+                <div class="top"> </div>
+            </div>
+        </j:main>
+        <marker>
+            <u> </u>
+        </marker>
+    </j:presentation>
+</j:slider>
 <j:slider name="sliderHigh">
     <j:style><![CDATA[
         .sliderHigh {
