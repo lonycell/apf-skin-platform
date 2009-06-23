@@ -3955,10 +3955,6 @@
             background-position: left -8px;
         }
         
-        .sliderDisabled .filledbar {
-            background-position: 0 -8px;
-        }
-        
         .slider .grabber {
             background: url("images/slider.png") no-repeat top left;
             width: 20px;
