@@ -5351,6 +5351,64 @@
         </marker>
     </j:presentation>
 </j:slider>
+<j:slider name="slidermedia_ver">
+    <j:style><![CDATA[
+        .slidermedia_ver {
+            background: url("images/bar_bottom.png") no-repeat -8px bottom;
+            width: 8px;
+            position: relative;
+            font-family: Tahoma;
+            font-size: 9px;
+            text-align: center;
+            margin: 0;
+            height:150px;
+        }
+
+        .slidermedia_verDisabled {
+            background-position: 0 bottom;
+        }
+
+        .slidermedia_ver .top {
+            background: url("images/bar_top.png") no-repeat -8px top;
+            width: 8px;
+            overflow: hidden;
+            margin: 0;
+            position:absolute;
+            top:0;
+            bottom:4px;
+            z-index:1000;
+        }
+
+        .slidermedia_verDisabled .top {
+            background-position: 0 top;
+        }
+
+        .slidermedia_ver .grabber {
+            background: url("images/slider3_vertical.png") no-repeat -8px 0;
+            height: 12px;
+            width: 8px;
+            overflow: hidden;
+            position: absolute;
+            margin: 0;
+            z-index:2000;
+        }
+
+        .slidermedia_verDisabled .grabber {
+            background-position: 0 0;
+        }
+    ]]></j:style>
+    <j:presentation>
+        <j:main slider="div[1]" container="." status2="div[2]/text()" markers="." direction="vertical">
+            <div class="slidermedia_ver">
+                <div class="grabber"> </div>
+                <div class="top"> </div>
+            </div>
+        </j:main>
+        <marker>
+            <u> </u>
+        </marker>
+    </j:presentation>
+</j:slider>
 <j:slider name="slider16media">
     <j:style><![CDATA[
         .slider16media {
