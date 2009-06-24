@@ -4345,6 +4345,66 @@
         </marker>
     </j:presentation>
 </j:slider>
+<j:slider name="slider11_ver">
+    <j:style><![CDATA[
+        .slider11_ver {
+            background: url("images/bar11x_bottom.png") no-repeat -11px bottom;
+            height: 300px;
+            width: 11px;
+            position: relative;
+            padding-bottom:10px;
+            font-family : Tahoma;
+            font-size : 9px;
+            text-align : center;
+        }
+        
+        .slider11_verDisabled {
+            background-position: 0 bottom;
+        }
+        
+        .slider11_ver .left{
+            background: url("images/bar11x_top.png") no-repeat -11px top;
+            width: 11px;
+            overflow: hidden;
+            position:absolute;
+            top:0;
+            bottom:5px;
+            z-index:1000;
+        }
+        
+        .slider11_verDisabled .left{
+            background-position: 0 top;
+        }
+        
+        
+        .slider11_ver .grabber {
+            background: url("images/slider11x_vertical.png") no-repeat -11px 0;
+            width: 11px;
+            height: 24px;
+            overflow: hidden;
+            position: absolute;
+            z-index:2000;
+            margin-top:5px;
+        }
+        
+        .slider11_verDisabled .grabber {
+            background-position: 0 0;
+        }
+    ]]></j:style>
+    
+    <j:presentation>
+        <j:main slider="div[1]" container="." status2="div[2]/text()" 
+          markers="." direction="vertical">
+            <div class="slider11_ver">
+                <div class="grabber"> </div>
+                <div class="left"> </div>
+            </div>
+        </j:main>
+        <marker>
+            <u> </u>
+        </marker>
+    </j:presentation>
+</j:slider>
 <!-- 
     * This skin can be optimized by making it fixed width. - 
 -->
