@@ -5420,9 +5420,6 @@
             font-family: Tahoma;
             font-size: 9px;
             text-align: center;
-            position: absolute;
-            bottom: 6px;
-            left: 82px;
             margin: 0;
         }
 
