@@ -4002,6 +4002,7 @@
             width: 8px;
             overflow: hidden;
             top:0;
+            left:0;
             bottom:4px;
             position:absolute;
             z-index:1000;
@@ -4123,6 +4124,7 @@
             overflow: hidden;
             position:absolute;
             top:0;
+            left:0;
             bottom:4px;
             z-index:1000;
         }
@@ -4245,6 +4247,7 @@
             overflow: hidden;
             position:absolute;
             top:0;
+            left:0;
             bottom:7px;
             z-index:1000;
         }
@@ -4368,6 +4371,7 @@
             overflow: hidden;
             position:absolute;
             top:0;
+            left:0;
             bottom:5px;
             z-index:1000;
         }
@@ -5375,6 +5379,7 @@
             margin: 0;
             position:absolute;
             top:0;
+            left:0;
             bottom:4px;
             z-index:1000;
         }
