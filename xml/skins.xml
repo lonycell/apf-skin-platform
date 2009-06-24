@@ -5483,6 +5483,79 @@
         </marker>
     </j:presentation>
 </j:slider>
+<j:slider name="slider16media_ver">
+    <j:style><![CDATA[
+        .slider16media_ver {
+            background: url("images/bar16x_bottom.png") no-repeat -16px bottom;
+            height: 300px;
+            width: 16px;
+            position: relative;
+            font-family: Tahoma;
+            font-size: 9px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .slider16media_verDisabled {
+             background-position: 0 bottom;
+        }
+
+        .slider16media_ver .top {
+            background: url("images/bar16x_top.png") no-repeat -16px top;
+            width: 16px;
+            overflow: hidden;
+            margin: 0;
+            position:absolute;
+            top:0;
+            left:0;
+            bottom:7px;
+            z-index:1000;
+        }
+
+        .slider16media_verDisabled .top {
+            background-position: 0 top;
+        }
+
+        .slider16media_ver .grabber {
+            background: url("images/rslider16x_vertical.png") no-repeat -16px 0;
+            height: 20px;
+            width: 16px;
+            overflow: hidden;
+            position: absolute;
+            margin: 0;
+            z-index:2000;
+        }
+
+        .slider16media_verDisabled .grabber {
+            background-position: 0 0;
+            cursor: normal;
+        }
+
+        .slider16media_ver .sldprogress {
+            background: #ddd;
+            display: block;
+            overflow: hidden;
+            height: 4px;
+            margin-left: 6px;
+            margin-top: 6px;
+            z-index: 0;
+        }
+    ]]></j:style>
+    <j:presentation>
+        <j:main slider="div[1]" container="." progress="div[2]" status2="div[2]/text()" markers="." direction="vertical">
+            <div class="slider16media_ver">
+                <div class="grabber"> </div>
+                <div class="top"> </div>
+            </div>
+        </j:main>
+        <progress>
+            <span class="sldprogress"> </span>
+        </progress>
+        <marker>
+            <u> </u>
+        </marker>
+    </j:presentation>
+</j:slider>
 <j:button name="buttonmedia">
     <j:style><![CDATA[
         .buttonmedia {
