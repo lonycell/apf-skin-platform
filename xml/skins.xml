@@ -5326,10 +5326,6 @@
             background-position: left -8px;
         }
 
-        .slidermediaDisabled .filledbar {
-            background-position: 0 -8px;
-        }
-
         .slidermedia .grabber {
             background: url("images/slider3.png") no-repeat top left;
             width: 12px;
