@@ -3981,7 +3981,7 @@
         </marker>
     </j:presentation>
 </j:slider>
-<j:slider name="slider_ver">
+<j:slider name="vertical">
     <j:style><![CDATA[
         .slider_ver {
             background: url("images/bar_bottom.png") no-repeat -8px bottom;
