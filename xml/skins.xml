@@ -4134,7 +4134,7 @@
         }
         
         .sliderHigh_ver .grabber {
-            background: url("images/slider2_vertical.png") no-repeat -16px 0;
+            background: url("images/slider2Big_vertical.png") no-repeat -16px 0;
             height: 7px;
             width: 16px;
             overflow: hidden;
