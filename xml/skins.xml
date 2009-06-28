@@ -10488,6 +10488,10 @@
         .listcomments .highlight{
             background-color : #FFF59A;
         }
+        
+        .listcomments .selected {
+            background-color : #e1e1e1;
+        }
     ]]></j:style>
     
     <j:presentation>
