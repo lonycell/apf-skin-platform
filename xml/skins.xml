@@ -11662,8 +11662,7 @@
         }
         
         .calendar .calcontent {
-            height   : auto;
-            width    : auto;
+            width    : 100%;
             position : relative;
             overflow : hidden;
         }
