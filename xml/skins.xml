@@ -9069,64 +9069,64 @@
 
         .bubble {
             width   : 200px;
-            padding : 11px 0 14px 0;
+            padding : 14px 0 14px 0;
             cursor  : default;
             opacity : 0;
         }
 
         .bubble .lt {
-            background-image  : url(images/bubble_lt.gif);
+            background-image  : url(images/bubble_lt.png);
             background-repeat : no-repeat;
-            width             : 13px;
-            height            : 12px;
+            width             : 15px;
+            height            : 16px;
             float             : left;
             overflow          : hidden;
-            margin-top        : -11px;
+            margin-top        : -15px;
         }
 
         .bubble .rt {
-            background-image  : url(images/bubble_rt.gif);
+            background-image  : url(images/bubble_rt.png);
             background-repeat : no-repeat;
-            width             : 14px; 
-            height            : 12px;
+            width             : 15px; 
+            height            : 16px;
             float             : right;
             overflow          : hidden;
-            margin-top        : -11px;
+            margin-top        : -15px;
         }
 
         .bubble .lb {
-            background-image  : url(images/bubble_lb.gif);
+            background-image  : url(images/bubble_lb.png);
             background-repeat : no-repeat;
-            width             : 13px; 
-            height            : 13px;
+            width             : 15px; 
+            height            : 14px;
             float             : left;
-            margin-bottom     : -13px;
+            margin-bottom     : -14px;
         }
 
         .bubble .rb {
-            background-image  : url(images/bubble_rb.gif);
+            background-image  : url(images/bubble_rb.png);
             background-repeat : no-repeat;
-            width             : 14px; 
-            height            : 13px;
+            width             : 15px; 
+            height            : 14px;
             float             : right;
-            margin-bottom     : -13px;
+            margin-bottom     : -14px;
         }
 
         .bubble .line_t {
-            background-image  : url(images/bubble_line_t.gif);
+            background-image  : url(images/bubble_line_t.png);
             background-repeat : repeat-x;
             overflow          : hidden;
-            height            : 12px !important;
-            line-height       : 12px;
-            margin            : -11px 14px 0 13px;
+            height            : 16px !important;
+            line-height       : 16px;
+            margin            : -15px 15px 0 15px;
         }
 
         .bubble .line_b {
-            background-image  : url(images/bubble_line_b.gif);
+            background-image  : url(images/bubble_line_b.png);
             background-repeat : repeat-x;
-            height            : 13px !important;
-            line-height       : 13px;
-            margin            : 0 13px -13px 13px;
+            height            : 14px !important;
+            line-height       : 14px;
+            margin            : 0 15px -14px 15px;
         }
 
         .bubble .body {
