@@ -5258,12 +5258,7 @@
 <j:chart name="chart">
     <j:style><![CDATA[
     .chart {
-        top: 0px;
-        left: 0px;
-        width: 550px;
-        height: 370px;  
-        padding: 0px 0px 0px 0px;      
-        background-color:white;    
+        background-color:transparent;    
     }
     ]]></j:style>
 
