@@ -4284,15 +4284,16 @@
         
         .slider16Disabled .grabber {
             background-position: left -48px;
+            margin-left:7px;
         }
 
-	.slider16Down .grabber {
-	    background-position: right -16px;
-	}
+        .slider16Down .grabber {
+            background-position: right -16px;
+        }
 
-	.slider16Focus .grabber {
-	    background-position: right -32px;
-	}
+        .slider16Focus .grabber {
+            background-position: right -32px;
+        }
     ]]></j:style>
     
     <j:presentation>
@@ -4416,6 +4417,7 @@
         
         .slider11Disabled .grabber {
             background-position: left -11px;
+            margin-left:5px;
         }
     ]]></j:style>
     
