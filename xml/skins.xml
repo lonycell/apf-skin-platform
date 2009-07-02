@@ -4364,7 +4364,11 @@
         background-position: -32px 0;
     }
     ]]></j:style>
-    
+    <j:style condition="jpf.isIE">
+        .slider16_ver .top {
+            bottom:0;
+        }
+    </j:style>
     <j:presentation>
         <j:main slider="div[1]" container="." status2="div[2]/text()" 
           markers="." direction="vertical">
@@ -4481,7 +4485,11 @@
             background-position: 0 0;
         }
     ]]></j:style>
-    
+    <j:style condition="jpf.isIE">
+        .slider11_ver .top {
+            bottom:-5px;
+        }
+    </j:style>
     <j:presentation>
         <j:main slider="div[1]" container="." status2="div[2]/text()" 
           markers="." direction="vertical">
