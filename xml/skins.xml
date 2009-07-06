@@ -1,5 +1,109 @@
 <?xml version='1.0'?>
 <j:skin xmlns:j="http://www.javeline.com/2005/jml" xmlns="http://www.w3.org/1999/xhtml">
+<j:accordion name="accordion_apf_ver">
+    <j:style><![CDATA[
+        .accordion_apf_ver {
+            overflow     : auto;
+            color        : #4b4b4b;
+            height       : auto;
+            width        : 100%;
+            position     : absolute;
+            padding      : 0;
+            border       : 1px solid #c3c3c3;
+        }
+
+        .accordion_apf_ver .panel {
+            padding          : 0;
+            font-size        : 11px;
+            font-family      : Tahoma;
+            background-color : white;
+            height           : auto;
+            margin           : 0;
+            position         : relative;
+            overflow         : hidden;
+        }
+        
+        .accordion_apf_ver .ending {
+            display : none;
+        }
+        
+        .accordion_apf_ver .panel .title {
+            background-image    : url(images/accordion_apf_title.png);
+            background-position : 0 0;
+            height              : 12px;
+            color               : #4b4b4b;
+            font-size           : 11px;
+            padding             : 3px 0 5px 3px;
+            position            : relative;
+            display             : block;
+            cursor              : pointer;
+        }
+        
+        .accordion_apf_ver .panel .title .icon {
+            width               : 12px;
+            height              : 10px;
+            position            : absolute;
+            right               : 7px;
+            top                 : 5px;
+            background-repeat   : no-repeat;
+            background-position : 6px 50%;
+        }
+        
+        .accordion_apf_ver .panel .Active .icon, 
+        .accordion_apf_ver .panel .title:hover .icon {
+            background-position : -4px 50%;
+        }
+        
+        .accordion_apf_ver .panel .title:hover {
+            background-position : 0 -20px;
+            color               : white;
+        }
+        
+        .accordion_apf_ver .panel .Active {
+            background-position : 0 -20px;
+            color               : white;
+        }
+        
+        .accordion_apf_ver .panel .NotActive {
+           background-position : 0 0;
+        }
+        
+        .accordion_apf_ver .panel .body {
+            position       : relative;
+            padding        : 3px;
+            overflow       : hidden;
+            display        : none;
+            white-space    : nowrap;
+            height         : 100%;
+            border-top     : 1px solid #c3c3c3;
+            border-bottom  : 1px solid #c3c3c3;
+        }
+        
+        .accordion_apf_ver .panel .last {
+            border-bottom  : 0;
+        }
+    ]]></j:style>
+    <j:presentation>
+        <j:main container="." direction="vertical">
+            <div class="accordion_apf_ver"> </div>
+        </j:main>
+        <j:panel 
+            container = "div[2]"
+            title     = "div"
+            body      = "div[2]"
+            icon      = "div/div">
+            <div class="panel">
+                <div class="title NotActive">
+                    <div class="icon"> </div>
+                </div>
+                <div class="body"> </div>
+            </div>
+        </j:panel>
+        <j:ending container=".">
+            <span class="ending"></span>
+        </j:ending>
+    </j:presentation>
+</j:accordion>
 <j:accordion name="accordion_apf_hor">
     <j:style><![CDATA[
         .accordion_apf_hor {
@@ -50,22 +154,26 @@
             height   : 10px;
             position : relative;
             margin   : 0 auto;
-            background-position:50% 50%;
+            background-position:50% 6px;
             background-repeat:no-repeat;
         }
         
+        .accordion_apf_hor .panel .Active .icon,
+        .accordion_apf_hor .panel .title:hover .icon {
+            background-position:50% -4px;
+        }
+        
         .accordion_apf_hor .panel .title:hover {
-            /*background-position : -48px 0;
-            color               : white;*/
+            background-position : -20px 0;
+            color               : white;
         }
         
         .accordion_apf_hor .panel .Active {
-            /*background-position : 0 0;*/
+            background-position : -20px 0;
         }
         
         .accordion_apf_hor .panel .NotActive {
-            /*background-position : -72px 0;
-            color               : white;*/
+            background-position : 0 0;
         }
         
         .accordion_apf_hor .panel .body {
@@ -120,105 +228,6 @@
                     <div class="content"> </div>
                 </div>
             </span>
-        </j:panel>
-        <j:ending container=".">
-            <span class="ending"></span>
-        </j:ending>
-    </j:presentation>
-</j:accordion>
-<j:accordion name="accordion_apf_ver">
-    <j:style><![CDATA[
-        .accordion_apf_ver {
-            overflow     : auto;
-            color        : #4b4b4b;
-            height       : auto;
-            width        : 100%;
-            position     : absolute;
-            padding      : 0;
-            border       : 1px solid #c3c3c3;
-        }
-
-        .accordion_apf_ver .panel {
-            padding          : 0;
-            font-size        : 11px;
-            font-family      : Tahoma;
-            background-color : white;
-            height           : auto;
-            margin           : 0;
-            position         : relative;
-            overflow         : hidden;
-        }
-        
-        .accordion_apf_ver .ending {
-            display : none;
-        }
-        
-        .accordion_apf_ver .panel .title {
-            background-image    : url(images/accordion_apf_title.png);
-            background-position : 0 0;
-            height              : 12px;
-            color               : #4b4b4b;
-            font-size           : 11px;
-            padding             : 3px 0 5px 3px;
-            position            : relative;
-            display             : block;
-            cursor              : pointer;
-            margin              : 0 1px;
-        }
-        
-        .accordion_apf_ver .panel .title .icon {
-            width               : 12px;
-            height              : 10px;
-            position            : absolute;
-            right               : 7px;
-            top                 : 5px;
-            background-repeat   : no-repeat;
-            background-position : 50% 50%;
-        }
-        
-        .accordion_apf_ver .panel .title:hover {
-            /*background-position : 0 -48px;
-            cursor              : pointer;*/
-        }
-        
-        .accordion_apf_ver .panel .Active {
-            /*background-position : 0 0;*/
-        }
-        
-        .accordion_apf_ver .panel .NotActive {
-           /* background-position : 0 -72px;*/
-        }
-        
-        .accordion_apf_ver .panel .body {
-            position    : relative;
-            padding     : 3px;
-            display     : none;
-            overflow    : hidden;
-            white-space : nowrap;
-            height      : 100%;
-            border-top  : 1px solid #c3c3c3;
-            border-bottom  : 1px solid #c3c3c3;
-        }
-        
-        .accordion_apf_ver .panel .last {
-            border-bottom  : 0;
-        }
-    ]]></j:style>
-    <j:presentation>
-        <j:main container="." direction="vertical">
-            <div class="accordion_apf_ver"> </div>
-        </j:main>
-        <j:panel 
-            container = "div[2]"
-            title     = "div"
-            body      = "div[2]"
-            icon      = "div/div">
-            <div class="panel">
-                <div class="title NotActive">
-                    <div class="icon"> </div>
-                </div>
-                <div class="body"> </div>
-            </div>
         </j:panel>
         <j:ending container=".">
             <span class="ending"></span>
