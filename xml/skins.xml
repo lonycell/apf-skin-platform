@@ -2177,6 +2177,7 @@
             width: 32px;
             margin: 0;
             padding: 0;
+            z-index: 101;
         }
 
         .tab .scroller .scroller_btn_left,
@@ -2190,7 +2191,6 @@
             background-repeat: no-repeat;
             margin: 0;
             padding: 0;
-            z-index: 101;
         }
 
         .tab .scroller .scroller_btn_right {
@@ -2210,11 +2210,11 @@
     ]]></j:style>
     <j:style condition="jpf.isIE6">
         .tab .btncontainer div, .tab .btncontainer div div {
-	    margin: 0 0 0 0;
+            margin: 0 0 0 0;
         }
-	.tab .tabFooter {
-	    bottom: 11px;
-	}
+        .tab .tabFooter {
+            bottom: 11px;
+        }
     </j:style>
     <j:presentation>
         <j:main pages="." buttons="div[1]" scroller="div[2]">
