@@ -2067,10 +2067,11 @@
 <j:tab name="tab">
     <j:style><![CDATA[
         .tab {
-               color: #4b4b4b;
-               font-family : Tahoma;
-               font-size : 8pt;
-               padding : 23px 0 26px 0;
+            color: #4b4b4b;
+            font-family : Tahoma;
+            font-size : 8pt;
+            padding : 23px 0 26px 0;
+            overflow: hidden;
         }
         
         .tab .btncontainer{
@@ -2078,6 +2079,9 @@
             margin-top : -19px;
             position : absolute;
             z-index : 100;
+            width: 100000px;
+            height: 20px;
+            overflow: visible;
         }
         
         .tab .btncontainer div {
@@ -2165,6 +2169,44 @@
             height: 14px;
             margin: 0 14px;
         }
+
+        .tab .scroller {
+            position: absolute;
+            top: 7px;
+            right: 0px;
+            width: 32px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .tab .scroller .scroller_btn_left,
+        .tab .scroller .scroller_btn_right {
+            position: relative;
+            float: left;
+            width: 15px;
+            height: 17px;
+            background-image: url(images/tab_prev.gif);
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            z-index: 101;
+        }
+
+        .tab .scroller .scroller_btn_right {
+            float: right;
+            width: 17px;
+            background-image: url(images/tab_next.gif);
+        }
+
+        .tab .scroller span.over,
+        .tab .scroller span.click {
+            background-position: 0 -17px;
+        }
+
+        .tab .scroller span.disabled {
+            background-position: 0 -34px;
+        }
     ]]></j:style>
     <j:style condition="jpf.isIE6">
         .tab .btncontainer div, .tab .btncontainer div div {
@@ -2175,11 +2217,16 @@
 	}
     </j:style>
     <j:presentation>
-        <j:main pages="." buttons="div">
+        <j:main pages="." buttons="div[1]" scroller="div[2]">
             <div class="tab">
                 <div class="btncontainer">
                     
                 </div>
+
+                <div class="scroller">
+                   <span class="scroller_btn_left"> </span>
+                   <span class="scroller_btn_right"> </span>
+               </div>
             
                 <div class="tabFooter"><div><div> </div></div></div>
             </div>
