@@ -2228,12 +2228,12 @@
         }
     ]]></j:style>
     <j:style condition="jpf.isIE"><![CDATA[
-        tab.scroller span.hover,
-        tab.scroller span.down {
+        .tab .scroller span.hover,
+        .tab .scroller span.down {
             background-position-y: -17px;
         }
         
-        tab.scroller span.disabled {
+        .tab .scroller span.disabled {
             background-position-y: -34px;
         }
     ]]></j:style>
