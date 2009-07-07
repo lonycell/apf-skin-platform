@@ -2198,9 +2198,19 @@
             width: 17px;
             background-position: -15px 0;
         }
+    ]]></j:style>
 
-        .tab .scroller .scroller_btn_left.over,
-        .tab .scroller .scroller_btn_left.click {
+    <j:style condition="jpf.isIE6"><![CDATA[
+        .tab .btncontainer div, .tab .btncontainer div div {
+            margin: 0 0 0 0;
+        }
+        .tab .tabFooter {
+            bottom: 11px;
+        }
+    ]]></j:style>
+    <j:style condition="!jpf.isIE"><![CDATA[
+        .tab .scroller .scroller_btn_left.hover,
+        .tab .scroller .scroller_btn_left.down {
             background-position: 0 -17px;
         }
 
@@ -2208,8 +2218,8 @@
             background-position: 0 -34px;
         }
 
-        .tab .scroller .scroller_btn_right.over,
-        .tab .scroller .scroller_btn_right.click {
+        .tab .scroller .scroller_btn_right.hover,
+        .tab .scroller .scroller_btn_right.down {
             background-position: -15px -17px;
         }
 
@@ -2217,14 +2227,16 @@
             background-position: -15px -34px;
         }
     ]]></j:style>
-    <j:style condition="jpf.isIE6">
-        .tab .btncontainer div, .tab .btncontainer div div {
-            margin: 0 0 0 0;
+    <j:style condition="jpf.isIE"><![CDATA[
+        tab.scroller span.hover,
+        tab.scroller span.down {
+            background-position-y: -17px;
         }
-        .tab .tabFooter {
-            bottom: 11px;
+        
+        tab.scroller span.disabled {
+            background-position-y: -34px;
         }
-    </j:style>
+    ]]></j:style>
     <j:presentation>
         <j:main pages="." buttons="div[1]" scroller="div[2]">
             <div class="tab">
