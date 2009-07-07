@@ -2186,7 +2186,7 @@
             float: left;
             width: 15px;
             height: 17px;
-            background-image: url(images/tab_prev.gif);
+            background-image: url(images/tab_scroller_btns.gif);
             background-position: 0 0;
             background-repeat: no-repeat;
             margin: 0;
@@ -2196,16 +2196,25 @@
         .tab .scroller .scroller_btn_right {
             float: right;
             width: 17px;
-            background-image: url(images/tab_next.gif);
+            background-position: -15px 0;
         }
 
-        .tab .scroller span.over,
-        .tab .scroller span.click {
+        .tab .scroller .scroller_btn_left.over,
+        .tab .scroller .scroller_btn_left.click {
             background-position: 0 -17px;
         }
 
-        .tab .scroller span.disabled {
+        .tab .scroller .scroller_btn_left.disabled {
             background-position: 0 -34px;
+        }
+
+        .tab .scroller .scroller_btn_right.over,
+        .tab .scroller .scroller_btn_right.click {
+            background-position: -15px -17px;
+        }
+
+        .tab .scroller .scroller_btn_right.disabled {
+            background-position: -15px -34px;
         }
     ]]></j:style>
     <j:style condition="jpf.isIE6">
