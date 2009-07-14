@@ -2209,32 +2209,41 @@
         }
     ]]></j:style>
     <j:style condition="!jpf.isIE"><![CDATA[
-        .tab .scroller .scroller_btn_left.hover,
-        .tab .scroller .scroller_btn_left.down {
+        .tab .scroller .scroller_btn_left.hover {
             background-position: 0 -17px;
         }
 
-        .tab .scroller .scroller_btn_left.disabled {
+        .tab .scroller .scroller_btn_left.down {
             background-position: 0 -34px;
         }
 
-        .tab .scroller .scroller_btn_right.hover,
-        .tab .scroller .scroller_btn_right.down {
+        .tab .scroller .scroller_btn_left.disabled {
+            background-position: 0 -51px;
+        }
+
+        .tab .scroller .scroller_btn_right.hover {
             background-position: -15px -17px;
         }
 
-        .tab .scroller .scroller_btn_right.disabled {
+        .tab .scroller .scroller_btn_right.down {
             background-position: -15px -34px;
+        }
+
+        .tab .scroller .scroller_btn_right.disabled {
+            background-position: -15px -51px;
         }
     ]]></j:style>
     <j:style condition="jpf.isIE"><![CDATA[
-        .tab .scroller span.hover,
-        .tab .scroller span.down {
+        .tab .scroller span.hover {
             background-position-y: -17px;
+        }
+
+        .tab .scroller span.down {
+            background-position-y: -34px;
         }
         
         .tab .scroller span.disabled {
-            background-position-y: -34px;
+            background-position-y: -51px;
         }
     ]]></j:style>
     <j:presentation>
