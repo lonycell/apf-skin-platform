@@ -5967,9 +5967,6 @@
             overflow: hidden;
             cursor: default;
             background: url(images/mediabtn2.png) no-repeat 0 -42px;
-            position: absolute;
-            bottom: 3px;
-            left: 3px;
             margin: 0;
         }
 
@@ -5996,6 +5993,37 @@
     <j:presentation>
         <j:main background="span" icon="span">
             <div class="buttonmedia">
+                <span> </span>
+            </div>
+        </j:main>
+    </j:presentation>
+</j:button>
+<j:button name="buttonvolume">
+    <j:style><![CDATA[
+        .buttonvolume {
+            color: #4b4b4b;
+            font-family: Tahoma;
+            font-size: 8pt;
+            height: 16px;
+            width: 16px;
+            overflow: hidden;
+            cursor: default;
+            margin: 0;
+            padding: 0;
+        }
+
+        .buttonvolume span {
+            display: block;
+            background: no-repeat 0 0;
+            margin: 0;
+            padding: 0;
+            width: 16px;
+            height: 16px;
+        }
+    ]]></j:style>
+    <j:presentation>
+        <j:main background="span" icon="span">
+            <div class="buttonvolume">
                 <span> </span>
             </div>
         </j:main>
