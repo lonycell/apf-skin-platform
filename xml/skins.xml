@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
-<j:skin xmlns:j="http://www.javeline.com/2005/jml" xmlns="http://www.w3.org/1999/xhtml">
-<j:flowchart name="flowchart">
-    <j:style><![CDATA[
+<a:skin xmlns:a="http://ajax.org/2005/aml" xmlns="http://www.w3.org/1999/xhtml">
+<a:flowchart name="flowchart">
+    <a:style><![CDATA[
         .flowchart {
             border           : 1px solid #c3c3c3;
             background-color : #EEEEEE;
@@ -257,18 +257,18 @@
             background-color : #005e20;
         }
 
-    ]]></j:style>
-    <j:style condition="jpf.isGecko"><![CDATA[
+    ]]></a:style>
+    <a:style condition="apf.isGecko"><![CDATA[
         .flowchart .connector-end {
             margin:0;
         }
-     ]]></j:style>
+     ]]></a:style>
 
-    <j:presentation>
-        <j:main container=".">
+    <a:presentation>
+        <a:main container=".">
             <div class='flowchart'> </div>
-        </j:main>
-        <j:block 
+        </a:main>
+        <a:block
             imagecontainer="div"
             image ="div/img"
             select="."
@@ -278,14 +278,14 @@
                 <div><img src="" /></div>
                 <blockquote>-</blockquote>
             </div>
-        </j:block>
-        <j:empty caption="text()">
+        </a:block>
+        <a:empty caption="text()">
             <div class="empty">-</div>
-        </j:empty>
-    </j:presentation>
-</j:flowchart>
-<j:accordion name="accordion_apf_ver">
-    <j:style><![CDATA[
+        </a:empty>
+    </a:presentation>
+</a:flowchart>
+<a:accordion name="accordion_apf_ver">
+    <a:style><![CDATA[
         .accordion_apf_ver {
             overflow     : auto;
             color        : #4b4b4b;
@@ -366,12 +366,12 @@
         .accordion_apf_ver .panel .last {
             border-bottom  : 0;
         }
-    ]]></j:style>
-    <j:presentation>
-        <j:main container="." direction="vertical">
+    ]]></a:style>
+    <a:presentation>
+        <a:main container="." direction="vertical">
             <div class="accordion_apf_ver"> </div>
-        </j:main>
-        <j:panel 
+        </a:main>
+        <a:panel
             container = "div[2]"
             title     = "div"
             body      = "div[2]"
@@ -382,14 +382,14 @@
                 </div>
                 <div class="body"> </div>
             </div>
-        </j:panel>
-        <j:ending container=".">
+        </a:panel>
+        <a:ending container=".">
             <span class="ending"></span>
-        </j:ending>
-    </j:presentation>
-</j:accordion>
-<j:accordion name="accordion_apf_hor">
-    <j:style><![CDATA[
+        </a:ending>
+    </a:presentation>
+</a:accordion>
+<a:accordion name="accordion_apf_hor">
+    <a:style><![CDATA[
         .accordion_apf_hor {
             overflow-x  : auto;
             overflow-y  : hidden;
@@ -490,13 +490,13 @@
             overflow    : hidden;
             white-space : nowrap;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main container="." direction="horizontal">
+    <a:presentation>
+        <a:main container="." direction="horizontal">
             <div class="accordion_apf_hor"> </div>
-        </j:main>
-        <j:panel
+        </a:main>
+        <a:panel
             container = "div[2]/div[2]"
             title     = "div"
             body      = "div[2]"
@@ -512,14 +512,14 @@
                     <div class="content"> </div>
                 </div>
             </span>
-        </j:panel>
-        <j:ending container=".">
+        </a:panel>
+        <a:ending container=".">
             <span class="ending"></span>
-        </j:ending>
-    </j:presentation>
-</j:accordion>
-<j:pager name="pager">
-    <j:style><![CDATA[
+        </a:ending>
+    </a:presentation>
+</a:accordion>
+<a:pager name="pager">
+    <a:style><![CDATA[
         .pager {
             width: 500px;
             height: 600px;
@@ -582,28 +582,28 @@
             background-color:#acacac;
             margin:1px 5px;
         }
-    ]]></j:style>
-    <j:style condition="jpf.isIE"><![CDATA[
-     ]]></j:style>
-    <j:presentation>
-        <j:main container="." content="div[1]" pages="div[2]/div">
+    ]]></a:style>
+    <a:style condition="apf.isIE"><![CDATA[
+     ]]></a:style>
+    <a:presentation>
+        <a:main container="." content="div[1]" pages="div[2]/div">
             <div class="pager">
                 <div class="pager_content"> </div>
                 <div class="pager_pages">
                     <div> </div>
                 </div>
             </div>
-        </j:main>
-        <j:pagebutton container=".">
+        </a:main>
+        <a:pagebutton container=".">
             <div class="pagebutton"> </div>
-        </j:pagebutton>
-        <j:empty caption=".">
+        </a:pagebutton>
+        <a:empty caption=".">
             <div class="empty"> </div>
-        </j:empty>
-    </j:presentation>
-</j:pager>
-<j:accordion name="accordion_menu">
-    <j:style><![CDATA[
+        </a:empty>
+    </a:presentation>
+</a:pager>
+<a:accordion name="accordion_menu">
+    <a:style><![CDATA[
         .accordion_menu {
             overflow-x   : hidden;
             overflow-y   : hidden;
@@ -718,8 +718,8 @@
             overflow    : hidden;
             white-space : nowrap;
         }
-    ]]></j:style>
-    <j:style condition="jpf.isIE6 &#38;&#38; jpf.isIE7">
+    ]]></a:style>
+    <a:style condition="apf.isIE6 &#38;&#38; apf.isIE7">
         .accordion_menu .rounded {
             top : -4px;
         }
@@ -727,15 +727,15 @@
         .accordion_menu .ending {
             top : -4px;
         }
-    </j:style>
+    </a:style>
 
-    <j:presentation>
-        <j:main container="." direction="horizontal">
+    <a:presentation>
+        <a:main container="." direction="horizontal">
             <div class="accordion_menu">
                 <span class="rounded"></span>
             </div>
-        </j:main>
-        <j:panel
+        </a:main>
+        <a:panel
             container = "div[2]/div[2]"
             title     = "div"
             body      = "div[2]"
@@ -751,15 +751,15 @@
                     <div class="content"> </div>
                 </div>
             </span>
-        </j:panel>
-        <j:ending container=".">
+        </a:panel>
+        <a:ending container=".">
             <span class="ending"></span>
-        </j:ending>
-    </j:presentation>
-</j:accordion>
+        </a:ending>
+    </a:presentation>
+</a:accordion>
 
-<j:accordion name="accordion_horizontal">
-    <j:style><![CDATA[
+<a:accordion name="accordion_horizontal">
+    <a:style><![CDATA[
         .accordionHor {
             overflow-x  : auto;
             overflow-y  : hidden;
@@ -846,13 +846,13 @@
             overflow    : hidden;
             white-space : nowrap;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main container="." direction="horizontal">
+    <a:presentation>
+        <a:main container="." direction="horizontal">
             <div class="accordionHor"> </div>
-        </j:main>
-        <j:panel
+        </a:main>
+        <a:panel
             container = "div[2]/div[2]"
             title     = "div"
             body      = "div[2]"
@@ -868,15 +868,15 @@
                     <div class="content"> </div>
                 </div>
             </span>
-        </j:panel>
-        <j:ending container=".">
+        </a:panel>
+        <a:ending container=".">
             <span class="ending"></span>
-        </j:ending>
-    </j:presentation>
-</j:accordion>
+        </a:ending>
+    </a:presentation>
+</a:accordion>
 
-<j:accordion name="accordion_vertical">
-    <j:style><![CDATA[
+<a:accordion name="accordion_vertical">
+    <a:style><![CDATA[
         .accordionVer {
             overflow : auto;
             color    : #4b4b4b;
@@ -945,12 +945,12 @@
             white-space : nowrap;
             height      : 100%;
         }
-    ]]></j:style>
-    <j:presentation>
-        <j:main container="." direction="vertical">
+    ]]></a:style>
+    <a:presentation>
+        <a:main container="." direction="vertical">
             <div class="accordionVer"> </div>
-        </j:main>
-        <j:panel 
+        </a:main>
+        <a:panel
             container = "div[2]"
             title     = "div"
             body      = "div[2]"
@@ -961,15 +961,15 @@
                 </div>
                 <div class="body"> </div>
             </div>
-        </j:panel>
-        <j:ending container=".">
+        </a:panel>
+        <a:ending container=".">
             <span class="ending"></span>
-        </j:ending>
-    </j:presentation>
-</j:accordion>
-<j:modalwindow name="modalwindow">
-    <j:alias>window</j:alias>
-    <j:style><![CDATA[
+        </a:ending>
+    </a:presentation>
+</a:accordion>
+<a:modalwindow name="modalwindow">
+    <a:alias>window</a:alias>
+    <a:style><![CDATA[
         .north{cursor: url(cursor/n-point.cur);}
         .west{cursor: url(cursor/w-point.cur);}
         .east{cursor: url(cursor/e-point.cur);}
@@ -1165,27 +1165,27 @@
             display: block;
         }
         
-        #jpf_outline{
+        #apf_outline{
 
         }
         
-        #jpf_outline.drag{
+        #apf_outline.drag{
             border: 1px solid black;
             background: #CCC;
             opacity: 0.4;
             filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);
         }
         
-        #jpf_outline.resize{
+        #apf_outline.resize{
             border: 3px solid black;
             background: #CCC;
             opacity: 0.3;
             filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main collapsed-height="30" 
+    <a:presentation>
+        <a:main collapsed-height="30"
           min-width="150" min-height="80"
           container="div[6]" drag="div[3]" title="div[3]/text()" 
           icon="div[3]/img" buttons="div[3]/blockquote">
@@ -1202,18 +1202,18 @@
                 <div class="bottomRight"> </div>
                 <div class="bottomBar"> </div>
             </div>
-        </j:main>
-        <j:button>
+        </a:main>
+        <a:button>
             <div> </div>
-        </j:button>
-        <j:cover>
+        </a:button>
+        <a:cover>
             <div class='cover'> </div>
-        </j:cover>
-    </j:presentation>
-</j:modalwindow>
-<j:modalwindow name="roundedged">
-    <j:alias>window</j:alias>
-    <j:style><![CDATA[
+        </a:cover>
+    </a:presentation>
+</a:modalwindow>
+<a:modalwindow name="roundedged">
+    <a:alias>window</a:alias>
+    <a:style><![CDATA[
         .north{cursor: url(cursor/n-point.cur);}
         .west{cursor: url(cursor/w-point.cur);}
         .east{cursor: url(cursor/e-point.cur);}
@@ -1418,26 +1418,26 @@
             display: block;
         }
         
-        #jpf_outline{
+        #apf_outline{
 
         }
         
-        #jpf_outline.drag{
+        #apf_outline.drag{
             border: 1px solid black;
             background: #CCC;
             opacity: 0.4;
             filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);
         }
         
-        #jpf_outline.resize{
+        #apf_outline.resize{
             border: 3px solid black;
             background: #CCC;
             opacity: 0.3;
             filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);
         }
-    ]]></j:style>
-    <j:presentation>
-        <j:main collapsed-height="30" 
+    ]]></a:style>
+    <a:presentation>
+        <a:main collapsed-height="30"
           min-width="150" min-height="80"
           container="div[6]" drag="div[3]" title="div[3]/text()" 
           icon="div[3]/img" buttons="div[3]/blockquote">
@@ -1454,17 +1454,17 @@
                 <div class="bottomRight"> </div>
                 <div class="bottomBar"> </div>
             </div>
-        </j:main>
-        <j:button>
+        </a:main>
+        <a:button>
             <div> </div>
-        </j:button>
-        <j:cover>
+        </a:button>
+        <a:cover>
             <div class='cover'> </div>
-        </j:cover>
-    </j:presentation>
-</j:modalwindow>
-<j:modalwindow name="bigedge">
-    <j:style><![CDATA[
+        </a:cover>
+    </a:presentation>
+</a:modalwindow>
+<a:modalwindow name="bigedge">
+    <a:style><![CDATA[
         .north{cursor: url(cursor/n-point.cur);}
         .west{cursor: url(cursor/w-point.cur);}
         .east{cursor: url(cursor/e-point.cur);}
@@ -1654,27 +1654,27 @@
             display: block;
         }
         
-        #jpf_outline{
+        #apf_outline{
 
         }
         
-        #jpf_outline.drag{
+        #apf_outline.drag{
             border: 1px solid black;
             background: #CCC;
             opacity: 0.4;
             filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);
         }
         
-        #jpf_outline.resize{
+        #apf_outline.resize{
             border: 3px solid black;
             background: #CCC;
             opacity: 0.3;
             filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main collapsed-height="30" 
+    <a:presentation>
+        <a:main collapsed-height="30"
           min-width="150" min-height="80"
           container="div[6]" drag="div[3]" title="div[3]/text()" 
           icon="div[3]/img" buttons="div[3]/blockquote">
@@ -1691,20 +1691,20 @@
                 <div class="bottomRight"> </div>
                 <div class="bottomBar"> </div>
             </div>
-        </j:main>
-        <j:button>
+        </a:main>
+        <a:button>
             <div> </div>
-        </j:button>
-        <j:cover>
+        </a:button>
+        <a:cover>
             <div class='cover'> </div>
-        </j:cover>
-    </j:presentation>
-</j:modalwindow>
+        </a:cover>
+    </a:presentation>
+</a:modalwindow>
 <!-- 
     * Please optimize this one removing elements where possible (using border and such) - it is already optimized  
 -->
-<j:modalwindow name="alert">
-    <j:style><![CDATA[
+<a:modalwindow name="alert">
+    <a:style><![CDATA[
         .alert{
             font-family: Tahoma;
             font-size: 11px;
@@ -1819,11 +1819,11 @@
         .alert .title .hover{
             background-position : 0 -13px;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
+    <a:presentation>
         <!--  min-width="50" min-height="50"  -->
-        <j:main collapsed-height="30" 
+        <a:main collapsed-height="30"
           container="div[5]" drag="div[3]" title="div[3]/text()" 
           buttons="div[3]">
             <div class="alert">
@@ -1840,17 +1840,17 @@
                 <div class="bottomBar"> </div>
         
             </div>
-        </j:main>
-        <j:button>
+        </a:main>
+        <a:button>
             <div> </div>
-        </j:button>
-        <j:cover>
+        </a:button>
+        <a:cover>
             <div class='cover'> </div>
-        </j:cover>
-    </j:presentation>
-</j:modalwindow>
-<j:bar name="bardown">
-    <j:style><![CDATA[
+        </a:cover>
+    </a:presentation>
+</a:modalwindow>
+<a:bar name="bardown">
+    <a:style><![CDATA[
         .bardown{
             font-family: Tahoma;
             font-size: 11px;
@@ -1926,11 +1926,11 @@
         .bardown .title .hover{
             background-position : 0 -13px;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
+    <a:presentation>
         <!--  min-width="50" min-height="50"  -->
-        <j:main collapsed-height="30" container="div[2]">
+        <a:main collapsed-height="30" container="div[2]">
             <div class="bardown">
                 <div class="borderRight"> </div>
                 <div class="content">
@@ -1941,17 +1941,17 @@
                 <div class="bottomBar"> </div>
         
             </div>
-        </j:main>
-        <j:button>
+        </a:main>
+        <a:button>
             <div> </div>
-        </j:button>
-        <j:cover>
+        </a:button>
+        <a:cover>
             <div class='cover'> </div>
-        </j:cover>
-    </j:presentation>
-</j:bar>
-<j:bar name="searchbar">
-    <j:style><![CDATA[
+        </a:cover>
+    </a:presentation>
+</a:bar>
+<a:bar name="searchbar">
+    <a:style><![CDATA[
         .searchbar{
             font-family: Tahoma;
             font-size: 11px;
@@ -2031,11 +2031,11 @@
         .searchbar .title .hover{
             background-position : 0 -13px;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
+    <a:presentation>
         <!--  min-width="50" min-height="50"  -->
-        <j:main collapsed-height="30" container="div[1]">
+        <a:main collapsed-height="30" container="div[1]">
             <div class="searchbar">
                 <div class="content">
 				<div class="borderRight"> </div>
@@ -2048,20 +2048,20 @@
 				</div>
         
             </div>
-        </j:main>
-        <j:button>
+        </a:main>
+        <a:button>
             <div> </div>
-        </j:button>
-        <j:cover>
+        </a:button>
+        <a:cover>
             <div class='cover'> </div>
-        </j:cover>
-    </j:presentation>
-</j:bar>
-<j:button name="button">
-    <j:alias>submit</j:alias>
-    <j:alias>reset</j:alias>
-    <j:style><![CDATA[
-        .jpf_btn{
+        </a:cover>
+    </a:presentation>
+</a:bar>
+<a:button name="button">
+    <a:alias>submit</a:alias>
+    <a:alias>reset</a:alias>
+    <a:style><![CDATA[
+        .apf_btn{
             color: #4b4b4b;
             font-family: Tahoma;
             font-size: 8pt;
@@ -2072,14 +2072,14 @@
 /*            margin : 0 -5px -2px 0; */
 	    }
         
-        .jpf_btn .left{
+        .apf_btn .left{
             float: left;
             width: 8px;
             height: 25px;
             _margin-right: -3px; /* IE6 bug fix */
         }
         
-        .jpf_btn .lbl{
+        .apf_btn .lbl{
             height: 20px;
             padding-top: 5px;
             text-align: center;
@@ -2091,38 +2091,38 @@
             text-overflow: ellipsis;
         }
         
-        .jpf_btn .right{
+        .apf_btn .right{
             float: right;
             width: 9px;
             height: 25px;
 	       _margin-left: -3px; /* IE6 bug fix */
         }
         
-        .jpf_btn .left{
+        .apf_btn .left{
             background: url("images/button_left.png") no-repeat 0 -25px;
         }
         
-        .jpf_btn .lbl{
+        .apf_btn .lbl{
             background: url("images/button_middle.png") repeat-x 0 -25px;
         }
         
-        .jpf_btn .right{
+        .apf_btn .right{
             background: url("images/button_right.png") no-repeat 0 -25px;
         }
         
-        .jpf_btnDefault .left {
+        .apf_btnDefault .left {
             background: url("images/button_left.png") no-repeat top left;
         }
         
-        .jpf_btnDefault .lbl {
+        .apf_btnDefault .lbl {
             background: url("images/button_middle.png") repeat-x top left;
         }
         
-        .jpf_btnDefault .right {
+        .apf_btnDefault .right {
             background: url("images/button_right.png") no-repeat top left;
         }        
 
-        .jpf_btn span{
+        .apf_btn span{
             padding : 1px 3px 1px 3px;
             border: 1px solid transparent;
             position : relative;
@@ -2131,66 +2131,66 @@
             _margin: 0;
         }
         
-        .jpf_btnDisabled  {
+        .apf_btnDisabled  {
             color: #bebebe;
         }
                 
-        .jpf_btnDisabled .left {
+        .apf_btnDisabled .left {
     	    background: url("images/button_left.png") no-repeat 0 -50px;
     	}
     	
-    	.jpf_btnDisabled .lbl {
+    	.apf_btnDisabled .lbl {
     	    background: url("images/button_middle.png") repeat-x 0 -50px;
     	}
     
-    	.jpf_btnDisabled .right {
+    	.apf_btnDisabled .right {
     	    background: url("images/button_right.png") no-repeat 0 -50px;
     	}
-    	.jpf_btnFocus {
+    	.apf_btnFocus {
         }
                 
-        .jpf_btnFocus span{
+        .apf_btnFocus span{
             border: 1px dotted #BBB;
             padding : 1px 3px 1px 3px;
         }
         
-        .jpf_btnDown .left {
+        .apf_btnDown .left {
 	        background: url("images/button_left.png") no-repeat 0 -75px;
         }
 	
-    	.jpf_btnDown .lbl {
+    	.apf_btnDown .lbl {
     	    background: url("images/button_middle.png") repeat-x 0 -75px;
     	}
             
-    	.jpf_btnDown .right {
+    	.apf_btnDown .right {
     	    background: url("images/button_right.png") no-repeat 0 -75px;
     	}
 
-        .jpf_btnOver {   
+        .apf_btnOver {
         }
-    ]]></j:style>
-    <j:style condition="jpf.isIE7">
-    	.jpf_btn .right {
+    ]]></a:style>
+    <a:style condition="apf.isIE7">
+    	.apf_btn .right {
     	    margin: 0;
     	}
     	
-    	.jpf_btn .left {
+    	.apf_btn .left {
     	    margin: 0;
     	}
-    </j:style>
+    </a:style>
 
-    <j:presentation>
-        <j:main caption="div[3]/span/text()" background=".">
-            <div class="jpf_btn">
+    <a:presentation>
+        <a:main caption="div[3]/span/text()" background=".">
+            <div class="apf_btn">
                 <div class="left"> </div>
                 <div class="right"> </div>
                 <div class="lbl"><span>-</span></div>
              </div>
-        </j:main>
-    </j:presentation>
-</j:button>
-<j:label name="label">
-    <j:style><![CDATA[
+        </a:main>
+    </a:presentation>
+</a:button>
+<a:label name="label">
+    <a:style><![CDATA[
         .label{
             font-size: 8pt;
             font-family: Tahoma;
@@ -2212,21 +2212,21 @@
             min-height : 37px;
             padding : 3px 0 0 45px;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main caption="." for="@for">
+    <a:presentation>
+        <a:main caption="." for="@for">
             <div class="label"> </div>
-        </j:main>
-    </j:presentation>
-</j:label>
+        </a:main>
+    </a:presentation>
+</a:label>
 <!--
     * Textbox isn't scalable - done
 -->
-<j:textbox name="textbox">
-    <j:alias>input</j:alias>
-    <j:alias>secret</j:alias>
-    <j:style><![CDATA[
+<a:textbox name="textbox">
+    <a:alias>input</a:alias>
+    <a:alias>secret</a:alias>
+    <a:style><![CDATA[
         .tb {
             background: white url("images/textarea_background2.png") no-repeat 0 0;
             /*background-attachment: fixed !important; background-attachment: scroll; */
@@ -2287,26 +2287,26 @@
             background-color: #25a8e7;
             color: white;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main input=".">
+    <a:presentation>
+        <a:main input=".">
             <input type='text' class="tb" />
-        </j:main>
-        <j:container>
+        </a:main>
+        <a:container>
             <div class="tbautoc"> </div>
-        </j:container>
-        <j:item caption=".">
+        </a:container>
+        <a:item caption=".">
             <div>-</div>
-        </j:item>
-    </j:presentation>
-</j:textbox>
+        </a:item>
+    </a:presentation>
+</a:textbox>
 <!--
     * Textarea doesn't scroll well -done
     * Textarea doesn't have a Focus state, should be similar to the textbox - done
 -->
-<j:textbox name="textarea">
-    <j:style><![CDATA[
+<a:textbox name="textarea">
+    <a:style><![CDATA[
         .ta{
             border: 1px solid #c3c3c3;
             background: white url("images/textarea_background2.png") no-repeat top left;
@@ -2337,19 +2337,19 @@
             border: 2px solid #ffb500;
             padding : 5px;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main input=".">
+    <a:presentation>
+        <a:main input=".">
             <textarea type='text' class="ta" />
-        </j:main>
-    </j:presentation>
-</j:textbox>
+        </a:main>
+    </a:presentation>
+</a:textbox>
 <!--
     * Strange discoloring at left line of button - pb solved
 -->
-<j:tab name="tab">
-    <j:style><![CDATA[
+<a:tab name="tab">
+    <a:style><![CDATA[
         .tab {
             color: #4b4b4b;
             font-family : Tahoma;
@@ -2482,17 +2482,17 @@
             width: 17px;
             background-position: -15px 0;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:style condition="jpf.isIE6"><![CDATA[
+    <a:style condition="apf.isIE6"><![CDATA[
         .tab .btncontainer div, .tab .btncontainer div div {
             margin: 0 0 0 0;
         }
         .tab .tabFooter {
             bottom: 11px;
         }
-    ]]></j:style>
-    <j:style condition="!jpf.isIE"><![CDATA[
+    ]]></a:style>
+    <a:style condition="!apf.isIE"><![CDATA[
         .tab .scroller .scroller_btn_left.hover {
             background-position: 0 -17px;
         }
@@ -2516,8 +2516,8 @@
         .tab .scroller .scroller_btn_right.disabled {
             background-position: -15px -51px;
         }
-    ]]></j:style>
-    <j:style condition="jpf.isIE"><![CDATA[
+    ]]></a:style>
+    <a:style condition="apf.isIE"><![CDATA[
         .tab .scroller span.hover {
             background-position-y: -17px;
         }
@@ -2529,9 +2529,9 @@
         .tab .scroller span.disabled {
             background-position-y: -51px;
         }
-    ]]></j:style>
-    <j:presentation>
-        <j:main pages="." buttons="div[1]" scroller="div[2]">
+    ]]></a:style>
+    <a:presentation>
+        <a:main pages="." buttons="div[1]" scroller="div[2]">
             <div class="tab">
                 <div class="btncontainer">
                     
@@ -2544,20 +2544,20 @@
             
                 <div class="tabFooter"><div><div> </div></div></div>
             </div>
-        </j:main>
-        <j:button caption="div/span/text()">
+        </a:main>
+        <a:button caption="div/span/text()">
             <div class="btn"><div><span>-</span></div></div>
-        </j:button>
-        <j:page container=".">
+        </a:button>
+        <a:page container=".">
             <div class="page"> </div>
-        </j:page>
-    </j:presentation>
-</j:tab>
+        </a:page>
+    </a:presentation>
+</a:tab>
 <!--
     * Missing down state when selected - done
 -->
-<j:checkbox name="checkbox">
-    <j:style><![CDATA[
+<a:checkbox name="checkbox">
+    <a:style><![CDATA[
         .cbcontainer{
             padding: 2px 2px 2px 18px;
             _padding: 2px; /* IE6 fix */
@@ -2626,26 +2626,26 @@
         .cbcontainer br{
             display: none;
         }
-    ]]></j:style>
-    <j:style condition="!jpf.isIE"><![CDATA[
+    ]]></a:style>
+    <a:style condition="!apf.isIE"><![CDATA[
         .cbcontainer br{
             line-height: 0;
             display: block;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main label="span/text()">
+    <a:presentation>
+        <a:main label="span/text()">
             <div class='cbcontainer'>
                 <div class='checkbox'> </div>
                 <span>-</span>
                 <br clear="left" />
             </div>
-        </j:main>
-    </j:presentation>
-</j:checkbox>
-<j:radiobutton name="radiobutton">
-    <j:style><![CDATA[
+        </a:main>
+    </a:presentation>
+</a:checkbox>
+<a:radiobutton name="radiobutton">
+    <a:style><![CDATA[
         .rbcontainer {
             padding: 2px 2px 2px 2px;
             _padding: 2px 2px 2px 0; /* IE6 fix */
@@ -2707,19 +2707,19 @@
         .rbcontainer br{
             display: none;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main label="span">
+    <a:presentation>
+        <a:main label="span">
             <div class="rbcontainer">
                 <div class="radio"> </div>
                 <span>-</span>
             </div>
-        </j:main>
-    </j:presentation>
-</j:radiobutton>
-<j:radiobutton name="toolbarradio">
-    <j:style><![CDATA[
+        </a:main>
+    </a:presentation>
+</a:radiobutton>
+<a:radiobutton name="toolbarradio">
+    <a:style><![CDATA[
         .toolbar .subbar .tbradio {
             display: block;
             height: 22px;
@@ -2770,19 +2770,19 @@
             margin: -1px 3px 0 0;
         }
         
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main background="div/span" icon="div/span">
+    <a:presentation>
+        <a:main background="div/span" icon="div/span">
             <div class='tbradio'><div><span> </span></div></div>
-        </j:main>
-    </j:presentation>
-</j:radiobutton>
+        </a:main>
+    </a:presentation>
+</a:radiobutton>
 <!--
     * This menu needs shadow as in the design - done, except IE6 
 -->
-<j:menu name="menu">
-    <j:style><![CDATA[
+<a:menu name="menu">
+    <a:style><![CDATA[
         .menu  {
             background: #FFFFFF url("images/menu_context_left.gif") repeat-y top left;
             margin: -1px 0 0 0;
@@ -2940,14 +2940,14 @@
             background: url("images/menu_context_shlr.png") no-repeat top left;
         }
 
-    ]]></j:style>
-    <j:style condition="jpf.isIE6">
+    ]]></a:style>
+    <a:style condition="apf.isIE6">
 	.menu div.menuShadowTop, .menu div.menuShadowRight, .menu div.menuShadowLeft, .menu div.menuShadowBottom {
 	   display: none;
 	}
-    </j:style>
-    <j:presentation>
-        <j:main container="blockquote" overlay="strong">
+    </a:style>
+    <a:presentation>
+        <a:main container="blockquote" overlay="strong">
             <blockquote class='menu'>
                 <blockquote>
                 
@@ -2957,17 +2957,17 @@
                 <div class="menuShadowBottom"> </div>
                 <div class="menuShadowLeft"> </div>
             </blockquote>
-        </j:main>
-        <j:item caption="text()" icon="u" hotkey="span">
+        </a:main>
+        <a:item caption="text()" icon="u" hotkey="span">
             <div><u> </u>-<span> </span></div>
-        </j:item>
-        <j:divider>
+        </a:item>
+        <a:divider>
             <div class='menu_divider'></div>
-        </j:divider>
-    </j:presentation>
-</j:menu>
-<j:toolbar name="toolbar">
-    <j:style><![CDATA[
+        </a:divider>
+    </a:presentation>
+</a:menu>
+<a:toolbar name="toolbar">
+    <a:style><![CDATA[
         .toolbar .menubar {
             background: url(images/menubar_row.png) repeat-x top left;
             height: 21px;
@@ -2995,20 +2995,20 @@
             float: left;
             margin: 4px 0 0 0;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main container="." button-skin="toolbarbutton">
+    <a:presentation>
+        <a:main container="." button-skin="toolbarbutton">
             <div class="toolbar"> </div>
-        </j:main>
-        <j:bar container=".">
+        </a:main>
+        <a:bar container=".">
             <div class="subbar"> </div>
-        </j:bar>
-        <j:divider>
+        </a:bar>
+        <a:divider>
             <div class='divider'> </div>
-        </j:divider>
-    </j:presentation>
-</j:toolbar>
+        </a:divider>
+    </a:presentation>
+</a:toolbar>
 
 <!--
     * These buttons don't scale, please make them scalable.
@@ -3017,8 +3017,8 @@
         .toolbarbuttonDisabled - done
         .toolbarbuttonDown - done
 -->
-<j:button name="toolbarbutton">
-    <j:style><![CDATA[
+<a:button name="toolbarbutton">
+    <a:style><![CDATA[
         .menubar .toolbarbutton {
             display: block;
             height: 18px;
@@ -3106,16 +3106,16 @@
         .toolbar .subbar .toolbarbuttonEmpty span{
             margin: -1px 3px 0 0;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main caption="div/text()" background="div/span" icon="div/span">
+    <a:presentation>
+        <a:main caption="div/text()" background="div/span" icon="div/span">
             <div class='toolbarbutton'><div><span> </span>-</div></div>
-        </j:main>
-    </j:presentation>
-</j:button>
-<j:list name="list">
-    <j:style><![CDATA[
+        </a:main>
+    </a:presentation>
+</a:button>
+<a:list name="list">
+    <a:style><![CDATA[
         .list{
             overflow: auto;
             position: relative;
@@ -3200,34 +3200,34 @@
             max-height : 90px;
             width : auto;
         }
-    ]]></j:style>
+    ]]></a:style>
     
-    <j:presentation>
-        <j:main container=".">
+    <a:presentation>
+        <a:main container=".">
             <div class='list'>
             </div>
-        </j:main>
-        <j:item 
+        </a:main>
+        <a:item
             class            = "."
             caption        = "span/u"
             icon            = "span"
             select        = "span"
         >
             <div><span><u>-</u></span></div>
-        </j:item>
-        <j:dragindicator>
+        </a:item>
+        <a:dragindicator>
             <div class='draglist'><span><u>-</u></span></div>
-        </j:dragindicator>
-        <j:loading>
+        </a:dragindicator>
+        <a:loading>
             <div class="loading">Loading...</div>
-        </j:loading>
-        <j:empty caption=".">
+        </a:loading>
+        <a:empty caption=".">
             <div class="message">-</div>
-        </j:empty>
-    </j:presentation>
-</j:list>
-<j:list name="thumbnail">
-    <j:style><![CDATA[
+        </a:empty>
+    </a:presentation>
+</a:list>
+<a:list name="thumbnail">
+    <a:style><![CDATA[
         .thumbs{
             background-color: white;
             border: 1px solid #c3c3c3;
@@ -3359,33 +3359,33 @@
         .thumb_attach blockquote{
             background-color : #fafafa;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main container=".">
+    <a:presentation>
+        <a:main container=".">
             <div class='thumbs'>
             </div>
-        </j:main>
-        <j:item
+        </a:main>
+        <a:item
             class    = "."
             image    = "blockquote"
             select   = "."
         >
             <div class="thumb"><blockquote> </blockquote></div>
-        </j:item>
-        <j:dragindicator>
+        </a:item>
+        <a:dragindicator>
             <div class='dragthumb'><blockquote> </blockquote></div>
-        </j:dragindicator>
-        <j:loading>
+        </a:dragindicator>
+        <a:loading>
             <div class="loading">Loading...</div>
-        </j:loading>
-        <j:empty caption=".">
+        </a:loading>
+        <a:empty caption=".">
             <div class="empty">-</div>
-        </j:empty>
-    </j:presentation>
-</j:list>
-<j:list name="radiolist">
-    <j:style><![CDATA[
+        </a:empty>
+    </a:presentation>
+</a:list>
+<a:list name="radiolist">
+    <a:style><![CDATA[
         .radiolist{
             overflow : auto;
             position : relative;
@@ -3498,39 +3498,39 @@
         .radiolistDisabled .selected b {
             background-position: 0 -0px;
         }
-    ]]></j:style>
-    <!--j:style condition="!IS_IE"><![CDATA[
+    ]]></a:style>
+    <!--a:style condition="!IS_IE"><![CDATA[
         .radiolist #txt_rename{
             display : block;
             width : 100px;
         }
-    ]]></j:style-->
+    ]]></a:style-->
     
-    <j:presentation>
-        <j:main container="." type="2">
+    <a:presentation>
+        <a:main container="." type="2">
             <div class='radiolist'>
             </div>
-        </j:main>
-        <j:item 
+        </a:main>
+        <a:item
             class   = "."
             caption = "u"
             select  = "."
         >
             <div><b> </b><u>-</u></div>
-        </j:item>
-        <j:dragIndicator>
+        </a:item>
+        <a:dragIndicator>
             <div class='draglist'><span><u>-</u></span></div>
-        </j:dragIndicator>
-        <j:loading>
+        </a:dragIndicator>
+        <a:loading>
             <div class="loading">Loading...</div>
-        </j:loading>
-        <j:empty caption=".">
+        </a:loading>
+        <a:empty caption=".">
             <div class="empty">-</div>
-        </j:empty>
-    </j:presentation>
-</j:list>
-<j:list name="checklist">
-    <j:style><![CDATA[
+        </a:empty>
+    </a:presentation>
+</a:list>
+<a:list name="checklist">
+    <a:style><![CDATA[
         .checklist{
             overflow : auto;
             position : relative;
@@ -3644,39 +3644,39 @@
         .checklistDisabled .selected b {
             background-position: 0 -0px;
         }
-    ]]></j:style>
-    <!--j:style condition="!IS_IE"><![CDATA[
+    ]]></a:style>
+    <!--a:style condition="!IS_IE"><![CDATA[
         .checklist #txt_rename{
             display : block;
             width : 100px;
         }
-    ]]></j:style-->
+    ]]></a:style-->
     
-    <j:presentation>
-        <j:main container="." type="2">
+    <a:presentation>
+        <a:main container="." type="2">
             <div class='checklist'>
             </div>
-        </j:main>
-        <j:item 
+        </a:main>
+        <a:item
             class   = "."
             caption = "u"
             select  = "."
         >
             <div><b> </b><u>-</u></div>
-        </j:item>
-        <j:dragIndicator>
+        </a:item>
+        <a:dragIndicator>
             <div class='draglist'><span><u>-</u></span></div>
-        </j:dragIndicator>
-        <j:loading>
+        </a:dragIndicator>
+        <a:loading>
             <div class="loading">Loading...</div>
-        </j:loading>
-        <j:empty caption=".">
+        </a:loading>
+        <a:empty caption=".">
             <div class="empty">-</div>
-        </j:empty>
-    </j:presentation>
-</j:list>
-<j:list name="mnulist">
-    <j:style><![CDATA[
+        </a:empty>
+    </a:presentation>
+</a:list>
+<a:list name="mnulist">
+    <a:style><![CDATA[
         .mnulist{
             position: relative;
             background-color: white;
@@ -3735,34 +3735,34 @@
         .mnulist .stdel, .mnulistFocus .stdel{
             color : #ccc;
         }
-    ]]></j:style>
+    ]]></a:style>
     
-    <j:presentation>
-        <j:main container=".">
+    <a:presentation>
+        <a:main container=".">
             <div class='mnulist'>
             </div>
-        </j:main>
-        <j:item 
+        </a:main>
+        <a:item
             class   = "."
             caption = "."
             icon    = "."
             select  = "."
         >
             <div>-</div>
-        </j:item>
-        <j:dragindicator>
+        </a:item>
+        <a:dragindicator>
             <div class='draglist'><span><u>-</u></span></div>
-        </j:dragindicator>
-        <j:loading>
+        </a:dragindicator>
+        <a:loading>
             <div class="loading">Loading...</div>
-        </j:loading>
-        <j:empty caption=".">
+        </a:loading>
+        <a:empty caption=".">
             <div class="message">-</div>
-        </j:empty>
-    </j:presentation>
-</j:list>
-<j:statusbar name="statusbar">
-    <j:style><![CDATA[
+        </a:empty>
+    </a:presentation>
+</a:list>
+<a:statusbar name="statusbar">
+    <a:style><![CDATA[
         .statusbar {
             border-top: 1px solid #b2b2b2;
             overflow: hidden;
@@ -3815,19 +3815,19 @@
             top: 7px;
             display: block;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main container="." corner="span">
+    <a:presentation>
+        <a:main container="." corner="span">
             <div class='statusbar'><span class='corner'></span></div>
-        </j:main>
-        <j:panel icon="." caption="text()" container=".">
+        </a:main>
+        <a:panel icon="." caption="text()" container=".">
             <div class='panel'> </div>
-        </j:panel>
-    </j:presentation>
-</j:statusbar>
-<j:tree name="checktree">
-    <j:style><![CDATA[
+        </a:panel>
+    </a:presentation>
+</a:statusbar>
+<a:tree name="checktree">
+    <a:style><![CDATA[
         .checktree{
             overflow: auto;
             position: relative;
@@ -3973,15 +3973,15 @@
         .checktreeDisabled .selected b {
             background-position: 0 -0px;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main container="." startclosed="false">
+    <a:presentation>
+        <a:main container="." startclosed="false">
             <div class="checktree">
 
             </div>
-        </j:main>
-        <j:item
+        </a:main>
+        <a:item
             class        = "."
             caption      = "label/u/text()"
             icon         = "label"
@@ -3991,20 +3991,20 @@
         >
             <div><span> </span><label><b> </b><u>-</u></label></div>
             <blockquote> </blockquote>
-        </j:item>
-        <j:dragindicator>
+        </a:item>
+        <a:dragindicator>
             <div class='dragchecktree'><span> </span><label><u>-</u></label></div>
-        </j:dragindicator>
-        <j:loading>
+        </a:dragindicator>
+        <a:loading>
             <div class="loading"><span> </span><label>Loading...</label></div>
-        </j:loading>
-        <j:empty caption=".">
+        </a:loading>
+        <a:empty caption=".">
             <div class="message"></div>
-        </j:empty>
-    </j:presentation>
-</j:tree>
-<j:tree name="tree">
-    <j:style><![CDATA[
+        </a:empty>
+    </a:presentation>
+</a:tree>
+<a:tree name="tree">
+    <a:style><![CDATA[
         .tree{
             border: 1px solid #c3c3c3;
 
@@ -4153,15 +4153,15 @@
         .tree .loading{
             text-align : left;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main container="." startclosed="false">
+    <a:presentation>
+        <a:main container="." startclosed="false">
             <div class="tree">
 
             </div>
-        </j:main>
-        <j:item
+        </a:main>
+        <a:item
             class        = "."
             caption      = "label/u"
             icon         = "label"
@@ -4171,20 +4171,20 @@
         >
             <div><span> </span><label><u>-</u></label></div>
             <blockquote> </blockquote>
-        </j:item>
-        <j:dragindicator>
+        </a:item>
+        <a:dragindicator>
             <div class='dragtree'><span> </span><label><u>-</u></label></div>
-        </j:dragindicator>
-        <j:loading>
+        </a:dragindicator>
+        <a:loading>
             <div class="loading"><span> </span><label>Loading...</label></div>
-        </j:loading>
-        <j:empty caption=".">
+        </a:loading>
+        <a:empty caption=".">
             <div class="message"></div>
-        </j:empty>
-    </j:presentation>
-</j:tree>
-<j:splitter name="splitter">
-    <j:style><![CDATA[
+        </a:empty>
+    </a:presentation>
+</a:tree>
+<a:splitter name="splitter">
+    <a:style><![CDATA[
         .splitter{
             position: absolute;
             zIndex: 100;
@@ -4227,20 +4227,20 @@
             margin: -9px 0 0 0;
         }
         
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main handle=".">
+    <a:presentation>
+        <a:main handle=".">
             <div class='splitter'><div></div></div>
-        </j:main>
-    </j:presentation>
-</j:splitter>
+        </a:main>
+    </a:presentation>
+</a:splitter>
 <!--
     * Please add an Error state - done
     * Please make this component sizable horizontally - done
 -->
-<j:dropdown name="dropdown">
-    <j:style><![CDATA[
+<a:dropdown name="dropdown">
+    <a:style><![CDATA[
         .dropdown{
             position: relative;
             background: url("images/dropdown.png") no-repeat top right;
@@ -4380,36 +4380,36 @@
         .optionList .selected{
             background-color: #f0f0f0;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main label="div[2]/text()" button="." width-diff="-1" item-height="21.1">
+    <a:presentation>
+        <a:main label="div[2]/text()" button="." width-diff="-1" item-height="21.1">
             <div class='dropdown'>
                 <div class='dropdownLeftBorder'> </div>
                 <div class='dropdownlabel'>-</div>
             </div>
-        </j:main>
-        <j:container contents=".">
+        </a:main>
+        <a:container contents=".">
             <div class='optionList'> 
             </div>
-        </j:container>
-        <j:item
+        </a:container>
+        <a:item
             class            = "."
             caption        = "text()"
             select        = "."
         >
             <span>-</span>
-        </j:item>
-        <j:empty caption=".">
+        </a:item>
+        <a:empty caption=".">
             <div class="empty">-</div>
-        </j:empty>
-    </j:presentation>
-</j:dropdown>
+        </a:empty>
+    </a:presentation>
+</a:dropdown>
 <!--
     * A couple of errors when set to 100% -still there are problems; I added .progressbarComplete
 -->
-<j:progressbar name="progressbar">
-    <j:style><![CDATA[
+<a:progressbar name="progressbar">
+    <a:style><![CDATA[
         .progressbar {
             position: relative;
             width: 147px;
@@ -4509,26 +4509,26 @@
             background: url("images/progressbar.png") no-repeat -496px 0;
         }
 
-    ]]></j:style>
-    <j:style condition="jpf.isIE7">
+    ]]></a:style>
+    <a:style condition="apf.isIE7">
 	.progressbar .lbl {
 	    margin: 0;
 	}
-    </j:style>
+    </a:style>
     
-    <j:presentation>
-        <j:main progress="div[2]/div" caption="div[1]/span/text()">
+    <a:presentation>
+        <a:main progress="div[2]/div" caption="div[1]/span/text()">
             <div class="progressbar">
                 <div class="lbl"><span>0%</span></div>
                 <div class="left"> 
                     <div class="filledbar"> </div>
                 </div>
             </div>
-        </j:main>
-    </j:presentation>
-</j:progressbar>
-<j:slider name="rangeMask">
-	<j:style><![CDATA[
+        </a:main>
+    </a:presentation>
+</a:progressbar>
+<a:slider name="rangeMask">
+	<a:style><![CDATA[
 		.rangeMask{
 			border : 1px solid #f30808;
 			background : #EEE;
@@ -4592,22 +4592,22 @@
 			height : 100%;
 			position : relative;
 		}
-	]]></j:style>
+	]]></a:style>
 	
-	<j:presentation>
-		<j:main slider="div" container="." status="label/text()" markers="blockquote" margin="5,2,5,3">
+	<a:presentation>
+		<a:main slider="div" container="." status="label/text()" markers="blockquote" margin="5,2,5,3">
 			<div class='rangeMask'><blockquote> </blockquote><label>-</label><div> </div></div>
-		</j:main>
-		<j:marker>
+		</a:main>
+		<a:marker>
 			<u> </u>
-		</j:marker>
-	</j:presentation>
-</j:slider>
-<j:slider name="slider">
-    <j:alias>range</j:alias>
-    <j:alias>horizontal</j:alias>
+		</a:marker>
+	</a:presentation>
+</a:slider>
+<a:slider name="slider">
+    <a:alias>range</a:alias>
+    <a:alias>horizontal</a:alias>
     
-    <j:style><![CDATA[
+    <a:style><![CDATA[
         .slider {
             background: url("images/bar_right.png") no-repeat top right;
             width: 150px;
@@ -4645,23 +4645,23 @@
         .sliderDisabled .grabber {
             background-position: left -8px;
         }
-    ]]></j:style>
+    ]]></a:style>
     
-    <j:presentation>
-        <j:main slider="div[1]" container="." status2="div[2]/text()" 
+    <a:presentation>
+        <a:main slider="div[1]" container="." status2="div[2]/text()"
           markers="." direction="horizontal">
             <div class="slider">
                 <div class="grabber"> </div>
                 <div class="left"> </div>
             </div>
-        </j:main>
+        </a:main>
         <marker>
             <u> </u>
         </marker>
-    </j:presentation>
-</j:slider>
-<j:slider name="vertical">
-    <j:style><![CDATA[
+    </a:presentation>
+</a:slider>
+<a:slider name="vertical">
+    <a:style><![CDATA[
         .slider_ver {
             background: url("images/bar_bottom.png") no-repeat -8px bottom;
             height: 150px;
@@ -4703,23 +4703,23 @@
         .slider_verDisabled .grabber {
             background-position: 0 0;
         }
-    ]]></j:style>
+    ]]></a:style>
     
-    <j:presentation>
-        <j:main slider="div[1]" container="." status2="div[2]/text()" 
+    <a:presentation>
+        <a:main slider="div[1]" container="." status2="div[2]/text()"
           markers="." direction="vertical">
             <div class="slider_ver">
                 <div class="grabber"> </div>
                 <div class="top"> </div>
             </div>
-        </j:main>
+        </a:main>
         <marker>
             <u> </u>
         </marker>
-    </j:presentation>
-</j:slider>
-<j:slider name="sliderHigh">
-    <j:style><![CDATA[
+    </a:presentation>
+</a:slider>
+<a:slider name="sliderHigh">
+    <a:style><![CDATA[
         .sliderHigh {
             background: url("images/bar_right.png") no-repeat top right;
             width: 150px;
@@ -4764,23 +4764,23 @@
         .sliderHighDisabled .grabber {
             background-position: left -16px;
         }
-    ]]></j:style>
+    ]]></a:style>
     
-    <j:presentation>
-        <j:main slider="div[1]" container="." status2="div[2]/text()" 
+    <a:presentation>
+        <a:main slider="div[1]" container="." status2="div[2]/text()"
           markers="." direction="horizontal">
             <div class="sliderHigh">
                 <div class="grabber"> </div>
                 <div class="left"> </div>
             </div>
-        </j:main>
+        </a:main>
         <marker>
             <u> </u>
         </marker>
-    </j:presentation>
-</j:slider>
-<j:slider name="sliderHigh_ver">
-    <j:style><![CDATA[
+    </a:presentation>
+</a:slider>
+<a:slider name="sliderHigh_ver">
+    <a:style><![CDATA[
         .sliderHigh_ver {
             background: url("images/bar_bottom.png") no-repeat -8px bottom;
             height: 150px;
@@ -4825,23 +4825,23 @@
         .sliderHigh_verDisabled .grabber {
             background-position: 0 0;
         }
-    ]]></j:style>
+    ]]></a:style>
     
-    <j:presentation>
-        <j:main slider="div[1]" container="." status2="div[2]/text()" 
+    <a:presentation>
+        <a:main slider="div[1]" container="." status2="div[2]/text()"
           markers="." direction="vertical">
             <div class="sliderHigh_ver">
                 <div class="grabber"> </div>
                 <div class="top"> </div>
             </div>
-        </j:main>
+        </a:main>
         <marker>
             <u> </u>
         </marker>
-    </j:presentation>
-</j:slider>
-<j:slider name="slider16">
-    <j:style><![CDATA[
+    </a:presentation>
+</a:slider>
+<a:slider name="slider16">
+    <a:style><![CDATA[
         .slider16 {
             background: url("images/bar16x_right.png") no-repeat top right;
             width: 300px;
@@ -4889,23 +4889,23 @@
         .slider16Focus .grabber {
             background-position: right -32px;
         }
-    ]]></j:style>
+    ]]></a:style>
     
-    <j:presentation>
-        <j:main slider="div[1]" container="." status2="div[2]/text()" 
+    <a:presentation>
+        <a:main slider="div[1]" container="." status2="div[2]/text()"
           markers="." direction="horizontal">
             <div class="slider16">
                 <div class="grabber"> </div>
                 <div class="left"> </div>
             </div>
-        </j:main>
+        </a:main>
         <marker>
             <u> </u>
         </marker>
-    </j:presentation>
-</j:slider>
-<j:slider name="slider16_ver">
-    <j:style><![CDATA[
+    </a:presentation>
+</a:slider>
+<a:slider name="slider16_ver">
+    <a:style><![CDATA[
         .slider16_ver {
             background: url("images/bar16x_bottom.png") no-repeat -16px bottom;
             height: 300px;
@@ -4958,27 +4958,27 @@
     .slider16_verFocus .grabber {
         background-position: -32px 0;
     }
-    ]]></j:style>
-    <j:style condition="jpf.isIE8">
+    ]]></a:style>
+    <a:style condition="apf.isIE8">
         .slider16_ver .top {
             bottom:0;
         }
-    </j:style>
-    <j:presentation>
-        <j:main slider="div[1]" container="." status2="div[2]/text()" 
+    </a:style>
+    <a:presentation>
+        <a:main slider="div[1]" container="." status2="div[2]/text()"
           markers="." direction="vertical">
             <div class="slider16_ver">
                 <div class="grabber"> </div>
                 <div class="top"> </div>
             </div>
-        </j:main>
+        </a:main>
         <marker>
             <u> </u>
         </marker>
-    </j:presentation>
-</j:slider>
-<j:slider name="slider11">
-    <j:style><![CDATA[
+    </a:presentation>
+</a:slider>
+<a:slider name="slider11">
+    <a:style><![CDATA[
         .slider11 {
             background: url("images/bar11x_right.png") no-repeat top right;
             width: 300px;
@@ -5018,23 +5018,23 @@
             background-position: left -11px;
             margin-left:5px;
         }
-    ]]></j:style>
+    ]]></a:style>
     
-    <j:presentation>
-        <j:main slider="div[1]" container="." status2="div[2]/text()" 
+    <a:presentation>
+        <a:main slider="div[1]" container="." status2="div[2]/text()"
           markers="." direction="horizontal">
             <div class="slider11">
                 <div class="grabber"> </div>
                 <div class="left"> </div>
             </div>
-        </j:main>
+        </a:main>
         <marker>
             <u> </u>
         </marker>
-    </j:presentation>
-</j:slider>
-<j:slider name="slider11_ver">
-    <j:style><![CDATA[
+    </a:presentation>
+</a:slider>
+<a:slider name="slider11_ver">
+    <a:style><![CDATA[
         .slider11_ver {
             background: url("images/bar11x_bottom.png") no-repeat -11px bottom;
             height: 300px;
@@ -5079,30 +5079,30 @@
         .slider11_verDisabled .grabber {
             background-position: 0 0;
         }
-    ]]></j:style>
-    <j:style condition="jpf.isIE8">
+    ]]></a:style>
+    <a:style condition="apf.isIE8">
         .slider11_ver .top {
             bottom:-5px;
         }
-    </j:style>
-    <j:presentation>
-        <j:main slider="div[1]" container="." status2="div[2]/text()" 
+    </a:style>
+    <a:presentation>
+        <a:main slider="div[1]" container="." status2="div[2]/text()"
           markers="." direction="vertical">
             <div class="slider11_ver">
                 <div class="grabber"> </div>
                 <div class="left"> </div>
             </div>
-        </j:main>
+        </a:main>
         <marker>
             <u> </u>
         </marker>
-    </j:presentation>
-</j:slider>
+    </a:presentation>
+</a:slider>
 <!-- 
     * This skin can be optimized by making it fixed width. - 
 -->
-<j:errorbox name="errorbox">
-    <j:style><![CDATA[
+<a:errorbox name="errorbox">
+    <a:style><![CDATA[
         .errorbox{
             font-family: Tahoma;
             font-size: 8pt;
@@ -5186,22 +5186,22 @@
             right : 20px;
             left : auto;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main container="div[2]/span" close="div[1]/a">
+    <a:presentation>
+        <a:main container="div[2]/span" close="div[1]/a">
             <div class="errorbox">
                 <div class="errorboxTop"><div> </div><a class="close" href="javascript:void(0)" onclick="return false"> </a></div>
                 <div class="errorboxContent"><span> </span></div>
                 <div class="errorboxBottom"> </div>
             </div>
-        </j:main>
-    </j:presentation>
-</j:errorbox>
+        </a:main>
+    </a:presentation>
+</a:errorbox>
 
 
-<!--j:errorbox name="errorbox">
-    <j:style><![CDATA[
+<!--a:errorbox name="errorbox">
+    <a:style><![CDATA[
         .errorbox{
             font-family: Tahoma;
             font-size: 8pt;
@@ -5336,10 +5336,10 @@
             margin : -5px 0 3px 0;
         }
         
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main container="div[4]/div/span" close="div[4]/div/div/a">
+    <a:presentation>
+        <a:main container="div[4]/div/span" close="div[4]/div/div/a">
             <div class="errorbox">
                 <div class="tLeft"> </div>
                 <div class="tRight"> </div>
@@ -5356,17 +5356,17 @@
                 <div class="bRight"> </div>
                 <div class="bBar"> </div>
             </div>
-        </j:main>
-    </j:presentation>
-</j:errorbox-->
+        </a:main>
+    </a:presentation>
+</a:errorbox-->
 
 
 
 <!--
     * Please optimize this skin (at least 2 elements less) - big problems with ie6 if I optimize
 -->
-<j:bar name="bar">
-    <j:style><![CDATA[
+<a:bar name="bar">
+    <a:style><![CDATA[
         .bar{
             color: #4b4b4b;
             font-family : Tahoma;
@@ -5410,26 +5410,26 @@
         }
         
 
-    ]]></j:style>
-    <j:style condition="jpf.isIE6">
+    ]]></a:style>
+    <a:style condition="apf.isIE6">
     	.bar {
 	    padding: 20px 0 0 0;
 	}
 	.bar .contents {
 	    padding-bottom: 0;
 	}
-    </j:style>
-    <j:presentation>
-        <j:main container="div">
+    </a:style>
+    <a:presentation>
+        <a:main container="div">
             <div class="bar">
                 <div class="contents"> </div>
                 <div class="barFooter"><div><div> </div></div></div>
             </div>
-        </j:main>
-    </j:presentation>
-</j:bar>
-<j:bar name="previewBar">
-    <j:style><![CDATA[
+        </a:main>
+    </a:presentation>
+</a:bar>
+<a:bar name="previewBar">
+    <a:style><![CDATA[
         .previewBar{
             color: #4b4b4b;
             font-family : Arial,Helvetica,Sans-serif;
@@ -5450,17 +5450,17 @@
 			height : 100%;
         }
 
-    ]]></j:style>
-    <j:presentation>
-        <j:main container=".">
+    ]]></a:style>
+    <a:presentation>
+        <a:main container=".">
             <div class="previewBar">
             </div>
-        </j:main>
-    </j:presentation>
-</j:bar>
-<j:frame name="frame">
-    <j:alias>fieldset</j:alias>
-    <j:style><![CDATA[
+        </a:main>
+    </a:presentation>
+</a:bar>
+<a:frame name="frame">
+    <a:alias>fieldset</a:alias>
+    <a:style><![CDATA[
         .frame{
             padding: 0 7px 7px 7px;
             border: 1px solid #dcd8d8;
@@ -5485,26 +5485,26 @@
             margin : 0 0 7px -7px;
             cursor : default;
         }
-    ]]></j:style>
-    <j:style condition="jpf.isIE6">
+    ]]></a:style>
+    <a:style condition="apf.isIE6">
     	.frame {
     	    height: 1%;
     	}
-    </j:style>
-    <j:style condition="!jpf.isIE">
+    </a:style>
+    <a:style condition="!apf.isIE">
     	.frame .legend{
     	    margin : 5px 0 7px -3px;
     	}
-    </j:style>    
+    </a:style>
     
-    <j:presentation>
-        <j:main container="." caption="legend/text()">
+    <a:presentation>
+        <a:main container="." caption="legend/text()">
             <fieldset class='frame'><legend class="legend">-</legend></fieldset>
-        </j:main>
-    </j:presentation>
-</j:frame>
-<j:modalwindow name="section">
-    <j:style><![CDATA[
+        </a:main>
+    </a:presentation>
+</a:frame>
+<a:modalwindow name="section">
+    <a:style><![CDATA[
         .section{
             position: relative;
             padding : 20px 0 0 0;
@@ -5570,9 +5570,9 @@
         .section .sectionhead div.down{
             background-color : white;
         }
-    ]]></j:style>
-    <j:presentation>
-        <j:main collapsed-height="20" 
+    ]]></a:style>
+    <a:presentation>
+        <a:main collapsed-height="20"
           min-width="150" min-height="80"
           container="div[2]" drag="div[1]" title="div[1]/text()" 
           icon="div[1]/span" buttons="div[1]">
@@ -5580,14 +5580,14 @@
                 <div class="sectionhead"><span> </span>-</div>
                 <div class="sectioncontainer"></div>
             </div>
-        </j:main>
-        <j:button>
+        </a:main>
+        <a:button>
             <div> </div>
-        </j:button>
-    </j:presentation>
-</j:modalwindow>
-<j:upload name="upload">
-    <j:style><![CDATA[
+        </a:button>
+    </a:presentation>
+</a:modalwindow>
+<a:upload name="upload">
+    <a:style><![CDATA[
         .upload{
             /*border : 1px solid #dcdcdc;
             padding : 2px;
@@ -5624,27 +5624,27 @@
             width: 0;
             height: 0;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main label=".">
+    <a:presentation>
+        <a:main label=".">
             <div class="upload">
                 
             </div>
-        </j:main>
-        <j:form inp_file="input[1]" inp_uid="input[2]">
+        </a:main>
+        <a:form inp_file="input[1]" inp_uid="input[2]">
             <form frameborder='0' method='post' action='' enctype='multipart/form-data'>
                 <input class="fileinput" type='file' name='userfile'/>
                 <input type='hidden' name='uniqueid' value='' />
                 <input type="hidden" name="AUTH" value="PA20080587%3Aefdb43212c72c2d140827876781c5489" />
             </form>
-        </j:form>
-    </j:presentation>
-</j:upload>
+        </a:form>
+    </a:presentation>
+</a:upload>
 <!-- ********** END **********    -->
 
-<j:img name="img">
-    <j:style><![CDATA[
+<a:img name="img">
+    <a:style><![CDATA[
         .img{
             padding : 10px;
             border : 1px solid #c3c3c3;
@@ -5658,18 +5658,18 @@
             margin : auto;
             position : relative;
         }
-    ]]></j:style>
+    ]]></a:style>
     
-    <j:presentation>
-        <j:main image="img/@src">
+    <a:presentation>
+        <a:main image="img/@src">
             <div class="img">
                 <img src="" />
             </div>
-        </j:main>
-    </j:presentation>
-</j:img>
-<j:markupedit name="markupedit">
-    <j:style><![CDATA[
+        </a:main>
+    </a:presentation>
+</a:img>
+<a:markupedit name="markupedit">
+    <a:style><![CDATA[
         .markupedit {
             border: 1px solid gray;
 
@@ -5783,15 +5783,15 @@
             height: 0;
             overflow: hidden;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main container="." startclosed="false">
+    <a:presentation>
+        <a:main container="." startclosed="false">
             <div class="markupedit">
 
             </div>
-        </j:main>
-        <j:item
+        </a:main>
+        <a:item
             class       = "dl"
             begintag    = "dl/dt"
             begintail   = "dl/span"
@@ -5806,25 +5806,25 @@
                 <blockquote> </blockquote>
                 <span>-</span>
             </div>
-        </j:item>
-        <j:attribute name="dt" value="dd">
+        </a:item>
+        <a:attribute name="dt" value="dd">
             <dl class="attribute"><dt> </dt>="<dd> </dd>"</dl>
-        </j:attribute>
-        <j:textnode text="strong" tag="u">
+        </a:attribute>
+        <a:textnode text="strong" tag="u">
             <strong class="textnode"><u> </u><strong>-</strong></strong>
-        </j:textnode>
-        <j:loading>
+        </a:textnode>
+        <a:loading>
             <div class="loading"><span> </span><label>Loading...</label></div>
-        </j:loading>
-        <j:empty caption=".">
+        </a:loading>
+        <a:empty caption=".">
             <div class="empty"></div>
-        </j:empty>
-    </j:presentation>
-</j:markupedit>
-<j:testobject name="testobject">
-    <j:alias>aliasofobject</j:alias>
+        </a:empty>
+    </a:presentation>
+</a:markupedit>
+<a:testobject name="testobject">
+    <a:alias>aliasofobject</a:alias>
     
-    <j:style><![CDATA[
+    <a:style><![CDATA[
         .testobject{
             border: 1px solid red;
             padding: 0 0 5px 0;
@@ -5848,35 +5848,35 @@
         .testobjectDisabled{
             background-color: black;
         }
-    ]]></j:style>
-    <j:presentation>
-        <j:main content=".">
+    ]]></a:style>
+    <a:presentation>
+        <a:main content=".">
             <div class='testobject'>
             
             </div>
-        </j:main>
-        <j:item caption="." icon=".">
+        </a:main>
+        <a:item caption="." icon=".">
             <div> </div>
-        </j:item>
-    </j:presentation>
-</j:testobject>
-<j:chart name="chart">
-    <j:style><![CDATA[
+        </a:item>
+    </a:presentation>
+</a:testobject>
+<a:chart name="chart">
+    <a:style><![CDATA[
     .chart {
         background-color:transparent;    
     }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main container=".">
+    <a:presentation>
+        <a:main container=".">
             <div class='chart' style="position:relative; overflow:hidden;"></div>
-        </j:main>
-    </j:presentation>
-</j:chart>
+        </a:main>
+    </a:presentation>
+</a:chart>
 
 
-<j:bar name="barmedia">
-    <j:style><![CDATA[
+<a:bar name="barmedia">
+    <a:style><![CDATA[
         .barmedia {
             position: relative;
             color: #4b4b4b;
@@ -5947,15 +5947,15 @@
             width:14px;
             margin:3px auto 0 0;
         }
-    ]]></j:style>
-    <j:presentation>
-        <j:main container="." resize-corner="17">
+    ]]></a:style>
+    <a:presentation>
+        <a:main container="." resize-corner="17">
             <div class="barmedia"> </div>
-        </j:main>
-    </j:presentation>
-</j:bar>
-<j:label name="labelmedia">
-    <j:style><![CDATA[
+        </a:main>
+    </a:presentation>
+</a:bar>
+<a:label name="labelmedia">
+    <a:style><![CDATA[
         .labelmedia{
             font-size: 8pt;
             font-family: Tahoma;
@@ -5978,15 +5978,15 @@
             min-height : 37px;
             padding : 3px 0 0 45px;
         }
-    ]]></j:style>
-    <j:presentation>
-        <j:main caption="." for="@for">
+    ]]></a:style>
+    <a:presentation>
+        <a:main caption="." for="@for">
             <div class="labelmedia"> </div>
-        </j:main>
-    </j:presentation>
-</j:label>
-<j:slider name="slidermedia">
-    <j:style><![CDATA[
+        </a:main>
+    </a:presentation>
+</a:label>
+<a:slider name="slidermedia">
+    <a:style><![CDATA[
         .slidermedia {
             background: url("images/bar_right.png") no-repeat top right;
             height: 8px;
@@ -6026,21 +6026,21 @@
         .slidermediaDisabled .grabber {
             background-position: left -8px;
         }
-    ]]></j:style>
-    <j:presentation>
-        <j:main slider="div[1]" container="." status2="div[2]/text()" markers="." direction="horizontal">
+    ]]></a:style>
+    <a:presentation>
+        <a:main slider="div[1]" container="." status2="div[2]/text()" markers="." direction="horizontal">
             <div class="slidermedia">
                 <div class="grabber"> </div>
                 <div class="left"> </div>
             </div>
-        </j:main>
+        </a:main>
         <marker>
             <u> </u>
         </marker>
-    </j:presentation>
-</j:slider>
-<j:slider name="slidermedia_ver">
-    <j:style><![CDATA[
+    </a:presentation>
+</a:slider>
+<a:slider name="slidermedia_ver">
+    <a:style><![CDATA[
         .slidermedia_ver {
             background: url("images/bar_bottom.png") no-repeat -8px bottom;
             width: 8px;
@@ -6085,21 +6085,21 @@
         .slidermedia_verDisabled .grabber {
             background-position: 0 0;
         }
-    ]]></j:style>
-    <j:presentation>
-        <j:main slider="div[1]" container="." status2="div[2]/text()" markers="." direction="vertical">
+    ]]></a:style>
+    <a:presentation>
+        <a:main slider="div[1]" container="." status2="div[2]/text()" markers="." direction="vertical">
             <div class="slidermedia_ver">
                 <div class="grabber"> </div>
                 <div class="top"> </div>
             </div>
-        </j:main>
+        </a:main>
         <marker>
             <u> </u>
         </marker>
-    </j:presentation>
-</j:slider>
-<j:slider name="slider16media">
-    <j:style><![CDATA[
+    </a:presentation>
+</a:slider>
+<a:slider name="slider16media">
+    <a:style><![CDATA[
         .slider16media {
             background: url("images/bar16x_right.png") no-repeat top right;
             width: 300px;
@@ -6151,24 +6151,24 @@
             margin-top: 6px;
             z-index: 0;
         }
-    ]]></j:style>
-    <j:presentation>
-        <j:main slider="div[1]" container="." progress="div[2]" status2="div[2]/text()" markers="." direction="horizontal">
+    ]]></a:style>
+    <a:presentation>
+        <a:main slider="div[1]" container="." progress="div[2]" status2="div[2]/text()" markers="." direction="horizontal">
             <div class="slider16media">
                 <div class="grabber"> </div>
                 <div class="left"> </div>
             </div>
-        </j:main>
+        </a:main>
         <progress>
             <span class="sldprogress"> </span>
         </progress>
         <marker>
             <u> </u>
         </marker>
-    </j:presentation>
-</j:slider>
-<j:slider name="slider16media_ver">
-    <j:style><![CDATA[
+    </a:presentation>
+</a:slider>
+<a:slider name="slider16media_ver">
+    <a:style><![CDATA[
         .slider16media_ver {
             background: url("images/bar16x_bottom.png") no-repeat -16px bottom;
             height: 300px;
@@ -6224,24 +6224,24 @@
             margin-top: 6px;
             z-index: 0;
         }
-    ]]></j:style>
-    <j:presentation>
-        <j:main slider="div[1]" container="." progress="div[2]" status2="div[2]/text()" markers="." direction="vertical">
+    ]]></a:style>
+    <a:presentation>
+        <a:main slider="div[1]" container="." progress="div[2]" status2="div[2]/text()" markers="." direction="vertical">
             <div class="slider16media_ver">
                 <div class="grabber"> </div>
                 <div class="top"> </div>
             </div>
-        </j:main>
+        </a:main>
         <progress>
             <span class="sldprogress"> </span>
         </progress>
         <marker>
             <u> </u>
         </marker>
-    </j:presentation>
-</j:slider>
-<j:button name="buttonmedia">
-    <j:style><![CDATA[
+    </a:presentation>
+</a:slider>
+<a:button name="buttonmedia">
+    <a:style><![CDATA[
         .buttonmedia {
             color: #4b4b4b;
             font-family: Tahoma;
@@ -6273,17 +6273,17 @@
             height: 10px;
             margin: 4px auto 0 11px;
         }
-    ]]></j:style>
-    <j:presentation>
-        <j:main background="span" icon="span">
+    ]]></a:style>
+    <a:presentation>
+        <a:main background="span" icon="span">
             <div class="buttonmedia">
                 <span> </span>
             </div>
-        </j:main>
-    </j:presentation>
-</j:button>
-<j:button name="buttonvolume">
-    <j:style><![CDATA[
+        </a:main>
+    </a:presentation>
+</a:button>
+<a:button name="buttonvolume">
+    <a:style><![CDATA[
         .buttonvolume {
             color: #4b4b4b;
             font-family: Tahoma;
@@ -6304,17 +6304,17 @@
             width: 16px;
             height: 16px;
         }
-    ]]></j:style>
-    <j:presentation>
-        <j:main background="span" icon="span">
+    ]]></a:style>
+    <a:presentation>
+        <a:main background="span" icon="span">
             <div class="buttonvolume">
                 <span> </span>
             </div>
-        </j:main>
-    </j:presentation>
-</j:button>
-<j:video name="video">
-    <j:style><![CDATA[
+        </a:main>
+    </a:presentation>
+</a:button>
+<a:video name="video">
+    <a:style><![CDATA[
         .video {
             line-height:300px;
             margin:0;
@@ -6333,18 +6333,18 @@
             left : 0;
             top : 0;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main container=".">
+    <a:presentation>
+        <a:main container=".">
             <div class="video"> </div>
-        </j:main>
-    </j:presentation>
-</j:video>
+        </a:main>
+    </a:presentation>
+</a:video>
 
 
-<j:statusbar name="status">
-    <j:style><![CDATA[
+<a:statusbar name="status">
+    <a:style><![CDATA[
         .statuscontainer{
             margin: 8px 4px 0 0;
             padding: 4px 0 0 8px;
@@ -6386,36 +6386,36 @@
         .statuscontainerChecked .scheckbox{
             background: url(icons/icoOn.gif) no-repeat 50% 50%;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main label="span/text()">
+    <a:presentation>
+        <a:main label="span/text()">
             <div class='statuscontainer'>
                 <div class='scheckbox'> </div>
                 <span>-</span>
             </div>
-        </j:main>
-    </j:presentation>
-</j:statusbar>
-<j:palette name="colorpicker">
-    <j:style><![CDATA[
-    ]]></j:style>
+        </a:main>
+    </a:presentation>
+</a:statusbar>
+<a:palette name="colorpicker">
+    <a:style><![CDATA[
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main viewer="blockquote" standard="div[1]" custom="div[2]">
+    <a:presentation>
+        <a:main viewer="blockquote" standard="div[1]" custom="div[2]">
             <div class='palette'>
                 <blockquote></blockquote>
                 <div class='standard'></div>
                 <div class='custom'></div>
             </div>
-        </j:main>
-        <j:item background=".">
+        </a:main>
+        <a:item background=".">
             <span></span>
-        </j:item>
-    </j:presentation>
-</j:palette>
-<j:datagrid name="datagrid">
-    <j:style><![CDATA[
+        </a:item>
+    </a:presentation>
+</a:palette>
+<a:datagrid name="datagrid">
+    <a:style><![CDATA[
         .datagrid{
             position: relative;
             border: 1px solid #c3c3c3;
@@ -6634,8 +6634,8 @@
             margin-bottom : 0;
             background-position : 0 0;
         }
-    ]]></j:style>
-    <j:style condition="jpf.isIE &amp;&amp; !jpf.isIE8"><![CDATA[
+    ]]></a:style>
+    <a:style condition="apf.isIE &amp;&amp; !apf.isIE8"><![CDATA[
         .datagrid .headings div{
             float : left;
         }
@@ -6643,8 +6643,8 @@
         .datagrid .records div span{
             float : left;
         }
-    ]]></j:style>
-    <j:style condition="jpf.isGecko &amp;&amp; !jpf.isGecko3"><![CDATA[
+    ]]></a:style>
+    <a:style condition="apf.isGecko &amp;&amp; !apf.isGecko3"><![CDATA[
         .datagrid .headings{
             padding-top : 2px;
             height : 15px;
@@ -6664,10 +6664,10 @@
             overflow : visible;
             position : relative;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main
+    <a:presentation>
+        <a:main
             head        = "div[1]"
             body        = "div[3]"
             pointer     = "div[2]"
@@ -6682,41 +6682,41 @@
                 <div class='pointer'> </div>
                 <div class='records'> </div>
             </div>
-        </j:main>
+        </a:main>
 
-        <j:headitem class="." caption="text()">
+        <a:headitem class="." caption="text()">
             <div>-<span></span></div>
-        </j:headitem>
+        </a:headitem>
         
-        <j:rowheaditem class="." caption="text()">
+        <a:rowheaditem class="." caption="text()">
             <span>-</span>
-        </j:rowheaditem>
+        </a:rowheaditem>
         
-        <j:row class="." container=".">
+        <a:row class="." container=".">
             <div />
-        </j:row>
+        </a:row>
         
-        <j:dragindicator>
+        <a:dragindicator>
             <div class='dragdg'> </div>
-        </j:dragindicator>
+        </a:dragindicator>
 
-        <j:cell caption="."><span>-</span></j:cell>
+        <a:cell caption="."><span>-</span></a:cell>
 
-        <j:container container=".">
+        <a:container container=".">
             <div class="dginfo">-</div>
-        </j:container>
+        </a:container>
 
-        <j:loading>
+        <a:loading>
             <div class="loading"><span></span><label>Loading...</label></div>
-        </j:loading>
+        </a:loading>
         
-        <j:empty caption=".">
+        <a:empty caption=".">
             <div class="empty"> </div>
-        </j:empty>
-    </j:presentation>
-</j:datagrid>
-<j:datagrid name="spreadsheet">
-    <j:style><![CDATA[
+        </a:empty>
+    </a:presentation>
+</a:datagrid>
+<a:datagrid name="spreadsheet">
+    <a:style><![CDATA[
         .spreadsheet{
             border: 1px solid #c3c3c3;
             background-color: white;
@@ -7089,15 +7089,15 @@
         .spreadsheet div span.spreadsheet_lookupmultiple #txt_rename{
             margin : -1px;
         }
-    ]]></j:style>
-    <j:style condition="jpf.isIE"><![CDATA[
+    ]]></a:style>
+    <a:style condition="apf.isIE"><![CDATA[
         .spreadsheet .headings div{
         }
         
         .spreadsheet .records div span{
         }
-    ]]></j:style>
-    <j:style condition="jpf.isIE6"><![CDATA[
+    ]]></a:style>
+    <a:style condition="apf.isIE6"><![CDATA[
         .spreadsheet{
             overflow-x : hidden;
             padding-right : 16px;
@@ -7143,8 +7143,8 @@
         .spreadsheet .size_pointer{
             height : expression(this.parentNode.offsetHeight - 2);
         }
-    ]]></j:style>
-    <j:style condition="!jpf.isIE"><![CDATA[
+    ]]></a:style>
+    <a:style condition="!apf.isIE"><![CDATA[
         .spreadsheet .btncustom, .spreadsheet .ddbtn{
             -moz-border-top-colors: #D4D0C8 #FFFFFF;
             -moz-border-left-colors: #D4D0C8 #FFFFFF;
@@ -7168,8 +7168,8 @@
             font-size : 11px;
             line-height : 11px;
         }
-    ]]></j:style>
-    <j:style condition="jpf.isGecko &amp;&amp; !jpf.isGecko3"><![CDATA[
+    ]]></a:style>
+    <a:style condition="apf.isGecko &amp;&amp; !apf.isGecko3"><![CDATA[
         .spreadsheet .headings{
             height : 18px;
         }
@@ -7214,8 +7214,8 @@
             position : absolute;
             padding : 1px 1px 0 2px;
         }
-    ]]></j:style>
-    <j:style condition="jpf.isGecko3">
+    ]]></a:style>
+    <a:style condition="apf.isGecko3">
         .spreadsheet .records .cellselected b{
             margin : -1px -1px 0 -2px;
             padding : 0 0 1px 2px;
@@ -7226,10 +7226,10 @@
             top : -6px;
             padding-top : 1px;
         }
-    </j:style>
+    </a:style>
 
-    <j:presentation>
-        <j:main
+    <a:presentation>
+        <a:main
             interaction = "p"
             head        = "div[1]"
             rowhead     = "div[3]"
@@ -7249,57 +7249,57 @@
                 <div class='row_headers'> </div>
                 <div class='records'> </div>
             </div>
-        </j:main>
+        </a:main>
 
-        <j:headitem class="." caption="b/text()">
+        <a:headitem class="." caption="b/text()">
             <span><b>-</b></span>
-        </j:headitem>
+        </a:headitem>
         
-        <j:rowheaditem class="." caption="text()">
+        <a:rowheaditem class="." caption="text()">
             <span>-</span>
-        </j:rowheaditem>
+        </a:rowheaditem>
         
-        <j:row class="." container=".">
+        <a:row class="." container=".">
             <div />
-        </j:row>
+        </a:row>
         
-        <j:dragindicator>
+        <a:dragindicator>
             <div class='dragdg'> </div>
-        </j:dragindicator>
+        </a:dragindicator>
 
-        <j:cell caption="b"><span><b> </b></span></j:cell>
+        <a:cell caption="b"><span><b> </b></span></a:cell>
 
-        <j:container container=".">
+        <a:container container=".">
             <div class="dginfo">-</div>
-        </j:container>
+        </a:container>
 
-        <j:dropdown>
+        <a:dropdown>
             <u class="ddbtn"> </u>
-        </j:dropdown>
+        </a:dropdown>
         
-        <j:dropdown_container item-height="17">
+        <a:dropdown_container item-height="17">
             <ul class="propeditcontainerdropdown"> </ul>
-        </j:dropdown_container>
+        </a:dropdown_container>
         
-        <j:jml_container jml="true">
+        <a:jml_container jml="true">
             <ul class="ddjmlcontainer"> </ul>
-        </j:jml_container>
+        </a:jml_container>
         
-        <j:custom>
+        <a:custom>
             <u class="btncustom">...</u>
-        </j:custom>
+        </a:custom>
 
-        <j:loading>
+        <a:loading>
             <div class="loading"><span></span><label>Loading...</label></div>
-        </j:loading>
+        </a:loading>
         
-        <j:empty caption=".">
+        <a:empty caption=".">
             <div class="empty"> </div>
-        </j:empty>
-    </j:presentation>
-</j:datagrid>
-<j:dropdown name="dropdowneditor">
-    <j:style><![CDATA[
+        </a:empty>
+    </a:presentation>
+</a:datagrid>
+<a:dropdown name="dropdowneditor">
+    <a:style><![CDATA[
         .ddedit{
             background-color: white;
             height: 100px;
@@ -7408,32 +7408,32 @@
             background: white url(images/loadingspin.gif) no-repeat 0px 1px;
         }
 
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main label="div[2]/text()" button=".">
+    <a:presentation>
+        <a:main label="div[2]/text()" button=".">
             <div class='ddedit'>
                 <div class='ddeditbtn'> </div>
                 <div class='ddeditlabel'>-</div>
             </div>
-        </j:main>
-        <j:container contents=".">
+        </a:main>
+        <a:container contents=".">
             <div class='ddeditcontainer'> </div>
-        </j:container>
-        <j:item
+        </a:container>
+        <a:item
             class            = "."
             caption        = "text()"
             select        = "."
         >
             <span>-</span>
-        </j:item>
-        <j:empty caption=".">
+        </a:item>
+        <a:empty caption=".">
             <div class="empty">-</div>
-        </j:empty>
-    </j:presentation>
-</j:dropdown>
-<j:picture name="picture">
-    <j:style><![CDATA[
+        </a:empty>
+    </a:presentation>
+</a:dropdown>
+<a:picture name="picture">
+    <a:style><![CDATA[
         .image{
             margin-bottom: 10px;
             background: white no-repeat 50% 50%;
@@ -7444,17 +7444,17 @@
             background-position: 1000px 1000px;
         }
         
-    ]]></j:style>
+    ]]></a:style>
     
-    <j:presentation>
-        <j:main image=".">
+    <a:presentation>
+        <a:main image=".">
             <div class="image">
             </div>
-        </j:main>
-    </j:presentation>
-</j:picture>
-<j:picture name="logo">
-    <j:style><![CDATA[
+        </a:main>
+    </a:presentation>
+</a:picture>
+<a:picture name="logo">
+    <a:style><![CDATA[
         .image{
             margin-bottom: 10px;
         }
@@ -7462,16 +7462,16 @@
         .imageDisabled{
         }
         
-    ]]></j:style>
+    ]]></a:style>
     
-    <j:presentation>
-        <j:main image="@src">
+    <a:presentation>
+        <a:main image="@src">
             <img src="" />
-        </j:main>
-    </j:presentation>
-</j:picture>
-<j:label name="errorlabel">
-    <j:style><![CDATA[
+        </a:main>
+    </a:presentation>
+</a:picture>
+<a:label name="errorlabel">
+    <a:style><![CDATA[
         .errorLabel {
             color:#F00;
             width:400px;
@@ -7490,16 +7490,16 @@
             font-family: MS Sans Serif;
             text-align: center;
         }
-    ]]></j:style>
+    ]]></a:style>
     
-    <j:presentation>
-        <j:main caption="text()" for="@for">
+    <a:presentation>
+        <a:main caption="text()" for="@for">
             <div class="errorLabel">-</div>
-        </j:main>
-    </j:presentation>
-</j:label>
-<j:label name="labelnormal">
-    <j:style><![CDATA[
+        </a:main>
+    </a:presentation>
+</a:label>
+<a:label name="labelnormal">
+    <a:style><![CDATA[
         .lbln{
             font-size: 8pt;
             font-family: Tahoma, Arial;
@@ -7508,22 +7508,22 @@
             overflow: hidden;
             margin: 0 0 0 6px;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main caption="." for="@for">
+    <a:presentation>
+        <a:main caption="." for="@for">
             <div class="lbln"> </div>
-        </j:main>
-    </j:presentation>
-</j:label>
-<j:label name="labeldesc">
+        </a:main>
+    </a:presentation>
+</a:label>
+<a:label name="labeldesc">
     <!--
         Classes:
         - disabled
     -->
 
     <!-- why does renaming style2 to style cause IE to crash? -->
-    <j:style><![CDATA[
+    <a:style><![CDATA[
         .labeldesc{
             font-size: 8pt;
             font-family: MS Sans Serif;
@@ -7542,16 +7542,16 @@
         .label.disabled{
         }
 
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main caption="." for="@for">
+    <a:presentation>
+        <a:main caption="." for="@for">
             <div class="labeldesc">-</div>
-        </j:main>
-    </j:presentation>
-</j:label>
-<j:list name="listmenu">
-    <j:style><![CDATA[
+        </a:main>
+    </a:presentation>
+</a:label>
+<a:list name="listmenu">
+    <a:style><![CDATA[
         .listmenu{
             width: 200px;
             height: 500px;
@@ -7589,33 +7589,33 @@
             text-align: center;
             padding: 3px 0 0 0;
         }
-    ]]></j:style>
+    ]]></a:style>
     
-    <j:presentation>
-        <j:main container=".">
+    <a:presentation>
+        <a:main container=".">
             <div class='listmenu'>
             </div>
-        </j:main>
-        <j:item 
+        </a:main>
+        <a:item
             class            = "."
             caption        = "."
             select        = "."
         >
             <div>-</div>
-        </j:item>
-        <j:dragindicator>
+        </a:item>
+        <a:dragindicator>
             <div class='draglist'><span><u>-</u></span></div>
-        </j:dragindicator>
-        <j:loading>
+        </a:dragindicator>
+        <a:loading>
             <div class="loading">Loading...</div>
-        </j:loading>
-        <j:empty caption=".">
+        </a:loading>
+        <a:empty caption=".">
             <div class="empty">-</div>
-        </j:empty>
-    </j:presentation>
-</j:list>
-<j:list name="layoutlist">
-    <j:style><![CDATA[
+        </a:empty>
+    </a:presentation>
+</a:list>
+<a:list name="layoutlist">
+    <a:style><![CDATA[
         .layoutlist{
             width: 200px;
             height: 500px;
@@ -7709,34 +7709,34 @@
             text-align: center;
             padding: 3px 0 0 0;
         }
-    ]]></j:style>
+    ]]></a:style>
     
-    <j:presentation>
-        <j:main container=".">
+    <a:presentation>
+        <a:main container=".">
             <div class='layoutlist'>
             </div>
-        </j:main>
-        <j:item 
+        </a:main>
+        <a:item
             class            = "."
             caption        = "span/u/node()"
             icon            = "."
             select        = "span"
         >
             <blockquote><span><u>-</u></span></blockquote>
-        </j:item>
-        <j:dragindicator>
+        </a:item>
+        <a:dragindicator>
             <div class='draglayoutlist'><span><u>-</u></span></div>
-        </j:dragindicator>
-        <j:loading>
+        </a:dragindicator>
+        <a:loading>
             <div class="loading">Loading...</div>
-        </j:loading>
-        <j:empty caption=".">
+        </a:loading>
+        <a:empty caption=".">
             <div class="empty">-</div>
-        </j:empty>
-    </j:presentation>
-</j:list>
-<j:list name="joinlist">
-    <j:style><![CDATA[
+        </a:empty>
+    </a:presentation>
+</a:list>
+<a:list name="joinlist">
+    <a:style><![CDATA[
         .joinlist{
             border: 0;
             border-top: 1px solid #c2dff5;
@@ -7803,28 +7803,28 @@
             margin-top : 0px;
             cursor: text;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main container=".">
+    <a:presentation>
+        <a:main container=".">
             <div class='joinlist'>
             </div>
-        </j:main>
-        <j:item
+        </a:main>
+        <a:item
             class            = "."
             caption        = "span/a/text()"
             icon            = "span"
             select        = "span/a"
         >
             <div><span><a href='#' onclick='return false'>-</a></span></div>
-        </j:item>
-        <j:loading>
+        </a:item>
+        <a:loading>
             <div class="loading">Loading...</div>
-        </j:loading>
-    </j:presentation>
-</j:list>
-<j:list name="listicons">
-    <j:style><![CDATA[
+        </a:loading>
+    </a:presentation>
+</a:list>
+<a:list name="listicons">
+    <a:style><![CDATA[
         .listicons{
             border: 1px solid white;
             border-color: gray white white gray;
@@ -7915,34 +7915,34 @@
             margin : 0px;
             cursor: text;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main container=".">
+    <a:presentation>
+        <a:main container=".">
             <div class='listicons'>
             </div>
-        </j:main>
-        <j:item
+        </a:main>
+        <a:item
             class            = "."
             caption        = "label/span/text()"
             image            = "blockquote"
             select        = "."
         >
             <div><blockquote></blockquote><label><span>-</span></label></div>
-        </j:item>
-        <j:dragindicator>
+        </a:item>
+        <a:dragindicator>
             <div class='draglisticon'><blockquote></blockquote><label><span>-</span></label></div>
-        </j:dragindicator>
-        <j:loading>
+        </a:dragindicator>
+        <a:loading>
             <div class="loading">Loading...</div>
-        </j:loading>
-        <j:empty caption=".">
+        </a:loading>
+        <a:empty caption=".">
             <div class="empty">-</div>
-        </j:empty>
-    </j:presentation>
-</j:list>
-<j:list name="listshop">
-    <j:style><![CDATA[
+        </a:empty>
+    </a:presentation>
+</a:list>
+<a:list name="listshop">
+    <a:style><![CDATA[
         .iconlist{
             border: 2px inset white !important; border: 2px inset;
             background-color: white;
@@ -8009,31 +8009,31 @@
             padding: 2px 4px 2px 2px;
             display: block;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main container=".">
+    <a:presentation>
+        <a:main container=".">
             <div class='iconlist'>
             </div>
-        </j:main>
-        <j:item
+        </a:main>
+        <a:item
             class            = "."
             caption        = "span/text()"
             image            = "blockquote"
             select        = "."
         >
             <div><blockquote></blockquote><span>-</span></div>
-        </j:item>
-        <j:dragindicator>
+        </a:item>
+        <a:dragindicator>
             <div class='dragshop'><blockquote></blockquote><span>-</span></div>
-        </j:dragindicator>
-        <j:loading>
+        </a:dragindicator>
+        <a:loading>
             <div class="loading">Loading...</div>
-        </j:loading>
-    </j:presentation>
-</j:list>
-<j:list name="listsmileys">
-    <j:style><![CDATA[
+        </a:loading>
+    </a:presentation>
+</a:list>
+<a:list name="listsmileys">
+    <a:style><![CDATA[
         .listsmileys{
             background: #d5e9f8 url(images/ddgradient.gif) repeat-x;
             border: 1px solid white;
@@ -8066,27 +8066,27 @@
         /*.listsmileys .selected, .listsmileys A:hover.selected{
             border: 1px solid midnightblue;
         }*/
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main container=".">
+    <a:presentation>
+        <a:main container=".">
             <div class='listsmileys'>
             </div>
-        </j:main>
-        <j:item
+        </a:main>
+        <a:item
             class            = "."
             image            = "img/@src"
             select        = "."
         >
             <a href='javascript:void(0);' onclick='return false'><img src='' /></a>
-        </j:item>
-        <j:loading>
+        </a:item>
+        <a:loading>
             <div class="loading">Loading...</div>
-        </j:loading>
-    </j:presentation>
-</j:list>
-<j:list name="listtab">
-    <j:style><![CDATA[
+        </a:loading>
+    </a:presentation>
+</a:list>
+<a:list name="listtab">
+    <a:style><![CDATA[
         .listtab{
             width: 300px;
             height: 100px;
@@ -8144,33 +8144,33 @@
             position: relative;
         }
 
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main container="div">
+    <a:presentation>
+        <a:main container="div">
             <div class='listtab'>
                 <div class='btncontainer'>
                 </div>
                 <div class='tabpage'> </div>
             </div>
-        </j:main>
-        <j:item
+        </a:main>
+        <a:item
             class            = "."
             caption        = "text()"
             select        = "."
         >
             <span class='btn'>-</span>
-        </j:item>
-        <j:loading>
+        </a:item>
+        <a:loading>
             <div class="loading">Loading...</div>
-        </j:loading>
-        <j:empty caption=".">
+        </a:loading>
+        <a:empty caption=".">
             <div class="empty">-</div>
-        </j:empty>
-    </j:presentation>
-</j:list>
-<j:list name="listthin">
-    <j:style><![CDATA[
+        </a:empty>
+    </a:presentation>
+</a:list>
+<a:list name="listthin">
+    <a:style><![CDATA[
         .listthin{
             border: 1px solid gray;
 
@@ -8236,14 +8236,14 @@
             text-align: center;
             padding: 3px 0 0 0;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main container=".">
+    <a:presentation>
+        <a:main container=".">
             <div class='listthin'>
             </div>
-        </j:main>
-        <j:item
+        </a:main>
+        <a:item
             class            = "."
             caption        = "span/a/text()"
             checkbox        = "input"
@@ -8251,16 +8251,16 @@
             select        = "."
         >
             <div><input type='checkbox' /><span><a href='#' onclick='return false'>-</a></span></div>
-        </j:item>
-        <j:loading>
+        </a:item>
+        <a:loading>
             <div class="loading">Loading...</div>
-        </j:loading>
-        <j:empty caption=".">
+        </a:loading>
+        <a:empty caption=".">
             <div class="empty">-</div>
-        </j:empty>
-    </j:presentation>
-</j:list>
-<j:button name="luxebutton">
+        </a:empty>
+    </a:presentation>
+</a:list>
+<a:button name="luxebutton">
     <!--
         Classes:
         - disabled
@@ -8271,7 +8271,7 @@
         - btnover
     -->
 
-    <j:style><![CDATA[
+    <a:style><![CDATA[
         .luxebutton{
             border: 1px solid #D4D0C8;
             background-color: #D4D0C8;
@@ -8308,21 +8308,21 @@
         .helper.active{
             display: none;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main caption="text()" icon=".">
+    <a:presentation>
+        <a:main caption="text()" icon=".">
             <div class='luxebutton'>-</div>
-        </j:main>
+        </a:main>
 
-        <j:helper>
+        <a:helper>
             <div class='helper'></div>
-        </j:helper>
-    </j:presentation>
-</j:button>
+        </a:helper>
+    </a:presentation>
+</a:button>
 
-<j:text name="messengerchat">
-    <j:style><![CDATA[
+<a:text name="messengerchat">
+    <a:style><![CDATA[
         .chattabs{
             overflow: auto;
 
@@ -8424,14 +8424,14 @@
         .chattabs .first{
             background: url(images/emesstab.gif) no-repeat;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main container=".">
+    <a:presentation>
+        <a:main container=".">
             <div class='chattabs'>
             </div>
-        </j:main>
-        <j:item
+        </a:main>
+        <a:item
             class            = "."
             image            = "img/@src"
             icon            = "span"
@@ -8449,14 +8449,14 @@
                 <strong></strong>
                 <dl>-</dl>
             </div>
-        </j:item>
-        <j:loading>
+        </a:item>
+        <a:loading>
             <div class="loading">Loading...</div>
-        </j:loading>
-    </j:presentation>
-</j:text>
-<j:pages name="pages">
-    <j:style><![CDATA[
+        </a:loading>
+    </a:presentation>
+</a:text>
+<a:pages name="pages">
+    <a:style><![CDATA[
         .pages{
             width: 100px;
             height: 100px;
@@ -8472,20 +8472,20 @@
         .pages .curpage{
             display: block;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main pages=".">
+    <a:presentation>
+        <a:main pages=".">
             <div class='pages'>
             </div>
-        </j:main>
-        <j:page container=".">
+        </a:main>
+        <a:page container=".">
             <div class='page'></div>
-        </j:page>
-    </j:presentation>
-</j:pages>
-<j:palette name="palette">
-    <j:style><![CDATA[
+        </a:page>
+    </a:presentation>
+</a:pages>
+<a:palette name="palette">
+    <a:style><![CDATA[
         .palette{
             width: 143px;
             height: 35px;
@@ -8535,22 +8535,22 @@
             float: left;
             overflow: hidden;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main viewer="blockquote" standard="div[1]" custom="div[2]">
+    <a:presentation>
+        <a:main viewer="blockquote" standard="div[1]" custom="div[2]">
             <div class='palette'>
                 <blockquote></blockquote>
                 <div class='standard'></div>
                 <div class='custom'></div>
             </div>
-        </j:main>
-        <j:item background=".">
+        </a:main>
+        <a:item background=".">
             <span></span>
-        </j:item>
-    </j:presentation>
-</j:palette>
-<j:statusbar name="statusbar2005">
+        </a:item>
+    </a:presentation>
+</a:palette>
+<a:statusbar name="statusbar2005">
     <!--
         Classes:
         - disabled
@@ -8565,7 +8565,7 @@
         - finish
     -->
 
-    <j:style><![CDATA[
+    <a:style><![CDATA[
         .sb2005{
             width: 100px;
             height: 100px;
@@ -8606,20 +8606,20 @@
             top: 9px;
             display: block;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main container="." corner="span">
+    <a:presentation>
+        <a:main container="." corner="span">
             <div class='sb2005'><span class='corner'></span></div>
-        </j:main>
-        <j:panel icon="." caption="text()">
+        </a:main>
+        <a:panel icon="." caption="text()">
             <div class='panel'>-</div>
-        </j:panel>
-    </j:presentation>
-</j:statusbar>
+        </a:panel>
+    </a:presentation>
+</a:statusbar>
 
-<j:tab name="lowtab">
-    <j:style><![CDATA[  
+<a:tab name="lowtab">
+    <a:style><![CDATA[
         .lowtab{
             position: relative;           
             color: #4B4B4B;
@@ -8691,8 +8691,8 @@
             display: block;
         }
         
-    ]]></j:style>
-    <j:style condition="jpf.isIE6">
+    ]]></a:style>
+    <a:style condition="apf.isIE6">
 	.lowtab .btncontainer{
             bottom: 1px;
 	}
@@ -8702,24 +8702,24 @@
  	.lowtab .btncontainer div div {
 	    margin: 0 0 0 0;
 	}
-    </j:style>
-    <j:presentation>
-        <j:main pages="." buttons="div">
+    </a:style>
+    <a:presentation>
+        <a:main pages="." buttons="div">
             <div class='lowtab'>
                 <div class='btncontainer'>
                 </div>
             </div>
-        </j:main>
-        <j:button caption="div/span/text()">
+        </a:main>
+        <a:button caption="div/span/text()">
             <div class="btn"><div><span>-</span></div></div>
-        </j:button>
-        <j:page container=".">
+        </a:button>
+        <a:page container=".">
             <div class='page'></div>
-        </j:page>
-    </j:presentation>
-</j:tab>
-<j:tab name="tablowms">
-    <j:style><![CDATA[
+        </a:page>
+    </a:presentation>
+</a:tab>
+<a:tab name="tablowms">
+    <a:style><![CDATA[
         .lowtabms{
             width: 300px;
             height: 100px;
@@ -8795,26 +8795,26 @@
             height: 100%;
             overflow: hidden;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main pages="." buttons="div">
+    <a:presentation>
+        <a:main pages="." buttons="div">
             <div class='lowtabms'>
                 <div class='btncontainer'>
                 </div>
             </div>
-        </j:main>
-        <j:button caption="text()">
+        </a:main>
+        <a:button caption="text()">
             <span class='btn'>-</span>
-        </j:button>
-        <j:page container=".">
+        </a:button>
+        <a:page container=".">
             <div class='tabpage'></div>
-        </j:page>
-    </j:presentation>
-</j:tab>
+        </a:page>
+    </a:presentation>
+</a:tab>
 
-<j:tab name="tabmsdev">
-    <j:style><![CDATA[
+<a:tab name="tabmsdev">
+    <a:style><![CDATA[
         .tabmsdev{
             width: 300px;
             height: 100px;
@@ -8873,25 +8873,25 @@
             height: 100%;
             overflow: auto;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main pages="." buttons="div">
+    <a:presentation>
+        <a:main pages="." buttons="div">
             <div class='tabmsdev'>
                 <div class='btncontainer'>
                 </div>
             </div>
-        </j:main>
-        <j:button caption="text()">
+        </a:main>
+        <a:button caption="text()">
             <span class='tabmsdevbtn'>-</span>
-        </j:button>
-        <j:page container=".">
+        </a:button>
+        <a:page container=".">
             <div class='tabmsdevpage'></div>
-        </j:page>
-    </j:presentation>
-</j:tab>
-<j:tab name="tabmsdev2005">
-    <j:style><![CDATA[
+        </a:page>
+    </a:presentation>
+</a:tab>
+<a:tab name="tabmsdev2005">
+    <a:style><![CDATA[
         .tabmsdev2005{
             width: 300px;
             height: 100px;
@@ -8951,25 +8951,25 @@
             display: block;
             height: 100%;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main pages="." buttons="div">
+    <a:presentation>
+        <a:main pages="." buttons="div">
             <div class='tabmsdev2005'>
                 <div class='btncontainer'>
                 </div>
             </div>
-        </j:main>
-        <j:button caption="text()">
+        </a:main>
+        <a:button caption="text()">
             <span class='btn'>-</span>
-        </j:button>
-        <j:page container=".">
+        </a:button>
+        <a:page container=".">
             <div class='tabmsdev2005page'></div>
-        </j:page>
-    </j:presentation>
-</j:tab>
-<j:tab name="tabmsdev2005low">
-    <j:style><![CDATA[
+        </a:page>
+    </a:presentation>
+</a:tab>
+<a:tab name="tabmsdev2005low">
+    <a:style><![CDATA[
         .lowmsdevtab2005{
             width: 300px;
             height: 100px;
@@ -9043,26 +9043,26 @@
             overflow: hidden;
             position: relative;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main pages="." buttons="div">
+    <a:presentation>
+        <a:main pages="." buttons="div">
             <div class='lowmsdevtab2005'>
                 <div class='btncontainer'>
                 </div>
             </div>
-        </j:main>
-        <j:button caption="text()">
+        </a:main>
+        <a:button caption="text()">
             <span class='btn'>-</span>
-        </j:button>
-        <j:page container=".">
+        </a:button>
+        <a:page container=".">
             <div class='tabpage'></div>
-        </j:page>
-    </j:presentation>
-</j:tab>
+        </a:page>
+    </a:presentation>
+</a:tab>
 
-<j:tab name="tabmsdevlow">
-    <j:style><![CDATA[
+<a:tab name="tabmsdevlow">
+    <a:style><![CDATA[
         .lowmsdevtab{
             width: 300px;
             height: 100px;
@@ -9137,26 +9137,26 @@
             height: 100%;
             overflow: hidden;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main pages="." buttons="div">
+    <a:presentation>
+        <a:main pages="." buttons="div">
             <div class='lowmsdevtab'>
                 <div class='btncontainer'>
                 </div>
             </div>
-        </j:main>
-        <j:button caption="text()">
+        </a:main>
+        <a:button caption="text()">
             <span class='btn'>-</span>
-        </j:button>
-        <j:page container=".">
+        </a:button>
+        <a:page container=".">
             <div class='tabpage'></div>
-        </j:page>
-    </j:presentation>
-</j:tab>
+        </a:page>
+    </a:presentation>
+</a:tab>
 
-<j:text name="text">
-    <j:style><![CDATA[
+<a:text name="text">
+    <a:style><![CDATA[
         .text{
             font-family: Arial;
             font-size: 9pt;
@@ -9178,16 +9178,16 @@
         
         .textFocus{
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main container=".">
+    <a:presentation>
+        <a:main container=".">
             <div class='text'></div>
-        </j:main>
-    </j:presentation>
-</j:text>
-<j:text name="textmail">
-    <j:iframe_style><![CDATA[
+        </a:main>
+    </a:presentation>
+</a:text>
+<a:text name="textmail">
+    <a:iframe_style><![CDATA[
         body{
             overflow: auto;
             margin: 10px;
@@ -9204,9 +9204,9 @@
             margin: 0;
             overflow: hidden;
         }
-    ]]></j:iframe_style>
+    ]]></a:iframe_style>
 
-    <j:style><![CDATA[
+    <a:style><![CDATA[
         .textmail{
             overflow: auto;
 
@@ -9220,16 +9220,16 @@
             width: 100px;
             height: 100px;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main container=".">
+    <a:presentation>
+        <a:main container=".">
             <iframe class='textmail'> </iframe>
-        </j:main>
-    </j:presentation>
-</j:text>
-<j:text name="textmailpage">
-    <j:iframe_style><![CDATA[
+        </a:main>
+    </a:presentation>
+</a:text>
+<a:text name="textmailpage">
+    <a:iframe_style><![CDATA[
         body{
             background-color: gray;
 
@@ -9261,9 +9261,9 @@
 
             height: 100%;
         }
-    ]]></j:iframe_style>
+    ]]></a:iframe_style>
 
-    <j:style><![CDATA[
+    <a:style><![CDATA[
         .textmailpage{
             background-color: gray;
 
@@ -9288,16 +9288,16 @@
 
             height: 80%;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main container=".">
+    <a:presentation>
+        <a:main container=".">
             <iframe class='textmailpage'> </iframe>
-        </j:main>
-    </j:presentation>
-</j:text>
-<j:text name="textmessenger">
-    <j:style><![CDATA[
+        </a:main>
+    </a:presentation>
+</a:text>
+<a:text name="textmessenger">
+    <a:style><![CDATA[
         .textmsgr{
             border: 1px solid #86bde6;
             background-color: white;
@@ -9348,16 +9348,16 @@
         .textmsg span.system_left{
             color: maroon;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main container=".">
+    <a:presentation>
+        <a:main container=".">
             <div class='textmsgr'></div>
-        </j:main>
-    </j:presentation>
-</j:text>
-<j:button name="labelbutton">
-    <j:style><![CDATA[
+        </a:main>
+    </a:presentation>
+</a:text>
+<a:button name="labelbutton">
+    <a:style><![CDATA[
         .lblbtn{
             color: black;
             font-family: MS Sans Serif, Tahoma, Arial;
@@ -9383,17 +9383,17 @@
         .lblbtnDisabled span{
             background-position: 0 100%;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main caption="text()" icon="." background="span">
+    <a:presentation>
+        <a:main caption="text()" icon="." background="span">
             <div class='lblbtn'></div>
-        </j:main>
-    </j:presentation>
-</j:button>
+        </a:main>
+    </a:presentation>
+</a:button>
 
-<j:scrollbar name="scrollbar">
-    <j:style><![CDATA[
+<a:scrollbar name="scrollbar">
+    <a:style><![CDATA[
         .scrollbar{
             height: 150px;
             position: absolute;
@@ -9452,21 +9452,21 @@
             display: none;
             overflow: hidden;
         }
-    ]]></j:style>
+    ]]></a:style>
     
-    <j:presentation>
-        <j:main btnup="div[1]" indicator="div[2]" btndown="div[3]" slidefast="div[4]">
+    <a:presentation>
+        <a:main btnup="div[1]" indicator="div[2]" btndown="div[3]" slidefast="div[4]">
             <div class='scrollbar'>
                 <div class='btnup'> </div>
                 <div class='indicator'> </div>
                 <div class='btndown'> </div>
                 <div class='slidefast'> </div>
             </div>
-        </j:main>
-    </j:presentation>
-</j:scrollbar>
-<j:fastlist name="fastlist">
-    <j:style><![CDATA[
+        </a:main>
+    </a:presentation>
+</a:scrollbar>
+<a:fastlist name="fastlist">
+    <a:style><![CDATA[
         .fastlist{
             width: 200px;
             height: 500px;
@@ -9541,34 +9541,34 @@
             text-align: center;
             padding: 3px 0 0 0;
         }
-    ]]></j:style>
+    ]]></a:style>
     
-    <j:presentation>
-        <j:main container=".">
+    <a:presentation>
+        <a:main container=".">
             <div class='fastlist'>
             </div>
-        </j:main>
-        <j:item 
+        </a:main>
+        <a:item
             class            = "."
             caption        = "span/u/node()"
             icon            = "span"
             select        = "span"
         >
             <div><span><u>-</u></span></div>
-        </j:item>
-        <j:dragindicator>
+        </a:item>
+        <a:dragindicator>
             <div class='dragfastlist'><span><u>-</u></span></div>
-        </j:dragindicator>
-        <j:loading>
+        </a:dragindicator>
+        <a:loading>
             <div class="loading">Loading...</div>
-        </j:loading>
-        <j:empty caption=".">
+        </a:loading>
+        <a:empty caption=".">
             <div class="empty">-</div>
-        </j:empty>
-    </j:presentation>
-</j:fastlist>
-<j:notifier name="notifier">
-    <j:style><![CDATA[
+        </a:empty>
+    </a:presentation>
+</a:fastlist>
+<a:notifier name="notifier">
+    <a:style><![CDATA[
 
         .notifier {
             width   : 200px;
@@ -9673,10 +9673,10 @@
             opacity : 1;
         }
 
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:notification message="." body="div[4]" icon="div[4]/div">
+    <a:presentation>
+        <a:notification message="." body="div[4]" icon="div[4]/div">
             <div class="notifier">
                 <div class="lt"> </div>
                 <div class="rt"> </div>
@@ -9688,12 +9688,12 @@
                 <div class="rb"> </div>
                 <div class="line_b"> </div>
             </div>
-        </j:notification>
-    </j:presentation>
-</j:notifier>
+        </a:notification>
+    </a:presentation>
+</a:notifier>
     
-<j:notifier name="bubble">
-    <j:style><![CDATA[
+<a:notifier name="bubble">
+    <a:style><![CDATA[
 
         .bubble {
             width   : 200px;
@@ -9803,10 +9803,10 @@
         .notifier_hover {
             opacity : 1;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:notification message="." body="div[4]" icon="div[4]/div">
+    <a:presentation>
+        <a:notification message="." body="div[4]" icon="div[4]/div">
             <div class="bubble">
                 <div class="lt"> </div>
                 <div class="rt"> </div>
@@ -9818,12 +9818,12 @@
                 <div class="rb"> </div>
                 <div class="line_b"> </div>
             </div>
-        </j:notification>
-    </j:presentation>
-</j:notifier>
+        </a:notification>
+    </a:presentation>
+</a:notifier>
 
-<j:notifier name="smoke">
-    <j:style><![CDATA[
+<a:notifier name="smoke">
+    <a:style><![CDATA[
         .smoke {
             width   : 200px;
             padding : 7px 0 7px 0;
@@ -9926,10 +9926,10 @@
         .notifier_hover{
             opacity : 1;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:notification message="." body="div[4]" icon="div[4]/div">
+    <a:presentation>
+        <a:notification message="." body="div[4]" icon="div[4]/div">
             <div class="smoke">
                 <div class="lt"> </div>
                 <div class="rt"> </div>
@@ -9941,11 +9941,11 @@
                 <div class="rb"> </div>
                 <div class="line_b"> </div>
             </div>
-        </j:notification>
-    </j:presentation>
-</j:notifier>
-<j:editor name="editor">
-    <j:style><![CDATA[
+        </a:notification>
+    </a:presentation>
+</a:notifier>
+<a:editor name="editor">
+    <a:style><![CDATA[
         .editor {
             padding: 0;
             margin: 0;
@@ -10557,8 +10557,8 @@
         .editor .editor_Toolbar span.editor_break {background-position:-20px -40px}
         .editor .editor_Toolbar span.editor_nbsp {background-position:-40px -40px}
         .editor .editor_Toolbar span.editor_listitem {background-position:-60px -40px}
-    ]]></j:style>
-    <j:docstyle><![CDATA[
+    ]]></a:style>
+    <a:docstyle><![CDATA[
         html{
             cursor: text;
             border: 0;
@@ -10597,10 +10597,10 @@
         sub, sup {
             line-height: 1px;
         }
-    ]]></j:docstyle>
+    ]]></a:docstyle>
 
-    <j:presentation>
-        <j:main 
+    <a:presentation>
+        <a:main
           toolbar    = "div[1]" 
           editor     = "div[2]" 
           linked     = "textarea" 
@@ -10615,55 +10615,55 @@
 
                 </div>
             </div>
-        </j:main>
-        <j:code container=".">
+        </a:main>
+        <a:code container=".">
             <div class="editor_code">
                 <div class="toolbar_container"> </div>
                 <textarea class=""> </textarea>
             </div>
-        </j:code>
-        <j:toolbar container=".">
+        </a:code>
+        <a:toolbar container=".">
             <div class="editor_Toolbar">
                 <span class="TB_Start"> </span>
             </div>
-        </j:toolbar>
-        <j:divider>
+        </a:toolbar>
+        <a:divider>
             <span class="editor_seperator"> </span>
-        </j:divider>
-        <j:button label="span">
+        </a:divider>
+        <a:button label="span">
             <div class="editor_disabled">
                 <span> </span>
                 <div class="right"> </div>
             </div>
-        </j:button>
+        </a:button>
 
-        <j:toolbars>
-            <j:toolbar>
+        <a:toolbars>
+            <a:toolbar>
                 Bold, Italic, Underline, Strikethrough, |,
                 Sub, Sup, |,
                 Table, |, justifyleft, justifycenter, justifyright,
                 justifyfull, |, Code, |, Anchor, 
                 Link, Unlink, Charmap
-            </j:toolbar>
-            <j:toolbar>
+            </a:toolbar>
+            <a:toolbar>
                 FontStyle, BlockFormat, Fonts, Fontsize, |, RemoveFormat
-            </j:toolbar>
-            <j:toolbar>
+            </a:toolbar>
+            <a:toolbar>
                 Cut, Copy, Paste, PasteText, |,
                 Bullist, NumList, |,
                 Forecolor, Backcolor, |,
                 Search, Replace, |, Outdent, Indent
-            </j:toolbar>
-            <j:codetoolbar>
+            </a:toolbar>
+            <a:codetoolbar>
                 Bullist, Numlist, Listitem, Nbsp, Break, Paragraph
-            </j:codetoolbar>
-        </j:toolbars>
-        <j:emotions path="images/editor">
+            </a:codetoolbar>
+        </a:toolbars>
+        <a:emotions path="images/editor">
             cool, cry, embarassed, foot-in-mouth, frown, innocent,
             kiss, laughing, money-mouth, sealed, smile, surprised,
             tongue-out, undecided, wink, yell
-        </j:emotions>
-        <j:fonts>
+        </a:emotions>
+        <a:fonts>
             Andale Mono=andale mono,times;
             Arial=arial,helvetica,sans-serif;
             Arial Black=arial black,avant garde;
@@ -10681,14 +10681,14 @@
             Verdana=verdana,geneva;
             Webdings=webdings;
             Wingdings=wingdings,zapf dingbats
-        </j:fonts>
-        <j:fontsizes>
+        </a:fonts>
+        <a:fontsizes>
             1, 2, 3, 4, 5, 6, 7
-        </j:fontsizes>
-        <j:blockformats>
+        </a:fontsizes>
+        <a:blockformats>
             normal, h1, h2, h3, h4, h5, h6, pre, address
-        </j:blockformats>
-        <j:fontstyles><![CDATA[
+        </a:blockformats>
+        <a:fontstyles><![CDATA[
             style1 = .style1 {
                 color: red;
                 font-weight: bolder;
@@ -10702,15 +10702,15 @@
                 font-weight: bold;
                 font-style: italic;
             }
-        ]]></j:fontstyles>
-        <j:empty caption=".">
+        ]]></a:fontstyles>
+        <a:empty caption=".">
             <div class="empty"></div>
-        </j:empty>
-    </j:presentation>
-</j:editor>
-<j:editor name="editsmall">
-    <j:presentation>
-        <j:main toolbar="div[1]" editor="div[2]" linked="textarea" iframe="true">
+        </a:empty>
+    </a:presentation>
+</a:editor>
+<a:editor name="editsmall">
+    <a:presentation>
+        <a:main toolbar="div[1]" editor="div[2]" linked="textarea" iframe="true">
             <div class="editor">
                 <div class="toolbar_container">
 
@@ -10719,49 +10719,49 @@
 
                 </div>
             </div>
-        </j:main>
-        <j:toolbar container=".">
+        </a:main>
+        <a:toolbar container=".">
             <div class="editor_Toolbar">
                 <span class="TB_Start"> </span>
             </div>
-        </j:toolbar>
-        <j:divider>
+        </a:toolbar>
+        <a:divider>
             <span class="editor_seperator"> </span>
-        </j:divider>
-        <j:button label="span">
+        </a:divider>
+        <a:button label="span">
             <div class="editor_disabled">
                 <span> </span>
                 <div class="right"> </div>
             </div>
-        </j:button>
+        </a:button>
 
-        <j:toolbars>
-            <j:toolbar>
+        <a:toolbars>
+            <a:toolbar>
                 Bold, Italic, Underline, Strikethrough, |,
                 JustifyLeft, JustifyCenter, JustifyRight, JustifyFull, |,
                 FontStyle, BlockFormat, Fonts, Fontsize, |, RemoveFormat
-            </j:toolbar>
-            <j:toolbar>
+            </a:toolbar>
+            <a:toolbar>
                 Cut, Copy, Paste, PasteText, |,
                 Search, Replace, Bullist, NumList, |,
                 Outdent, Indent, Blockquote, |,
                 Undo, Redo, |,
                 Link, Unlink, Anchor, Hr, Table, |,
                 Forecolor, Backcolor
-            </j:toolbar>
-            <j:toolbar>
+            </a:toolbar>
+            <a:toolbar>
                 Sub, Sup, |,
                 InsertDate, InsertTime, Charmap, Emotions, |,
                 Print, Preview, VisualAid, |,
                 Code
-            </j:toolbar>
-        </j:toolbars>
-        <j:emotions path="images/editor">
+            </a:toolbar>
+        </a:toolbars>
+        <a:emotions path="images/editor">
             cool, cry, embarassed, foot-in-mouth, frown, innocent,
             kiss, laughing, money-mouth, sealed, smile, surprised,
             tongue-out, undecided, wink, yell
-        </j:emotions>
-        <j:fonts>
+        </a:emotions>
+        <a:fonts>
             Andale Mono=andale mono,times;
             Arial=arial,helvetica,sans-serif;
             Arial Black=arial black,avant garde;
@@ -10779,14 +10779,14 @@
             Verdana=verdana,geneva;
             Webdings=webdings;
             Wingdings=wingdings,zapf dingbats
-        </j:fonts>
-        <j:fontsizes>
+        </a:fonts>
+        <a:fontsizes>
             1, 2, 3, 4, 5, 6, 7
-        </j:fontsizes>
-        <j:blockformats>
+        </a:fontsizes>
+        <a:blockformats>
             normal, h1, h2, h3, h4, h5, h6, pre, address
-        </j:blockformats>
-        <j:fontstyles><![CDATA[
+        </a:blockformats>
+        <a:fontstyles><![CDATA[
             style1 = .style1 {
                 color: red;
                 font-weight: bolder;
@@ -10800,14 +10800,14 @@
                 font-weight: bold;
                 font-style: italic;
             }
-        ]]></j:fontstyles>
-        <j:empty caption=".">
+        ]]></a:fontstyles>
+        <a:empty caption=".">
             <div class="empty"></div>
-        </j:empty>
-    </j:presentation>
-</j:editor>
-<j:slideshow name="slideshow">
-    <j:style><![CDATA[
+        </a:empty>
+    </a:presentation>
+</a:editor>
+<a:slideshow name="slideshow">
+    <a:style><![CDATA[
         .slideshow {
             position: fixed;
             left    : 0;
@@ -11022,10 +11022,10 @@
             display    : block;
             color      : #4c4c4c;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main
+    <a:presentation>
+        <a:main
             container="."
             move="div/div"
             curtain="blockquote"
@@ -11065,15 +11065,15 @@
                     </div>
                 </div>
             </div>
-        </j:main>
-        <j:thumbnail>
+        </a:main>
+        <a:thumbnail>
             <div class="picture"> </div>
-        </j:thumbnail>
-    </j:presentation>
-</j:slideshow>
+        </a:thumbnail>
+    </a:presentation>
+</a:slideshow>
 <!-- refguide -->
-<j:list name="listcomments">
-    <j:style><![CDATA[
+<a:list name="listcomments">
+    <a:style><![CDATA[
         .listcomments{
             overflow: auto;
             position: relative;
@@ -11120,45 +11120,45 @@
         .listcomments .selected {
             background-color : #e1e1e1;
         }
-    ]]></j:style>
+    ]]></a:style>
     
-    <j:presentation>
-        <j:main container=".">
+    <a:presentation>
+        <a:main container=".">
             <div class='listcomments'>
             </div>
-        </j:main>
-        <j:item 
+        </a:main>
+        <a:item
             class    = "."
             caption  = "."
             select   = "."
         >
             <div> </div>
-        </j:item>
-        <j:loading>
+        </a:item>
+        <a:loading>
             <div class="loading">Loading...</div>
-        </j:loading>
-        <j:empty caption=".">
+        </a:loading>
+        <a:empty caption=".">
             <div class="message">-</div>
-        </j:empty>
-    </j:presentation>
-</j:list>
-<j:bar name="basic">
-    <j:style><![CDATA[
+        </a:empty>
+    </a:presentation>
+</a:list>
+<a:bar name="basic">
+    <a:style><![CDATA[
         .basic{
             position : absolute;
             border: 1px solid #c3c3c3;
         }
-    ]]></j:style>
+    ]]></a:style>
 
-    <j:presentation>
-        <j:main container=".">
+    <a:presentation>
+        <a:main container=".">
             <div class="basic">
             </div>
-        </j:main>
-    </j:presentation>
-</j:bar>
-<j:caldropdown name="caldropdown">
-    <j:style><![CDATA[
+        </a:main>
+    </a:presentation>
+</a:bar>
+<a:caldropdown name="caldropdown">
+    <a:style><![CDATA[
         .caldropdown {
             position    : relative;
             background  : url("images/dropdown.png") no-repeat top right;
@@ -11422,46 +11422,46 @@
             background-color : #b7b7b7;
             background-image : url(images/new_cal_sel_big.jpg);
         }
-    ]]></j:style>
-    <j:style condition="jpf.isGecko"><![CDATA[
+    ]]></a:style>
+    <a:style condition="apf.isGecko"><![CDATA[
         .calSlider .row .cell {
             float   : none;
             display : -moz-grid;
         }
-     ]]></j:style>
+     ]]></a:style>
 
-    <j:presentation>
-        <j:main label="div[2]" button=".">
+    <a:presentation>
+        <a:main label="div[2]" button=".">
             <div class='caldropdown'>
                 <div class='caldropdownLeftBorder'> </div>
                 <div class='caldropdownlabel'>-</div>
             </div>
-        </j:main>
-        <j:container contents="." navigation="div[1]" daysofweek="div[2]">
+        </a:main>
+        <a:container contents="." navigation="div[1]" daysofweek="div[2]">
             <div class='calSlider'>
                 <div class="navigation"> </div>
                 <div class="daysofweek"> </div>
             </div>
-        </j:container>
-        <j:cell>
+        </a:container>
+        <a:cell>
             <div class="cell"> </div>
-        </j:cell>
-        <j:row>
+        </a:cell>
+        <a:row>
             <div class="row"> </div>
-        </j:row>
-        <j:day>
+        </a:row>
+        <a:day>
             <div class="dayofweek"> </div>
-        </j:day>
-        <j:button>
+        </a:day>
+        <a:button>
             <div class="button"> </div>
-        </j:button>
-        <j:empty caption=".">
+        </a:button>
+        <a:empty caption=".">
             <div class="empty">-</div>
-        </j:empty>
-    </j:presentation>
-</j:caldropdown>
-<j:datagrid name="propedit">
-    <j:style><![CDATA[
+        </a:empty>
+    </a:presentation>
+</a:caldropdown>
+<a:datagrid name="propedit">
+    <a:style><![CDATA[
         .propedit{
             border: 1px solid #c3c3c3;
             /*border-left : 14px solid #cfcbc2;*/
@@ -11834,15 +11834,15 @@
         .propedit div span.propedit_lookupmultiple #txt_rename{
             margin : -1px;
         }
-    ]]></j:style>
-    <j:style condition="jpf.isIE"><![CDATA[
+    ]]></a:style>
+    <a:style condition="apf.isIE"><![CDATA[
         .propedit .headings div{
         }
         
         .propedit .records div span{
         }
-    ]]></j:style>
-    <j:style condition="jpf.isIE6"><![CDATA[
+    ]]></a:style>
+    <a:style condition="apf.isIE6"><![CDATA[
         .propedit{
             overflow-x : hidden;
             padding-right : 16px;
@@ -11888,8 +11888,8 @@
         .propedit .size_pointer{
             height : expression(this.parentNode.offsetHeight - 2);
         }
-    ]]></j:style>
-    <j:style condition="!jpf.isIE"><![CDATA[
+    ]]></a:style>
+    <a:style condition="!apf.isIE"><![CDATA[
         .propedit .btncustom, .propedit .ddbtn{
             -moz-border-top-colors: #D4D0C8 #FFFFFF;
             -moz-border-left-colors: #D4D0C8 #FFFFFF;
@@ -11927,8 +11927,8 @@
         .propedit .records>div:first-child{
             margin-top : 17px;
         }
-    ]]></j:style>
-    <j:style condition="jpf.isGecko &amp;&amp; !jpf.isGecko3"><![CDATA[
+    ]]></a:style>
+    <a:style condition="apf.isGecko &amp;&amp; !apf.isGecko3"><![CDATA[
         .propedit .headings{
             height : 18px;
         }
@@ -11968,8 +11968,8 @@
             position : absolute;
             padding : 1px 1px 0 2px;
         }
-    ]]></j:style>
-    <j:style condition="jpf.isGecko3">
+    ]]></a:style>
+    <a:style condition="apf.isGecko3">
         .propedit .records .cellselected dl{
         }
     
@@ -11977,10 +11977,10 @@
             position : relative;
             padding-top : 2px;
         }
-    </j:style>
+    </a:style>
 
-    <j:presentation>
-        <j:main
+    <a:presentation>
+        <a:main
             head        = "div[1]"
             body        = "div[3]"
             pointer     = "div[2]"
@@ -11997,57 +11997,57 @@
                 <div class='pointer'> </div>
                 <div class='records'> </div>
             </div>
-        </j:main>
+        </a:main>
 
-        <j:headitem class="." caption="b/text()">
+        <a:headitem class="." caption="b/text()">
             <span><b>-</b></span>
-        </j:headitem>
+        </a:headitem>
         
-        <j:rowheaditem class="." caption="text()">
+        <a:rowheaditem class="." caption="text()">
             <span>-</span>
-        </j:rowheaditem>
+        </a:rowheaditem>
         
-        <j:row class="." container=".">
+        <a:row class="." container=".">
             <div />
-        </j:row>
+        </a:row>
         
-        <j:dragindicator>
+        <a:dragindicator>
             <div class='dragdg'> </div>
-        </j:dragindicator>
+        </a:dragindicator>
 
-        <j:cell caption="dl"><span><dl> </dl></span></j:cell>
+        <a:cell caption="dl"><span><dl> </dl></span></a:cell>
 
-        <j:container container=".">
+        <a:container container=".">
             <div class="dginfo">-</div>
-        </j:container>
+        </a:container>
 
-        <j:dropdown>
+        <a:dropdown>
             <u class="ddbtn"> </u>
-        </j:dropdown>
+        </a:dropdown>
         
-        <j:dropdown_container item-height="17">
+        <a:dropdown_container item-height="17">
             <ul class="propeditcontainerdropdown"> </ul>
-        </j:dropdown_container>
+        </a:dropdown_container>
         
-        <j:jml_container jml="true">
+        <a:jml_container jml="true">
             <ul class="ddjmlcontainer"> </ul>
-        </j:jml_container>
+        </a:jml_container>
         
-        <j:custom>
+        <a:custom>
             <u class="btncustom">...</u>
-        </j:custom>
+        </a:custom>
         
-        <j:loading>
+        <a:loading>
             <div class="loading"><span></span><label>Loading...</label></div>
-        </j:loading>
+        </a:loading>
         
-        <j:empty caption=".">
+        <a:empty caption=".">
             <div class="empty"> </div>
-        </j:empty>
-    </j:presentation>
-</j:datagrid>
-<j:spinner name="spinner">
-    <j:style><![CDATA[
+        </a:empty>
+    </a:presentation>
+</a:datagrid>
+<a:spinner name="spinner">
+    <a:style><![CDATA[
         .spinner {
             position  : relative;
             height    : 19px;
@@ -12164,14 +12164,14 @@
             border-left         : 1px solid #327fbd;
             border-right        : 0;
         }
-    ]]></j:style>
-    <j:style condition="jpf.isOpera"><![CDATA[
+    ]]></a:style>
+    <a:style condition="apf.isOpera"><![CDATA[
         .spinner .divfix {
             right : 20px;
         }
-    ]]></j:style>
-    <j:presentation>
-        <j:main
+    ]]></a:style>
+    <a:presentation>
+        <a:main
             container="."
             input="div[2]/input"
             buttonplus="div/div[1]"
@@ -12185,11 +12185,11 @@
                     <input type="text"  />
                 </div>
             </div>
-        </j:main>
-    </j:presentation>
-</j:spinner>
-<j:calendar name="calendar">
-    <j:style><![CDATA[
+        </a:main>
+    </a:presentation>
+</a:spinner>
+<a:calendar name="calendar">
+    <a:style><![CDATA[
         .calendar {
             position         : absolute;
             top              : 0;
@@ -12344,39 +12344,39 @@
             opacity          : 0.7;
         }
 
-    ]]></j:style>
-    <j:style condition="jpf.isIE">
+    ]]></a:style>
+    <a:style condition="apf.isIE">
         .calendar .calcontent .row .cell {
             float : left;
         }
         .calendar .daysofweek .dayofweek {
             float : left;
         }
-    </j:style>
+    </a:style>
 
-    <j:presentation>
-        <j:main contnainer="." navigation="div[1]" daysofweek="div[2]" content="div[3]">
+    <a:presentation>
+        <a:main contnainer="." navigation="div[1]" daysofweek="div[2]" content="div[3]">
             <div class="calendar">
                 <div class="navigation"> </div>
                 <div class="daysofweek"> </div>
                 <div class="calcontent"> </div>
             </div>
-        </j:main>
-        <j:cell>
+        </a:main>
+        <a:cell>
             <div class="cell"> </div>
-        </j:cell>
-        <j:row>
+        </a:cell>
+        <a:row>
             <div class="row"> </div>
-        </j:row>
-        <j:day>
+        </a:row>
+        <a:day>
             <div class="dayofweek"> </div>
-        </j:day>
-        <j:button>
+        </a:day>
+        <a:button>
             <div class="button"> </div>
-        </j:button>
-        <j:empty caption="text()">
+        </a:button>
+        <a:empty caption="text()">
             <div class="empty">-</div>
-        </j:empty>
-    </j:presentation>
-</j:calendar>
-</j:skin>
+        </a:empty>
+    </a:presentation>
+</a:calendar>
+</a:skin>
