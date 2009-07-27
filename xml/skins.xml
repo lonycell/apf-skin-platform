@@ -17,7 +17,7 @@
             text-align       : center;
             border-width     : 0 1px 1px 0;
         }
-        
+
         .flowchart .scrollPointer {
             position            : absolute;
             display             : block;
@@ -53,13 +53,13 @@
             background-color : transparent;
             cursor           : default;
         }
-        
+
         .flowchart .block .outside {
             position : relative;
             top      : 5px;
             z-index  : 3003;
         }
-        
+
         .flowchart .block .inside {
             position : absolute;
             top      : 50%;
@@ -87,7 +87,7 @@
             text-align       : left;
             background-color : white;
         }
-        
+
 
         .flowchart .selected {
             border      : 1px solid #00ff00;
@@ -107,7 +107,7 @@
             background       : url(images/emptyblock.jpg) repeat-x 0 0;
             background-color : #e1e1e1;
         }
-        
+
         .flowchart .label {
             height      : 14px;
             width       : 50px auto;
@@ -121,13 +121,13 @@
             overflow    : visible;
             white-space : nowrap;
         }
-        
+
         .flowchart .labelSelected {
             border      : 1px dotted #acacac;
             margin-top  : -1px;
             margin-left : -1px;
         }
-        
+
         .flowchart .connector-end {
             height   : 9px;
             width    : 9px;
@@ -135,11 +135,11 @@
             position : absolute;
             z-index  : 900;
         }
-        
+
         .flowchart .arrow {
             background : url(images/con_end_arrow5.png) no-repeat 0 0;
         }
-        
+
         .flowchart .ortop {
             margin-left         : -1px;
             background-position : 0 -9px;
@@ -148,7 +148,7 @@
             margin-left         : -1px;
             background-position : 0 -27px;
         }
-        
+
         .flowchart .orleft {
             margin-top :-1px;
         }
@@ -158,7 +158,7 @@
         }
 
         .flowchart .segment {
-            background-color : transparent; /* transparent*/ 
+            background-color : transparent; /* transparent*/
             border           : 0;
             position         : absolute;
             display          : block;
@@ -177,7 +177,7 @@
         .flowchart .seg_ver_hover {
             background-position : 21px 0;
         }
-        
+
         .flowchart .seg_ver_selected {
             background-position : 14px 0;
         }
@@ -201,7 +201,7 @@
         .flowchart .seg_hor_selected {
             background-position : 0 14px;
         }
-        
+
         .flowchart .seg_hor_virtual {
             background-position : 0 7px;
         }
@@ -218,7 +218,7 @@
             z-index             : 1001;
             cursor              : crosshair;
         }
-        
+
         .flowchart .inputHover {
             background-image : url(images/output_hover.png);
             border           : 6px solid red;
@@ -251,7 +251,7 @@
             display          : none;
             z-index          : 900;
         }
-        
+
         .flowchart .squareHover {
             border           : 1px solid black;
             background-color : #005e20;
@@ -306,11 +306,11 @@
             position         : relative;
             overflow         : hidden;
         }
-        
+
         .accordion_apf_ver .ending {
             display : none;
         }
-        
+
         .accordion_apf_ver .panel .title {
             background-image    : url(images/accordion_apf_title.png);
             background-position : 0 0;
@@ -322,7 +322,7 @@
             display             : block;
             cursor              : pointer;
         }
-        
+
         .accordion_apf_ver .panel .title .icon {
             width               : 12px;
             height              : 10px;
@@ -332,26 +332,26 @@
             background-repeat   : no-repeat;
             background-position : 6px 50%;
         }
-        
-        .accordion_apf_ver .panel .Active .icon, 
+
+        .accordion_apf_ver .panel .Active .icon,
         .accordion_apf_ver .panel .title:hover .icon {
             background-position : -4px 50%;
         }
-        
+
         .accordion_apf_ver .panel .title:hover {
             background-position : 0 -20px;
             color               : white;
         }
-        
+
         .accordion_apf_ver .panel .Active {
             background-position : 0 -20px;
             color               : white;
         }
-        
+
         .accordion_apf_ver .panel .NotActive {
            background-position : 0 0;
         }
-        
+
         .accordion_apf_ver .panel .body {
             position       : relative;
             padding        : 3px;
@@ -362,7 +362,7 @@
             border-top     : 1px solid #c3c3c3;
             border-bottom  : 1px solid #c3c3c3;
         }
-        
+
         .accordion_apf_ver .panel .last {
             border-bottom  : 0;
         }
@@ -414,11 +414,11 @@
             overflow         : hidden;
             display          : inline-block;
         }
-        
+
         .accordion_apf_hor .ending {
             display : none;
         }
-        
+
         .accordion_apf_hor .panel .title {
             background-image    : url(images/accordion_apf_title_hor.png);
             background-position : 0 0;
@@ -432,7 +432,7 @@
             float               : left;
             cursor              : pointer;
         }
-        
+
         .accordion_apf_hor .panel .title .icon {
             width    : 12px;
             height   : 10px;
@@ -441,25 +441,25 @@
             background-position:50% 6px;
             background-repeat:no-repeat;
         }
-        
+
         .accordion_apf_hor .panel .Active .icon,
         .accordion_apf_hor .panel .title:hover .icon {
             background-position:50% -4px;
         }
-        
+
         .accordion_apf_hor .panel .title:hover {
             background-position : -20px 0;
             color               : white;
         }
-        
+
         .accordion_apf_hor .panel .Active {
             background-position : -20px 0;
         }
-        
+
         .accordion_apf_hor .panel .NotActive {
             background-position : 0 0;
         }
-        
+
         .accordion_apf_hor .panel .body {
             position     : relative;
             display      : none;
@@ -468,7 +468,7 @@
             border-right : 1px solid #d7d7d7;
             border-left  : 1px solid #d7d7d7;
         }
-        
+
         .accordion_apf_hor .panel .body .header {
             font-size           : 14px;
             font-weight         : bold;
@@ -480,11 +480,11 @@
             margin-top          : 15px;
             white-space         : nowrap;
         }
-        
+
         .accordion_apf_hor .panel .last {
             border-right:0;
         }
-        
+
         .accordion_apf_hor .panel .body .content {
             padding     : 5px;
             overflow    : hidden;
@@ -528,12 +528,12 @@
             font-size:12px;
             font-family:Tahoma;
         }
-        
+
         .pager .pager_content {
             width:100%;
             background-color:red;
         }
-        
+
         .pager .pager_pages {
             height:50px;
             width:100%;
@@ -543,7 +543,7 @@
             bottom:0;
             left:0;
         }
-        
+
         .pager .pager_pages div {
             background-color:#d7d7d7;
             width:200px;
@@ -553,7 +553,7 @@
             overflow:hidden;
             padding:3px;
         }
-        
+
         .pager .pager_pages div .page {
             text-align:center;
             background-color:#acacac;
@@ -567,15 +567,15 @@
             color:white;
             cursor:pointer;
         }
-        
+
         .pager .pager_pages div .page:hover {
             background-color:#c2c2c2;
         }
-        
+
         .pager .pager_pages div .selected {
             background-color:#898989;
         }
-        
+
         .pager .pager_pages div .previous, .pager .pager_pages div .next {
             width:40px;
             height:15px;
@@ -614,7 +614,7 @@
             padding      : 0;
             white-space  : nowrap;
         }
-        
+
         .accordion_menu .rounded {
             width               : 15px;
             display             : inline-block;
@@ -628,7 +628,7 @@
             margin              : 0;
             border-right        : 1px solid #c4de9a;
         }
-        
+
         .accordion_menu .ending {
             width               : 15px;
             display             : inline-block;
@@ -654,7 +654,7 @@
             overflow         : hidden;
             display          : inline-block;
         }
-        
+
         .accordion_menu .panel .title {
             background-image    : url(images/accordion_menu_title.png);
             border-right        : 1px solid #c4de9a;
@@ -669,28 +669,28 @@
             float               : left;
             cursor              : pointer;
         }
-        
+
         .accordion_menu .panel .title .icon {
             width               : 100%;
             height              : 100%;
             background-repeat   : no-repeat;
             background-position : 50% 50%;
         }
-        
+
         .accordion_menu .panel .title:hover {
             background-position : -60px 0;
             color               : white;
         }
-        
+
         .accordion_menu .panel .Active {
             background-position : -60px 0;
         }
-        
+
         .accordion_menu .panel .NotActive {
             background-position : 0 0;
             color               : white;
         }
-        
+
         .accordion_menu .panel .body {
             position         : relative;
             display          : none;
@@ -701,7 +701,7 @@
             border-bottom    : 1px solid #d7d7d7;
             background-image : url(images/accordion_menu_bg.png);
         }
-        
+
         .accordion_menu .panel .body .header {
             font-size   : 14px;
             font-weight : bold;
@@ -723,7 +723,7 @@
         .accordion_menu .rounded {
             top : -4px;
         }
-        
+
         .accordion_menu .ending {
             top : -4px;
         }
@@ -783,11 +783,11 @@
             overflow         : hidden;
             display          : inline-block;
         }
-        
+
         .accordionHor .ending {
             display : none;
         }
-        
+
         .accordionHor .panel .title {
             background-image    : url(images/accordion_title_h.png);
             background-position : 0 0;
@@ -801,35 +801,35 @@
             float               : left;
             cursor              : pointer;
         }
-        
+
         .accordionHor .panel .title .icon {
             width    : 12px;
             height   : 10px;
             position : relative;
             margin   : 0 auto;
         }
-        
+
         .accordionHor .panel .title:hover {
             background-position : -48px 0;
             color               : white;
         }
-        
+
         .accordionHor .panel .Active {
             background-position : 0 0;
         }
-        
+
         .accordionHor .panel .NotActive {
             background-position : -72px 0;
             color               : white;
         }
-        
+
         .accordionHor .panel .body {
             position : relative;
             display  : none;
             float    : left;
             height   : 100%;
         }
-        
+
         .accordionHor .panel .body .header {
             font-size           : 14px;
             font-weight         : bold;
@@ -897,11 +897,11 @@
             position         : relative;
             overflow         : hidden;
         }
-        
+
         .accordionVer .ending {
             display : none;
         }
-        
+
         .accordionVer .panel .title {
             background-image    : url(images/accordion_title.png);
             background-position : 0 0;
@@ -913,7 +913,7 @@
             display             : block;
             cursor              : pointer;
         }
-        
+
         .accordionVer .panel .title .icon {
             width    : 12px;
             height   : 10px;
@@ -921,22 +921,22 @@
             right    : 7px;
             top      : 7px;
         }
-        
+
         .accordionVer .panel .title:hover {
             background-position : 0 -48px;
             color               : white;
             cursor              : pointer;
         }
-        
+
         .accordionVer .panel .Active {
             background-position : 0 0;
         }
-        
+
         .accordionVer .panel .NotActive {
             background-position : 0 -72px;
             color               : white;
         }
-        
+
         .accordionVer .panel .body {
             position    : relative;
             padding     : 3px;
@@ -974,13 +974,13 @@
         .east{cursor: url(cursor/e-point.cur);}
         .south{cursor: url(cursor/s-point.cur);}
         .same{cursor: not-allowed;}
-    
+
         .window {
             font-family: Tahoma;
             font-size: 11px;
             padding : 26px 0 5px 0;
         }
-    
+
         .window .topLeft {
             float: left;
             background: url("images/window_lt.png") no-repeat top left;
@@ -992,11 +992,11 @@
             margin-top : -26px;
             _margin-right: -6px; /* IE6 bug fix */
         }
-        
+
         .windowFocus{
-        
+
         }
-        
+
         .window .topRight {
             float: right;
             background: url("images/window_rt.png") no-repeat top left;
@@ -1008,7 +1008,7 @@
             margin-top : -26px;
             _margin-left: -5px; /* IE6 bug fix */
         }
-        
+
         .window .title {
             background: url("images/window_mt.png") repeat-x top left;
             height: 21px;
@@ -1021,13 +1021,13 @@
             margin-top : -26px;
             cursor : default;
         }
-        
+
         .window .title img{
             margin: -1px 3px 0 -1px;
             position : absolute;
             left : 2px;
         }
-        
+
         .window .content {
             background : #f5f5f5;
             margin-left: 3px;
@@ -1039,20 +1039,20 @@
     	    border-top: 1px solid #dcd8d8;
     	    border : 0; /* changed by ruben */
         }
-        
+
         .windowMin .content{
             overflow : hidden;
         }
-        
+
         .window .borderRight{
             background: url("images/window_border.png") repeat-y top right;
             overflow : hidden;
             width : 3px;
             float : right;
             height : 100%;
-            _margin-left: -3px; /* IE6 bug fix */ 
+            _margin-left: -3px; /* IE6 bug fix */
         }
-        
+
         .window .borderLeft {
             background: url("images/window_border.png") repeat-y top left;
             overflow: hidden;
@@ -1061,7 +1061,7 @@
             width : 3px;
             _margin-right: -3px; /* IE6 bug fix */
         }
-        
+
         .window .bottomLeft {
             float: left;
             background: url("images/window_lb_small.png") no-repeat top left;
@@ -1070,7 +1070,7 @@
             _margin-right: -3px; /* IE6 bug fix */
 	        margin-top: -1px;
         }
-        
+
         .window .bottomRight {
             float: right;
             background: url("images/window_rb_small.png") no-repeat top left;
@@ -1079,7 +1079,7 @@
             _margin-left: -3px; /* IE6 bug fix */
 	        margin-top: -1px;
         }
-        
+
         .window .bottomBar {
             background: url("images/window_mb_small.png") repeat-x top left;
             height: 4px;
@@ -1088,13 +1088,13 @@
             margin: -2px 3px 0 3px;
 	        border-top: 1px solid #dcd8d8;
         }
-        
+
         .window .bottom{
             position : absolute;
             bottom : 0;
             width : 100%;
         }
-        
+
         .cover{
             /*background: url(images/spacer.gif);*/
             background: white;
@@ -1109,7 +1109,7 @@
             height: expression(document.documentElement.offsetHeight);
             z-index: 10000;
         }
-        
+
         .window .title blockquote{
             margin: 0;
             width: 56px;
@@ -1130,7 +1130,7 @@
             cursor: default;
             _overflow: hidden; /* IE6 bug fix */
         }
-        
+
         .window .title blockquote div.hover{
             border : 1px solid white;
             padding : 2px;
@@ -1141,7 +1141,7 @@
         .window .title blockquote div.down{
             background-color : black;
         }
-        
+
         .window .title .max{
             background-image: url(images/win_max.gif);
         }
@@ -1163,18 +1163,18 @@
             height: 16px;
             display: block;
         }
-        
+
         #apf_outline{
 
         }
-        
+
         #apf_outline.drag{
             border: 1px solid black;
             background: #CCC;
             opacity: 0.4;
             filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);
         }
-        
+
         #apf_outline.resize{
             border: 3px solid black;
             background: #CCC;
@@ -1186,17 +1186,17 @@
     <a:presentation>
         <a:main collapsed-height="30"
           min-width="150" min-height="80"
-          container="div[6]" drag="div[3]" title="div[3]/text()" 
+          container="div[6]" drag="div[3]" title="div[3]/text()"
           icon="div[3]/img" buttons="div[3]/blockquote">
             <div class="window">
                 <div class="topLeft"> </div>
                 <div class="topRight"> </div>
                 <div class="title"><img src="" />-<blockquote> </blockquote></div>
-                
+
                 <div class="borderLeft"> </div>
                 <div class="borderRight"> </div>
                 <div class="content"> </div>
-            
+
                 <div class="bottomLeft"> </div>
                 <div class="bottomRight"> </div>
                 <div class="bottomBar"> </div>
@@ -1213,179 +1213,87 @@
 
 <a:toolwindow name="toolwindow">
     <a:style><![CDATA[
-        .north{cursor: url(cursor/n-point.cur);}
-        .west{cursor: url(cursor/w-point.cur);}
-        .east{cursor: url(cursor/e-point.cur);}
-        .south{cursor: url(cursor/s-point.cur);}
-        .same{cursor: not-allowed;}
-
         .toolwindow {
             font-family: Tahoma;
             font-size: 11px;
-            padding : 26px 0 5px 0;
-        }
-
-        .toolwindow .topLeft {
-            float: left;
-            background: url("images/window_lt.png") no-repeat top left;
-            width: 6px;
-            height: 27px;
-            margin: 0;
-            padding: 0;
-            border: 0;
-            margin-top : -26px;
-            _margin-right: -6px; /* IE6 bug fix */
+            padding : 0;
+            margin : 0 10px 10px 0;
         }
 
         .toolwindowFocus{
 
         }
 
-        .toolwindow .topRight {
-            float: right;
-            background: url("images/window_rt.png") no-repeat top left;
-            width: 5px;
-            height: 27px;
-            margin: 0;
-            padding: 0;
-            border: 0;
-            margin-top : -26px;
-            _margin-left: -5px; /* IE6 bug fix */
-        }
-
         .toolwindow .title {
-            background: url("images/window_mt.png") repeat-x top left;
-            height: 21px;
-            color: #eeeeee;
+            background: #6d6d6d;
+            height: 15px;
+            color: white;
             position: relative;
-            margin: 0 5px 0 6px;
-            padding: 6px 0 0 20px;
-            border: 0;
+            margin: 0;
+            padding: 2px 0 0 5px;
+            border : 1px solid #6d6d6d;
+            border-width: 1px 1px 0px 1px;
             font-weight: bold;
-            margin-top : -26px;
             cursor : default;
-        }
-
-        .toolwindow .title img{
-            margin: -1px 3px 0 -1px;
-            position : absolute;
-            left : 2px;
+            white-space : nowrap;
+            overflow : hidden;
         }
 
         .toolwindow .content {
             background : #f5f5f5;
-            margin-left: 3px;
-            margin-right: 3px;
+            overflow : hidden;
             position : relative;
-            height : 100%;
-            background:#f5f5f5 url(images/page_bt.png) repeat-x top left;
-    	    border-right: 1px solid #dcd8d8;
-    	    border-top: 1px solid #dcd8d8;
-    	    border : 0; /* changed by ruben */
+    	    border : 1px solid #6d6d6d;
+    	    border-width : 0 1px 1px 1px;
+    	    padding : 0;
         }
 
         .toolwindowMin .content{
             overflow : hidden;
         }
 
-        .toolwindow .borderRight{
-            background: url("images/window_border.png") repeat-y top right;
-            overflow : hidden;
-            width : 3px;
-            float : right;
-            height : 100%;
-            _margin-left: -3px; /* IE6 bug fix */
-        }
-
-        .toolwindow .borderLeft {
-            background: url("images/window_border.png") repeat-y top left;
-            overflow: hidden;
-            height : 100%;
-            float : left;
-            width : 3px;
-            _margin-right: -3px; /* IE6 bug fix */
-        }
-
-        .toolwindow .bottomLeft {
-            float: left;
-            background: url("images/window_lb_small.png") no-repeat top left;
-            width: 3px;
-            height: 4px;
-            _margin-right: -3px; /* IE6 bug fix */
-	        margin-top: -1px;
-        }
-
-        .toolwindow .bottomRight {
-            float: right;
-            background: url("images/window_rb_small.png") no-repeat top left;
-            width: 3px;
-            height: 4px;
-            _margin-left: -3px; /* IE6 bug fix */
-	        margin-top: -1px;
-        }
-
-        .toolwindow .bottomBar {
-            background: url("images/window_mb_small.png") repeat-x top left;
-            height: 4px;
-            color: #FFFFFF;
-            position: relative;
-            margin: -2px 3px 0 3px;
-	        border-top: 1px solid #dcd8d8;
-        }
-
-        .toolwindow .bottom{
-            position : absolute;
-            bottom : 0;
-            width : 100%;
-        }
-
-        .cover{
-            /*background: url(images/spacer.gif);*/
-            background: white;
-            opacity: 0.3;
-            filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);
-
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            height: expression(document.documentElement.offsetHeight);
-            z-index: 10000;
-        }
-
         .toolwindow .title blockquote{
             margin: 0;
-            width: 56px;
-            height: 21px;
+            width: 49px;
             position: absolute;
-            padding: 4px 4px 2px 2px;
+            padding: 1px 1px 2px 0;
             top: 0;
             right: 0;
-            /*background: url(images/title.gif) repeat-x;*/
+            background: #6d6d6d;
         }
 
         .toolwindow .title blockquote div{
-            width: 10px;
-            height: 9px;
+            width: 8px;
+            height: 7px;
             float: right;
             padding: 3px;
-            background: no-repeat 3px 3px;
+            background: no-repeat 2px 3px;
             cursor: default;
             _overflow: hidden; /* IE6 bug fix */
+        }
+
+        .toolwindowEdit .title .edit{
+            background-position : 1px -10px;
+            position : relative;
+            top : 1px;
+            left : 1px;
         }
 
         .toolwindow .title blockquote div.hover{
             border : 1px solid white;
             padding : 2px;
-            background-position : 2px -10px;
-            height : 10px;
+            background-position : 1px -10px;
+            height : 8px;
             background-color : transparent;
+            position : static;
         }
         .toolwindow .title blockquote div.down{
             background-color : black;
         }
 
+        .toolwindow .title .edit{
+            background-image : url(images/win_edit.png);
+        }
         .toolwindow .title .max{
             background-image: url(images/win_max.gif);
         }
@@ -1407,10 +1315,37 @@
             height: 16px;
             display: block;
         }
+        .toolwindow .settings{
+            display : none;
+            background : #f1f1f1;
+            overflow : hidden;
+            position : relative;
+    	    border : 1px solid #c3c3c3;
+    	    border-width : 0 1px 1px 1px;
+    	    padding : 5px;
+        }
+        .toolwindowEdit .settings{
+            display : block;
+        }
+
+        .toolwindowMin .settings, .toolwindowMin .content{
+            display : none;
+        }
+
+        body .whitebg .content{
+            background : white;
+        }
+
+        .north{cursor: url(images/cursor/n-point.cur);}
+        .west{cursor: url(images/cursor/w-point.cur);}
+        .east{cursor: url(images/cursor/e-point.cur);}
+        .south{cursor: url(images/cursor/s-point.cur);}
+        .same{cursor: not-allowed;}
 
         .toolwindow .editor_Toolbar{
-            background: url(images/toolbar_row.png) repeat-x top left;
-            height: 25px;
+            background: url(images/toolbar_row.png) repeat top left;
+            height: auto;/*25px;*/
+            width: 100%;
             font-family: Verdana;
             font-size: 11px;
             border-bottom: 1px solid #c3c3c3;
@@ -1469,7 +1404,7 @@
             height: 21px;
             float: left;
             cursor: default;
-            margin-top: 2px;
+            margin-top: 3px;
             margin-left: 5px;
             text-align: center;
             padding: 0;
@@ -1998,22 +1933,15 @@
     ]]></a:style>
 
     <a:presentation>
-        <a:main collapsed-height="30"
+         <a:main collapsed-height="22"
           min-width="150" min-height="80"
-          container="div[6]" drag="div[3]" title="div[3]/text()"
-          icon="div[3]/img" buttons="div[3]/blockquote">
+          container="div[3]" drag="div[1]" title="div[1]/text()"
+          buttons="div[1]/blockquote"
+          settings_content="div[2]">
             <div class="toolwindow">
-                <div class="topLeft"> </div>
-                <div class="topRight"> </div>
-                <div class="title"><img src="" />-<blockquote> </blockquote></div>
-
-                <div class="borderLeft"> </div>
-                <div class="borderRight"> </div>
+                <div class="title">-<blockquote> </blockquote></div>
+                <div class="settings"> </div>
                 <div class="content"> </div>
-
-                <div class="bottomLeft"> </div>
-                <div class="bottomRight"> </div>
-                <div class="bottomBar"> </div>
             </div>
         </a:main>
         <a:button>
@@ -2045,16 +1973,12 @@
 
         <a:toolbars>
             <a:toolbar>
+                FontStyle, BlockFormat, Fonts, Fontsize, |, RemoveFormat, |,
                 Bold, Italic, Underline, Strikethrough, |,
                 Sub, Sup, |,
                 Table, |, justifyleft, justifycenter, justifyright,
                 justifyfull, |, Code, |, Anchor,
-                Link, Unlink, Charmap
-            </a:toolbar>
-            <a:toolbar>
-                FontStyle, BlockFormat, Fonts, Fontsize, |, RemoveFormat
-            </a:toolbar>
-            <a:toolbar>
+                Link, Unlink, Charmap, |,
                 Cut, Copy, Paste, PasteText, |,
                 Bullist, NumList, |,
                 Forecolor, Backcolor, |,
@@ -2064,6 +1988,51 @@
                 Bullist, Numlist, Listitem, Nbsp, Break, Paragraph
             </a:codetoolbar>
         </a:toolbars>
+        <a:emotions path="images/editor">
+            cool, cry, embarassed, foot-in-mouth, frown, innocent,
+            kiss, laughing, money-mouth, sealed, smile, surprised,
+            tongue-out, undecided, wink, yell
+        </a:emotions>
+        <a:fonts>
+            Andale Mono=andale mono,times;
+            Arial=arial,helvetica,sans-serif;
+            Arial Black=arial black,avant garde;
+            Book Antiqua=book antiqua,palatino;
+            Comic Sans MS=comic sans ms,sans-serif;
+            Courier New=courier new,courier;
+            Georgia=georgia,palatino;
+            Helvetica=helvetica;
+            Impact=impact,chicago;
+            Symbol=symbol;
+            Tahoma=tahoma,arial,helvetica,sans-serif;
+            Terminal=terminal,monaco;
+            Times New Roman=times new roman,times;
+            Trebuchet MS=trebuchet ms,geneva;
+            Verdana=verdana,geneva;
+            Webdings=webdings;
+            Wingdings=wingdings,zapf dingbats
+        </a:fonts>
+        <a:fontsizes>
+            1, 2, 3, 4, 5, 6, 7
+        </a:fontsizes>
+        <a:blockformats>
+            normal, h1, h2, h3, h4, h5, h6, pre, address
+        </a:blockformats>
+        <a:fontstyles><![CDATA[
+            style1 = .style1 {
+                color: red;
+                font-weight: bolder;
+            }
+            Another = style2 {
+                color: navy;
+                font-size: 16px;
+            }
+            Last one = .style3 {
+                color: green;
+                font-weight: bold;
+                font-style: italic;
+            }
+        ]]></a:fontstyles>
     </a:presentation>
 </a:toolwindow>
 
@@ -2075,13 +2044,13 @@
         .east{cursor: url(cursor/e-point.cur);}
         .south{cursor: url(cursor/s-point.cur);}
         .same{cursor: not-allowed;}
-    
+
         .winround {
             font-family: Tahoma;
             font-size: 11px;
             padding : 26px 0 23px 0;
         }
-    
+
         .winround .topLeft {
             float: left;
             background: url("images/window_lt.png") no-repeat top left;
@@ -2093,11 +2062,11 @@
             margin-top : -26px;
             _margin-right: -6px; /* IE6 bug fix */
         }
-        
+
         .winroundFocus{
-        
+
         }
-        
+
         .winround .topRight {
             float: right;
             background: url("images/window_rt.png") no-repeat top left;
@@ -2109,7 +2078,7 @@
             margin-top : -26px;
             _margin-left: -5px; /* IE6 bug fix */
         }
-        
+
         .winround .title {
             background: url("images/window_mt.png") repeat-x top left;
             height: 21px;
@@ -2122,13 +2091,13 @@
             margin-top : -26px;
             cursor : default;
         }
-        
+
         .winround .title img{
             margin: -1px 3px 0 -1px;
             position : absolute;
             left : 2px;
         }
-        
+
         .winround .content {
             background : #f5f5f5;
             margin-left: 1px;
@@ -2139,11 +2108,11 @@
     	    background-image: none;
     	    border: 0;
         }
-        
+
         .winroundMin .content{
             overflow : hidden;
         }
-        
+
         .winround .borderRight{
     	    background-image: none;
     	    background-color: #b2b2b2;
@@ -2154,7 +2123,7 @@
             _margin-left: -1px; /* IE6 bug fix */
 	        border: 0;
         }
-        
+
         .winround .borderLeft {
     	    background-image: none;
     	    background-color: #b2b2b2;
@@ -2165,7 +2134,7 @@
             _margin-right: -1px; /* IE6 bug fix */
 	        border: 0;
         }
-        
+
         .winround .bottomLeft {
             float: left;
             background: url("images/window_lb_rounded.png") no-repeat top left;
@@ -2175,7 +2144,7 @@
             _margin-right: -9px; /* IE6 bug fix */
             overflow: hidden;
 	    }
-        
+
         .winround .bottomRight {
             float: right;
             background: url("images/window_rb_rounded.png") no-repeat top left;
@@ -2185,7 +2154,7 @@
             _margin-left: -9px; /* IE6 bug fix */
 	        overflow: hidden;
 	    }
-        
+
         .winround .bottomBar {
             background-image: none;
 	        background-color: #f5f5f5;
@@ -2197,13 +2166,13 @@
             border-bottom: 1px solid #b2b2b2;
 	        overflow: hidden;
 	    }
-        
+
         .winround .bottom{
             position : absolute;
             bottom : 0;
             width : 100%;
         }
-        
+
         .cover{
             /*background: url(images/spacer.gif);*/
             background: white;
@@ -2218,7 +2187,7 @@
             height: expression(document.documentElement.offsetHeight);
             z-index: 10000;
         }
-        
+
         .winround .title blockquote{
             margin: 0;
             width: 56px;
@@ -2239,7 +2208,7 @@
             cursor: default;
             _overflow: hidden; /* IE6 bug fix */
         }
-        
+
         .winround .title blockquote div.hover{
             border : 1px solid white;
             padding : 2px;
@@ -2250,7 +2219,7 @@
         .winround .title blockquote div.down{
             background-color : black;
         }
-        
+
         .winround .title .max{
             background-image: url(images/win_max.gif);
             width: 11px;
@@ -2273,18 +2242,18 @@
             height: 16px;
             display: block;
         }
-        
+
         #apf_outline{
 
         }
-        
+
         #apf_outline.drag{
             border: 1px solid black;
             background: #CCC;
             opacity: 0.4;
             filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);
         }
-        
+
         #apf_outline.resize{
             border: 3px solid black;
             background: #CCC;
@@ -2295,7 +2264,7 @@
     <a:presentation>
         <a:main collapsed-height="30"
           min-width="150" min-height="80"
-          container="div[6]" drag="div[3]" title="div[3]/text()" 
+          container="div[6]" drag="div[3]" title="div[3]/text()"
           icon="div[3]/img" buttons="div[3]/blockquote">
             <div class="winround">
                 <div class="topLeft"> </div>
@@ -2305,7 +2274,7 @@
                 <div class="borderLeft"> </div>
                 <div class="borderRight"> </div>
                 <div class="content"> </div>
-            
+
                 <div class="bottomLeft"> </div>
                 <div class="bottomRight"> </div>
                 <div class="bottomBar"> </div>
@@ -2326,13 +2295,13 @@
         .east{cursor: url(cursor/e-point.cur);}
         .south{cursor: url(cursor/s-point.cur);}
         .same{cursor: not-allowed;}
-    
+
         .winbigedge {
             font-family: Tahoma;
             font-size: 11px;
             padding : 26px 0 23px 0;
         }
-    
+
         .winbigedge .topLeft {
             float: left;
             background: url("images/window_lt.png") no-repeat top left;
@@ -2344,11 +2313,11 @@
             margin-top : -26px;
             _margin-right: -6px; /* IE6 bug fix */
         }
-        
+
         .winbigedgeFocus{
-        
+
         }
-        
+
         .winbigedge .topRight {
             float: right;
             background: url("images/window_rt.png") no-repeat top left;
@@ -2360,7 +2329,7 @@
             margin-top : -26px;
             _margin-left: -5px; /* IE6 bug fix */
         }
-        
+
         .winbigedge .title {
             background: url("images/window_mt.png") repeat-x top left;
             height: 21px;
@@ -2373,13 +2342,13 @@
             margin-top : -26px;
             cursor : default;
         }
-        
+
         .winbigedge .title img{
             margin: -1px 3px 0 -1px;
             position : absolute;
             left : 2px;
         }
-        
+
         .winbigedge .content {
             background : #f5f5f5;
             margin-left: 3px;
@@ -2388,20 +2357,20 @@
             height : 100%;
             background:#f5f5f5 url(images/page_bt.png) repeat-x top left;
         }
-        
+
         .winbigedgeMin .content{
             overflow : hidden;
         }
-        
+
         .winbigedge .borderRight{
             background: url("images/window_border.png") repeat-y top right;
             overflow : hidden;
             width : 3px;
             float : right;
             height : 100%;
-            _margin-left: -3px; /* IE6 bug fix */ 
+            _margin-left: -3px; /* IE6 bug fix */
         }
-        
+
         .winbigedge .borderLeft {
             background: url("images/window_border.png") repeat-y top left;
             overflow: hidden;
@@ -2410,7 +2379,7 @@
             width : 3px;
             _margin-right: -3px; /* IE6 bug fix */
         }
-        
+
         .winbigedge .bottomLeft {
             float: left;
             background: url("images/window_lb.png") no-repeat top left;
@@ -2418,7 +2387,7 @@
             height: 22px;
             _margin-right: -6px; /* IE6 bug fix */
         }
-        
+
         .winbigedge .bottomRight {
             float: right;
             background: url("images/window_rb.png") no-repeat top left;
@@ -2426,7 +2395,7 @@
             height: 22px;
             _margin-left: -5px; /* IE6 bug fix */
         }
-        
+
         .winbigedge .bottomBar {
             background: url("images/window_mb.png") repeat-x top left;
             height: 22px;
@@ -2434,13 +2403,13 @@
             position: relative;
             margin: 0 5px 0 6px;
         }
-        
+
         .winbigedge .bottom{
             position : absolute;
             bottom : 0;
             width : 100%;
         }
-        
+
         .cover{
             /*background: url(images/spacer.gif);*/
             background: white;
@@ -2455,7 +2424,7 @@
             height: expression(document.documentElement.offsetHeight);
             z-index: 10000;
         }
-        
+
         .winbigedge .title blockquote{
             margin: 0;
             width: 56px;
@@ -2476,7 +2445,7 @@
             cursor: default;
             _overflow: hidden; /* IE6 bug fix */
         }
-        
+
         .winbigedge .title blockquote div.hover{
             border : 1px solid white;
             padding : 2px;
@@ -2487,7 +2456,7 @@
         .winbigedge .title blockquote div.down{
             background-color : black;
         }
-        
+
         .winbigedge .title .max{
             background-image: url(images/win_max.gif);
         }
@@ -2509,18 +2478,18 @@
             height: 16px;
             display: block;
         }
-        
+
         #apf_outline{
 
         }
-        
+
         #apf_outline.drag{
             border: 1px solid black;
             background: #CCC;
             opacity: 0.4;
             filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);
         }
-        
+
         #apf_outline.resize{
             border: 3px solid black;
             background: #CCC;
@@ -2532,17 +2501,17 @@
     <a:presentation>
         <a:main collapsed-height="30"
           min-width="150" min-height="80"
-          container="div[6]" drag="div[3]" title="div[3]/text()" 
+          container="div[6]" drag="div[3]" title="div[3]/text()"
           icon="div[3]/img" buttons="div[3]/blockquote">
             <div class="winbigedge">
                 <div class="topLeft"> </div>
                 <div class="topRight"> </div>
                 <div class="title"><img src="" />-<blockquote> </blockquote></div>
-                
+
                 <div class="borderLeft"> </div>
                 <div class="borderRight"> </div>
                 <div class="content"> </div>
-            
+
                 <div class="bottomLeft"> </div>
                 <div class="bottomRight"> </div>
                 <div class="bottomBar"> </div>
@@ -2556,8 +2525,8 @@
         </a:cover>
     </a:presentation>
 </a:modalwindow>
-<!-- 
-    * Please optimize this one removing elements where possible (using border and such) - it is already optimized  
+<!--
+    * Please optimize this one removing elements where possible (using border and such) - it is already optimized
 -->
 <a:modalwindow name="alert">
     <a:style><![CDATA[
@@ -2567,7 +2536,7 @@
             padding : 27px 0 10px 0;
             text-align : left;
         }
-    
+
         .alert .topLeft{
             background: url("images/error_box_lt.png") no-repeat top left;
             width: 8px;
@@ -2588,20 +2557,20 @@
             padding: 0;
             border: 0;
         }
-        
+
         .alert .title{
             border-top:1px solid #c3c3c3;
             height: 18px;
             margin: -27px 14px 0 8px;
             padding : 8px 0 0 3px;
-            
+
             font-weight: bold;
             color : #0e9717;
             cursor : default;
             background : white;
         }
-        
-        .error .title{ 
+
+        .error .title{
             color: #327fbd;
         }
 
@@ -2622,7 +2591,7 @@
             float : right;
             width : 9px;
         }
-        
+
         .selectSupplier .borderRight{
             bottom:26px;
             position:absolute;
@@ -2641,7 +2610,7 @@
             padding: 0;
             border: 0;
         }
-        
+
         .alert .bottomRight{
             background: url("images/error_box_rb.png") no-repeat top right;
             width: 14px;
@@ -2652,7 +2621,7 @@
             padding: 0;
             border: 0;
         }
-        
+
         .alert .bottomBar{
             background: url("images/error_box_b.png") repeat-x bottom left;
             height: 16px;
@@ -2660,7 +2629,7 @@
             padding: 0;
             border: 0;
         }
-        
+
         .alert .close{
             width: 13px;
             height: 13px;
@@ -2671,7 +2640,7 @@
             right : 14px;
             top : 9px;
         }
-        
+
         .alert .title .hover{
             background-position : 0 -13px;
         }
@@ -2680,21 +2649,21 @@
     <a:presentation>
         <!--  min-width="50" min-height="50"  -->
         <a:main collapsed-height="30"
-          container="div[5]" drag="div[3]" title="div[3]/text()" 
+          container="div[5]" drag="div[3]" title="div[3]/text()"
           buttons="div[3]">
             <div class="alert">
                 <div class="topLeft"> </div>
                 <div class="topRight"> </div>
                 <div class="title">-</div>
-        
+
                 <div class="borderRight"> </div>
                 <div class="content">
                 </div>
-        
+
                 <div class="bottomLeft"> </div>
                 <div class="bottomRight"> </div>
                 <div class="bottomBar"> </div>
-        
+
             </div>
         </a:main>
         <a:button>
@@ -2714,7 +2683,7 @@
             text-align : left;
 			z-index: 1;
         }
-    
+
         .bardown .content{
             border-left: 1px solid #c3c3c3;
             padding: 3px 5px 0 5px;
@@ -2724,11 +2693,11 @@
 			overflow: visible;
 			margin : 0 8px 0 0;
         }
-        
+
         .hidden .content, .noscrollbar .content{
             overflow: hidden;
         }
-        
+
         .bardown .borderRight{
             background: url("images/error_box_r.png") repeat-y top right;
             overflow: hidden;
@@ -2737,7 +2706,7 @@
             width : 9px;
             padding-top : 3px;
         }
-        
+
         .bardown .bottomLeft{
             background: url("images/error_box_lb.png") no-repeat top left;
             width: 8px;
@@ -2748,7 +2717,7 @@
             padding: 0;
             border: 0;
         }
-        
+
         .bardown .bottomRight{
             background: url("images/error_box_rb.png") no-repeat top right;
             width: 14px;
@@ -2759,7 +2728,7 @@
             padding: 0;
             border: 0;
         }
-        
+
         .bardown .bottomBar{
             background: url("images/error_box_b.png") repeat-x bottom left;
             height: 16px;
@@ -2767,7 +2736,7 @@
             padding: 0;
             border: 0;
         }
-        
+
         .bardown .close{
             width: 13px;
             height: 13px;
@@ -2778,7 +2747,7 @@
             right : 14px;
             top : 9px;
         }
-        
+
         .bardown .title .hover{
             background-position : 0 -13px;
         }
@@ -2791,11 +2760,11 @@
                 <div class="borderRight"> </div>
                 <div class="content">
                 </div>
-        
+
                 <div class="bottomLeft"> </div>
                 <div class="bottomRight"> </div>
                 <div class="bottomBar"> </div>
-        
+
             </div>
         </a:main>
         <a:button>
@@ -2815,18 +2784,18 @@
             text-align : left;
 			z-index: 200;
         }
-    
+
         .hidden .content{
             overflow: hidden;
         }
-    
+
         .searchbar .content{
             border-left: 1px solid #c3c3c3;
             height : 100%;
             position : relative;
 			overflow: hidden;
         }
-        
+
         .searchbar .borderRight{
             background: url("images/error_box_r.png") repeat-y top right;
 			border-top: 1px solid #C3C3C3;
@@ -2853,7 +2822,7 @@
             padding: 0;
             border: 0;
         }
-        
+
         .searchbar .bottomRight{
             background: url("images/error_box_rb.png") no-repeat top right;
             width: 14px;
@@ -2864,7 +2833,7 @@
             padding: 0;
             border: 0;
         }
-        
+
         .searchbar .bottomBar{
             background: url("images/error_box_b.png") repeat-x bottom left;
             height: 16px;
@@ -2872,7 +2841,7 @@
             padding: 0;
             border: 0;
         }
-        
+
         .searchbar .close{
             width: 13px;
             height: 13px;
@@ -2883,7 +2852,7 @@
             right : 14px;
             top : 9px;
         }
-        
+
         .searchbar .title .hover{
             background-position : 0 -13px;
         }
@@ -2896,13 +2865,13 @@
                 <div class="content">
 				<div class="borderRight"> </div>
                 </div>
-				
+
                 <div class="footer">
 					<div class="bottomLeft"> </div>
 					<div class="bottomRight"> </div>
 					<div class="bottomBar"> </div>
 				</div>
-        
+
             </div>
         </a:main>
         <a:button>
@@ -2927,14 +2896,14 @@
             cursor : default;
 /*            margin : 0 -5px -2px 0; */
 	    }
-        
+
         .apf_btn .left{
             float: left;
             width: 8px;
             height: 25px;
             _margin-right: -3px; /* IE6 bug fix */
         }
-        
+
         .apf_btn .lbl{
             height: 20px;
             padding-top: 5px;
@@ -2946,37 +2915,37 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
-        
+
         .apf_btn .right{
             float: right;
             width: 9px;
             height: 25px;
 	       _margin-left: -3px; /* IE6 bug fix */
         }
-        
+
         .apf_btn .left{
             background: url("images/button_left.png") no-repeat 0 -25px;
         }
-        
+
         .apf_btn .lbl{
             background: url("images/button_middle.png") repeat-x 0 -25px;
         }
-        
+
         .apf_btn .right{
             background: url("images/button_right.png") no-repeat 0 -25px;
         }
-        
+
         .apf_btnDefault .left {
             background: url("images/button_left.png") no-repeat top left;
         }
-        
+
         .apf_btnDefault .lbl {
             background: url("images/button_middle.png") repeat-x top left;
         }
-        
+
         .apf_btnDefault .right {
             background: url("images/button_right.png") no-repeat top left;
-        }        
+        }
 
         .apf_btn span{
             padding : 1px 3px 1px 3px;
@@ -2986,38 +2955,38 @@
             _padding: 2px 4px 2px 4px;
             _margin: 0;
         }
-        
+
         .apf_btnDisabled  {
             color: #bebebe;
         }
-                
+
         .apf_btnDisabled .left {
     	    background: url("images/button_left.png") no-repeat 0 -50px;
     	}
-    	
+
     	.apf_btnDisabled .lbl {
     	    background: url("images/button_middle.png") repeat-x 0 -50px;
     	}
-    
+
     	.apf_btnDisabled .right {
     	    background: url("images/button_right.png") no-repeat 0 -50px;
     	}
     	.apf_btnFocus {
         }
-                
+
         .apf_btnFocus span{
             border: 1px dotted #BBB;
             padding : 1px 3px 1px 3px;
         }
-        
+
         .apf_btnDown .left {
 	        background: url("images/button_left.png") no-repeat 0 -75px;
         }
-	
+
     	.apf_btnDown .lbl {
     	    background: url("images/button_middle.png") repeat-x 0 -75px;
     	}
-            
+
     	.apf_btnDown .right {
     	    background: url("images/button_right.png") no-repeat 0 -75px;
     	}
@@ -3029,7 +2998,7 @@
     	.apf_btn .right {
     	    margin: 0;
     	}
-    	
+
     	.apf_btn .left {
     	    margin: 0;
     	}
@@ -3058,11 +3027,11 @@
         .labelDisabled{
             color: #bebebe;
         }
-        
+
         .tiny {
             font-size : 9px;
         }
-        
+
         .error .label{
             background : url(images/alert.png) no-repeat 0 0;
             min-height : 37px;
@@ -3097,21 +3066,21 @@
             font-size: 11px;
             text-overflow: ellipsis;
         }
-        
+
         .tbFocus {
             border: 1px solid #327fbd;
         }
-        
+
         .tbDisabled {
             border: 1px solid #c3c3c3;
             color: #bebebe;
         }
-        
+
         .tbError {
             border: 2px solid #ffb500;
             margin : -1px 0 0 -1px;
         }
-        
+
         .tbInitial{
             color : gray;
         }
@@ -3121,7 +3090,7 @@
             width: 250px;
             overflow-y: auto;
             z-index: 10000000;
-        
+
             position: absolute;
             background-color: white;
             margin: 23px 0 0 0;
@@ -3175,7 +3144,7 @@
             outline: none;
             resize: none;
         }
-        
+
         .taFocus{
             border-color : #327fbd;
         }
@@ -3184,7 +3153,7 @@
             border: 1px solid #c3c3c3;
             color: #bebebe;
         }
-        
+
         .taInitial{
             color : gray;
         }
@@ -3213,7 +3182,7 @@
             padding : 23px 0 26px 0;
             overflow: hidden;
         }
-        
+
         .tab .btncontainer{
             padding-left: 0;
             margin-top : -19px;
@@ -3223,7 +3192,7 @@
             height: 20px;
             overflow: visible;
         }
-        
+
         .tab .btncontainer div {
             cursor: default;
             display: block;
@@ -3231,12 +3200,12 @@
             margin: 0 3px 0 0;
             padding: 0;
         }
-        
+
         .tab .btncontainer div {
             background: url(images/tab_but_topleft.png) no-repeat 0 0;
             height: 20px;
         }
-  
+
         .tab .btncontainer div.curbtn {
             _position: relative;
             margin-top: -4px;
@@ -3245,17 +3214,17 @@
             height: 24px;
             color: #327fbd;
         }
-                
+
         .tabFocus .curbtn{
         }
-        
+
         .tabFocus .curbtn span{
             border: 1px dotted gray;
             padding: 0px 3px 2px 3px;
             margin : -1px -4px 0 -4px;
             display: block;
         }
-        
+
         .tab .btncontainer div div {
             height: 16px;
             margin: 0 -4px 0 0;
@@ -3284,11 +3253,11 @@
             height : 100%;
             position : relative;
         }
-        
+
         .tab .page.curpage{
             display : block;
         }
-        
+
         .tab .tabFooter{
             clear: both;
             height: 15px;
@@ -3297,11 +3266,11 @@
             bottom : 0;
             width : 100%;
         }
-        
+
         .tab .tabFooter div{
             background: url(images/tab_pag_rb.png) no-repeat bottom right;
         }
-        
+
         .tab .tabFooter div div{
             border-bottom: 1px solid #c3c3c3;
             background-color: #fafbfc;
@@ -3381,7 +3350,7 @@
         .tab .scroller span.down {
             background-position-y: -34px;
         }
-        
+
         .tab .scroller span.disabled {
             background-position-y: -51px;
         }
@@ -3390,14 +3359,14 @@
         <a:main pages="." buttons="div[1]" scroller="div[2]">
             <div class="tab">
                 <div class="btncontainer">
-                    
+
                 </div>
 
                 <div class="scroller">
                    <span class="scroller_btn_left"> </span>
                    <span class="scroller_btn_right"> </span>
                </div>
-            
+
                 <div class="tabFooter"><div><div> </div></div></div>
             </div>
         </a:main>
@@ -3423,7 +3392,7 @@
             background: url(images/spacer.gif);
             _clear: both; /* IE6 fix */
         }
-        
+
         .cbcontainer span{
             font-family: Tahoma;
             font-size: 11px;
@@ -3435,7 +3404,7 @@
             float: left;
             line-height: 13px;
         }
-        
+
         .cbcontainerFocus span{
             padding: 0px 2px 1px 2px;
             border: 1px dotted #BBB;
@@ -3465,16 +3434,16 @@
         .cbcontainerChecked .checkbox{
             background-position: 0 -24px;
         }
-        
+
         .cbcontainerError span{
             background-color : #ffb500;
             color: #fbfbfb;
         }
-        
+
         .cbcontainerDisabled .checkbox{
             background-position: 0 -0px;
         }
-        
+
         .cbcontainerDisabled span{
             color: #bebebe;
         }
@@ -3511,7 +3480,7 @@
             cursor : default;
             _clear: both; /* IE6 fix */
         }
-        
+
         .rbcontainer span{
             font-family: Tahoma;
             font-size: 11px;
@@ -3522,7 +3491,7 @@
             float: left;
             line-height: 13px;
         }
-        
+
         .rbcontainerFocus span{
             padding: 0 2px 1px 2px;
             border: 1px dotted #BBB;
@@ -3546,20 +3515,20 @@
         .rbcontainerChecked .radio{
             background-position: 0 -24px;
         }
-        
+
         .rbcontainerDisabled .radio{
             background-position: 0 -0px;
         }
-        
+
         .rbcontainerDisabled span{
             color: #bebebe;
         }
-        
+
         .rbcontainerError span{
             background-color : #ffb500;
             color: #fbfbfb;
         }
-        
+
         .rbcontainer br{
             display: none;
         }
@@ -3595,12 +3564,12 @@
             height: 17px;
             padding: 4px 0 0 7px;
             border: 0;
-        }        
- 
+        }
+
         .toolbar .subbar .tbradioOver {
             background: url("images/toolbar_a_hover_right.png") no-repeat top right;
         }
-        
+
         .toolbar .subbar .tbradioOver div {
             background: url("images/toolbar_a_hover.png") no-repeat top left;
         }
@@ -3608,7 +3577,7 @@
         .toolbar .subbar .tbradioDown, .toolbar .subbar .tbradioChecked{
             background: url("images/toolbar_a_down_right.png") no-repeat top right;
         }
-        
+
         .toolbar .subbar .tbradioDown div, .toolbar .subbar .tbradioChecked div {
             background: url("images/toolbar_a_down.png") no-repeat top left;
         }
@@ -3617,7 +3586,7 @@
             background: none;
             color: #bebebe;
         }
-        
+
         .toolbar .subbar .tbradio span{
             display: block;
             float:left;
@@ -3625,7 +3594,7 @@
             height: 16px;
             margin: -1px 3px 0 0;
         }
-        
+
     ]]></a:style>
 
     <a:presentation>
@@ -3635,7 +3604,7 @@
     </a:presentation>
 </a:radiobutton>
 <!--
-    * This menu needs shadow as in the design - done, except IE6 
+    * This menu needs shadow as in the design - done, except IE6
 -->
 <a:menu name="menu">
     <a:style><![CDATA[
@@ -3652,7 +3621,7 @@
             border : 1px solid #c3c3c3;
             display : none;
         }
-        
+
         .menu blockquote {
             list-style-type: none;
             margin: 0;
@@ -3660,7 +3629,7 @@
             border: 0;
             background: url("images/menu_context_right.gif") repeat-y top right;
         }
- 
+
         .menu div{
             padding: 4px 31px 4px 23px;
             white-space: nowrap;
@@ -3696,7 +3665,7 @@
             padding-left: 15px;
             margin-right: -15px;
         }
-                
+
         .menu div.submenu span{
             background: url(images/submenu_arrow.gif) no-repeat right top;
             width: 4px;
@@ -3707,7 +3676,7 @@
             margin: 3px 0 0 0;
             z-index: 10;
         }
-        
+
         .menu div.hover span{
             background-position : right -15px;
         }
@@ -3719,7 +3688,7 @@
         .menu div.disabled{
             color: gray;
         }
-        
+
         .menu u{
             width: 16px;
             height: 16px;
@@ -3727,19 +3696,19 @@
             left: 3px;
             margin-top : -1px;
         }
-        
+
         .menu div.selected u{
             background-image: url(images/radio.gif);
             background-repeat: no-repeat;
             background-position: 0 0;
         }
-        
+
         .menu div.checked u{
             background-image: url(images/check.gif);
             background-repeat: no-repeat;
             background-position: 0 0;
         }
-        
+
         .menu div.hover u{
             background-position : 0 -16px;
         }
@@ -3756,7 +3725,7 @@
             z-index: -10;
             background: url("images/menu_context_shtb.png") no-repeat top right;
         }
-                
+
         .menu div.menuShadowRight {
             position: absolute;
             right: -4px;
@@ -3772,7 +3741,7 @@
 
         .menu div.menuShadowBottom {
             position: absolute;
-            bottom: -4px; 
+            bottom: -4px;
 	    right: 0;
             margin: 0;
             padding: 0 0 0 3px;
@@ -3806,7 +3775,7 @@
         <a:main container="blockquote" overlay="strong">
             <blockquote class='menu'>
                 <blockquote>
-                
+
                 </blockquote>
                 <div class="menuShadowTop"> </div>
                 <div class="menuShadowRight"> </div>
@@ -3832,7 +3801,7 @@
             border-bottom: 1px solid #c3c3c3;
             position: relative;
         }
-        
+
         .toolbar .subbar {
             background: url(images/toolbar_row.png) repeat-x top left;
             height: 25px;
@@ -3843,7 +3812,7 @@
             padding: 0;
             width : 100%;
         }
-        
+
         .toolbar .divider {
             border-left: 1px solid #c3c3c3;
             border-right: 1px solid #FFFFFF;
@@ -3885,22 +3854,22 @@
             text-decoration: none;
             color: #000000;
         }
-        
+
         .menubar .toolbarbuttonOver, .menubar .toolbarbuttonDown {
             background : #45b3e8 url(images/menu_over.gif);
             color : #ffffff;
         }
-        
+
         .menubar .toolbarbuttonDown, .menubar .toolbarbuttonDown {
             background : #45b3e8 url(images/menu_down.gif);
             color : #ffffff;
         }
-        
+
         .menubar .toolbarbuttonDisabled, .menubar .toolbarbuttonDisabled {
             background : none;
             color : #bebebe;
         }
-        
+
         .toolbar .subbar .toolbarbutton {
             display: block;
             height: 22px;
@@ -3920,12 +3889,12 @@
             height: 17px;
             padding: 4px 4px 0 8px;
             border: 0;
-        }        
-        
+        }
+
         .toolbar .subbar .toolbarbuttonOver {
             background: url("images/toolbar_a_hover_right.png") no-repeat top right;
         }
-        
+
         .toolbar .subbar .toolbarbuttonOver div {
             background: url("images/toolbar_a_hover.png") no-repeat top left;
         }
@@ -3933,7 +3902,7 @@
         .toolbar .subbar .toolbarbuttonDown {
             background: url("images/toolbar_a_down_right.png") no-repeat top right;
         }
-        
+
         .toolbar .subbar .toolbarbuttonDown div {
             background: url("images/toolbar_a_down.png") no-repeat top left;
         }
@@ -3942,15 +3911,15 @@
             background: none;
             color: #bebebe;
         }
-        
+
         .toolbar .subbar .toolbarbuttonIcon div{
             padding-left : 4px;
         }
-        
+
         .toolbar .subbar .toolbarbuttonEmpty div{
             padding: 4px 0 0 7px;
         }
-        
+
         .toolbar .subbar .toolbarbuttonIcon span{
             display: block;
             float:left;
@@ -3958,7 +3927,7 @@
             height: 16px;
             margin: -2px 4px 0 0;
         }
-        
+
         .toolbar .subbar .toolbarbuttonEmpty span{
             margin: -1px 3px 0 0;
         }
@@ -3979,28 +3948,28 @@
             background-color: #fafbfc;
             cursor: default;
         }
-        
+
         .white{
             background : white;
         }
-        
+
         .list, .draglist{
             font-family: Tahoma;
             font-size: 8pt;
         }
-        
+
         .list DIV, .draglist{
             padding: 0;
             height: 18px;
         }
-        
+
         .list SPAN, .draglist SPAN{
             padding: 0 0 0 20px;
             background: no-repeat 1px center;
             height: 16px;
             float: left;
         }
-        
+
         .list U, .draglist U{
             text-decoration: none;
             color: black;
@@ -4010,14 +3979,14 @@
             text-decoration: none;
             white-space: nowrap;
         }
-        
+
         .listFocus .indicate U{
             border: 1px dotted #BBB;/*#25a8e7;*/
             color : black;
             /*background-color : #e4f4fc;*/
             padding: 1px 3px 1px 1px;
         }
-        
+
         .list .selected U{
             background-color: #f0f0f0;
             color: black;
@@ -4026,7 +3995,7 @@
             color: white;
             background-color: #25a8e7;
         }
-        
+
         .list #txt_rename{
             border: 1px solid #bbb;
             padding: 1px 15px 1px 1px;
@@ -4041,14 +4010,14 @@
             display: block;
             outline : none;
         }
-        
+
         .list .empty, .list .offline, .list .loading{
             text-align: center;
             padding: 8px 0 0 5px;
             color: #AAA;
             font-weight : normal;
         }
-        
+
         .shortlist{
             border : 0;
             overflow-y : auto;
@@ -4057,7 +4026,7 @@
             width : auto;
         }
     ]]></a:style>
-    
+
     <a:presentation>
         <a:main container=".">
             <div class='list'>
@@ -4093,12 +4062,12 @@
             height : 200px;
             position : relative;
         }
-        
+
         .dragthumb{
             opacity : 0.7;
             filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
         }
-        
+
         .thumbs, .dragthumb{
             font-family: Tahoma;
             font-size: 11px;
@@ -4114,7 +4083,7 @@
             padding: 0 0 1px 0;
             border: 1px solid #dcdcdc;
         }
-        
+
         .thumbs blockquote, .dragthumb blockquote{
             width: 90px;
             height: 90px;
@@ -4124,12 +4093,12 @@
             background: white no-repeat 50% 50%;
             float : left;
         }
-        
+
         .thumbs .primary blockquote{
             border : 1px solid gray;
             margin : 1px;
         }
-        
+
         .thumbs .selected, .dragthumb{
             border: 3px solid #dcdcdc;
             margin : 3px 3px 0 3px;
@@ -4161,7 +4130,7 @@
             border-color : gray;
             border-width : 0;
         }
-        
+
         .thumbsFocus .indicate span{
             border-style : dotted;
             border-width : 1px;
@@ -4191,27 +4160,27 @@
             color: #4b4b4b;
             word-break: keep-all;
             overflow: visible;
-            cursor: text; 
+            cursor: text;
         }
-        
+
         .thumbs input#txt_rename{
             padding : 1px;
             outline: none;
             text-align : center;
             width : 88px;
         }
-        
+
         .thumbs .empty, .thumbs .loading{
             font-weight : normal;
             color : #aaa;
             padding : 5px;
         }
-        
+
         .thumbs .dragInsert{
             margin-left : 4px;
             border-left : 2px solid gray;
         }
-        
+
         .thumb_attach blockquote{
             background-color : #fafafa;
         }
@@ -4247,12 +4216,12 @@
             position : relative;
             cursor : default;
         }
-        
+
         .radiolist, .draglist{
             font-family : Tahoma;
             font-size : 8pt;
         }
-        
+
         .radiolist DIV, .draglist{
             padding : 0;
             height : 18px;
@@ -4264,7 +4233,7 @@
             padding : 0 0 0 16px;
             position : relative;
         }
-        
+
         .radiolist U, .draglist U{
             text-decoration : none;
             color : black;
@@ -4279,7 +4248,7 @@
             white-space : nowrap;
             text-overflow : ellipsis;
         }
-        
+
         .radiolist .selected U{
             color : black;
         }
@@ -4287,7 +4256,7 @@
             border: 1px dotted #BBB;
             padding : 1px 3px 1px 1px;
         }
-        
+
         .radiolist .more u{
             border : 1px solid #a5a5a5;
             border-left : 0;
@@ -4296,7 +4265,7 @@
             font-size : 11px;
             line-height: 13px;
         }
-        
+
         .radiolist .more b{
             background : url(images/plusplain.gif) no-repeat 3px 3px;
             border : 1px solid #a5a5a5;
@@ -4306,11 +4275,11 @@
             margin : 0 0 0 2px;
             line-height: 13px;
         }
-        
+
         .radiolist .more_down u, .radiolist .more_down b{
             background-color : #EFEFEF;
         }
-        
+
         .radiolist #txt_rename{
             border : 1px solid #bbb;
             padding : 1px 1px 1px 1px;
@@ -4329,16 +4298,16 @@
             outline : none;
             width : 75px;
         }
-        
+
         .radiolist .empty{
             text-align : center;
             padding : 3px 0 0 0;
         }
-        
+
         .radiolist b{
             overflow : hidden;
             margin : 2px;
-            
+
             width: 12px;
             height: 12px;
             background: url("images/radio.png") no-repeat 0 -12px;
@@ -4346,11 +4315,11 @@
             left : 0;
             top : 0;
         }
-        
+
         .radiolist .selected b {
             background-position: 0 -24px;
         }
-        
+
         .radiolistDisabled .selected b {
             background-position: 0 -0px;
         }
@@ -4361,7 +4330,7 @@
             width : 100px;
         }
     ]]></a:style-->
-    
+
     <a:presentation>
         <a:main container="." type="2">
             <div class='radiolist'>
@@ -4392,12 +4361,12 @@
             position : relative;
             cursor : default;
         }
-        
+
         .checklist, .draglist{
             font-family : Tahoma;
             font-size : 8pt;
         }
-        
+
         .checklist DIV, .draglist{
             padding : 0;
             height : 18px;
@@ -4409,7 +4378,7 @@
             padding : 0 0 0 16px;
             position : relative;
         }
-        
+
         .checklist U, .draglist U{
             text-decoration : none;
             color : black;
@@ -4423,7 +4392,7 @@
             max-width : 100%;
             text-overflow : ellipsis;
         }
-        
+
         .checklist .selected U{
             color : black;
         }
@@ -4431,7 +4400,7 @@
             border: 1px dotted #BBB;
             padding : 1px 3px 1px 1px;
         }
-                
+
         .checklist .more u{
             border : 1px solid #a5a5a5;
             border-left : 0;
@@ -4440,7 +4409,7 @@
             font-size : 11px;
             line-height: 13px;
         }
-        
+
         .checklist .more b{
             background : url(images/plusplain.gif) no-repeat 3px 3px;
             border : 1px solid #a5a5a5;
@@ -4450,11 +4419,11 @@
             margin : 0 0 0 2px;
             line-height: 13px;
         }
-        
+
         .checklist .more_down u, .checklist .more_down b{
             background-color : #EFEFEF;
         }
-        
+
         .checklist #txt_rename{
             border : 1px solid #bbb;
             padding : 1px 1px 1px 1px;
@@ -4469,22 +4438,22 @@
             width : auto;
             float : left;
         }
-        
+
         .checklist input#txt_rename{
             outline : none;
             width : 75px;
             padding-left : 0;
         }
-        
+
         .checklist .empty{
             text-align : center;
             padding : 3px 0 0 0;
         }
-        
+
         .checklist b{
             overflow : hidden;
             margin : 2px;
-            
+
             width: 12px;
             height: 12px;
             background: url("images/checkbox.png") no-repeat 0 -12px;
@@ -4492,11 +4461,11 @@
             left : 0;
             top : 0;
         }
-        
+
         .checklist .selected b {
             background-position: 0 -24px;
         }
-        
+
         .checklistDisabled .selected b {
             background-position: 0 -0px;
         }
@@ -4507,7 +4476,7 @@
             width : 100px;
         }
     ]]></a:style-->
-    
+
     <a:presentation>
         <a:main container="." type="2">
             <div class='checklist'>
@@ -4540,12 +4509,12 @@
             border: 0;
             overflow: hidden;
         }
-        
+
         .mnulist, .draglist{
             font-family: Tahoma;
             font-size: 8pt;
         }
-        
+
         .mnulist DIV, .draglist{
             padding: 0;
             height: 14px;
@@ -4554,18 +4523,18 @@
             white-space : nowrap;
             text-overflow : ellipsis;
         }
-        
+
         .mnulist .hover{
             background-color : #25a8e7;
             color : white;
         }
-        
+
         /* , .mnulist .indicate */
         .mnulist .selected{
             color: white;
             background-color: #25a8e7;
         }
-        
+
         .mnulist #txt_rename{
             border: 1px solid #bbb;
             padding: 1px 15px 1px 1px;
@@ -4580,19 +4549,19 @@
             display: block;
             outline : none;
         }
-        
+
         .mnulist .loading, .mnulist .empty, .mnulist .offline{
             font-weight : normal;
             color : #aaa;
             padding : 5px 5px 0 5px;
             text-align : center;
         }
-        
+
         .mnulist .stdel, .mnulistFocus .stdel{
             color : #ccc;
         }
     ]]></a:style>
-    
+
     <a:presentation>
         <a:main container=".">
             <div class='mnulist'>
@@ -4641,24 +4610,24 @@
             height: 15px;
             float: left;
             margin : 2px 2px 0 0;
-            
+
             border-right: 1px solid #c3c3c3;
             border-left: 1px solid #FFFFFF;
-            
+
             position : relative;
             overflow : hidden;
         }
-        
+
         .statusbar .panelLast{
             float: none;
             margin: 2px 0 0 -2px;
             border-right: 0;
         }
-        
+
         .statusbar .panelIcon{
             padding-left: 23px
         }
-        
+
         .windowMax .statusbar .corner {
             display: none;
         }
@@ -4705,7 +4674,7 @@
 
         .checktree DIV.pluslast SPAN,
         .checktree DIV.plus SPAN{background-image:url(images/plus.png)}
-        
+
         .checktree DIV.minlast SPAN,
         .checktree DIV.min SPAN{background-image:url(images/min.png)}
 
@@ -4718,12 +4687,12 @@
             font-size: 8.5pt;
             position : relative;
         }
-        
+
         .dragchecktree{
             opacity : 0.5;
             background : none;
         }
-        
+
 
         .checktree LABEL, .dragchecktree LABEL{
             padding: 1px 0 0 18px;
@@ -4751,13 +4720,13 @@
             padding: 2px 4px 2px 2px;
         }
 
-        
+
         .checktreeFocus .indicate U{
             border: 1px dotted #BBB;/*#25a8e7;*/
             padding: 1px 3px 1px 1px;
             color : black;
         }
-        
+
         .checktree BLOCKQUOTE{
             margin: 0;
             padding: 0 0 0 20px;
@@ -4800,32 +4769,32 @@
             margin-top : -20px;
             background-position : 1px 0;
         }*/
-        
+
         .checktree .message{
             text-align: center;
             padding: 8px 10px 0 0;
             color: #AAA;
         }
-        
+
         .checktree b{
             overflow : hidden;
             margin : 2px;
-            
+
             width: 12px;
             height: 12px;
             background: url("images/checkbox.png") no-repeat 0 -12px;
             float : left;
             margin-left : -31px;
         }
-        
+
         .checktree .selected b {
             background-position: 0 -24px;
         }
-        
+
         .checktree .partial b {
             background-position: 0 -48px;
         }
-        
+
         .checktreeDisabled .selected b {
             background-position: 0 -0px;
         }
@@ -4869,7 +4838,7 @@
             height: 500px;
             overflow: hidden;
             cursor : default;
-            
+
             overflow: auto;
         }
 
@@ -4887,7 +4856,7 @@
 
         .tree DIV.pluslast SPAN,
         .tree DIV.plus SPAN{background-image:url(images/plus.png)}
-        
+
         .tree DIV.minlast SPAN,
         .tree DIV.min SPAN{background-image:url(images/min.png)}
 
@@ -4899,13 +4868,13 @@
             font-family: Tahoma, Arial;
             font-size: 8.5pt;
         }
-        
+
         .dragtree{
             opacity : 0.5;
             filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
             background : none;
         }
-        
+
         /*.tree DIV.root{
             padding: 0;
         }*/
@@ -4922,7 +4891,7 @@
         }
 
         .tree DIV.loading LABEL{
-            
+
         }
         .tree DIV.loading SPAN{
             background: no-repeat 0px 0px;
@@ -4936,18 +4905,18 @@
             padding: 2px 4px 2px 2px;
         }
 
-        
+
         .treeFocus .indicate U{
             border: 1px dotted #BBB;/*#25a8e7;*/
             padding: 1px 3px 1px 1px;
             color : black;
         }
-        
+
         .tree .selected U, .tree .dragAppend U{
             background-color: #f0f0f0;
             color: black;
         }
-        
+
         .treeFocus .selected U, .treeFocus .dragAppend U, .dragtree U{
             color: white;
             background-color: #25a8e7;
@@ -4998,14 +4967,14 @@
             margin-top : -20px;
             background-position : 1px 0;
         }*/
-        
+
         .tree .empty, .tree .offline, .tree .loading{
             text-align: center;
             padding: 4px 0 2px 0;
             color: #AAA;
             font-weight : normal;
         }
-        
+
         .tree .loading{
             text-align : left;
         }
@@ -5049,31 +5018,31 @@
             padding: 1px;
             background : #f1f1f1;
         }
-        
+
         .splitterFocus{
             border: 1px dotted black;
             padding: 0;
         }
-        
+
         .w-resize{
             cursor: w-resize;
         }
-        
+
         .n-resize{
             cursor: n-resize;
         }
-        
+
         .moving{
             background-color: gray;
         }
-        
+
         .horizontal div{
             height: 2px;
             width: 18px;
             background : url(images/splitter_handle_horizontal.gif);
             margin: -1px auto 0 auto;
         }
-        
+
         .vertical div{
             height: 18px;
             width: 2px;
@@ -5082,7 +5051,7 @@
             top: 50%;
             margin: -9px 0 0 0;
         }
-        
+
     ]]></a:style>
 
     <a:presentation>
@@ -5104,7 +5073,7 @@
             height: 17px;
             margin: 0;
             padding : 2px 18px 0 0;
-            
+
             color: #4b4b4b;
             font-family : Tahoma;
             font-size : 11px;
@@ -5117,20 +5086,20 @@
         .dropdownDisabled {
             color: #bebebe;
         }
-        
+
         .dropdownFocus {
             background-position:  right -19px;
         }
-        
+
         .dropdownOver {
-            
+
         }
-        
+
         .dropdownDown {
             position: relative;
             background-position: right -38px;
         }
-                
+
         .dropdown .dropdownLeftBorder {
             background: url("images/dropdown.png") no-repeat top left;
             float: left;
@@ -5149,7 +5118,7 @@
             white-space : nowrap;
             text-overflow : ellipsis;
         }
-        
+
         .dropdownError .dropdownLeftBorder {
             background-position: 0 -57px;
         }
@@ -5158,24 +5127,24 @@
             background-color: #ffb500;
             color: #fbfbfb;
         }
-        
-        
+
+
         .dropdownInitial .dropdownLeftBorder {
         }
-        
+
         .dropdownInitial .dropdownlabel{
             color : #999;
         }
-        
+
         .dropdownInitial.dropdownFocus .dropdownLeftBorder{
             background-position: 0 -19px;
         }
-        
+
         .dropdownInitial.dropdownFocus .dropdownlabel{
             background-color: transparent;
             color : #ffffff;
         }
-        
+
         .dropdownFocus .dropdownLeftBorder{
             background-position: 0 -19px;
         }
@@ -5184,7 +5153,7 @@
             background-color: #25a8e7;
             color: #ffffff;
         }
-        
+
         .dropdownDown .dropdownLeftBorder {
             background-position: 0 -38px;
         }
@@ -5209,13 +5178,13 @@
             display : none;
             overflow : auto;
         }
-        
+
         .optionList .top{
             background: url("images/dropdown_background_top.png") no-repeat top left;
             width: 136px;
             height: 5px;
         }
-        
+
         .optionList span{
             display: block;
             height: 15px;
@@ -5227,12 +5196,12 @@
             color: black;
             cursor: default;
         }
-        
+
         .optionList span.hover {
             background-color: #25a8e7;
             color: #ffffff;
         }
-        
+
         .optionList .selected{
             background-color: #f0f0f0;
         }
@@ -5246,7 +5215,7 @@
             </div>
         </a:main>
         <a:container contents=".">
-            <div class='optionList'> 
+            <div class='optionList'>
             </div>
         </a:container>
         <a:item
@@ -5272,10 +5241,10 @@
             height : 8px;
             cursor : default;
         }
-        
+
         .progressbar .lbl {
             position: relative;
-            background: url("images/bar_right.png") no-repeat top left; 
+            background: url("images/bar_right.png") no-repeat top left;
             font-family : Tahoma;
             font-size : 9px;
             float : right;
@@ -5284,7 +5253,7 @@
             padding: 0;
             _margin: 0 0 0 -4px;
         }
-                
+
         .progressbar .lbl span {
                 display: block;
                 position: absolute;
@@ -5298,10 +5267,10 @@
             margin: 0 30px 0 0;
             _margin: 0;
         }
-        
+
         .lowlabel{
         }
-        
+
         .lowlabel .lbl{
             position: static;
             width: 4px;
@@ -5313,7 +5282,7 @@
             top: 10px;
             left: 0;
         }
-                
+
         .lowlabel .left {
             margin: 0 4px 0 0;
         }
@@ -5347,7 +5316,7 @@
             background-position: 0 -8px;
             border-right : 1px solid #cfd0d0;
         }
-        
+
         .progressbarDisabled .left{
             background-position: left -8px;
         }
@@ -5371,12 +5340,12 @@
 	    margin: 0;
 	}
     </a:style>
-    
+
     <a:presentation>
         <a:main progress="div[2]/div" caption="div[1]/span/text()">
             <div class="progressbar">
                 <div class="lbl"><span>0%</span></div>
-                <div class="left"> 
+                <div class="left">
                     <div class="filledbar"> </div>
                 </div>
             </div>
@@ -5403,7 +5372,7 @@
 			left : 0;
 			margin-top : -12px;
 			overflow : hidden;
-			
+
 			width : 30px;
 			height : 21px;
 			/*border-color : #ddebb0 #506119 #506119 #ddebb0;
@@ -5421,7 +5390,7 @@
 			/*background-color : #e6fd9a;
 			padding : 0;*/
 		}
-		
+
 		.rangeMask label{
 			position : absolute;
 			width : 99%;
@@ -5433,7 +5402,7 @@
 			font-family : Arial;
 			color : gray;
 		}
-		
+
 		.rangeMask u{
 			position : absolute;
 			display : block;
@@ -5442,14 +5411,14 @@
 			border-width : 0 1px 0 0;
 			width : 1px;
 		}
-		
+
 		.rangeMask blockquote{
 			margin : -1px 16px 0 16px;
 			height : 100%;
 			position : relative;
 		}
 	]]></a:style>
-	
+
 	<a:presentation>
 		<a:main slider="div" container="." status="label/text()" markers="blockquote" margin="5,2,5,3">
 			<div class='rangeMask'><blockquote> </blockquote><label>-</label><div> </div></div>
@@ -5462,7 +5431,7 @@
 <a:slider name="slider">
     <a:alias>range</a:alias>
     <a:alias>horizontal</a:alias>
-    
+
     <a:style><![CDATA[
         .slider {
             background: url("images/bar_right.png") no-repeat top right;
@@ -5474,22 +5443,22 @@
             font-size : 9px;
             text-align : center;
         }
-        
+
         .sliderDisabled {
             background-position: right -8px;
         }
-        
+
         .slider .left{
             background: url("images/bar_left.png") no-repeat top left;
             height: 8px;
             overflow: hidden;
             margin-right : 4px;
         }
-        
+
         .sliderDisabled .left{
             background-position: left -8px;
         }
-        
+
         .slider .grabber {
             background: url("images/slider.png") no-repeat top left;
             width: 20px;
@@ -5497,12 +5466,12 @@
             overflow: hidden;
             position: absolute;
         }
-        
+
         .sliderDisabled .grabber {
             background-position: left -8px;
         }
     ]]></a:style>
-    
+
     <a:presentation>
         <a:main slider="div[1]" container="." status2="div[2]/text()"
           markers="." direction="horizontal">
@@ -5527,11 +5496,11 @@
             font-size : 9px;
             text-align : center;
         }
-        
+
         .slider_verDisabled {
             background-position: 0 bottom;
         }
-        
+
         .slider_ver .top {
             background: url("images/bar_top.png") no-repeat -8px top;
             width: 8px;
@@ -5542,11 +5511,11 @@
             position:absolute;
             z-index:1000;
         }
-        
+
         .slider_verDisabled .top{
             background-position: 0 top;
         }
-        
+
         .slider_ver .grabber {
             background: url("images/slider_vertical.png") no-repeat -8px 0;
             height: 20px;
@@ -5555,12 +5524,12 @@
             position: absolute;
             z-index:2000;
         }
-        
+
         .slider_verDisabled .grabber {
             background-position: 0 0;
         }
     ]]></a:style>
-    
+
     <a:presentation>
         <a:main slider="div[1]" container="." status2="div[2]/text()"
           markers="." direction="vertical">
@@ -5588,26 +5557,26 @@
             font-size : 9px;
             text-align : center;
         }
-        
+
         .sliderHighDisabled {
             background-position: right -8px;
         }
-        
+
         .sliderHigh .left{
             background: url("images/bar_left.png") no-repeat top left;
             height: 8px;
             overflow: hidden;
             margin-right : 4px;
         }
-        
+
         .sliderHighDisabled .left{
             background-position: left -8px;
         }
-        
+
         .sliderHighDisabled .filledbar {
             background-position: 0 -8px;
         }
-        
+
         .sliderHigh .grabber {
             background: url("images/slider2.png") no-repeat top left;
             width: 7px;
@@ -5616,12 +5585,12 @@
             position: absolute;
             top : -4px;
         }
-        
+
         .sliderHighDisabled .grabber {
             background-position: left -16px;
         }
     ]]></a:style>
-    
+
     <a:presentation>
         <a:main slider="div[1]" container="." status2="div[2]/text()"
           markers="." direction="horizontal">
@@ -5648,11 +5617,11 @@
             font-size : 9px;
             text-align : center;
         }
-        
+
         .sliderHigh_verDisabled {
             background-position: 0 bottom;
         }
-        
+
         .sliderHigh_ver .top{
             background: url("images/bar_top.png") no-repeat -8px top;
             width: 8px;
@@ -5663,11 +5632,11 @@
             bottom:4px;
             z-index:1000;
         }
-        
+
         .sliderHigh_verDisabled .top{
             background-position: 0 top;
         }
-        
+
         .sliderHigh_ver .grabber {
             background: url("images/slider2Big_vertical.png") no-repeat -16px 0;
             height: 7px;
@@ -5677,12 +5646,12 @@
             margin-left : -4px;
             z-index:2000;
         }
-        
+
         .sliderHigh_verDisabled .grabber {
             background-position: 0 0;
         }
     ]]></a:style>
-    
+
     <a:presentation>
         <a:main slider="div[1]" container="." status2="div[2]/text()"
           markers="." direction="vertical">
@@ -5704,27 +5673,27 @@
             height: 16px;
             position: relative;
             padding-right: 7px;
-            
+
             font-family : Tahoma;
             font-size : 9px;
             text-align : center;
         }
-        
+
         .slider16Disabled {
             background-position: right -16px;
         }
-        
+
         .slider16 .left{
             background: url("images/bar16x_left.png") no-repeat top left;
             height: 16px;
             overflow: hidden;
         }
-        
+
         .slider16Disabled .left{
             background-position: left -16px;
         }
-        
-        
+
+
         .slider16 .grabber {
             background: url("images/slider16x.png") no-repeat top right;
             width: 40px;
@@ -5732,7 +5701,7 @@
             overflow: hidden;
             position: absolute;
         }
-        
+
         .slider16Disabled .grabber {
             background-position: left -48px;
             margin-left:7px;
@@ -5746,7 +5715,7 @@
             background-position: right -32px;
         }
     ]]></a:style>
-    
+
     <a:presentation>
         <a:main slider="div[1]" container="." status2="div[2]/text()"
           markers="." direction="horizontal">
@@ -5772,11 +5741,11 @@
             text-align : center;
             padding-bottom:7px;
         }
-        
+
         .slider16_verDisabled {
             background-position: 0 bottom;
         }
-        
+
         .slider16_ver .top{
             background: url("images/bar16x_top.png") no-repeat -16px top;
             width: 16px;
@@ -5787,12 +5756,12 @@
             bottom:7px;
             z-index:1000;
         }
-        
+
         .slider16_verDisabled .top {
             background-position: 0 top;
         }
-        
-        
+
+
         .slider16_ver .grabber {
             background: url("images/slider16x_vertical.png") no-repeat -48px 0;
             height: 40px;
@@ -5802,7 +5771,7 @@
             z-index:2000;
             margin-top:7px;
         }
-        
+
         .slider16_verDisabled .grabber {
             background-position: 0 0;
         }
@@ -5841,27 +5810,27 @@
             height: 11px;
             position: relative;
             padding-right: 5px;
-            
+
             font-family : Tahoma;
             font-size : 9px;
             text-align : center;
         }
-        
+
         .slider11Disabled {
             background-position: right -11px;
         }
-        
+
         .slider11 .left{
             background: url("images/bar11x_left.png") no-repeat top left;
             height: 11px;
             overflow: hidden;
         }
-        
+
         .slider11Disabled .left{
             background-position: left -11px;
         }
-        
-        
+
+
         .slider11 .grabber {
             background: url("images/slider11x.png") no-repeat top right;
             width: 29px;
@@ -5869,13 +5838,13 @@
             overflow: hidden;
             position: absolute;
         }
-        
+
         .slider11Disabled .grabber {
             background-position: left -11px;
             margin-left:5px;
         }
     ]]></a:style>
-    
+
     <a:presentation>
         <a:main slider="div[1]" container="." status2="div[2]/text()"
           markers="." direction="horizontal">
@@ -5901,11 +5870,11 @@
             font-size : 9px;
             text-align : center;
         }
-        
+
         .slider11_verDisabled {
             background-position: 0 bottom;
         }
-        
+
         .slider11_ver .left{
             background: url("images/bar11x_top.png") no-repeat -11px top;
             width: 11px;
@@ -5916,12 +5885,12 @@
             bottom:5px;
             z-index:1000;
         }
-        
+
         .slider11_verDisabled .left{
             background-position: 0 top;
         }
-        
-        
+
+
         .slider11_ver .grabber {
             background: url("images/slider11x_vertical.png") no-repeat -11px 0;
             width: 11px;
@@ -5931,7 +5900,7 @@
             z-index:2000;
             margin-top:5px;
         }
-        
+
         .slider11_verDisabled .grabber {
             background-position: 0 0;
         }
@@ -5954,8 +5923,8 @@
         </marker>
     </a:presentation>
 </a:slider>
-<!-- 
-    * This skin can be optimized by making it fixed width. - 
+<!--
+    * This skin can be optimized by making it fixed width. -
 -->
 <a:errorbox name="errorbox">
     <a:style><![CDATA[
@@ -5963,7 +5932,7 @@
             font-family: Tahoma;
             font-size: 8pt;
             cursor : default;
-            
+
             z-index: 100000;
             position: absolute;
             margin : 22px 0 0 16px;
@@ -5971,26 +5940,26 @@
         }
 
         .errorbox .errorboxContent {
-            background: url(images/errorbox_backg.png) repeat-y top left;            
-            width: 250px;            
+            background: url(images/errorbox_backg.png) repeat-y top left;
+            width: 250px;
         }
-        
+
         .errorbox .errorboxContent span{
             background : transparent;
         }
-        
+
         .errorbox .errorboxTop {
             background: url("images/errorbox_top.png") no-repeat top left;
             width: 250px;
             height: 9px;
         }
-        
+
         .errorbox .errorboxBottom {
             background: url("images/errorbox_bottom.png") no-repeat top left;
             width: 250px;
             height: 16px;
         }
-        
+
         .errorbox .errorboxTop div {
             background: url("images/tooltip_arrow.png") no-repeat top left;
             width: 19px;
@@ -6003,7 +5972,7 @@
             border: 0;
             z-index: 10000000;
         }
- 
+
         .errorbox .close {
             width: 13px;
             height: 13px;
@@ -6014,30 +5983,30 @@
             right : 13px;
             top : 6px;
         }
-        
+
         .errorbox .close:hover{
             background-position : 0 -13px;
         }
-        
+
         .errorbox span{
             display: block;
             padding: 0 10px 4px 10px;
-            
+
         }
-        
+
         .errorbox strong{
             display : block;
             line-height: 13px;
             margin-top: 0;
             padding-top: 0;
             padding-bottom: 3px;
-            border: 0; 
+            border: 0;
         }
-        
+
         .rightbox{
             margin-left : -205px;
         }
-        
+
         .rightbox .errorboxTop div {
             right : 20px;
             left : auto;
@@ -6061,14 +6030,14 @@
         .errorbox{
             font-family: Tahoma;
             font-size: 8pt;
-            
+
             z-index: 1000000000;
             position: absolute;
             margin : 22px 0 0 7px;
             width : 250px;
             cursor : default;
         }
-                
+
         .errorbox .tLeft{
             background: url("images/error_box_lt.png") no-repeat top left;
             width: 8px;
@@ -6079,7 +6048,7 @@
             padding: 0;
             border: 0;
         }
-        
+
         .errorbox .tRight {
             background: url("images/error_box_rt.png") no-repeat top left;
             width: 14px;
@@ -6090,7 +6059,7 @@
             padding: 0;
             border: 0;
         }
-        
+
         .errorbox .tBorder {
             border-top:1px solid #c3c3c3;
             height: 8px;
@@ -6098,11 +6067,11 @@
             padding: 0;
             background-color : white;
         }
-        
+
         .errorbox .tBorder {
             position: relative;
         }
-        
+
         .errorbox .tBorder div {
             background: url("images/tooltip_arrow.png") no-repeat top left;
             width: 19px;
@@ -6115,7 +6084,7 @@
             margin: 0;
             border: 0;
         }
- 
+
         .errorbox .ebcontent{
             border-left: 1px solid #c3c3c3;
             padding: 0 14px 0 10px;
@@ -6123,13 +6092,13 @@
             background-color : white;
             margin : 0 8px 0 0;
         }
-        
+
         .errorbox .mRight {
             background: url("images/error_box_r.png") repeat-y top right;
             overflow: hidden;
             _margin: -9px 0 0 0; /* IE6 bug fix */
         }
-        
+
         .errorbox .bLeft{
             background: url("images/error_box_lb.png") no-repeat top left;
             width: 8px;
@@ -6140,7 +6109,7 @@
             padding: 0;
             border: 0;
         }
-        
+
         .errorbox .bRight{
             background: url("images/error_box_rb.png") no-repeat top right;
             width: 14px;
@@ -6151,7 +6120,7 @@
             padding: 0;
             border: 0;
         }
-        
+
         .errorbox .bBar{
             background: url("images/error_box_b.png") repeat-x bottom left;
             height: 16px;
@@ -6159,13 +6128,13 @@
             padding: 0;
             border: 0;
         }
-        
+
         .errorbox .ebcontent .titleBar {
             margin-bottom: 8px;
             font-weight: bold;
             color: #327fbd;
         }
-        
+
         .errorbox .close {
             width: 13px;
             height: 13px;
@@ -6176,22 +6145,22 @@
             right : 13px;
             top : 6px;
         }
-        
+
         .errorbox .close:hover{
             background-position : 0 -13px;
         }
-        
+
         .errorbox .ebcontent span{
             display: block;
             padding: 4px 0;
-            
+
         }
-        
+
         .errorbox strong{
             display : block;
             margin : -5px 0 3px 0;
         }
-        
+
     ]]></a:style>
 
     <a:presentation>
@@ -6200,14 +6169,14 @@
                 <div class="tLeft"> </div>
                 <div class="tRight"> </div>
                 <div class="tBorder"><div> </div></div>
-        
+
                 <div class="mRight">
                     <div class="ebcontent">
                         <div class="titleBar"><a class="close" href="javascript:void(0)" onclick="return false"> </a></div>
                         <span> </span>
                     </div>
                 </div>
-        
+
                 <div class="bLeft"> </div>
                 <div class="bRight"> </div>
                 <div class="bBar"> </div>
@@ -6230,7 +6199,7 @@
             padding : 20px 0 26px 0;
             _padding: 20px 0 26px 0;
         }
-        
+
         .bar .contents {
             clear: both;
             border-top: 1px solid #c3c3c3;
@@ -6243,7 +6212,7 @@
             padding : 15px;
             margin-top : -20px;
 	}
-  
+
         .bar .barFooter{
             clear: both;
             height: 15px;
@@ -6264,7 +6233,7 @@
             height: 14px;
             margin: 0 14px;
         }
-        
+
 
     ]]></a:style>
     <a:style condition="apf.isIE6">
@@ -6295,11 +6264,11 @@
 			overflow : hidden;
 			padding-top : 46px;
         }
-        
+
         .previewBar .toolbar{
             margin-top : -46px;
         }
-        
+
         .previewBar .preview{
             overflow: auto;
 			padding: 10px;
@@ -6352,7 +6321,7 @@
     	    margin : 5px 0 7px -3px;
     	}
     </a:style>
-    
+
     <a:presentation>
         <a:main container="." caption="legend/text()">
             <fieldset class='frame'><legend class="legend">-</legend></fieldset>
@@ -6365,7 +6334,7 @@
             position: relative;
             padding : 20px 0 0 0;
         }
-        
+
         .sectionhead span{
             width : 16px;
             height : 16px;
@@ -6374,7 +6343,7 @@
             margin : -1px 4px 1px 2px;
             background : no-repeat 0 0;
         }
-        
+
         .section .sectionhead{
             height: 14px;
             margin : -20px 0 -1px 0;
@@ -6386,25 +6355,25 @@
             font-size : 8pt;
             font-weight : bold;
         }
-        
+
         .sectionActive .sectionhead{
             background : #25a8e7 url(images/sectionheadactive.gif);
             color : white;
         }
-        
+
         .section .sectioncontainer{
             position : relative;
             width : 100%;
             height : 100%;
         }
-        
+
         .sectionCurrent .sectionhead{
             /*border-bottom : 2px solid #c3c3c3;
             padding-bottom : 2px;
             z-index : 10;
             position : relative;*/
         }
-        
+
         .section .sectionhead div{
             float : right;
             width : 14px;
@@ -6413,7 +6382,7 @@
             border : 1px solid transparent;
             background : no-repeat 2px 2px;
         }
-        
+
         .section .sectionhead div.hover{
             border : 1px solid white;
         }
@@ -6430,7 +6399,7 @@
     <a:presentation>
         <a:main collapsed-height="20"
           min-width="150" min-height="80"
-          container="div[2]" drag="div[1]" title="div[1]/text()" 
+          container="div[2]" drag="div[1]" title="div[1]/text()"
           icon="div[1]/span" buttons="div[1]">
             <div class='section'>
                 <div class="sectionhead"><span> </span>-</div>
@@ -6452,11 +6421,11 @@
             color: #4b4b4b;
             height : 13px;*/
         }
-        
+
         .upload form{
             float: left;
         }
-        
+
         .upload .fileinput{
             -moz-user-focus: ignore;
             opacity: 0.0;
@@ -6474,7 +6443,7 @@
             cursor: hand;
             cursor: pointer;
         }
-        
+
         .upload iframe{
             visibility: hidden;
             width: 0;
@@ -6485,7 +6454,7 @@
     <a:presentation>
         <a:main label=".">
             <div class="upload">
-                
+
             </div>
         </a:main>
         <a:form inp_file="input[1]" inp_uid="input[2]">
@@ -6509,13 +6478,13 @@
             position : relative;
             text-align : center;
         }
-        
+
         .img img{
             margin : auto;
             position : relative;
         }
     ]]></a:style>
-    
+
     <a:presentation>
         <a:main image="img/@src">
             <div class="img">
@@ -6533,29 +6502,29 @@
             width: 200px;
             height: 500px;
             overflow: auto;
-            
+
             font-family: Courier New;
             font-size: 11px;
             cursor: default;
         }
-        
+
         .markupedit dl, .markupedit dt, .markupedit dd{
             margin: 0;
         }
-        
+
         .markupedit dt, .markupedit span{
             color: #0000FF;
         }
-        
+
         .markupedit dt{
             cursor: hand;
             cursor: pointer;
         }
-        
+
         .markupedit .attribute dl, .markupedit .attribute dt, .markupedit .attribute dd{
             display: inline;
         }
-        
+
         #override .markupedit .textedit{
             background-color: white;
             color: black;
@@ -6566,67 +6535,67 @@
         #override strong.textedit{
             position: relative;
         }
-        
+
         #override .markupedit DIV .attribute DT, #override .markupedit DIV .attribute DD{
             cursor: text;
         }
-        
+
         .markupedit .attribute dt{
             color: #191970;
         }
-        
+
         .markupedit .attribute dd{
             color: #FF0000;
         }
-        
+
         .markupedit dt, .markupedit .attribute, .markupedit .selected span{
             float: left;
         }
-        
+
         .markupedit dl.attribute{
             padding: 0 0 0 5px;
         }
-        
+
         .markupedit dl{
             height: 14px;
             white-space: nowrap;
         }
-        
+
         .markupedit span{
             display: block;
         }
-        
+
         .markupedit u{
             float: left;
             text-decoration: none;
         }
-        
+
         .markupedit strong{
             font-weight: normal;
             float: left;
         }
-        
+
         .markupedit .textnode strong{
             cursor: text;
         }
-        
+
         .markupedit DIV{
             cursor: default;
             padding: 0 0 0 14px;
             background-repeat: no-repeat;
             background-position: 2px 3px;
         }
-        
+
         .markupedit .selected dl, .markupedit .selected dd, .markupedit .selected dt, .markupedit .selected span, .markupedit .selected strong{
             background-color: #191970;
             color: #FFFFFF;
         }
-        
+
         #override .markupedit .highlight{
             background-color: #FFFF00;
             color: #000000;
         }
-        
+
         .markupedit DIV.pluslast {background-image:url(images/splus.gif)}
         .markupedit DIV.minlast {background-image:url(images/smin.gif)}
         .markupedit DIV.plus {background-image:url(images/splus.gif)}
@@ -6679,7 +6648,7 @@
 </a:markupedit>
 <a:testobject name="testobject">
     <a:alias>aliasofobject</a:alias>
-    
+
     <a:style><![CDATA[
         .testobject{
             border: 1px solid red;
@@ -6687,7 +6656,7 @@
             overflow: hidden;
             height: 1%;
         }
-        
+
         .testobject div{
             border: 1px solid red;
             width: 50px;
@@ -6696,11 +6665,11 @@
             float: left;
             background: no-repeat 5px 5px;
         }
-        
+
         .testobjectFocus{
             border: 2px solid black;
         }
-        
+
         .testobjectDisabled{
             background-color: black;
         }
@@ -6708,7 +6677,7 @@
     <a:presentation>
         <a:main content=".">
             <div class='testobject'>
-            
+
             </div>
         </a:main>
         <a:item caption="." icon=".">
@@ -6719,7 +6688,7 @@
 <a:chart name="chart">
     <a:style><![CDATA[
     .chart {
-        background-color:transparent;    
+        background-color:transparent;
     }
     ]]></a:style>
 
@@ -7208,7 +7177,7 @@
             height: 50px;
             float: left;
         }
-        
+
         .statuscontainer span{
             font-family: MS Sans Serif;
             font-size: 8pt;
@@ -7220,7 +7189,7 @@
             width: 50px;
             margin-top: 5px;
         }
-        
+
         .statuscontainerFocus span{
             margin: 4px 0 0 3px;
             padding-right: 1px;
@@ -7232,7 +7201,7 @@
             height: 32px;
             overflow: hidden;
             margin: 0 3px 0 13px;
-            
+
             background: url(icons/icoOff.gif) no-repeat 50% 50%;
         }
 
@@ -7277,10 +7246,10 @@
             border: 1px solid #c3c3c3;
             background-color: white;
             cursor: default;
-            
+
             font-family: Tahoma;
             font-size: 8pt;
-            
+
             padding: 21px 0 0 0;
         }
 
@@ -7304,46 +7273,46 @@
 		.noscrollbar .datagrid{
 		    background : transparant;
 		}
-		
+
         .datagrid .headings div{
             display : inline-block;
             height : 15px;
-            
+
             border-left : 1px solid white;
             margin-right : -3px;
             margin-left : -5px;
             padding : 1px 3px 1px 3px;
-            
+
             background : #e6e6e6 no-repeat 0 50%;
             overflow : hidden;
             text-overflow : ellipsis;
         }
-        
+
         .datagrid .headings div.hover{
             background-color: #DDD;
         }
-        
+
         .datagrid .headings div.down, .datagrid .headings div.drag{
             color: white;
             background-color: #25a8e7;
         }
-        
+
         .datagrid .headings div.drag{
             border : 1px solid white;
         }
-        
+
         .datagrid .headings div.ascending{
             background-image : url(images/sort_asc.gif);
             background-repeat : no-repeat;
             background-position : right 6px;
         }
-        
+
         .datagrid .headings div.descending{
             background-image : url(images/sort_desc.gif);
             background-repeat : no-repeat;
             background-position : right 6px;
         }
-        
+
         .datagrid .records{
             overflow-x: hidden;
             overflow-y: scroll;
@@ -7355,14 +7324,14 @@
             border-width : 1px 1px 0 0;
             white-space : nowrap;
         }
-        
+
         .noscrollbar .records{
             overflow-y : hidden;
         }
-        
+
         .datagrid .records div span{
             display : inline-block;
-            
+
             margin-right : -3px;
             margin-left : -5px;
             padding : 2px 3px 2px 4px;
@@ -7372,24 +7341,24 @@
             text-overflow : ellipsis;
             white-space : nowrap;
         }
-        
+
         .noscrollbar .datagrid .records div span{
             background-color : transparent;
         }
-        
+
         .datagrid .records div{
             height : 19px;
             padding-left : 5px;
         }
-        
+
         .datagrid .records .highlight span{
-        
+
         }
-        
+
         .datagrid .records .highlight{
-        
+
         }
-        
+
         .datagridFocus .records .indicate span{
             border: 1px dotted #BBB;
             border-width : 1px 0 1px 0;
@@ -7397,10 +7366,10 @@
             color : #4b4b4b;
             height : 15px;
         }
-        
+
         .datagridFocus .records div span{
         }
-        
+
         .datagrid .records .selected, .datagrid .records .selected span{
             background-color: #f0f0f0;
             color : #4b4b4b;
@@ -7409,7 +7378,7 @@
             color: white;
             background-color: #25a8e7;
         }
-        
+
         .datagrid .move_pointer{
             height : 100px;
             width : 2px;
@@ -7422,7 +7391,7 @@
             overflow : hidden;
             z-index : 1000;
         }
-        
+
         .datagrid .size_pointer{
             border : 1px dotted gray;
             border-width : 0 1px 0 1px;
@@ -7432,7 +7401,7 @@
             z-index : 1000;
             cursor : w-resize;
         }
-        
+
         .datagrid .loading, .datagrid .empty, .datagrid .offline{
             font-weight : normal;
             color : #aaa;
@@ -7443,11 +7412,11 @@
             margin-left : -100px;
             text-align : center;
         }
-        
+
         .pointer{
             display : none;
         }
-        
+
         .dginfo{
             display : none;
             overflow : hidden;
@@ -7460,31 +7429,31 @@
             left : -3px;
             margin-bottom : 3px;
         }
-        
+
         .dginfo h3{
             margin : 0 0 5px 0;
         }
-        
+
         .dginfo p{
             margin : 0;
         }
-        
-        .datagrid .records .stdel, .datagridFocus .records .stdel, 
+
+        .datagrid .records .stdel, .datagridFocus .records .stdel,
         .datagrid .records .stdel span, .datagridFocus .records .stdel span{
             color : #ccc;
         }
-        
+
         .dragdg{
             border : 2px solid black;
             width : 10px;
             height : 5px;
         }
-        
+
         .datagrid .records .dragInsert{
             border-top : 2px solid gray;
             height : 17px;
         }
-        
+
         .datagrid .records .dragInsert span{
             padding-top : 0px;
             margin-bottom : 0;
@@ -7495,7 +7464,7 @@
         .datagrid .headings div{
             float : left;
         }
-        
+
         .datagrid .records div span{
             float : left;
         }
@@ -7505,16 +7474,16 @@
             padding-top : 2px;
             height : 15px;
         }
-        
+
         .datagrid .headings div{
             display : -moz-inline-box;
             overflow : visible;
             position : relative;
         }
-        
+
         .datagrid .records{
         }
-        
+
         .datagrid .records div span{
             display : -moz-inline-box;
             overflow : visible;
@@ -7527,7 +7496,7 @@
             head        = "div[1]"
             body        = "div[3]"
             pointer     = "div[2]"
-            
+
             widthdiff = "9"
             iframe2    = "true"
         >
@@ -7543,15 +7512,15 @@
         <a:headitem class="." caption="text()">
             <div>-<span></span></div>
         </a:headitem>
-        
+
         <a:rowheaditem class="." caption="text()">
             <span>-</span>
         </a:rowheaditem>
-        
+
         <a:row class="." container=".">
             <div />
         </a:row>
-        
+
         <a:dragindicator>
             <div class='dragdg'> </div>
         </a:dragindicator>
@@ -7565,7 +7534,7 @@
         <a:loading>
             <div class="loading"><span></span><label>Loading...</label></div>
         </a:loading>
-        
+
         <a:empty caption=".">
             <div class="empty"> </div>
         </a:empty>
@@ -7577,16 +7546,16 @@
             border: 1px solid #c3c3c3;
             background-color: white;
             cursor: default;
-            
+
             font-family: Tahoma;
             font-size: 11px;
-            
+
             padding: 0 0 0 0;
         }
         div.spreadsheet{
             position : relative;
         }
-        
+
         /*IE6 if all else fails .fixed {
             overflow : auto;
         }*/
@@ -7601,67 +7570,67 @@
             margin : 0 16px 0 0;
             white-space : nowrap;
         }
-        
+
         .fixed .headings{
             overflow : hidden;
             z-index : 100;
         }
-        
+
         .spreadsheet .records .highlight span{
-        
+
         }
-        
+
         .spreadsheet .records .highlight{
-        
+
         }
-        
+
         .spreadsheet .headings span{
             display : inline-block;
             height : 15px;
         }
-        
-        .spreadsheet .headings span b{    
+
+        .spreadsheet .headings span b{
             font-weight : normal;
             padding : 1px 0 1px 0;
             border : 1px solid #c3c3c3;
             border-width : 0 1px 1px 1px;
-            
+
             background : #e6e6e6 no-repeat 0 50%;
             overflow : hidden;
             text-overflow : ellipsis;
-            
+
             padding : 1px 1px 1px 3px;
             display : block;
             height : 15px;
             margin-left : -1px;
             text-align : center;
         }
-        
+
         .spreadsheet .headings span.hover{
         }
-        
+
         .spreadsheet .headings span.down b, .spreadsheet .headings span.drag b{
             color: white;
             background-color: #25a8e7;
         }
-        
+
         .spreadsheet .headings span.ascending b{
             background-image : url(images/sort_asc_n.gif);
             background-repeat : no-repeat;
             background-position : right 6px;
         }
-        
+
         .spreadsheet .headings span.descending b{
             background-image : url(images/sort_desc_n.gif);
             background-repeat : no-repeat;
             background-position : right 6px;
         }
-        
+
         .spreadsheet .headings span.drag{
             border : 1px solid white;
         }
-        
-        /* Disabled this one when using an iframe 
+
+        /* Disabled this one when using an iframe
         .spreadsheet .records{
             overflow-x: hidden;
             overflow-y: scroll;
@@ -7670,15 +7639,15 @@
             padding : 0;
             white-space : nowrap;
         }*/
-        
+
         .virtual .records{
             overflow : hidden;
         }
-        
+
         .fixed .records{
             overflow-x: auto;
         }
-        
+
         .spreadsheet body.records{
             overflow : visible;
             margin : 0;
@@ -7687,7 +7656,7 @@
             white-space : nowrap;
             cursor : url(images/excel.cur);
         }
-        
+
         .spreadsheet iframe{
             position : absolute;
             left : 0;
@@ -7695,18 +7664,18 @@
             width : 100%;
             height : 100%;
         }
-        
+
         html.spreadsheet{
             overflow-x: hidden;
             overflow-y: scroll;
             border : 0;
             margin : 0;
         }
-        
+
         html.fixed{
             overflow-x : auto;
         }
-        
+
         .spreadsheet .records div b{
             font-weight : normal;
             padding : 2px 1px 2px 3px;
@@ -7716,20 +7685,20 @@
             height : 13px;
             margin-left : -1px;
         }
-        
+
         .spreadsheet .records div span{
             display : inline-block;
-            
+
             height : 17px;
             background : white no-repeat 0 50%;
             text-overflow : ellipsis;
             white-space : nowrap;
         }
-        
+
         .spreadsheet .records div{
             height : 18px;
         }
-        
+
         .spreadsheet .records .cellselected b{
             border : 3px solid #f3f3f3;
             margin : -1px -1px 0 -2px;
@@ -7738,12 +7707,12 @@
             z-index : 10;
             /*background : #f3f3f3;*/
         }
-        
+
         .spreadsheetFocus .records .cellselected b{
             border : 3px solid black;/*#25a8e7;*/
             background : transparent;
         }
-        
+
         /*.spreadsheet .records .cellselected{
             background-color: #f0f0f0;
             color: #4b4b4b;
@@ -7752,7 +7721,7 @@
             color: white;
             background-color: #25a8e7;
         }*/
-        
+
         .spreadsheet .move_pointer{
             height : 100px;
             width : 2px;
@@ -7765,7 +7734,7 @@
             overflow : hidden;
             z-index : 1000;
         }
-        
+
         .spreadsheet .size_pointer{
             border : 1px dotted gray;
             border-width : 0 1px 0 1px;
@@ -7775,11 +7744,11 @@
             z-index : 1000;
             cursor : w-resize;
         }
-        
+
         .pointer{
             display : none;
         }
-        
+
         .spreadsheet #txt_rename{
             font-family: Tahoma;
             font-size: 8pt;
@@ -7787,7 +7756,7 @@
             overflow: hidden;
             cursor: text;
             background-color: white;
-            
+
             height : 14px;
             border : 2px solid black;
             margin : -1px -1px 0 -2px;
@@ -7795,12 +7764,12 @@
             position : relative;
             z-index : 10;
         }
-        
+
         .spreadsheet input#txt_rename{
             outline : none;
             padding : 2px 0 1px 2px;
         }
-        
+
         .spreadsheet .ddbtn{
             width : 10px;
             height : 7px;
@@ -7815,7 +7784,7 @@
             text-decoration : none;
             cursor : default;
         }
-        
+
         .spreadsheetcontainerdropdown, .spreadsheetcontainerset, .ddjmlcontainer{
             display : none;
             text-decoration : none;
@@ -7826,12 +7795,12 @@
             margin : 0;
             padding : 0;
         }
-        
-        .ddjmlcontainer{ 
+
+        .ddjmlcontainer{
             /*padding : 5px;*/
             overflow : hidden;
         }
-        
+
         .spreadsheetcontainerdropdown div, .spreadsheetcontainerset div{
             display: block;
             height: 15px;
@@ -7843,21 +7812,21 @@
             color: black;
             cursor: default;
         }
-        
+
         .spreadsheetcontainerdropdown div.hover{
             background-color: #25a8e7;
             color: #ffffff;
         }
-        
+
         .spreadsheetcontainerset div.hover{
             background-color : #eee;
         }
-        
+
         .spreadsheetcontainerset div{
             padding-top : 2px;
             padding-bottom : 0;
         }
-        
+
         .spreadsheetcontainerset div span{
             width: 12px;
             height: 12px;
@@ -7866,11 +7835,11 @@
             float : left;
             background: url("images/checkbox.png") no-repeat 0 -12px;
         }
-        
+
         .spreadsheetcontainerset div.checked span{
             background-position: 0 -24px;
         }
-        
+
         .spreadsheet .btncustom{
             width : 11px;
             height : 10px;
@@ -7887,32 +7856,32 @@
             font-weight : bold;
             text-decoration : none;
         }
-        
+
         .spreadsheet u.down{
             border : 2px inset;
             padding : 3px 0 1px 2.5px;
             width : 9px;
             background-position : 2px 5px;
         }
-        
+
         /*.spreadsheetFocus .btncustom, .spreadsheetFocus .ddbtn{
             display : block;
         }*/
-        
+
         .spreadsheet .empty, .spreadsheet .offline, .spreadsheet .loading{
             text-align: center;
             padding: 8px 0 0 5px;
             color: #AAA;
             font-weight : normal;
         }
-        
+
         .spreadsheet .item{
             padding : 3px 4px 4px 2px;
             /*border-bottom : 1px solid #eee;*/
             margin : 0 -3px 0 -3px;
             cursor : default;
         }
-        
+
         .spreadsheet .item i{
             overflow : hidden;
             width : 14px;
@@ -7922,14 +7891,14 @@
             margin : 0 5px 0 2px;
             font-size : 10px;
             float : left;
-            font-style: normal; 
+            font-style: normal;
         }
-        
+
         .spreadsheet .item i:hover{
             color: white;
             background-color: #25a8e7;
         }
-        
+
         .spreadsheet .newitem{
             padding : 2px;
             margin : 0 0 -1px 0;
@@ -7937,11 +7906,11 @@
             border-bottom : 1px dotted #cfcbc2;
             height : 13px;
         }
-        
+
         .spreadsheet div span.spreadsheet_lookupmultiple dl{
             padding : 0;
         }
-        
+
         .spreadsheet div span.spreadsheet_lookupmultiple #txt_rename{
             margin : -1px;
         }
@@ -7949,7 +7918,7 @@
     <a:style condition="apf.isIE"><![CDATA[
         .spreadsheet .headings div{
         }
-        
+
         .spreadsheet .records div span{
         }
     ]]></a:style>
@@ -7958,44 +7927,44 @@
             overflow-x : hidden;
             padding-right : 16px;
         }
-        
+
         .fixed .headings{
             width : 100%;
         }
-        
+
         .fixed .records{
             width : 100%;
             padding-left : -16px;
             text-index : expression(this.style.paddingLeft='16px');
         }
-        
+
         .fixed .records div{
             margin-left : -16px;
         }
-        
+
         .fixed .records div span{
             overflow : hidden;
             height : 19px;
             margin-top : -1px;
         }
-        
+
         .spreadsheet body.records{
             padding : 18px 0 0 0;
         }
-        
+
         .fixed .records div span b{
             width : expression(this.parentNode.offsetWidth - 5);
         }
-        
+
         .spreadsheet iframe{
             height : expression(this.parentNode.parentNode.offsetHeight - 2);
             width : expression(this.parentNode.parentNode.offsetWidth - 2);
         }
-        
+
         html.spreadsheet body.records {
             margin-right : -20px;
         }
-        
+
         .spreadsheet .size_pointer{
             height : expression(this.parentNode.offsetHeight - 2);
         }
@@ -8006,19 +7975,19 @@
             -moz-border-left-colors: #D4D0C8 #FFFFFF;
             -moz-border-bottom-colors: black gray;
             -moz-border-right-colors: black gray;
-            
+
             margin-top : -13px;
             height : 6px;
             width : 10px;
         }
-        
+
         .spreadsheet u.down{
             -moz-border-top-colors: gray black;
             -moz-border-left-colors: gray black;
             -moz-border-bottom-colors: #FFFFFF #D4D0C8;
             -moz-border-right-colors: #FFFFFF #D4D0C8;
         }
-        
+
         .spreadsheet .item i{
             margin : 0 5px 0 3px;
             font-size : 11px;
@@ -8029,43 +7998,43 @@
         .spreadsheet .headings{
             height : 18px;
         }
-        
+
         .spreadsheet .headings span{
             height : 18px;
         }
-        
+
         .spreadsheet .records div span{
             height : 18px;
         }
-        
+
         .spreadsheet .records div{
             height : 18px;
         }
-        
+
         .spreadsheet .records div span b{
             border-width : 0 1px 1px 0;
         }
-        
+
         .spreadsheet .headings span{
             display : -moz-inline-grid;
             overflow : visible;
             position : relative;
         }
-        
+
         .spreadsheet .records{
         }
-        
+
         .spreadsheet .records div span{
             display : -moz-inline-grid;
             overflow : visible;
             position : relative;
         }
-        
+
         .spreadsheet .records .cellselected b{
             margin : -1px -1px 0 -2px;
             padding : 0px 0px 1px 1px;
         }
-        
+
         .spreadsheet input#txt_rename{
             position : absolute;
             padding : 1px 1px 0 2px;
@@ -8076,7 +8045,7 @@
             margin : -1px -1px 0 -2px;
             padding : 0 0 1px 2px;
         }
-    
+
         .spreadsheet input#txt_rename{
             position : relative;
             top : -6px;
@@ -8091,7 +8060,7 @@
             rowhead     = "div[3]"
             body        = "div[4]"
             pointer     = "div[2]"
-            
+
             widthdiff    = "2"
             defaultwidth = "70"
             scalerename  = "true"
@@ -8110,15 +8079,15 @@
         <a:headitem class="." caption="b/text()">
             <span><b>-</b></span>
         </a:headitem>
-        
+
         <a:rowheaditem class="." caption="text()">
             <span>-</span>
         </a:rowheaditem>
-        
+
         <a:row class="." container=".">
             <div />
         </a:row>
-        
+
         <a:dragindicator>
             <div class='dragdg'> </div>
         </a:dragindicator>
@@ -8132,15 +8101,15 @@
         <a:dropdown>
             <u class="ddbtn"> </u>
         </a:dropdown>
-        
+
         <a:dropdown_container item-height="17">
             <ul class="propeditcontainerdropdown"> </ul>
         </a:dropdown_container>
-        
+
         <a:jml_container jml="true">
             <ul class="ddjmlcontainer"> </ul>
         </a:jml_container>
-        
+
         <a:custom>
             <u class="btncustom">...</u>
         </a:custom>
@@ -8148,7 +8117,7 @@
         <a:loading>
             <div class="loading"><span></span><label>Loading...</label></div>
         </a:loading>
-        
+
         <a:empty caption=".">
             <div class="empty"> </div>
         </a:empty>
@@ -8164,7 +8133,7 @@
             border: 2px inset;
             border: 1px solid midnightblue;
         }
-        
+
         #override .ddedit .ddeditbtn{
             background: #D4D0C8 url(images/arrow_down.gif) no-repeat 50% 50%;
             width: 13px;
@@ -8174,20 +8143,20 @@
             left: expression(this.parentNode.offsetWidth - 18);
             border: 2px outset;
             overflow: hidden;
-            
+
             -moz-border-top-colors: #D4D0C8 #FFFFFF;
             -moz-border-left-colors: #D4D0C8 #FFFFFF;
             -moz-border-bottom-colors: black gray;
             -moz-border-right-colors: black gray;
         }
-        
+
         .ddeditDisabled .ddeditbtn{
             background-image: url(images/dddisabled.gif);
         }
 
         #override .ddeditdown .ddeditbtn{
             border: 2px inset;
-            
+
             -moz-border-bottom-colors: #FFFFFF #D4D0C8;
             -moz-border-right-colors: #FFFFFF #D4D0C8;
             -moz-border-top-colors: gray black;
@@ -8206,7 +8175,7 @@
             cursor: default;
             color: black;
         }
-        
+
         #override .ddeditFocus .ddeditlabel{
             background-color: #EEEEEE;
         }
@@ -8244,19 +8213,19 @@
             color: black;
             background-color: #CFCFCF;
         }
-        
+
         .ddeditError{
             border: 2px inset red;
         }
-        
+
         .ddedit.loading{
             /*border: 2px inset gray;*/
         }
-        
+
         .ddedit.loaded{
             /*border: 2px inset green;*/
         }
-        
+
         .ddedit.loading .ddeditbtn{
             border: 0;
             width: 15px;
@@ -8295,13 +8264,13 @@
             background: white no-repeat 50% 50%;
             border: 1px solid gray;
         }
-        
+
         .imageDisabled{
             background-position: 1000px 1000px;
         }
-        
+
     ]]></a:style>
-    
+
     <a:presentation>
         <a:main image=".">
             <div class="image">
@@ -8314,12 +8283,12 @@
         .image{
             margin-bottom: 10px;
         }
-        
+
         .imageDisabled{
         }
-        
+
     ]]></a:style>
-    
+
     <a:presentation>
         <a:main image="@src">
             <img src="" />
@@ -8340,14 +8309,14 @@
         }
         .errorLabel.disabled{
         }
-        
+
         .alert{
             font-size: 8pt;
             font-family: MS Sans Serif;
             text-align: center;
         }
     ]]></a:style>
-    
+
     <a:presentation>
         <a:main caption="text()" for="@for">
             <div class="errorLabel">-</div>
@@ -8417,13 +8386,13 @@
             background-color: white;
             cursor: default;
         }
-        
+
         .listmenu{
             font-family: Tahoma;
             font-size: 8pt;
             font-weight: bold;
         }
-        
+
         .listmenu DIV{
             padding: 0;
             height: 15px;
@@ -8431,22 +8400,22 @@
             border-bottom: 1px solid gray;
             background: url(images/listbg.gif) repeat-x;
         }
-        
+
         BODY .listmenu .norights{
             background: #CCCCCC;
             color: gray;
         }
-        
+
         .listmenu .selected{
             background: #d4d5d8;
         }
-        
+
         .listmenu .empty{
             text-align: center;
             padding: 3px 0 0 0;
         }
     ]]></a:style>
-    
+
     <a:presentation>
         <a:main container=".">
             <div class='listmenu'>
@@ -8482,22 +8451,22 @@
             background-color: white;
             cursor: default;
         }
-        
+
         #override .layoutlistFocus blockquote.selected{
             border: 1px solid #CCC;
             background-color: #EEE;
         }
-        
+
         .layoutlist blockquote.selected{
             border: 1px solid #DDD;
             background-color: #F2F2F2;
         }
-        
+
         .layoutlist, .draglayoutlist{
             font-family: Tahoma;
             font-size: 8pt;
         }
-        
+
         .layoutlist blockquote, .draglayoutlist{
             padding: 0;
             height: 18px;
@@ -8511,7 +8480,7 @@
             text-align: center;
             float: left;
         }
-        
+
         .layoutlist SPAN, .draglayoutlist SPAN{
             position: absolute;
             bottom: 1px;
@@ -8521,7 +8490,7 @@
             padding-top: 32px;
             overflow: hidden;
         }
-        
+
         .layoutlist U, .draglayoutlist U{
             text-decoration: none;
             cursor: default;
@@ -8530,8 +8499,8 @@
             text-decoration: none;
             white-space: nowrap;
         }
-        
-        
+
+
         /*.layoutlist .selected U{
             background-color: #CCCCCC;
             color: black;
@@ -8544,7 +8513,7 @@
             border: 1px dotted gray;
             padding: 1px 3px 1px 1px;
         }*/
-        
+
         .layoutlist #txt_rename{
             border: 0;
             padding: 0 0 0 1px;
@@ -8560,13 +8529,13 @@
             background-color: white;
             border-top: 1px solid #DDD;
         }
-        
+
         .layoutlist .empty{
             text-align: center;
             padding: 3px 0 0 0;
         }
     ]]></a:style>
-    
+
     <a:presentation>
         <a:main container=".">
             <div class='layoutlist'>
@@ -9477,7 +9446,7 @@
 <a:tab name="lowtab">
     <a:style><![CDATA[
         .lowtab{
-            position: relative;           
+            position: relative;
             color: #4B4B4B;
             font-family: Tahoma;
             font-size: 8pt;
@@ -9492,7 +9461,7 @@
             cursor: default;
             z-index : 1;
         }
-        
+
         .lowtab .btncontainer div{
             cursor: default;
             display: block;
@@ -9521,7 +9490,7 @@
             border-top: 1px solid #c3c3c3;
             background: url(images/tab_but_bottomright.png) no-repeat right -1px;
         }
-        
+
         .lowtab .btncontainer .curbtn div {
             padding-top: 6px;
             height: 19px;
@@ -9546,7 +9515,7 @@
         .lowtab .page.curpage{
             display: block;
         }
-        
+
     ]]></a:style>
     <a:style condition="apf.isIE6">
 	.lowtab .btncontainer{
@@ -10017,21 +9986,21 @@
             font-family: Arial;
             font-size: 9pt;
         }
-        
+
         .textEmpty{
             font-size : 8pt;
             font-weight : bold;
             color : #ccc;
             text-align : center;
         }
-        
+
         .messages{
             border: 1px solid gray;
             background: white;
             padding: 10px;
             overflow: auto;
         }
-        
+
         .textFocus{
         }
     ]]></a:style>
@@ -10258,7 +10227,7 @@
             margin: 2px 0 0 -18px;
             overflow: hidden;
         }
-        
+
         .scrollbar .btnup, .scrollbar .btndown, .scrollbar .indicator{
             font-family: MS Sans Serif;
             font-size: 8pt;
@@ -10269,36 +10238,36 @@
             text-align: center;
             font-weight: bold;
             cursor: default;
-            
+
             -moz-border-top-colors: #D4D0C8 #FFFFFF;
             -moz-border-left-colors: #D4D0C8 #FFFFFF;
             -moz-border-bottom-colors: black gray;
             -moz-border-right-colors: black gray;
         }
-        
+
         body .scrollbar .btnup.btnupdown, body .scrollbar .btndown.btndowndown{
             border: 1px solid gray;
             padding: 1px 1px 1px 1px;
             background-position: 4px 6px;
         }
-        
+
         .scrollbar .btnup{
             background: #D4D0C8 url(images/scrollup.gif) no-repeat 2px 4px;
         }
-        
+
         .scrollbar .btndown{
             background: #D4D0C8 url(images/scrolldown.gif) no-repeat 2px 4px;
             position: absolute;
             bottom: 0px;
         }
-        
+
         .scrollbar .indicator{
             height: 10px;
             position: absolute;
             overflow: hidden;
             background-color: #D4D0C8;
         }
-        
+
         .scrollbar .slidefast{
             position: absolute;
             overflow: hidden;
@@ -10309,7 +10278,7 @@
             overflow: hidden;
         }
     ]]></a:style>
-    
+
     <a:presentation>
         <a:main btnup="div[1]" indicator="div[2]" btndown="div[3]" slidefast="div[4]">
             <div class='scrollbar'>
@@ -10333,30 +10302,30 @@
             cursor: default;
             overflow: hidden;
         }
-        
+
         .fastlist, .dragfastlist{
             font-family: Tahoma;
             font-size: 8pt;
         }
-        
+
         .fastlist INPUT{
             float: left;
             margin: -1px 0 0 0;
             display: none;
         }
-        
+
         .fastlist DIV, .dragfastlist{
             padding: 0;
             height: 18px;
         }
-        
+
         .fastlist SPAN, .dragfastlist SPAN{
             padding: 0 0 0 20px;
             background: url(icons/icoMailFolder.gif) no-repeat 1px center;
             height: 16px;
             float: left;
         }
-        
+
         .fastlist U, .dragfastlist U{
             text-decoration: none;
             color: black;
@@ -10366,7 +10335,7 @@
             text-decoration: none;
             white-space: nowrap;
         }
-        
+
         .fastlist .selected U{
             background-color: #CCCCCC;
             color: black;
@@ -10380,7 +10349,7 @@
             padding: 1px 3px 1px 1px;
         }
         .fastlist.fastlistFocus .selected A:hover{color: white;}
-        
+
         .fastlist #txt_rename{
             border: 1px solid black;
             padding: 1px 15px 1px 1px;
@@ -10392,13 +10361,13 @@
             margin-top : 0px;
             cursor: text;
         }
-        
+
         .fastlist .empty{
             text-align: center;
             padding: 3px 0 0 0;
         }
     ]]></a:style>
-    
+
     <a:presentation>
         <a:main container=".">
             <div class='fastlist'>
@@ -10436,7 +10405,7 @@
         .notifier .lt {
             background-image  : url(images/growl_lt.gif);
             background-repeat : no-repeat;
-            width             : 8px; 
+            width             : 8px;
             height            : 8px;
             float             : left;
             overflow          : hidden;
@@ -10456,7 +10425,7 @@
         .notifier .lb {
             background-image  : url(images/growl_lb.gif);
             background-repeat : no-repeat;
-            width             : 8px; 
+            width             : 8px;
             height            : 7px;
             float             : left;
             margin-bottom     : -7px;
@@ -10547,7 +10516,7 @@
         </a:notification>
     </a:presentation>
 </a:notifier>
-    
+
 <a:notifier name="bubble">
     <a:style><![CDATA[
 
@@ -10571,7 +10540,7 @@
         .bubble .rt {
             background-image  : url(images/bubble_rt.png);
             background-repeat : no-repeat;
-            width             : 15px; 
+            width             : 15px;
             height            : 16px;
             float             : right;
             overflow          : hidden;
@@ -10581,7 +10550,7 @@
         .bubble .lb {
             background-image  : url(images/bubble_lb.png);
             background-repeat : no-repeat;
-            width             : 15px; 
+            width             : 15px;
             height            : 14px;
             float             : left;
             margin-bottom     : -14px;
@@ -10590,7 +10559,7 @@
         .bubble .rb {
             background-image  : url(images/bubble_rb.png);
             background-repeat : no-repeat;
-            width             : 15px; 
+            width             : 15px;
             height            : 14px;
             float             : right;
             margin-bottom     : -14px;
@@ -10619,7 +10588,7 @@
             background-repeat   : repeat-x;
             background-color    : #bad9f6;
             width               : auto;
-            border              : 4px solid #757a7f; 
+            border              : 4px solid #757a7f;
             border-width        : 0 4px 0 4px;
             min-height          : 15px;
             padding             : 0 10px 0 12px;
@@ -10710,7 +10679,7 @@
         .smoke .lb {
             background-image  : url(images/smoke_lb.gif);
             background-repeat : no-repeat;
-            width             : 8px; 
+            width             : 8px;
             height            : 7px;
             float             : left;
             margin-bottom     : -7px;
@@ -10719,7 +10688,7 @@
         .smoke .rb {
             background-image  : url(images/smoke_rb.gif);
             background-repeat : no-repeat;
-            width             : 8px; 
+            width             : 8px;
             height            : 7px;
             float             : right;
             margin-bottom     : -7px;
@@ -11205,7 +11174,7 @@
             width: 120px;
             overflow: hidden;
         }
-        
+
         .editor_popup .editor_input{
             font-family : Arial;
             height : 16px;
@@ -11457,9 +11426,9 @@
 
     <a:presentation>
         <a:main
-          toolbar    = "div[1]" 
-          editor     = "div[2]" 
-          linked     = "textarea" 
+          toolbar    = "div[1]"
+          editor     = "div[2]"
+          linked     = "textarea"
           iframe     = "true"
           erroffsetx = "0"
           erroffsety = "100">
@@ -11498,7 +11467,7 @@
                 Bold, Italic, Underline, Strikethrough, |,
                 Sub, Sup, |,
                 Table, |, justifyleft, justifycenter, justifyright,
-                justifyfull, |, Code, |, Anchor, 
+                justifyfull, |, Code, |, Anchor,
                 Link, Unlink, Charmap
             </a:toolbar>
             <a:toolbar>
@@ -11703,13 +11672,13 @@
             background-image : url(images/arrow_left.png);
             background-repeat: no-repeat;
         }
-        
+
         .slideshow .next {
             right            : -15px;
             background-image : url(images/arrow_right.png);
             background-repeat: no-repeat;
         }
- 
+
         .slideshow .next, .slideshow .previous {
             padding   : 10px;
             display   : block;
@@ -11936,48 +11905,48 @@
             cursor: default;
             cursor : auto;
         }
-        
+
         .listcomments div{
             margin : 0 0 20px 0;
             background : #f2f2f2;
             padding : 10px;
         }
-        
+
         .listcomments .message{
             /*font-family : Courier New;*/
             background : white;
             margin : 10px 0 0 0;
         }
-        
+
         .listcomments blockquote{
             margin : 0;
             padding : 0;
             font-family : Arial;
         }
-        
+
         .listcomments pre{
             margin : 10px 0 10px 0;
         }
-        
+
         .listcomments h3{
             font-size : 12pt;
             font-family : Arial;
             margin : 0;
         }
-        
+
         .listcomments{
             line-height : 1.3em;
         }
-        
+
         .listcomments .highlight{
             background-color : #FFF59A;
         }
-        
+
         .listcomments .selected {
             background-color : #e1e1e1;
         }
     ]]></a:style>
-    
+
     <a:presentation>
         <a:main container=".">
             <div class='listcomments'>
@@ -12323,16 +12292,16 @@
             /*border-left : 14px solid #cfcbc2;*/
             background-color: white;
             cursor: default;
-            
+
             font-family: Tahoma;
             font-size: 11px;
-            
+
             padding: 0 0 0 0;
         }
         div.propedit{
             position : relative;
         }
-        
+
         .propedit .headings{
             position : relative;
             top : 0;
@@ -12343,24 +12312,24 @@
             margin : 0; /*margin : 0 16px 0 0; Temp disabled for non scrolling */
             white-space : nowrap;
         }
-        
+
         .fixed .headings{
             overflow : hidden;
             z-index : 100;
         }
-        
+
         .propedit .headings span{
             display : inline-block;
             height : 15px;
         }
-        
-        .propedit .headings span b{    
+
+        .propedit .headings span b{
             font-weight : normal;
-            
+
             background : #e6e6e6 no-repeat 0 50%;
             overflow : hidden;
             text-overflow : ellipsis;
-            
+
             padding : 2px 1px 0px 3px;
             margin : 0 -1px 0 -1px;
             border-right : 1px solid #cfcbc2;
@@ -12369,39 +12338,39 @@
             height : 15px;
             font-weight : bold;
         }
-        
+
         .propedit .headings span.hover{
         }
-        
+
         .propedit .headings span.down b, .propedit .headings span.drag b{
             color: white;
             background-color: #25a8e7;
         }
-        
+
         .propedit .headings span.ascending b{
             background-image : url(images/sort_asc_n.gif);
             background-repeat : no-repeat;
             background-position : right 6px;
         }
-        
+
         .propedit .headings span.descending b{
             background-image : url(images/sort_desc_n.gif);
             background-repeat : no-repeat;
             background-position : right 6px;
         }
-        
+
         .propedit .headings span.drag{
             border : 1px solid white;
         }
-        
+
         .virtual .records{
             overflow : hidden;
         }
-        
+
         .fixed .records{
             overflow-x: auto;
         }
-        
+
         .propedit body.records{
             overflow : visible;
             margin : 0;
@@ -12409,7 +12378,7 @@
             padding : 17px 0 0 0;
             white-space : nowrap;
         }
-        
+
         .propedit iframe{
             position : absolute;
             left : 0;
@@ -12417,18 +12386,18 @@
             width : 100%;
             height : 100%;
         }
-        
+
         html.propedit{
             overflow-x: hidden;
             overflow-y: auto; /* Should be auto. This was scroll */
             border : 0;
             margin : 0;
         }
-        
+
         html.fixed{
             overflow-x : auto;
         }
-        
+
         .propedit .records div dl{
             font-weight : normal;
             padding : 2px 1px 2px 3px;
@@ -12439,43 +12408,43 @@
             margin : 0 -1px 0 -1px;
             cursor : default;
         }
-        
+
         .propedit .records div span{
             display : inline-block;
             vertical-align : top;
-            
+
             background : white no-repeat 0 50%;
             text-overflow : ellipsis;
             white-space : nowrap;
         }
-        
+
         .propedit .records div{
             margin-bottom : -1px;
         }
-        
+
         .propedit .records .tall dl{height : 36px;}
         .propedit .records .tall span{height : 40px;}
         .propedit .records .tall{height : 41px;}
-        
+
         .propedit .records .selected .celllabel dl{
             background-color: #f0f0f0;
             color: black;/*#4b4b4b;*/
         }
-        
+
         .propeditFocus .records .selected .celllabel dl{
             color: white;
             background-color: #25a8e7;
         }
-        
+
         .propedit .records .cellselected dl{
             background : white;
             color : black;
             cursor : text;
         }
-        
+
         .propeditFocus .records .cellselected dl{
         }
-        
+
         /*.propedit .records .cellselected{
             background-color: #f0f0f0;
             color: #4b4b4b;
@@ -12484,7 +12453,7 @@
             color: white;
             background-color: #25a8e7;
         }*/
-        
+
         .propedit .move_pointer{
             height : 100px;
             width : 2px;
@@ -12497,7 +12466,7 @@
             overflow : hidden;
             z-index : 1000;
         }
-        
+
         .propedit .size_pointer{
             border : 1px dotted gray;
             border-width : 0 1px 0 1px;
@@ -12507,11 +12476,11 @@
             z-index : 1000;
             cursor : w-resize;
         }
-        
+
         .pointer{
             display : none;
         }
-        
+
         .propedit #txt_rename{
             font-family: Tahoma;
             font-size: 8pt;
@@ -12527,14 +12496,14 @@
             position : relative;
             z-index : 10;
         }
-        
+
         .propedit input#txt_rename{
             outline : none;
             padding : 2px 0 1px 2px;
             margin : 0 -2px 0 -1px;
             border-width : 1px 1px 1px 1px;
         }
-        
+
         .propedit .ddbtn{
             width : 11px;
             height : 10px;
@@ -12547,7 +12516,7 @@
             background : #cfcbc2 url(images/sort_asc.gif) no-repeat 3px 5px;
             text-decoration : none;
         }
-        
+
         .propeditcontainerdropdown, .propeditcontainerset, .ddjmlcontainer{
             display : none;
             text-decoration : none;
@@ -12558,12 +12527,12 @@
             margin : 0;
             padding : 0;
         }
-        
-        .ddjmlcontainer{ 
+
+        .ddjmlcontainer{
             /*padding : 5px;*/
             overflow : hidden;
         }
-        
+
         .propeditcontainerdropdown div, .propeditcontainerset div{
             display: block;
             height: 15px;
@@ -12575,20 +12544,20 @@
             color: black;
             cursor: default;
         }
-        
+
         .propeditcontainerdropdown div.hover{
             background-color: #25a8e7;
             color: #ffffff;
         }
-        
+
         .propeditcontainerset div.hover{
             background-color : #eee;
         }
-        
+
         .propeditcontainerset div{
             padding : 2px 3px 0 1px;
         }
-        
+
         .propeditcontainerset div span{
             width: 12px;
             height: 12px;
@@ -12597,11 +12566,11 @@
             float : left;
             background: url("images/checkbox.png") no-repeat 0 -12px;
         }
-        
+
         .propeditcontainerset div.checked span{
             background-position: 0 -24px;
         }
-        
+
         .propedit .btncustom{
             width : 11px;
             height : 10px;
@@ -12618,32 +12587,32 @@
             font-weight : bold;
             text-decoration : none;
         }
-        
+
         .propedit u.down{
             border : 2px inset;
             padding : 3px 0 1px 3.5px;
             width : 10px;
             background-position : 4px 6px;
         }
-        
+
         /*.propeditFocus .btncustom, .propeditFocus .ddbtn{
             display : block;
         }*/
-        
+
         .propedit .empty, .propedit .offline, .propedit .loading{
             text-align: center;
             padding: 8px 0 0 5px;
             color: #AAA;
             font-weight : normal;
         }
-        
+
         .propedit .item{
             padding : 3px 4px 4px 2px;
             /*border-bottom : 1px solid #eee;*/
             margin : 0 -3px 0 -3px;
             cursor : default;
         }
-        
+
         .propedit .item i{
             overflow : hidden;
             width : 14px;
@@ -12653,14 +12622,14 @@
             margin : 0 5px 0 2px;
             font-size : 10px;
             float : left;
-            font-style: normal; 
+            font-style: normal;
         }
-        
+
         .propedit .item i:hover{
             color: white;
             background-color: #25a8e7;
         }
-        
+
         .propedit .newitem{
             padding : 2px;
             margin : -1px 0 -1px 0;
@@ -12668,25 +12637,25 @@
             border-bottom : 1px dotted #cfcbc2;
             height : 14px;
         }
-        
+
         .propedit div span.propedit_lookupmultiple dl{
             padding : 0;
         }
-        
+
         .propedit div span.propedit_lookupmultiple dl div, .propedit div span.propedit_childrenmultiple dl div{
             position : relative;
             padding-left : 22px;
         }
-        
+
         .propedit div span.propedit_lookupmultiple dl div i, .propedit div span.propedit_childrenmultiple dl div i{
             position : absolute;
             left : 1px;
         }
-        
+
         .propedit div span.propedit_lookupmultiple dl div i{
             left : 3px;
         }
-        
+
         .propedit div span.propedit_lookupmultiple #txt_rename{
             margin : -1px;
         }
@@ -12694,7 +12663,7 @@
     <a:style condition="apf.isIE"><![CDATA[
         .propedit .headings div{
         }
-        
+
         .propedit .records div span{
         }
     ]]></a:style>
@@ -12703,44 +12672,44 @@
             overflow-x : hidden;
             padding-right : 16px;
         }
-        
+
         .fixed .headings{
             width : 100%;
         }
-        
+
         .fixed .records{
             width : 100%;
             padding-left : -16px;
             text-index : expression(this.style.paddingLeft='16px');
         }
-        
+
         .fixed .records div{
             margin-left : -16px;
         }
-        
+
         .fixed .records div span{
             overflow : hidden;
             height : 19px;
             margin-top : -1px;
         }
-        
+
         .propedit body.records{
             padding : 18px 0 0 0;
         }
-        
+
         .fixed .records div span dl{
             width : expression(this.parentNode.offsetWidth - 5);
         }
-        
+
         .propedit iframe{
             height : expression(this.parentNode.parentNode.offsetHeight - 2);
             width : expression(this.parentNode.parentNode.offsetWidth - 2);
         }
-        
+
         html.propedit body.records {
             margin-right : -20px;
         }
-        
+
         .propedit .size_pointer{
             height : expression(this.parentNode.offsetHeight - 2);
         }
@@ -12751,23 +12720,23 @@
             -moz-border-left-colors: #D4D0C8 #FFFFFF;
             -moz-border-bottom-colors: black gray;
             -moz-border-right-colors: black gray;
-            
+
             margin-top : -19px;
         }
-        
+
         .propedit u.down{
             -moz-border-top-colors: gray black;
             -moz-border-left-colors: gray black;
             -moz-border-bottom-colors: #FFFFFF #D4D0C8;
             -moz-border-right-colors: #FFFFFF #D4D0C8;
         }
-        
+
         .propedit .item i{
             margin : 0 5px 0 3px;
             font-size : 11px;
             line-height : 11px;
         }
-        
+
         .propedit .records{
             overflow-x: hidden;
             overflow-y: auto;
@@ -12779,7 +12748,7 @@
             padding : 0;
             white-space : nowrap;
         }
-        
+
         .propedit .records>div:first-child{
             margin-top : 17px;
         }
@@ -12788,38 +12757,38 @@
         .propedit .headings{
             height : 18px;
         }
-        
+
         .propedit .headings span{
             height : 18px;
         }
-        
+
         .propedit .records div span{
             height : 18px;
         }
-        
+
         .propedit .records div{
             height : 18px;
         }
-        
+
         .propedit .records div span dl{
             border-width : 0 1px 1px 0;
         }
-        
+
         .propedit .headings span{
             display : -moz-inline-grid;
             overflow : visible;
             position : relative;
         }
-        
+
         .propedit .records{
         }
-        
+
         .propedit .records div span{
             display : -moz-inline-grid;
             overflow : visible;
             position : relative;
         }
-        
+
         .propedit input#txt_rename{
             position : absolute;
             padding : 1px 1px 0 2px;
@@ -12828,7 +12797,7 @@
     <a:style condition="apf.isGecko3">
         .propedit .records .cellselected dl{
         }
-    
+
         .propedit input#txt_rename{
             position : relative;
             padding-top : 2px;
@@ -12840,7 +12809,7 @@
             head        = "div[1]"
             body        = "div[3]"
             pointer     = "div[2]"
-            
+
             widthdiff    = "2"
             defaultwidth = "70"
             scalerename  = "true"
@@ -12858,15 +12827,15 @@
         <a:headitem class="." caption="b/text()">
             <span><b>-</b></span>
         </a:headitem>
-        
+
         <a:rowheaditem class="." caption="text()">
             <span>-</span>
         </a:rowheaditem>
-        
+
         <a:row class="." container=".">
             <div />
         </a:row>
-        
+
         <a:dragindicator>
             <div class='dragdg'> </div>
         </a:dragindicator>
@@ -12880,23 +12849,23 @@
         <a:dropdown>
             <u class="ddbtn"> </u>
         </a:dropdown>
-        
+
         <a:dropdown_container item-height="17">
             <ul class="propeditcontainerdropdown"> </ul>
         </a:dropdown_container>
-        
+
         <a:jml_container jml="true">
             <ul class="ddjmlcontainer"> </ul>
         </a:jml_container>
-        
+
         <a:custom>
             <u class="btncustom">...</u>
         </a:custom>
-        
+
         <a:loading>
             <div class="loading"><span></span><label>Loading...</label></div>
         </a:loading>
-        
+
         <a:empty caption=".">
             <div class="empty"> </div>
         </a:empty>
@@ -13060,13 +13029,13 @@
             padding          : 3px;
             width            : 200px;
         }
-        
+
         .calendar .navigation {
             height   : 20px;
             position : relative;
             width    : 100%;
         }
-        
+
         .calendar .navigation .nextMonth,
         .calendar .navigation .prevMonth,
         .calendar .navigation .nextYear,
@@ -13081,7 +13050,7 @@
             text-align          : center;
             cursor              : pointer;
         }
-        
+
         .calendar .navigation .nextMonth:hover,
         .calendar .navigation .prevMonth:hover,
         .calendar .navigation .nextYear:hover,
@@ -13089,7 +13058,7 @@
         .calendar .navigation .today:hover {
             background-color : #ebebeb;
         }
-        
+
         .calendar .navigation .status {
             width       : 100px;
             padding-top : 3px;
@@ -13099,7 +13068,7 @@
             left        : 50%;
             text-align  : center;
         }
-        
+
         .calendar .navigation .nextMonth {
             right            : 19px;
             top              : 0;
@@ -13123,17 +13092,17 @@
             top              : 0;
             background-image : url(images/calendar_y_minus.png);
         }
-        
+
         .calendar .navigation .today {
             right : 35px;
             top   : 0;
         }
-        
+
         .calendar .daysofweek {
             position : relative;
             width    : 100%;
         }
-        
+
         .calendar .daysofweek .dayofweek {
             padding             : 1px;
             margin              : 0 1px 0 1px;
@@ -13148,19 +13117,19 @@
             cursor              : pointer;
             display             : inline-block;
         }
-        
+
         .calendar .calcontent {
             width    : 100%;
             position : relative;
             overflow : hidden;
         }
-        
+
         .calendar .calcontent .row {
             margin-top : 2px;
             position   : relative;
             overflow   : hidden;
         }
-        
+
         .calendar .calcontent .row .cell {
             padding             : 1px;
             margin              : 0 1px 0 1px;
@@ -13174,26 +13143,26 @@
             background-color    : #dadada;
             cursor              : pointer;
         }
-        
+
         .calendar .calcontent .row .disabled {
             border           : 1px solid white;
             color            : #e1e1e1;
             background-color : white;
             background-image : none;
         }
-        
+
         .calendar .calcontent .row .weekend {
             color            : #ed1c24;
             background-color : #dadada;
             border           : 1px solid #b2b2b2;
         }
-        
+
         .calendar .calcontent .row .active {
             border           : 1px solid black;
             background-color : #b7b7b7;
             background-image : url(images/calendar_big_sel.jpg);
         }
-        
+
         .calendar .calcontent .row .hover {
             border           : 1px solid #a09d9d;
             background-color : #cac8c9;
