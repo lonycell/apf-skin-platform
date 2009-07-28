@@ -1217,7 +1217,9 @@
             font-family: Tahoma;
             font-size: 11px;
             padding : 0;
-            margin : 0 10px 10px 0;
+            background : #dbd8d1;
+            padding : 1px;
+            border : 2px solid #6d6d6d;
         }
 
         .toolwindowFocus{
@@ -1225,14 +1227,12 @@
         }
 
         .toolwindow .title {
-            background: #6d6d6d;
+            background: #808080;
             height: 15px;
             color: white;
             position: relative;
             margin: 0;
             padding: 2px 0 0 5px;
-            border : 1px solid #6d6d6d;
-            border-width: 1px 1px 0px 1px;
             font-weight: bold;
             cursor : default;
             white-space : nowrap;
@@ -1243,8 +1243,6 @@
             background : #f5f5f5;
             overflow : hidden;
             position : relative;
-    	    border : 1px solid #6d6d6d;
-    	    border-width : 0 1px 1px 1px;
     	    padding : 0;
         }
 
@@ -1259,7 +1257,7 @@
             padding: 1px 1px 2px 0;
             top: 0;
             right: 0;
-            background: #6d6d6d;
+             background: #808080;
         }
 
         .toolwindow .title blockquote div{
@@ -1315,40 +1313,19 @@
             height: 16px;
             display: block;
         }
-        .toolwindow .settings{
-            display : none;
-            background : #f1f1f1;
-            overflow : hidden;
-            position : relative;
-    	    border : 1px solid #c3c3c3;
-    	    border-width : 0 1px 1px 1px;
-    	    padding : 5px;
-        }
-        .toolwindowEdit .settings{
-            display : block;
-        }
-
-        .toolwindowMin .settings, .toolwindowMin .content{
+        .toolwindowMin .content{
             display : none;
         }
 
         body .whitebg .content{
             background : white;
         }
-
-        .north{cursor: url(images/cursor/n-point.cur);}
-        .west{cursor: url(images/cursor/w-point.cur);}
-        .east{cursor: url(images/cursor/e-point.cur);}
-        .south{cursor: url(images/cursor/s-point.cur);}
-        .same{cursor: not-allowed;}
-
         .toolwindow .editor_Toolbar{
             background: url(images/toolbar_row.png) repeat top left;
             height: auto;/*25px;*/
             width: 100%;
             font-family: Verdana;
             font-size: 11px;
-            border-bottom: 1px solid #c3c3c3;
             position: relative;
             margin: 0;
             padding: 0;
@@ -1364,7 +1341,7 @@
             border-right: 1px solid #FFFFFF;
             height: 17px;
             float: left;
-            margin: 4px 6px 0 6px;
+            margin: 4px 6px 3px 6px;
         }
 
         .toolwindow .TB_End{
@@ -1933,14 +1910,12 @@
     ]]></a:style>
 
     <a:presentation>
-         <a:main collapsed-height="22"
+         <a:main collapsed-height="10"
           min-width="150" min-height="80"
           container="div[3]" drag="div[1]" title="div[1]/text()"
-          buttons="div[1]/blockquote"
-          settings_content="div[2]">
+          buttons="div[1]/blockquote">
             <div class="toolwindow">
                 <div class="title">-<blockquote> </blockquote></div>
-                <div class="settings"> </div>
                 <div class="content"> </div>
             </div>
         </a:main>
