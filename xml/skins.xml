@@ -1940,7 +1940,7 @@
             <span class="editor_seperator"> </span>
         </a:divider>
         <a:toolbarbutton label="span">
-            <div class="editor_disabled">
+            <div class="editor_enabled">
                 <span> </span>
                 <div class="right"> </div>
             </div>
@@ -11431,7 +11431,7 @@
             <span class="editor_seperator"> </span>
         </a:divider>
         <a:button label="span">
-            <div class="editor_disabled">
+            <div class="editor_enabled">
                 <span> </span>
                 <div class="right"> </div>
             </div>
@@ -11529,7 +11529,7 @@
             <span class="editor_seperator"> </span>
         </a:divider>
         <a:button label="span">
-            <div class="editor_disabled">
+            <div class="editor_enabled">
                 <span> </span>
                 <div class="right"> </div>
             </div>
