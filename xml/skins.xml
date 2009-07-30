@@ -12909,7 +12909,7 @@
             border-bottom       : 0;
             border-top          : 1px solid #b2b2b2;
             background-image    : url(images/spinner_plus.png);
-            background-position : 0 0;
+            background-position : 0 -9px;
             margin              : 0;
         }
 
@@ -12922,47 +12922,59 @@
             border-bottom       : 1px solid #b2b2b2;
             border-top          : 0;
             background-image    : url(images/spinner_minus.png);
-            background-position : 0 0;
+            background-position : 0 -8px;
         }
 
         .spinner .buttons .plusFocus {
-            background-position : 0 27px;
+            background-position : 0 -18px;
             border-top          : 1px solid #327fbd;
             border-right        : 1px solid #327fbd;
         }
 
         .spinner .buttons .minusFocus {
-            background-position : 0 24px;
+            background-position : 0 -16px;
             border-bottom       : 1px solid #327fbd;
             border-right        : 1px solid #327fbd;
         }
 
         .spinner .buttons .plusDown {
-            background-position : 0 9px;
+            background-position : 0 -36px;
             border-top          : 1px solid #327fbd;
             border-right        : 1px solid #327fbd;
         }
 
         .spinner .buttons .minusDown {
-            background-position : 0 8px;
+            background-position : 0 -32px;
             border-bottom       : 1px solid #327fbd;
             border-right        : 1px solid #327fbd;
         }
 
         .spinner .buttons .plusHover {
-            background-position : 0 18px;
+            background-position : 0 -27px;
         }
 
         .spinner .buttons .minusHover {
-            background-position : 0 16px;
+            background-position : 0 -24px;
         }
 
         .spinner .divfix .focus {
-            background-position : 0 17px;
+            background-position : 0 -17px;
             border-top          : 1px solid #327fbd;
             border-bottom       : 1px solid #327fbd;
             border-left         : 1px solid #327fbd;
             border-right        : 0;
+        }
+        
+        .spinnerDisabled .divfix input {
+            color:#b2b2b2;
+        }
+        
+        .spinnerDisabled .buttons .plus {
+            background-position : 0 0;
+        }
+
+        .spinnerDisabled .buttons .minus {
+            background-position : 0 0;
         }
     ]]></a:style>
     <a:style condition="apf.isOpera"><![CDATA[
