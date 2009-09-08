@@ -11449,7 +11449,7 @@
                 FontStyle, BlockFormat, Fonts, Fontsize, |, RemoveFormat
             </a:toolbar>
             <a:toolbar>
-                Cut, Copy, Paste, PasteText, |,
+                Cut, Copy, Paste, PasteWordDialog, PasteText, |,
                 Bullist, NumList, |,
                 Forecolor, Backcolor, |,
                 Search, Replace, |, Outdent, Indent
