@@ -13972,9 +13972,7 @@
             </a:main>
         </a:presentation>
     </a:errorbox>
-</a:skin>=======
-<?xml version='1.0'?>
-<a:skin xmlns:a="http://ajax.org/2005/aml" xmlns="http://www.w3.org/1999/xhtml">
+
     <a:upload name="upload">
         <a:style><![CDATA[
         .upload{
