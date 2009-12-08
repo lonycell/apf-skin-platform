@@ -15845,7 +15845,7 @@
             <a:main caption="div/text()" background="div/span" icon="div/span">
                 <div class='toolbarbutton'>
                     <div>
-                        <span> </span>-
+                        <span> </span>
                     </div>
                 </div>
             </a:main>
@@ -16080,6 +16080,21 @@
     ==================== BARS ====================
 
     -->
+    <a:bar name="basic">
+        <a:style><![CDATA[
+        .basic {
+            position : relative;
+            overflow:hidden;
+        }
+        ]]></a:style>
+        <a:presentation>
+            <a:main container=".">
+                <div class="basic">
+                </div>
+            </a:main>
+        </a:presentation>
+    </a:bar>
+
     <a:bar name="bardown">
         <a:style><![CDATA[
             .bardown {
@@ -22052,9 +22067,7 @@
             margin : auto;
             position : relative;
         }
-    ]]>
-        </a:style>
-
+        ]]></a:style>
         <a:presentation>
             <a:main image="img/@src">
                 <div class="img">
@@ -22063,6 +22076,32 @@
             </a:main>
         </a:presentation>
     </a:img>
+    <a:preview name="preview">
+        <a:style><![CDATA[
+        .preview{
+            padding : 10px;
+            border : 1px solid #c3c3c3;
+            background : white no-repeat 50% 50%;
+            overflow : hidden;
+            position : relative;
+            text-align : center;
+            cursor: pointer;
+            cursor: hand;
+        }
+
+        .preview img{
+            margin : auto;
+            position : relative;
+        }
+        ]]></a:style>
+        <a:presentation>
+            <a:main image="img/@src">
+                <div class="preview">
+                    <img src="" />
+                </div>
+            </a:main>
+        </a:presentation>
+    </a:preview>
 
     <a:slideshow name="slideshow">
         <a:style><![CDATA[
@@ -23589,15 +23628,13 @@
         .editor .editor_Toolbar span.editor_break {background-position:-20px -40px}
         .editor .editor_Toolbar span.editor_nbsp {background-position:-40px -40px}
         .editor .editor_Toolbar span.editor_listitem {background-position:-60px -40px}
-    ]]>
-        </a:style>
+        ]]></a:style>
         <a:docstyle><![CDATA[
-        html{
+        html {
             cursor: text;
             border: 0;
         }
-        body
-        {
+        body {
             margin: 8px;
             padding: 0;
             border: 0;
@@ -23607,8 +23644,7 @@
             background: #fff;
             word-wrap: break-word;
         }
-        .itemAnchor
-        {
+        .itemAnchor {
             background:url(images/editor/items.gif) no-repeat left bottom;
             line-height:6px;
             overflow:hidden;
@@ -23616,25 +23652,29 @@
             width:12px;
         }
         .visualAid table,
-        .visualAid table td
-        {
+        .visualAid table td {
             border: 1px dashed #bbb;
         }
-        .visualAid table td
-        {
+        .visualAid table td {
             margin: 8px;
         }
-        h1{
+        h1 {
             margin : 15px 0 15px 0;
         }
-        p
-        {
+        p {
             margin: 0;
             padding: 0;
         }
-    ]]>
-        </a:docstyle>
-
+        span.underline {
+            position: relative;
+            display: inline-block;
+            background-color: yellow;
+            background-image: url(images/underline.gif);
+            background-position: bottom;
+            background-repeat: repeat-x;
+            cursor: pointer;
+        }
+        ]]></a:docstyle>
         <a:presentation>
             <a:main
           toolbar    = "div[1]"
@@ -25741,6 +25781,242 @@
             </a:main>
         </a:presentation>
     </a:textbox>
+
+    <a:tree name="tree">
+        <a:style><![CDATA[
+        .tree{
+            border: 1px solid #c3c3c3;
+            background-color: white;
+            width: 200px;
+            height: 500px;
+            overflow: hidden;
+            cursor : default;
+            position : relative;
+            overflow: auto;
+        }
+        .trDefines {
+            background: none;
+            border-bottom: 1px solid #c3c3c3;
+            border-top: 1px solid #c3c3c3;
+            border-right: none;
+            border-left: none;
+            posittion: relative;
+            padding-top: 8px;
+        }
+
+        .tree SPAN, .dragtree SPAN{
+            width: 15px;
+            height: 18px;
+            background: no-repeat 3px 5px;
+            display: block;
+            margin-left: -15px;
+        }
+
+        .dragtree SPAN{
+            background : transparent;
+        }
+
+        .tree DIV.pluslast SPAN,
+        .tree DIV.plus SPAN{
+            background-image:url(images/plus.png);
+        }
+
+        .tree DIV.minlast SPAN,
+        .tree DIV.min SPAN{
+            background-image:url(images/min.png);
+        }
+
+        .tree DIV, .dragtree{
+            padding: 0;
+            height: 18px;
+            padding-left: 15px;
+            overflow : hidden;
+
+            font-family: Tahoma, Arial;
+            font-size: 8.5pt;
+        }
+
+        .tree .focusbug{
+            padding-left : 0;
+        }
+
+        .dragtree{
+            opacity : 0.5;
+            filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+            background : none;
+        }
+
+        /*.tree DIV.root{
+            padding: 0;
+        }*/
+
+        .tree LABEL, .dragtree LABEL{
+            padding: 1px 0 0 20px;
+            background: no-repeat 1px 1px;
+            height: 16px;
+            white-space: nowrap;
+            margin-left: 0px;
+            display: block;
+            float: left;
+            margin-top: -18px;
+        }
+
+
+
+
+        .tree DIV.loading LABEL{
+
+        }
+        .tree DIV.loading SPAN{
+            background: no-repeat 0px 0px;
+        }
+
+        .tree U, .dragtree U{
+            text-decoration: none;
+            color: black;
+            cursor: default;
+            display: inline !important; display: block;
+            padding: 2px 4px 2px 2px;
+        }
+
+
+        .treeFocus .indicate U{
+            border: 1px dotted #BBB;/*#25a8e7;*/
+            padding: 1px 3px 1px 1px;
+            color : black;
+        }
+
+        .tree .selected U{
+            background-color: #f0f0f0;
+            color: black;
+        }
+
+        .treeFocus .selected U, .tree .dragAppend U, .dragtree U{
+            color: white;
+            background-color: #25a8e7;
+        }
+
+        .tree BLOCKQUOTE{
+            margin: 0;
+            padding: 0 0 0 20px;
+            display: none;
+            height: 0;
+            overflow: hidden;
+            background: repeat-y 0px center;
+        }
+        /*.tree BLOCKQUOTE.root{padding:0}*/
+
+        .tree #txt_rename{
+            border: 1px solid black;
+            padding: 1px 15px 1px 1px;
+            font-family: Tahoma;
+            font-size: 8pt;
+            color: black;
+            word-break: keep-all;
+            overflow: visible;
+            margin-top : -2px;
+            *margin-top: 0;
+            cursor: text;
+            height: 13px;
+            outline : none;
+        }
+
+        .tree DIV.dragInsert label{
+            border-top: 1px dotted gray;
+            padding-top : 2px;
+            background-position : 1px 0;
+            height: 15px;
+            overflow: hidden;
+        }
+
+        .tree DIV.dragInsert U{
+            padding-top: 0;
+        }
+
+        /*.tree DIV.dragDenied label{
+            border-top: 2px solid red;
+            height: 14px;
+            overflow: hidden;
+            padding-top : 2px;
+            margin-top : -20px;
+            background-position : 1px 0;
+        }*/
+
+        .tree .empty, .tree .offline, .tree .loading{
+            padding: 4px 0 2px 0;
+            color: #AAA;
+            font-weight : normal;
+        }
+
+        .tree .loading{
+            text-align : left;
+        }
+
+        .tree .message{
+            text-align: center;
+        }
+
+        .tree .root{
+            position : relative;
+        }
+
+        .treeDrop{
+            border : 1px solid #25a8e7;
+        }
+
+        blockquote.dragInsert{
+            background : #f6f6f6;
+        }
+    ]]>
+        </a:style>
+        <a:style condition="!apf.isIE"><![CDATA[
+        .tree LABEL, .dragtree LABEL{
+            padding: 3px 0 0 20px;
+        }
+    ]]>
+        </a:style>
+
+        <a:presentation>
+            <a:main container="." startclosed="false">
+                <div class="tree">
+
+                </div>
+            </a:main>
+            <a:item
+            class        = "."
+            caption      = "label/u"
+            icon         = "label"
+            openclose    = "span"
+            select       = "label"
+            container    = "following-sibling::blockquote"
+        >
+                <div>
+                    <span> </span>
+                    <label>
+                        <u>-</u>
+                    </label>
+                </div>
+                <blockquote> </blockquote>
+            </a:item>
+            <a:dragindicator>
+                <div class='dragtree'>
+                    <span> </span>
+                    <label>
+                        <u>-</u>
+                    </label>
+                </div>
+            </a:dragindicator>
+            <a:loading>
+                <div class="loading">
+                    <span> </span>
+                    <label>Loading...</label>
+                </div>
+            </a:loading>
+            <a:empty caption=".">
+                <div class="message"></div>
+            </a:empty>
+        </a:presentation>
+    </a:tree>
 <!-- Classic Skins -->
     <a:textbox name="textbox_classicW">
         <a:style><![CDATA[
