@@ -1,0 +1,1821 @@
+<a:list name="list">
+    <a:style><![CDATA[
+        .list {
+            overflow         : auto;
+            position         : relative;
+            border           : 1px solid #c3c3c3;
+            background-color : white;
+            cursor           : default;
+        }
+    
+        .white {
+            background : white;
+        }
+    
+        .list, 
+        .draglist {
+            font-family : Tahoma;
+            font-size   : 8pt;
+        }
+    
+        .list DIV, 
+        .draglist {
+            padding : 0;
+            height  : 18px;
+        }
+    
+        .list SPAN, 
+        .draglist SPAN {
+            padding    : 0 0 0 20px;
+            background : no-repeat 1px center;
+            height     : 16px;
+            float      : left;
+        }
+    
+        .list U, 
+        .draglist U {
+            text-decoration : none;
+            color           : black;
+            cursor          : default;
+            display         : block;
+            padding         : 2px 4px 2px 2px;
+            text-decoration : none;
+            white-space     : nowrap;
+        }
+    
+        .listFocus .indicate U {
+            border  : 1px dotted #BBB;/*#25a8e7;*/
+            color   : black;
+            /*background-color : #e4f4fc;*/
+            padding : 1px 3px 1px 1px;
+        }
+    
+        .list .selected U {
+            background-color : #f0f0f0;
+            color            : black;
+        }
+        
+        .listFocus .selected U, 
+        .draglist U {
+            color            : white;
+            background-color : #25a8e7;
+        }
+    
+        .list #txt_rename {
+            border      : 1px solid #bbb;
+            padding     : 1px 15px 1px 1px;
+            font-family : Tahoma;
+            font-size   : 8pt;
+            color       : black;
+            word-break  : keep-all;
+            overflow    : visible;
+            margin-top  : 0px;
+            cursor      : text;
+            height      : 13px;
+            display     : block;
+            outline     : none;
+        }
+    
+        .list .empty, 
+        .list .offline, 
+        .list .loading {
+            text-align  : center;
+            padding     : 8px 0 0 5px;
+            color       : #AAA;
+            font-weight : normal;
+        }
+    
+        .shortlist {
+            border     : 0;
+            overflow-y : auto;
+            overflow-x : hidden;
+            max-height : 90px;
+            width      : auto;
+        }
+    
+        .listDrop {
+            border : 1px solid #25a8e7;
+        }
+    
+        .draglist_multiple {
+            border     : 2px solid black;
+            width      : 10px;
+            height     : 5px;
+            padding    : 0;
+            background : none;
+        }
+    
+        .draglist_multiple span {
+            display : none;
+        }
+    ]]></a:style>
+
+    <a:presentation>
+        <a:main container=".">
+            <div class='list'>
+            </div>
+        </a:main>
+        <a:item
+          class   = "."
+          caption = "span/u"
+          icon    = "span"
+          select  = "span">
+            <div>
+                <span>
+                    <u>-</u>
+                </span>
+            </div>
+        </a:item>
+        <a:dragindicator>
+            <div class='draglist'>
+                <span>
+                    <u>-</u>
+                </span>
+            </div>
+        </a:dragindicator>
+        <a:loading>
+            <div class="loading">Loading...</div>
+        </a:loading>
+        <a:empty caption=".">
+            <div class="message">-</div>
+        </a:empty>
+    </a:presentation>
+</a:list>
+
+<a:list name="list">
+    <a:style><![CDATA[
+        .list{
+            overflow         : auto;
+            position         : relative;
+            border           : 1px solid #c3c3c3;
+            background-color : white;
+            cursor           : default;
+        }
+    
+        .white {
+            background : white;
+        }
+    
+        .list, 
+        .draglist {
+            font-family : Tahoma;
+            font-size   : 8pt;
+        }
+    
+        .list DIV, 
+        .draglist {
+            padding : 0;
+            height  : 18px;
+        }
+    
+        .list SPAN, 
+        .draglist SPAN {
+            padding    : 0 0 0 20px;
+            background : no-repeat 1px center;
+            height     : 16px;
+            float      : left;
+        }
+    
+        .list U, 
+        .draglist U {
+            text-decoration : none;
+            color           : black;
+            cursor          : default;
+            display         : block;
+            padding         : 2px 4px 2px 2px;
+            text-decoration : none;
+            white-space     : nowrap;
+        }
+    
+        .listFocus .indicate U {
+            border  : 1px dotted #BBB;/*#25a8e7;*/
+            color   : black;
+            /*background-color : #e4f4fc;*/
+            padding : 1px 3px 1px 1px;
+        }
+    
+        .list .selected U {
+            background-color : #f0f0f0;
+            color            : black;
+        }
+        
+        .listFocus .selected U, 
+        .draglist U {
+            color            : white;
+            background-color : #25a8e7;
+        }
+    
+        .list #txt_rename {
+            border      : 1px solid #bbb;
+            padding     : 1px 15px 1px 1px;
+            font-family : Tahoma;
+            font-size   : 8pt;
+            color       : black;
+            word-break  : keep-all;
+            overflow    : visible;
+            margin-top  : 0px;
+            cursor      : text;
+            height      : 13px;
+            display     : block;
+            outline     : none;
+        }
+    
+        .list .empty, 
+        .list .offline, 
+        .list .loading {
+            text-align  : center;
+            padding     : 8px 0 0 5px;
+            color       : #AAA;
+            font-weight : normal;
+        }
+    
+        .shortlist{
+            border     : 0;
+            overflow-y : auto;
+            overflow-x : hidden;
+            max-height : 90px;
+            width      : auto;
+        }
+    ]]></a:style>
+
+    <a:presentation>
+        <a:main container=".">
+            <div class='list'>
+            </div>
+        </a:main>
+        <a:item
+          class   = "."
+          caption = "span/u"
+          icon    = "span"
+          select  = "span">
+            <div>
+                <span>
+                    <u>-</u>
+                </span>
+            </div>
+        </a:item>
+        <a:dragindicator>
+            <div class='draglist'>
+                <span>
+                    <u>-</u>
+                </span>
+            </div>
+        </a:dragindicator>
+        <a:loading>
+            <div class="loading">Loading...</div>
+        </a:loading>
+        <a:empty caption=".">
+            <div class="message">-</div>
+        </a:empty>
+    </a:presentation>
+</a:list>
+
+<a:list name="checklist2">
+    <a:style><![CDATA[
+        .checklist2 {
+            overflow : auto;
+            position : relative;
+            cursor   : default;
+        }
+    
+        .checklist2, 
+        .draglist {
+            font-family : Tahoma;
+            font-size   : 8pt;
+        }
+    
+        .checklist2 DIV, 
+        .draglist {
+            padding      : 0;
+            margin-right : 4px;
+            overflow     : hidden;
+            white-space  : nowrap;
+            padding      : 0 0 0 16px;
+            position     : relative;
+        }
+    
+        .checklist2 U, 
+        .draglist U {
+            text-decoration : none;
+            color           : black;
+            cursor          : default;
+            display         : block;
+            padding         : 2px 4px 2px 2px;
+            text-decoration : none;
+            white-space     : nowrap;
+            float           : left;
+            overflow        : hidden;
+            max-width       : 100%;
+            text-overflow   : ellipsis;
+        }
+    
+        .checklist2 .selected U {
+            color : black;
+        }
+        
+        .checklistFocus .indicate U {
+            border  : 1px dotted #BBB;
+            padding : 1px 3px 1px 1px;
+        }
+    
+        .checklist2 .more u {
+            border      : 1px solid #a5a5a5;
+            border-left : 0;
+            margin-left : -2px;
+            padding     : 0px 3px 1px 3px;
+            font-size   : 11px;
+            line-height : 13px;
+        }
+    
+        .checklist2 .more b {
+            background   : url(images/plusplain.gif) no-repeat 3px 3px;
+            border       : 1px solid #a5a5a5;
+            border-right : 0;
+            width        : 14px;
+            height       : 14px;
+            margin       : 0 0 0 2px;
+            line-height  : 13px;
+        }
+    
+        .checklist2 .more_down u, 
+        .checklist2 .more_down b {
+            background-color : #EFEFEF;
+        }
+    
+        .checklist2 #txt_rename {
+            border      : 1px solid #bbb;
+            padding     : 1px 1px 1px 1px;
+            font-family : Tahoma;
+            font-size   : 8pt;
+            color       : black;
+            word-break  : keep-all;
+            overflow    : visible;
+            margin-top  : 0px;
+            cursor      : text;
+            height      : 13px;
+            width       : auto;
+            float       : left;
+        }
+    
+        .checklist2 input#txt_rename {
+            outline      : none;
+            width        : 75px;
+            padding-left : 0;
+        }
+    
+        .checklist2 .empty {
+            text-align : center;
+            padding    : 3px 0 0 0;
+        }
+    
+        .checklist2 b {
+            overflow   : hidden;
+            margin     : 2px;
+            width      : 12px;
+            height     : 12px;
+            background : url("images/checkbox.png") no-repeat 0 -12px;
+            position   : absolute;
+            left       : 0;
+            top        : 0;
+        }
+    
+        .checklist2 .selected b {
+            background-position : 0 -24px;
+        }
+    
+        .checklistDisabled .selected b, 
+        .checklistDisabled .indicate b, 
+        .checklistDisabled b {
+            background-position : 0 -0px;
+        }
+        .checklist2Disabled .selected u, 
+        .checklist2Disabled DIV, 
+        .checklist2Disabled .indicate u, 
+        .checklist2Disabled u {
+            color : #BEBEBE;
+        }
+    ]]></a:style>
+    <!--a:style condition="!IS_IE"><![CDATA[
+        .checklist2 #txt_rename {
+            display : block;
+            width   : 100px;
+        }
+    ]]></a:style-->
+
+    <a:presentation>
+        <a:main container="." type="2">
+            <div class='checklist2'>
+            </div>
+        </a:main>
+        <a:item
+          class   = "."
+          caption = "u"
+          select  = ".">
+            <div>
+                <b> </b>
+                <u>-</u>
+            </div>
+        </a:item>
+        <a:dragIndicator>
+            <div class='draglist'>
+                <span>
+                    <u>-</u>
+                </span>
+            </div>
+        </a:dragIndicator>
+        <a:loading>
+            <div class="loading">Loading...</div>
+        </a:loading>
+        <a:empty caption=".">
+            <div class="empty">-</div>
+        </a:empty>
+    </a:presentation>
+</a:list>
+
+<a:list name="layoutlist">
+    <a:style><![CDATA[
+        .layoutlist {
+            width            : 200px;
+            height           : 500px;
+            overflow         : auto;
+            position         : relative;
+            border           : 1px solid #c3c3c3;
+            background-color : white;
+            cursor           : default;
+        }
+        
+        .layoutlist blockquote.selected {
+            border           : 1px solid #DDD;
+            background-color : #F2F2F2;
+        }
+        
+        .layoutlistFocus blockquote.selected {
+            border           : 1px solid #CCC;
+            background-color : #EEE;
+        }
+        
+        .layoutlist, 
+        .draglayoutlist {
+            font-family : Tahoma;
+            font-size   : 8pt;
+        }
+        
+        .layoutlist blockquote, 
+        .draglayoutlist {
+            padding    : 0;
+            height     : 18px;
+            width      : 50px;
+            height     : 50px;
+            border     : 1px solid #EEE;
+            margin     : 5px;
+            background : white no-repeat 50% 30%;
+            position   : relative;
+            color      : black;
+            text-align : center;
+            float      : left;
+        }
+        
+        .layoutlist SPAN, 
+        .draglayoutlist SPAN {
+            position    : absolute;
+            bottom      : 1px;
+            left        : 1px;
+            width       : 50px;
+            height      : 16px;
+            padding-top : 32px;
+            overflow    : hidden;
+        }
+        
+        .layoutlist U, 
+        .draglayoutlist U {
+            text-decoration : none;
+            cursor          : default;
+            display         : block;
+            padding         : 2px 4px 2px 2px;
+            text-decoration : none;
+            white-space     : nowrap;
+        }
+        
+        /*
+        .layoutlist .selected U {
+            background-color : #CCCCCC;
+            color            : black;
+        }
+        
+        .layoutlistFocus .selected U, 
+        .draglayoutlist U {
+            color            : white;
+            background-color : midnightblue;
+        }
+        
+        .layoutlist .indicate U {
+            border  : 1px dotted gray;
+            padding : 1px 3px 1px 1px;
+        }
+        */
+        
+        .layoutlist #txt_rename {
+            border           : 0;
+            padding          : 0 0 0 1px;
+            font-family      : Tahoma;
+            font-size        : 8pt;
+            color            : black;
+            word-break       : keep-all;
+            overflow         : hidden;
+            margin           : 1px 0 0 -1px;
+            cursor           : text;
+            height           : 14px;
+            width            : 49px;
+            background-color : white;
+            border-top       : 1px solid #DDD;
+        }
+        
+        .layoutlist .empty {
+            text-align : center;
+            padding    : 3px 0 0 0;
+        }
+    ]]></a:style>
+
+    <a:presentation>
+        <a:main container=".">
+            <div class='layoutlist'>
+            </div>
+        </a:main>
+        <a:item
+          class   = "."
+          caption = "span/u/text()"
+          icon    = "."
+          select  = "span">
+            <blockquote>
+                <span>
+                    <u>-</u>
+                </span>
+            </blockquote>
+        </a:item>
+        <a:dragindicator>
+            <div class='draglayoutlist'>
+                <span>
+                    <u>-</u>
+                </span>
+            </div>
+        </a:dragindicator>
+        <a:loading>
+            <div class="loading">Loading...</div>
+        </a:loading>
+        <a:empty caption=".">
+            <div class="empty">-</div>
+        </a:empty>
+    </a:presentation>
+</a:list>
+
+<a:list name="thumbnail_caption">
+    <a:style><![CDATA[
+        .thumbs_caption {
+            background-color : white;
+            border           : 1px solid #c3c3c3;
+            overflow         : auto;
+            cursor           : default;
+            padding          : 3px;
+            height           : 200px;
+            position         : relative;
+        }
+        
+        .dragthumb_caption {
+            opacity : 0.5;
+        }
+        
+        .thumbs_caption, 
+        .dragthumb_caption {
+            font-family : Tahoma;
+            font-size   : 11px;
+            text-align  : center;
+            line-height : 11px;
+        }
+    
+        .thumbs_caption .thumb, 
+        .dragthumb_caption {
+            padding : 0;
+            float   : left;
+            display : inline;
+            margin  : 3px 3px 0 3px;
+        }
+    
+        .thumbs_caption blockquote, 
+        .dragthumb_caption blockquote {
+            width      : 56px;
+            height     : 56px;
+            border     : 1px solid #dcdcdc;
+            margin     : 2px 2px 2px 2px;
+            background : white no-repeat 50% 50%;
+        }
+        
+        .thumbs_caption .selected blockquote, 
+        .dragthumb_caption blockquote {
+            border : 3px solid #dcdcdc;
+            margin : 0 0 0 0;
+        }
+        
+        .thumbs_captionFocus .selected blockquote, 
+        .dragthumb_caption blockquote {
+            border-color : #25a8e7;
+        }
+        
+        .thumbs_caption label, 
+        .dragthumb_caption label {
+            padding    : 3px 0 0 0;
+            margin     : 0 2px 0 2px;
+            height     : 16px;
+            width      : 100%;
+            overflow   : hidden;
+            display    : block;
+            text-align : center;
+        }
+    
+        .thumbs_caption span, 
+        .dragthumb_caption span {
+            text-decoration : none;
+            color           : black;
+            cursor          : default;
+            padding         : 1px 3px 2px 3px;
+            margin          : 1px auto 0 auto;
+            white-space     : nowrap;
+            /*float : left;*/
+            border-color    : gray;
+            border-width    : 0;
+            overflow        : hidden;
+            position        : relative;
+        }
+        
+        .thumbs_captionFocus .indicate span {
+            border-style : dotted;
+            border-width : 1px;
+            padding      : 0px 2px 1px 2px;
+        }
+    
+        .thumbs_caption .selected span {
+            background-color : #dcdcdc;
+            color            : black;
+            border-color     : white;
+            border-style     : dotted;
+        }
+    
+        .thumbs_caption.thumbs_captionFocus .selected span, 
+        .dragthumb_caption span {
+            color            : white;
+            background-color : #25a8e7;
+        }
+    
+        .thumbs_caption #txt_rename {
+            border       : 1px solid #25a8e7;
+            border-width : 1px 1px 1px 1px;
+            float        : none;
+            margin-top   : -2px;
+            padding      : 2px 2px 2px 2px;
+            font-family  : Tahoma;
+            font-size    : 11px;
+            color        : #4b4b4b;
+            word-break   : keep-all;
+            overflow     : visible;
+            cursor       : text; 
+        }
+        
+        .thumbs_caption input#txt_rename {
+            padding    : 1px;
+            outline    : none;
+            text-align : center;
+            width      : 88px;
+        }
+        
+        .thumbs_captionDrop {
+            border : 1px solid #25a8e7;
+        }
+        
+        .dragthumb_caption_multiple {
+            border     : 2px solid black;
+            width      : 10px;
+            height     : 5px;
+            padding    : 0;
+            background : none;
+        }
+        
+        .dragthumb_caption_multiple blockquote {
+            display : none;
+        }
+    ]]></a:style>
+    <a:style condition="apf.isIE">
+        .thumbs_caption label, 
+        .dragthumb_caption label {
+            width : auto;
+        }
+    </a:style>
+    
+    <a:presentation>
+        <a:main
+          container    = "." 
+          thumbclassIE = ".thumbs_caption BLOCKQUOTE" 
+          thumbclass   = ".thumbs_caption blockquote, .dragthumb_caption blockquote">
+            <div class='thumbs_caption'>
+            </div>
+        </a:main>
+        <a:item
+          class   = "."
+          caption = "label/span"
+          image   = "blockquote"
+          select  = ".">
+            <div class="thumb">
+                <blockquote> </blockquote>
+                <label>
+                    <span>-</span>
+                </label>
+            </div>
+        </a:item>
+        <a:dragindicator>
+            <div class='dragthumb_caption'>
+                <blockquote> </blockquote>
+                <label>
+                    <span>-</span>
+                </label>
+            </div>
+        </a:dragindicator>
+        <a:loading>
+            <div class="loading">Loading...</div>
+        </a:loading>
+        <a:empty caption="text()">
+            <div class="empty">-</div>
+        </a:empty>
+    </a:presentation>
+</a:list>
+
+<a:list name="list">
+    <a:style><![CDATA[
+        .list {
+            overflow         : auto;
+            position         : relative;
+            border           : 1px solid #c3c3c3;
+            background-color : white;
+            cursor           : default;
+        }
+        
+        .white {
+            background : white;
+        }
+        
+        .list, 
+        .draglist {
+            font-family : Tahoma;
+            font-size   : 8pt;
+        }
+        
+        .list DIV, 
+        .draglist {
+            padding : 0;
+            height : 18px;
+        }
+        
+        .list SPAN, 
+        .draglist SPAN {
+            padding    : 0 0 0 20px;
+            background : no-repeat 1px center;
+            height     : 16px;
+            float      : left;
+        }
+        
+        .list U, 
+        .draglist U {
+            text-decoration : none;
+            color           : black;
+            cursor          : default;
+            display         : block;
+            padding         : 2px 4px 2px 2px;
+            white-space     : nowrap;
+        }
+        
+        .listFocus .indicate U {
+            border  : 1px dotted #BBB;/*#25a8e7;*/
+            color   : black;
+            /*background-color : #e4f4fc;*/
+            padding : 1px 3px 1px 1px;
+        }
+        
+        .list .selected U {
+            background-color : #f0f0f0;
+            color            : black;
+        }
+        
+        .listFocus .selected U, 
+        .draglist U {
+            color            : white;
+            background-color : #25a8e7;
+        }
+        
+        .list #txt_rename {
+            border      : 1px solid #bbb;
+            padding     : 1px 15px 1px 1px;
+            font-family : Tahoma;
+            font-size   : 8pt;
+            color       : black;
+            word-break  : keep-all;
+            overflow    : visible;
+            margin-top  : 0px;
+            cursor      : text;
+            height      : 13px;
+            display     : block;
+            outline     : none;
+        }
+        
+        .list .empty, 
+        .list .offline, 
+        .list .loading {
+            text-align  : center;
+            padding     : 8px 0 0 5px;
+            color       : #AAA;
+            font-weight : normal;
+        }
+        
+        .shortlist {
+            border     : 0;
+            overflow-y : auto;
+            overflow-x : hidden;
+            max-height : 90px;
+            width      : auto;
+        }
+        
+        .listDrop {
+            border : 1px solid #25a8e7;
+        }
+        
+        .draglist_multiple {
+            border     : 2px solid black;
+            width      : 10px;
+            height     : 5px;
+            padding    : 0;
+            background : none;
+        }
+        
+        .draglist_multiple span {
+            display : none;
+        }
+    ]]></a:style>
+
+    <a:presentation>
+        <a:main container=".">
+            <div class='list'>
+            </div>
+        </a:main>
+        <a:item
+          class   = "."
+          caption = "span/u"
+          icon    = "span"
+          select  = "span">
+            <div>
+                <span>
+                    <u>-</u>
+                </span>
+            </div>
+        </a:item>
+        <a:dragindicator>
+            <div class='draglist'>
+                <span>
+                    <u>-</u>
+                </span>
+            </div>
+        </a:dragindicator>
+        <a:loading>
+            <div class="loading">Loading...</div>
+        </a:loading>
+        <a:empty caption=".">
+            <div class="message">-</div>
+        </a:empty>
+    </a:presentation>
+</a:list>
+
+<a:list name="thumbnail">
+    <a:style><![CDATA[
+        .thumbs {
+            background-color : white;
+            border           : 1px solid #c3c3c3;
+            overflow         : auto;
+            cursor           : default;
+            padding          : 3px;
+            height           : 200px;
+            position         : relative;
+        }
+        
+        .ajaxthumbs {
+            background : transparent;
+            border     : 0;
+        }
+        
+        .dragthumb {
+            opacity : 0.5;
+            filter  : progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+        }
+        
+        .thumbs, 
+        .dragthumb {
+            font-family : Tahoma;
+            font-size   : 11px;
+            text-align  : center;
+            line-height : 11px;
+        }
+    
+        .thumbs .thumb, 
+        .dragthumb {
+            padding : 0;
+            float   : left;
+            display : inline;
+            margin  : 5px 5px 2px 5px;
+            padding : 0 0 1px 0;
+            border  : 1px solid #dcdcdc;
+        }
+        
+        .ajaxthumbs .thumb {
+            border-color : transparent;
+        }
+        
+        .thumbs blockquote, 
+        .dragthumb blockquote {
+            width      : 85px;
+            height     : 85px;
+            margin     : 1px;
+            border     : 1px solid white;
+            background : white no-repeat 50% 50%;
+            float      : left;
+        }
+        
+        .ajaxthumbs blockquote {
+            background-color : #3e7ca7;
+            border-color     : #2c78bd;
+        }
+        
+        .thumbs .primary blockquote {
+            border : 1px solid gray;
+            margin : 1px;
+        }
+        
+        .thumbs .selected, 
+        .dragthumb {
+            border : 3px solid #dcdcdc;
+            margin : 3px 3px 0 3px;
+        }
+        
+        .thumbs.thumbsFocus .selected, 
+        .dragthumb {
+            border-color : #25a8e7;
+        }
+    
+        .thumbs label, 
+        .dragthumb label {
+            padding    : 3px 0 0 0;
+            margin     : 0 2px 0 2px;
+            height     : 16px;
+            width      : 92px;
+            overflow   : hidden;
+            display    : block;
+            text-align : center;
+        }
+    
+        .thumbs span, 
+        .dragthumb span {
+            text-decoration : none;
+            color           : black;
+            cursor          : default;
+            padding         : 1px 3px 2px 3px;
+            margin          : 1px auto 0 auto;
+            white-space     : nowrap;
+            /*float : left;*/
+            position        : relative;
+            border-color    : gray;
+            border-width    : 0;
+        }
+        
+        .thumbsFocus .indicate span {
+            border-style : dotted;
+            border-width : 1px;
+            padding      : 0px 2px 1px 2px;
+        }
+    
+        .thumbs .selected span {
+            background-color : #dcdcdc;
+            color            : black;
+            border-color     : white;
+            border-style     : dotted;
+        }
+    
+        .thumbs.thumbsFocus .selected span, 
+        .dragthumb span {
+            color            : white;
+            background-color : #25a8e7;
+        }
+    
+        .thumbs #txt_rename {
+            border       : 1px solid #25a8e7;
+            border-width : 1px 1px 1px 1px;
+            float        : none;
+            margin-top   : -2px;
+            padding      : 2px 2px 2px 3px;
+            font-family  : Tahoma;
+            font-size    : 11px;
+            color        : #4b4b4b;
+            word-break   : keep-all;
+            overflow     : visible;
+            cursor       : text; 
+        }
+        
+        .thumbs input#txt_rename {
+            padding    : 1px;
+            outline    : none;
+            text-align : center;
+            width      : 88px;
+        }
+        
+        .thumbs .empty, 
+        .thumbs .loading {
+            font-weight : normal;
+            color       : #aaa;
+            padding     : 5px;
+        }
+        
+        .thumbs .dragInsert {
+            margin-left : 4px;
+            border-left : 2px solid gray;
+        }
+        
+        .thumb_attach blockquote {
+            background-color : #fafafa;
+        }
+        
+        .thumbsDrop {
+            border : 1px solid #25a8e7;
+        }
+        
+        .dragthumb_multiple {
+            border     : 2px solid black;
+            width      : 10px;
+            height     : 5px;
+            padding    : 0;
+            background : none;
+        }
+        
+        .dragthumb_multiple blockquote {
+            display : none;
+        }
+    ]]></a:style>
+
+    <a:presentation>
+        <a:main container=".">
+            <div class='thumbs'>
+            </div>
+        </a:main>
+        <a:item
+          class  = "."
+          image  = "blockquote"
+          select = ".">
+            <div class="thumb">
+                <blockquote> </blockquote>
+            </div>
+        </a:item>
+        <a:dragindicator>
+            <div class='dragthumb'>
+                <blockquote> </blockquote>
+            </div>
+        </a:dragindicator>
+        <a:loading>
+            <div class="loading">Loading...</div>
+        </a:loading>
+        <a:empty caption=".">
+            <div class="empty">-</div>
+        </a:empty>
+    </a:presentation>
+</a:list>
+
+<a:list name="radiolist">
+    <a:style><![CDATA[
+        .radiolist {
+            overflow : auto;
+            position : relative;
+            cursor   : default;
+        }
+        
+        .radiolist, 
+        .draglist {
+            font-family : Tahoma;
+            font-size   : 8pt;
+        }
+        
+        .radiolist DIV, 
+        .dragradiolist {
+            padding      : 0;
+            height       : 18px;
+            width        : 80px;
+            margin-right : 4px;
+            float        : left;
+            overflow     : hidden;
+            white-space  : nowrap;
+            padding      : 0 0 0 16px;
+            position     : relative;
+        }
+        
+        .radiolist U, 
+        .dragradiolist U {
+            text-decoration : none;
+            color           : black;
+            cursor          : default;
+            display         : block;
+            padding         : 2px 4px 2px 2px;
+            text-decoration : none;
+            float           : left;
+            overflow        : hidden;
+            max-width       : 100%;
+            _width          : 70px;
+            white-space     : nowrap;
+            text-overflow   : ellipsis;
+        }
+        
+        .radiolist .selected U {
+            color : black;
+        }
+        .radiolistFocus .indicate U {
+            border  : 1px dotted #BBB;
+            padding : 1px 3px 1px 1px;
+        }
+        
+        .radiolist .more u {
+            border      : 1px solid #a5a5a5;
+            border-left : 0;
+            margin-left : -2px;
+            padding     : 0 3px 1px 3px;
+            font-size   : 11px;
+            line-height : 13px;
+        }
+        
+        .radiolist .more b {
+            background   : url(images/plusplain.gif) no-repeat 3px 3px;
+            border       : 1px solid #a5a5a5;
+            border-right : 0;
+            width        : 14px;
+            height       : 14px;
+            margin       : 0 0 0 2px;
+            line-height  : 13px;
+        }
+        
+        .radiolist .more_down u, 
+        .radiolist .more_down b {
+            background-color : #EFEFEF;
+        }
+        
+        .radiolist #txt_rename {
+            border      : 1px solid #bbb;
+            padding     : 1px 1px 1px 1px;
+            font-family : Tahoma;
+            font-size   : 8pt;
+            color       : black;
+            word-break  : keep-all;
+            overflow    : visible;
+            margin-top  : 0px;
+            cursor      : text;
+            height      : 13px;
+            width       : auto;
+            float       : left;
+        }
+        
+        .radiolist input#txt_rename {
+            outline : none;
+            width   : 75px;
+        }
+        
+        .radiolist .empty {
+            text-align : center;
+            padding    : 3px 0 0 0;
+        }
+        
+        .radiolist b {
+            overflow   : hidden;
+            margin     : 2px;
+            width      : 12px;
+            height     : 12px;
+            background : url("images/radio.png") no-repeat 0 -12px;
+            position   : absolute;
+            left       : 0;
+            top        : 0;
+        }
+        
+        .radiolist .selected b {
+            background-position : 0 -24px;
+        }
+        
+        .radiolistDisabled .selected b {
+            background-position : 0 -0px;
+        }
+    ]]></a:style>
+    <!--j:style condition="!IS_IE"><![CDATA[
+        .radiolist #txt_rename{
+            display : block;
+            width : 100px;
+        }
+    ]]></a:style-->
+
+    <a:presentation>
+        <a:main container="." type="2">
+            <div class='radiolist'>
+            </div>
+        </a:main>
+        <a:item
+          class   = "."
+          caption = "u"
+          select  = ".">
+            <div>
+                <b> </b>
+                <u>-</u>
+            </div>
+        </a:item>
+        <a:dragIndicator>
+            <div class='dragradiolist'>
+                <span>
+                    <u>-</u>
+                </span>
+            </div>
+        </a:dragIndicator>
+        <a:loading>
+            <div class="loading">Loading...</div>
+        </a:loading>
+        <a:empty caption=".">
+            <div class="empty">-</div>
+        </a:empty>
+    </a:presentation>
+</a:list>
+
+<a:list name="checklist">
+    <a:style><![CDATA[
+        .checklist{
+            overflow : auto;
+            position : relative;
+            cursor   : default;
+        }
+        
+        .checklist, 
+        .dragchecklist {
+            font-family : Tahoma;
+            font-size   : 8pt;
+        }
+        
+        .checklist DIV, 
+        .dragchecklist {
+            padding      : 0;
+            height       : 18px;
+            width        : 80px;
+            margin-right : 4px;
+            float        : left;
+            overflow     : hidden;
+            white-space  : nowrap;
+            padding      : 0 0 0 16px;
+            position     : relative;
+        }
+        
+        .checklist U, 
+        .dragchecklist U {
+            text-decoration : none;
+            color           : black;
+            cursor          : default;
+            display         : block;
+            padding         : 2px 4px 2px 2px;
+            text-decoration : none;
+            white-space     : nowrap;
+            float           : left;
+            overflow        : hidden;
+            max-width       : 100%;
+            text-overflow   : ellipsis;
+        }
+        
+        .checklist .selected U {
+            color : black;
+        }
+        
+        .checklistFocus .indicate U {
+            border  : 1px dotted #BBB;
+            padding : 1px 3px 1px 1px;
+        }
+                
+        .checklist .more u {
+            border      : 1px solid #a5a5a5;
+            border-left : 0;
+            margin-left : -2px;
+            padding     : 0px 3px 1px 3px;
+            font-size   : 11px;
+            line-height : 13px;
+        }
+        
+        .checklist .more b {
+            background   : url(images/plusplain.gif) no-repeat 3px 3px;
+            border       : 1px solid #a5a5a5;
+            border-right : 0;
+            width        : 14px;
+            height       : 14px;
+            margin       : 0 0 0 2px;
+            line-height  : 13px;
+        }
+        
+        .checklist .more_down u, 
+        .checklist .more_down b {
+            background-color : #EFEFEF;
+        }
+        
+        .checklist #txt_rename {
+            border      : 1px solid #bbb;
+            padding     : 1px 1px 1px 1px;
+            font-family : Tahoma;
+            font-size   : 8pt;
+            color       : black;
+            word-break  : keep-all;
+            overflow    : visible;
+            margin-top  : 0px;
+            cursor      : text;
+            height      : 13px;
+            width       : auto;
+            float       : left;
+        }
+        
+        .checklist input#txt_rename {
+            outline      : none;
+            width        : 75px;
+            padding-left : 0;
+        }
+        
+        .checklist .empty {
+            text-align : center;
+            padding    : 3px 0 0 0;
+        }
+        
+        .checklist b {
+            overflow   : hidden;
+            margin     : 2px;
+            width      : 12px;
+            height     : 12px;
+            background : url("images/checkbox.png") no-repeat 0 -12px;
+            position   : absolute;
+            left       : 0;
+            top        : 0;
+        }
+        
+        .checklist .selected b {
+            background-position : 0 -24px;
+        }
+        
+        .checklistDisabled .selected b {
+            background-position : 0 -0px;
+        }
+    ]]></a:style>
+    <!--j:style condition="!IS_IE"><![CDATA[
+        .checklist #txt_rename{
+            display : block;
+            width : 100px;
+        }
+    ]]></a:style-->
+
+    <a:presentation>
+        <a:main container="." type="2">
+            <div class='checklist'>
+            </div>
+        </a:main>
+        <a:item
+          class   = "."
+          caption = "u"
+          select  = ".">
+            <div>
+                <b> </b>
+                <u>-</u>
+            </div>
+        </a:item>
+        <a:dragIndicator>
+            <div class='dragchecklist'>
+                <span>
+                    <u>-</u>
+                </span>
+            </div>
+        </a:dragIndicator>
+        <a:loading>
+            <div class="loading">Loading...</div>
+        </a:loading>
+        <a:empty caption=".">
+            <div class="empty">-</div>
+        </a:empty>
+    </a:presentation>
+</a:list>
+
+<a:list name="mnulist">
+    <a:style><![CDATA[
+        .mnulist {
+            position         : relative;
+            background-color : white;
+            cursor           : default;
+            border           : 0;
+            overflow         : hidden;
+        }
+        
+        .mnulist, 
+        .dragmenulist {
+            font-family : Tahoma;
+            font-size   : 8pt;
+        }
+        
+        .mnulist DIV, 
+        .dragmenulist {
+            padding       : 0;
+            height        : 14px;
+            background    : no-repeat 2px 2px;
+            padding       : 3px 0 3px 22px;
+            white-space   : nowrap;
+            text-overflow : ellipsis;
+        }
+        
+        .mnulist .hover {
+            background-color : #25a8e7;
+            color            : white;
+        }
+        
+        /* , .mnulist .indicate */
+        .mnulist .selected {
+            color            : white;
+            background-color : #25a8e7;
+        }
+        
+        .mnulist #txt_rename {
+            border      : 1px solid #bbb;
+            padding     : 1px 15px 1px 1px;
+            font-family : Tahoma;
+            font-size   : 8pt;
+            color       : black;
+            word-break  : keep-all;
+            overflow    : visible;
+            margin-top  : 0px;
+            cursor      : text;
+            height      : 13px;
+            display     : block;
+            outline     : none;
+        }
+        
+        .mnulist .loading, 
+        .mnulist .empty, 
+        .mnulist .offline {
+            font-weight : normal;
+            color       : #aaa;
+            padding     : 5px 5px 0 5px;
+            text-align  : center;
+        }
+        
+        .mnulist .stdel, 
+        .mnulistFocus .stdel {
+            color : #ccc;
+        }
+    ]]></a:style>
+
+    <a:presentation>
+        <a:main container=".">
+            <div class='mnulist'>
+            </div>
+        </a:main>
+        <a:item
+          class   = "."
+          caption = "."
+          icon    = "."
+          select  = ".">
+            <div>-</div>
+        </a:item>
+        <a:dragindicator>
+            <div class='dragmenulist'>
+                <span>
+                    <u>-</u>
+                </span>
+            </div>
+        </a:dragindicator>
+        <a:loading>
+            <div class="loading">Loading...</div>
+        </a:loading>
+        <a:empty caption=".">
+            <div class="message">-</div>
+        </a:empty>
+    </a:presentation>
+</a:list>
+
+<a:list name="listicons">
+    <a:style><![CDATA[
+        .listicons {
+            border           : 1px solid white;
+            border-color     : gray white white gray;
+            background-color : white;
+            width            : 450px;
+            height           : 500px;
+            overflow         : auto;
+        }
+        
+        .listicons, 
+        .draglisticon {
+            font-family : Tahoma;
+            font-size   : 8pt;
+        }
+    
+        .listicons DIV, 
+        .draglisticon {
+            padding       : 0;
+            float         : left;
+            display       : inline;
+            margin-bottom : 10px;
+        }
+    
+        .listicons BLOCKQUOTE, 
+        .draglisticon BLOCKQUOTE {
+            width      : 70px;
+            height     : 32px;
+            margin     : 2px 2px 4px 2px;
+            background : no-repeat 50% 50%;
+        }
+        
+        .listicons .selected BLOCKQUOTE, 
+        .draglisticon BLOCKQUOTE {
+        }
+        
+        .listicons.listiconsfocus .selected BLOCKQUOTE {
+        }
+    
+        .listicons INPUT {
+            float   : left;
+            margin  : -1px 0 0 0;
+            display : none;
+        }
+    
+        .listicons LABEL, 
+        .draglisticon LABEL {
+            padding    : 0 0 0 0;
+            margin     : 0 2px 0 0px;
+            width      : 76px;
+            height     : 29px;
+            overflow   : hidden;
+            display    : block;
+            text-align : center;
+            position   : relative;
+        }
+    
+        .listicons SPAN, 
+        .draglisticon SPAN {
+            text-decoration : none;
+            color           : black;
+            cursor          : default;
+            padding         : 0px 3px 2px 3px;
+            margin          : 1px auto 0 auto;
+            text-align      : center;
+        }
+        
+        .listicons LABEL>SPAN, 
+        .draglisticon LABEL>SPAN {
+            float : left;
+        }
+        
+        * html .listicons SPAN, 
+        .draglisticon SPAN {
+            display     : block;
+            position    : absolute;
+            left        : 50%;
+            margin-left : expression(-0.5 * this.offsetWidth);
+        }
+    
+        .listicons .selected SPAN {
+            background-color : #CCCCCC;
+            color            : black;
+            /*margin : 0 auto 0 auto; FF? */
+        }
+        
+        .listicons.listiconsfocus .selected SPAN, 
+        .draglisticon SPAN {
+            color            : white;
+            background-color : midnightblue;
+        }
+    
+        .listicons #txt_rename {
+            border      : 1px solid black;
+            float       : none;
+            padding     : 1px 5px 1px 1px;
+            font-family : Tahoma;
+            font-size   : 8pt;
+            color       : black;
+            word-break  : keep-all;
+            overflow    : visible;
+            margin      : 0px;
+            cursor      : text;
+        }
+    ]]></a:style>
+
+    <a:presentation>
+        <a:main container=".">
+            <div class='listicons'>
+            </div>
+        </a:main>
+        <a:item
+          class   = "."
+          caption = "label/span/text()"
+          image   = "blockquote"
+          select  = ".">
+            <div>
+                <blockquote></blockquote>
+                <label>
+                    <span>-</span>
+                </label>
+            </div>
+        </a:item>
+        <a:dragindicator>
+            <div class='draglisticon'>
+                <blockquote></blockquote>
+                <label>
+                    <span>-</span>
+                </label>
+            </div>
+        </a:dragindicator>
+        <a:loading>
+            <div class="loading">Loading...</div>
+        </a:loading>
+        <a:empty caption=".">
+            <div class="empty">-</div>
+        </a:empty>
+    </a:presentation>
+</a:list>
+
+<a:list name="listshop">
+    <a:style><![CDATA[
+        .iconlist {
+            border           : 2px inset white !important; border: 2px inset;
+            background-color : white;
+            width            : 492px;
+            height           : 494px;
+            overflow         : auto;
+            padding          : 3px 4px 3px 4px;
+        }
+    
+        .iconlist, 
+        .dragshop {
+            font-family : Verdana;
+            font-size   : 7.5pt;
+        }
+    
+        .iconlist DIV, 
+        .dragshop {
+            padding    : 0;
+            width      : 116px;
+            height     : 110px;
+            float      : left;
+            display    : inline;
+            text-align : center;
+            padding    : 3px 2px 3px 2px;
+        }
+        
+        .iconlist DIV.hover {
+            border       : 1px solid #FFEFD1;
+            border-width : 3px 2px 3px 2px;
+            padding      : 0;
+        }
+        
+        .iconlist DIV.selected, 
+        .dragshop {
+            border       : 1px solid orange;
+            border-width : 3px 2px 3px 2px;
+            padding      : 0;
+        }
+    
+        .iconlist BLOCKQUOTE, 
+        .dragshop BLOCKQUOTE {
+            width      : 80px;
+            height     : 80px;
+            margin     : 0 auto 3px auto;
+            background : no-repeat 50% 50%;
+        }
+        
+        .iconlist INPUT {
+            float   : left;
+            margin  : -1px 0 0 0;
+            display : none;
+        }
+    
+        .iconlist LABEL, 
+        .dragshop LABEL {
+            padding : 0 0 0 0;
+            margin  : 0 2px 0 2px;
+            height  : 16px;
+            width   : 110px;
+            display : block;
+            border  : 1px solid red;
+        }
+    
+        .iconlist SPAN, 
+        .dragshop SPAN {
+            text-decoration : none;
+            color           : black;
+            cursor          : default;
+            padding         : 2px 4px 2px 2px;
+            display         : block;
+        }
+    ]]></a:style>
+
+    <a:presentation>
+        <a:main container=".">
+            <div class='iconlist'>
+            </div>
+        </a:main>
+        <a:item
+          class   = "."
+          caption = "span/text()"
+          image   = "blockquote"
+          select  = ".">
+            <div>
+                <blockquote></blockquote>
+                <span>-</span>
+            </div>
+        </a:item>
+        <a:dragindicator>
+            <div class='dragshop'>
+                <blockquote></blockquote>
+                <span>-</span>
+            </div>
+        </a:dragindicator>
+        <a:loading>
+            <div class="loading">Loading...</div>
+        </a:loading>
+    </a:presentation>
+</a:list>
+
+<a:list name="listtab">
+    <a:style><![CDATA[
+        .listtab {
+            width          : 300px;
+            height         : 100px;
+            padding-top    : 21px;
+            padding-bottom : 4px;
+            overflow       : hidden;
+            position       : relative;
+        }
+    
+        .listtab .btncontainer {
+            position     : absolute;
+            top          : 0;
+            z-index      : 100;
+            padding-left : 2px;
+        }
+    
+        .listtab .btn {
+            border-width     : 2px 2px 0 2px;
+            border-style     : outset;
+            border-color     : white !important; border-color:;
+            display          : block;
+            float            : left;
+            padding          : 3px 6px 2px 6px;
+            font-family      : MS Sans Serif;
+            font-size        : 8pt;
+            background-color : #D4D0C8;
+            margin           : 2px 0 0 0;
+            cursor           : default;
+            position         : relative;
+            z-index          : 90;
+        }
+    
+        .listtab .selected {
+            padding : 3px 8px 5px 8px;
+            margin  : 0 -2px 0 -2px;
+            display : inline;
+            left    : 0px;
+            z-index : 100;
+        }
+    
+        .listtab .firstcurbtn {
+            margin  : 0 -2px 0 0;
+            padding : 3px 8px 5px 6px;
+        }
+    
+        .listtab .tabpage {
+            border-width : 2px;
+            border-style : outset;
+            border-color : white !important; border-color:;
+            display      : block;
+            height       : 100%;
+            position     : relative;
+        }
+    ]]></a:style>
+
+    <a:presentation>
+        <a:main container="div">
+            <div class='listtab'>
+                <div class='btncontainer'>
+                </div>
+                <div class='tabpage'> </div>
+            </div>
+        </a:main>
+        <a:item
+          class   = "."
+          caption = "text()"
+          select  = ".">
+            <span class='btn'>-</span>
+        </a:item>
+        <a:loading>
+            <div class="loading">Loading...</div>
+        </a:loading>
+        <a:empty caption=".">
+            <div class="empty">-</div>
+        </a:empty>
+    </a:presentation>
+</a:list>

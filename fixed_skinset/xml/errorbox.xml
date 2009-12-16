@@ -1,0 +1,259 @@
+<a:errorbox name="errorbox">
+    <a:style><![CDATA[
+        .errorbox{
+            font-family : Tahoma;
+            font-size   : 8pt;
+            z-index     : 1000000000;
+            position    : absolute;
+            margin      : 22px 0 0 7px;
+            width       : 250px;
+            cursor      : default;
+        }
+
+        .errorbox .tLeft{
+            background : url("images/error_box_lt.png") no-repeat top left;
+            width      : 8px;
+            height     : 9px;
+            float      : left;
+            margin     : 0;
+            padding    : 0;
+            border     : 0;
+        }
+
+        .errorbox .tRight {
+            background : url("images/error_box_rt.png") no-repeat top left;
+            width      : 14px;
+            height     : 9px;
+            float      : right;
+            margin     : 0;
+            padding    : 0;
+            border     : 0;
+        }
+
+        .errorbox .tBorder {
+            border-top       : 1px solid #c3c3c3;
+            height           : 8px;
+            margin           : 0 14px 0 8px;
+            padding          : 0;
+            background-color : white;
+        }
+
+        .errorbox .tBorder {
+            position : relative;
+        }
+
+        .errorbox .tBorder div {
+            background : url("images/tooltip_arrow.png") no-repeat top left;
+            width      : 19px;
+            height     : 11px;
+            position   : absolute;
+            top        : -11px;
+            left       : 8px;
+            padding    : 0;
+            margin     : 0;
+            border     : 0;
+        }
+
+        .errorbox .ebcontent {
+            border-left      : 1px solid #c3c3c3;
+            padding          : 0 14px 0 10px;
+            overflow         : hidden;
+            background-color : white;
+            margin           : 0 8px 0 0;
+        }
+
+        .errorbox .mRight {
+            background : url("images/error_box_r.png") repeat-y top right;
+            overflow   : hidden;
+        }
+
+        .errorbox .bLeft {
+            background : url("images/error_box_lb.png") no-repeat top left;
+            width      : 8px;
+            height     : 16px;
+            float      : left;
+            margin     : 0;
+            padding    : 0;
+            border     : 0;
+        }
+
+        .errorbox .bRight {
+            background : url("images/error_box_rb.png") no-repeat top right;
+            width      : 14px;
+            height     : 16px;
+            float      : right;
+            margin     : 0;
+            padding    : 0;
+            border     : 0;
+        }
+
+        .errorbox .bBar {
+            background : url("images/error_box_b.png") repeat-x bottom left;
+            height     : 16px;
+            margin     : 0 14px 0 8px;
+            padding    : 0;
+            border     : 0;
+        }
+
+        .errorbox .ebcontent .titleBar {
+            margin-bottom : 8px;
+            font-weight   : bold;
+            color         : #327fbd;
+        }
+
+        .errorbox .close {
+            width      : 13px;
+            height     : 13px;
+            background : url("images/close.png") no-repeat top left;
+            overflow   : hidden;
+            cursor     : default;
+            position   : absolute;
+            right      : 13px;
+            top        : 6px;
+        }
+
+        .errorbox .close:hover {
+            background-position : 0 -13px;
+        }
+
+        .errorbox .ebcontent span {
+            display : block;
+            padding : 4px 0;
+
+        }
+
+        .errorbox strong { 
+            display : block;
+            margin  : -5px 0 3px 0;
+        }
+    ]]></a:style>
+
+    <a:presentation>
+        <a:main container="div[4]/div/span" close="div[4]/div/div/a">
+            <div class="errorbox">
+                <div class="tLeft"> </div>
+                <div class="tRight"> </div>
+                <div class="tBorder">
+                    <div> </div>
+                </div>
+                
+                <div class="mRight">
+                    <div class="ebcontent">
+                        <div class="titleBar">
+                            <a class="close" href="javascript:void(0)" onclick="return false"> </a>
+                        </div>
+                        <span> </span>
+                    </div>
+                </div>
+                
+                <div class="bLeft"> </div>
+                <div class="bRight"> </div>
+                <div class="bBar"> </div>
+            </div>
+        </a:main>
+    </a:presentation>
+</a:errorbox>
+
+<a:errorbox name="errorbox">
+    <a:style><![CDATA[
+        .errorbox {
+            font-family : Tahoma;
+            font-size   : 8pt;
+            cursor      : default;
+            z-index     : 100000;
+            position    : absolute;
+            margin      : 22px 0 0 16px;
+            width       : 250px;
+        }
+
+        .errorbox .errorboxContent {
+            background : url(images/errorbox_backg.png) repeat-y top left;
+            width      : 250px;
+        }
+        
+        .errorbox .errorboxContent span {
+            background : transparent;
+        }
+        
+        .errorbox .errorboxTop {
+            background : url("images/errorbox_top.png") no-repeat top left;
+            width      : 250px;
+            height     : 9px;
+        }
+        
+        .errorbox .errorboxBottom {
+            background : url("images/errorbox_bottom.png") no-repeat top left;
+            width      : 250px;
+            height     : 16px;
+        }
+        
+        .errorbox .errorboxTop div {
+            background : url("images/tooltip_arrow.png") no-repeat top left;
+            width      : 19px;
+            height     : 11px;
+            position   : absolute;
+            top        : -10px;
+            left       : 15px;
+            padding    : 0;
+            margin     : 0;
+            border     : 0;
+            z-index    : 10000000;
+        }
+ 
+        .errorbox .close {
+            width      : 13px;
+            height     : 13px;
+            background : url("images/close.png") no-repeat top left;
+            overflow   : hidden;
+            cursor     : default;
+            position   : absolute;
+            right      : 13px;
+            top        : 6px;
+        }
+        
+        .errorbox .close:hover {
+            background-position : 0 -13px;
+        }
+        
+        .errorbox span {
+            display : block;
+            padding : 0 10px 4px 10px;
+            
+        }
+        
+        .errorbox strong {
+            display        : block;
+            line-height    : 13px;
+            margin-top     : 0;
+            padding-top    : 0;
+            padding-bottom : 3px;
+            border         : 0; 
+        }
+        
+        .rightbox {
+            margin-left : -205px;
+        }
+        
+        .rightbox .errorboxTop div {
+            right : 20px;
+            left  : auto;
+        }
+    ]]></a:style>
+
+    <a:presentation>
+        <a:main 
+          container = "div[2]/span" 
+          close     = "div[1]/a">
+            <div class="errorbox">
+                <div class="errorboxTop">
+                    <div> </div>
+                    <a class="close" href="javascript:void(0)" onclick="return false;"> </a>
+                </div>
+                <div class="errorboxContent">
+                    <span> </span>
+                </div>
+                <div class="errorboxBottom"> </div>
+            </div>
+        </a:main>
+    </a:presentation>
+</a:errorbox>
