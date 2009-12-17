@@ -132,7 +132,7 @@
         }
     
         .bubble .lt {
-            background-image  : url(skinimg/bubble_lt.png);
+            background-image  : url(images/bubble_lt.png);
             background-repeat : no-repeat;
             width             : 15px;
             height            : 16px;
@@ -142,7 +142,7 @@
         }
     
         .bubble .rt {
-            background-image  : url(skinimg/bubble_rt.png);
+            background-image  : url(images/bubble_rt.png);
             background-repeat : no-repeat;
             width             : 15px; 
             height            : 16px;
@@ -152,7 +152,7 @@
         }
     
         .bubble .lb {
-            background-image  : url(skinimg/bubble_lb.png);
+            background-image  : url(images/bubble_lb.png);
             background-repeat : no-repeat;
             width             : 15px; 
             height            : 14px;
@@ -161,7 +161,7 @@
         }
     
         .bubble .rb {
-            background-image  : url(skinimg/bubble_rb.png);
+            background-image  : url(images/bubble_rb.png);
             background-repeat : no-repeat;
             width             : 15px; 
             height            : 14px;
@@ -170,7 +170,7 @@
         }
     
         .bubble .line_t {
-            background-image  : url(skinimg/bubble_line_t.png);
+            background-image  : url(images/bubble_line_t.png);
             background-repeat : repeat-x;
             overflow          : hidden;
             height            : 16px !important;
@@ -179,7 +179,7 @@
         }
     
         .bubble .line_b {
-            background-image  : url(skinimg/bubble_line_b.png);
+            background-image  : url(images/bubble_line_b.png);
             background-repeat : repeat-x;
             height            : 14px !important;
             line-height       : 14px;
@@ -187,7 +187,7 @@
         }
     
         .bubble .body {
-            background-image    : url(skinimg/bubble_body_small.png);
+            background-image    : url(images/bubble_body_small.png);
             background-position : top;
             background-repeat   : repeat-x;
             background-color    : #bad9f6;
@@ -214,7 +214,7 @@
             min-height          : 50px;
             background-color    : #e5f0fb;
             background-position : bottom;
-            background-image    : url(skinimg/bubble_body.png);
+            background-image    : url(images/bubble_body.png);
         }
     
         .bubbleShowIcon .body .icon {
