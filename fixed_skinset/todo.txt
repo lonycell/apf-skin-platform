@@ -6,6 +6,15 @@ problems:
 - button.buttonvolume i don't see it
 - datagrid.default is broken in FF
 - datagrid.propedit component is broken, i can't check the skin
+- list.mnulist works strange... 
+- list.listtab is broken
+- modalwindow.roundedged 
+  - icon is missplaced in FF
+	- title contains "-" char in FF
+- modalwindow.bigedge
+  - bottom of this window is broken
+	- icon is missplaced in FF
+	- title contains "-" char in FF
 
 
 

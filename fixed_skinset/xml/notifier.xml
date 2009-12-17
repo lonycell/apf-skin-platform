@@ -4,7 +4,6 @@
             width   : 200px;
             padding : 7px 0 7px 0;
             cursor  : default;
-            opacity : 0;
         }
     
         .notifier .lt {
@@ -130,7 +129,6 @@
             width   : 200px;
             padding : 14px 0 14px 0;
             cursor  : default;
-            opacity : 0;
         }
     
         .bubble .lt {
@@ -262,7 +260,6 @@
             width   : 200px;
             padding : 7px 0 7px 0;
             cursor  : default;
-            opacity : 0;
         }
     
         .smoke .lt {
