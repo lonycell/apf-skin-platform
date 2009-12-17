@@ -1,0 +1,57 @@
+- propedit
+  - sort_asc_n.gif is missing
+	- sort_desc_n.gif is missing
+	- cell.gif
+- datagrid.spreadsheet
+	- sort_asc_n.gif is missing
+	- sort_desc_n.gif is missing
+- datagrid.propedit
+	- sort_asc_n.gif is missing
+	- sort_desc_n.gif is missing
+- dropdown.dropdowneditor
+  - arrow_down.gif is missing
+	- dddisabled.gif is missing
+	- loadingspin.gif is missing
+- checkbox
+  - spacer.gif is missing
+- modalwindow
+  - spacer.gif is missing (commented out)
+	- title.gif is missing (commented out)
+- modalwindow.roundedged
+  - spacer.gif is missing (commented out)
+	- title.gif is missing
+- modalwindow.bigedge
+  - spacer.gif is missing (commented out)
+- markupedit
+  - splus.gif is missing
+	- smin.gif is missing
+- tab.tablowms
+  - tabdiv.gif is missing
+- list.listicons 
+  - icoMailFolder.gif is missing
+- list.listshop
+	- icoMailFolder.gif is missing
+- splitter
+  - spacer.gif is missing
+- flowchart
+  - emptyblock.jpg is missing (i think it could be replaced with spacer (1x1 image))
+	- con_end_arrow5.png is missing
+	- output.png is missing
+	- output_hover.png is missing
+	- output_selected.png is missing
+	
+
+	
+- double editor.default skin (contains changes !!!)
+- double errorbox.default skin (contains changes !!!)
+- double label.default skin (contains changes !!!)
+- triple list.default skin (contains changes !!!)
+- double pager.default skin (contains changes !!!)
+
+
+
+
+
+
+	
+	
