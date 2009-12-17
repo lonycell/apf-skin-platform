@@ -8,7 +8,7 @@
             overflow         : auto;
             margin           : 0;
             padding          : 0;
-            background-image : url(images/grid.png);
+            background-image : url(images/flowchart/grid.png);
             position         : absolute;
             font-family      : Tahoma;
             font-size        : 8pt;
