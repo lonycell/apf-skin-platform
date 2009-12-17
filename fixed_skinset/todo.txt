@@ -1,3 +1,21 @@
+problems:
+=========================
+- accordion_apf_hor have to be fixed
+- bar.basic, it works ?
+- bar.packager, it works ?
+- button.buttonvolume i don't see it
+- datagrid.default is broken in FF
+- datagrid.propedit component is broken, i can't check the skin
+
+
+
+
+
+
+
+Missing images
+=========================
+
 - propedit
   - sort_asc_n.gif is missing
 	- sort_desc_n.gif is missing
@@ -41,6 +59,8 @@
 	- output_selected.png is missing
 	
 
+Double skins
+==================================================
 	
 - double editor.default skin (contains changes !!!)
 - double errorbox.default skin (contains changes !!!)
