@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://ajax.org/2005/aml" >
+    <head>
+        <title>Calendar Gen API</title>
+        
+        <script src="trunk/apf.js"></script>
+    </head>
+    <body>
+        <a:skin src="skins.xml" media-path="images/" icon-path="icns/" />
+        <a:calendar
+          id="c1"
+          output-format = "mm-dd-yyyy HH:MM:ss" 
+          default       = "today" 
+          top           = "100"     
+          width="150"
+          left          = "100">
+        </a:calendar>
+
+        <!--a:calendar
+          id="c2"
+          output-format = "mm-dd-yyyy HH:MM:ss" 
+          default       = "today" 
+          width="300"
+          top           = "100"     
+          left          = "400">
+        </a:calendar>
+        
+        <a:calendar
+          id="c3"
+          output-format = "mm-dd-yyyy HH:MM:ss" 
+          default       = "today" 
+          width="250"
+          top           = "400"     
+          left          = "100">
+        </a:calendar>
+
+        <a:label caption="[c1.value]"></a:label-->
+        <a:calendar
+            top           = "200"
+            left          = "400"
+            output-format = "yyyy-mm-dd"
+            value         = "2008-12-05" />
+    </body>
+</html>

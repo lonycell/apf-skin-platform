@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://ajax.org/2005/aml" >
+    <head>
+        <title>Caldropdown Gen API</title>
+        
+        <script src="trunk/apf.js"></script>
+    </head>
+    <body>
+        <a:skin src="skins.xml" media-path="images/" icon-path="icns/"></a:skin>
+        
+        <a:pages id="ps">
+            <a:page caption="General">
+                <a:checkbox>Example</a:checkbox>
+                <a:button>Example</a:button>
+            </a:page>
+            <a:page caption="Advanced">
+                <a:checkbox>Test checkbox</a:checkbox>
+                <a:checkbox>Test checkbox</a:checkbox>
+                <a:checkbox>Test checkbox</a:checkbox>
+            </a:page>
+        </a:pages>
+        
+        <a:button top="300" left="100" width="200" onclick="ps.setAttribute('activepagenr', 0)">Choose first page</a:button>
+        <a:button top="300" left="300" width="200" onclick="ps.setAttribute('activepagenr', 1)">Choose second page</a:button>
+    </body>
+</html>

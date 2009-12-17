@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://ajax.org/2005/aml" >
+    <head>
+        <title>Caldropdown Gen API</title>
+        
+        <script src="trunk/apf.js"></script>
+    </head>
+    <body>
+        <a:skin src="skins.xml" media-path="images/" icon-path="icns/"></a:skin>
+        <a:model id="mdlForum">
+            <data page="1" pages="27" limit="3">
+                <item>
+                    <title>Title 1</title>
+                    <desc>Desc 1</desc>
+                    <url>url1</url>
+                </item>
+                <item>
+                    <title>Title 2</title>
+                    <desc>Desc 1</desc>
+                    <url>url2</url>
+                </item>
+                <item>
+                    <title>Title 3</title>
+                    <desc>Desc 1</desc>
+                    <url>url3</url>
+                </item>
+            </data>
+        </a:model>
+        
+        <a:rpc
+          id           = "comm5"
+          protocol     = "cgi"
+          http-method  = "get"
+          route-server = "rpcproxy.php"
+          autoroute    = "true"
+          url          = "http://api.nytimes.com/svc/news/v2/all/recent.xml">
+            <a:method name="nyt">
+                <a:param name="limit" />
+                <a:param name="api-key"
+                  value="6864dff571ae7dfcda76392b4566aa13:6:58588488" />
+            </a:method>
+        </a:rpc>
+        
+        <a:frame 
+            model   = "mdlForum" 
+            skin    = "section" 
+            caption = "News on Forum" 
+            width   = "360">
+            <a:pager disabled="false" skin="pgrnormal"
+              pageload = "{comm.fetch('forum', page, 2)}">
+                <a:bindings>
+                    <a:total match="[@pages]" />
+                    <a:current match="[@page]" />
+                </a:bindings>
+            </a:pager>
+            <?lm
+                foreach([item]){
+                    <h3><a href="[url]" target="_blank">[title]</a></h3>
+                    <p>[desc]</p>
+                }
+            ?>
+        </a:frame>
+
+    </body>
+</html>

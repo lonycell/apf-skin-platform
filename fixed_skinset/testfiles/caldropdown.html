@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://ajax.org/2005/aml" >
+    <head>
+        <title>Caldropdown Gen API</title>
+        
+        <script src="trunk/apf.js"></script>
+    </head>
+    <body>
+        <a:skin src="skins.xml" media-path="images/" icon-path="icns/" />
+        <a:caldropdown 
+          output-format = "mm-dd-yyyy HH:MM:ss"
+          default       = "today"
+          width         = "300">
+        </a:caldropdown>
+        
+        <a:caldropdown 
+          output-format = "mm-dd-yyyy HH:MM:ss"
+          default       = "today"
+          top="350"
+          width         = "150">
+        </a:caldropdown>
+        
+        <!--a:caldropdown top="200" left="400" output-format="yyyy-mm-dd" value="2008-12-06" /-->
+        
+        <!--a:model id="mdlCalDD">
+            <data date="2009-11-25" />
+        </a:model>
+        <a:caldropdown output-format="yyyy-mm-dd" model="mdlCalDD" value="[@date]" /-->
+        
+        <!--a:model id="mdlCalDD">
+            <data date="2009-11-25" />
+        </a:model>
+        <a:caldropdown output-format="yyyy-mm-dd" model="mdlCalDD" >
+            <a:bindings>
+                <a:each match="[@date]" />
+            </a:bindings>
+        </a:caldropdown-->
+
+        <!--a:caldropdown 
+          output-format = "mm-dd-yyyy HH:MM:ss"
+          default       = "today"
+          top="350"
+          left="400"
+          width         = "150">
+        </a:caldropdown-->
+    </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://ajax.org/2005/aml" >
+    <head>
+        <title>Caldropdown Gen API</title>
+        
+        <script src="trunk/apf.js"></script>
+        <script src="js/code.js"></script>
+    </head>
+    <body>
+        <a:skin src="skins.xml" media-path="images/" icon-path="icns/"></a:skin>
+
+        <a:model id="mdlFlowchart" save-original="true" 
+          src = "myFlowChart.xml" />
+        
+        <a:model id="mdlblocks"
+          src = "blocks.xml" />
+        
+        <a:window 
+          width     = "1005" 
+          height    = "800" 
+          title     = "Flowchart" 
+          icon      = "application_view_icons.png" 
+          visible   = "true"
+          resizable = "true">
+            <a:toolbar skin="toolbar2005" align="top" height="51">
+                <a:bar>
+                    <a:button onclick="rotateElement(0);" caption="Rotate CCW" icon="tb/rotate_acw.png" tooltip="Rotate counter-clockwise"></a:button>
+                    <a:button onclick="rotateElement(1);" caption="Rotate CW" icon="tb/rotate_cw.png" tooltip="Rotate clockwise"></a:button>
+                    <a:button onclick="flipv();" caption="Flip V" icon="tb/flipv.png" tooltip="Flip vertical"></a:button>
+                    <a:button onclick="fliph();" caption="Flip H" icon="tb/fliph.png" tooltip="Flip horizontal"></a:button>
+                    <a:button onclick="alert(mdlFlowchart.getXml().xml);" caption="Model" icon="layout.png" tooltip="Show workflow model"></a:button>
+                    <a:button onclick="lockToggleSelected();"  caption="Lock" icon="tb/lock.png" tooltip="Toggle lock"></a:button>
+                </a:bar>
+                <a:bar>
+                    <a:button onclick="apf.window.getActionTracker().undo()" caption="Undo" icon="icoUndo.gif" tooltip="Undo last action"></a:button>
+                    <a:button onclick="apf.window.getActionTracker().redo()" caption="Redo" icon="icoRedo.gif" tooltip="Redo last action"></a:button>
+                    <a:button onclick="wfExample.setMode('normal');" caption="Mode:normal" icon="mode_normal.png" tooltip="Mode:normal"></a:button>
+                    <a:button onclick="wfExample.setMode('connection-add');" caption="Mode:conn-add" icon="mode_connection_add.png" tooltip="Mode:connection-add"></a:button>
+                </a:bar>
+            </a:toolbar>
+            
+            <a:list 
+              id    = "MainList" 
+              model = "mdlblocks" 
+              skin  = "thumbnail_caption" 
+              align = "left-splitter" 
+              dragcopy = "true"
+              width = "148">
+                <a:bindings>
+                    <a:caption match="[@caption]"></a:caption>
+                    <a:image match="[ancestor-or-self::node()[@type]]" value="images/flowchart/blocks/[@type].png"></a:image>
+                    <a:drag match="[block]" copy="true" />
+                    <a:each match="[block]"></a:each>
+                </a:bindings>
+                <a:actions>
+                    <a:remove match="[node()[@candelete=0]]"></a:remove>
+                    <a:add match="[.]"></a:add>
+                </a:actions>
+            </a:list>
+        
+            <a:flowchart 
+              id          = "wfExample" 
+              dropenabled = "true" 
+              template    = "template.xml" 
+              title       = "canvas" 
+              drop        = "true"
+              model       = "mdlFlowchart" 
+              align       = "right">
+                <a:each match="[block]">
+                    <a:move match="[@move] != false &amp;&amp; [@lock] != true"></a:move>
+                    <a:resize match="[@resize] == true &amp;&amp; [@lock] != true"></a:resize>
+                    <a:css match="{true}" default="locked"></a:css>
+                    <a:left match="[@left]"></a:left>
+                    <a:top match="[@top]"></a:top>
+                    <a:width match="[@width]"></a:width>
+                    <a:height match="[@height]"></a:height>
+                    <a:flipv match="[@flipv]"></a:flipv>
+                    <a:fliph match="[@fliph]"></a:fliph>
+                    <a:rotation match="[@rotation]"></a:rotation>
+                    <a:lock match="[@lock]"></a:lock>
+                    <a:id match="[@id]"></a:id>
+                    <a:type match="[@type]"></a:type>
+                    <a:caption match="[@caption]" value="Untitled block"></a:caption>
+                    <a:cap-pos match="[@cap-pos]"></a:cap-pos>
+                    <a:zindex match="[@zindex]"></a:zindex>
+                    <a:image match="[@src]"></a:image>
+
+                    <!-- Connection Binding Rules -->
+                    <a:connection match="[block/connection]"></a:connection>
+                    <a:ref match="[@ref]"></a:ref>
+                    <a:blockinput match="[@input]" />
+                    <a:blockoutput match="[@output]" />
+                    <a:blocklabel match="[@label]" />
+                </a:each>
+            </a:flowchart>
+        </a:window>
+        
+        <a:script src="code.js"></a:script>
+
+    </body>
+</html>

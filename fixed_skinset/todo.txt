@@ -15,6 +15,9 @@ problems:
   - bottom of this window is broken
 	- icon is missplaced in FF
 	- title contains "-" char in FF
+- pager.default is broken
+- portal component have to be fixed 
+- propedit component have to be fixed 
 
 
 

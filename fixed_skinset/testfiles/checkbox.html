@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://ajax.org/2005/aml" >
+    <head>
+        <title>Caldropdown Gen API</title>
+        
+        <script src="trunk/apf.js"></script>
+    </head>
+    <body>
+        <a:skin src="skins.xml" media-path="images/" icon-path="icns/" />
+         <a:model id="mdlCheckbox">
+            <data answer="Something"></data>
+        </a:model>
+        <a:checkbox id="ch" value="[mdlCheckbox::@answer]">Caption</a:checkbox>
+       
+        
+        <a:checkbox values="full|empty">the glass is full</a:checkbox>
+    </body>
+</html>
