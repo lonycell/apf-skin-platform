@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://ajax.org/2005/aml" >
+    <head>
+        <title>Caldropdown Gen API</title>
+        
+        <script src="trunk/apf.js"></script>
+    </head>
+    <body>
+        <a:skin src="skins.xml" media-path="images/" icon-path="icns/" />
+        
+        <a:list skin="thumbnail" width="300" height="230">
+            <a:item image="skinimg/thinkgeek/thinkgeek1.jpg">
+                The Netherlands
+            </a:item>
+            <a:item image="skinimg/thinkgeek/thinkgeek2.jpg">
+                United States of America
+            </a:item>
+            <a:item image="skinimg/thinkgeek/thinkgeek3.jpg">
+                Poland
+            </a:item>
+        </a:list>
+ 
+       <a:upload id="uplMain"
+         target    = "http://localhost/upload.php"
+         ontimeout = "alert('It seems the server went away')"
+         oncancel  = "alert('Could not upload logo')"
+         onreceive = "lstImages.add(arguments[0])" />
+     
+       <a:button 
+         caption  = "Browse file..." 
+         onclick  = "uplMain.browse()" 
+         disabled = "{uplMain.uploading}" 
+         top      = "400" 
+         left     = "300" />
+       <a:button 
+         top     = "500" 
+         left    = "300" 
+         caption = "{uplMain.uploading ? 'Cancel' : 'Send'}" 
+         disabled="{!uplMain.value}" onclick="
+           if (uplMain.uploading)
+               uplMain.cancel();
+           else
+               uplMain.upload();
+         " />
+    </body>
+</html>

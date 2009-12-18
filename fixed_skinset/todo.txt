@@ -18,6 +18,13 @@ problems:
 - pager.default is broken
 - portal component have to be fixed 
 - propedit component have to be fixed 
+- splitter - how can i check it ?
+- statusbar.status - how to use it ?
+- tab.default is broken
+- tab.lowtab is broken
+- tree.checktree
+- upload component doesn't work
+- video component doesn't work
 
 
 
