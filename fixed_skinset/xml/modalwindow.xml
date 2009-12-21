@@ -458,7 +458,6 @@
             padding  : 4px 4px 2px 2px;
             top      : 0;
             right    : 0;
-            /*background: url(images/title.gif) repeat-x;*/
         }
     
         .window .title blockquote div {
@@ -868,7 +867,6 @@
             padding    : 4px 4px 2px 2px;
             top        : 0;
             right      : 0;
-            background : url(images/title.gif) repeat-x;
         }
 
         .winround .title blockquote div {
@@ -1117,7 +1115,6 @@
             padding    : 4px 4px 2px 2px;
             top        : 0;
             right      : 0;
-            background : url(images/title.gif) repeat-x;
         }
 
         .winbigedge .title blockquote div {

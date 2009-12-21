@@ -14,13 +14,8 @@ problems:
 - statusbar.status - how to use it ?
 - tab.default is broken
 - tab.lowtab is broken
-- tree.checktree
 - upload component doesn't work
 - video component doesn't work
-
-
-
-
 
 
 
@@ -45,10 +40,8 @@ Missing images
   - spacer.gif is missing
 - modalwindow
   - spacer.gif is missing (commented out)
-	- title.gif is missing (commented out)
 - modalwindow.roundedged
   - spacer.gif is missing (commented out)
-	- title.gif is missing
 - modalwindow.bigedge
   - spacer.gif is missing (commented out)
 - markupedit
