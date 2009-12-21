@@ -768,6 +768,7 @@
             margin   : -1px 3px 0 -1px;
             position : absolute;
             left     : 2px;
+            top      : 5px;
         }
         
         .winround .content {
@@ -953,7 +954,8 @@
                 <div class="topLeft"> </div>
                 <div class="topRight"> </div>
                 <div class="title">
-                    <img src="" />-
+                    -
+                    <img src="" />
                     <blockquote> </blockquote>
                 </div>
 
@@ -1029,6 +1031,7 @@
             margin   : -1px 3px 0 -1px;
             position : absolute;
             left     : 2px;
+            top      : 5px;
         }
         
         .winbigedge .content {
@@ -1199,7 +1202,8 @@
                 <div class="topLeft"> </div>
                 <div class="topRight"> </div>
                 <div class="title">
-                    <img src="" />-
+                    -
+                    <img src="" />
                     <blockquote> </blockquote>
                 </div>
                 

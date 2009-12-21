@@ -1,6 +1,5 @@
 problems:
 =========================
-- accordion_apf_hor have to be fixed
 - bar.basic, it works ?
 - bar.packager, it works ?
 - button.buttonvolume i don't see it
@@ -8,13 +7,6 @@ problems:
 - datagrid.propedit component is broken, i can't check the skin
 - list.mnulist works strange... 
 - list.listtab is broken
-- modalwindow.roundedged 
-  - icon is missplaced in FF
-	- title contains "-" char in FF
-- modalwindow.bigedge
-  - bottom of this window is broken
-	- icon is missplaced in FF
-	- title contains "-" char in FF
 - pager.default is broken
 - portal component have to be fixed 
 - propedit component have to be fixed 
@@ -64,18 +56,8 @@ Missing images
 	- smin.gif is missing
 - tab.tablowms
   - tabdiv.gif is missing
-- list.listicons 
-  - icoMailFolder.gif is missing
-- list.listshop
-	- icoMailFolder.gif is missing
 - splitter
   - spacer.gif is missing
-- flowchart
-  - emptyblock.jpg is missing (i think it could be replaced with spacer (1x1 image))
-	- con_end_arrow5.png is missing
-	- output.png is missing
-	- output_hover.png is missing
-	- output_selected.png is missing
 	
 
 Double skins
