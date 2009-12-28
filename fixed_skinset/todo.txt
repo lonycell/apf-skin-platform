@@ -36,21 +36,11 @@ Missing images
   - arrow_down.gif is missing
 	- dddisabled.gif is missing
 	- loadingspin.gif is missing
-- checkbox
-  - spacer.gif is missing
-- modalwindow
-  - spacer.gif is missing (commented out)
-- modalwindow.roundedged
-  - spacer.gif is missing (commented out)
-- modalwindow.bigedge
-  - spacer.gif is missing (commented out)
 - markupedit
   - splus.gif is missing
 	- smin.gif is missing
 - tab.tablowms
   - tabdiv.gif is missing
-- splitter
-  - spacer.gif is missing
 	
 
 Double skins
