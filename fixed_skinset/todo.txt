@@ -1,19 +1,16 @@
 problems:
 =========================
-- bar.basic, it works ?
-- bar.packager, it works ?
-- button.buttonvolume i don't see it
 - datagrid.default is broken in FF
 - datagrid.propedit component is broken, i can't check the skin
 - list.mnulist works strange... 
-- list.listtab is broken
 - pager.default is broken
 - portal component have to be fixed 
 - propedit component have to be fixed 
 - splitter - how can i check it ?
 - statusbar.status - how to use it ?
-- tab.default is broken
-- tab.lowtab is broken
+
+- tab.default is broken http://screencast.com/t/N2FhZDAw
+- tab.lowtab is broken http://screencast.com/t/OTRiZmYwMT
 - upload component doesn't work
 - video component doesn't work
 
@@ -33,14 +30,7 @@ Missing images
 	- sort_asc_n.gif is missing
 	- sort_desc_n.gif is missing
 - dropdown.dropdowneditor
-  - arrow_down.gif is missing
-	- dddisabled.gif is missing
 	- loadingspin.gif is missing
-- markupedit
-  - splus.gif is missing
-	- smin.gif is missing
-- tab.tablowms
-  - tabdiv.gif is missing
 	
 
 Double skins

@@ -1750,18 +1750,18 @@
             overflow       : hidden;
             position       : relative;
         }
-    
+
         .listtab .btncontainer {
             position     : absolute;
             top          : 0;
             z-index      : 100;
             padding-left : 2px;
         }
-    
+
         .listtab .btn {
             border-width     : 2px 2px 0 2px;
             border-style     : outset;
-            border-color     : white !important; border-color:;
+            border-color     : white gray gray white !important; border-color:;
             display          : block;
             float            : left;
             padding          : 3px 6px 2px 6px;
@@ -1773,7 +1773,7 @@
             position         : relative;
             z-index          : 90;
         }
-    
+
         .listtab .selected {
             padding : 3px 8px 5px 8px;
             margin  : 0 -2px 0 -2px;
@@ -1781,22 +1781,22 @@
             left    : 0px;
             z-index : 100;
         }
-    
+
         .listtab .firstcurbtn {
             margin  : 0 -2px 0 0;
             padding : 3px 8px 5px 6px;
         }
-    
+
         .listtab .tabpage {
-            border-width : 2px;
-            border-style : outset;
-            border-color : white !important; border-color:;
-            display      : block;
-            height       : 100%;
-            position     : relative;
+            border-width     : 2px;
+            border-style     : outset;
+            border-color     : white gray gray white !important; border-color:;
+            display          : block;
+            height           : 100%;
+            position         : relative;
+            background-color : #d4d0c8;
         }
     ]]></a:style>
-
     <a:presentation>
         <a:main container="div">
             <div class='listtab'>
@@ -1814,7 +1814,7 @@
         <a:loading>
             <div class="loading">Loading...</div>
         </a:loading>
-        <a:empty caption=".">
+        <a:empty caption="text()">
             <div class="empty">-</div>
         </a:empty>
     </a:presentation>
