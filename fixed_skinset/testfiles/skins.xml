@@ -157,6 +157,7 @@
             float               : left;
             cursor              : pointer;
             border-right        : 1px solid #d7d7d7;
+            overflow            : hidden;
         }
         
         .accordion_apf_hor .panel .title span {
@@ -201,6 +202,7 @@
             float        : left;
             height       : 100%;
             border-right : 1px solid #d7d7d7;
+            overflow     : hidden;
         }
         
         .accordion_apf_hor .panel .body .header {
@@ -213,8 +215,12 @@
             color               : white;
             margin-top          : 15px;
             white-space         : nowrap;
+            overflow            : hidden;
         }
     ]]></a:style>
+    <a:style condition="apf.isSafari">
+        
+    </a:style>
 
     <a:presentation>
         <a:main container="." direction="horizontal">
@@ -266,7 +272,7 @@
             position            : relative;
             overflow            : hidden;
             padding             : 0;
-            margin              : 2px 0 0 0; /* 2px Only for demo section */
+            margin              : 0 0 0 0; /* 2px 0 0 0 Only for demo section */
             border-right        : 1px solid #c4de9a;
         }
         
@@ -280,7 +286,7 @@
             position            : relative;
             overflow            : hidden;
             padding             : 0;
-            margin              : 2px 0 0 0; /* 2px Only for demo section */
+            margin              : 0 0 0 0; /* 2px 0 0 0 Only for demo section */
         }
     
         .accordion_menu .panel {
@@ -487,29 +493,6 @@
     </a:presentation>
 </a:bar>
 
-<a:bar name="packager">
-    <a:style><![CDATA[
-        .packager .loading {
-            width    : 800px;
-            height   : 23px;
-            margin   : 0 auto 0 auto;
-            padding  : 15px 0 0 0;
-            overflwo : visible;
-        }
-    ]]></a:style>
-    
-    <a:presentation>
-        <a:main container="div[2]">
-            <div class="packager">
-                <div class="packgerHeader"></div>
-                <div id="packagerWarper">
-                </div>
-                <div class="packgerFooter"></div>
-            </div>
-        </a:main>
-    </a:presentation>
-</a:bar>
-
 <a:bar name="bardown">
     <a:style><![CDATA[
         .bardown {
@@ -518,6 +501,7 @@
             padding     : 0 0 10px 0;
             text-align  : left;
             z-index     : 1;
+            position    : relative;
         }
     
         .bardown .content {
@@ -538,10 +522,11 @@
         .bardown .borderRight {
             background  : url("images/error_box_r.png") repeat-y top right;
             overflow    : hidden;
-            height      : 100%;
-            float       : right;
+            position    : absolute;
+            right       : 0;
+            top         : 0;
+            bottom      : 26px;
             width       : 9px;
-            padding-top : 3px;
         }
         
         .bardown .bottomLeft {
@@ -610,6 +595,7 @@
         </a:cover>
     </a:presentation>
 </a:bar>
+
 <a:toolbar name="toolbar">
     <a:style><![CDATA[
         .toolbar .menubar {
@@ -663,6 +649,7 @@
         </a:divider>
     </a:presentation>
 </a:toolbar>
+
 <a:button name="btn1dasimple">
     <a:style><![CDATA[
         .odas_btn {
@@ -686,6 +673,7 @@
 
         }
 
+        .odas_btnDown,
         .odas_btnOver {
             text-decoration : underline;
             cursor          : pointer;
@@ -731,136 +719,6 @@
     <a:presentation>
         <a:main caption="text()" background=".">
             <div class="oda_btn">-</div>
-        </a:main>
-    </a:presentation>
-</a:button>
-
-<a:button name="labelbutton">
-    <a:style><![CDATA[
-        .lblbtn {
-            color        : black;
-            font-family  : MS Sans Serif, Tahoma, Arial;
-            font-size    : 8pt;
-            cursor       : default;
-            text-align   : left;
-            overflow     : hidden;
-            border       : 1px solid black;
-            border-color : white gray gray white;
-            width        : 17px;
-            height       : 17px;
-            background   : #D4D0C8 no-repeat 1px 1px;
-        }
-
-        .lblbtn.lblbtnDisabled {
-            color : gray;
-        }
-        
-        .lblbtn.lblbtnDown {
-            border-color        : gray white white gray;
-            background-position : 2px 2px;
-        }
-        
-        .lblbtn.lblbtnOver {
-        }
-
-        .lblbtnDisabled span {
-            background-position : 0 100%;
-        }
-    ]]></a:style>
-
-    <a:presentation>
-        <a:main 
-          caption    = "text()" 
-          icon       = "." 
-          background = "span">
-            <div class='lblbtn'></div>
-        </a:main>
-    </a:presentation>
-</a:button>
-
-<a:button name="luxebutton">
-    <!--
-        Classes:
-        - disabled
-        - focus
-
-        - btnup
-        - btndown
-        - btnover
-    -->
-
-    <a:style><![CDATA[
-        .luxebutton{
-            border           : 1px solid #D4D0C8;
-            background-color : #D4D0C8;
-            padding          : 3px;
-            color            : black;
-            font-family      : MS Sans Serif;
-            font-size        : 8pt;
-            cursor           : default;
-            text-align       : center;
-        }
-
-        .luxebutton.luxebuttonDisabled {
-            color : gray;
-        }
-        
-        .luxebutton.luxebuttonDown {
-            border       : 1px solid white;
-            border-color : gray white white gray;
-            padding      : 4px 2px 2px 4px;
-        }
-        
-        .luxebutton.luxebuttonOver {
-            border       : 1px solid white;
-            border-color : white gray gray white;
-        }
-
-        .luxebutton.bool.btnover {
-
-        }
-
-        .luxebutton.bool.btndown {
-
-        }
-    ]]></a:style>
-
-    <a:presentation>
-        <a:main caption="text()" icon=".">
-            <div class='luxebutton'>-</div>
-        </a:main>
-    </a:presentation>
-</a:button>
-
-<a:button name="buttonvolume">
-    <a:style><![CDATA[
-        .buttonvolume {
-            color       : #4b4b4b;
-            font-family : Tahoma;
-            font-size   : 8pt;
-            height      : 16px;
-            width       : 16px;
-            overflow    : hidden;
-            cursor      : default;
-            margin      : 0;
-            padding     : 0;
-        }
-
-        .buttonvolume span {
-            display    : block;
-            background : no-repeat 0 0;
-            margin     : 0;
-            padding    : 0;
-            width      : 16px;
-            height     : 16px;
-        }
-    ]]></a:style>
-    
-    <a:presentation>
-        <a:main background="span" icon="span">
-            <div class="buttonvolume">
-                <span> </span>
-            </div>
         </a:main>
     </a:presentation>
 </a:button>
@@ -1011,7 +869,7 @@
           icon       = "div/span">
             <div class='toolbarbutton'>
                 <div>
-                    <span> </span>-
+                    <span>-</span>
                 </div>
             </div>
         </a:main>
@@ -1653,6 +1511,7 @@
             float : left;
         }
     </a:style>
+    
     <a:presentation>
         <a:main 
           contnainer = "." 
@@ -7283,18 +7142,18 @@
             overflow       : hidden;
             position       : relative;
         }
-    
+
         .listtab .btncontainer {
             position     : absolute;
             top          : 0;
             z-index      : 100;
             padding-left : 2px;
         }
-    
+
         .listtab .btn {
             border-width     : 2px 2px 0 2px;
             border-style     : outset;
-            border-color     : white !important; border-color:;
+            border-color     : white gray gray white !important; border-color:;
             display          : block;
             float            : left;
             padding          : 3px 6px 2px 6px;
@@ -7306,7 +7165,7 @@
             position         : relative;
             z-index          : 90;
         }
-    
+
         .listtab .selected {
             padding : 3px 8px 5px 8px;
             margin  : 0 -2px 0 -2px;
@@ -7314,22 +7173,22 @@
             left    : 0px;
             z-index : 100;
         }
-    
+
         .listtab .firstcurbtn {
             margin  : 0 -2px 0 0;
             padding : 3px 8px 5px 6px;
         }
-    
+
         .listtab .tabpage {
-            border-width : 2px;
-            border-style : outset;
-            border-color : white !important; border-color:;
-            display      : block;
-            height       : 100%;
-            position     : relative;
+            border-width     : 2px;
+            border-style     : outset;
+            border-color     : white gray gray white !important; border-color:;
+            display          : block;
+            height           : 100%;
+            position         : relative;
+            background-color : #d4d0c8;
         }
     ]]></a:style>
-
     <a:presentation>
         <a:main container="div">
             <div class='listtab'>
@@ -7347,12 +7206,11 @@
         <a:loading>
             <div class="loading">Loading...</div>
         </a:loading>
-        <a:empty caption=".">
+        <a:empty caption="text()">
             <div class="empty">-</div>
         </a:empty>
     </a:presentation>
 </a:list>
-
 <a:markupedit name="markupedit">
     <a:style><![CDATA[
         .markupedit {
@@ -8180,7 +8038,6 @@
             padding  : 4px 4px 2px 2px;
             top      : 0;
             right    : 0;
-            /*background: url(images/title.gif) repeat-x;*/
         }
     
         .window .title blockquote div {
@@ -8490,6 +8347,7 @@
             margin   : -1px 3px 0 -1px;
             position : absolute;
             left     : 2px;
+            top      : 5px;
         }
         
         .winround .content {
@@ -8589,7 +8447,6 @@
             padding    : 4px 4px 2px 2px;
             top        : 0;
             right      : 0;
-            background : url(images/title.gif) repeat-x;
         }
 
         .winround .title blockquote div {
@@ -8675,7 +8532,7 @@
                 <div class="topLeft"> </div>
                 <div class="topRight"> </div>
                 <div class="title">
-                    <img src="" />-
+                    <img src="" />
                     <blockquote> </blockquote>
                 </div>
 
@@ -8751,6 +8608,7 @@
             margin   : -1px 3px 0 -1px;
             position : absolute;
             left     : 2px;
+            top      : 5px;
         }
         
         .winbigedge .content {
@@ -8836,7 +8694,6 @@
             padding    : 4px 4px 2px 2px;
             top        : 0;
             right      : 0;
-            background : url(images/title.gif) repeat-x;
         }
 
         .winbigedge .title blockquote div {
@@ -8921,7 +8778,7 @@
                 <div class="topLeft"> </div>
                 <div class="topRight"> </div>
                 <div class="title">
-                    <img src="" />-
+                    <img src="" />
                     <blockquote> </blockquote>
                 </div>
                 
@@ -10640,6 +10497,7 @@
         </a:main>
     </a:presentation>
 </a:radiobutton>
+
 <a:slider name="sliderHigh_ver">
     <a:alias>vertical</a:alias>
     
@@ -11494,6 +11352,7 @@
         </marker>
     </a:presentation>
 </a:slider>
+
 <a:slideshow name="slideshow">
     <a:style><![CDATA[
         .slideshow {
@@ -11832,6 +11691,7 @@
         </a:thumbnail>
     </a:presentation>
 </a:slideshow>
+
 <a:spinner name="spinner">
     <a:style><![CDATA[
         .spinner {
@@ -12045,6 +11905,7 @@
         </a:main>
     </a:presentation>
 </a:splitter>
+
 <a:statusbar name="statusbar">
     <a:style><![CDATA[
         .statusbar {
@@ -12168,6 +12029,7 @@
         </a:main>
     </a:presentation>
 </a:statusbar>
+
 <a:tab name="demos_lowtab">
     <a:style><![CDATA[
         .demos_tab {
@@ -12403,6 +12265,7 @@
             background : url(images/tab_pag_lb.png) no-repeat bottom left;
             position   : absolute;
             bottom     : 0;
+            
             width      : 100%;
         }
     
@@ -13095,6 +12958,7 @@
         </a:divider>
     </a:presentation>
 </a:toolbar>
+
 <a:tree name="checktree">
     <a:style><![CDATA[
         .checktree {

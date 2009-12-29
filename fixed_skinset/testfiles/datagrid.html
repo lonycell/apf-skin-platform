@@ -30,20 +30,20 @@
         
         
         
-        <!--a:model id="mdlNews">
+        <a:model id="mdlNews">
             <data>
                 <news title="text 1" subtitle="text 11" date="2009-11-18"></news>
                 <news title="text 2" subtitle="text 21" date="2009-11-19"></news>
                 <news title="text 3" subtitle="text 31" date="2009-11-20"></news>
             </data>
         </a:model>
-        <a:datagrid model="mdlNews" options="move|size">
+        <a:datagrid model="mdlNews" options="move|size" width="500">
            <a:each match="[news]">
                <a:column caption="" type="icon" width="40" value="newspaper.png" />
                <a:column caption="Date" value="[@date]" width="70" />
                <a:column caption="Title" width="180" value="[@title]" />
-               <a:column caption="Subtitle" value="[@subtitle]" width="100" />
+               <a:column caption="Subtitle" value="[@subtitle]" width="100%" />
            </a:each>
-        </a:datagrid-->
+        </a:datagrid>
     </body>
 </html>

@@ -106,29 +106,6 @@
     </a:presentation>
 </a:bar>
 
-<a:bar name="packager">
-    <a:style><![CDATA[
-        .packager .loading {
-            width    : 800px;
-            height   : 23px;
-            margin   : 0 auto 0 auto;
-            padding  : 15px 0 0 0;
-            overflwo : visible;
-        }
-    ]]></a:style>
-    
-    <a:presentation>
-        <a:main container="div[2]">
-            <div class="packager">
-                <div class="packgerHeader"></div>
-                <div id="packagerWarper">
-                </div>
-                <div class="packgerFooter"></div>
-            </div>
-        </a:main>
-    </a:presentation>
-</a:bar>
-
 <a:bar name="bardown">
     <a:style><![CDATA[
         .bardown {
@@ -137,6 +114,7 @@
             padding     : 0 0 10px 0;
             text-align  : left;
             z-index     : 1;
+            position    : relative;
         }
     
         .bardown .content {
@@ -157,10 +135,11 @@
         .bardown .borderRight {
             background  : url("images/error_box_r.png") repeat-y top right;
             overflow    : hidden;
-            height      : 100%;
-            float       : right;
+            position    : absolute;
+            right       : 0;
+            top         : 0;
+            bottom      : 26px;
             width       : 9px;
-            padding-top : 3px;
         }
         
         .bardown .bottomLeft {

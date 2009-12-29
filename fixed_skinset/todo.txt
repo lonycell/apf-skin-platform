@@ -1,5 +1,17 @@
 problems:
 =========================
+- button.toolbarbutton - "-" chars - http://screencast.com/t/NGY0MmNkMTY
+- colorpicker.default - IE8 - returns error
+	
+	Message: Incorrect property value
+	Line: 99
+	Char: 9
+	Code: 0
+	URI ID: file:///C:/xampp/htdocs/skin_tests/platform_skins_test/trunk/elements/colorpicker2.js
+
+
+
+=====================
 - datagrid.default is broken in FF
 - datagrid.propedit component is broken, i can't check the skin
 - list.mnulist works strange... 
@@ -13,6 +25,20 @@ problems:
 - tab.lowtab is broken http://screencast.com/t/OTRiZmYwMT
 - upload component doesn't work
 - video component doesn't work
+
+
+Answers:
+================================
+- <a:tree align="left-splitter" />
+  will make a splitter for you
+- skin="status" will just change the skin of a statusbar
+  look at ajax.org for an example
+- datagrid works, 
+- propedit doesn't work
+- pager should work
+- portal is broken
+- upload should work - ask mike about upload
+- when you dont use anchors the tab should work
 
 
 
