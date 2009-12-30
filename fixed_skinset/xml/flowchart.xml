@@ -266,10 +266,10 @@
             <div class='flowchart'> </div>
         </a:main>
         <a:item
-          imagecontainer="div"
-          image ="div/img"
-          select="."
-          caption="blockquote">
+          imagecontainer = "div"
+          image          = "div/img"
+          select         = "."
+          caption        = "blockquote">
             <div class="block">
                 <div>
                     <img src="" />

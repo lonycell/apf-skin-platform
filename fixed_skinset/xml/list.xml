@@ -39,14 +39,15 @@
             cursor          : default;
             display         : block;
             padding         : 2px 4px 2px 2px;
-            text-decoration : none;
             white-space     : nowrap;
         }
     
         .listFocus .indicate U {
             border  : 1px dotted #BBB;/*#25a8e7;*/
             color   : black;
-            /*background-color : #e4f4fc;*/
+            /*
+            background-color : #e4f4fc;
+            */
             padding : 1px 3px 1px 1px;
         }
     
@@ -92,7 +93,7 @@
             max-height : 90px;
             width      : auto;
         }
-    
+        
         .listDrop {
             border : 1px solid #25a8e7;
         }
@@ -107,134 +108,6 @@
     
         .draglist_multiple span {
             display : none;
-        }
-    ]]></a:style>
-
-    <a:presentation>
-        <a:main container=".">
-            <div class='list'>
-            </div>
-        </a:main>
-        <a:item
-          class   = "."
-          caption = "span/u"
-          icon    = "span"
-          select  = "span">
-            <div>
-                <span>
-                    <u>-</u>
-                </span>
-            </div>
-        </a:item>
-        <a:dragindicator>
-            <div class='draglist'>
-                <span>
-                    <u>-</u>
-                </span>
-            </div>
-        </a:dragindicator>
-        <a:loading>
-            <div class="loading">Loading...</div>
-        </a:loading>
-        <a:empty caption=".">
-            <div class="message">-</div>
-        </a:empty>
-    </a:presentation>
-</a:list>
-
-<a:list name="list">
-    <a:style><![CDATA[
-        .list{
-            overflow         : auto;
-            position         : relative;
-            border           : 1px solid #c3c3c3;
-            background-color : white;
-            cursor           : default;
-        }
-    
-        .white {
-            background : white;
-        }
-    
-        .list, 
-        .draglist {
-            font-family : Tahoma;
-            font-size   : 8pt;
-        }
-    
-        .list DIV, 
-        .draglist {
-            padding : 0;
-            height  : 18px;
-        }
-    
-        .list SPAN, 
-        .draglist SPAN {
-            padding    : 0 0 0 20px;
-            background : no-repeat 1px center;
-            height     : 16px;
-            float      : left;
-        }
-    
-        .list U, 
-        .draglist U {
-            text-decoration : none;
-            color           : black;
-            cursor          : default;
-            display         : block;
-            padding         : 2px 4px 2px 2px;
-            text-decoration : none;
-            white-space     : nowrap;
-        }
-    
-        .listFocus .indicate U {
-            border  : 1px dotted #BBB;/*#25a8e7;*/
-            color   : black;
-            /*background-color : #e4f4fc;*/
-            padding : 1px 3px 1px 1px;
-        }
-    
-        .list .selected U {
-            background-color : #f0f0f0;
-            color            : black;
-        }
-        
-        .listFocus .selected U, 
-        .draglist U {
-            color            : white;
-            background-color : #25a8e7;
-        }
-    
-        .list #txt_rename {
-            border      : 1px solid #bbb;
-            padding     : 1px 15px 1px 1px;
-            font-family : Tahoma;
-            font-size   : 8pt;
-            color       : black;
-            word-break  : keep-all;
-            overflow    : visible;
-            margin-top  : 0px;
-            cursor      : text;
-            height      : 13px;
-            display     : block;
-            outline     : none;
-        }
-    
-        .list .empty, 
-        .list .offline, 
-        .list .loading {
-            text-align  : center;
-            padding     : 8px 0 0 5px;
-            color       : #AAA;
-            font-weight : normal;
-        }
-    
-        .shortlist{
-            border     : 0;
-            overflow-y : auto;
-            overflow-x : hidden;
-            max-height : 90px;
-            width      : auto;
         }
     ]]></a:style>
 
@@ -432,7 +305,7 @@
     </a:presentation>
 </a:list>
 
-<a:list name="layoutlist">
+<a:list name="iconcaptionlist">
     <a:style><![CDATA[
         .layoutlist {
             width            : 200px;
@@ -623,7 +496,6 @@
         .thumbs_caption label, 
         .dragthumb_caption label {
             padding    : 3px 0 0 0;
-            margin     : 0 2px 0 2px;
             height     : 16px;
             width      : 100%;
             overflow   : hidden;
@@ -742,149 +614,6 @@
         </a:loading>
         <a:empty caption="text()">
             <div class="empty">-</div>
-        </a:empty>
-    </a:presentation>
-</a:list>
-
-<a:list name="list">
-    <a:style><![CDATA[
-        .list {
-            overflow         : auto;
-            position         : relative;
-            border           : 1px solid #c3c3c3;
-            background-color : white;
-            cursor           : default;
-        }
-        
-        .white {
-            background : white;
-        }
-        
-        .list, 
-        .draglist {
-            font-family : Tahoma;
-            font-size   : 8pt;
-        }
-        
-        .list DIV, 
-        .draglist {
-            padding : 0;
-            height : 18px;
-        }
-        
-        .list SPAN, 
-        .draglist SPAN {
-            padding    : 0 0 0 20px;
-            background : no-repeat 1px center;
-            height     : 16px;
-            float      : left;
-        }
-        
-        .list U, 
-        .draglist U {
-            text-decoration : none;
-            color           : black;
-            cursor          : default;
-            display         : block;
-            padding         : 2px 4px 2px 2px;
-            white-space     : nowrap;
-        }
-        
-        .listFocus .indicate U {
-            border  : 1px dotted #BBB;/*#25a8e7;*/
-            color   : black;
-            /*background-color : #e4f4fc;*/
-            padding : 1px 3px 1px 1px;
-        }
-        
-        .list .selected U {
-            background-color : #f0f0f0;
-            color            : black;
-        }
-        
-        .listFocus .selected U, 
-        .draglist U {
-            color            : white;
-            background-color : #25a8e7;
-        }
-        
-        .list #txt_rename {
-            border      : 1px solid #bbb;
-            padding     : 1px 15px 1px 1px;
-            font-family : Tahoma;
-            font-size   : 8pt;
-            color       : black;
-            word-break  : keep-all;
-            overflow    : visible;
-            margin-top  : 0px;
-            cursor      : text;
-            height      : 13px;
-            display     : block;
-            outline     : none;
-        }
-        
-        .list .empty, 
-        .list .offline, 
-        .list .loading {
-            text-align  : center;
-            padding     : 8px 0 0 5px;
-            color       : #AAA;
-            font-weight : normal;
-        }
-        
-        .shortlist {
-            border     : 0;
-            overflow-y : auto;
-            overflow-x : hidden;
-            max-height : 90px;
-            width      : auto;
-        }
-        
-        .listDrop {
-            border : 1px solid #25a8e7;
-        }
-        
-        .draglist_multiple {
-            border     : 2px solid black;
-            width      : 10px;
-            height     : 5px;
-            padding    : 0;
-            background : none;
-        }
-        
-        .draglist_multiple span {
-            display : none;
-        }
-    ]]></a:style>
-
-    <a:presentation>
-        <a:main container=".">
-            <div class='list'>
-            </div>
-        </a:main>
-        <a:item
-          class   = "."
-          caption = "span/u"
-          icon    = "span"
-          select  = "span">
-            <div>
-                <span>
-                    <u>-</u>
-                </span>
-            </div>
-        </a:item>
-        <a:dragindicator>
-            <div class='draglist'>
-                <span>
-                    <u>-</u>
-                </span>
-            </div>
-        </a:dragindicator>
-        <a:loading>
-            <div class="loading">Loading...</div>
-        </a:loading>
-        <a:empty caption=".">
-            <div class="message">-</div>
         </a:empty>
     </a:presentation>
 </a:list>
@@ -1208,12 +937,6 @@
             background-position : 0 -0px;
         }
     ]]></a:style>
-    <!--j:style condition="!IS_IE"><![CDATA[
-        .radiolist #txt_rename{
-            display : block;
-            width : 100px;
-        }
-    ]]></a:style-->
 
     <a:presentation>
         <a:main container="." type="2">
@@ -1247,7 +970,7 @@
 
 <a:list name="checklist">
     <a:style><![CDATA[
-        .checklist{
+        .checklist {
             overflow : auto;
             position : relative;
             cursor   : default;
@@ -1365,12 +1088,6 @@
             background-position : 0 -0px;
         }
     ]]></a:style>
-    <!--j:style condition="!IS_IE"><![CDATA[
-        .checklist #txt_rename{
-            display : block;
-            width : 100px;
-        }
-    ]]></a:style-->
 
     <a:presentation>
         <a:main container="." type="2">

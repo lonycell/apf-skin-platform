@@ -37,9 +37,21 @@
                 <news title="text 3" subtitle="text 31" date="2009-11-20"></news>
             </data>
         </a:model>
+        <h3>Column with TYPE="ICON"</h3>
         <a:datagrid model="mdlNews" options="move|size" width="500">
            <a:each match="[news]">
                <a:column caption="" type="icon" width="40" value="newspaper.png" />
+               <!--a:column caption="Icon" width="40" value="[@title]" /-->
+               <a:column caption="Date" value="[@date]" width="70" />
+               <a:column caption="Title" width="180" value="[@title]" />
+               <a:column caption="Subtitle" value="[@subtitle]" width="100%" />
+           </a:each>
+        </a:datagrid>
+        <br />
+        <h3>Column with OUT IT</h3>
+        <a:datagrid model="mdlNews" options="move|size" width="500">
+           <a:each match="[news]">
+               <a:column caption="Icon" width="40" value="[@title]" />
                <a:column caption="Date" value="[@date]" width="70" />
                <a:column caption="Title" width="180" value="[@title]" />
                <a:column caption="Subtitle" value="[@subtitle]" width="100%" />
