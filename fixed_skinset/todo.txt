@@ -13,14 +13,17 @@ problems:
 - datagrid.propedit component is broken, i can't check the skin
 - modalwindow
   - maximize feature doesn't work in Safari
-
-
+- notifier
+  - hover state doesn't work ???
+- propedit component have to be fixed 
+- preview doesn't work in Safari
+- portal component have to be fixed 
+- radobutton.toolbarradio how to check it ?
+- vertical slider doesn't work, but looks good
 
 =====================
 
-- pager.default is broken
-- portal component have to be fixed 
-- propedit component have to be fixed 
+
 - splitter - how can i check it ?
 - statusbar.status - how to use it ?
 - tab.default is broken http://screencast.com/t/N2FhZDAw
@@ -36,8 +39,6 @@ Answers:
   will make a splitter for you
 - skin="status" will just change the skin of a statusbar
   look at ajax.org for an example
-- datagrid works, 
-- propedit doesn't work
 - pager should work
 - portal is broken
 - upload should work - ask mike about upload
@@ -62,18 +63,15 @@ Missing images
 	- loadingspin.gif is missing
 	
 
-Double skins
-==================================================
-	
-- double pager.default skin (contains changes !!!)
-
-
 
 
 Pytania:
 ====================
 - Ruben o mnulist
   - list.mnulist works strange... 
+- Ruben o Slideshow
+	please look: http://screencast.com/t/NjRiN2E5MWIt
+	first test has been made with Firefox, second with Chrome
 
 
 

@@ -726,6 +726,7 @@
             bottom      : 9px;
             right       : 53px;
             margin      : 0;
+            width       : 300px;
         }
 
         .slidermediaDisabled {

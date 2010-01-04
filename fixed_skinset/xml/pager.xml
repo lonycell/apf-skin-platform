@@ -23,75 +23,6 @@
             cursor     : pointer;
         }
         
-        .pager span:hover, 
-        .pager .current {
-            border  : 1px solid #aaa;
-            padding : 2px 3px 2px 4px;
-            color   : gray;
-        }
-        
-        .pager .next {
-        
-        }
-        
-        .pager .previous {
-        
-        }
-        
-        .pager span.disabled,
-        .pager span.disabled:hover {
-            border  : 0;
-            padding : 3px 5px 3px 4px;
-            color   : #d7d7d7;
-            cursor  : default;
-        }
-    ]]></a:style>
-    <a:style condition="apf.isSafari">
-        .pager span {
-            padding : 3px 5px 3px 4px;
-        }
-        
-        .pager span:hover, 
-        .pager .current {
-            padding : 2px 4px 2px 3px;
-        }
-    </a:style>
-    <a:presentation>
-        <a:main container=".">
-            <div class="pager">
-            </div>
-        </a:main>
-        <a:button caption="text()">
-            <span>-</span>
-        </a:button>
-    </a:presentation>
-</a:pager>
-
-<a:pager name="pager">
-    <a:style><![CDATA[
-        .pager {
-            font-size   : 8pt;
-            color       : #aaa;
-            position    : absolute;
-            right       : 10px;
-            top         : 10px;
-            text-align  : right;
-            line-height : 10px;
-        }
-        
-        .searchnav {
-            position : static;
-            margin   : 0 0px 0 70px;
-        }
-        
-        .pager span {
-            float      : left;
-            padding    : 3px 4px 3px 5px;
-            text-align : center;
-            margin     : 0 1px 0 0;
-            cursor     : pointer;
-        }
-        
         .searchnav span {
             color : white;
         }
@@ -131,14 +62,27 @@
         }
     ]]></a:style>
     <a:style condition="apf.isSafari">
-        .pager span{
+        .pager span {
             padding : 3px 5px 3px 4px;
         }
         .pager span:hover, 
         .pager .current {
-            padding : 2px 4px 2px 3px;
+            padding : 2px 4px 3px 3px;
         }
     </a:style>
+    <a:style condition="apf.isGecko">
+        .pager span:hover, 
+        .pager .current {
+            padding : 2px 3px 3px 4px;
+        }
+    </a:style>
+    <a:style condition="apf.isChrome">
+        .pager span:hover, 
+        .pager .current {
+            padding : 1px 3px 3px 4px;
+        }
+    </a:style>
+    
     <a:presentation>
         <a:main container=".">
             <div class="pager">
@@ -155,7 +99,7 @@
         .pgrnormal {
             font-size     : 9pt;
             color         : #aaa;
-            text-align    : center;
+            text-align    : right;
             line-height   : 10px;
             height        : 15px;
             padding       : 5px 0 7px 0;
@@ -169,8 +113,7 @@
         }
         
         .pgrnormal div {
-            margin : 0 auto;
-            width  : 540px;
+            
         }
         
         .pgrnormal span {
@@ -192,6 +135,7 @@
             border          : 1px solid #ccc;
             color           : gray;
             text-decoration : none;
+            cursor          : pointer;
         }
         
         .pgrnormal .next {
