@@ -1,8 +1,4 @@
 
-- dokoñczyc poprawkê dla list.listtab dla Safari
-
-
-
 problems:
 =========================
 - button.toolbarbutton - "-" chars - http://screencast.com/t/NGY0MmNkMTY
@@ -13,22 +9,25 @@ problems:
 	Char: 9
 	Code: 0
 	URI ID: file:///C:/xampp/htdocs/skin_tests/platform_skins_test/trunk/elements/colorpicker2.js
+- markupedit - what's that ?
+- datagrid.propedit component is broken, i can't check the skin
+- modalwindow
+  - maximize feature doesn't work in Safari
 
 
 
 =====================
-- datagrid.propedit component is broken, i can't check the skin
-- list.mnulist works strange... 
+
 - pager.default is broken
 - portal component have to be fixed 
 - propedit component have to be fixed 
 - splitter - how can i check it ?
 - statusbar.status - how to use it ?
-
 - tab.default is broken http://screencast.com/t/N2FhZDAw
 - tab.lowtab is broken http://screencast.com/t/OTRiZmYwMT
 - upload component doesn't work
 - video component doesn't work
+
 
 
 Answers:
@@ -74,6 +73,7 @@ Double skins
 Pytania:
 ====================
 - Ruben o mnulist
+  - list.mnulist works strange... 
 
 
 

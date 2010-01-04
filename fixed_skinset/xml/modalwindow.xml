@@ -937,6 +937,16 @@
             filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=30);
         }
     ]]></a:style>
+    <a:style condition="apf.isChrome">
+        .winround .bottomBar {
+            margin : 0;
+        }
+    </a:style>
+    <a:style condition="apf.isSafari">
+        .winround .bottomBar {
+            margin : 0;
+        }
+    </a:style>
     
     <a:presentation>
         <a:main 

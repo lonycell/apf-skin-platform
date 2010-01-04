@@ -1514,6 +1514,12 @@
             background-color : #d4d0c8;
         }
     ]]></a:style>
+    <a:style comdition="apf.isSafari">
+        .listtab .btncontainer {
+            top : 1px;
+        }
+    </a:style>
+    
     <a:presentation>
         <a:main container="div">
             <div class='listtab'>
