@@ -1,12 +1,15 @@
 <a:upload name="upload">
     <a:style><![CDATA[
         .upload {
-            /*border    : 1px solid #dcdcdc;
+            /*
+            border      : 1px solid #dcdcdc;
             padding     : 2px;
             font-family : Tahoma;
             font-size   : 11px;
             color       : #4b4b4b;
-            height      : 13px;*/
+            height      : 13px;
+            */
+            position : absolute
         }
     
         .upload form {
