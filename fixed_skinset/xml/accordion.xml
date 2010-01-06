@@ -267,7 +267,7 @@
             position            : relative;
             overflow            : hidden;
             padding             : 0;
-            margin              : 2px 0 0 0; /* 2px Only for demo section */
+            margin              : 0 0 0 0; /* 2px Only for demo section */
             border-right        : 1px solid #c4de9a;
         }
         
@@ -281,7 +281,7 @@
             position            : relative;
             overflow            : hidden;
             padding             : 0;
-            margin              : 2px 0 0 0; /* 2px Only for demo section */
+            margin              : 0 0 0 0; /* 2px Only for demo section */
         }
     
         .accordion_menu .panel {
