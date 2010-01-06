@@ -4,6 +4,7 @@
             width   : 200px;
             padding : 7px 0 7px 0;
             cursor  : default;
+            opacity : 0.8;
         }
     
         .notifier .lt {

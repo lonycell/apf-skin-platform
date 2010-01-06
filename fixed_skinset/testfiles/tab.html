@@ -5,7 +5,7 @@
         
         <script src="trunk/apf.js"></script>
     </head>
-    <body>
+    <body style="margin:0;">
         <a:skin src="skins.xml" media-path="images/" icon-path="icns/" />
         
         <!--
@@ -14,12 +14,11 @@
         tablowms
         -->
         
-        
-        <a:tab id="tab" skin="tablowms">
+        <a:tab id="tab2" width="200" height="300" onafterswitch="alert(1)">
             <a:page caption="General">
                 <a:checkbox>Example</a:checkbox>
                 <a:button>Example</a:button>
-             </a:page>
+            </a:page>
             <a:page caption="Advanced">
                 <a:checkbox>Test checkbox</a:checkbox>
                 <a:checkbox>Test checkbox</a:checkbox>
@@ -30,5 +29,58 @@
                 <a:checkbox>This better?</a:checkbox>
             </a:page>
         </a:tab>
+        
+        <a:window visible="true" width="400" height="200">
+            <a:tab id="tab" anchors="10 10 20 10">
+                <a:page caption="General">
+                    <a:checkbox>Example</a:checkbox>
+                    <a:button>Example</a:button>
+                 </a:page>
+                <a:page caption="Advanced">
+                    <a:checkbox>Test checkbox</a:checkbox>
+                    <a:checkbox>Test checkbox</a:checkbox>
+                    <a:checkbox>Test checkbox</a:checkbox>
+                </a:page>
+                <a:page caption="Ajax.org">
+                    <a:checkbox>This ok?</a:checkbox>
+                    <a:checkbox>This better?</a:checkbox>
+                </a:page>
+            </a:tab>
+        </a:window>
+        
+        <!--a:window visible="true" width="400" height="200" resizable="true">
+            <a:tab id="tab2" left="0" right="0" height="100" skin="tablowms">
+                <a:page caption="General">
+                    <a:checkbox>Example</a:checkbox>
+                    <a:button>Example</a:button>
+                </a:page>
+                <a:page caption="Advanced">
+                    <a:checkbox>Test checkbox</a:checkbox>
+                    <a:checkbox>Test checkbox</a:checkbox>
+                    <a:checkbox>Test checkbox</a:checkbox>
+                </a:page>
+                <a:page caption="Ajax.org">
+                    <a:checkbox>This ok?</a:checkbox>
+                    <a:checkbox>This better?</a:checkbox>
+                </a:page>
+            </a:tab>
+        </a:window>
+        <a:window visible="true" width="400" height="200">
+            <a:tab id="tab" anchors="10 10 10 10" skin="tablowms">
+                <a:page caption="General">
+                    <a:checkbox>Example</a:checkbox>
+                    <a:button>Example</a:button>
+                 </a:page>
+                <a:page caption="Advanced">
+                    <a:checkbox>Test checkbox</a:checkbox>
+                    <a:checkbox>Test checkbox</a:checkbox>
+                    <a:checkbox>Test checkbox</a:checkbox>
+                </a:page>
+                <a:page caption="Ajax.org">
+                    <a:checkbox>This ok?</a:checkbox>
+                    <a:checkbox>This better?</a:checkbox>
+                </a:page>
+            </a:tab>
+        </a:window-->
     </body>
 </html>
