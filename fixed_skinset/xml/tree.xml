@@ -54,6 +54,7 @@
         
         .checktree .focusbug {
             padding-left : 0;
+            overflow     : auto;
         }
         
         .dragchecktree {
