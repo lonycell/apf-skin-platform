@@ -11459,6 +11459,8 @@
     </a:list>
     <a:textbox name="textbox">
         <a:alias>input</a:alias>
+        <a:alias>secret</a:alias>
+        
         <a:style><![CDATA[
         .tb {
             background: white url("images/textarea_background2.png") no-repeat 0 0;
@@ -12747,6 +12749,8 @@
     </a:modalwindow>
     <a:textbox name="textbox">
         <a:alias>input</a:alias>
+        <a:alias>secret</a:alias>
+        
         <a:style><![CDATA[
         .tb {
             background: white url("images/textarea_background2.png") no-repeat 0 0;
@@ -25664,6 +25668,8 @@
     </a:list>
     <a:textbox name="textbox">
         <a:alias>input</a:alias>
+        <a:alias>secret</a:alias>
+        
         <a:style><![CDATA[
         .tb {
             background: white url("images/textarea_background2.png") no-repeat 0 0;
