@@ -1266,7 +1266,7 @@
             margin-top : 17px;
         }
     ]]></a:style>
-    <a:style condition="apf.isGecko &amp;&amp; !apf.isGecko3"><![CDATA[
+    <a:style condition="apf.isGecko &amp;&amp; apf.versionGecko &lt; 3"><![CDATA[
         .propedit .headings{
             height : 18px;
         }
@@ -1307,7 +1307,7 @@
             padding : 1px 1px 0 2px;
         }
     ]]></a:style>
-    <a:style condition="apf.isGecko3">
+    <a:style condition="apf.versionGecko  &gt;= 3">
         .propedit .records .cellselected dl{
         }
 
@@ -2344,7 +2344,7 @@
         }
     ]]>
         </a:style>
-        <a:style condition="apf.isGecko &amp;&amp; !apf.isGecko3"><![CDATA[
+        <a:style condition="apf.isGecko &amp;&amp; apf.versionGecko &lt; 3"><![CDATA[
         .datagrid .headings{
             padding-top : 2px;
             height : 15px;
@@ -2867,7 +2867,7 @@
             }
         ]]>
         </a:style>
-        <a:style condition="apf.isGecko &amp;&amp; !apf.isGecko3"><![CDATA[
+        <a:style condition="apf.isGecko &amp;&amp; apf.versionGecko &lt; 3"><![CDATA[
             .spreadsheet .headings {
                 height : 18px;
             }
@@ -2914,7 +2914,7 @@
             }
         ]]>
         </a:style>
-        <a:style condition="apf.isGecko3">
+        <a:style condition="apf.versionGecko  &gt;= 3">
             .spreadsheet .records .cellselected b {
                 margin  : -1px -1px 0 -2px;
                 padding : 0 0 1px 2px;
@@ -3489,7 +3489,7 @@
         }
     ]]>
         </a:style>
-        <a:style condition="apf.isGecko &amp;&amp; !apf.isGecko3"><![CDATA[
+        <a:style condition="apf.isGecko &amp;&amp; apf.versionGecko &lt; 3"><![CDATA[
         .propedit .headings{
             height : 18px;
         }
@@ -3531,7 +3531,7 @@
         }
     ]]>
         </a:style>
-        <a:style condition="apf.isGecko3">
+        <a:style condition="apf.versionGecko  &gt;= 3">
         .propedit .records .cellselected dl{
         }
     
@@ -15239,7 +15239,7 @@
             margin-top : 17px;
         }
     ]]></a:style>
-    <a:style condition="apf.isGecko &amp;&amp; !apf.isGecko3"><![CDATA[
+    <a:style condition="apf.isGecko &amp;&amp; apf.versionGecko &lt; 3"><![CDATA[
         .propedit .headings{
             height : 18px;
         }
@@ -15280,7 +15280,7 @@
             padding : 1px 1px 0 2px;
         }
     ]]></a:style>
-    <a:style condition="apf.isGecko3">
+    <a:style condition="apf.versionGecko  &gt;= 3">
         .propedit .records .cellselected dl{
         }
 
@@ -16524,7 +16524,7 @@
         }
     ]]>
         </a:style>
-        <a:style condition="apf.isGecko &amp;&amp; !apf.isGecko3"><![CDATA[
+        <a:style condition="apf.isGecko &amp;&amp; apf.versionGecko &lt; 3"><![CDATA[
         .datagrid .headings{
             padding-top : 2px;
             height : 15px;
@@ -17047,7 +17047,7 @@
             }
         ]]>
         </a:style>
-        <a:style condition="apf.isGecko &amp;&amp; !apf.isGecko3"><![CDATA[
+        <a:style condition="apf.isGecko &amp;&amp; apf.versionGecko &lt; 3"><![CDATA[
             .spreadsheet .headings {
                 height : 18px;
             }
@@ -17094,7 +17094,7 @@
             }
         ]]>
         </a:style>
-        <a:style condition="apf.isGecko3">
+        <a:style condition="apf.versionGecko  &gt;= 3">
             .spreadsheet .records .cellselected b {
                 margin  : -1px -1px 0 -2px;
                 padding : 0 0 1px 2px;
@@ -17669,7 +17669,7 @@
         }
     ]]>
         </a:style>
-        <a:style condition="apf.isGecko &amp;&amp; !apf.isGecko3"><![CDATA[
+        <a:style condition="apf.isGecko &amp;&amp; apf.versionGecko &lt; 3"><![CDATA[
         .propedit .headings{
             height : 18px;
         }
@@ -17711,7 +17711,7 @@
         }
     ]]>
         </a:style>
-        <a:style condition="apf.isGecko3">
+        <a:style condition="apf.versionGecko  &gt;= 3">
         .propedit .records .cellselected dl{
         }
 
