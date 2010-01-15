@@ -7,7 +7,6 @@ problems:
 - datagrid.propedit component is broken, i can't check the skin
 - modalwindow
   - maximize feature doesn't work in Safari
-- propedit component have to be fixed 
 - portal component have to be fixed 
 - radobutton.toolbarradio how to check it ?
 - vertical slider doesn't work, but looks good
