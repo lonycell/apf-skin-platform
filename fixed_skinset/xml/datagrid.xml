@@ -873,9 +873,10 @@
         }
         
         .datagrid .headings div {
-            display  : -moz-inline-box;
-            overflow : visible;
-            position : relative;
+            display    : -moz-inline-box;
+            overflow   : visible;
+            position   : relative;
+            margin-top : -2px;
         }
         
         .datagrid .records {
