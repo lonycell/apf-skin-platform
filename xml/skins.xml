@@ -1481,7 +1481,7 @@
             border-left : 1px solid white;
             margin-right : -3px;
             margin-left : -5px;
-            padding : 1px 3px 1px 3px;
+            padding : 1px 4px 1px 3px;
             
             background : #e6e6e6 no-repeat 0 50%;
             overflow : hidden;
@@ -14994,7 +14994,7 @@
             border-left : 1px solid white;
             margin-right : -3px;
             margin-left : -5px;
-            padding : 1px 3px 1px 3px;
+            padding : 1px 4px 1px 3px;
 
             background : #e6e6e6 no-repeat 0 50%;
             overflow : hidden;
