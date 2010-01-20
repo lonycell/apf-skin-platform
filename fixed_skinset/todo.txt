@@ -4,7 +4,6 @@ problems:
 - accordion is a little bit broken in Chrome and Safari
 - button.toolbarbutton - "-" chars - http://screencast.com/t/NGY0MmNkMTY
 - markupedit - what's that ?
-- datagrid.propedit component is broken, i can't check the skin
 - modalwindow
   - maximize feature doesn't work in Safari
 - portal component have to be fixed 
@@ -24,16 +23,16 @@ Missing images
 
 - propedit
   - sort_asc_n.gif is missing
-	- sort_desc_n.gif is missing
-	- cell.gif
-- datagrid.spreadsheet
-	- sort_asc_n.gif is missing
-	- sort_desc_n.gif is missing
+  - sort_desc_n.gif is missing
+  - cell.gif
 - datagrid.propedit
-	- sort_asc_n.gif is missing
-	- sort_desc_n.gif is missing
+  - sort_asc_n.gif is missing
+  - sort_desc_n.gif is missing
 - dropdown.dropdowneditor
-	- loadingspin.gif is missing
+  - dddisabled.gif 
+- tab.tablowms
+   - tabdiv.gif
+
 	
 
 	
