@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://ajax.org/2005/aml" >
+    <head>
+        <title>Caldropdown Gen API</title>
+        
+        <script src="trunk/apf.js"></script>
+    </head>
+    <body>
+        <a:skin src="skins.xml" media-path="images/" icon-path="icns/" />
+        
+           <!--a:iconmap id="tbicons" src="toolbar.icons.gif"
+               type="horizontal" size="20" offset="2,2"></a:iconmap>
+         
+           <a:menu id="msub">
+               <a:item icon="tbicons:12">test</a:item>
+               <a:item icon="tbicons:14">test2</a:item>
+           </a:menu>
+         
+           <a:menu id="mmain">
+               <a:item icon="tbicons:1">table_wizard</a:item>
+               <a:item icon="tbicons:2" hotkey="Ctrl+M">table_wizard</a:item>
+               <a:divider></a:divider>
+               <a:radio>item 1</a:radio>
+               <a:radio>item 2</a:radio>
+               <a:radio>item 3</a:radio>
+               <a:radio>item 4</a:radio>
+               <a:divider></a:divider>
+               <a:check hotkey="Ctrl+T">item check 1</a:check>
+               <a:check hotkey="F3">item check 2</a:check>
+               <a:divider></a:divider>
+               <a:item icon="tbicons:11" submenu="msub">table_wizard</a:item>
+               <a:item icon="tbicons:10">table_wizard</a:item>
+           </a:menu>
+           <a:window 
+              visible     = "true" 
+              width       = "200"
+              height      = "190"
+              contextmenu = "mmain"
+              center      = "true">
+            </a:window-->
+            
+            <a:menu id="menu1">
+                <a:item>Tutorials</a:item>
+                <a:item icon="email.png">Contact</a:item>
+                <a:divider></a:divider>
+                <a:item 
+                  icon    = "application_view_icons.png"
+                  hotkey  = "Ctrl+T"
+                  onclick = "setTimeout(function(){alert('You did it');}, 1000)">
+                  Tutorials</a:item>
+                <a:divider />
+                <a:item disabled="true">Visit Ajax.org</a:item>
+                <a:item>Exit</a:item>
+            </a:menu>
+            <a:window
+              width     = "400"
+              height    = "150"
+              visible   = "true"
+              resizable = "true"
+              title     = "Mail message"
+              icon      = "email.png">
+                <a:toolbar>
+                    <a:menubar>
+                        <a:button submenu="menu1">File</a:button>
+                        <a:button submenu="menu1" disabled="true">Edit</a:button>
+                    </a:menubar>
+                </a:toolbar>
+            </a:window>
+
+           
+
+  
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<a:label name="label">
+    <a:style><![CDATA[
+        .label {
+            font-size   : 8pt;
+            font-family : Tahoma;
+            overflow    : hidden;
+            cursor      : default;
+            line-height : 1.5em;
+            padding     : 0 0 0 0;
+        }
+        
+        .packTitleText {
+            overflow : visible;
+        }
+    
+        .labelDisabled {
+            color : #bebebe;
+        }
+        
+        .tiny {
+            font-size : 9px;
+        }
+        
+        .error .label {
+            background : url(images/alert.png) no-repeat 0 0;
+            min-height : 37px;
+            padding    : 3px 0 0 45px;
+        }
+    ]]></a:style>
+
+    <a:presentation>
+        <a:main caption="." for="@for">
+            <div class="label"> </div>
+        </a:main>
+    </a:presentation>
+</a:label>
+
+<a:label name="labelmedia">
+    <a:style><![CDATA[
+        .labelmedia {
+            font-size   : 8pt;
+            font-family : Tahoma;
+            overflow    : hidden;
+            cursor      : default;
+            line-height : 1.5em;
+            margin      : 0;
+        }
+
+        .labelmediaDisabled {
+            color : #bebebe;
+        }
+
+        .tiny {
+            font-size : 9px;
+        }
+
+        .error .labelmedia {
+            background : url(images/alert.png) no-repeat 0 0;
+            min-height : 37px;
+            padding    : 3px 0 0 45px;
+        }
+    ]]></a:style>
+    
+    <a:presentation>
+        <a:main caption="." for="@for">
+            <div class="labelmedia"> </div>
+        </a:main>
+    </a:presentation>
+</a:label>

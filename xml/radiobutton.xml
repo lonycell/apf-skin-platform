@@ -1,0 +1,141 @@
+<a:radiobutton name="toolbarradio">
+    <a:style><![CDATA[
+        .toolbar .subbar .tbradio {
+            display         : block;
+            height          : 22px;
+            float           : left;
+            cursor          : default;
+            margin          : 2px 1px 0 1px;
+            text-decoration : none;
+            color           : #000000;
+            text-align      : center;
+            padding         : 0 4px 0 0;
+            line-height     : 13px;
+        }
+
+        .toolbar .subbar .tbradio div {
+            float   : left;
+            margin  : 0;
+            height  : 17px;
+            padding : 4px 0 0 7px;
+            border  : 0;
+        }
+
+        .toolbar .subbar .tbradioOver {
+            background : url("images/toolbar_a_hover_right.png") no-repeat top right;
+        }
+
+        .toolbar .subbar .tbradioOver div {
+            background : url("images/toolbar_a_hover.png") no-repeat top left;
+        }
+
+        .toolbar .subbar .tbradioDown, 
+        .toolbar .subbar .tbradioChecked {
+            background : url("images/toolbar_a_down_right.png") no-repeat top right;
+        }
+
+        .toolbar .subbar .tbradioDown div, 
+        .toolbar .subbar .tbradioChecked div {
+            background : url("images/toolbar_a_down.png") no-repeat top left;
+        }
+
+        .toolbar .subbar .tbradioDisabled, 
+        .toolbar .subbar .tbradioDisabled div {
+            background : none;
+            color      : #bebebe;
+        }
+
+        .toolbar .subbar .tbradio span {
+            display : block;
+            float   : left;
+            width   : 16px;
+            height  : 16px;
+            margin  : -1px 3px 0 0;
+        }
+    ]]></a:style>
+
+    <a:presentation>
+        <a:main background="div/span" icon="div/span">
+            <div class='tbradio'>
+                <div>
+                    <span> </span>
+                </div>
+            </div>
+        </a:main>
+    </a:presentation>
+</a:radiobutton>
+
+<a:radiobutton name="radiobutton">
+    <a:style><![CDATA[
+        .rbcontainer {
+            padding    : 2px 2px 2px 2px;
+            _padding   : 2px 2px 2px 0; /* IE6 fix */
+            position   : relative;
+            min-height : 13px;
+            color      : #4b4b4b;
+            cursor     : default;
+            _clear     : both; /* IE6 fix */
+        }
+        
+        .rbcontainer span {
+            font-family : Tahoma;
+            font-size   : 11px;
+            padding     : 1px 3px 2px 3px;
+            margin      : -1px 0 0 0;
+            overflow    : hidden;
+            display     : block;
+            float       : left;
+            line-height : 13px;
+        }
+        
+        .rbcontainerFocus span {
+            padding : 0 2px 1px 2px;
+            border  : 1px dotted #BBB;
+        }
+
+        .rbcontainer .radio {
+            width      : 12px;
+            height     : 12px;
+            overflow   : hidden;
+            podition   : relative;
+            float      : left;
+            margin     : 1px 2px 0 0;
+            _padding   : 0;
+            background : url("images/radio.png") no-repeat 0 -12px;
+        }
+
+        .rbcontainerDown .radio {
+            background-position : 0 -36px;
+        }
+
+        .rbcontainerChecked .radio {
+            background-position : 0 -24px;
+        }
+        
+        .rbcontainerDisabled .radio {
+            background-position : 0 -0px;
+        }
+        
+        .rbcontainerDisabled span {
+            color : #bebebe;
+        }
+        
+        .rbcontainerError span {
+            background-color : #ffb500;
+            color            : #fbfbfb;
+        }
+        
+        .rbcontainer br {
+            display : none;
+        }
+    ]]></a:style>
+
+    <a:presentation>
+        <a:main label="span">
+            <div class="rbcontainer">
+                <div class="radio"> </div>
+                <span>-</span>
+            </div>
+        </a:main>
+    </a:presentation>
+</a:radiobutton>

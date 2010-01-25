@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://ajax.org/2005/aml" >
+    <head>
+        <title>Caldropdown Gen API</title>
+        
+        <script src="trunk/apf.js"></script>
+    </head>
+    <body>
+        <a:skin src="skins.xml" media-path="images/" icon-path="icns/" />
+        
+        <a:hbox height="140" margin="10 0 10 0" id="test">
+                    <a:bar skin="basic" edge="30">
+                        <a:upload id="uplApp" caption="Upload" value=""
+                          data          = ""
+                          time-limit    = "100000"
+                          noflash       = "true"
+                          rel           = "btnUploadApp"
+                          target        = "http://www.ajax.org/uploadprj.php"
+                          onreceive     = "upLoadOnReceive(event);"
+                          oncancel      = "pgUpload.clear()"
+						  onafterbrowse = ""
+                          ontimeout     = "
+                            pgUpload.hide();
+                            errorUpl.setAttribute('value', 'The server takes too long to respond');
+                            errorUpl.show();" />
+
+                        <a:label><strong>Upload a file</strong></a:label>
+                        <a:table columns="50%,50%" padding="5" margin="5 0 0 0" cellheight="24">
+                            <a:button id="btnUploadApp"
+                              caption  = "Browse file..."
+                              default  = "true"
+                              disabled = "{uplApp.uploading}"
+                              onclick  = "uplApp.browse();pgUpload.show();errorUpl.hide();" />
+							  
+                            <a:button id="sendBtn"
+                              caption  = "{uplApp.uploading ? 'Cancel' : 'Send'}"
+                              disabled = "{!uplApp.value}"
+                              onclick  = "
+                                  if (uplApp.uploading) {
+                                      uplApp.cancel();
+                                  }
+                                  else {
+                                      uplApp.upload();
+                                      pgUpload.start();
+                                      pgUpload.show();
+                                      errorUpl.hide();
+                                      uplApp.setProperty('uploading', true);
+                                  }" />
+                            <a:progressbar id="pgUpload"
+                               class    = "lowlabel"
+                               span     = "2"
+                               disabled = "{!uplApp.uploading}" />
+                        </a:table>
+                        <a:label id="errorUpl"
+                          left    = "10"
+                          top     = "55"
+                          visible = "false"
+                          value   = "An error"/>
+                    </a:bar>
+                    <a:bar skin="basic">
+                        <a:label height="20">
+                            or <strong>Paste your code</strong>
+                        </a:label>
+                        <a:textarea id="pasteArea"
+                          width="265"
+                          height="60"
+                          style="margin-bottom:10px;"
+                          onfocus = "this.nextSibling.enable();"
+                          onblur  = "
+                            if(this.getValue() == ''){
+                                this.nextSibling.disable()
+                            }">
+                        </a:textarea>
+                        <a:button
+                          caption  = "Send"
+                          width    = "90"
+                          disabled = "true"
+                          onclick  = "analyzePaste();pasteArea.disable();this.disable();" />
+                    </a:bar>
+                </a:hbox>
+        
+        
+        <!--a:list skin="thumbnail" width="300" height="230">
+            <a:item image="skinimg/thinkgeek/thinkgeek1.jpg">
+                The Netherlands
+            </a:item>
+            <a:item image="skinimg/thinkgeek/thinkgeek2.jpg">
+                United States of America
+            </a:item>
+            <a:item image="skinimg/thinkgeek/thinkgeek3.jpg">
+                Poland
+            </a:item>
+        </a:list>
+ 
+       <a:upload id="uplMain"
+         target    = "http://localhost/upload.php"
+         ontimeout = "alert('It seems the server went away')"
+         oncancel  = "alert('Could not upload logo')"
+         onreceive = "lstImages.add(arguments[0])" />
+     
+       <a:button 
+         caption  = "Browse file..." 
+         onclick  = "uplMain.browse()" 
+         disabled = "{uplMain.uploading}" 
+         top      = "400" 
+         left     = "300" />
+       <a:button 
+         top     = "500" 
+         left    = "300" 
+         caption = "{uplMain.uploading ? 'Cancel' : 'Send'}" 
+         disabled="{!uplMain.value}" onclick="
+           if (uplMain.uploading)
+               uplMain.cancel();
+           else
+               uplMain.upload();
+         " /-->
+    </body>
+</html>

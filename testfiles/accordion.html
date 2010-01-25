@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://ajax.org/2005/aml" >
+    <head>
+        <title>Caldropdown Gen API</title>
+        
+        <script src="trunk/apf.js"></script>
+    </head>
+    <body>
+        <a:skin src="skins.xml" media-path="images/" icon-path="icns/" />
+        
+
+        <!--a:accordion
+          height          = "100"
+          animtype        = "easein easein"
+          animdelay       = "10"
+          multiexpand     = "false"
+          expand          = "click"
+          startexpanded   = "false"
+          skin            = "accordion_menu">
+            <a:bar icon="Elephant_48x48.png">
+                <h1 class="animal">Elephant</h1>
+            </a:bar>
+            <a:bar icon="Butterfly_48x48.png">
+                <h1 class="animal">Butterfly</h1>
+            </a:bar>
+            <a:bar icon="Dolphin_48x48.png">
+                <h1 class="animal">Dolphin</h1>
+            </a:bar>
+            <a:bar icon="Hippopotamus_48x48.png">
+                <h1 class="animal">Hippopotamus</h1>
+            </a:bar>
+            <a:bar icon="Panda_48x48.png">
+                <h1 class="animal">Panda</h1>
+            </a:bar>
+            <a:bar icon="Turtle_48x48.png" expanded="true">
+                <h1 class="animal">Turtle</h1>
+            </a:bar>
+        </a:accordion-->
+
+        <!--a:accordion
+          width          = "250"
+          animtype       = "easein easein"
+          animdelay      = "10"
+          expand         = "click"
+          startexpanded  = "false">
+            <a:bar
+              title     = "Tree"
+              icon      = "accordion_apf_icon.png"
+              expanded  = "true">
+                <br /><br /><br /><br /><br />
+            </a:bar>
+            <a:bar 
+              title     = "Elements" 
+              icon      = "accordion_apf_icon.png">
+               <br /><br /><br /><br /><br />
+            </a:bar>
+            <a:bar title="Blog" icon="accordion_apf_icon.png">
+               <br /><br /><br /><br /><br />
+            </a:bar>
+        </a:accordion-->
+
+
+
+        <a:accordion
+          id="acc"
+          animtype       = "easein easein"
+          animdelay      = "50"
+          expand         = "click"
+          multiexpand    = "false"
+          skin           = "accordion_apf_hor"
+          startexpanded  = "false" width="300">
+            <a:bar
+              title     = "Tree"
+              icon      = "accordion_apf_icon_hor.png"
+              >
+               <h3>title</h3>
+               <ol>
+                   <li>dsdsd</li>
+                   <li>dsdsd</li>
+                   <li>dsdsd</li>
+                   <li>dsdsd</li>
+                   <li>dsdsd</li>
+                   
+               </ol>
+               <div style="width:100px;overflow:auto"></div>
+            </a:bar>
+            <a:bar 
+              title     = "Elements" 
+              icon      = "accordion_apf_icon_hor.png" expanded  = "true">
+               <div style="width:100px;overflow:auto"></div>
+            </a:bar>
+            <a:bar title="Blog" icon="accordion_apf_icon_hor.png">
+              <div style="width:100px;overflow:auto"></div>
+            </a:bar>
+        </a:accordion>
+        
+        <!--a:accordion 
+           width           = "250" 
+           animtype        = "easein easein" 
+           animdelay        = "10" 
+           expand       = "click" 
+           startexpanded  = "false"> 
+            <a:bar 
+              title    = "Tree" 
+              icon     = "accordion_apf_icon.png" 
+              expanded  = "true"> 
+              <br /><br /><br /><br /><br />
+            </a:bar> 
+            <a:bar  
+              title    = "Elements"  
+              icon     = "accordion_apf_icon.png"> 
+               <br /><br /><br /><br /><br />
+            </a:bar> 
+            <a:bar title="Blog" icon="accordion_apf_icon.png"> 
+              <br /><br /><br /><br /><br />
+            </a:bar> 
+         </a:accordion-->
+    </body>
+</html>
