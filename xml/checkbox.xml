@@ -27,10 +27,6 @@
             border  : 1px dotted #BBB;
         }
 
-        .cbcontainerChecked.cbcontainerDown.cbcontainerFocus .checkbox {
-            background-position : 0 -48px;
-        }
-
         .cbcontainer .checkbox {
             width      : 12px;
             height     : 12px;
@@ -45,22 +41,30 @@
         }
 
         .cbcontainerDown .checkbox {
-            background-position : 0 -36px;
-        }
-
-        .cbcontainerChecked .checkbox {
             background-position : 0 -24px;
         }
         
+        .cbcontainerDisabled .checkbox {
+            background-position : 0 0;
+        }
+        
+        .cbcontainerChecked .checkbox {
+            background-position : -12px -12px;
+        }
+        
+        .cbcontainerDown.cbcontainerChecked .checkbox {
+            background-position : -12px -24px;
+        }
+        
+        .cbcontainerDisabled.cbcontainerChecked .checkbox {
+            background-position : -12px 0;
+        }
+
         .cbcontainerError span {
             background-color : #ffb500;
             color            : #fbfbfb;
         }
-        
-        .cbcontainerDisabled .checkbox {
-            background-position : 0 -0px;
-        }
-        
+
         .cbcontainerDisabled span {
             color : #bebebe;
         }
@@ -75,6 +79,23 @@
             display     : block;
         }
     ]]></a:style>
+    <a:style condition="apf.isIE">
+        .cbcontainerChecked .checkbox {
+            background-position-x : -12px;
+        }
+        
+        .cbcontainer .checkbox {
+            background-position-y : -12px;
+        }
+        
+        .cbcontainerDown .checkbox {
+            background-position-y : -24px;
+        }
+        
+        .cbcontainerDisabled .checkbox {
+            background-position-y : 0;
+        }
+    </a:style>
 
     <a:presentation>
         <a:main label="span/text()">
