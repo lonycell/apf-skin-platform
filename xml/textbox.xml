@@ -96,15 +96,6 @@
             background-position : 0 -14px;
         }
     ]]></a:style>
-    <a:style condition="apf.isIE &amp;&amp; !apf.isIE8"><![CDATA[
-        .tbempty input {
-            margin : 0 0 0 -7px;
-        }
-        
-        .search .tbempty input{
-            margin : 0 0 0 -14px;
-        }
-    ]]></a:style>
     <a:style condition="apf.isSafari"><![CDATA[
         .tbempty input {
             margin : -1px 0 0 0;
