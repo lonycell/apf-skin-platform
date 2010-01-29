@@ -332,6 +332,8 @@
             border        : 0;
             margin-top    : -26px;
             _margin-right : -6px; /* IE6 bug fix */
+            overflow      : hidden;
+            position      : relative;
         }
         
         .windowFocus {
@@ -348,6 +350,8 @@
             border       : 0;
             margin-top   : -26px;
             _margin-left : -5px; /* IE6 bug fix */
+            overflow     : hidden;
+            position     : relative;
         }
         
         .window .title {
