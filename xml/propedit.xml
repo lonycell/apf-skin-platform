@@ -253,7 +253,7 @@
 
         .ddjmlcontainer {
             /*
-            padding  : 5px;
+            padding : 5px;
             */
             overflow : hidden;
         }
@@ -445,7 +445,7 @@
             background-color : #f0f0f0;
             color            : black;
         }
-        .propeditFocus .row .selected>span dl {
+        .propeditFocus .row .selected>span dl{
             color            : white;
             background-color : #25a8e7;
             border           : 1px solid #327fbd;
