@@ -259,11 +259,6 @@
             background-position : 0 0;
         }
     ]]></a:style>
-    <a:style condition="apf.isIE7">
-        .slider11_ver .top {
-            bottom:-5px;
-        }
-    </a:style>
     
     <a:presentation>
         <a:main 
@@ -286,14 +281,17 @@
 <a:slider name="slider16_ver">
     <a:style><![CDATA[
         .slider16_ver {
-            background     : url("images/bar16x_bottom.png") no-repeat -16px bottom;
-            height         : 300px;
-            width          : 16px;
-            position       : relative;
-            font-family    : Tahoma;
-            font-size      : 9px;
-            text-align     : center;
-            padding-bottom : 7px;
+            background-image    : url("images/bar16x_bottom.png");
+            background-repeat   : no-repeat;
+            background-position : -16px bottom;
+            height              : 300px;
+            width               : 16px;
+            position            : relative;
+            font-family         : Tahoma;
+            font-size           : 9px;
+            text-align          : center;
+            padding-bottom      : 7px;
+            overflow            : hidden;
         }
         
         .slider16_verDisabled {
@@ -301,15 +299,17 @@
         }
         
         .slider16_ver .top {
-            background : url("images/bar16x_top.png") no-repeat -16px top;
-            width      : 16px;
-            height     : auto;
-            overflow   : hidden;
-            position   : absolute;
-            top        : 0;
-            left       : 0;
-            bottom     : 7px;
-            z-index    : 1000;
+            background-image    : url("images/bar16x_top.png");
+            background-repeat   : no-repeat;
+            background-position : -16px top;
+            width               : 16px;
+            height              : auto;
+            overflow            : hidden;
+            position            : absolute;
+            top                 : 0;
+            left                : 0;
+            bottom              : 7px;
+            z-index             : 1000;
         }
         
         .slider16_verDisabled .top {
@@ -339,11 +339,6 @@
             background-position : -32px 0;
         }
     ]]></a:style>
-    <a:style condition="apf.isIE7">
-        .slider16_ver .top {
-            bottom : 0;
-        }
-    </a:style>
     
     <a:presentation>
         <a:main 
@@ -362,7 +357,6 @@
         </marker>
     </a:presentation>
 </a:slider>
-
 <a:slider name="slider_ver">
     <a:style><![CDATA[
         .slider_ver {
