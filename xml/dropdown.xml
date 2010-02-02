@@ -288,7 +288,7 @@
           label       = "div[2]/text()" 
           button      = "." 
           width-diff  = "-1" 
-          item-height = "21.1">
+          item-height = "19">
             <div class='dropdown'>
                 <div class='dropdownLeftBorder'> </div>
                 <div class='dropdownlabel'>-</div>
