@@ -494,7 +494,7 @@
             margin-top : 17px;
         }
     ]]></a:style>
-    <a:style condition="apf.isGecko &amp;&amp; apf.versionGecko &lt; 3"><![CDATA[
+    <a:style condition="apf.isGecko &amp;&amp; apf.versionFF &lt; 3"><![CDATA[
         .propedit .headings {
             height : 18px;
         }
@@ -535,7 +535,7 @@
             padding  : 1px 1px 0 2px;
         }
     ]]></a:style>
-    <a:style condition="apf.versionGecko &gt;= 3">
+    <a:style condition="apf.versionFF &gt;= 3">
         .propedit .records .cellselected dl {
         }
     
@@ -866,7 +866,7 @@
             float : left;
         }
     ]]></a:style>
-    <a:style condition="apf.isGecko &amp;&amp; apf.versionGecko &lt; 3"><![CDATA[
+    <a:style condition="apf.isGecko &amp;&amp; apf.versionFF &lt; 3"><![CDATA[
         .datagrid .headings {
             padding-top : 2px;
             height      : 15px;

@@ -370,7 +370,7 @@
             margin-top : 17px;
         }
     ]]></a:style>
-    <a:style condition="apf.isGecko &amp;&amp; apf.versionGecko &lt; 3"><![CDATA[
+    <a:style condition="apf.isGecko &amp;&amp; apf.versionFF &lt; 3"><![CDATA[
         .propedit .headings {
             height : 18px;
         }
