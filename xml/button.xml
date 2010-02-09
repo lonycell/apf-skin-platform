@@ -211,7 +211,7 @@
     ]]></a:style>
     <a:presentation>
         <a:main 
-          caption    = "div/text()" 
+          caption    = "div/span/text()"
           background = "div/span" 
           icon       = "div/span">
             <div class='toolbarbutton'>
