@@ -216,7 +216,7 @@
           icon       = "div/span">
             <div class='toolbarbutton'>
                 <div>
-                    <span> </span>
+                    <span>-</span>
                 </div>
             </div>
         </a:main>
