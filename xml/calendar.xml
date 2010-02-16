@@ -150,14 +150,14 @@
     ]]></a:style>
     <a:style condition="apf.isIE">
         .calendar .calcontent .row .cell {
-            float:left;
+            float : left;
         }
         
         .calendar .daysofweek .dayofweek {
-            float:left;
+            float : left;
         }
     </a:style>
-    <a:style condition="apf.isIE7">
+    <a:style condition="apf.versionFF &lt;= 2">
         .calendar .calcontent .row .cell {
             float : left;
         }
