@@ -1,196 +1,198 @@
-<a:textbox name="textarea">
-    <a:style><![CDATA[
-        .ta {
-            border      : 1px solid #c3c3c3;
-            background  : white url("images/textarea_background2.png") no-repeat top left;
-            /*background-attachment : fixed !important; background-attachment: scroll; */
-            color       : #4b4b4b;
-            padding     : 6px;
-            font-family : Tahoma;
-            font-size   : 8pt;
-            overflow    : auto;
-            outline     : none;
-            resize      : none;
-        }
+<a:skin xmlns:a="http://ajax.org/2005/aml">
+    <a:textbox name="textarea">
+        <a:style><![CDATA[
+            .ta {
+                border      : 1px solid #c3c3c3;
+                background  : white url("images/textarea_background2.png") no-repeat top left;
+                /*background-attachment : fixed !important; background-attachment: scroll; */
+                color       : #4b4b4b;
+                padding     : 6px;
+                font-family : Tahoma;
+                font-size   : 8pt;
+                overflow    : auto;
+                outline     : none;
+                resize      : none;
+            }
+            
+            .taFocus {
+                border-color : #327fbd;
+            }
         
-        .taFocus {
-            border-color : #327fbd;
-        }
-    
-        .taDisabled {
-            border : 1px solid #c3c3c3;
-            color  : #bebebe;
-        }
+            .taDisabled {
+                border : 1px solid #c3c3c3;
+                color  : #bebebe;
+            }
+            
+            .taInitial {
+                color : gray;
+            }
         
-        .taInitial {
-            color : gray;
-        }
+            .taError {
+                border  : 2px solid #ffb500;
+                padding : 5px;
+            }
+        ]]></a:style>
     
-        .taError {
-            border  : 2px solid #ffb500;
-            padding : 5px;
-        }
-    ]]></a:style>
-
-    <a:presentation>
-        <a:main input=".">
-            <textarea type='text' class="ta" />
-        </a:main>
-    </a:presentation>
-</a:textbox>
-
-<a:textbox name="tbempty">
-    <a:style><![CDATA[
-        .tbempty {
-            background : white url("images/textarea_background2.png") no-repeat 0 0;
-            /*background-attachment: fixed !important; background-attachment: scroll; */
-            width      : 161px;
-            height     : 17px;
-            border     : 1px solid #c3c3c3;
-            position   : relative;
-            padding    : 0 22px 0 0;
-        }
+        <a:presentation>
+            <a:main input=".">
+                <textarea type='text' class="ta" />
+            </a:main>
+        </a:presentation>
+    </a:textbox>
+    
+    <a:textbox name="tbempty">
+        <a:style><![CDATA[
+            .tbempty {
+                background : white url("images/textarea_background2.png") no-repeat 0 0;
+                /*background-attachment: fixed !important; background-attachment: scroll; */
+                width      : 161px;
+                height     : 17px;
+                border     : 1px solid #c3c3c3;
+                position   : relative;
+                padding    : 0 22px 0 0;
+            }
+            
+            .tbempty input {
+               color       : #4b4b4b;
+               padding     : 1px 1px 1px 2px;
+               font-family : Tahoma;
+               font-size   : 11px;
+               outline     : none;
+               height      : 100%;
+               width       : 100%;
+               border      : 0;
+               margin      : 1px 0 0 0;
+               background  : transparent;
+            }
+            
+            .tbemptyFocus {
+                border : 1px solid #327fbd;
+            }
+            
+            .tbemptyDisabled {
+                border : 1px solid #c3c3c3;
+                color  : #bebebe;
+            }
+            
+            .tbemptyError {
+                border : 2px solid #ffb500;
+                margin : -1px 0 0 -1px;
+            }
+            
+            .tbemptyInitial input {
+                color : gray;
+            }
+            
+            .tbempty .btnclose {
+                position   : absolute;
+                right      : 2px;
+                top        : 2px;
+                width      : 14px;
+                height     : 14px;
+                background : url(images/btnclose.gif) no-repeat 0 0;
+                display    : none;
+            }
+            
+            .tbempty .btnclose:hover {
+                background-position : 0 -14px;
+            }
+        ]]></a:style>
+        <a:style condition="apf.isSafari"><![CDATA[
+            .tbempty input {
+                margin : -1px 0 0 0;
+            }
+        ]]></a:style>
+        <a:style condition="apf.isChrome">
+            .tbempty input {
+                margin : -1px 0 0 0;
+            }
+        </a:style>
+    
+        <a:presentation>
+            <a:main input="input" button="div">
+                <div class="tbempty">
+                    <input type='text' />
+                    <div class="btnclose" />
+                </div>
+            </a:main>
+        </a:presentation>
+    </a:textbox>
+    
+    <a:textbox name="textbox">
+        <a:alias>input</a:alias>
+        <a:alias>secret</a:alias>
         
-        .tbempty input {
-           color       : #4b4b4b;
-           padding     : 1px 1px 1px 2px;
-           font-family : Tahoma;
-           font-size   : 11px;
-           outline     : none;
-           height      : 100%;
-           width       : 100%;
-           border      : 0;
-           margin      : 1px 0 0 0;
-           background  : transparent;
-        }
+        <a:style><![CDATA[
+            .tb {
+                background    : white url("images/textarea_background2.png") no-repeat 0 0;
+                /*background-attachment : fixed !important; background-attachment: scroll; */
+                width         : 161px;
+                height        : 15px;
+                color         : #4b4b4b;
+                border        : 1px solid #c3c3c3;
+                margin        : 0;
+                padding       : 2px 0 0 2px;
+                outline       : none;
+                font-family   : Tahoma;
+                font-size     : 11px;
+                text-overflow : ellipsis;
+            }
         
-        .tbemptyFocus {
-            border : 1px solid #327fbd;
-        }
+            .tbFocus {
+                border : 1px solid #327fbd;
+            }
         
-        .tbemptyDisabled {
-            border : 1px solid #c3c3c3;
-            color  : #bebebe;
-        }
+            .tbDisabled {
+                border : 1px solid #c3c3c3;
+                color  : #bebebe;
+            }
         
-        .tbemptyError {
-            border : 2px solid #ffb500;
-            margin : -1px 0 0 -1px;
-        }
+            .tbError {
+                border : 2px solid #ffb500;
+                margin : -1px 0 0 -1px;
+            }
         
-        .tbemptyInitial input {
-            color : gray;
-        }
+            .tbInitial {
+                color : gray;
+            }
         
-        .tbempty .btnclose {
-            position   : absolute;
-            right      : 2px;
-            top        : 2px;
-            width      : 14px;
-            height     : 14px;
-            background : url(images/btnclose.gif) no-repeat 0 0;
-            display    : none;
-        }
+            .tbautoc {
+                border           : 1px solid gray;
+                width            : 250px;
+                overflow-y       : auto;
+                z-index          : 10000000;
+                position         : absolute;
+                background-color : white;
+                margin           : 18px 0 0 0;
+                white-space      : nowrap;
+                display          : none;
+            }
         
-        .tbempty .btnclose:hover {
-            background-position : 0 -14px;
-        }
-    ]]></a:style>
-    <a:style condition="apf.isSafari"><![CDATA[
-        .tbempty input {
-            margin : -1px 0 0 0;
-        }
-    ]]></a:style>
-    <a:style condition="apf.isChrome">
-        .tbempty input {
-            margin : -1px 0 0 0;
-        }
-    </a:style>
-
-    <a:presentation>
-        <a:main input="input" button="div">
-            <div class="tbempty">
-                <input type='text' />
-                <div class="btnclose" />
-            </div>
-        </a:main>
-    </a:presentation>
-</a:textbox>
-
-<a:textbox name="textbox">
-    <a:alias>input</a:alias>
-    <a:alias>secret</a:alias>
+            .tbautoc div {
+                padding     : 1px 5px 1px 3px;
+                cursor      : default;
+                margin      : 0px;
+                color       : black;
+                font-family : Tahoma;
+                font-size   : 11px;
+            }
+        
+            .tbautoc div.hover {
+                background-color : #25a8e7;
+                color            : white;
+            }
+        ]]></a:style>
     
-    <a:style><![CDATA[
-        .tb {
-            background    : white url("images/textarea_background2.png") no-repeat 0 0;
-            /*background-attachment : fixed !important; background-attachment: scroll; */
-            width         : 161px;
-            height        : 15px;
-            color         : #4b4b4b;
-            border        : 1px solid #c3c3c3;
-            margin        : 0;
-            padding       : 2px 0 0 2px;
-            outline       : none;
-            font-family   : Tahoma;
-            font-size     : 11px;
-            text-overflow : ellipsis;
-        }
-    
-        .tbFocus {
-            border : 1px solid #327fbd;
-        }
-    
-        .tbDisabled {
-            border : 1px solid #c3c3c3;
-            color  : #bebebe;
-        }
-    
-        .tbError {
-            border : 2px solid #ffb500;
-            margin : -1px 0 0 -1px;
-        }
-    
-        .tbInitial {
-            color : gray;
-        }
-    
-        .tbautoc {
-            border           : 1px solid gray;
-            width            : 250px;
-            overflow-y       : auto;
-            z-index          : 10000000;
-            position         : absolute;
-            background-color : white;
-            margin           : 18px 0 0 0;
-            white-space      : nowrap;
-            display          : none;
-        }
-    
-        .tbautoc div {
-            padding     : 1px 5px 1px 3px;
-            cursor      : default;
-            margin      : 0px;
-            color       : black;
-            font-family : Tahoma;
-            font-size   : 11px;
-        }
-    
-        .tbautoc div.hover {
-            background-color : #25a8e7;
-            color            : white;
-        }
-    ]]></a:style>
-
-    <a:presentation>
-        <a:main input=".">
-            <input type='text' class="tb" />
-        </a:main>
-        <a:container>
-            <div class="tbautoc"> </div>
-        </a:container>
-        <a:item caption=".">
-            <div>-</div>
-        </a:item>
-    </a:presentation>
-</a:textbox>
+        <a:presentation>
+            <a:main input=".">
+                <input type='text' class="tb" />
+            </a:main>
+            <a:container>
+                <div class="tbautoc"> </div>
+            </a:container>
+            <a:item caption=".">
+                <div>-</div>
+            </a:item>
+        </a:presentation>
+    </a:textbox>
+</a:skin>

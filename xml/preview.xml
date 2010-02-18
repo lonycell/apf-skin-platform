@@ -1,26 +1,28 @@
-<a:preview name="preview">
-    <a:style><![CDATA[
-        .preview {
-            padding    : 10px;
-            border     : 1px solid #c3c3c3;
-            background : white no-repeat 50% 50%;
-            overflow   : hidden;
-            position   : relative;
-            text-align : center;
-            cursor     : pointer;
-            cursor     : hand;
-        }
-    
-        .preview img {
-            margin   : auto;
-            position : relative;
-        }
-    ]]></a:style>
-    <a:presentation>
-        <a:main image="img/@src">
-            <div class="preview">
-                <img src="" />
-            </div>
-        </a:main>
-    </a:presentation>
-</a:preview>
+<a:skin xmlns:a="http://ajax.org/2005/aml">
+    <a:preview name="preview">
+        <a:style><![CDATA[
+            .preview {
+                padding    : 10px;
+                border     : 1px solid #c3c3c3;
+                background : white no-repeat 50% 50%;
+                overflow   : hidden;
+                position   : relative;
+                text-align : center;
+                cursor     : pointer;
+                cursor     : hand;
+            }
+        
+            .preview img {
+                margin   : auto;
+                position : relative;
+            }
+        ]]></a:style>
+        <a:presentation>
+            <a:main image="img/@src">
+                <div class="preview">
+                    <img src="" />
+                </div>
+            </a:main>
+        </a:presentation>
+    </a:preview>
+</a:skin>

@@ -1,1237 +1,1239 @@
-<a:modalwindow name="dockwin">
-    <a:alias>panel</a:alias>
-    
-    <a:style><![CDATA[
-        .dockwin {
-            font-family : Tahoma;
-            font-size   : 11px;
-            padding     : 21px 0 1px 0;
-            position    : relative;
-        }
-    
-        .dockwinFocus {
+<a:skin xmlns:a="http://ajax.org/2005/aml">
+    <a:modalwindow name="dockwin">
+        <a:alias>panel</a:alias>
         
-        }
+        <a:style><![CDATA[
+            .dockwin {
+                font-family : Tahoma;
+                font-size   : 11px;
+                padding     : 21px 0 1px 0;
+                position    : relative;
+            }
         
-        .dockwin .docktitle {
-            background   : url("images/window_mt.png") repeat-x left 50%;
-            height       : 17px;
-            color        : white;
-            position     : relative;
-            margin       : 0;
-            padding      : 2px 0 0 5px;
-            border       : 1px solid black;
-            border-width : 1px 1px 1px 1px;
-            font-weight  : bold;
-            margin-top   : -21px;
-            cursor       : default;
-            white-space  : nowrap;
-            overflow     : hidden;
-        }
-        
-        .dockwin .dockcontent {
-            background   : #f5f5f5;
-            overflow     : hidden;
-            position     : relative;
-            height       : 100%;
-            border       : 1px solid #c3c3c3;
-            border-width : 0 1px 1px 1px; 
-        }
-        
-        .noborder .dockcontent {
-            border-width : 0;
-        }
-        
-        .dockwinMin .dockcontent {
-            overflow : hidden;
-        }
-        
-        .dockwin .docktitle blockquote {
-            margin     : 0;
-            width      : 49px;
-            position   : absolute;
-            padding    : 1px 1px 2px 0;
-            top        : 0;
-            right      : 0;
-            background : url("images/window_mt.png") repeat-x left -4px;
-        }
-    
-        .dockwin .docktitle blockquote div {
-            width      : 10px;
-            height     : 9px;
-            float      : right;
-            padding    : 3px;
-            background : no-repeat 3px 3px;
-            cursor     : default;
-            _overflow  : hidden; /* IE6 bug fix */
-        }
-        
-        .dockwin .docktitle blockquote div.hover {
-            border              : 1px solid white;
-            padding             : 2px;
-            background-position : 2px -10px;
-            height              : 10px;
-            background-color    : transparent;
-        }
-        
-        .dockwin .docktitle blockquote div.down {
-            background-color : black;
-        }
-        
-        .dockwin .docktitle .max {
-            background-image : url(images/win_max.gif);
-        }
-        
-        .dockwinMax .docktitle .max {
-            background-image : url(images/win_restore.gif);
-        }
-        
-        .dockwin .docktitle .min {
-            background-image : url(images/win_min.gif);
-        }
-        
-        .dockwinMin .docktitle .min {
-            background-image : url(images/win_restore.gif);
-        }
-        
-        .dockwin .docktitle .close {
-            width            : 11px;
-            background-image : url(images/win_x.gif);
-        }
-        
-        .dockwin .docktitle span {
-            width   : 16px;
-            height  : 16px;
-            display : block;
-        }
-        
-        body .whitebg .content {
-            background : white;
-        }
-        
-        .north{cursor : url(images/cursor/n-point.cur);}
-        .west{cursor : url(images/cursor/w-point.cur);}
-        .east{cursor : url(images/cursor/e-point.cur);}
-        .south{cursor : url(images/cursor/s-point.cur);}
-        .same{cursor : not-allowed;}
-    ]]></a:style>
-
-    <a:presentation>
-        <a:main 
-          collapsed-height = "22"
-          min-width        = "150" 
-          min-height       = "80" 
-          caption          = "div[1]/text()"
-          container        = "div[2]" 
-          drag             = "div[1]"
-          title            = "div[1]/text()" 
-          buttons          = "div[1]/blockquote">
-            <div class="dockwin">
-                <div class="docktitle">-
-                    <blockquote> </blockquote>
-                </div>
-                <div class="dockcontent"> </div>
-            </div>
-        </a:main>
-        <a:button>
-            <div> </div>
-        </a:button>
-        <a:cover>
-            <div class='cover'> </div>
-        </a:cover>
-    </a:presentation>
-</a:modalwindow>
-
-<a:modalwindow name="docklet">
-    <a:style><![CDATA[
-        .docklet {
-            font-family : Tahoma;
-            font-size   : 11px;
-            padding     : 0;
-            margin      : 0 10px 10px 0;
-        }
-    
-        .dockletFocus {
-        
-        }
-        
-        .docklet .docktitle {
-            background   : url("images/window_mt.png") repeat-x left 50%;
-            height       : 17px;
-            color        : white;
-            position     : relative;
-            margin       : 0;
-            padding      : 2px 0 0 5px;
-            border       : 1px solid black;
-            border-width : 1px 1px 1px 1px;
-            font-weight  : bold;
-            cursor       : default;
-            white-space  : nowrap;
-            overflow     : hidden;
-        }
-        
-        .docklet .dockcontent {
-            background   : #f5f5f5;
-            overflow     : hidden;
-            position     : relative;
-            border       : 1px solid #c3c3c3;
-            border-width : 0 1px 1px 1px; 
-            padding      : 5px;
-        }
-        
-        .dockletMin .dockcontent {
-            overflow : hidden;
-        }
-        
-        .docklet .docktitle blockquote {
-            margin     : 0;
-            width      : 49px;
-            position   : absolute;
-            padding    : 1px 1px 2px 0;
-            top        : 0;
-            right      : 0;
-            background : url("images/window_mt.png") repeat-x left -4px;
-        }
-    
-        .docklet .docktitle blockquote div {
-            width      : 10px;
-            height     : 9px;
-            float      : right;
-            padding    : 3px;
-            background : no-repeat 3px 3px;
-            cursor     : default;
-            _overflow  : hidden; /* IE6 bug fix */
-        }
-        
-        .dockletEdit .docktitle .edit {
-            background-position : 2px -10px;
-            position            : relative;
-            top                 : 1px;
-            left                : 1px;
-        }
-        
-        .docklet .docktitle blockquote div.hover {
-            border              : 1px solid white;
-            padding             : 2px;
-            background-position : 2px -10px;
-            height              : 10px;
-            background-color    : transparent;
-            position            : static;
-        }
-        
-        .docklet .docktitle blockquote div.down {
-            background-color : black;
-        }
-        
-        .docklet .docktitle .edit {
-            background-image : url(images/win_edit.png);
-        }
-        
-        .docklet .docktitle .max {
-            background-image : url(images/win_max.gif);
-        }
-        
-        .dockletMax .docktitle .max {
-            background-image : url(images/win_restore.gif);
-        }
-        
-        .docklet .docktitle .min {
-            background-image : url(images/win_min.gif);
-        }
-        
-        .dockletMin .docktitle .min {
-            background-image : url(images/win_restore.gif);
-        }
-        
-        .docklet .docktitle .close {
-            width            : 11px;
-            background-image : url(images/win_x.gif);
-        }
-        
-        .docklet .docktitle span {
-            width   : 16px;
-            height  : 16px;
-            display : block;
-        }
-        
-        .docklet .docksettings {
-            display      : none;
-            background   : #f1f1f1;
-            overflow     : hidden;
-            position     : relative;
-            border       : 1px solid #c3c3c3;
-            border-width : 0 1px 1px 1px; 
-            padding      : 5px;
-        }
-        
-        .dockletEdit .docksettings {
-            display : block;
-        }
-        
-        .dockletMin .docksettings, 
-        .dockletMin .dockcontent {
-            display : none;
-        }
-        
-        body .whitebg .content {
-            background : white;
-        }
-        
-        .north {cursor: url(images/cursor/n-point.cur);}
-        .west {cursor: url(images/cursor/w-point.cur);}
-        .east {cursor: url(images/cursor/e-point.cur);}
-        .south {cursor: url(images/cursor/s-point.cur);}
-        .same {cursor: not-allowed;}
-    ]]></a:style>
-
-    <a:presentation>
-        <a:main 
-          collapsed-height = "22"
-          min-width        = "150" 
-          min-height       = "80"
-          container        = "div[3]" 
-          drag             = "div[1]" 
-          title            = "div[1]/text()" 
-          buttons          = "div[1]/blockquote"
-          settings_content = "div[2]">
-            <div class="docklet">
-                <div class="docktitle">-
-                    <blockquote> </blockquote>
-                </div>
-                <div class="docksettings"> </div>
-                <div class="dockcontent"> </div>
-            </div>
-        </a:main>
-        <a:button>
-            <div> </div>
-        </a:button>
-        <a:cover>
-            <div class='cover'> </div>
-        </a:cover>
-    </a:presentation>
-</a:modalwindow>
-
-<a:modalwindow name="modalwindow">
-    <a:alias>window</a:alias>
-    
-    <a:style><![CDATA[
-        .window {
-            font-family : Tahoma;
-            font-size   : 11px;
-            padding     : 26px 0 5px 0;
-            position    : relative;
-        }
-    
-        .window .topLeft {
-            float         : left;
-            background    : url("images/window_lt.png") no-repeat top left;
-            width         : 6px;
-            height        : 27px;
-            margin        : 0;
-            padding       : 0;
-            border        : 0;
-            margin-top    : -26px;
-            _margin-right : -6px; /* IE6 bug fix */
-            overflow      : hidden;
-            position      : relative;
-        }
-        
-        .windowFocus {
-        
-        }
-        
-        .window .topRight {
-            float        : right;
-            background   : url("images/window_rt.png") no-repeat top left;
-            width        : 5px;
-            height       : 27px;
-            margin       : 0;
-            padding      : 0;
-            border       : 0;
-            margin-top   : -26px;
-            _margin-left : -5px; /* IE6 bug fix */
-            overflow     : hidden;
-            position     : relative;
-        }
-        
-        .window .title {
-            background  : url("images/window_mt.png") repeat-x top left;
-            height      : 21px;
-            color       : #eeeeee;
-            position    : relative;
-            margin      : 0 5px 0 6px;
-            padding     : 6px 0 0 20px;
-            border      : 0;
-            font-weight : bold;
-            margin-top  : -26px;
-            cursor      : default;
-        }
-        
-        .window .title img {
-            margin   : -1px 3px 0 -1px;
-            position : absolute;
-            left     : 2px;
-        }
-        
-        .window .content {
-            background   : #f5f5f5;
-            margin-left  : 3px;
-            margin-right : 3px;
-            position     : relative;
-            height       : 100%;
-            background   : #f5f5f5 url(images/page_bt.png) repeat-x top left;
-            border-right : 1px solid #dcd8d8;
-            border-top   : 1px solid #dcd8d8;
-            border       : 0; /* changed by ruben */
-        }
-        
-        .windowMin .content {
-            overflow : hidden;
-        }
-        
-        .window .borderRight {
-            background   : url("images/window_border.png") repeat-y top right;
-            overflow     : hidden;
-            width        : 3px;
-            float        : right;
-            height       : 100%;
-            _margin-left : -3px; /* IE6 bug fix */ 
-        }
-        
-        .window .borderLeft {
-            background    : url("images/window_border.png") repeat-y top left;
-            overflow      : hidden;
-            height        : 100%;
-            float         : left;
-            width         : 3px;
-            _margin-right : -3px; /* IE6 bug fix */
-        }
-        
-        .window .bottomLeft {
-            float         : left;
-            background    : url("images/window_lb_small.png") no-repeat top left;
-            width         : 3px;
-            height        : 4px;
-            _margin-right : -3px; /* IE6 bug fix */
-            margin-top    : -1px;
-        }
-        
-        .window .bottomRight {
-            float        : right;
-            background   : url("images/window_rb_small.png") no-repeat top left;
-            width        : 3px;
-            height       : 4px;
-            _margin-left : -3px; /* IE6 bug fix */
-            margin-top   : -1px;
-        }
-        
-        .window .bottomBar {
-            background : url("images/window_mb_small.png") repeat-x top left;
-            height     : 4px;
-            color      : #FFFFFF;
-            position   : relative;
-            margin     : -2px 3px 0 3px;
-            border-top : 1px solid #dcd8d8;
-        }
-        
-        .window .bottom {
-            position : absolute;
-            bottom   : 0;
-            width    : 100%;
-        }
-        
-        .cover {
-            /*background: url(images/spacer.gif);*/
-            background : white;
-            opacity    : 0.3;
-            filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=30);
-            position   : fixed;
-            left       : 0;
-            top        : 0;
-            width      : 100%;
-            height     : 100%;
-            height     : expression(document.documentElement.offsetHeight);
-            z-index    : 10000;
-        }
-        
-        .window .title blockquote {
-            margin   : 0;
-            width    : 56px;
-            height   : 21px;
-            position : absolute;
-            padding  : 4px 4px 2px 2px;
-            top      : 0;
-            right    : 0;
-        }
-    
-        .window .title blockquote div {
-            width      : 10px;
-            height     : 9px;
-            float      : right;
-            padding    : 3px;
-            background : no-repeat 3px 3px;
-            cursor     : default;
-            _overflow  : hidden; /* IE6 bug fix */
-        }
-        
-        .window .title blockquote div.hover {
-            border              : 1px solid white;
-            padding             : 2px;
-            background-position : 2px -10px;
-            height              : 10px;
-            background-color    : transparent;
-        }
-        
-        .window .title blockquote div.down {
-            background-color : black;
-        }
-        
-        .window .title .max {
-            background-image : url(images/win_max.gif);
-        }
-        
-        .windowMax .title .max {
-            background-image : url(images/win_restore.gif);
-        }
-        
-        .window .title .min {
-            background-image : url(images/win_min.gif);
-        }
-        
-        .windowMin .title .min {
-            background-image : url(images/win_restore.gif);
-        }
-        
-        .window .title .close {
-            width            : 11px;
-            background-image : url(images/win_x.gif);
-        }
-        
-        .window .title span {
-            width   : 16px;
-            height  : 16px;
-            display : block;
-        }
-        
-        #apf_outline {
+            .dockwinFocus {
             
-        }
-        
-        #apf_outline.drag {
-            border     : 1px solid black;
-            background : #CCC;
-            opacity    : 0.4;
-            filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=40);
-        }
-        
-        #apf_outline.resize {
-            border     : 3px solid black;
-            background : #CCC;
-            opacity    : 0.3;
-            filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=30);
-        }
-    ]]></a:style>
-
-    <a:presentation>
-        <a:main 
-          collapsed-height = "30"
-          min-width        = "150" 
-          min-height       = "80"
-          container        = "div[6]" 
-          drag             = "div[3]" 
-          title            = "div[3]/text()" 
-          icon             = "div[3]/img" 
-          buttons          = "div[3]/blockquote">
-            <div class="window">
-                <div class="topLeft"> </div>
-                <div class="topRight"> </div>
-                <div class="title"><img src="" />-
-                    <blockquote> </blockquote>
-                </div>
+            }
             
-                <div class="borderLeft"> </div>
-                <div class="borderRight"> </div>
-                <div class="content"> </div>
-        
-                <div class="bottomLeft"> </div>
-                <div class="bottomRight"> </div>
-                <div class="bottomBar"> </div>
-            </div>
-        </a:main>
-        <a:button>
-            <div> </div>
-        </a:button>
-        <a:cover>
-            <div class='cover'> </div>
-        </a:cover>
-    </a:presentation>
-</a:modalwindow>
-
-<a:modalwindow name="alert">
-    <a:style><![CDATA[
-        .alert {
-            font-family : Tahoma;
-            font-size   : 11px;
-            padding     : 27px 0 10px 0;
-            text-align  : left;
-            position    : relative;
-        }
-    
-        .alert .topLeft {
-            background : url("images/error_box_lt.png") no-repeat top left;
-            width      : 8px;
-            height     : 27px;
-            float      : left;
-            margin     : -27px 0 0 0;
-            _margin    : -27px -8px 0 0; /* IE6 bug fix */
-            padding    : 0;
-            border     : 0;
-        }
-    
-        .alert .topRight {
-            background : url("images/error_box_rt.png") no-repeat top left;
-            width      : 14px;
-            height     : 27px;
-            float      : right;
-            margin     : -27px 0 0 0;
-            _margin    : -27px 0 0 -14px;
-            padding    : 0;
-            border     : 0;
-        }
-    
-        .alert .title {
-            border-top  : 1px solid #c3c3c3;
-            height      : 18px;
-            margin      : -27px 14px 0 8px;
-            padding     : 8px 0 0 3px;
-            font-weight : bold;
-            color       : #0e9717;
-            cursor      : default;
-            background  : white;
-        }
-    
-        .error .title {
-            color : #327fbd;
-        }
-    
-        .alert .content {
-            border-left : 1px solid #c3c3c3;
-            padding     : 0 0 0 10px;
-            margin      : 0 9px 0 0;
-            /*overflow : hidden;*/
-            height      : 100%;
-            position    : relative;
-            background  : white;
-        }
-    
-        .alert .borderRight {
-            background : url("images/error_box_r.png") repeat-y top right;
-            overflow   : hidden;
-            height     : 100%;
-            float      : right;
-            width      : 9px;
-        }
-    
-        .absolute .borderRight {
-            bottom   : 26px;
-            position : absolute;
-            right    : 0;
-            top      : 27px;
-            z-index  : 1;
-            height   : auto;
-        }
-        
-        .alert .bottomLeft {
-            background : url("images/error_box_lb.png") no-repeat top left;
-            width      : 8px;
-            height     : 16px;
-            float      : left;
-            margin     : 0;
-            _margin    : 0 -8px 0 0; /* IE6 bug fix */
-            padding    : 0;
-            border     : 0;
-        }
-    
-        .alert .bottomRight {
-            background : url("images/error_box_rb.png") no-repeat top right;
-            width      : 14px;
-            height     : 16px;
-            float      : right;
-            margin     : 0;
-            _margin    : 0 0 0 -14px; /* IE6 bug fix */
-            padding    : 0;
-            border     : 0;
-        }
-    
-        .alert .bottomBar {
-            background : url("images/error_box_b.png") repeat-x bottom left;
-            height     : 16px;
-            margin     : 0 14px 0 8px;
-            padding    : 0;
-            border     : 0;
-        }
-    
-        .alert .close {
-            width      : 13px;
-            height     : 13px;
-            background : url("images/close.png") no-repeat top left;
-            margin     : -2px 1px 0 0;
-            overflow   : hidden;
-            position   : absolute;
-            right      : 14px;
-            top        : 9px;
-        }
-    
-        .alert .title .hover {
-            background-position : 0 -13px;
-        }
-    ]]></a:style>
-
-    <a:presentation>
-    <!--  min-width="50" min-height="50"  -->
-        <a:main 
-          collapsed-height = "30"
-          container        = "div[5]" 
-          drag             = "div[3]" 
-          title            = "div[3]/text()"
-          buttons          = "div[3]">
-            <div class="alert">
-                <div class="topLeft"> </div>
-                <div class="topRight"> </div>
-                <div class="title">-</div>
-
-                <div class="borderRight"> </div>
-                <div class="content">
-                </div>
-
-                <div class="bottomLeft"> </div>
-                <div class="bottomRight"> </div>
-                <div class="bottomBar"> </div>
-            </div>
-        </a:main>
-        <a:button>
-            <div> </div>
-        </a:button>
-        <a:cover>
-            <div class='cover'> </div>
-        </a:cover>
-    </a:presentation>
-</a:modalwindow>
-<a:modalwindow name="roundedged">
-    <a:style><![CDATA[
-        .winround {
-            font-family : Tahoma;
-            font-size   : 11px;
-            padding     : 26px 0 11px 0;
-            position    : relative;
-        }
-    
-        .winround .topLeft {
-            float         : left;
-            background    : url("images/window_lt.png") no-repeat top left;
-            width         : 6px;
-            height        : 27px;
-            margin        : 0;
-            padding       : 0;
-            border        : 0;
-            margin-top    : -26px;
-            _margin-right : -6px; /* IE6 bug fix */
-        }
-        
-        .winroundFocus {
-        
-        }
-        
-        .winround .topRight {
-            float        : right;
-            background   : url("images/window_rt.png") no-repeat top left;
-            width        : 5px;
-            height       : 27px;
-            margin       : 0;
-            padding      : 0;
-            border       : 0;
-            margin-top   : -26px;
-            _margin-left : -5px; /* IE6 bug fix */
-        }
-        
-        .winround .title {
-            background  : url("images/window_mt.png") repeat-x top left;
-            height      : 21px;
-            color       : #eeeeee;
-            position    : relative;
-            margin      : 0 5px 0 6px;
-            padding     : 6px 0 0 20px;
-            border      : 0;
-            font-weight : bold;
-            margin-top  : -26px;
-            cursor      : default;
-        }
-        
-        .winround .title img {
-            margin   : -1px 3px 0 -1px;
-            position : absolute;
-            left     : 2px;
-            top      : 5px;
-        }
-        
-        .winround .content {
-            background       : #f5f5f5;
-            margin-left      : 1px;
-            margin-right     : 1px;
-            position         : relative;
-            height           : 100%;
-            background-color : #f5f5f5;
-            background-image : none;
-            border           : 0;
-        }
-        
-        .winroundMin .content {
-            overflow : hidden;
-        }
-        
-        .winround .borderRight {
-            background-image : none;
-            background-color : #b2b2b2;
-            overflow         : hidden;
-            width            : 1px;
-            float            : right;
-            height           : 100%;
-            _margin-left     : -1px; /* IE6 bug fix */
-            border           : 0;
-        }
-        
-        .winround .borderLeft {
-            background-image : none;
-            background-color : #b2b2b2;
-            overflow         : hidden;
-            height           : 100%;
-            float            : left;
-            width            : 1px;
-            _margin-right    : -1px; /* IE6 bug fix */
-            border           : 0;
-        }
-        
-        .winround .bottomLeft {
-            float         : left;
-            background    : url("images/window_lb_rounded.png") no-repeat top left;
-            width         : 9px;
-            height        : 9px;
-            margin        : 0;
-            _margin-right : -9px; /* IE6 bug fix */
-            overflow      : hidden;
-        }
-        
-        .winround .bottomRight {
-            float        : right;
-            background   : url("images/window_rb_rounded.png") no-repeat top left;
-            width        : 9px;
-            height       : 9px;
-            margin       : 0;
-            _margin-left : -9px; /* IE6 bug fix */
-            overflow     : hidden;
-        }
-        
-        .winround .bottomBar {
-            background-image : none;
-            background-color : #f5f5f5;
-            height           : 8px;
-            color            : #FFFFFF;
-            position         : relative;
-            margin           : 0 9px 0 9px;
-            border           : 0;
-            border-bottom    : 1px solid #b2b2b2;
-            overflow         : hidden;
-        }
-        
-        .winround .bottom {
-            position : absolute;
-            bottom   : 0;
-            width    : 100%;
-        }
-        
-        .cover {
-            /*background : url(images/spacer.gif);*/
-            background : white;
-            opacity    : 0.3;
-            filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=30);
-            position   : absolute;
-            left       : 0;
-            top        : 0;
-            width      : 100%;
-            height     : 100%;
-            height     : expression(document.documentElement.offsetHeight);
-            z-index    : 10000;
-        }
-        
-        .winround .title blockquote {
-            margin     : 0;
-            width      : 56px;
-            height     : 21px;
-            position   : absolute;
-            padding    : 4px 4px 2px 2px;
-            top        : 0;
-            right      : 0;
-        }
-
-        .winround .title blockquote div {
-            width      : 10px;
-            height     : 9px;
-            float      : right;
-            padding    : 3px;
-            background : no-repeat 3px 3px;
-            cursor     : default;
-            _overflow  : hidden; /* IE6 bug fix */
-        }
-        
-        .winround .title blockquote div.hover {
-            border              : 1px solid white;
-            padding             : 2px;
-            background-position : 2px -10px;
-            height              : 10px;
-            background-color    : transparent;
-        }
-        
-        .winround .title blockquote div.down {
-            background-color : black;
-        }
-        
-        .winround .title .max {
-            background-image : url(images/win_max.gif);
-            width            : 11px;
-        }
-        
-        .winroundMax .title .max {
-            background-image : url(images/win_restore.gif);
-        }
-        
-        .winround .title .min {
-            background-image : url(images/win_min.gif);
-        }
-        
-        .winroundMin .title .min {
-            background-image : url(images/win_restore.gif);
-        }
-        
-        .winround .title .close {
-            width            : 10px;
-            background-image : url(images/win_x.gif);
-        }
-        
-        .winround .title span {
-            width   : 16px;
-            height  : 16px;
-            display : block;
-        }
-        
-        #apf_outline {
-
-        }
-        
-        #apf_outline.drag {
-            border     : 1px solid black;
-            background : #CCC;
-            opacity    : 0.4;
-            filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=40);
-        }
-        
-        #apf_outline.resize {
-            border     : 3px solid black;
-            background : #CCC;
-            opacity    : 0.3;
-            filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=30);
-        }
-    ]]></a:style>
-    <a:style condition="apf.isChrome">
-        .winround .bottomBar {
-            margin : 0;
-        }
-    </a:style>
-    <a:style condition="apf.isSafari">
-        .winround .bottomBar {
-            margin : 0;
-        }
-    </a:style>
-    
-    <a:presentation>
-        <a:main 
-          collapsed-height = "30"
-          min-width        = "150" 
-          min-height       = "80"
-          container        = "div[6]" 
-          drag             = "div[3]" 
-          title            = "div[3]/text()" 
-          icon             = "div[3]/img" 
-          buttons          = "div[3]/blockquote">
-            <div class="winround">
-                <div class="topLeft"> </div>
-                <div class="topRight"> </div>
-                <div class="title">
-                    -
-                    <img src="" />
-                    <blockquote> </blockquote>
-                </div>
-
-                <div class="borderLeft"> </div>
-                <div class="borderRight"> </div>
-                <div class="content"> </div>
+            .dockwin .docktitle {
+                background   : url("images/window_mt.png") repeat-x left 50%;
+                height       : 17px;
+                color        : white;
+                position     : relative;
+                margin       : 0;
+                padding      : 2px 0 0 5px;
+                border       : 1px solid black;
+                border-width : 1px 1px 1px 1px;
+                font-weight  : bold;
+                margin-top   : -21px;
+                cursor       : default;
+                white-space  : nowrap;
+                overflow     : hidden;
+            }
             
-                <div class="bottomLeft"> </div>
-                <div class="bottomRight"> </div>
-                <div class="bottomBar"> </div>
-            </div>
-        </a:main>
-        <a:button>
-            <div> </div>
-        </a:button>
-        <a:cover>
-            <div class='cover'> </div>
-        </a:cover>
-    </a:presentation>
-</a:modalwindow>
-
-<a:modalwindow name="bigedge">
-    <a:style><![CDATA[
-        .winbigedge {
-            font-family : Tahoma;
-            font-size   : 11px;
-            padding     : 26px 0 23px 0;
-            position    : relative;
-        }
+            .dockwin .dockcontent {
+                background   : #f5f5f5;
+                overflow     : hidden;
+                position     : relative;
+                height       : 100%;
+                border       : 1px solid #c3c3c3;
+                border-width : 0 1px 1px 1px; 
+            }
+            
+            .noborder .dockcontent {
+                border-width : 0;
+            }
+            
+            .dockwinMin .dockcontent {
+                overflow : hidden;
+            }
+            
+            .dockwin .docktitle blockquote {
+                margin     : 0;
+                width      : 49px;
+                position   : absolute;
+                padding    : 1px 1px 2px 0;
+                top        : 0;
+                right      : 0;
+                background : url("images/window_mt.png") repeat-x left -4px;
+            }
+        
+            .dockwin .docktitle blockquote div {
+                width      : 10px;
+                height     : 9px;
+                float      : right;
+                padding    : 3px;
+                background : no-repeat 3px 3px;
+                cursor     : default;
+                _overflow  : hidden; /* IE6 bug fix */
+            }
+            
+            .dockwin .docktitle blockquote div.hover {
+                border              : 1px solid white;
+                padding             : 2px;
+                background-position : 2px -10px;
+                height              : 10px;
+                background-color    : transparent;
+            }
+            
+            .dockwin .docktitle blockquote div.down {
+                background-color : black;
+            }
+            
+            .dockwin .docktitle .max {
+                background-image : url(images/win_max.gif);
+            }
+            
+            .dockwinMax .docktitle .max {
+                background-image : url(images/win_restore.gif);
+            }
+            
+            .dockwin .docktitle .min {
+                background-image : url(images/win_min.gif);
+            }
+            
+            .dockwinMin .docktitle .min {
+                background-image : url(images/win_restore.gif);
+            }
+            
+            .dockwin .docktitle .close {
+                width            : 11px;
+                background-image : url(images/win_x.gif);
+            }
+            
+            .dockwin .docktitle span {
+                width   : 16px;
+                height  : 16px;
+                display : block;
+            }
+            
+            body .whitebg .content {
+                background : white;
+            }
+            
+            .north{cursor : url(images/cursor/n-point.cur);}
+            .west{cursor : url(images/cursor/w-point.cur);}
+            .east{cursor : url(images/cursor/e-point.cur);}
+            .south{cursor : url(images/cursor/s-point.cur);}
+            .same{cursor : not-allowed;}
+        ]]></a:style>
     
-        .winbigedge .topLeft {
-            float         : left;
-            background    : url("images/window_lt.png") no-repeat top left;
-            width         : 6px;
-            height        : 27px;
-            margin        : 0;
-            padding       : 0;
-            border        : 0;
-            margin-top    : -26px;
-            _margin-right : -6px; /* IE6 bug fix */
-        }
-        
-        .winbigedgeFocus {
-        
-        }
-        
-        .winbigedge .topRight {
-            float        : right;
-            background   : url("images/window_rt.png") no-repeat top left;
-            width        : 5px;
-            height       : 27px;
-            margin       : 0;
-            padding      : 0;
-            border       : 0;
-            margin-top   : -26px;
-            _margin-left : -5px; /* IE6 bug fix */
-        }
-        
-        .winbigedge .title {
-            background  : url("images/window_mt.png") repeat-x top left;
-            height      : 21px;
-            color       : #eeeeee;
-            position    : relative;
-            margin      : 0 5px 0 6px;
-            padding     : 6px 0 0 20px;
-            border      : 0;
-            font-weight : bold;
-            margin-top  : -26px;
-            cursor      : default;
-        }
-        
-        .winbigedge .title img {
-            margin   : -1px 3px 0 -1px;
-            position : absolute;
-            left     : 2px;
-            top      : 5px;
-        }
-        
-        .winbigedge .content {
-            background   : #f5f5f5;
-            margin-left  : 3px;
-            margin-right : 3px;
-            position     : relative;
-            height       : 100%;
-            background   : #f5f5f5 url(images/page_bt.png) repeat-x top left;
-        }
-        
-        .winbigedgeMin .content {
-            overflow : hidden;
-        }
-        
-        .winbigedge .borderRight {
-            background   : url("images/window_border.png") repeat-y top right;
-            overflow     : hidden;
-            width        : 3px;
-            float        : right;
-            height       : 100%;
-            _margin-left : -3px; /* IE6 bug fix */ 
-        }
-        
-        .winbigedge .borderLeft {
-            background    : url("images/window_border.png") repeat-y top left;
-            overflow      : hidden;
-            height        : 100%;
-            float         : left;
-            width         : 3px;
-            _margin-right : -3px; /* IE6 bug fix */
-        }
-        
-        .winbigedge .bottomLeft {
-            float         : left;
-            background    : url("images/window_lb.png") no-repeat top left;
-            width         : 6px;
-            height        : 22px;
-            _margin-right : -6px; /* IE6 bug fix */
-        }
-        
-        .winbigedge .bottomRight {
-            float        : right;
-            background   : url("images/window_rb.png") no-repeat top left;
-            width        : 5px;
-            height       : 22px;
-            _margin-left : -5px; /* IE6 bug fix */
-        }
-        
-        .winbigedge .bottomBar {
-            background : url("images/window_mb.png") repeat-x top left;
-            height     : 22px;
-            color      : #FFFFFF;
-            position   : relative;
-            margin     : 0 5px 0 6px;
-        }
-        
-        .winbigedge .bottom {
-            position : absolute;
-            bottom   : 0;
-            width    : 100%;
-        }
-        
-        .cover {
-            /*background : url(images/spacer.gif);*/
-            background : white;
-            opacity    : 0.3;
-            filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=30);
-            position   : absolute;
-            left       : 0;
-            top        : 0;
-            width      : 100%;
-            height     : 100%;
-            height     : expression(document.documentElement.offsetHeight);
-            z-index    : 10000;
-        }
-        
-        .winbigedge .title blockquote {
-            margin     : 0;
-            width      : 56px;
-            height     : 21px;
-            position   : absolute;
-            padding    : 4px 4px 2px 2px;
-            top        : 0;
-            right      : 0;
-        }
-
-        .winbigedge .title blockquote div {
-            width      : 10px;
-            height     : 9px;
-            float      : right;
-            padding    : 3px;
-            background : no-repeat 3px 3px;
-            cursor     : default;
-            _overflow  : hidden; /* IE6 bug fix */
-        }
-        
-        .winbigedge .title blockquote div.hover {
-            border              : 1px solid white;
-            padding             : 2px;
-            background-position : 2px -10px;
-            height              : 10px;
-            background-color    : transparent;
-        }
-        
-        .winbigedge .title blockquote div.down {
-            background-color : black;
-        }
-        
-        .winbigedge .title .max {
-            background-image : url(images/win_max.gif);
-        }
-        
-        .winbigedgeMax .title .max {
-            background-image : url(images/win_restore.gif);
-        }
-        
-        .winbigedge .title .min {
-            background-image : url(images/win_min.gif);
-        }
-        
-        .winbigedgeMin .title .min {
-            background-image : url(images/win_restore.gif);
-        }
-        
-        .winbigedge .title .close {
-            width            : 11px;
-            background-image : url(images/win_x.gif);
-        }
-        
-        .winbigedge .title span {
-            width   : 16px;
-            height  : 16px;
-            display : block;
-        }
-        
-        #apf_outline {
-
-        }
-        
-        #apf_outline.drag {
-            border     : 1px solid black;
-            background : #CCC;
-            opacity    : 0.4;
-            filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=40);
-        }
-        
-        #apf_outline.resize {
-            border     : 3px solid black;
-            background : #CCC;
-            opacity    : 0.3;
-            filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=30);
-        }
-    ]]></a:style>
-
-    <a:presentation>
-        <a:main 
-          collapsed-height = "30"
-          min-width        = "150" 
-          min-height       = "80"
-          container        = "div[6]" 
-          drag             = "div[3]" 
-          title            = "div[3]/text()" 
-          icon             = "div[3]/img" 
-          buttons          = "div[3]/blockquote">
-            <div class="winbigedge">
-                <div class="topLeft"> </div>
-                <div class="topRight"> </div>
-                <div class="title">
-                    -
-                    <img src="" />
-                    <blockquote> </blockquote>
+        <a:presentation>
+            <a:main 
+              collapsed-height = "22"
+              min-width        = "150" 
+              min-height       = "80" 
+              caption          = "div[1]/text()"
+              container        = "div[2]" 
+              drag             = "div[1]"
+              title            = "div[1]/text()" 
+              buttons          = "div[1]/blockquote">
+                <div class="dockwin">
+                    <div class="docktitle">-
+                        <blockquote> </blockquote>
+                    </div>
+                    <div class="dockcontent"> </div>
                 </div>
+            </a:main>
+            <a:button>
+                <div> </div>
+            </a:button>
+            <a:cover>
+                <div class='cover'> </div>
+            </a:cover>
+        </a:presentation>
+    </a:modalwindow>
+    
+    <a:modalwindow name="docklet">
+        <a:style><![CDATA[
+            .docklet {
+                font-family : Tahoma;
+                font-size   : 11px;
+                padding     : 0;
+                margin      : 0 10px 10px 0;
+            }
+        
+            .dockletFocus {
+            
+            }
+            
+            .docklet .docktitle {
+                background   : url("images/window_mt.png") repeat-x left 50%;
+                height       : 17px;
+                color        : white;
+                position     : relative;
+                margin       : 0;
+                padding      : 2px 0 0 5px;
+                border       : 1px solid black;
+                border-width : 1px 1px 1px 1px;
+                font-weight  : bold;
+                cursor       : default;
+                white-space  : nowrap;
+                overflow     : hidden;
+            }
+            
+            .docklet .dockcontent {
+                background   : #f5f5f5;
+                overflow     : hidden;
+                position     : relative;
+                border       : 1px solid #c3c3c3;
+                border-width : 0 1px 1px 1px; 
+                padding      : 5px;
+            }
+            
+            .dockletMin .dockcontent {
+                overflow : hidden;
+            }
+            
+            .docklet .docktitle blockquote {
+                margin     : 0;
+                width      : 49px;
+                position   : absolute;
+                padding    : 1px 1px 2px 0;
+                top        : 0;
+                right      : 0;
+                background : url("images/window_mt.png") repeat-x left -4px;
+            }
+        
+            .docklet .docktitle blockquote div {
+                width      : 10px;
+                height     : 9px;
+                float      : right;
+                padding    : 3px;
+                background : no-repeat 3px 3px;
+                cursor     : default;
+                _overflow  : hidden; /* IE6 bug fix */
+            }
+            
+            .dockletEdit .docktitle .edit {
+                background-position : 2px -10px;
+                position            : relative;
+                top                 : 1px;
+                left                : 1px;
+            }
+            
+            .docklet .docktitle blockquote div.hover {
+                border              : 1px solid white;
+                padding             : 2px;
+                background-position : 2px -10px;
+                height              : 10px;
+                background-color    : transparent;
+                position            : static;
+            }
+            
+            .docklet .docktitle blockquote div.down {
+                background-color : black;
+            }
+            
+            .docklet .docktitle .edit {
+                background-image : url(images/win_edit.png);
+            }
+            
+            .docklet .docktitle .max {
+                background-image : url(images/win_max.gif);
+            }
+            
+            .dockletMax .docktitle .max {
+                background-image : url(images/win_restore.gif);
+            }
+            
+            .docklet .docktitle .min {
+                background-image : url(images/win_min.gif);
+            }
+            
+            .dockletMin .docktitle .min {
+                background-image : url(images/win_restore.gif);
+            }
+            
+            .docklet .docktitle .close {
+                width            : 11px;
+                background-image : url(images/win_x.gif);
+            }
+            
+            .docklet .docktitle span {
+                width   : 16px;
+                height  : 16px;
+                display : block;
+            }
+            
+            .docklet .docksettings {
+                display      : none;
+                background   : #f1f1f1;
+                overflow     : hidden;
+                position     : relative;
+                border       : 1px solid #c3c3c3;
+                border-width : 0 1px 1px 1px; 
+                padding      : 5px;
+            }
+            
+            .dockletEdit .docksettings {
+                display : block;
+            }
+            
+            .dockletMin .docksettings, 
+            .dockletMin .dockcontent {
+                display : none;
+            }
+            
+            body .whitebg .content {
+                background : white;
+            }
+            
+            .north {cursor: url(images/cursor/n-point.cur);}
+            .west {cursor: url(images/cursor/w-point.cur);}
+            .east {cursor: url(images/cursor/e-point.cur);}
+            .south {cursor: url(images/cursor/s-point.cur);}
+            .same {cursor: not-allowed;}
+        ]]></a:style>
+    
+        <a:presentation>
+            <a:main 
+              collapsed-height = "22"
+              min-width        = "150" 
+              min-height       = "80"
+              container        = "div[3]" 
+              drag             = "div[1]" 
+              title            = "div[1]/text()" 
+              buttons          = "div[1]/blockquote"
+              settings_content = "div[2]">
+                <div class="docklet">
+                    <div class="docktitle">-
+                        <blockquote> </blockquote>
+                    </div>
+                    <div class="docksettings"> </div>
+                    <div class="dockcontent"> </div>
+                </div>
+            </a:main>
+            <a:button>
+                <div> </div>
+            </a:button>
+            <a:cover>
+                <div class='cover'> </div>
+            </a:cover>
+        </a:presentation>
+    </a:modalwindow>
+    
+    <a:modalwindow name="modalwindow">
+        <a:alias>window</a:alias>
+        
+        <a:style><![CDATA[
+            .window {
+                font-family : Tahoma;
+                font-size   : 11px;
+                padding     : 26px 0 5px 0;
+                position    : relative;
+            }
+        
+            .window .topLeft {
+                float         : left;
+                background    : url("images/window_lt.png") no-repeat top left;
+                width         : 6px;
+                height        : 27px;
+                margin        : 0;
+                padding       : 0;
+                border        : 0;
+                margin-top    : -26px;
+                _margin-right : -6px; /* IE6 bug fix */
+                overflow      : hidden;
+                position      : relative;
+            }
+            
+            .windowFocus {
+            
+            }
+            
+            .window .topRight {
+                float        : right;
+                background   : url("images/window_rt.png") no-repeat top left;
+                width        : 5px;
+                height       : 27px;
+                margin       : 0;
+                padding      : 0;
+                border       : 0;
+                margin-top   : -26px;
+                _margin-left : -5px; /* IE6 bug fix */
+                overflow     : hidden;
+                position     : relative;
+            }
+            
+            .window .title {
+                background  : url("images/window_mt.png") repeat-x top left;
+                height      : 21px;
+                color       : #eeeeee;
+                position    : relative;
+                margin      : 0 5px 0 6px;
+                padding     : 6px 0 0 20px;
+                border      : 0;
+                font-weight : bold;
+                margin-top  : -26px;
+                cursor      : default;
+            }
+            
+            .window .title img {
+                margin   : -1px 3px 0 -1px;
+                position : absolute;
+                left     : 2px;
+            }
+            
+            .window .content {
+                background   : #f5f5f5;
+                margin-left  : 3px;
+                margin-right : 3px;
+                position     : relative;
+                height       : 100%;
+                background   : #f5f5f5 url(images/page_bt.png) repeat-x top left;
+                border-right : 1px solid #dcd8d8;
+                border-top   : 1px solid #dcd8d8;
+                border       : 0; /* changed by ruben */
+            }
+            
+            .windowMin .content {
+                overflow : hidden;
+            }
+            
+            .window .borderRight {
+                background   : url("images/window_border.png") repeat-y top right;
+                overflow     : hidden;
+                width        : 3px;
+                float        : right;
+                height       : 100%;
+                _margin-left : -3px; /* IE6 bug fix */ 
+            }
+            
+            .window .borderLeft {
+                background    : url("images/window_border.png") repeat-y top left;
+                overflow      : hidden;
+                height        : 100%;
+                float         : left;
+                width         : 3px;
+                _margin-right : -3px; /* IE6 bug fix */
+            }
+            
+            .window .bottomLeft {
+                float         : left;
+                background    : url("images/window_lb_small.png") no-repeat top left;
+                width         : 3px;
+                height        : 4px;
+                _margin-right : -3px; /* IE6 bug fix */
+                margin-top    : -1px;
+            }
+            
+            .window .bottomRight {
+                float        : right;
+                background   : url("images/window_rb_small.png") no-repeat top left;
+                width        : 3px;
+                height       : 4px;
+                _margin-left : -3px; /* IE6 bug fix */
+                margin-top   : -1px;
+            }
+            
+            .window .bottomBar {
+                background : url("images/window_mb_small.png") repeat-x top left;
+                height     : 4px;
+                color      : #FFFFFF;
+                position   : relative;
+                margin     : -2px 3px 0 3px;
+                border-top : 1px solid #dcd8d8;
+            }
+            
+            .window .bottom {
+                position : absolute;
+                bottom   : 0;
+                width    : 100%;
+            }
+            
+            .cover {
+                /*background: url(images/spacer.gif);*/
+                background : white;
+                opacity    : 0.3;
+                filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+                position   : fixed;
+                left       : 0;
+                top        : 0;
+                width      : 100%;
+                height     : 100%;
+                height     : expression(document.documentElement.offsetHeight);
+                z-index    : 10000;
+            }
+            
+            .window .title blockquote {
+                margin   : 0;
+                width    : 56px;
+                height   : 21px;
+                position : absolute;
+                padding  : 4px 4px 2px 2px;
+                top      : 0;
+                right    : 0;
+            }
+        
+            .window .title blockquote div {
+                width      : 10px;
+                height     : 9px;
+                float      : right;
+                padding    : 3px;
+                background : no-repeat 3px 3px;
+                cursor     : default;
+                _overflow  : hidden; /* IE6 bug fix */
+            }
+            
+            .window .title blockquote div.hover {
+                border              : 1px solid white;
+                padding             : 2px;
+                background-position : 2px -10px;
+                height              : 10px;
+                background-color    : transparent;
+            }
+            
+            .window .title blockquote div.down {
+                background-color : black;
+            }
+            
+            .window .title .max {
+                background-image : url(images/win_max.gif);
+            }
+            
+            .windowMax .title .max {
+                background-image : url(images/win_restore.gif);
+            }
+            
+            .window .title .min {
+                background-image : url(images/win_min.gif);
+            }
+            
+            .windowMin .title .min {
+                background-image : url(images/win_restore.gif);
+            }
+            
+            .window .title .close {
+                width            : 11px;
+                background-image : url(images/win_x.gif);
+            }
+            
+            .window .title span {
+                width   : 16px;
+                height  : 16px;
+                display : block;
+            }
+            
+            #apf_outline {
                 
-                <div class="borderLeft"> </div>
-                <div class="borderRight"> </div>
-                <div class="content"> </div>
+            }
             
-                <div class="bottomLeft"> </div>
-                <div class="bottomRight"> </div>
-                <div class="bottomBar"> </div>
-            </div>
-        </a:main>
-        <a:button>
-            <div> </div>
-        </a:button>
-        <a:cover>
-            <div class='cover'> </div>
-        </a:cover>
-    </a:presentation>
-</a:modalwindow>
+            #apf_outline.drag {
+                border     : 1px solid black;
+                background : #CCC;
+                opacity    : 0.4;
+                filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+            }
+            
+            #apf_outline.resize {
+                border     : 3px solid black;
+                background : #CCC;
+                opacity    : 0.3;
+                filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+            }
+        ]]></a:style>
+    
+        <a:presentation>
+            <a:main 
+              collapsed-height = "30"
+              min-width        = "150" 
+              min-height       = "80"
+              container        = "div[6]" 
+              drag             = "div[3]" 
+              title            = "div[3]/text()" 
+              icon             = "div[3]/img" 
+              buttons          = "div[3]/blockquote">
+                <div class="window">
+                    <div class="topLeft"> </div>
+                    <div class="topRight"> </div>
+                    <div class="title"><img src="" />-
+                        <blockquote> </blockquote>
+                    </div>
+                
+                    <div class="borderLeft"> </div>
+                    <div class="borderRight"> </div>
+                    <div class="content"> </div>
+            
+                    <div class="bottomLeft"> </div>
+                    <div class="bottomRight"> </div>
+                    <div class="bottomBar"> </div>
+                </div>
+            </a:main>
+            <a:button>
+                <div> </div>
+            </a:button>
+            <a:cover>
+                <div class='cover'> </div>
+            </a:cover>
+        </a:presentation>
+    </a:modalwindow>
+    
+    <a:modalwindow name="alert">
+        <a:style><![CDATA[
+            .alert {
+                font-family : Tahoma;
+                font-size   : 11px;
+                padding     : 27px 0 10px 0;
+                text-align  : left;
+                position    : relative;
+            }
+        
+            .alert .topLeft {
+                background : url("images/error_box_lt.png") no-repeat top left;
+                width      : 8px;
+                height     : 27px;
+                float      : left;
+                margin     : -27px 0 0 0;
+                _margin    : -27px -8px 0 0; /* IE6 bug fix */
+                padding    : 0;
+                border     : 0;
+            }
+        
+            .alert .topRight {
+                background : url("images/error_box_rt.png") no-repeat top left;
+                width      : 14px;
+                height     : 27px;
+                float      : right;
+                margin     : -27px 0 0 0;
+                _margin    : -27px 0 0 -14px;
+                padding    : 0;
+                border     : 0;
+            }
+        
+            .alert .title {
+                border-top  : 1px solid #c3c3c3;
+                height      : 18px;
+                margin      : -27px 14px 0 8px;
+                padding     : 8px 0 0 3px;
+                font-weight : bold;
+                color       : #0e9717;
+                cursor      : default;
+                background  : white;
+            }
+        
+            .error .title {
+                color : #327fbd;
+            }
+        
+            .alert .content {
+                border-left : 1px solid #c3c3c3;
+                padding     : 0 0 0 10px;
+                margin      : 0 9px 0 0;
+                /*overflow : hidden;*/
+                height      : 100%;
+                position    : relative;
+                background  : white;
+            }
+        
+            .alert .borderRight {
+                background : url("images/error_box_r.png") repeat-y top right;
+                overflow   : hidden;
+                height     : 100%;
+                float      : right;
+                width      : 9px;
+            }
+        
+            .absolute .borderRight {
+                bottom   : 26px;
+                position : absolute;
+                right    : 0;
+                top      : 27px;
+                z-index  : 1;
+                height   : auto;
+            }
+            
+            .alert .bottomLeft {
+                background : url("images/error_box_lb.png") no-repeat top left;
+                width      : 8px;
+                height     : 16px;
+                float      : left;
+                margin     : 0;
+                _margin    : 0 -8px 0 0; /* IE6 bug fix */
+                padding    : 0;
+                border     : 0;
+            }
+        
+            .alert .bottomRight {
+                background : url("images/error_box_rb.png") no-repeat top right;
+                width      : 14px;
+                height     : 16px;
+                float      : right;
+                margin     : 0;
+                _margin    : 0 0 0 -14px; /* IE6 bug fix */
+                padding    : 0;
+                border     : 0;
+            }
+        
+            .alert .bottomBar {
+                background : url("images/error_box_b.png") repeat-x bottom left;
+                height     : 16px;
+                margin     : 0 14px 0 8px;
+                padding    : 0;
+                border     : 0;
+            }
+        
+            .alert .close {
+                width      : 13px;
+                height     : 13px;
+                background : url("images/close.png") no-repeat top left;
+                margin     : -2px 1px 0 0;
+                overflow   : hidden;
+                position   : absolute;
+                right      : 14px;
+                top        : 9px;
+            }
+        
+            .alert .title .hover {
+                background-position : 0 -13px;
+            }
+        ]]></a:style>
+    
+        <a:presentation>
+        <!--  min-width="50" min-height="50"  -->
+            <a:main 
+              collapsed-height = "30"
+              container        = "div[5]" 
+              drag             = "div[3]" 
+              title            = "div[3]/text()"
+              buttons          = "div[3]">
+                <div class="alert">
+                    <div class="topLeft"> </div>
+                    <div class="topRight"> </div>
+                    <div class="title">-</div>
+    
+                    <div class="borderRight"> </div>
+                    <div class="content">
+                    </div>
+    
+                    <div class="bottomLeft"> </div>
+                    <div class="bottomRight"> </div>
+                    <div class="bottomBar"> </div>
+                </div>
+            </a:main>
+            <a:button>
+                <div> </div>
+            </a:button>
+            <a:cover>
+                <div class='cover'> </div>
+            </a:cover>
+        </a:presentation>
+    </a:modalwindow>
+    <a:modalwindow name="roundedged">
+        <a:style><![CDATA[
+            .winround {
+                font-family : Tahoma;
+                font-size   : 11px;
+                padding     : 26px 0 11px 0;
+                position    : relative;
+            }
+        
+            .winround .topLeft {
+                float         : left;
+                background    : url("images/window_lt.png") no-repeat top left;
+                width         : 6px;
+                height        : 27px;
+                margin        : 0;
+                padding       : 0;
+                border        : 0;
+                margin-top    : -26px;
+                _margin-right : -6px; /* IE6 bug fix */
+            }
+            
+            .winroundFocus {
+            
+            }
+            
+            .winround .topRight {
+                float        : right;
+                background   : url("images/window_rt.png") no-repeat top left;
+                width        : 5px;
+                height       : 27px;
+                margin       : 0;
+                padding      : 0;
+                border       : 0;
+                margin-top   : -26px;
+                _margin-left : -5px; /* IE6 bug fix */
+            }
+            
+            .winround .title {
+                background  : url("images/window_mt.png") repeat-x top left;
+                height      : 21px;
+                color       : #eeeeee;
+                position    : relative;
+                margin      : 0 5px 0 6px;
+                padding     : 6px 0 0 20px;
+                border      : 0;
+                font-weight : bold;
+                margin-top  : -26px;
+                cursor      : default;
+            }
+            
+            .winround .title img {
+                margin   : -1px 3px 0 -1px;
+                position : absolute;
+                left     : 2px;
+                top      : 5px;
+            }
+            
+            .winround .content {
+                background       : #f5f5f5;
+                margin-left      : 1px;
+                margin-right     : 1px;
+                position         : relative;
+                height           : 100%;
+                background-color : #f5f5f5;
+                background-image : none;
+                border           : 0;
+            }
+            
+            .winroundMin .content {
+                overflow : hidden;
+            }
+            
+            .winround .borderRight {
+                background-image : none;
+                background-color : #b2b2b2;
+                overflow         : hidden;
+                width            : 1px;
+                float            : right;
+                height           : 100%;
+                _margin-left     : -1px; /* IE6 bug fix */
+                border           : 0;
+            }
+            
+            .winround .borderLeft {
+                background-image : none;
+                background-color : #b2b2b2;
+                overflow         : hidden;
+                height           : 100%;
+                float            : left;
+                width            : 1px;
+                _margin-right    : -1px; /* IE6 bug fix */
+                border           : 0;
+            }
+            
+            .winround .bottomLeft {
+                float         : left;
+                background    : url("images/window_lb_rounded.png") no-repeat top left;
+                width         : 9px;
+                height        : 9px;
+                margin        : 0;
+                _margin-right : -9px; /* IE6 bug fix */
+                overflow      : hidden;
+            }
+            
+            .winround .bottomRight {
+                float        : right;
+                background   : url("images/window_rb_rounded.png") no-repeat top left;
+                width        : 9px;
+                height       : 9px;
+                margin       : 0;
+                _margin-left : -9px; /* IE6 bug fix */
+                overflow     : hidden;
+            }
+            
+            .winround .bottomBar {
+                background-image : none;
+                background-color : #f5f5f5;
+                height           : 8px;
+                color            : #FFFFFF;
+                position         : relative;
+                margin           : 0 9px 0 9px;
+                border           : 0;
+                border-bottom    : 1px solid #b2b2b2;
+                overflow         : hidden;
+            }
+            
+            .winround .bottom {
+                position : absolute;
+                bottom   : 0;
+                width    : 100%;
+            }
+            
+            .cover {
+                /*background : url(images/spacer.gif);*/
+                background : white;
+                opacity    : 0.3;
+                filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+                position   : absolute;
+                left       : 0;
+                top        : 0;
+                width      : 100%;
+                height     : 100%;
+                height     : expression(document.documentElement.offsetHeight);
+                z-index    : 10000;
+            }
+            
+            .winround .title blockquote {
+                margin     : 0;
+                width      : 56px;
+                height     : 21px;
+                position   : absolute;
+                padding    : 4px 4px 2px 2px;
+                top        : 0;
+                right      : 0;
+            }
+    
+            .winround .title blockquote div {
+                width      : 10px;
+                height     : 9px;
+                float      : right;
+                padding    : 3px;
+                background : no-repeat 3px 3px;
+                cursor     : default;
+                _overflow  : hidden; /* IE6 bug fix */
+            }
+            
+            .winround .title blockquote div.hover {
+                border              : 1px solid white;
+                padding             : 2px;
+                background-position : 2px -10px;
+                height              : 10px;
+                background-color    : transparent;
+            }
+            
+            .winround .title blockquote div.down {
+                background-color : black;
+            }
+            
+            .winround .title .max {
+                background-image : url(images/win_max.gif);
+                width            : 11px;
+            }
+            
+            .winroundMax .title .max {
+                background-image : url(images/win_restore.gif);
+            }
+            
+            .winround .title .min {
+                background-image : url(images/win_min.gif);
+            }
+            
+            .winroundMin .title .min {
+                background-image : url(images/win_restore.gif);
+            }
+            
+            .winround .title .close {
+                width            : 10px;
+                background-image : url(images/win_x.gif);
+            }
+            
+            .winround .title span {
+                width   : 16px;
+                height  : 16px;
+                display : block;
+            }
+            
+            #apf_outline {
+    
+            }
+            
+            #apf_outline.drag {
+                border     : 1px solid black;
+                background : #CCC;
+                opacity    : 0.4;
+                filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+            }
+            
+            #apf_outline.resize {
+                border     : 3px solid black;
+                background : #CCC;
+                opacity    : 0.3;
+                filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+            }
+        ]]></a:style>
+        <a:style condition="apf.isChrome">
+            .winround .bottomBar {
+                margin : 0;
+            }
+        </a:style>
+        <a:style condition="apf.isSafari">
+            .winround .bottomBar {
+                margin : 0;
+            }
+        </a:style>
+        
+        <a:presentation>
+            <a:main 
+              collapsed-height = "30"
+              min-width        = "150" 
+              min-height       = "80"
+              container        = "div[6]" 
+              drag             = "div[3]" 
+              title            = "div[3]/text()" 
+              icon             = "div[3]/img" 
+              buttons          = "div[3]/blockquote">
+                <div class="winround">
+                    <div class="topLeft"> </div>
+                    <div class="topRight"> </div>
+                    <div class="title">
+                        -
+                        <img src="" />
+                        <blockquote> </blockquote>
+                    </div>
+    
+                    <div class="borderLeft"> </div>
+                    <div class="borderRight"> </div>
+                    <div class="content"> </div>
+                
+                    <div class="bottomLeft"> </div>
+                    <div class="bottomRight"> </div>
+                    <div class="bottomBar"> </div>
+                </div>
+            </a:main>
+            <a:button>
+                <div> </div>
+            </a:button>
+            <a:cover>
+                <div class='cover'> </div>
+            </a:cover>
+        </a:presentation>
+    </a:modalwindow>
+    
+    <a:modalwindow name="bigedge">
+        <a:style><![CDATA[
+            .winbigedge {
+                font-family : Tahoma;
+                font-size   : 11px;
+                padding     : 26px 0 23px 0;
+                position    : relative;
+            }
+        
+            .winbigedge .topLeft {
+                float         : left;
+                background    : url("images/window_lt.png") no-repeat top left;
+                width         : 6px;
+                height        : 27px;
+                margin        : 0;
+                padding       : 0;
+                border        : 0;
+                margin-top    : -26px;
+                _margin-right : -6px; /* IE6 bug fix */
+            }
+            
+            .winbigedgeFocus {
+            
+            }
+            
+            .winbigedge .topRight {
+                float        : right;
+                background   : url("images/window_rt.png") no-repeat top left;
+                width        : 5px;
+                height       : 27px;
+                margin       : 0;
+                padding      : 0;
+                border       : 0;
+                margin-top   : -26px;
+                _margin-left : -5px; /* IE6 bug fix */
+            }
+            
+            .winbigedge .title {
+                background  : url("images/window_mt.png") repeat-x top left;
+                height      : 21px;
+                color       : #eeeeee;
+                position    : relative;
+                margin      : 0 5px 0 6px;
+                padding     : 6px 0 0 20px;
+                border      : 0;
+                font-weight : bold;
+                margin-top  : -26px;
+                cursor      : default;
+            }
+            
+            .winbigedge .title img {
+                margin   : -1px 3px 0 -1px;
+                position : absolute;
+                left     : 2px;
+                top      : 5px;
+            }
+            
+            .winbigedge .content {
+                background   : #f5f5f5;
+                margin-left  : 3px;
+                margin-right : 3px;
+                position     : relative;
+                height       : 100%;
+                background   : #f5f5f5 url(images/page_bt.png) repeat-x top left;
+            }
+            
+            .winbigedgeMin .content {
+                overflow : hidden;
+            }
+            
+            .winbigedge .borderRight {
+                background   : url("images/window_border.png") repeat-y top right;
+                overflow     : hidden;
+                width        : 3px;
+                float        : right;
+                height       : 100%;
+                _margin-left : -3px; /* IE6 bug fix */ 
+            }
+            
+            .winbigedge .borderLeft {
+                background    : url("images/window_border.png") repeat-y top left;
+                overflow      : hidden;
+                height        : 100%;
+                float         : left;
+                width         : 3px;
+                _margin-right : -3px; /* IE6 bug fix */
+            }
+            
+            .winbigedge .bottomLeft {
+                float         : left;
+                background    : url("images/window_lb.png") no-repeat top left;
+                width         : 6px;
+                height        : 22px;
+                _margin-right : -6px; /* IE6 bug fix */
+            }
+            
+            .winbigedge .bottomRight {
+                float        : right;
+                background   : url("images/window_rb.png") no-repeat top left;
+                width        : 5px;
+                height       : 22px;
+                _margin-left : -5px; /* IE6 bug fix */
+            }
+            
+            .winbigedge .bottomBar {
+                background : url("images/window_mb.png") repeat-x top left;
+                height     : 22px;
+                color      : #FFFFFF;
+                position   : relative;
+                margin     : 0 5px 0 6px;
+            }
+            
+            .winbigedge .bottom {
+                position : absolute;
+                bottom   : 0;
+                width    : 100%;
+            }
+            
+            .cover {
+                /*background : url(images/spacer.gif);*/
+                background : white;
+                opacity    : 0.3;
+                filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+                position   : absolute;
+                left       : 0;
+                top        : 0;
+                width      : 100%;
+                height     : 100%;
+                height     : expression(document.documentElement.offsetHeight);
+                z-index    : 10000;
+            }
+            
+            .winbigedge .title blockquote {
+                margin     : 0;
+                width      : 56px;
+                height     : 21px;
+                position   : absolute;
+                padding    : 4px 4px 2px 2px;
+                top        : 0;
+                right      : 0;
+            }
+    
+            .winbigedge .title blockquote div {
+                width      : 10px;
+                height     : 9px;
+                float      : right;
+                padding    : 3px;
+                background : no-repeat 3px 3px;
+                cursor     : default;
+                _overflow  : hidden; /* IE6 bug fix */
+            }
+            
+            .winbigedge .title blockquote div.hover {
+                border              : 1px solid white;
+                padding             : 2px;
+                background-position : 2px -10px;
+                height              : 10px;
+                background-color    : transparent;
+            }
+            
+            .winbigedge .title blockquote div.down {
+                background-color : black;
+            }
+            
+            .winbigedge .title .max {
+                background-image : url(images/win_max.gif);
+            }
+            
+            .winbigedgeMax .title .max {
+                background-image : url(images/win_restore.gif);
+            }
+            
+            .winbigedge .title .min {
+                background-image : url(images/win_min.gif);
+            }
+            
+            .winbigedgeMin .title .min {
+                background-image : url(images/win_restore.gif);
+            }
+            
+            .winbigedge .title .close {
+                width            : 11px;
+                background-image : url(images/win_x.gif);
+            }
+            
+            .winbigedge .title span {
+                width   : 16px;
+                height  : 16px;
+                display : block;
+            }
+            
+            #apf_outline {
+    
+            }
+            
+            #apf_outline.drag {
+                border     : 1px solid black;
+                background : #CCC;
+                opacity    : 0.4;
+                filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+            }
+            
+            #apf_outline.resize {
+                border     : 3px solid black;
+                background : #CCC;
+                opacity    : 0.3;
+                filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+            }
+        ]]></a:style>
+    
+        <a:presentation>
+            <a:main 
+              collapsed-height = "30"
+              min-width        = "150" 
+              min-height       = "80"
+              container        = "div[6]" 
+              drag             = "div[3]" 
+              title            = "div[3]/text()" 
+              icon             = "div[3]/img" 
+              buttons          = "div[3]/blockquote">
+                <div class="winbigedge">
+                    <div class="topLeft"> </div>
+                    <div class="topRight"> </div>
+                    <div class="title">
+                        -
+                        <img src="" />
+                        <blockquote> </blockquote>
+                    </div>
+                    
+                    <div class="borderLeft"> </div>
+                    <div class="borderRight"> </div>
+                    <div class="content"> </div>
+                
+                    <div class="bottomLeft"> </div>
+                    <div class="bottomRight"> </div>
+                    <div class="bottomBar"> </div>
+                </div>
+            </a:main>
+            <a:button>
+                <div> </div>
+            </a:button>
+            <a:cover>
+                <div class='cover'> </div>
+            </a:cover>
+        </a:presentation>
+    </a:modalwindow>
+</a:skin>

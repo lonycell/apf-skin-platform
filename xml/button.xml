@@ -1,387 +1,389 @@
-<a:button name="btn1dasimple">
-    <a:style><![CDATA[
-        .odas_btn {
-            color       : #20abeb;
-            font-family : Tahoma;
-            font-size   : 11px;
-            height      : 22px;
-            width       : 100px;
-            border      : 0;
-            overflow    : hidden;
-            cursor      : default;
-            padding     : 2px 0 2px 0;
-            text-align  : center;
-        }
-
-        .odas_btnDisabled  {
-            color : #bebebe;
-        }
-
-        .odas_btnFocus {
-
-        }
-
-        .odas_btnOver {
-            text-decoration : underline;
-            cursor          : pointer;
-        }
-    ]]></a:style>
-
-    <a:presentation>
-        <a:main caption="text()" background=".">
-            <div class="odas_btn">-</div>
-        </a:main>
-    </a:presentation>
-</a:button>
-
-<a:button name="btn1da">
-    <a:style><![CDATA[
-        .oda_btn {
-            color            : white;
-            font-family      : Tahoma;
-            font-size        : 11px;
-            height           : 15px;
-            width            : 100px;
-            border           : 2px solid #20abeb;
-            overflow         : hidden;
-            cursor           : pointer;
-            padding          : 2px 3px 2px 3px;
-            text-align       : center;
-            background-color : #363636;
-        }
-
-        .oda_btnDisabled  {
-            border : 2px solid #c3c3c3;
-            color  : #bebebe;
-        }
-
-        .oda_btnFocus {
-            border : 2px solid #52bff2;
-        }
-
-        .oda_btnOver {
-        }
-    ]]></a:style>
-
-    <a:presentation>
-        <a:main caption="text()" background=".">
-            <div class="oda_btn">-</div>
-        </a:main>
-    </a:presentation>
-</a:button>
-
-<a:button name="buttonmedia">
-    <a:style><![CDATA[
-        .buttonmedia {
-            color       : #4b4b4b;
-            font-family : Tahoma;
-            font-size   : 8pt;
-            height      : 21px;
-            width       : 34px;
-            overflow    : hidden;
-            cursor      : default;
-            background  : url(images/mediabtn2.png) no-repeat 0 -42px;
-            position    : relative;
-            margin      : 0;
-        }
-
-        .buttonmediaOver {
-            background-position : 0 -21px;
-        }
-
-        .buttonmediaDisabled {
-            background-position : 0 -42px;
-        }
-
-        .buttonmediaDown {
-            background-position : 0 0px;
-        }
-
-        .buttonmedia span {
-            display    : block;
-            background : no-repeat 0 0;
-            width      : 11px;
-            height     : 10px;
-            margin     : 4px auto 0 11px;
-        }
-    ]]></a:style>
+<a:skin xmlns:a="http://ajax.org/2005/aml">
+    <a:button name="btn1dasimple">
+        <a:style><![CDATA[
+            .odas_btn {
+                color       : #20abeb;
+                font-family : Tahoma;
+                font-size   : 11px;
+                height      : 22px;
+                width       : 100px;
+                border      : 0;
+                overflow    : hidden;
+                cursor      : default;
+                padding     : 2px 0 2px 0;
+                text-align  : center;
+            }
     
-    <a:presentation>
-        <a:main background="span" icon="span">
-            <div class="buttonmedia">
-                <span> </span>
-            </div>
-        </a:main>
-    </a:presentation>
-</a:button>
-
-<a:button name="toolbarbutton">
-    <a:style><![CDATA[
-        .menubar .toolbarbutton {
-            display         : block;
-            height          : 18px;
-            float           : left;
-            cursor          : default;
-            padding         : 4px 8px 0 8px;
-            line-height     : 13px;
-            text-decoration : none;
-            color           : #000000;
-        }
+            .odas_btnDisabled  {
+                color : #bebebe;
+            }
+    
+            .odas_btnFocus {
+    
+            }
+    
+            .odas_btnOver {
+                text-decoration : underline;
+                cursor          : pointer;
+            }
+        ]]></a:style>
+    
+        <a:presentation>
+            <a:main caption="text()" background=".">
+                <div class="odas_btn">-</div>
+            </a:main>
+        </a:presentation>
+    </a:button>
+    
+    <a:button name="btn1da">
+        <a:style><![CDATA[
+            .oda_btn {
+                color            : white;
+                font-family      : Tahoma;
+                font-size        : 11px;
+                height           : 15px;
+                width            : 100px;
+                border           : 2px solid #20abeb;
+                overflow         : hidden;
+                cursor           : pointer;
+                padding          : 2px 3px 2px 3px;
+                text-align       : center;
+                background-color : #363636;
+            }
+    
+            .oda_btnDisabled  {
+                border : 2px solid #c3c3c3;
+                color  : #bebebe;
+            }
+    
+            .oda_btnFocus {
+                border : 2px solid #52bff2;
+            }
+    
+            .oda_btnOver {
+            }
+        ]]></a:style>
+    
+        <a:presentation>
+            <a:main caption="text()" background=".">
+                <div class="oda_btn">-</div>
+            </a:main>
+        </a:presentation>
+    </a:button>
+    
+    <a:button name="buttonmedia">
+        <a:style><![CDATA[
+            .buttonmedia {
+                color       : #4b4b4b;
+                font-family : Tahoma;
+                font-size   : 8pt;
+                height      : 21px;
+                width       : 34px;
+                overflow    : hidden;
+                cursor      : default;
+                background  : url(images/mediabtn2.png) no-repeat 0 -42px;
+                position    : relative;
+                margin      : 0;
+            }
+    
+            .buttonmediaOver {
+                background-position : 0 -21px;
+            }
+    
+            .buttonmediaDisabled {
+                background-position : 0 -42px;
+            }
+    
+            .buttonmediaDown {
+                background-position : 0 0px;
+            }
+    
+            .buttonmedia span {
+                display    : block;
+                background : no-repeat 0 0;
+                width      : 11px;
+                height     : 10px;
+                margin     : 4px auto 0 11px;
+            }
+        ]]></a:style>
         
-        .menubar .toolbarbuttonOver, 
-        .menubar .toolbarbuttonDown {
-            background : #45b3e8 url(images/menu_over.gif);
-            color      : #ffffff;
-        }
-        
-        .menubar .toolbarbuttonDown, 
-        .menubar .toolbarbuttonDown {
-            background : #45b3e8 url(images/menu_down.gif);
-            color      : #ffffff;
-        }
-        
-        .menubar .toolbarbuttonDisabled, 
-        .menubar .toolbarbuttonDisabled {
-            background : none;
-            color      : #bebebe;
-        }
-        
-        .toolbar .subbar .toolbarbutton {
-            display         : block;
-            height          : 22px;
-            float           : left;
-            cursor          : default;
-            margin          : 2px 1px 0 1px;
-            text-decoration : none;
-            color           : #000000;
-            text-align      : center;
-            padding         : 0 4px 0 0;
-            line-height     : 13px;
-        }
-
-        .toolbar .subbar .toolbarbutton div {
-            float   : left;
-            margin  : 0;
-            height  : 17px;
-            padding : 4px 4px 0 8px;
-            border  : 0;
-        }
-        
-        .toolbar .subbar .toolbarbuttonOver {
-            background : url("images/toolbar_a_hover_right.png") no-repeat top right;
-        }
-        
-        .toolbar .subbar .toolbarbuttonOver div {
-            background : url("images/toolbar_a_hover.png") no-repeat top left;
-        }
-
-        .toolbar .subbar .toolbarbuttonDown {
-            background : url("images/toolbar_a_down_right.png") no-repeat top right;
-        }
-        
-        .toolbar .subbar .toolbarbuttonDown div {
-            background : url("images/toolbar_a_down.png") no-repeat top left;
-        }
-
-        .toolbar .subbar .toolbarbuttonDisabled, 
-        .toolbar .subbar .toolbarbuttonDisabled div {
-            background : none;
-            color      : #bebebe;
-        }
-        
-        .toolbar .subbar .toolbarbuttonIcon div {
-            padding-left : 4px;
-        }
-        
-        .toolbar .subbar .toolbarbuttonEmpty div {
-            padding : 4px 0 0 7px;
-        }
-        
-        .toolbar .subbar .toolbarbuttonIcon span {
-            display : block;
-            float   : left;
-            width   : 16px;
-            height  : 16px;
-            margin  : -2px 4px 0 0;
-        }
-        
-        .toolbar .subbar .toolbarbuttonEmpty span {
-            margin : -1px 3px 0 0;
-        }
-    ]]></a:style>
-    <a:presentation>
-        <a:main 
-          caption    = "div/span/text()"
-          background = "div/span" 
-          icon       = "div/span">
-            <div class='toolbarbutton'>
-                <div>
-                    <span>-</span>
+        <a:presentation>
+            <a:main background="span" icon="span">
+                <div class="buttonmedia">
+                    <span> </span>
                 </div>
-            </div>
-        </a:main>
-    </a:presentation>
-</a:button>
-
-<a:button name="button">
-    <a:alias>submit</a:alias>
-    <a:alias>reset</a:alias>
+            </a:main>
+        </a:presentation>
+    </a:button>
     
-    <a:style><![CDATA[
-        .apf_btn {
-            color       : #4b4b4b;
-            font-family : Tahoma;
-            font-size   : 8pt;
-            height      : 25px;
-            width       : 100px;
-            overflow    : hidden;
-            cursor      : default;
-        }
+    <a:button name="toolbarbutton">
+        <a:style><![CDATA[
+            .menubar .toolbarbutton {
+                display         : block;
+                height          : 18px;
+                float           : left;
+                cursor          : default;
+                padding         : 4px 8px 0 8px;
+                line-height     : 13px;
+                text-decoration : none;
+                color           : #000000;
+            }
+            
+            .menubar .toolbarbuttonOver, 
+            .menubar .toolbarbuttonDown {
+                background : #45b3e8 url(images/menu_over.gif);
+                color      : #ffffff;
+            }
+            
+            .menubar .toolbarbuttonDown, 
+            .menubar .toolbarbuttonDown {
+                background : #45b3e8 url(images/menu_down.gif);
+                color      : #ffffff;
+            }
+            
+            .menubar .toolbarbuttonDisabled, 
+            .menubar .toolbarbuttonDisabled {
+                background : none;
+                color      : #bebebe;
+            }
+            
+            .toolbar .subbar .toolbarbutton {
+                display         : block;
+                height          : 22px;
+                float           : left;
+                cursor          : default;
+                margin          : 2px 1px 0 1px;
+                text-decoration : none;
+                color           : #000000;
+                text-align      : center;
+                padding         : 0 4px 0 0;
+                line-height     : 13px;
+            }
     
-        .apf_btn .left {
-            float         : left;
-            width         : 8px;
-            height        : 25px;
-            _margin-right : -3px; /* IE6 bug fix */
-        }
+            .toolbar .subbar .toolbarbutton div {
+                float   : left;
+                margin  : 0;
+                height  : 17px;
+                padding : 4px 4px 0 8px;
+                border  : 0;
+            }
+            
+            .toolbar .subbar .toolbarbuttonOver {
+                background : url("images/toolbar_a_hover_right.png") no-repeat top right;
+            }
+            
+            .toolbar .subbar .toolbarbuttonOver div {
+                background : url("images/toolbar_a_hover.png") no-repeat top left;
+            }
     
-        .apf_btn .lbl {
-            height        : 20px;
-            padding-top   : 5px;
-            text-align    : center;
-            margin        : 0;
-            _margin       : 0; /* IE6 fix */
-            white-space   : nowrap;
-            overflow      : hidden;
-            text-overflow : ellipsis;
-        }
+            .toolbar .subbar .toolbarbuttonDown {
+                background : url("images/toolbar_a_down_right.png") no-repeat top right;
+            }
+            
+            .toolbar .subbar .toolbarbuttonDown div {
+                background : url("images/toolbar_a_down.png") no-repeat top left;
+            }
     
-        .apf_btn .right {
-            float       : right;
-            width       : 9px;
-            height      : 25px;
-           _margin-left : -3px; /* IE6 bug fix */
-        }
-    
-        .apf_btn .left {
-            background : url("images/button_left.png") no-repeat 0 -25px;
-        }
-    
-        .apf_btn .lbl {
-            background : url("images/button_middle.png") repeat-x 0 -25px;
-        }
-    
-        .apf_btn .right {
-            background : url("images/button_right.png") no-repeat 0 -25px;
-        }
-    
-        .apf_btnDefault .left {
-            background : url("images/button_left.png") no-repeat top left;
-        }
-    
-        .apf_btnDefault .lbl {
-            background : url("images/button_middle.png") repeat-x top left;
-        }
-    
-        .apf_btnDefault .right {
-            background : url("images/button_right.png") no-repeat top left;
-        }
-    
-        .redBtn {
-            color : #ffffff;
-        }
-    
-        .redBtn .left {
-            background-image : url("images/red_button_left.png");
-        }
-    
-        .redBtn .lbl {
-            background-image : url("images/red_button_middle.png");
-        }
-    
-        .redBtn .right {
-            background-image : url("images/red_button_right.png");
-        }
-    
-        .apf_btn span {
-            padding  : 1px 3px 1px 3px;
-            border   : 1px solid transparent;
-            position : relative;
-            _border  : 0;
-            _padding : 2px 4px 2px 4px;
-            _margin  : 0;
-        }
-    
-        .apf_btnDisabled  {
-            color : #bebebe;
-        }
-    
-        .apf_btnDisabled .left {
-            background : url("images/button_left.png") no-repeat 0 -50px;
-        }
-    
-        .apf_btnDisabled .lbl {
-            background : url("images/button_middle.png") repeat-x 0 -50px;
-        }
-    
-        .apf_btnDisabled .right {
-            background : url("images/button_right.png") no-repeat 0 -50px;
-        }
-        .apf_btnFocus {
-        }
-    
-        .apf_btnFocus span {
-            border  : 1px dotted #BBB;
-            padding : 1px 3px 1px 3px;
-        }
-    
-        .apf_btnDown .left {
-            background : url("images/button_left.png") no-repeat 0 -75px;
-        }
-    
-        .apf_btnDown .lbl {
-            background : url("images/button_middle.png") repeat-x 0 -75px;
-        }
-    
-        .apf_btnDown .right {
-            background : url("images/button_right.png") no-repeat 0 -75px;
-        }
-        .apf_btnDown.redBtn .left {
-            background-image : url("images/red_button_left.png");
-        }
-    
-        .apf_btnDown.redBtn .lbl {
-            background-image : url("images/red_button_middle.png");
-        }
-    
-        .apf_btnDown.redBtn .right {
-            background-image : url("images/red_button_right.png");
-        }
-        
-        .apf_btnOver {
-        }
-    ]]></a:style>
-    <a:style condition="apf.isIE7">
-        .apf_btn .right {
-            margin : 0;
-        }
-    
-        .apf_btn .left {
-            margin : 0;
-        }
-    </a:style>
-
-    <a:presentation>
-        <a:main 
-          caption    = "div[3]/span/text()" 
-          background = ".">
-            <div class="apf_btn">
-                <div class="left"> </div>
-                <div class="right"> </div>
-                <div class="lbl">
-                    <span>-</span>
+            .toolbar .subbar .toolbarbuttonDisabled, 
+            .toolbar .subbar .toolbarbuttonDisabled div {
+                background : none;
+                color      : #bebebe;
+            }
+            
+            .toolbar .subbar .toolbarbuttonIcon div {
+                padding-left : 4px;
+            }
+            
+            .toolbar .subbar .toolbarbuttonEmpty div {
+                padding : 4px 0 0 7px;
+            }
+            
+            .toolbar .subbar .toolbarbuttonIcon span {
+                display : block;
+                float   : left;
+                width   : 16px;
+                height  : 16px;
+                margin  : -2px 4px 0 0;
+            }
+            
+            .toolbar .subbar .toolbarbuttonEmpty span {
+                margin : -1px 3px 0 0;
+            }
+        ]]></a:style>
+        <a:presentation>
+            <a:main 
+              caption    = "div/span/text()"
+              background = "div/span" 
+              icon       = "div/span">
+                <div class='toolbarbutton'>
+                    <div>
+                        <span>-</span>
+                    </div>
                 </div>
-            </div>
-        </a:main>
-    </a:presentation>
-</a:button>
+            </a:main>
+        </a:presentation>
+    </a:button>
+    
+    <a:button name="button">
+        <a:alias>submit</a:alias>
+        <a:alias>reset</a:alias>
+        
+        <a:style><![CDATA[
+            .apf_btn {
+                color       : #4b4b4b;
+                font-family : Tahoma;
+                font-size   : 8pt;
+                height      : 25px;
+                width       : 100px;
+                overflow    : hidden;
+                cursor      : default;
+            }
+        
+            .apf_btn .left {
+                float         : left;
+                width         : 8px;
+                height        : 25px;
+                _margin-right : -3px; /* IE6 bug fix */
+            }
+        
+            .apf_btn .lbl {
+                height        : 20px;
+                padding-top   : 5px;
+                text-align    : center;
+                margin        : 0;
+                _margin       : 0; /* IE6 fix */
+                white-space   : nowrap;
+                overflow      : hidden;
+                text-overflow : ellipsis;
+            }
+        
+            .apf_btn .right {
+                float       : right;
+                width       : 9px;
+                height      : 25px;
+               _margin-left : -3px; /* IE6 bug fix */
+            }
+        
+            .apf_btn .left {
+                background : url("images/button_left.png") no-repeat 0 -25px;
+            }
+        
+            .apf_btn .lbl {
+                background : url("images/button_middle.png") repeat-x 0 -25px;
+            }
+        
+            .apf_btn .right {
+                background : url("images/button_right.png") no-repeat 0 -25px;
+            }
+        
+            .apf_btnDefault .left {
+                background : url("images/button_left.png") no-repeat top left;
+            }
+        
+            .apf_btnDefault .lbl {
+                background : url("images/button_middle.png") repeat-x top left;
+            }
+        
+            .apf_btnDefault .right {
+                background : url("images/button_right.png") no-repeat top left;
+            }
+        
+            .redBtn {
+                color : #ffffff;
+            }
+        
+            .redBtn .left {
+                background-image : url("images/red_button_left.png");
+            }
+        
+            .redBtn .lbl {
+                background-image : url("images/red_button_middle.png");
+            }
+        
+            .redBtn .right {
+                background-image : url("images/red_button_right.png");
+            }
+        
+            .apf_btn span {
+                padding  : 1px 3px 1px 3px;
+                border   : 1px solid transparent;
+                position : relative;
+                _border  : 0;
+                _padding : 2px 4px 2px 4px;
+                _margin  : 0;
+            }
+        
+            .apf_btnDisabled  {
+                color : #bebebe;
+            }
+        
+            .apf_btnDisabled .left {
+                background : url("images/button_left.png") no-repeat 0 -50px;
+            }
+        
+            .apf_btnDisabled .lbl {
+                background : url("images/button_middle.png") repeat-x 0 -50px;
+            }
+        
+            .apf_btnDisabled .right {
+                background : url("images/button_right.png") no-repeat 0 -50px;
+            }
+            .apf_btnFocus {
+            }
+        
+            .apf_btnFocus span {
+                border  : 1px dotted #BBB;
+                padding : 1px 3px 1px 3px;
+            }
+        
+            .apf_btnDown .left {
+                background : url("images/button_left.png") no-repeat 0 -75px;
+            }
+        
+            .apf_btnDown .lbl {
+                background : url("images/button_middle.png") repeat-x 0 -75px;
+            }
+        
+            .apf_btnDown .right {
+                background : url("images/button_right.png") no-repeat 0 -75px;
+            }
+            .apf_btnDown.redBtn .left {
+                background-image : url("images/red_button_left.png");
+            }
+        
+            .apf_btnDown.redBtn .lbl {
+                background-image : url("images/red_button_middle.png");
+            }
+        
+            .apf_btnDown.redBtn .right {
+                background-image : url("images/red_button_right.png");
+            }
+            
+            .apf_btnOver {
+            }
+        ]]></a:style>
+        <a:style condition="apf.isIE7">
+            .apf_btn .right {
+                margin : 0;
+            }
+        
+            .apf_btn .left {
+                margin : 0;
+            }
+        </a:style>
+    
+        <a:presentation>
+            <a:main 
+              caption    = "div[3]/span/text()" 
+              background = ".">
+                <div class="apf_btn">
+                    <div class="left"> </div>
+                    <div class="right"> </div>
+                    <div class="lbl">
+                        <span>-</span>
+                    </div>
+                </div>
+            </a:main>
+        </a:presentation>
+    </a:button>
+</a:skin>
