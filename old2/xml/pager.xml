@@ -1,0 +1,163 @@
+<a:skin xmlns:a="http://ajax.org/2005/aml">
+    <a:pager name="pager">
+        <a:style><![CDATA[
+            .pager {
+                font-size   : 8pt;
+                color       : #aaa;
+                position    : absolute;
+                right       : 10px;
+                top         : 10px;
+                text-align  : right;
+                line-height : 10px;
+            }
+            
+            .searchnav {
+                position : static;
+                margin   : 0 0px 0 70px;
+            }
+            
+            .pager span {
+                float      : left;
+                padding    : 3px 4px 3px 5px;
+                text-align : center;
+                margin     : 0 1px 0 0;
+                cursor     : pointer;
+            }
+            
+            .searchnav span {
+                color : white;
+            }
+            
+            .pager span:hover, 
+            .pager .current {
+                border  : 1px solid #aaa;
+                padding : 2px 3px 2px 4px;
+                color   : gray;
+            }
+            
+            .searchnav span:hover, 
+            .searchnav .current {
+                color        : white;
+                border-color : white;
+            }
+            
+            .pager .next {
+            
+            }
+            
+            .pager .previous {
+            
+            }
+            
+            .pager span.disabled,
+            .pager span.disabled:hover {
+                border  : 0;
+                padding : 3px 5px 3px 4px;
+                color   : #d7d7d7;
+                cursor  : default;
+            }
+            
+            .searchnav span.disabled,
+            .searchnav span.disabled:hover {
+                color : #999;
+            }
+        ]]></a:style>
+        <a:style condition="apf.isSafari">
+            .pager span {
+                padding : 3px 5px 3px 4px;
+            }
+            .pager span:hover, 
+            .pager .current {
+                padding : 2px 4px 3px 3px;
+            }
+        </a:style>
+        <a:style condition="apf.isGecko">
+            .pager span:hover, 
+            .pager .current {
+                padding : 2px 3px 3px 4px;
+            }
+        </a:style>
+        <a:style condition="apf.isChrome">
+            .pager span:hover, 
+            .pager .current {
+                padding : 1px 3px 3px 4px;
+            }
+        </a:style>
+        
+        <a:presentation>
+            <a:main container=".">
+                <div class="pager">
+                </div>
+            </a:main>
+            <a:button caption="text()">
+                <span>-</span>
+            </a:button>
+        </a:presentation>
+    </a:pager>
+    
+    <a:pager name="pgrnormal">
+        <a:style><![CDATA[
+            .pgrnormal {
+                font-size     : 9pt;
+                color         : #aaa;
+                text-align    : right;
+                line-height   : 10px;
+                height        : 15px;
+                padding       : 5px 0 7px 0;
+                border-bottom : 1px solid #eee;
+            }
+            
+            .btmpager {
+                border-top    : 1px solid #eee;
+                border-bottom : 0;
+                padding       : 15px 0 0 0;
+            }
+            
+            .pgrnormal div {
+                
+            }
+            
+            .pgrnormal span {
+                padding        : 3px 6px 3px 6px;
+                width          : 20px;
+                height         : 18px;
+                font-weight    : bold;
+                margin-right   : 3px;
+                cursor         : hand;
+                text-align     : center;
+                letter-spacing : 0;
+                color          : #2c78bd;
+                position       : relative;
+                border         : 1px solid white;
+            }
+            
+            .pgrnormal span:hover, 
+            .pgrnormal .current {
+                border          : 1px solid #ccc;
+                color           : gray;
+                text-decoration : none;
+                cursor          : pointer;
+            }
+            
+            .pgrnormal .next {
+            
+            }
+            
+            .pgrnormal .previous {
+            
+            }
+        ]]></a:style>
+    
+        <a:presentation>
+            <a:main container="div">
+                <div class="pgrnormal">
+                    <div>
+                    </div>
+                </div>
+            </a:main>
+            <a:button caption="text()">
+                <span>-</span>
+            </a:button>
+        </a:presentation>
+    </a:pager>
+</a:skin>

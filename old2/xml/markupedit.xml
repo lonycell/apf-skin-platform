@@ -1,0 +1,177 @@
+<a:skin xmlns:a="http://ajax.org/2005/aml">
+    <a:markupedit name="markupedit">
+        <a:style><![CDATA[
+            .markupedit {
+                border           : 1px solid gray;
+                background-color : #FFF;
+                width            : 200px;
+                height           : 500px;
+                overflow         : auto;
+                font-family      : Courier New;
+                font-size        : 11px;
+                cursor           : default;
+            }
+            
+            .markupedit dl, 
+            .markupedit dt, 
+            .markupedit dd {
+                margin : 0;
+            }
+            
+            .markupedit dt, 
+            .markupedit span {
+                color : #0000FF;
+            }
+            
+            .markupedit dt {
+                cursor : hand;
+                cursor : pointer;
+            }
+            
+            .markupedit .attribute dl, 
+            .markupedit .attribute dt, 
+            .markupedit .attribute dd {
+                display : inline;
+            }
+            
+            #override .markupedit .textedit {
+                background-color : white;
+                color            : black;
+                border           : 1px solid black;
+                padding          : 1px 2px 1px 2px;
+                margin           : -2px -4px -5px -3px;
+            }
+            
+            #override strong.textedit {
+                position : relative;
+            }
+            
+            #override .markupedit DIV .attribute DT, 
+            #override .markupedit DIV .attribute DD {
+                cursor : text;
+            }
+            
+            .markupedit .attribute dt {
+                color : #191970;
+            }
+            
+            .markupedit .attribute dd {
+                color : #FF0000;
+            }
+            
+            .markupedit dt, 
+            .markupedit .attribute, 
+            .markupedit .selected span {
+                float : left;
+            }
+            
+            .markupedit dl.attribute {
+                padding : 0 0 0 5px;
+            }
+            
+            .markupedit dl {
+                height      : 14px;
+                white-space : nowrap;
+            }
+            
+            .markupedit span {
+                display : block;
+            }
+            
+            .markupedit u {
+                float           : left;
+                text-decoration : none;
+            }
+            
+            .markupedit strong {
+                font-weight : normal;
+                float       : left;
+            }
+            
+            .markupedit .textnode strong {
+                cursor : text;
+            }
+            
+            .markupedit DIV {
+                cursor              : default;
+                padding             : 0 0 0 14px;
+                background-repeat   : no-repeat;
+                background-position : 2px 3px;
+            }
+            
+            .markupedit .selected dl, 
+            .markupedit .selected dd, 
+            .markupedit .selected dt, 
+            .markupedit .selected span, 
+            .markupedit .selected strong {
+                background-color : #191970;
+                color            : #FFFFFF;
+            }
+            
+            #override .markupedit .highlight {
+                background-color : #FFFF00;
+                color            : #000000;
+            }
+            
+            .markupedit DIV.pluslast {background-image:url(images/splus.gif)}
+            .markupedit DIV.minlast {background-image:url(images/smin.gif)}
+            .markupedit DIV.plus {background-image:url(images/splus.gif)}
+            .markupedit DIV.min {background-image:url(images/smin.gif)}
+        
+            .markupedit BLOCKQUOTE {
+                margin   : 0;
+                padding  : 0 0 0 10px;
+                display  : none;
+                height   : 0;
+                overflow : hidden;
+            }
+        ]]></a:style>
+    
+        <a:presentation>
+            <a:main container="." startclosed="false">
+                <div class="markupedit">
+    
+                </div>
+            </a:main>
+            <a:item
+              class      = "dl"
+              begintag   = "dl/dt"
+              begintail  = "dl/span"
+              endtag     = "span"
+              attributes = "dl"
+              openclose  = "."
+              select     = "dl"
+              container  = "blockquote">
+                <div>
+                    <dl>
+                        <dt>-</dt>
+                        <span> </span>
+                    </dl>
+                    <blockquote> </blockquote>
+                    <span>-</span>
+                </div>
+            </a:item>
+            <a:attribute name="dt" value="dd">
+                <dl class="attribute">
+                    <dt> </dt>="
+                    <dd> </dd>"
+                </dl>
+            </a:attribute>
+            <a:textnode text="strong" tag="u">
+                <strong class="textnode">
+                    <u> </u>
+                    <strong>-</strong>
+                </strong>
+            </a:textnode>
+            <a:loading>
+                <div class="loading">
+                    <span> </span>
+                    <label>Loading...</label>
+                </div>
+            </a:loading>
+            <a:empty caption=".">
+                <div class="empty"></div>
+            </a:empty>
+        </a:presentation>
+    </a:markupedit>
+</a:skin>
