@@ -2,11 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://ajax.org/2005/aml" >
     <head>
         <title>Calendar Gen API</title>
-        
+        <!--meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /-->
         <script src="trunk/apf.js"></script>
     </head>
     <body>
-        <a:skin src="skins.xml" media-path="images/" icon-path="icns/" />
+        <a:appsettings debug="false" />
+        <a:skin src="skins/_index.xml" media-path="images/" icon-path="icns/" />
         <a:calendar
           id="c1"
           output-format = "mm-dd-yyyy HH:MM:ss" 
@@ -23,8 +24,8 @@
             value         = "2008-12-05" />
         
         <a:calendar
-            top           = "300"
-            left          = "670"
+            top           = "400"
+            left          = "270"
             width="300"
             output-format = "yyyy-mm-dd"
             value         = "2008-12-05" />

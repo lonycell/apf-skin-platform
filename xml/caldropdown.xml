@@ -256,7 +256,7 @@
                 border           : 1px solid #25a8e7;
             }
         ]]></a:style>
-        <a:style condition="apf.isGecko"><![CDATA[
+        <a:style condition="apf.versionFF &gt; 3"><![CDATA[
             .calSlider .row .cell {
                 float   : none;
                 display : -moz-grid;
@@ -265,13 +265,16 @@
     
         <a:presentation>
             <a:main label="div[2]" button=".">
-                <div class='caldropdown'>
-                    <div class='caldropdownLeftBorder'> </div>
-                    <div class='caldropdownlabel'>-</div>
+                <div class="caldropdown">
+                    <div class="caldropdownLeftBorder"> </div>
+                    <div class="caldropdownlabel">-</div>
                 </div>
             </a:main>
-            <a:container contents="." navigation="div[1]" daysofweek="div[2]">
-                <div class='calSlider'>
+            <a:container 
+              contents   = "." 
+              navigation = "div[1]" 
+              daysofweek = "div[2]">
+                <div class="calSlider">
                     <div class="navigation"> </div>
                     <div class="daysofweek"> </div>
                 </div>

@@ -2,13 +2,28 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://ajax.org/2005/aml" >
     <head>
         <title>Caldropdown Gen API</title>
-        
+        <!--meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /-->
         <script src="trunk/apf.js"></script>
     </head>
     <body>
-        <a:skin src="skins.xml" media-path="images/" icon-path="icns/" />
+        <a:skin src="skins/_index.xml" media-path="images/" icon-path="icns/" />
 
-        <a:dropdown width="150">
+        <a:dropdown width="150" top="40" left="40">
+           <a:item>The Netherlands</a:item>
+           <a:item>United States of America</a:item>
+           <a:item>United Kingdom</a:item>
+       </a:dropdown>
+       
+       <a:dropdown width="150" disabled="true" top="40" left="300" value="0">
+           <a:item value="0">The Netherlands</a:item>
+           <a:item>United States of America</a:item>
+           <a:item>United Kingdom</a:item>
+       </a:dropdown>
+       
+       <a:dropdown width="150" top="40" left="500">
+           <a:item>The Netherlands</a:item>
+           <a:item>United States of America</a:item>
+           <a:item>United Kingdom</a:item>
            <a:item>The Netherlands</a:item>
            <a:item>United States of America</a:item>
            <a:item>United Kingdom</a:item>

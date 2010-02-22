@@ -167,6 +167,7 @@
                 display           : block;
                 -webkit-transform : rotate(90deg); 
                 -moz-transform    : rotate(90deg); 
+                -o-transform      : rotate(90deg);
             }
             
             .accordion_apf_hor .panel .title .icon {
@@ -337,22 +338,6 @@
                 background-image : url(images/accordion_menu_bg.png);
             }
         ]]></a:style>
-        <a:style condition="apf.isIE">
-            .accordion_menu .rounded, 
-            .accordion_menu .ending {
-                top : -2px;
-            }
-        </a:style>
-        <a:style condition="apf.isIE8">
-            .accordion_menu .rounded, 
-            .accordion_menu .ending {
-                top   : 0;
-                float : left;
-            }
-            .accordion_menu .panel {
-                float : left;
-            }
-        </a:style>
     
         <a:presentation>
             <a:main container="." direction="horizontal">

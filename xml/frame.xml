@@ -18,31 +18,36 @@
                 cursor : default;
             }
         ]]></a:style>
-        <a:style condition="apf.isIE6">
+        <a:style condition="apf.isIE6"><![CDATA[
             .frame {
                 height : 1%;
             }
-        </a:style>
-        <a:style condition="!apf.isIE">
+        ]]></a:style>
+        <a:style condition="!apf.isIE"><![CDATA[
             .frame .legend {
                 margin : 5px 0 7px -3px;
             }
-        </a:style>
-        <a:style condition="apf.isIE8">
+        ]]></a:style>
+        <a:style condition="apf.isIE8"><![CDATA[
             .frame .legend {
                 margin : -2px 0 7px 0;
             }
-        </a:style>
-        <a:style condition="apf.isSafari">
+        ]]></a:style>
+        <a:style condition="apf.isSafari"><![CDATA[
             .frame {
                 padding : 7px;
             }
-        </a:style>
-        <a:style condition="apf.isOpera">
+        ]]></a:style>
+        <a:style condition="apf.isOpera"><![CDATA[
             .frame {
                 padding : 7px;
             }
-        </a:style>
+        ]]></a:style>
+        <a:style condition="apf.isChrome"><![CDATA[
+            .frame {
+                padding : 7px;
+            }
+        ]]></a:style>
         
         <a:presentation>
             <a:main 

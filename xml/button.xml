@@ -1,121 +1,4 @@
 <a:skin xmlns:a="http://ajax.org/2005/aml">
-    <a:button name="btn1dasimple">
-        <a:style><![CDATA[
-            .odas_btn {
-                color       : #20abeb;
-                font-family : Tahoma;
-                font-size   : 11px;
-                height      : 22px;
-                width       : 100px;
-                border      : 0;
-                overflow    : hidden;
-                cursor      : default;
-                padding     : 2px 0 2px 0;
-                text-align  : center;
-            }
-    
-            .odas_btnDisabled  {
-                color : #bebebe;
-            }
-    
-            .odas_btnFocus {
-    
-            }
-    
-            .odas_btnOver {
-                text-decoration : underline;
-                cursor          : pointer;
-            }
-        ]]></a:style>
-    
-        <a:presentation>
-            <a:main caption="text()" background=".">
-                <div class="odas_btn">-</div>
-            </a:main>
-        </a:presentation>
-    </a:button>
-    
-    <a:button name="btn1da">
-        <a:style><![CDATA[
-            .oda_btn {
-                color            : white;
-                font-family      : Tahoma;
-                font-size        : 11px;
-                height           : 15px;
-                width            : 100px;
-                border           : 2px solid #20abeb;
-                overflow         : hidden;
-                cursor           : pointer;
-                padding          : 2px 3px 2px 3px;
-                text-align       : center;
-                background-color : #363636;
-            }
-    
-            .oda_btnDisabled  {
-                border : 2px solid #c3c3c3;
-                color  : #bebebe;
-            }
-    
-            .oda_btnFocus {
-                border : 2px solid #52bff2;
-            }
-    
-            .oda_btnOver {
-            }
-        ]]></a:style>
-    
-        <a:presentation>
-            <a:main caption="text()" background=".">
-                <div class="oda_btn">-</div>
-            </a:main>
-        </a:presentation>
-    </a:button>
-    
-    <a:button name="buttonmedia">
-        <a:style><![CDATA[
-            .buttonmedia {
-                color       : #4b4b4b;
-                font-family : Tahoma;
-                font-size   : 8pt;
-                height      : 21px;
-                width       : 34px;
-                overflow    : hidden;
-                cursor      : default;
-                background  : url(images/mediabtn2.png) no-repeat 0 -42px;
-                position    : relative;
-                margin      : 0;
-            }
-    
-            .buttonmediaOver {
-                background-position : 0 -21px;
-            }
-    
-            .buttonmediaDisabled {
-                background-position : 0 -42px;
-            }
-    
-            .buttonmediaDown {
-                background-position : 0 0px;
-            }
-    
-            .buttonmedia span {
-                display    : block;
-                background : no-repeat 0 0;
-                width      : 11px;
-                height     : 10px;
-                margin     : 4px auto 0 11px;
-            }
-        ]]></a:style>
-        
-        <a:presentation>
-            <a:main background="span" icon="span">
-                <div class="buttonmedia">
-                    <span> </span>
-                </div>
-            </a:main>
-        </a:presentation>
-    </a:button>
-    
     <a:button name="toolbarbutton">
         <a:style><![CDATA[
             .menubar .toolbarbutton {
@@ -160,7 +43,7 @@
                 line-height     : 13px;
             }
     
-            .toolbar .subbar .toolbarbutton div {
+            .toolbar .subbar .toolbarbutton DIV {
                 float   : left;
                 margin  : 0;
                 height  : 17px;
@@ -172,7 +55,7 @@
                 background : url("images/toolbar_a_hover_right.png") no-repeat top right;
             }
             
-            .toolbar .subbar .toolbarbuttonOver div {
+            .toolbar .subbar .toolbarbuttonOver DIV {
                 background : url("images/toolbar_a_hover.png") no-repeat top left;
             }
     
@@ -180,25 +63,25 @@
                 background : url("images/toolbar_a_down_right.png") no-repeat top right;
             }
             
-            .toolbar .subbar .toolbarbuttonDown div {
+            .toolbar .subbar .toolbarbuttonDown DIV {
                 background : url("images/toolbar_a_down.png") no-repeat top left;
             }
     
             .toolbar .subbar .toolbarbuttonDisabled, 
-            .toolbar .subbar .toolbarbuttonDisabled div {
+            .toolbar .subbar .toolbarbuttonDisabled DIV {
                 background : none;
                 color      : #bebebe;
             }
             
-            .toolbar .subbar .toolbarbuttonIcon div {
+            .toolbar .subbar .toolbarbuttonIcon DIV {
                 padding-left : 4px;
             }
             
-            .toolbar .subbar .toolbarbuttonEmpty div {
+            .toolbar .subbar .toolbarbuttonEmpty DIV {
                 padding : 4px 0 0 7px;
             }
             
-            .toolbar .subbar .toolbarbuttonIcon span {
+            .toolbar .subbar .toolbarbuttonIcon SPAN.icon {
                 display : block;
                 float   : left;
                 width   : 16px;
@@ -206,18 +89,25 @@
                 margin  : -2px 4px 0 0;
             }
             
-            .toolbar .subbar .toolbarbuttonEmpty span {
+            .toolbar .subbar .toolbarbuttonIcon SPAN.caption {
+                display : block;
+                float   : left;
+            }
+            
+            .toolbar .subbar .toolbarbuttonEmpty SPAN.icon {
                 margin : -1px 3px 0 0;
             }
         ]]></a:style>
+        
         <a:presentation>
             <a:main 
-              caption    = "div/span/text()"
+              caption    = "div/span[2]/text()" 
               background = "div/span" 
               icon       = "div/span">
-                <div class='toolbarbutton'>
+                <div class="toolbarbutton">
                     <div>
-                        <span>-</span>
+                        <span class="icon"></span>
+                        <span class="caption">-</span>
                     </div>
                 </div>
             </a:main>

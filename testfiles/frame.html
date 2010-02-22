@@ -2,17 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://ajax.org/2005/aml" >
     <head>
         <title>Caldropdown Gen API</title>
-        
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
         <script src="trunk/apf.js"></script>
     </head>
     <body>
-        <a:skin src="skins.xml" media-path="images/" icon-path="icns/" />
+        <a:skin src="skins/_index.xml" media-path="images/" icon-path="icns/" />
         
-        <a:frame caption="Options">
+        <a:frame caption="Options" width="200">
            <a:radiobutton value="1">Option 1</a:radiobutton>
            <a:radiobutton value="2">Option 2</a:radiobutton>
            <a:radiobutton value="3">Option 3</a:radiobutton>
-           <a:radiobutton value="4">Option 4</a:radiobutton>
+           <a:radiobutton value="4" disabled="true">Option 4</a:radiobutton>
        </a:frame>
 
     </body>

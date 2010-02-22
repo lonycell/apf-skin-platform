@@ -2,42 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://ajax.org/2005/aml" >
     <head>
         <title>Caldropdown Gen API</title>
-        
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
         <script src="trunk/apf.js"></script>
     </head>
     <body style="margin:0;">
-        <a:skin src="skins.xml" media-path="images/" icon-path="icns/" />
-        <a:toolbar width="500" left="100" top="100">
-            <a:bar skin="bardown">
-                <a:button 
-                  icon    = "application_add.png"
-                  tooltip = "Aplication">Aplication</a:button>
-                <a:button 
-                  icon    = "application_add.png"
-                  tooltip = "Aplication">Aplication</a:button>
-                <a:button 
-                  icon    = ""
-                  tooltip = "Aplication">Aplication</a:button>
-                <a:button 
-                  icon    = ""
-                  tooltip = "Aplication">Aplication</a:button>
-            </a:bar>
-        </a:toolbar>
-
-        
-        
-        <!--a:toolbar width="400">
-            <a:bar skin="barmedia">
-                <a:button 
-                  icon    = "application_add.png"
-                  tooltip = "Aplication">Aplication</a:button>
-                <a:button 
-                  icon    = "application_add.png"
-                  tooltip = "Aplication">Aplication</a:button>
-            </a:bar>
-        </a:toolbar-->
-
-         <!--a:toolbar width="400">
+        <a:skin src="skins/_index.xml" media-path="images/" icon-path="icns/" />
+         <a:toolbar width="400" top="40" left="100">
             <a:bar>
                 <a:button
                   icon    = "database_save.png"
@@ -52,7 +22,7 @@
                 <a:divider />
                 <a:button 
                   icon    = "textfield_add.png"
-                  tooltip = "Add row">Add row</a:button>
+                  tooltip = "Add row" disabled="true">Add row</a:button>
                 <a:button 
                   icon    = "textfield_delete.png"
                   tooltip = "Remove row">Remove row</a:button>
@@ -62,7 +32,6 @@
                   icon    = "application_add.png"
                   tooltip = "Aplication">Aplication</a:button>
             </a:bar>
-        </a:toolbar-->
-
+        </a:toolbar>
     </body>
 </html>

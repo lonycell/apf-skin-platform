@@ -553,8 +553,7 @@
             
             <a:heading
                 caption   = "span/dl"
-                container = "."
-            >
+                container = ".">
                 <div class="heading">
                     <span><dl> </dl></span>
                 </div>

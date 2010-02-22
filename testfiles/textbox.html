@@ -2,18 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://ajax.org/2005/aml" >
     <head>
         <title>Caldropdown Gen API</title>
-        
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
         <script src="trunk/apf.js"></script>
     </head>
     <body>
-        <a:skin src="skins.xml" media-path="images/" icon-path="icns/" />
+        <a:skin src="skins/_index.xml" media-path="images/" icon-path="icns/" />
         
         <!--
         textarea
         tbempty
         -->
         
-        <a:textbox value="[@value]" skin="tbempty">
+        <a:textbox value="[@value]" top="40">
+            <a:model>
+                <settings value="Some text inside the textbox"></settings>
+            </a:model>
+        </a:textbox>
+        <a:textbox value="[@value]" disabled="true" top="140">
             <a:model>
                 <settings value="Some text inside the textbox"></settings>
             </a:model>

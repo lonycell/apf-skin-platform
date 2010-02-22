@@ -182,6 +182,18 @@
                 color            : white;
             }
         ]]></a:style>
+        <a:style condition="apf.isOpera"><![CDATA[
+            /* Fix for Opera 10.10 */
+            .tb {
+                padding : 1px 0 1px 2px;
+            }
+        ]]></a:style>
+        
+        <a:style condition="apf.isGecko &amp;&amp; apf.versionFF == 3.6"><![CDATA[
+            .tb {
+                padding : 1px 0 1px 2px;
+            }
+        ]]></a:style>
     
         <a:presentation>
             <a:main input=".">

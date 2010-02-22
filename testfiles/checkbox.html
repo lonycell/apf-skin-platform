@@ -2,17 +2,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://ajax.org/2005/aml" >
     <head>
         <title>Caldropdown Gen API</title>
-        
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
         <script src="trunk/apf.js"></script>
     </head>
     <body>
-        <a:skin src="skins.xml" media-path="images/" icon-path="icns/" />
-         <a:model id="mdlCheckbox">
+        <a:skin src="skins/_index.xml" media-path="images/" icon-path="icns/" />
+        <a:model id="mdlCheckbox">
             <data answer="Something"></data>
         </a:model>
         <a:checkbox id="ch" value="[mdlCheckbox::@answer]">Caption</a:checkbox>
-       
+        
         
         <a:checkbox values="full|empty">the glass is full</a:checkbox>
+        <a:checkbox values="full|empty" disabled="true">the glass is full</a:checkbox>
     </body>
 </html>

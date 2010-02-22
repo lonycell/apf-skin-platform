@@ -9,9 +9,7 @@ problems:
 - portal component have to be fixed 
 - radobutton.toolbarradio how to check it ?
 - vertical slider doesn't work, but looks good
-- splitter - how can i check it ?
 - statusbar.status - how use it ?
-
 - a:textbox - http://jira.ajax.org:8080/browse/JPF-291
 - slideshow is a little bit broken in Safari
 - video component doesn't work

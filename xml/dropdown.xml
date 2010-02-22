@@ -283,6 +283,18 @@
                 padding : 2px 16px 0 0;
             }
         </a:style>
+        
+        <a:style condition="apf.isOpera">
+            .dropdown .dropdownlabel {
+                margin : 0;
+            }
+        </a:style>
+        
+        <a:style condition="apf.isGecko &amp;&amp; apf.versionFF &lt;= 2">
+            .dropdown .dropdownlabel {
+                margin : 0;
+            }
+        </a:style>
     
         <a:presentation>
             <a:main 
