@@ -2,25 +2,52 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://ajax.org/2005/aml" >
     <head>
         <title>Caldropdown Gen API</title>
-        
+        <!--meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /-->
         <script src="trunk/apf.js"></script>
     </head>
     <body>
-        <a:skin src="skins.xml" media-path="images/" icon-path="icns/" />
+        <a:skin src="skins/_index.xml" media-path="images/" icon-path="icns/" />
 
         <a:model id="mdlList">
             <data>
-                <item date="2009-11-12"></item>
-                <item date="2009-11-11"></item>
-                <item date="2009-11-10"></item>
-                <item date="2009-11-09"></item>
-                <item date="2009-11-08"></item>
+                <item date="Battery" deleted="0" icon="1.png" disabled="true" image="icns/list_listicons/1.png"></item>
+                <item date="SD host cards" deleted="0" icon="2.png" image="icns/list_listicons/2.png"></item>
+                <item date="Hard Drive" deleted="0" icon="3.png" image="icns/list_listicons/3.png"></item>
+                <item date="Floppy Drive" deleted="1" icon="4.png" image="icns/list_listicons/4.png"></item>
+                <item date="CD/DVD Drive" deleted="1" icon="5.png" image="icns/list_listicons/5.png"></item>
+                <item date="Battery" deleted="0" icon="1.png" image="icns/list_listicons/6.png"></item>
+                <item date="SD host cards" deleted="0" icon="2.png" image="icns/list_listicons/7.png"></item>
+                <item date="Hard Drive" deleted="0" icon="3.png" image="icns/list_listicons/8.png"></item>
+                <item date="Floppy Drive" deleted="1" icon="4.png" image="icns/list_listicons/9.png"></item>
+                <item date="CD/DVD Drive" deleted="1" icon="5.png" image="icns/list_listicons/10.png"></item>
+                <item date="Battery" deleted="0" icon="1.png" image="icns/list_listicons/1.png"></item>
+                <item date="SD host cards" deleted="0" icon="2.png" image="icns/list_listicons/2.png"></item>
+                <item date="Hard Drive" deleted="0" icon="3.png" image="icns/list_listicons/3.png"></item>
+                <item date="Floppy Drive" deleted="1" icon="4.png" image="icns/list_listicons/4.png"></item>
+                <item date="CD/DVD Drive" deleted="1" icon="5.png" image="icns/list_listicons/5.png"></item>
+                <item date="Battery" deleted="0" icon="1.png" image="icns/list_listicons/6.png"></item>
+                <item date="SD host cards" deleted="0" icon="2.png" image="icns/list_listicons/7.png"></item>
+                <item date="Hard Drive" deleted="0" icon="3.png" image="icns/list_listicons/8.png"></item>
+                <item date="Floppy Drive" deleted="1" icon="4.png" image="icns/list_listicons/9.png"></item>
+                <item date="CD/DVD Drive" deleted="1" icon="5.png" image="icns/list_listicons/10.png"></item>
             </data>
         </a:model>
-        <a:list width="500" height="200" model="mdlList" skin="listtab">
-            <a:each match="[item]">
-                <a:caption match="[@date]" /> 
-            </a:each>
+        <a:list id="list" width="604" height="400" model="mdlList" skin="checklist" mode="check">
+            <a:bindings>
+                <a:icon match="[@icon]" value="dev_manager/[@icon]" />
+                <a:image match="[@image]" />
+                <a:caption match="[@date]" />
+                <a:each match="[item]" />
+            </a:bindings>
+        </a:list>
+        
+        <a:list width="300" height="100" model="mdlList" skin="checklist" disabled="true" mode="check">
+            <a:bindings>
+                <a:icon match="[@icon]" value="dev_manager/[@icon]" />
+                <a:image match="[@image]" />
+                <a:caption match="[@date]" />
+                <a:each match="[item]" />
+            </a:bindings>
         </a:list>
     </body>
 </html>

@@ -10,9 +10,11 @@
                 text-align : center;
                 cursor     : pointer;
                 cursor     : hand;
+                width      : 100px;
+                height     : 100px;
             }
         
-            .preview img {
+            .preview IMG {
                 margin   : auto;
                 position : relative;
             }

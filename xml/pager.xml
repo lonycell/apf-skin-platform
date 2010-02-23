@@ -2,11 +2,10 @@
     <a:pager name="pager">
         <a:style><![CDATA[
             .pager {
-                font-size   : 8pt;
+                font-size   : 11px;
+                font-family : Tahoma;
                 color       : #aaa;
                 position    : absolute;
-                right       : 10px;
-                top         : 10px;
                 text-align  : right;
                 line-height : 10px;
             }
@@ -16,7 +15,7 @@
                 margin   : 0 0px 0 70px;
             }
             
-            .pager span {
+            .pager SPAN {
                 float      : left;
                 padding    : 3px 4px 3px 5px;
                 text-align : center;
@@ -24,18 +23,18 @@
                 cursor     : pointer;
             }
             
-            .searchnav span {
+            .searchnav SPAN {
                 color : white;
             }
             
-            .pager span:hover, 
+            .pager SPAN:hover, 
             .pager .current {
                 border  : 1px solid #aaa;
                 padding : 2px 3px 2px 4px;
                 color   : gray;
             }
             
-            .searchnav span:hover, 
+            .searchnav SPAN:hover, 
             .searchnav .current {
                 color        : white;
                 border-color : white;
@@ -49,8 +48,8 @@
             
             }
             
-            .pager span.disabled,
-            .pager span.disabled:hover {
+            .pager SPAN.disabled,
+            .pager SPAN.disabled:hover {
                 border  : 0;
                 padding : 3px 5px 3px 4px;
                 color   : #d7d7d7;
@@ -62,27 +61,54 @@
                 color : #999;
             }
         ]]></a:style>
-        <a:style condition="apf.isSafari">
-            .pager span {
+        <a:style condition="apf.isOpera"><![CDATA[
+            /* Fix for Opera 10.10 */
+            .pager SPAN {
+                padding : 2px 4px 3px 5px;
+            }
+            
+            .pager SPAN:hover, 
+            .pager .current {
+                padding : 1px 3px 3px 3px;
+            }
+            
+            .pager SPAN.disabled,
+            .pager SPAN.disabled:hover {
+                padding : 2px 5px 4px 4px;
+            }
+        ]]></a:style>
+        <a:style condition="apf.isSafari"><![CDATA[
+            /* Fix for Safari 4.0.3 */
+            .pager SPAN {
                 padding : 3px 5px 3px 4px;
             }
-            .pager span:hover, 
+            
+            .pager SPAN:hover, 
             .pager .current {
                 padding : 2px 4px 3px 3px;
             }
-        </a:style>
-        <a:style condition="apf.isGecko">
-            .pager span:hover, 
+        ]]></a:style>
+        <a:style condition="apf.isGecko"><![CDATA[
+            .pager SPAN:hover, 
             .pager .current {
                 padding : 2px 3px 3px 4px;
             }
-        </a:style>
-        <a:style condition="apf.isChrome">
-            .pager span:hover, 
+        ]]></a:style>
+        <a:style condition="apf.isChrome"><![CDATA[
+            .pager SPAN {
+                padding : 2px 4px 4px 5px;
+            }
+            
+            .pager SPAN:hover, 
             .pager .current {
                 padding : 1px 3px 3px 4px;
             }
-        </a:style>
+            
+            .pager SPAN.disabled,
+            .pager SPAN.disabled:hover {
+                padding : 2px 5px 4px 4px;
+            }
+        ]]></a:style>
         
         <a:presentation>
             <a:main container=".">
@@ -99,6 +125,7 @@
         <a:style><![CDATA[
             .pgrnormal {
                 font-size     : 9pt;
+                font-family   : Tahoma;
                 color         : #aaa;
                 text-align    : right;
                 line-height   : 10px;

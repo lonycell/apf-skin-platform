@@ -2,21 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://ajax.org/2005/aml" >
     <head>
         <title>Caldropdown Gen API</title>
-        
+        <!--meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /-->
         <script src="trunk/apf.js"></script>
     </head>
     <body>
-        <a:skin src="skins.xml" media-path="images/" icon-path="icns/" />
+        <a:skin src="skins/_index.xml" media-path="images/" icon-path="icns/" />
         
-        <a:model id="mdlProgress">
-            <data progress="50"></data>
-        </a:model>
-        <a:progressbar value="[mdlProgress::@progress]" />
+        <a:progressbar value="50" top="40" left="40" />
+        
+        <a:progressbar value="100" top="140" left="40" />
+        <a:progressbar value="0" top="240" left="40" />
         
         
-        <!--a:model>
-            <data progress="50"></data>
-        </a:model>
-        <a:progressbar min="0" max="100" value="[@progress]" /-->
     </body>
 </html>

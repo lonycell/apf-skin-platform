@@ -15,30 +15,30 @@
                 display     : none;
             }
             
-            .menu blockquote {
+            .menu BLOCKQUOTE {
                 list-style-type : none;
                 margin          : 0;
                 padding         : 0;
                 border          : 0;
                 background      : url("images/menu_context_right.gif") repeat-y top right;
             }
-        
-            .menu div {
+
+            .menu DIV {
                 padding     : 4px 31px 4px 23px;
                 white-space : nowrap;
                 cursor      : default;
             }
             
-            .menu>div {
+            .menu>DIV {
                 height : 13px;
             }
             
-            .menu div.hover {
+            .menu DIV.hover {
                 background : #25a8e7 url(images/menu_context_left_over.gif) repeat-y top left;
                 color      : white;
             }
         
-            .menu div.menu_divider {
+            .menu DIV.menu_divider {
                 border-style : solid;
                 border-width : 1px 0 0 0;
                 border-color : #c3c3c3;
@@ -48,11 +48,11 @@
                 font-size    : 1px;
             }
         
-            .menu>div.menu_divider {
+            .menu>DIV.menu_divider {
                 height : 0;
             }
         
-            .menu div span {
+            .menu DIV SPAN {
                 right        : 5px;
                 margin-top   : 0px;
                 z-index      : 10;
@@ -61,7 +61,7 @@
                 margin-right : -15px;
             }
                     
-            .menu div.submenu span {
+            .menu div.submenu SPAN {
                 background : url(images/submenu_arrow.gif) no-repeat right top;
                 width      : 4px;
                 height     : 7px;
@@ -72,19 +72,19 @@
                 z-index    : 10;
             }
             
-            .menu div.hover span {
+            .menu DIV.hover SPAN {
                 background-position : right -15px;
             }
         
-            .menu div.submenu>span {
+            .menu DIV.submenu>SPAN {
                 margin-top : -10px;
             }
         
-            .menu div.disabled {
+            .menu DIV.disabled {
                 color : #c3c3c3;
             }
             
-            .menu u {
+            .menu U {
                 width      : 16px;
                 height     : 16px;
                 position   : absolute;
@@ -92,23 +92,23 @@
                 margin-top : -1px;
             }
             
-            .menu div.selected u {
+            .menu DIV.selected U {
                 background-image    : url(images/radio.gif);
                 background-repeat   : no-repeat;
                 background-position : 0 0;
             }
             
-            .menu div.checked u {
+            .menu DIV.checked U {
                 background-image    : url(images/check.gif);
                 background-repeat   : no-repeat;
                 background-position : 0 0;
             }
             
-            .menu div.hover u {
+            .menu DIV.hover U {
                 background-position : 0 -16px;
             }
         
-            .menu div.menuShadowTop {
+            .menu DIV.menuShadowTop {
                 position   : absolute;
                 left       : 0;
                 top        : -2px;
@@ -121,7 +121,7 @@
                 background : url("images/menu_context_shtb.png") no-repeat top right;
             }
                     
-            .menu div.menuShadowRight {
+            .menu DIV.menuShadowRight {
                 position   : absolute;
                 right      : -4px;
                 bottom     : -4px;
@@ -134,7 +134,7 @@
                 background : url("images/menu_context_shlr.png") no-repeat bottom right;
             }
         
-            .menu div.menuShadowBottom {
+            .menu DIV.menuShadowBottom {
                 position   : absolute;
                 bottom     : -4px; 
                 right      : 0;
@@ -147,7 +147,7 @@
                 background : url("images/menu_context_shtb.png") no-repeat bottom left;
             }
         
-            .menu div.menuShadowLeft {
+            .menu DIV.menuShadowLeft {
                 position   : absolute;
                 left       : -3px;
                 bottom     : 0;
@@ -160,17 +160,18 @@
                 background : url("images/menu_context_shlr.png") no-repeat top left;
             }
         ]]></a:style>
-        <a:style condition="apf.isIE6">
-            .menu div.menuShadowTop, 
-            .menu div.menuShadowRight, 
-            .menu div.menuShadowLeft, 
-            .menu div.menuShadowBottom {
+        <a:style condition="apf.isIE6"><![CDATA[
+            .menu DIV.menuShadowTop, 
+            .menu DIV.menuShadowRight, 
+            .menu DIV.menuShadowLeft, 
+            .menu DIV.menuShadowBottom {
                display : none;
             }
-        </a:style>
+        ]]></a:style>
+        
         <a:presentation>
             <a:main container="blockquote" overlay="strong">
-                <blockquote class='menu'>
+                <blockquote class="menu">
                     <blockquote>
                 
                     </blockquote>
@@ -180,13 +181,17 @@
                     <div class="menuShadowLeft"> </div>
                 </blockquote>
             </a:main>
-            <a:item caption="text()" icon="u" hotkey="span" inherit="true">
+            <a:item 
+              caption = "text()" 
+              icon    = "u" 
+              hotkey  = "span" 
+              inherit = "true">
                 <div><u> </u>-
                     <span> </span>
                 </div>
             </a:item>
             <a:divider inherit="true">
-                <div class='menu_divider'></div>
+                <div class="menu_divider"></div>
             </a:divider>
         </a:presentation>
     </a:menu>

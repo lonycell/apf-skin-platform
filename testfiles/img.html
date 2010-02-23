@@ -2,38 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://ajax.org/2005/aml" >
     <head>
         <title>Caldropdown Gen API</title>
-        
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
         <script src="trunk/apf.js"></script>
     </head>
     <body>
-        <a:skin src="skins.xml" media-path="skinimg/" icon-path="icns/" />
-        <!--a:model id="mdlPictures"> 
-            <data src="img1.jpg" /> 
-        </a:model>
-        <a:img model="mdlPictures" value="[@src]" width="300" height="300" /-->
-        
-        <a:model id="mdlPictures"> 
-            <pictures> 
-                <picture title="Landscape" src="img1.jpg" />
-                <picture title="Animal" src="img2.jpg" />
-                <picture title="River" src="img1.jpg" />
-            </pictures> 
-        </a:model>
-        <a:list 
-          id     = "lstPics" 
-          skin   = "thumbnail" 
-          height = "200" 
-          width  = "400" 
-          model  = "mdlPictures">
-            <a:each match = "[picture]" >
-                <a:name match="[@title]" />
-                <a:image match="[@src]" />
-            </a:each>
-        </a:list>
+        <a:skin src="skins/_index.xml" media-path="images/" icon-path="icns/" />
         <a:img 
-          model  = "{lstPics.selected}" 
-          value  = "[@src]" 
+          value  = "img1.jpg" 
           width  = "200" 
-          height = "200" left="500" top="500" skin="imgbasic" />
+          height = "200" left="500" top="500" />
     </body>
 </html>

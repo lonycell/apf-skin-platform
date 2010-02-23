@@ -358,6 +358,7 @@
             </marker>
         </a:presentation>
     </a:slider>
+    
     <a:slider name="slider_ver">
         <a:style><![CDATA[
             .slider_ver {
@@ -521,6 +522,7 @@
             </marker>
         </a:presentation>
     </a:slider>
+    
     <a:slider name="sliderHigh">
         <a:style><![CDATA[
             .sliderHigh {

@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://ajax.org/2005/aml" >
     <head>
         <title>Caldropdown Gen API</title>
-        
+        <!--meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /-->
         <script src="trunk/apf.js"></script>
     </head>
     <body>
-        <a:skin src="skins.xml" media-path="images/" icon-path="icns/" />
+        <a:skin src="skins/_index.xml" media-path="images/" icon-path="icns/" />
         
-        <a:label for="txtAddress" skin="labelmedia">Address</a:label>
+        <a:label for="txtAddress">Address</a:label>
         <a:textbox id="txtAddress" value="Some text" />
+        <br />
+        <a:label for="txtAddress2" disabled="true">Address</a:label>
+        <a:textbox id="txtAddress2" value="Some text" />
     </body>
 </html>

@@ -78,7 +78,7 @@
                 _clear     : both; /* IE6 fix */
             }
             
-            .rbcontainer span {
+            .rbcontainer SPAN {
                 font-family : Tahoma;
                 font-size   : 11px;
                 padding     : 1px 3px 2px 3px;
@@ -89,7 +89,7 @@
                 line-height : 13px;
             }
             
-            .rbcontainerFocus span {
+            .rbcontainerFocus SPAN {
                 padding : 0 2px 1px 2px;
                 border  : 1px dotted #BBB;
             }
@@ -114,19 +114,19 @@
             }
             
             .rbcontainerDisabled .radio {
-                background-position : 0 -0px;
+                background-position : 0 0;
             }
             
-            .rbcontainerDisabled span {
+            .rbcontainerDisabled SPAN {
                 color : #bebebe;
             }
             
-            .rbcontainerError span {
+            .rbcontainerError SPAN {
                 background-color : #ffb500;
                 color            : #fbfbfb;
             }
             
-            .rbcontainer br {
+            .rbcontainer BR {
                 display : none;
             }
         ]]></a:style>

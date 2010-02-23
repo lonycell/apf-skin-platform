@@ -22,6 +22,7 @@
     <a:include src="modalwindow.xml" />
     <a:include src="notifier.xml" />
     <a:include src="pager.xml" />
+    <a:include src="pages.xml" />
     <a:include src="palette.xml" />
     <a:include src="portal.xml" />
     <a:include src="preview.xml" />

@@ -25,9 +25,11 @@
                 overflow   : hidden;
                 position   : relative;
                 text-align : center;
+                height     : 100px;
+                width      : 100px;
             }
             
-            .img img {
+            .img IMG {
                 margin   : auto;
                 position : relative;
             }
