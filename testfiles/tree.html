@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://ajax.org/2005/aml" >
     <head>
         <title>Caldropdown Gen API</title>
-        
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
         <script src="trunk/apf.js"></script>
     </head>
     <body>
-        <a:skin src="skins.xml" media-path="images/" icon-path="icns/" />
+        <a:skin src="skins/_index.xml" media-path="images/" icon-path="icns/" />
         
         <!--
         
@@ -14,7 +14,20 @@
         
         -->
         
-        <a:tree id="tree">
+        <a:tree id="tree" left="40" top="40" width="200" height="300">
+           <a:item caption="root" icon="icoUsers.gif">
+               <a:item icon="icoUsers.gif" caption="test">
+                   <a:item icon="icoUsers.gif" caption="test" />
+                   <a:item icon="icoUsers.gif" caption="test" />
+                   <a:item icon="icoUsers.gif" caption="test" />
+               </a:item>
+               <a:item icon="icoUsers.gif" caption="test" />
+               <a:item icon="icoUsers.gif" caption="test" />
+               <a:item icon="icoUsers.gif" caption="test" />
+           </a:item>
+       </a:tree>
+       
+       <a:tree skin="checktree" left="300" top="40" width="200" height="300" mode="check">
            <a:item caption="root" icon="icoUsers.gif">
                <a:item icon="icoUsers.gif" caption="test">
                    <a:item icon="icoUsers.gif" caption="test" />

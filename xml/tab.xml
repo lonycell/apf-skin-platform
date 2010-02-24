@@ -11,18 +11,19 @@
             }
         
             .demos_tab .demobtn {
-                padding-left : 0;
-                margin-top   : -19px;
+                padding      : 3px 0 0 0;
+                margin-top   : -22px;
                 position     : absolute;
                 z-index      : 100;
             }
         
             .demos_tab .demobtn div {
-                cursor  : default;
-                display : block;
-                float   : left;
-                margin  : 0 3px 0 0;
-                padding : 0;
+                cursor   : default;
+                display  : block;
+                float    : left;
+                margin   : 0 3px 0 0;
+                padding  : 0;
+                position : relative;
             }
         
             .demos_tab .demobtn div {
@@ -31,9 +32,9 @@
             }
         
             .demos_tab .demobtn div.curbtn {
-                _position           : relative;
+                position            : relative;
                 margin-top          : -4px;
-                margin-bottom       : -1px;
+                margin-bottom       : 0;
                 background-position : 0 -19px;
                 height              : 24px;
                 color               : #327fbd;
@@ -462,97 +463,6 @@
             </a:button>
             <a:page container="." inherit="true">
                 <div class='page'></div>
-            </a:page>
-        </a:presentation>
-    </a:tab>
-    
-    <a:tab name="tablowms">
-        <a:style><![CDATA[
-            .lowtabms {
-                width          : 300px;
-                height         : 100px;
-                padding-bottom : 24px;
-                overflow       : hidden;
-                position       : relative;
-                background     : #808080;
-            }
-        
-            .lowtabms .btncontainer {
-                position   : absolute;
-                bottom     : 0;
-                padding    : 0 0 0 5px !important; padding: 0 0 3px 5px;
-                background : url(images/tabdiv.gif) no-repeat 5px 4px;
-                z-index    : 100;
-            }
-            
-            * html .lowtabms .btncontainer {
-                bottom : expression(this.parentNode.offsetHeight%2==1 ? 0: 1);
-            }
-        
-            .lowtabms .btn {
-                float       : left;
-                display     : inline;
-                padding     : 4px 8px 4px 8px;
-                font-family : MS Sans Serif;
-                font-size   : 8pt;
-                color       : white;
-                cursor      : default;
-                position    : relative;
-                z-index     : 90;
-                background  : url(images/tabdiv.gif) no-repeat right 4px;
-            }
-        
-            .lowtabms .curbtn {
-                border-width : 0 1px 1px 1px;
-                border-style : solid;
-                border-color : black black black white;
-                background   : #D4D0C8;
-                color        : black;
-                margin       : 2px 0 0 0;
-                padding      : 3px 8px 3px 10px;
-                margin       : 0 -2px 3px -2px;
-                left         : 0px;
-                z-index      : 100;
-                position     : relative;
-                top          : -1px;
-            }
-        
-            * html .lowtabms .curbtn {
-                top : 0;
-            }
-        
-            .lowtabms .firstcurbtn {
-                margin  : 0 -2px 3px 0;
-                padding : 3px 8px 3px 8px;
-            }
-        
-            .lowtabms .tabpage {
-                /*border-width : 1px 0 1px 1px;
-                border-style   : solid;
-                border-color   : white black black white;*/
-                display          : none;
-                background-color : white;
-            }
-        
-            .lowtabms .tabpage.curpage {
-                display  : block;
-                height   : 100%;
-                overflow : hidden;
-            }
-        ]]></a:style>
-    
-        <a:presentation>
-            <a:main pages="." buttons="div">
-                <div class='lowtabms'>
-                    <div class='btncontainer'>
-                    </div>
-                </div>
-            </a:main>
-            <a:button caption="text()">
-                <span class='btn'>-</span>
-            </a:button>
-            <a:page container="." inherit="true">
-                <div class='tabpage'></div>
             </a:page>
         </a:presentation>
     </a:tab>

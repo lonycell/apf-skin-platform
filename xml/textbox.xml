@@ -44,7 +44,6 @@
         <a:style><![CDATA[
             .tbempty {
                 background : white url("images/textarea_background2.png") no-repeat 0 0;
-                /*background-attachment: fixed !important; background-attachment: scroll; */
                 width      : 161px;
                 height     : 17px;
                 border     : 1px solid #c3c3c3;
@@ -52,7 +51,7 @@
                 padding    : 0 22px 0 0;
             }
             
-            .tbempty input {
+            .tbempty INPUT {
                color       : #4b4b4b;
                padding     : 1px 1px 1px 2px;
                font-family : Tahoma;
@@ -79,7 +78,7 @@
                 margin : -1px 0 0 -1px;
             }
             
-            .tbemptyInitial input {
+            .tbemptyInitial INPUT {
                 color : gray;
             }
             
@@ -97,16 +96,33 @@
                 background-position : 0 -14px;
             }
         ]]></a:style>
+        <a:style condition="apf.isIE7"><![CDATA[
+            .tbempty INPUT {
+                padding : 0 1px 2px 2px;
+            }
+        ]]></a:style>
+        <a:style condition="apf.isGecko &amp;&amp; apf.versionFF == 3.6"><![CDATA[
+            .tbempty INPUT {
+                padding : 0 1px 2px 2px;
+                margin  : 0;
+            }
+        ]]></a:style>
         <a:style condition="apf.isSafari"><![CDATA[
-            .tbempty input {
+            .tbempty INPUT {
                 margin : -1px 0 0 0;
             }
         ]]></a:style>
-        <a:style condition="apf.isChrome">
-            .tbempty input {
+        <a:style condition="apf.isChrome"><![CDATA[
+            .tbempty INPUT {
                 margin : -1px 0 0 0;
             }
-        </a:style>
+        ]]></a:style>
+        <a:style condition="apf.isOpera"><![CDATA[
+            .tbempty INPUT {
+                margin  : 0;
+                padding : 0 1px 2px 2px;
+            }
+        ]]></a:style>
     
         <a:presentation>
             <a:main input="input" button="div">

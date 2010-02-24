@@ -12,6 +12,7 @@
                 display         : inline;
                 margin          : 0 0 10px -10px;
                 font-size       : 8pt;
+                font-family     : Tahoma;
                 font-weight     : bold;
                 cursor          : hand;
                 cursor          : pointer;

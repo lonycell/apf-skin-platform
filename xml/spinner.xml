@@ -23,7 +23,7 @@
                 background-color : white;
             }
     
-            .spinner .divfix input {
+            .spinner .divfix INPUT {
                 outline             : none;
                 display             : block;
                 border-top          : 1px solid #b2b2b2;
@@ -119,8 +119,8 @@
                 border-right        : 0;
             }
             
-            .spinnerDisabled .divfix input {
-                color:#b2b2b2;
+            .spinnerDisabled .divfix INPUT {
+                color : #b2b2b2;
             }
             
             .spinnerDisabled .buttons .plus {
@@ -131,9 +131,20 @@
                 background-position : 0 0;
             }
         ]]></a:style>
+        <a:style condition="apf.isIE7"><![CDATA[
+            .spinner .divfix INPUT {
+                padding : 2px 1px 1px 0;
+            }
+        ]]></a:style>
         <a:style condition="apf.isOpera"><![CDATA[
             .spinner .divfix {
                 right : 20px;
+            }
+        ]]></a:style>
+        <a:style condition="apf.isChrome || apf.isSafari"><![CDATA[
+            /* These browsers doesn't recognize this color (#b2b2b2) */
+            .spinnerDisabled .divfix INPUT {
+                color : #898989;
             }
         ]]></a:style>
         

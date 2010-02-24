@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://ajax.org/2005/aml" >
     <head>
         <title>Caldropdown Gen API</title>
-        
+        <!--meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /-->
         <script src="trunk/apf.js"></script>
     </head>
     <body style="margin:0;">
-        <a:skin src="skins.xml" media-path="images/" icon-path="icns/" />
+        <a:skin src="skins/_index.xml" media-path="images/" icon-path="icns/" />
         
         <!--
         demos_lowtab
@@ -14,7 +14,7 @@
         tablowms
         -->
         
-        <a:tab id="tab2" width="200" height="300" onafterswitch="alert(1)">
+        <a:tab id="tab2" width="200" height="300" skin="lowtab">
             <a:page caption="General">
                 <a:checkbox>Example</a:checkbox>
                 <a:button>Example</a:button>
@@ -30,11 +30,11 @@
             </a:page>
         </a:tab>
         
-        <a:window visible="true" width="400" height="200">
-            <a:tab id="tab" anchors="10 10 20 10">
+        <a:window visible="true" width="400" height="200" top="100" left="300">
+            <a:tab id="tab" anchors="10 10 20 10" skin="lowtab">
                 <a:page caption="General">
-                    <a:checkbox>Example</a:checkbox>
-                    <a:button>Example</a:button>
+                    <a:checkbox top="30">Example</a:checkbox>
+                    <a:button top="50">Example</a:button>
                  </a:page>
                 <a:page caption="Advanced">
                     <a:checkbox>Test checkbox</a:checkbox>
@@ -45,19 +45,39 @@
                     <a:checkbox>This ok?</a:checkbox>
                     <a:checkbox>This better?</a:checkbox>
                 </a:page>
-            </a:tab>
-        </a:window>
-        
-        <!--a:window visible="true" width="400" height="200" resizable="true">
-            <a:tab id="tab2" left="0" right="0" height="100" skin="tablowms">
-                <a:page caption="General">
-                    <a:checkbox>Example</a:checkbox>
-                    <a:button>Example</a:button>
+                <a:page caption="Ajax.org">
+                    <a:checkbox>This ok?</a:checkbox>
+                    <a:checkbox>This better?</a:checkbox>
                 </a:page>
-                <a:page caption="Advanced">
-                    <a:checkbox>Test checkbox</a:checkbox>
-                    <a:checkbox>Test checkbox</a:checkbox>
-                    <a:checkbox>Test checkbox</a:checkbox>
+                <a:page caption="Ajax.org">
+                    <a:checkbox>This ok?</a:checkbox>
+                    <a:checkbox>This better?</a:checkbox>
+                </a:page>
+                <a:page caption="Ajax.org">
+                    <a:checkbox>This ok?</a:checkbox>
+                    <a:checkbox>This better?</a:checkbox>
+                </a:page>
+                <a:page caption="Ajax.org">
+                    <a:checkbox>This ok?</a:checkbox>
+                    <a:checkbox>This better?</a:checkbox>
+                    <a:checkbox>This ok?</a:checkbox>
+                    <a:checkbox>This better?</a:checkbox>
+                    <a:checkbox>This ok?</a:checkbox>
+                    <a:checkbox>This better?</a:checkbox>
+                    <a:checkbox>This ok?</a:checkbox>
+                    <a:checkbox>This better?</a:checkbox>
+                </a:page>
+                <a:page caption="Ajax.org">
+                    <a:checkbox>This ok?</a:checkbox>
+                    <a:checkbox>This better?</a:checkbox>
+                </a:page>
+                <a:page caption="Ajax.org">
+                    <a:checkbox>This ok?</a:checkbox>
+                    <a:checkbox>This better?</a:checkbox>
+                </a:page>
+                <a:page caption="Ajax.org">
+                    <a:checkbox>This ok?</a:checkbox>
+                    <a:checkbox>This better?</a:checkbox>
                 </a:page>
                 <a:page caption="Ajax.org">
                     <a:checkbox>This ok?</a:checkbox>
@@ -65,22 +85,5 @@
                 </a:page>
             </a:tab>
         </a:window>
-        <a:window visible="true" width="400" height="200">
-            <a:tab id="tab" anchors="10 10 10 10" skin="tablowms">
-                <a:page caption="General">
-                    <a:checkbox>Example</a:checkbox>
-                    <a:button>Example</a:button>
-                 </a:page>
-                <a:page caption="Advanced">
-                    <a:checkbox>Test checkbox</a:checkbox>
-                    <a:checkbox>Test checkbox</a:checkbox>
-                    <a:checkbox>Test checkbox</a:checkbox>
-                </a:page>
-                <a:page caption="Ajax.org">
-                    <a:checkbox>This ok?</a:checkbox>
-                    <a:checkbox>This better?</a:checkbox>
-                </a:page>
-            </a:tab>
-        </a:window-->
     </body>
 </html>
