@@ -481,14 +481,16 @@
             }
             
             .slider .balloon {
-                background : url(images/ballon_middle.png) no-repeat top right;
-                height     : 16px;
-                padding    : 4px 8px 3px 1px;
-                overflow   : visible;
-                margin     : -32px 0 0 2px;
-                position   : absolute;
-                z-index    : 12000;
-                display    : none;
+                background  : url(images/ballon_middle.png) no-repeat top right;
+                height      : 16px;
+                width       : auto;
+                padding     : 4px 8px 3px 1px;
+                overflow    : visible;
+                margin      : -32px 0 0 2px;
+                position    : absolute;
+                z-index     : 12000;
+                display     : none;
+                white-space : nowrap
             }
             
             .slider .balloon .balleft {
