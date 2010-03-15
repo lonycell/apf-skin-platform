@@ -1,4 +1,24 @@
 <a:skin xmlns:a="http://ajax.org/2005/aml">
+    <a:menu name="menugrid">
+        <a:style><![CDATA[
+            .menugrid  {
+                margin   : -1px 0 0 0;
+                padding  : 2px 1px;
+                z-index  : 10000;
+                position : absolute;
+                border   : 1px solid #868686;
+                display  : none;
+            }
+        ]]></a:style>
+        
+        <a:presentation>
+            <a:main container="." overlay="strong">
+                <div class="menugrid">
+
+                </div>
+            </a:main>
+        </a:presentation>
+    </a:menu>
     <a:menu name="menu">
         <a:style><![CDATA[
             .menu  {

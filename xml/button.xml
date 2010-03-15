@@ -1,4 +1,166 @@
 <a:skin xmlns:a="http://ajax.org/2005/aml">
+    <a:button name="buttonIconDown">
+        <a:style><![CDATA[
+            .apf_btnID {
+                color       : #4b4b4b;
+                font-family : Tahoma;
+                font-size   : 8pt;
+                height      : 25px;
+                width       : 50px;
+                overflow    : hidden;
+                cursor      : default;
+            }
+        
+            .apf_btnID .left {
+                float         : left;
+                width         : 8px;
+                height        : 25px;
+                _margin-right : -3px; /* IE6 bug fix */
+            }
+        
+            .apf_btnID .lbl {
+                height        : 20px;
+                padding-top   : 5px;
+                text-align    : center;
+                margin        : 0;
+                _margin       : 0; /* IE6 fix */
+                white-space   : nowrap;
+                overflow      : hidden;
+                text-overflow : ellipsis;
+                position      : relative;
+            }
+            
+            .apf_btnID .lbl SPAN {
+                padding             : 0;
+                position            : absolute;
+                top                 : 4px;
+                left                : 0;
+                border              : 0;
+                margin              : 0;
+                width               : 30px;
+                height              : 16px;
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+            }
+            
+            .apf_btnID .lbl SPAN BLOCKQUOTE {
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                background-image    : url(images/arrow_down.gif);
+                width               : 7px;
+                height              : 4px;
+                position            : absolute;
+                top                 : 7px;
+                left                : 21px;
+                margin              : 0;
+                padding             : 0;
+            }
+        
+            .apf_btnID .right {
+                float       : right;
+                width       : 9px;
+                height      : 25px;
+               _margin-left : -3px; /* IE6 bug fix */
+            }
+        
+            .apf_btnID .left {
+                background : url("images/button_left.png") no-repeat 0 -25px;
+            }
+        
+            .apf_btnID .lbl {
+                background : url("images/button_middle.png") repeat-x 0 -25px;
+            }
+        
+            .apf_btnID .right {
+                background : url("images/button_right.png") no-repeat 0 -25px;
+            }
+        
+            .apf_btnIDDefault .left {
+                background : url("images/button_left.png") no-repeat top left;
+            }
+        
+            .apf_btnIDDefault .lbl {
+                background : url("images/button_middle.png") repeat-x top left;
+            }
+        
+            .apf_btnIDDefault .right {
+                background : url("images/button_right.png") no-repeat top left;
+            }
+        
+            .apf_btnIDDisabled  {
+                color : #bebebe;
+            }
+        
+            .apf_btnIDDisabled .left {
+                background : url("images/button_left.png") no-repeat 0 -50px;
+            }
+        
+            .apf_btnIDDisabled .lbl {
+                background : url("images/button_middle.png") repeat-x 0 -50px;
+            }
+        
+            .apf_btnIDDisabled .right {
+                background : url("images/button_right.png") no-repeat 0 -50px;
+            }
+            .apf_btnIDFocus {
+            }
+        
+            .apf_btnIDFocus .lbl SPAN {
+            }
+        
+            .apf_btnIDDown .left {
+                background : url("images/button_left.png") no-repeat 0 -75px;
+            }
+        
+            .apf_btnIDDown .lbl {
+                background : url("images/button_middle.png") repeat-x 0 -75px;
+            }
+        
+            .apf_btnIDDown .right {
+                background : url("images/button_right.png") no-repeat 0 -75px;
+            }
+            .apf_btnIDDown.redBtn .left {
+                background-image : url("images/red_button_left.png");
+            }
+        
+            .apf_btnIDDown.redBtn .lbl {
+                background-image : url("images/red_button_middle.png");
+            }
+        
+            .apf_btnIDDown.redBtn .right {
+                background-image : url("images/red_button_right.png");
+            }
+            
+            .apf_btnIDOver {
+            }
+        ]]></a:style>
+        <a:style condition="apf.isIE7">
+            .apf_btnID .right {
+                margin : 0;
+            }
+        
+            .apf_btnID .left {
+                margin : 0;
+            }
+        </a:style>
+    
+        <a:presentation>
+            <a:main 
+              
+              icon       = "div[3]/span" 
+              background = ".">
+                <div class="apf_btnID">
+                    <div class="left"> </div>
+                    <div class="right"> </div>
+                    <div class="lbl">
+                        <span>
+                            <blockquote />
+                        </span>
+                    </div>
+                </div>
+            </a:main>
+        </a:presentation>
+    </a:button>
     <a:button name="toolbarbutton">
         <a:style><![CDATA[
             .menubar .toolbarbutton {

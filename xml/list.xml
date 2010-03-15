@@ -1,4 +1,70 @@
 <a:skin xmlns:a="http://ajax.org/2005/aml">
+    <a:list name="grid-list">
+        <a:style><![CDATA[
+            .gridlist {
+                overflow         : hidden;
+                position         : relative;
+                border           : 0;
+                cursor           : default;
+                white-space      : nowrap;
+                padding          : 0;
+            }
+        
+            .gridlist .item {
+                width    : 16px;
+                height   : 16px;
+                border   : 1px solid white;
+                float    : left;
+                position : relative;
+                margin   : 0 1px;
+            }
+            
+            .gridlist .item DIV {
+                width   : 14px;
+                height  : 14px;
+                border  : 1px solid #646464;
+            }
+            
+            .gridlist .selected,
+            .gridlist .hover {
+                border-color : #ef4810;
+            }
+            
+            .gridlist .selected DIV,
+            .gridlist .hover DIV {
+                border-color : #ffe294;
+            }
+        
+            .gridlist .empty, 
+            .gridlist .offline, 
+            .gridlist .loading {
+                text-align  : center;
+                padding     : 8px 0 0 5px;
+                color       : #AAA;
+                font-weight : normal;
+            }
+        ]]></a:style>
+        
+        <a:presentation>
+            <a:main container="." list-mode="grid">
+                <div class="gridlist">
+                </div>
+            </a:main>
+            <a:item
+              class  = "."
+              select = ".">
+                <div class="item">
+                    <div> </div>
+                </div>
+            </a:item>
+            <a:loading>
+                <div class="loading">Loading...</div>
+            </a:loading>
+            <a:empty caption=".">
+                <div class="message">-</div>
+            </a:empty>
+        </a:presentation>
+    </a:list>
     <a:list name="list">
         <a:style><![CDATA[
             .list {
