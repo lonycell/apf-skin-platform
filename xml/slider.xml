@@ -1,6 +1,5 @@
 <a:skin xmlns:a="http://ajax.org/2005/aml">
-    <a:tslider name="tslider">
-        
+    <a:slider name="tslider">
         <a:style><![CDATA[
             .tslider {
                 height   : 19px;
@@ -103,8 +102,8 @@
                 background-color : #ebebeb;
                 border           : 1px solid #cccccc;
                 overflow         : hidden;
-                width            : 160px;
-                height           : 16px;
+                width            : 154px;
+                height           : 12px;
                 display          : none;
             }
 
@@ -118,8 +117,8 @@
                 text-align  : center;
                 overflow    : visible;
                 display     : block;
-                top         : 4px;
-                left        : 5px;
+                top         : 2px;
+                left        : 2px;
             }
             
             .tslider_containerDisabled .slider {
@@ -212,7 +211,7 @@
                 <u> </u>
             </marker>
         </a:presentation>
-    </a:tslider>
+    </a:slider>
     <a:slider name="sliderHigh_ver">
         <a:alias>vertical</a:alias>
         
