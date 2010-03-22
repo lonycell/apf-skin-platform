@@ -14,6 +14,7 @@
     <a:include src="errorbox.xml" />
     <a:include src="flowchart.xml" />
     <a:include src="frame.xml" />
+    <a:include src="gallery.xml" />
     <a:include src="img.xml" />
     <a:include src="label.xml" />
     <a:include src="list.xml" />
