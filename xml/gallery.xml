@@ -39,6 +39,8 @@
                 background-position : 50% 50%;
                 background-repeat   : no-repeat;
                 cursor              : pointer;
+                display             : none;
+                opacity             : 0;
             }
             
             .apf_gallery .apfgal_image_body .apfgal_previous {
@@ -51,13 +53,15 @@
                 background-position : 50% 50%;
                 background-repeat   : no-repeat;
                 cursor              : pointer;
+                display             : none;
+                opacity             : 0;
             }
             
             .apf_gallery .apfgal_image_body .viewport {
                 position       : absolute;
                 top            : 0;
-                right          : 30px;
-                left           : 30px;
+                right          : 0;
+                left           : 0;
                 bottom         : 0;
                 text-align     : center;
                 vertical-align : middle;
@@ -99,6 +103,7 @@
                 color      : #686868;
                 text-align : center;
                 font-size  : 11px;
+                height     : 51px;
             }
             
             .apf_gallery .apfgal_bar .apfgal_thumbs .apfgal_t_body {
@@ -137,7 +142,7 @@
             }
             
             /* ====== BAR MODE ======= */
-            
+
             .barMode .apfgal_bar .apfgal_descr {
                 padding : 10px 0;
             }
@@ -163,7 +168,7 @@
             .barMode .apfgal_bar .apfgal_thumbs .apfgal_t_body > DIV {
                 width            : 9000px;
                 height           : 49px;
-                position:relative;
+                position         : relative;
             }
             
             .barMode .apfgal_bar .apfgal_thumbs .apfgal_t_body .apfgal_thumbnail {
@@ -227,9 +232,14 @@
                 opacity : 1;
             }
             
-            .barMode .apfgal_image_body .apfgal_next,
-            .barMode .apfgal_image_body .apfgal_previous {
-                display:none;
+            .barMode .noArrows .apfgal_thumbs .apfgal_t_left_arrow ,
+            .barMode .noArrows .apfgal_thumbs .apfgal_t_right_arrow {
+                display : none;
+            }
+            
+            .barMode .noArrows .apfgal_thumbs .apfgal_t_body {
+                right : 0;
+                left  : 0;
             }
         ]]></a:style>
     
