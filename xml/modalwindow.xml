@@ -507,6 +507,7 @@
                 position            : absolute;
                 top                 : 0;
                 left                : 0;
+                z-index             : 2000;
             }
             
             .win_firefox15 .wff15_corner_tr {
@@ -518,6 +519,7 @@
                 position            : absolute;
                 top                 : 0;
                 right               : 0;
+                z-index             : 2000;
             }
             
             .win_firefox15 .wff15_border_t {
@@ -529,6 +531,7 @@
                 top                 : 0;
                 left                : 4px;
                 right               : 4px;
+                z-index             : 2000;
             }
             
             .win_firefox15 .wff15_corner_bl {
@@ -562,6 +565,7 @@
                 bottom              : 0;
                 left                : 4px;
                 right               : 4px;
+                z-index             : 1000;
             }
             
             .win_firefox15 .wff15_border_l {
@@ -573,6 +577,7 @@
                 bottom              : 4px;
                 top                 : 4px;
                 left                : 0;
+                z-index             : 2000;
             }
             
             .win_firefox15 .wff15_border_r {
@@ -584,6 +589,7 @@
                 bottom              : 4px;
                 top                 : 4px;
                 right               : 0;
+                z-index             : 2000;
             }
             
             .win_firefox15 .wff15_browser_bar {
@@ -791,13 +797,14 @@
             .win_firefox15 .wff15_content {
                 position         : absolute;
                 overflow         : hidden;
-                top              : 43px;
+                top              : 113px;
                 right            : 4px;
                 bottom           : 4px;
                 left             : 4px;
                 background-color : white;
                 font-family      : Tahoma;
                 font-size        : 11px;
+                
             }
             
             .win_firefox15 .wff15_title {
@@ -817,6 +824,7 @@
                 font-size           : 11px;
                 font-weight         : bold;
                 font-family         : Tahoma;
+                z-index             : 2000;
             }
             
             .win_firefox15 .wff15_title SPAN.icon {
@@ -887,6 +895,41 @@
                 background-position : -16px 0;
             }
             
+            .win_firefox15 .wff15_statusbar {
+                position         : absolute;
+                bottom           : 4px;
+                left             : 4px;
+                right            : 4px;
+                background-color : #d4d0c8;
+                height           : 22px;
+                z-index          : 1000;
+            }
+            
+            .win_firefox15 .wff15_statusbar .wff15_section {
+                position          : absolute;
+                bottom            : 0;
+                left              : 0;
+                right             : 0;
+                top               : 2px;
+                background-color  : #d4d0c8;
+                height            : 16px;
+                border            : 1px solid white;
+                border-top-color  : #808080;
+                border-left-color : #808080;
+                font-size         : 11px;
+                font-family       : Tahoma;
+                padding           : 2px 0 0 6px;
+            }
+            
+            .win_firefox15 .wff15_statusbar .wff15_resize {
+                width            : 20px;
+                height           : 22px;
+                background-image : url(images/win_ff_15_statusbar_resize.png);
+                position         : absolute;
+                top              : 0;
+                right            : 0;
+            }
+            
             .cover {
                 background : white;
                 opacity    : 0.3;
@@ -924,7 +967,7 @@
         
         <a:presentation>
             <a:main 
-              collapsed-height = "24"
+              collapsed-height = "26"
               min-height       = "150"
               min-width        = "595"
               container        = "div[6]" 
@@ -976,6 +1019,10 @@
                         <div class="toolbar3">
                             <div class="buttons1"></div>
                         </div>
+                    </div>
+                    <div class="wff15_statusbar">
+                        <div class="wff15_section">Done</div>
+                        <div class="wff15_resize"></div>
                     </div>
                 </div>
             </a:main>
