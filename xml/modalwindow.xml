@@ -1,4 +1,583 @@
 <a:skin xmlns:a="http://ajax.org/2005/aml">
+    <a:modalwindow name="firefox36">
+        <a:style><![CDATA[
+            .win_firefox36 {
+                position : relative;
+                width    : 700px;
+                height   : 400px;
+                overflow : hidden;
+            }
+            
+            .win_firefox36 .wff36_corner_tl {
+                background-image    : url(images/win_ff_corner_tl.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 4px;
+                height              : 4px;
+                position            : absolute;
+                top                 : 0;
+                left                : 0;
+                z-index             : 2000;
+            }
+            
+            .win_firefox36 .wff36_corner_tr {
+                background-image    : url(images/win_ff_corner_tr.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 4px;
+                height              : 4px;
+                position            : absolute;
+                top                 : 0;
+                right               : 0;
+                z-index             : 2000;
+            }
+            
+            .win_firefox36 .wff36_border_t {
+                background-image    : url(images/win_ff_border_t.png);
+                background-position : 0 0;
+                background-repeat   : repeat-x;
+                height              : 4px;
+                position            : absolute;
+                top                 : 0;
+                left                : 4px;
+                right               : 4px;
+                z-index             : 2000;
+            }
+            
+            .win_firefox36 .wff36_corner_bl {
+                background-image    : url(images/win_ff_corner_bl.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 4px;
+                height              : 4px;
+                position            : absolute;
+                bottom              : 0;
+                left                : 0;
+            }
+            
+            .win_firefox36 .wff36_corner_br {
+                background-image    : url(images/win_ff_corner_br.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 4px;
+                height              : 4px;
+                position            : absolute;
+                bottom              : 0;
+                right               : 0;
+            }
+            
+            .win_firefox36 .wff36_border_b {
+                background-image    : url(images/win_ff_border_b.png);
+                background-position : 0 0;
+                background-repeat   : repeat-x;
+                height              : 4px;
+                position            : absolute;
+                bottom              : 0;
+                left                : 4px;
+                right               : 4px;
+                z-index             : 1000;
+            }
+            
+            .win_firefox36 .wff36_border_l {
+                background-image    : url(images/win_ff_border_l.png);
+                background-position : 0 0;
+                background-repeat   : repeat-y;
+                width               : 4px;
+                position            : absolute;
+                bottom              : 4px;
+                top                 : 4px;
+                left                : 0;
+                z-index             : 2000;
+            }
+            
+            .win_firefox36 .wff36_border_r {
+                background-image    : url(images/win_ff_border_r.png);
+                background-position : 0 0;
+                background-repeat   : repeat-y;
+                width               : 4px;
+                position            : absolute;
+                bottom              : 4px;
+                top                 : 4px;
+                right               : 0;
+                z-index             : 2000;
+            }
+            
+            .win_firefox36 .wff36_browser_bar {
+                position : absolute;
+                overflow : hidden;
+                top      : 23px;
+                left     : 4px;
+                right    : 4px;
+            }
+            
+            /* Browser toolbar */
+            
+            .win_firefox36 .wff36_browser_bar .toolbar1 {
+                height              : 24px;
+                background-color    : #d4d0c8;
+                background-image    : url(images/win_ff_toolbar_border.png);
+                background-position : 0 0;
+                background-repeat   : repeat-x;
+                position            : relative;
+            }
+            
+            .win_firefox36 .wff36_browser_bar .toolbar1 .buttons1 {
+                position            : absolute;
+                top                 : 0;
+                left                : 0;
+                height              : 24px;
+                width               : 272px;
+                background-image    : url(images/win_ff_toolbar1.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+            }
+            
+            .win_firefox36 .wff36_browser_bar .toolbar1 .icon1 {
+                position            : absolute;
+                top                 : 4px;
+                right               : 3px;
+                height              : 18px;
+                width               : 18px;
+                background-image    : url(images/win_ff_36_toolbar1_icon1.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+            }
+            
+            .win_firefox36 .wff36_browser_bar .toolbar2 {
+                height              : 38px;
+                background-color    : #d4d0c8;
+                background-image    : url(images/win_ff_toolbar_border.png);
+                background-position : 0 0;
+                background-repeat   : repeat-x;
+                position            : relative;
+            }
+            
+            .win_firefox36 .wff36_browser_bar .toolbar2 .input1 {
+                position            : absolute;
+                left                : 205px;
+                top                 : 8px;
+                right               : 162px;
+                height              : 24px;
+                background-image    : url(images/win_ff_36_toolbar2_input_middle.png);
+                background-position : 0 0;
+                background-repeat   : repeat-x;
+            }
+            
+            .win_firefox36 .wff36_browser_bar .toolbar2 .input1 .left {
+                background-image    : url(images/win_ff_36_toolbar2_input_left.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 2px;
+                height              : 24px;
+                position            : absolute;
+                left                : 0;
+                top                 : 0;
+            }
+            
+            .win_firefox36 .wff36_browser_bar .toolbar2 .input1 .right {
+                background-image    : url(images/win_ff_36_toolbar2_input_right.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 39px;
+                height              : 24px;
+                position            : absolute;
+                right               : 0;
+                top                 : 0;
+            }
+            
+            .win_firefox36 .wff36_browser_bar .toolbar2 .input1 .middle {
+                position    : absolute;
+                right       : 39px;
+                left        : 2px;
+                top         : 0;
+                height      : 19px;
+                padding     : 5px 0 0 30px;
+                font-family : Tahoma;
+                font-size   : 11px;
+            }
+            
+            .win_firefox36 .wff36_browser_bar .toolbar2 .input1 .middle .input_ico {
+                top                 : 2px;
+                left                : 0;
+                position            : absolute;
+                width               : 25px;
+                height              : 20px;
+                background-image    : url(images/win_ff_36_ico_backg.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+            }
+            
+            .win_firefox36 .wff36_browser_bar .toolbar2 .input1 .middle .input_ico .icon{
+                top                 : 2px;
+                left                : 4px;
+                position            : absolute;
+                width               : 25px;
+                height              : 20px;
+                background-image    : url(icons/google.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+            }
+            
+            .win_firefox36 .wff36_browser_bar .toolbar2 .icon1 {
+                width               : 39px;
+                height              : 19px;
+                position            : absolute;
+                right               : 164px;
+                top                 : 10px;
+                background-image    : url(images/win_ff_36_toolbar2_icon1.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+            }
+
+            .win_firefox36 .wff36_browser_bar .toolbar2 .input2 {
+                position            : absolute;
+                right               : 4px;
+                top                 : 8px;
+                width               : 150px;
+                height              : 24px;
+                background-image    : url(images/win_ff_36_toolbar2_input_middle.png);
+                background-position : 0 0;
+                background-repeat   : repeat-x;
+            }
+            
+            .win_firefox36 .wff36_browser_bar .toolbar2 .input2 .left {
+                background-image    : url(images/win_ff_36_toolbar2_input_left.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 2px;
+                height              : 24px;
+                position            : absolute;
+                left                : 0;
+                top                 : 0;
+            }
+            
+            .win_firefox36 .wff36_browser_bar .toolbar2 .input2 .right {
+                background-image    : url(images/win_ff_36_toolbar2_input2_right.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 20px;
+                height              : 24px;
+                position            : absolute;
+                right               : 0;
+                top                 : 0;
+            }
+            
+            .win_firefox36 .wff36_browser_bar .toolbar2 .input2 .middle {
+                position    : absolute;
+                right       : 20px;
+                left        : 2px;
+                top         : 0;
+                height      : 19px;
+                padding     : 5px 0 0 37px;
+                font-family : Tahoma;
+                font-size   : 11px;
+                color       : #808080;
+            }
+            
+            .win_firefox36 .wff36_browser_bar .toolbar2 .input2 .middle .input_ico {
+                top                 : 2px;
+                left                : 0;
+                position            : absolute;
+                width               : 33px;
+                height              : 20px;
+                background-image    : url(images/win_ff_36_ico_backg2.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+            }
+            
+            .win_firefox36 .wff36_browser_bar .toolbar2 .input2 .middle .input_ico .icon {
+                top                 : 2px;
+                left                : 3px;
+                position            : absolute;
+                width               : 16px;
+                height              : 16px;
+                background-image    : url(icons/google.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+            }
+
+
+            .win_firefox36 .wff36_browser_bar .toolbar2 .buttons1 {
+                position            : absolute;
+                top                 : 0;
+                left                : 0;
+                height              : 38px;
+                width               : 205px;
+                background-image    : url(images/win_ff_36_toolbar2.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+            }
+            
+            .win_firefox36 .wff36_browser_bar .toolbar3 {
+                height              : 27px;
+                background-color    : #d4d0c8;
+                background-image    : url(images/win_ff_toolbar_border.png);
+                background-position : 0 0;
+                background-repeat   : repeat-x;
+                border-bottom       : 1px solid #808080;
+            }
+            
+            .win_firefox36 .wff36_browser_bar .toolbar3 .buttons1 {
+                position            : absolute;
+                top                 : 62px;
+                left                : 0;
+                height              : 26px;
+                width               : 298px;
+                background-image    : url(images/win_ff_36_toolbar3.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+            }
+
+            .win_firefox36 .wff36_content {
+                position         : absolute;
+                overflow         : hidden;
+                top              : 113px;
+                right            : 4px;
+                bottom           : 4px;
+                left             : 4px;
+                background-color : white;
+                font-family      : Tahoma;
+                font-size        : 11px;
+                
+            }
+            
+            .win_firefox36 .wff36_title {
+                height              : 16px;
+                position            : absolute;
+                top                 : 4px;
+                padding             : 2px 0 0 23px;
+                left                : 4px;
+                right               : 4px;
+                background-image    : url(images/win_ff_title.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                overflow            : hidden;
+                border-bottom       : 1px solid #d4d0c8;
+                margin              : 0;
+                color               : white;
+                font-size           : 11px;
+                font-weight         : bold;
+                font-family         : Tahoma;
+                z-index             : 2000;
+            }
+            
+            .win_firefox36 .wff36_title SPAN.icon {
+                width               : 16px;
+                height              : 16px;
+                position            : absolute;
+                top                 : 1px;
+                left                : 2px;
+                overflow            : hidden;
+                background-repeat   : no-repeat;
+                background-position : 0 0;
+            }
+            
+            .win_firefox36 .wff36_title BLOCKQUOTE {
+                margin   : 0;
+                padding  : 2px;
+                position : absolute;
+                height   : 14px;
+                width    : 50px;
+                right    : 0;
+                top      : 0;
+            }
+            
+            .win_firefox36 .wff36_title BLOCKQUOTE DIV {
+                margin            : 0;
+                padding           : 0;
+                width             : 16px;
+                height            : 14px;
+                float             : right;
+                position          : relative;
+                background-repeat : no-repeat;
+            }
+            
+            .win_firefox36 .wff36_title BLOCKQUOTE DIV.close {
+                margin-left         : 2px;
+                background-image    : url(images/win_ff_buttons.png);
+                background-position : 0 -42px;
+            }
+            
+            .win_firefox36 .wff36_title BLOCKQUOTE DIV.max {
+                background-image    : url(images/win_ff_buttons.png);
+                background-position : 0 -14px;
+            }
+            
+            .win_firefox36Max .wff36_title BLOCKQUOTE DIV.max {
+                background-image    : url(images/win_ff_buttons.png);
+                background-position : 0 -28px;
+            }
+            
+            .win_firefox36 .wff36_title BLOCKQUOTE DIV.min {
+                background-image    : url(images/win_ff_buttons.png);
+                background-position : 0 0;
+            }
+            
+            .win_firefox15 .wff36_title BLOCKQUOTE .close.down {
+                background-position : -16px -42px;
+            }
+            
+            .win_firefox36 .wff36_title BLOCKQUOTE .max.down {
+                background-position : -16px -14px;
+            }
+            
+            .win_firefox36Max .wff36_title BLOCKQUOTE .max.down {
+                background-position : -16px -28px;
+            }
+            
+            .win_firefox36 .wff36_title BLOCKQUOTE .min.down {
+                background-position : -16px 0;
+            }
+            
+            .win_firefox36 .wff36_statusbar {
+                position         : absolute;
+                bottom           : 4px;
+                left             : 4px;
+                right            : 4px;
+                background-color : #d4d0c8;
+                height           : 22px;
+                z-index          : 1000;
+            }
+            
+            .win_firefox36 .wff36_statusbar .wff36_section {
+                position          : absolute;
+                bottom            : 0;
+                left              : 0;
+                right             : 0;
+                top               : 2px;
+                background-color  : #d4d0c8;
+                height            : 16px;
+                border            : 1px solid white;
+                border-top-color  : #808080;
+                border-left-color : #808080;
+                font-size         : 11px;
+                font-family       : Tahoma;
+                padding           : 2px 0 0 6px;
+            }
+            
+            .win_firefox36 .wff36_statusbar .wff36_resize {
+                width            : 20px;
+                height           : 22px;
+                background-image : url(images/win_ff_statusbar_resize.png);
+                position         : absolute;
+                top              : 0;
+                right            : 0;
+            }
+            
+            .win_firefox36Max .wff36_statusbar .wff36_resize {
+                background-image : none;
+            }
+            
+            .cover {
+                background : white;
+                opacity    : 0.3;
+                filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+                position   : absolute;
+                left       : 0;
+                top        : 0;
+                width      : 100%;
+                height     : 100%;
+                height     : expression(document.documentElement.offsetHeight);
+                z-index    : 10000;
+            }
+            
+            #apf_outline {
+    
+            }
+            
+            #apf_outline.drag {
+                border     : 1px solid black;
+                background : #CCC;
+                opacity    : 0.4;
+            }
+            
+            #apf_outline.resize {
+                border     : 3px solid black;
+                background : #CCC;
+                opacity    : 0.3;
+            }
+        ]]></a:style>
+        <a:style condition="apf.isIE7"><![CDATA[
+            .win_firefox36 .wff36_title BLOCKQUOTE DIV.down {
+                background-position-x : -16px;
+            }
+        ]]></a:style>
+        
+        <a:presentation>
+            <a:main 
+              collapsed-height = "26"
+              min-height       = "180"
+              min-width        = "600"
+              container        = "div[6]" 
+              drag             = "div[3]" 
+              title            = "div[3]/text()" 
+              icon             = "div[3]/span"
+              buttons          = "div[3]/blockquote">
+                <div class="win_firefox36">
+                    <div class="wff36_corner_tl"> </div>
+                    <div class="wff36_corner_tr"> </div>
+                    <div class="wff36_title">
+                        -
+                        <blockquote> </blockquote>
+                        <span class="icon"> </span>
+                    </div>
+                    
+                    <div class="wff36_border_l"> </div>
+                    <div class="wff36_border_r"> </div>
+                    <div class="wff36_content"> </div>
+                    
+                    <div class="wff36_corner_bl"> </div>
+                    <div class="wff36_corner_br"> </div>
+                    <div class="wff36_border_b"> </div>
+                    <div class="wff36_border_t"> </div>
+                    <div class="wff36_browser_bar">
+                        <div class="toolbar1">
+                            <div class="buttons1"></div>
+                            <div class="icon1"></div>
+                        </div>
+                        <div class="toolbar2">
+                            <div class="buttons1"></div>
+                            <div class="input1">
+                                <div class="left"></div>
+                                <div class="right"></div>
+                                <div class="middle">
+                                    http://www.ajax.org
+                                    <div class="input_ico">
+                                        <div class="icon"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon1"></div>
+                            <div class="input2">
+                                <div class="left"></div>
+                                <div class="right"></div>
+                                <div class="middle">
+                                    Google
+                                    <div class="input_ico">
+                                        <div class="icon"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="toolbar3">
+                            <div class="buttons1"></div>
+                        </div>
+                    </div>
+                    <div class="wff36_statusbar">
+                        <div class="wff36_section">Done</div>
+                        <div class="wff36_resize"></div>
+                    </div>
+                </div>
+            </a:main>
+            <a:button>
+                <div> </div>
+            </a:button>
+            <a:cover>
+                <div class="cover"> </div>
+            </a:cover>
+        </a:presentation>
+    </a:modalwindow>
+    
     <a:modalwindow name="firefox2">
         <a:style><![CDATA[
             .win_firefox2 {
@@ -9,7 +588,7 @@
             }
             
             .win_firefox2 .wff2_corner_tl {
-                background-image    : url(images/win_ff_2_corner_tl.png);
+                background-image    : url(images/win_ff_corner_tl.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 width               : 4px;
@@ -21,7 +600,7 @@
             }
             
             .win_firefox2 .wff2_corner_tr {
-                background-image    : url(images/win_ff_2_corner_tr.png);
+                background-image    : url(images/win_ff_corner_tr.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 width               : 4px;
@@ -33,7 +612,7 @@
             }
             
             .win_firefox2 .wff2_border_t {
-                background-image    : url(images/win_ff_2_border_t.png);
+                background-image    : url(images/win_ff_border_t.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 height              : 4px;
@@ -45,7 +624,7 @@
             }
             
             .win_firefox2 .wff2_corner_bl {
-                background-image    : url(images/win_ff_2_corner_bl.png);
+                background-image    : url(images/win_ff_corner_bl.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 width               : 4px;
@@ -56,7 +635,7 @@
             }
             
             .win_firefox2 .wff2_corner_br {
-                background-image    : url(images/win_ff_2_corner_br.png);
+                background-image    : url(images/win_ff_corner_br.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 width               : 4px;
@@ -67,7 +646,7 @@
             }
             
             .win_firefox2 .wff2_border_b {
-                background-image    : url(images/win_ff_2_border_b.png);
+                background-image    : url(images/win_ff_border_b.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 height              : 4px;
@@ -79,7 +658,7 @@
             }
             
             .win_firefox2 .wff2_border_l {
-                background-image    : url(images/win_ff_2_border_l.png);
+                background-image    : url(images/win_ff_border_l.png);
                 background-position : 0 0;
                 background-repeat   : repeat-y;
                 width               : 4px;
@@ -91,7 +670,7 @@
             }
             
             .win_firefox2 .wff2_border_r {
-                background-image    : url(images/win_ff_2_border_r.png);
+                background-image    : url(images/win_ff_border_r.png);
                 background-position : 0 0;
                 background-repeat   : repeat-y;
                 width               : 4px;
@@ -103,19 +682,19 @@
             }
             
             .win_firefox2 .wff2_browser_bar {
-                position         : absolute;
-                overflow         : hidden;
-                top              : 23px;
-                left             : 4px;
-                right            : 4px;
+                position : absolute;
+                overflow : hidden;
+                top      : 23px;
+                left     : 4px;
+                right    : 4px;
             }
             
-            /* Borwser toolbar */
+            /* Browser toolbar */
             
             .win_firefox2 .wff2_browser_bar .toolbar1 {
                 height              : 24px;
                 background-color    : #d4d0c8;
-                background-image    : url(images/win_ff_2_toolbar_border.png);
+                background-image    : url(images/win_ff_toolbar_border.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 position            : relative;
@@ -127,7 +706,7 @@
                 left                : 0;
                 height              : 24px;
                 width               : 272px;
-                background-image    : url(images/win_ff_2_toolbar1.png);
+                background-image    : url(images/win_ff_toolbar1.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
             }
@@ -146,7 +725,7 @@
             .win_firefox2 .wff2_browser_bar .toolbar2 {
                 height              : 38px;
                 background-color    : #d4d0c8;
-                background-image    : url(images/win_ff_2_toolbar_border.png);
+                background-image    : url(images/win_ff_toolbar_border.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 position            : relative;
@@ -239,7 +818,7 @@
             .win_firefox2 .wff2_browser_bar .toolbar3 {
                 height              : 27px;
                 background-color    : #d4d0c8;
-                background-image    : url(images/win_ff_2_toolbar_border.png);
+                background-image    : url(images/win_ff_toolbar_border.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 border-bottom       : 1px solid #808080;
@@ -275,7 +854,7 @@
                 padding             : 2px 0 0 23px;
                 left                : 4px;
                 right               : 4px;
-                background-image    : url(images/win_ff_2_title.png);
+                background-image    : url(images/win_ff_title.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 overflow            : hidden;
@@ -321,22 +900,22 @@
             
             .win_firefox2 .wff2_title BLOCKQUOTE DIV.close {
                 margin-left         : 2px;
-                background-image    : url(images/win_ff_2_buttons.png);
+                background-image    : url(images/win_ff_buttons.png);
                 background-position : 0 -42px;
             }
             
             .win_firefox2 .wff2_title BLOCKQUOTE DIV.max {
-                background-image    : url(images/win_ff_2_buttons.png);
+                background-image    : url(images/win_ff_buttons.png);
                 background-position : 0 -14px;
             }
             
             .win_firefox2Max .wff2_title BLOCKQUOTE DIV.max {
-                background-image    : url(images/win_ff_2_buttons.png);
+                background-image    : url(images/win_ff_buttons.png);
                 background-position : 0 -28px;
             }
             
             .win_firefox2 .wff2_title BLOCKQUOTE DIV.min {
-                background-image    : url(images/win_ff_2_buttons.png);
+                background-image    : url(images/win_ff_buttons.png);
                 background-position : 0 0;
             }
             
@@ -385,10 +964,14 @@
             .win_firefox2 .wff2_statusbar .wff2_resize {
                 width            : 20px;
                 height           : 22px;
-                background-image : url(images/win_ff_2_statusbar_resize.png);
+                background-image : url(images/win_ff_statusbar_resize.png);
                 position         : absolute;
                 top              : 0;
                 right            : 0;
+            }
+            
+            .win_firefox2Max .wff2_statusbar .wff2_resize {
+                background-image : none;
             }
             
             .cover {
@@ -489,6 +1072,7 @@
             </a:cover>
         </a:presentation>
     </a:modalwindow>
+    
     <a:modalwindow name="firefox15">
         <a:style><![CDATA[
             .win_firefox15 {
@@ -499,7 +1083,7 @@
             }
             
             .win_firefox15 .wff15_corner_tl {
-                background-image    : url(images/win_ff_15_corner_tl.png);
+                background-image    : url(images/win_ff_corner_tl.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 width               : 4px;
@@ -511,7 +1095,7 @@
             }
             
             .win_firefox15 .wff15_corner_tr {
-                background-image    : url(images/win_ff_15_corner_tr.png);
+                background-image    : url(images/win_ff_corner_tr.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 width               : 4px;
@@ -523,7 +1107,7 @@
             }
             
             .win_firefox15 .wff15_border_t {
-                background-image    : url(images/win_ff_15_border_t.png);
+                background-image    : url(images/win_ff_border_t.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 height              : 4px;
@@ -535,7 +1119,7 @@
             }
             
             .win_firefox15 .wff15_corner_bl {
-                background-image    : url(images/win_ff_15_corner_bl.png);
+                background-image    : url(images/win_ff_corner_bl.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 width               : 4px;
@@ -546,7 +1130,7 @@
             }
             
             .win_firefox15 .wff15_corner_br {
-                background-image    : url(images/win_ff_15_corner_br.png);
+                background-image    : url(images/win_ff_corner_br.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 width               : 4px;
@@ -557,7 +1141,7 @@
             }
             
             .win_firefox15 .wff15_border_b {
-                background-image    : url(images/win_ff_15_border_b.png);
+                background-image    : url(images/win_ff_border_b.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 height              : 4px;
@@ -569,7 +1153,7 @@
             }
             
             .win_firefox15 .wff15_border_l {
-                background-image    : url(images/win_ff_15_border_l.png);
+                background-image    : url(images/win_ff_border_l.png);
                 background-position : 0 0;
                 background-repeat   : repeat-y;
                 width               : 4px;
@@ -581,7 +1165,7 @@
             }
             
             .win_firefox15 .wff15_border_r {
-                background-image    : url(images/win_ff_15_border_r.png);
+                background-image    : url(images/win_ff_border_r.png);
                 background-position : 0 0;
                 background-repeat   : repeat-y;
                 width               : 4px;
@@ -593,19 +1177,19 @@
             }
             
             .win_firefox15 .wff15_browser_bar {
-                position         : absolute;
-                overflow         : hidden;
-                top              : 23px;
-                left             : 4px;
-                right            : 4px;
+                position : absolute;
+                overflow : hidden;
+                top      : 23px;
+                left     : 4px;
+                right    : 4px;
             }
             
-            /* Borwser toolbar */
+            /* Browser toolbar */
             
             .win_firefox15 .wff15_browser_bar .toolbar1 {
                 height              : 24px;
                 background-color    : #d4d0c8;
-                background-image    : url(images/win_ff_15_toolbar_border.png);
+                background-image    : url(images/win_ff_toolbar_border.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 position            : relative;
@@ -617,7 +1201,7 @@
                 left                : 0;
                 height              : 24px;
                 width               : 272px;
-                background-image    : url(images/win_ff_15_toolbar1.png);
+                background-image    : url(images/win_ff_toolbar1.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
             }
@@ -636,7 +1220,7 @@
             .win_firefox15 .wff15_browser_bar .toolbar2 {
                 height              : 38px;
                 background-color    : #d4d0c8;
-                background-image    : url(images/win_ff_15_toolbar_border.png);
+                background-image    : url(images/win_ff_toolbar_border.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 position            : relative;
@@ -777,7 +1361,7 @@
             .win_firefox15 .wff15_browser_bar .toolbar3 {
                 height              : 27px;
                 background-color    : #d4d0c8;
-                background-image    : url(images/win_ff_15_toolbar_border.png);
+                background-image    : url(images/win_ff_toolbar_border.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 border-bottom       : 1px solid #808080;
@@ -814,7 +1398,7 @@
                 padding             : 2px 0 0 23px;
                 left                : 4px;
                 right               : 4px;
-                background-image    : url(images/win_ff_15_title.png);
+                background-image    : url(images/win_ff_title.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 overflow            : hidden;
@@ -860,22 +1444,22 @@
             
             .win_firefox15 .wff15_title BLOCKQUOTE DIV.close {
                 margin-left         : 2px;
-                background-image    : url(images/win_ff_15_buttons.png);
+                background-image    : url(images/win_ff_buttons.png);
                 background-position : 0 -42px;
             }
             
             .win_firefox15 .wff15_title BLOCKQUOTE DIV.max {
-                background-image    : url(images/win_ff_15_buttons.png);
+                background-image    : url(images/win_ff_buttons.png);
                 background-position : 0 -14px;
             }
             
             .win_firefox15Max .wff15_title BLOCKQUOTE DIV.max {
-                background-image    : url(images/win_ff_15_buttons.png);
+                background-image    : url(images/win_ff_buttons.png);
                 background-position : 0 -28px;
             }
             
             .win_firefox15 .wff15_title BLOCKQUOTE DIV.min {
-                background-image    : url(images/win_ff_15_buttons.png);
+                background-image    : url(images/win_ff_buttons.png);
                 background-position : 0 0;
             }
             
@@ -924,10 +1508,14 @@
             .win_firefox15 .wff15_statusbar .wff15_resize {
                 width            : 20px;
                 height           : 22px;
-                background-image : url(images/win_ff_15_statusbar_resize.png);
+                background-image : url(images/win_ff_statusbar_resize.png);
                 position         : absolute;
                 top              : 0;
                 right            : 0;
+            }
+            
+            .win_firefox15Max .wff15_statusbar .wff15_resize {
+                background-image : none;
             }
             
             .cover {
