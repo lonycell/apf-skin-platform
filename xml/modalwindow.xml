@@ -9,7 +9,7 @@
             }
             
             .win_ie8 .wie8_corner_tl {
-                background-image    : url(images/win_ff_corner_tl.png);
+                background-image    : url(images/win_corner_tl.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 width               : 4px;
@@ -21,7 +21,7 @@
             }
             
             .win_ie8 .wie8_corner_tr {
-                background-image    : url(images/win_ff_corner_tr.png);
+                background-image    : url(images/win_corner_tr.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 width               : 4px;
@@ -33,7 +33,7 @@
             }
             
             .win_ie8 .wie8_border_t {
-                background-image    : url(images/win_ff_border_t.png);
+                background-image    : url(images/win_border_t.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 height              : 4px;
@@ -45,7 +45,7 @@
             }
             
             .win_ie8 .wie8_corner_bl {
-                background-image    : url(images/win_ff_corner_bl.png);
+                background-image    : url(images/win_corner_bl.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 width               : 4px;
@@ -56,7 +56,7 @@
             }
             
             .win_ie8 .wie8_corner_br {
-                background-image    : url(images/win_ff_corner_br.png);
+                background-image    : url(images/win_corner_br.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 width               : 4px;
@@ -67,7 +67,7 @@
             }
             
             .win_ie8 .wie8_border_b {
-                background-image    : url(images/win_ff_border_b.png);
+                background-image    : url(images/win_border_b.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 height              : 4px;
@@ -79,7 +79,7 @@
             }
             
             .win_ie8 .wie8_border_l {
-                background-image    : url(images/win_ff_border_l.png);
+                background-image    : url(images/win_border_l.png);
                 background-position : 0 0;
                 background-repeat   : repeat-y;
                 width               : 4px;
@@ -91,7 +91,7 @@
             }
             
             .win_ie8 .wie8_border_r {
-                background-image    : url(images/win_ff_border_r.png);
+                background-image    : url(images/win_border_r.png);
                 background-position : 0 0;
                 background-repeat   : repeat-y;
                 width               : 4px;
@@ -263,7 +263,7 @@
                 height              : 23px;
                 position            : relative;
                 background-color    : #d4d0c8;
-                background-image    : url(images/win_ie8_border.png);
+                background-image    : url(images/win_toolbar_border.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
             }
@@ -283,7 +283,7 @@
                 height              : 59px;
                 position            : relative;
                 background-color    : #d4d0c8;
-                background-image    : url(images/win_ie8_border.png);
+                background-image    : url(images/win_toolbar_border.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
             }
@@ -412,22 +412,22 @@
             
             .win_ie8 .wie8_title BLOCKQUOTE DIV.close {
                 margin-left         : 2px;
-                background-image    : url(images/win_ff_buttons.png);
+                background-image    : url(images/win_buttons.png);
                 background-position : 0 -42px;
             }
             
             .win_ie8 .wie8_title BLOCKQUOTE DIV.max {
-                background-image    : url(images/win_ff_buttons.png);
+                background-image    : url(images/win_buttons.png);
                 background-position : 0 -14px;
             }
             
             .win_ie8Max .wie8_title BLOCKQUOTE DIV.max {
-                background-image    : url(images/win_ff_buttons.png);
+                background-image    : url(images/win_buttons.png);
                 background-position : 0 -28px;
             }
             
             .win_ie8 .wie8_title BLOCKQUOTE DIV.min {
-                background-image    : url(images/win_ff_buttons.png);
+                background-image    : url(images/win_buttons.png);
                 background-position : 0 0;
             }
             
@@ -604,7 +604,7 @@
             }
             
             .win_firefox36 .wff36_corner_tl {
-                background-image    : url(images/win_ff_corner_tl.png);
+                background-image    : url(images/win_corner_tl.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 width               : 4px;
@@ -616,7 +616,7 @@
             }
             
             .win_firefox36 .wff36_corner_tr {
-                background-image    : url(images/win_ff_corner_tr.png);
+                background-image    : url(images/win_corner_tr.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 width               : 4px;
@@ -628,7 +628,7 @@
             }
             
             .win_firefox36 .wff36_border_t {
-                background-image    : url(images/win_ff_border_t.png);
+                background-image    : url(images/win_border_t.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 height              : 4px;
@@ -640,7 +640,7 @@
             }
             
             .win_firefox36 .wff36_corner_bl {
-                background-image    : url(images/win_ff_corner_bl.png);
+                background-image    : url(images/win_corner_bl.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 width               : 4px;
@@ -651,7 +651,7 @@
             }
             
             .win_firefox36 .wff36_corner_br {
-                background-image    : url(images/win_ff_corner_br.png);
+                background-image    : url(images/win_corner_br.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 width               : 4px;
@@ -662,7 +662,7 @@
             }
             
             .win_firefox36 .wff36_border_b {
-                background-image    : url(images/win_ff_border_b.png);
+                background-image    : url(images/win_border_b.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 height              : 4px;
@@ -674,7 +674,7 @@
             }
             
             .win_firefox36 .wff36_border_l {
-                background-image    : url(images/win_ff_border_l.png);
+                background-image    : url(images/win_border_l.png);
                 background-position : 0 0;
                 background-repeat   : repeat-y;
                 width               : 4px;
@@ -686,7 +686,7 @@
             }
             
             .win_firefox36 .wff36_border_r {
-                background-image    : url(images/win_ff_border_r.png);
+                background-image    : url(images/win_border_r.png);
                 background-position : 0 0;
                 background-repeat   : repeat-y;
                 width               : 4px;
@@ -710,7 +710,7 @@
             .win_firefox36 .wff36_browser_bar .toolbar1 {
                 height              : 24px;
                 background-color    : #d4d0c8;
-                background-image    : url(images/win_ff_toolbar_border.png);
+                background-image    : url(images/win_toolbar_border.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 position            : relative;
@@ -741,7 +741,7 @@
             .win_firefox36 .wff36_browser_bar .toolbar2 {
                 height              : 38px;
                 background-color    : #d4d0c8;
-                background-image    : url(images/win_ff_toolbar_border.png);
+                background-image    : url(images/win_toolbar_border.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 position            : relative;
@@ -906,7 +906,7 @@
             .win_firefox36 .wff36_browser_bar .toolbar3 {
                 height              : 27px;
                 background-color    : #d4d0c8;
-                background-image    : url(images/win_ff_toolbar_border.png);
+                background-image    : url(images/win_toolbar_border.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 border-bottom       : 1px solid #808080;
@@ -989,22 +989,22 @@
             
             .win_firefox36 .wff36_title BLOCKQUOTE DIV.close {
                 margin-left         : 2px;
-                background-image    : url(images/win_ff_buttons.png);
+                background-image    : url(images/win_buttons.png);
                 background-position : 0 -42px;
             }
             
             .win_firefox36 .wff36_title BLOCKQUOTE DIV.max {
-                background-image    : url(images/win_ff_buttons.png);
+                background-image    : url(images/win_buttons.png);
                 background-position : 0 -14px;
             }
             
             .win_firefox36Max .wff36_title BLOCKQUOTE DIV.max {
-                background-image    : url(images/win_ff_buttons.png);
+                background-image    : url(images/win_buttons.png);
                 background-position : 0 -28px;
             }
             
             .win_firefox36 .wff36_title BLOCKQUOTE DIV.min {
-                background-image    : url(images/win_ff_buttons.png);
+                background-image    : url(images/win_buttons.png);
                 background-position : 0 0;
             }
             
@@ -1183,7 +1183,7 @@
             }
             
             .win_firefox2 .wff2_corner_tl {
-                background-image    : url(images/win_ff_corner_tl.png);
+                background-image    : url(images/win_corner_tl.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 width               : 4px;
@@ -1195,7 +1195,7 @@
             }
             
             .win_firefox2 .wff2_corner_tr {
-                background-image    : url(images/win_ff_corner_tr.png);
+                background-image    : url(images/win_corner_tr.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 width               : 4px;
@@ -1207,7 +1207,7 @@
             }
             
             .win_firefox2 .wff2_border_t {
-                background-image    : url(images/win_ff_border_t.png);
+                background-image    : url(images/win_border_t.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 height              : 4px;
@@ -1219,7 +1219,7 @@
             }
             
             .win_firefox2 .wff2_corner_bl {
-                background-image    : url(images/win_ff_corner_bl.png);
+                background-image    : url(images/win_corner_bl.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 width               : 4px;
@@ -1230,7 +1230,7 @@
             }
             
             .win_firefox2 .wff2_corner_br {
-                background-image    : url(images/win_ff_corner_br.png);
+                background-image    : url(images/win_corner_br.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 width               : 4px;
@@ -1241,7 +1241,7 @@
             }
             
             .win_firefox2 .wff2_border_b {
-                background-image    : url(images/win_ff_border_b.png);
+                background-image    : url(images/win_border_b.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 height              : 4px;
@@ -1253,7 +1253,7 @@
             }
             
             .win_firefox2 .wff2_border_l {
-                background-image    : url(images/win_ff_border_l.png);
+                background-image    : url(images/win_border_l.png);
                 background-position : 0 0;
                 background-repeat   : repeat-y;
                 width               : 4px;
@@ -1265,7 +1265,7 @@
             }
             
             .win_firefox2 .wff2_border_r {
-                background-image    : url(images/win_ff_border_r.png);
+                background-image    : url(images/win_border_r.png);
                 background-position : 0 0;
                 background-repeat   : repeat-y;
                 width               : 4px;
@@ -1289,7 +1289,7 @@
             .win_firefox2 .wff2_browser_bar .toolbar1 {
                 height              : 24px;
                 background-color    : #d4d0c8;
-                background-image    : url(images/win_ff_toolbar_border.png);
+                background-image    : url(images/win_toolbar_border.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 position            : relative;
@@ -1320,7 +1320,7 @@
             .win_firefox2 .wff2_browser_bar .toolbar2 {
                 height              : 38px;
                 background-color    : #d4d0c8;
-                background-image    : url(images/win_ff_toolbar_border.png);
+                background-image    : url(images/win_toolbar_border.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 position            : relative;
@@ -1413,7 +1413,7 @@
             .win_firefox2 .wff2_browser_bar .toolbar3 {
                 height              : 27px;
                 background-color    : #d4d0c8;
-                background-image    : url(images/win_ff_toolbar_border.png);
+                background-image    : url(images/win_toolbar_border.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 border-bottom       : 1px solid #808080;
@@ -1495,22 +1495,22 @@
             
             .win_firefox2 .wff2_title BLOCKQUOTE DIV.close {
                 margin-left         : 2px;
-                background-image    : url(images/win_ff_buttons.png);
+                background-image    : url(images/win_buttons.png);
                 background-position : 0 -42px;
             }
             
             .win_firefox2 .wff2_title BLOCKQUOTE DIV.max {
-                background-image    : url(images/win_ff_buttons.png);
+                background-image    : url(images/win_buttons.png);
                 background-position : 0 -14px;
             }
             
             .win_firefox2Max .wff2_title BLOCKQUOTE DIV.max {
-                background-image    : url(images/win_ff_buttons.png);
+                background-image    : url(images/win_buttons.png);
                 background-position : 0 -28px;
             }
             
             .win_firefox2 .wff2_title BLOCKQUOTE DIV.min {
-                background-image    : url(images/win_ff_buttons.png);
+                background-image    : url(images/win_buttons.png);
                 background-position : 0 0;
             }
             
@@ -1678,7 +1678,7 @@
             }
             
             .win_firefox15 .wff15_corner_tl {
-                background-image    : url(images/win_ff_corner_tl.png);
+                background-image    : url(images/win_corner_tl.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 width               : 4px;
@@ -1690,7 +1690,7 @@
             }
             
             .win_firefox15 .wff15_corner_tr {
-                background-image    : url(images/win_ff_corner_tr.png);
+                background-image    : url(images/win_corner_tr.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 width               : 4px;
@@ -1702,7 +1702,7 @@
             }
             
             .win_firefox15 .wff15_border_t {
-                background-image    : url(images/win_ff_border_t.png);
+                background-image    : url(images/win_border_t.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 height              : 4px;
@@ -1714,7 +1714,7 @@
             }
             
             .win_firefox15 .wff15_corner_bl {
-                background-image    : url(images/win_ff_corner_bl.png);
+                background-image    : url(images/win_corner_bl.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 width               : 4px;
@@ -1725,7 +1725,7 @@
             }
             
             .win_firefox15 .wff15_corner_br {
-                background-image    : url(images/win_ff_corner_br.png);
+                background-image    : url(images/win_corner_br.png);
                 background-position : 0 0;
                 background-repeat   : no-repeat;
                 width               : 4px;
@@ -1736,7 +1736,7 @@
             }
             
             .win_firefox15 .wff15_border_b {
-                background-image    : url(images/win_ff_border_b.png);
+                background-image    : url(images/win_border_b.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 height              : 4px;
@@ -1748,7 +1748,7 @@
             }
             
             .win_firefox15 .wff15_border_l {
-                background-image    : url(images/win_ff_border_l.png);
+                background-image    : url(images/win_border_l.png);
                 background-position : 0 0;
                 background-repeat   : repeat-y;
                 width               : 4px;
@@ -1760,7 +1760,7 @@
             }
             
             .win_firefox15 .wff15_border_r {
-                background-image    : url(images/win_ff_border_r.png);
+                background-image    : url(images/win_border_r.png);
                 background-position : 0 0;
                 background-repeat   : repeat-y;
                 width               : 4px;
@@ -1784,7 +1784,7 @@
             .win_firefox15 .wff15_browser_bar .toolbar1 {
                 height              : 24px;
                 background-color    : #d4d0c8;
-                background-image    : url(images/win_ff_toolbar_border.png);
+                background-image    : url(images/win_toolbar_border.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 position            : relative;
@@ -1815,7 +1815,7 @@
             .win_firefox15 .wff15_browser_bar .toolbar2 {
                 height              : 38px;
                 background-color    : #d4d0c8;
-                background-image    : url(images/win_ff_toolbar_border.png);
+                background-image    : url(images/win_toolbar_border.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 position            : relative;
@@ -1956,7 +1956,7 @@
             .win_firefox15 .wff15_browser_bar .toolbar3 {
                 height              : 27px;
                 background-color    : #d4d0c8;
-                background-image    : url(images/win_ff_toolbar_border.png);
+                background-image    : url(images/win_toolbar_border.png);
                 background-position : 0 0;
                 background-repeat   : repeat-x;
                 border-bottom       : 1px solid #808080;
@@ -2039,22 +2039,22 @@
             
             .win_firefox15 .wff15_title BLOCKQUOTE DIV.close {
                 margin-left         : 2px;
-                background-image    : url(images/win_ff_buttons.png);
+                background-image    : url(images/win_buttons.png);
                 background-position : 0 -42px;
             }
             
             .win_firefox15 .wff15_title BLOCKQUOTE DIV.max {
-                background-image    : url(images/win_ff_buttons.png);
+                background-image    : url(images/win_buttons.png);
                 background-position : 0 -14px;
             }
             
             .win_firefox15Max .wff15_title BLOCKQUOTE DIV.max {
-                background-image    : url(images/win_ff_buttons.png);
+                background-image    : url(images/win_buttons.png);
                 background-position : 0 -28px;
             }
             
             .win_firefox15 .wff15_title BLOCKQUOTE DIV.min {
-                background-image    : url(images/win_ff_buttons.png);
+                background-image    : url(images/win_buttons.png);
                 background-position : 0 0;
             }
             
