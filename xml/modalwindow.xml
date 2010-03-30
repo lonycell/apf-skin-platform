@@ -1,4 +1,599 @@
 <a:skin xmlns:a="http://ajax.org/2005/aml">
+    <a:modalwindow name="ie8">
+        <a:style><![CDATA[
+            .win_ie8 {
+                position : relative;
+                width    : 700px;
+                height   : 400px;
+                overflow : hidden;
+            }
+            
+            .win_ie8 .wie8_corner_tl {
+                background-image    : url(images/win_ff_corner_tl.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 4px;
+                height              : 4px;
+                position            : absolute;
+                top                 : 0;
+                left                : 0;
+                z-index             : 2000;
+            }
+            
+            .win_ie8 .wie8_corner_tr {
+                background-image    : url(images/win_ff_corner_tr.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 4px;
+                height              : 4px;
+                position            : absolute;
+                top                 : 0;
+                right               : 0;
+                z-index             : 2000;
+            }
+            
+            .win_ie8 .wie8_border_t {
+                background-image    : url(images/win_ff_border_t.png);
+                background-position : 0 0;
+                background-repeat   : repeat-x;
+                height              : 4px;
+                position            : absolute;
+                top                 : 0;
+                left                : 4px;
+                right               : 4px;
+                z-index             : 2000;
+            }
+            
+            .win_ie8 .wie8_corner_bl {
+                background-image    : url(images/win_ff_corner_bl.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 4px;
+                height              : 4px;
+                position            : absolute;
+                bottom              : 0;
+                left                : 0;
+            }
+            
+            .win_ie8 .wie8_corner_br {
+                background-image    : url(images/win_ff_corner_br.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 4px;
+                height              : 4px;
+                position            : absolute;
+                bottom              : 0;
+                right               : 0;
+            }
+            
+            .win_ie8 .wie8_border_b {
+                background-image    : url(images/win_ff_border_b.png);
+                background-position : 0 0;
+                background-repeat   : repeat-x;
+                height              : 4px;
+                position            : absolute;
+                bottom              : 0;
+                left                : 4px;
+                right               : 4px;
+                z-index             : 1000;
+            }
+            
+            .win_ie8 .wie8_border_l {
+                background-image    : url(images/win_ff_border_l.png);
+                background-position : 0 0;
+                background-repeat   : repeat-y;
+                width               : 4px;
+                position            : absolute;
+                bottom              : 4px;
+                top                 : 4px;
+                left                : 0;
+                z-index             : 2000;
+            }
+            
+            .win_ie8 .wie8_border_r {
+                background-image    : url(images/win_ff_border_r.png);
+                background-position : 0 0;
+                background-repeat   : repeat-y;
+                width               : 4px;
+                position            : absolute;
+                bottom              : 4px;
+                top                 : 4px;
+                right               : 0;
+                z-index             : 2000;
+            }
+            
+            .win_ie8 .wie8_browser_bar {
+                position : absolute;
+                overflow : hidden;
+                top      : 23px;
+                left     : 4px;
+                right    : 4px;
+            }
+            
+            .win_ie8 .wie8_browser_bar .wie8_toolbar1 {
+                height           : 32px;
+                position         : relative;
+                background-color : #d4d0c8;
+            }
+            
+            .win_ie8 .wie8_browser_bar .wie8_toolbar1 .wie8_buttons {
+                width               : 76px;
+                height              : 32px;
+                position            : absolute;
+                top                 : 0;
+                left                : 0;
+                background-image    : url(images/win_ie8_toolbar1_buttons1.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+            }
+            
+            .win_ie8 .wie8_browser_bar .wie8_toolbar1 .wie8_input1 {
+                position : absolute;
+                left     : 77px;
+                right    : 303px;
+                top      : 4px;
+            }
+            
+            .win_ie8 .wie8_browser_bar .wie8_toolbar1 .wie8_input1 .wie8_left {
+                width               : 2px;
+                height              : 22px;
+                background-image    : url(images/win_ie8_input_left.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                position            : absolute;
+                top                 : 0;
+                left                : 0;
+            }
+            
+            .win_ie8 .wie8_browser_bar .wie8_toolbar1 .wie8_input1 .wie8_middle {
+                
+                background-image    : url(images/win_ie8_input_middle.png);
+                background-position : 0 0;
+                background-repeat   : repeat-x;
+                position            : absolute;
+                top                 : 0;
+                left                : 2px;
+                right               : 18px;
+                padding             : 4px 0 0 22px;
+                height              : 18px;
+                font-family         : Tahoma;
+                font-size           : 11px;
+            }
+            
+            .win_ie8 .wie8_browser_bar .wie8_toolbar1 .wie8_input1 .wie8_middle .wie8_icon {
+                height              : 16px;
+                width               : 16px;
+                background-image    : url(icons/google.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                position            : absolute;
+                top                 : 3px;
+                left                : 1px;
+            }
+            
+            .win_ie8 .wie8_browser_bar .wie8_toolbar1 .wie8_input1 .wie8_right {
+                height              : 22px;
+                width               : 18px;
+                background-image    : url(images/win_ie8_input_right2.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                position            : absolute;
+                top                 : 0;
+                right               : 0;
+            }
+            
+            .win_ie8 .wie8_browser_bar .wie8_toolbar1 .wie8_buttons2 {
+                width               : 48px;
+                height              : 22px;
+                position            : absolute;
+                top                 : 4px;
+                right               : 251px;
+                background-image    : url(images/win_ie8_toolbar1_buttons2.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+            }
+            
+            .win_ie8 .wie8_browser_bar .wie8_toolbar1 .wie8_buttons3 {
+                width               : 35px;
+                height              : 22px;
+                position            : absolute;
+                top                 : 4px;
+                right               : 6px;
+                background-image    : url(images/win_ie8_toolbar1_buttons3.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+            }
+            
+            .win_ie8 .wie8_browser_bar .wie8_toolbar1 .wie8_input2 {
+                position : absolute;
+                right    : 45px;
+                top      : 4px;
+                width    : 200px;
+            }
+            
+            .win_ie8 .wie8_browser_bar .wie8_toolbar1 .wie8_input2 .wie8_left {
+                width               : 2px;
+                height              : 22px;
+                background-image    : url(images/win_ie8_input_left.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                position            : absolute;
+                top                 : 0;
+                left                : 0;
+            }
+            
+            .win_ie8 .wie8_browser_bar .wie8_toolbar1 .wie8_input2 .wie8_middle {
+                background-image    : url(images/win_ie8_input_middle.png);
+                background-position : 0 0;
+                background-repeat   : repeat-x;
+                position            : absolute;
+                top                 : 0;
+                left                : 2px;
+                right               : 2px;
+                padding             : 4px 0 0 22px;
+                height              : 18px;
+                font-family         : Tahoma;
+                font-size           : 11px;
+                color               : #808080;
+            }
+            
+            .win_ie8 .wie8_browser_bar .wie8_toolbar1 .wie8_input2 .wie8_middle .wie8_icon {
+                height              : 16px;
+                width               : 16px;
+                background-image    : url(icons/bing.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                position            : absolute;
+                top                 : 3px;
+                left                : 1px;
+            }
+            
+            .win_ie8 .wie8_browser_bar .wie8_toolbar1 .wie8_input2 .wie8_right {
+                height              : 22px;
+                width               : 2px;
+                background-image    : url(images/win_ie8_input_right.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                position            : absolute;
+                top                 : 0;
+                right               : 0;
+            }
+            
+            .win_ie8 .wie8_browser_bar .wie8_toolbar2 {
+                height              : 23px;
+                position            : relative;
+                background-color    : #d4d0c8;
+                background-image    : url(images/win_ie8_border.png);
+                background-position : 0 0;
+                background-repeat   : repeat-x;
+            }
+            
+            .win_ie8 .wie8_browser_bar .wie8_toolbar2 .wie8_buttons {
+                width               : 234px;
+                height              : 23px;
+                position            : absolute;
+                top                 : 0;
+                left                : 0;
+                background-image    : url(images/win_ie8_toolbar2_buttons1.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+            }
+            
+            .win_ie8 .wie8_browser_bar .wie8_toolbar3 {
+                height              : 59px;
+                position            : relative;
+                background-color    : #d4d0c8;
+                background-image    : url(images/win_ie8_border.png);
+                background-position : 0 0;
+                background-repeat   : repeat-x;
+            }
+            
+            .win_ie8 .wie8_browser_bar .wie8_toolbar3 .wie8_buttons {
+                width               : 356px;
+                height              : 59px;
+                background-image    : url(images/win_ie8_toolbar3_buttons1.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                position            : absolute;
+                top                 : 0;
+                left                : 0;
+            }
+            
+            .win_ie8 .wie8_browser_bar .wie8_toolbar3 .wie8_buttons .wie8_icon {
+                width               : 16px;
+                height              : 16px;
+                background-image    : url(icons/google.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                position            : absolute;
+                top                 : 39px;
+                left                : 8px;
+            }
+            
+            .win_ie8 .wie8_browser_bar .wie8_toolbar3 .wie8_buttons .wie8_label {
+                width       : 100px;
+                height      : 16px;
+                position    : absolute;
+                top         : 40px;
+                left        : 27px;
+                font-family : Tahoma;
+                font-size   : 11px;
+            }
+            
+            .win_ie8 .wie8_browser_bar .wie8_toolbar3 .wie8_buttons2 {
+                width               : 254px;
+                height              : 18px;
+                background-image    : url(images/win_ie8_toolbar3_buttons2.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                position            : absolute;
+                bottom              : 5px;
+                right               : 11px;
+            }
+
+            .win_ie8 .wie8_content {
+                position          : absolute;
+                overflow          : hidden;
+                top               : 137px;
+                right             : 4px;
+                bottom            : 24px;
+                left              : 4px;
+                background-color  : white;
+                border            : 1px solid white;
+                border-top-color  : #808080;
+                border-left-color : #808080;
+            }
+            
+            .win_ie8 .wie8_content DIV {
+                position          : absolute;
+                left              : 0;
+                top               : 0;
+                right             : 0;
+                bottom            : 0;
+                border            : 1px solid #d4d0c8;
+                border-top-color  : #404040;
+                border-left-color : #404040;
+                background-color  : white;
+                overflow          : hidden;
+                font-family       : Tahoma;
+                font-size         : 11px;
+            }
+            
+            .win_ie8 .wie8_title {
+                height              : 16px;
+                position            : absolute;
+                top                 : 4px;
+                padding             : 2px 0 0 23px;
+                left                : 4px;
+                right               : 4px;
+                background-image    : url(images/win_ff_title.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                overflow            : hidden;
+                border-bottom       : 1px solid #d4d0c8;
+                margin              : 0;
+                color               : white;
+                font-size           : 11px;
+                font-weight         : bold;
+                font-family         : Tahoma;
+                z-index             : 2000;
+            }
+            
+            .win_ie8 .wie8_title SPAN.icon {
+                width               : 16px;
+                height              : 16px;
+                position            : absolute;
+                top                 : 1px;
+                left                : 2px;
+                overflow            : hidden;
+                background-repeat   : no-repeat;
+                background-position : 0 0;
+            }
+            
+            .win_ie8 .wie8_title BLOCKQUOTE {
+                margin   : 0;
+                padding  : 2px;
+                position : absolute;
+                height   : 14px;
+                width    : 50px;
+                right    : 0;
+                top      : 0;
+            }
+            
+            .win_ie8 .wie8_title BLOCKQUOTE DIV {
+                margin            : 0;
+                padding           : 0;
+                width             : 16px;
+                height            : 14px;
+                float             : right;
+                position          : relative;
+                background-repeat : no-repeat;
+            }
+            
+            .win_ie8 .wie8_title BLOCKQUOTE DIV.close {
+                margin-left         : 2px;
+                background-image    : url(images/win_ff_buttons.png);
+                background-position : 0 -42px;
+            }
+            
+            .win_ie8 .wie8_title BLOCKQUOTE DIV.max {
+                background-image    : url(images/win_ff_buttons.png);
+                background-position : 0 -14px;
+            }
+            
+            .win_ie8Max .wie8_title BLOCKQUOTE DIV.max {
+                background-image    : url(images/win_ff_buttons.png);
+                background-position : 0 -28px;
+            }
+            
+            .win_ie8 .wie8_title BLOCKQUOTE DIV.min {
+                background-image    : url(images/win_ff_buttons.png);
+                background-position : 0 0;
+            }
+            
+            .win_ie8 .wie8_title BLOCKQUOTE .close.down {
+                background-position : -16px -42px;
+            }
+            
+            .win_ie8 .wie8_title BLOCKQUOTE .max.down {
+                background-position : -16px -14px;
+            }
+            
+            .win_ie8Max .wie8_title BLOCKQUOTE .max.down {
+                background-position : -16px -28px;
+            }
+            
+            .win_ie8 .wie8_title BLOCKQUOTE .min.down {
+                background-position : -16px 0;
+            }
+            
+            .win_ie8 .wie8_statusbar {
+                position         : absolute;
+                bottom           : 4px;
+                left             : 4px;
+                right            : 4px;
+                background-color : #d4d0c8;
+                height           : 20px;
+                z-index          : 1000;
+            }
+            
+            .win_ie8 .wie8_statusbar .wie8_section {
+                position          : absolute;
+                bottom            : 0;
+                left              : 0;
+                right             : 0;
+                top               : 2px;
+                background-color  : #d4d0c8;
+                border            : 1px solid white;
+                border-top-color  : #808080;
+                border-left-color : #808080;
+                font-size         : 11px;
+                font-family       : Tahoma;
+                padding           : 1px 0 0 6px;
+                height            : 15px;
+            }
+            
+            .win_ie8 .wie8_statusbar .wie8_resize {
+                width            : 620px;
+                height           : 20px;
+                background-image : url(images/win_ie8_statusbar_resize.png);
+                position         : absolute;
+                top              : 0;
+                right            : 0;
+            }
+            
+            .cover {
+                background : white;
+                opacity    : 0.3;
+                filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+                position   : absolute;
+                left       : 0;
+                top        : 0;
+                width      : 100%;
+                height     : 100%;
+                height     : expression(document.documentElement.offsetHeight);
+                z-index    : 10000;
+            }
+            
+            #apf_outline {
+    
+            }
+            
+            #apf_outline.drag {
+                border     : 1px solid black;
+                background : #CCC;
+                opacity    : 0.4;
+            }
+            
+            #apf_outline.resize {
+                border     : 3px solid black;
+                background : #CCC;
+                opacity    : 0.3;
+            }
+        ]]></a:style>
+        <a:style condition="apf.isIE7"><![CDATA[
+            .win_ie8 .wie8_title BLOCKQUOTE DIV.down {
+                background-position-x : -16px;
+            }
+        ]]></a:style>
+        
+        <a:presentation>
+            <a:main 
+              collapsed-height = "26"
+              min-height       = "200"
+              min-width        = "680"
+              container        = "div[6]/div" 
+              drag             = "div[3]" 
+              title            = "div[3]/text()" 
+              icon             = "div[3]/span"
+              buttons          = "div[3]/blockquote">
+                <div class="win_ie8">
+                    <div class="wie8_corner_tl"> </div>
+                    <div class="wie8_corner_tr"> </div>
+                    <div class="wie8_title">
+                        -
+                        <blockquote> </blockquote>
+                        <span class="icon"> </span>
+                    </div>
+                    
+                    <div class="wie8_border_l"> </div>
+                    <div class="wie8_border_r"> </div>
+                    <div class="wie8_content">
+                        <div> </div>
+                    </div>
+                    
+                    <div class="wie8_corner_bl"> </div>
+                    <div class="wie8_corner_br"> </div>
+                    <div class="wie8_border_b"> </div>
+                    <div class="wie8_border_t"> </div>
+                    <div class="wie8_browser_bar">
+                       <div class="wie8_toolbar1">
+                           <div class="wie8_buttons"></div>
+                           <div class="wie8_input1">
+                               <div class="wie8_left"></div>
+                               <div class="wie8_right"></div>
+                               <div class="wie8_middle">
+                                   http://www.google.com
+                                   <div class="wie8_icon"></div>
+                               </div>
+                           </div>
+                           <div class="wie8_input2">
+                               <div class="wie8_left"></div>
+                               <div class="wie8_right"></div>
+                               <div class="wie8_middle">
+                                   Live Search
+                                   <div class="wie8_icon"></div>
+                               </div>
+                           </div>
+                           <div class="wie8_buttons2"></div>
+                           <div class="wie8_buttons3"></div>
+                       </div>
+                       <div class="wie8_toolbar2">
+                           <div class="wie8_buttons"></div>
+                       </div>
+                       <div class="wie8_toolbar3">
+                           <div class="wie8_buttons">
+                               <div class="wie8_icon"></div>
+                               <div class="wie8_label">Google</div>
+                           </div>
+                           <div class="wie8_buttons2"></div>
+                       </div>
+                    </div>
+                    <div class="wie8_statusbar">
+                        <div class="wie8_section"></div>
+                        <div class="wie8_resize"></div>
+                    </div>
+                </div>
+            </a:main>
+            <a:button>
+                <div> </div>
+            </a:button>
+            <a:cover>
+                <div class="cover"> </div>
+            </a:cover>
+        </a:presentation>
+    </a:modalwindow>
+    
     <a:modalwindow name="firefox36">
         <a:style><![CDATA[
             .win_firefox36 {
