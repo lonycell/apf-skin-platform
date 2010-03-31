@@ -75,6 +75,8 @@
                 position            : absolute;
                 bottom              : 0;
                 left                : 0;
+                cursor              : pointer;
+                z-index             : 9000;
                 display             : none;
             }
             
