@@ -1,5 +1,433 @@
 <a:skin xmlns:a="http://ajax.org/2005/aml">
-        <a:modalwindow name="chrome41">
+    <a:modalwindow name="safari4">
+        <a:style><![CDATA[
+            .win_saf4 {
+                position : relative;
+                width    : 700px;
+                height   : 400px;
+                overflow : hidden;
+            }
+            
+            .win_saf4 .wsaf4_corner_tl {
+                background-image    : url(images/win_corner_tl.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 4px;
+                height              : 4px;
+                position            : absolute;
+                top                 : 0;
+                left                : 0;
+                z-index             : 2000;
+            }
+            
+            .win_saf4 .wsaf4_corner_tr {
+                background-image    : url(images/win_corner_tr.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 4px;
+                height              : 4px;
+                position            : absolute;
+                top                 : 0;
+                right               : 0;
+                z-index             : 2000;
+            }
+            
+            .win_saf4 .wsaf4_border_t {
+                background-image    : url(images/win_border_t.png);
+                background-position : 0 0;
+                background-repeat   : repeat-x;
+                height              : 4px;
+                position            : absolute;
+                top                 : 0;
+                left                : 4px;
+                right               : 4px;
+                z-index             : 2000;
+            }
+            
+            .win_saf4 .wsaf4_corner_bl {
+                background-image    : url(images/win_corner_bl.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 4px;
+                height              : 4px;
+                position            : absolute;
+                bottom              : 0;
+                left                : 0;
+            }
+            
+            .win_saf4 .wsaf4_corner_br {
+                background-image    : url(images/win_corner_br.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 4px;
+                height              : 4px;
+                position            : absolute;
+                bottom              : 0;
+                right               : 0;
+            }
+            
+            .win_saf4 .wsaf4_border_b {
+                background-image    : url(images/win_border_b.png);
+                background-position : 0 0;
+                background-repeat   : repeat-x;
+                height              : 4px;
+                position            : absolute;
+                bottom              : 0;
+                left                : 4px;
+                right               : 4px;
+                z-index             : 1000;
+            }
+            
+            .win_saf4 .wsaf4_border_l {
+                background-image    : url(images/win_border_l.png);
+                background-position : 0 0;
+                background-repeat   : repeat-y;
+                width               : 4px;
+                position            : absolute;
+                bottom              : 4px;
+                top                 : 4px;
+                left                : 0;
+                z-index             : 2000;
+            }
+            
+            .win_saf4 .wsaf4_border_r {
+                background-image    : url(images/win_border_r.png);
+                background-position : 0 0;
+                background-repeat   : repeat-y;
+                width               : 4px;
+                position            : absolute;
+                bottom              : 4px;
+                top                 : 4px;
+                right               : 0;
+                z-index             : 2000;
+            }
+            
+            .win_saf4 .wsaf4_browser_bar {
+                position : absolute;
+                overflow : hidden;
+                top      : 23px;
+                left     : 4px;
+                right    : 4px;
+            }
+            
+            .win_saf4 .wsaf4_browser_bar .wsaf4_toolbar {
+                background-image    : url(images/win_saf4_backg.png);
+                background-position : 0 0;
+                background-repeat   : repeat-x;
+                height              : 59px;
+                position            : relative;
+                border-bottom       : 1px solid #9b9a99;
+            }
+            
+            .win_saf4 .wsaf4_browser_bar .wsaf4_toolbar .wsaf4_buttons1 {
+                background-image    : url(images/win_saf4_buttons1.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 55px;
+                height              : 24px;
+                position            : absolute;
+                top                 : 8px;
+                left                : 7px;
+            }
+            
+            .win_saf4 .wsaf4_browser_bar .wsaf4_toolbar .wsaf4_input1 {
+                background-image    : url(images/win_saf4_input_middle.png);
+                background-position : 0 0;
+                background-repeat   : repeat-x;
+                position            : absolute;
+                top                 : 8px;
+                right               : 368px;
+                left                : 68px;
+                height              : 20px;
+                padding             : 4px 0 0 50px;
+                font-size           : 13px;
+                font-family         : Tahoma;
+            }
+            
+            .win_saf4 .wsaf4_browser_bar .wsaf4_toolbar .wsaf4_input1 .wsaf4_left {
+                background-image    : url(images/win_saf4_input1_left.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 30px;
+                height              : 24px;
+                position            : absolute;
+                top                 : 0;
+                left                : 0;
+            }
+            
+            .win_saf4 .wsaf4_browser_bar .wsaf4_toolbar .wsaf4_input1 .wsaf4_right {
+                background-image    : url(images/win_saf4_input1_right.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 18px;
+                height              : 24px;
+                position            : absolute;
+                top                 : 0;
+                right               : 0;
+            }
+            
+            .win_saf4 .wsaf4_browser_bar .wsaf4_toolbar .wsaf4_input1 .wsaf4_icon {
+                background-image    : url(icons/google.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 16px;
+                height              : 16px;
+                position            : absolute;
+                top                 : 4px;
+                left                : 31px;
+            }
+            
+            .win_saf4 .wsaf4_browser_bar .wsaf4_toolbar .wsaf4_buttons2 {
+                background-image    : url(images/win_saf4_buttons2.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 54px;
+                height              : 15px;
+                position            : absolute;
+                top                 : 13px;
+                right               : 12px;
+            }
+            
+            .win_saf4 .wsaf4_browser_bar .wsaf4_toolbar .wsaf4_buttons3 {
+                background-image    : url(images/win_saf4_buttons3.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 479px;
+                height              : 14px;
+                position            : absolute;
+                top                 : 39px;
+                left                : 10px;
+            }
+            
+            .win_saf4 .wsaf4_browser_bar .wsaf4_toolbar .wsaf4_input2 {
+                background-image    : url(images/win_saf4_input_middle.png);
+                background-position : 0 0;
+                background-repeat   : repeat-x;
+                position            : absolute;
+                top                 : 8px;
+                right               : 82px;
+                width               : 252px;
+                height              : 20px;
+                padding             : 4px 0 0 28px;
+                font-size           : 13px;
+                font-family         : Tahoma;
+                color               : #808080;
+            }
+            
+            .win_saf4 .wsaf4_browser_bar .wsaf4_toolbar .wsaf4_input2 .wsaf4_left {
+                background-image    : url(images/win_saf4_input2_left.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 24px;
+                height              : 24px;
+                position            : absolute;
+                top                 : 0;
+                left                : 0;
+            }
+            
+            .win_saf4 .wsaf4_browser_bar .wsaf4_toolbar .wsaf4_input2 .wsaf4_right {
+                background-image    : url(images/win_saf4_input2_right.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 5px;
+                height              : 24px;
+                position            : absolute;
+                top                 : 0;
+                right               : 0;
+            }
+            
+            .win_saf4 .wsaf4_content {
+                position         : absolute;
+                overflow         : hidden;
+                top              : 83px;
+                right            : 4px;
+                bottom           : 4px;
+                left             : 4px;
+                background-color : white;
+                font-family      : Tahoma;
+                font-size        : 11px;
+            }
+            
+            .win_saf4 .wsaf4_title {
+                height              : 16px;
+                position            : absolute;
+                top                 : 4px;
+                padding             : 2px 0 0 23px;
+                left                : 4px;
+                right               : 4px;
+                background-image    : url(images/win_title.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                overflow            : hidden;
+                border-bottom       : 1px solid #d4d0c8;
+                margin              : 0;
+                color               : white;
+                font-size           : 11px;
+                font-weight         : bold;
+                font-family         : Tahoma;
+                z-index             : 2000;
+            }
+            
+            .win_saf4 .wsaf4_title SPAN.icon {
+                width               : 16px;
+                height              : 16px;
+                position            : absolute;
+                top                 : 1px;
+                left                : 2px;
+                overflow            : hidden;
+                background-repeat   : no-repeat;
+                background-position : 0 0;
+            }
+            
+            .win_saf4 .wsaf4_title BLOCKQUOTE {
+                margin   : 0;
+                padding  : 2px;
+                position : absolute;
+                height   : 14px;
+                width    : 50px;
+                right    : 0;
+                top      : 0;
+            }
+            
+            .win_saf4 .wsaf4_title BLOCKQUOTE DIV {
+                margin            : 0;
+                padding           : 0;
+                width             : 16px;
+                height            : 14px;
+                float             : right;
+                position          : relative;
+                background-repeat : no-repeat;
+            }
+            
+            .win_saf4 .wsaf4_title BLOCKQUOTE DIV.close {
+                margin-left         : 2px;
+                background-image    : url(images/win_buttons.png);
+                background-position : 0 -42px;
+            }
+            
+            .win_saf4 .wsaf4_title BLOCKQUOTE DIV.max {
+                background-image    : url(images/win_buttons.png);
+                background-position : 0 -14px;
+            }
+            
+            .win_saf4Max .wsaf4_title BLOCKQUOTE DIV.max {
+                background-image    : url(images/win_buttons.png);
+                background-position : 0 -28px;
+            }
+            
+            .win_saf4 .wsaf4_title BLOCKQUOTE DIV.min {
+                background-image    : url(images/win_buttons.png);
+                background-position : 0 0;
+            }
+            
+            .win_saf4 .wsaf4_title BLOCKQUOTE .close.down {
+                background-position : -16px -42px;
+            }
+            
+            .win_saf4 .wsaf4_title BLOCKQUOTE .max.down {
+                background-position : -16px -14px;
+            }
+            
+            .win_saf4Max .wsaf4_title BLOCKQUOTE .max.down {
+                background-position : -16px -28px;
+            }
+            
+            .win_saf4 .wsaf4_title BLOCKQUOTE .min.down {
+                background-position : -16px 0;
+            }
+            
+            .cover {
+                background : white;
+                opacity    : 0.3;
+                filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+                position   : absolute;
+                left       : 0;
+                top        : 0;
+                width      : 100%;
+                height     : 100%;
+                height     : expression(document.documentElement.offsetHeight);
+                z-index    : 10000;
+            }
+            
+            #apf_outline {
+    
+            }
+            
+            #apf_outline.drag {
+                border     : 1px solid black;
+                background : #CCC;
+                opacity    : 0.4;
+            }
+            
+            #apf_outline.resize {
+                border     : 3px solid black;
+                background : #CCC;
+                opacity    : 0.3;
+            }
+        ]]></a:style>
+        <a:style condition="apf.isIE7"><![CDATA[
+            .win_saf4 .wsaf4_title BLOCKQUOTE DIV.down {
+                background-position-x : -16px;
+            }
+        ]]></a:style>
+        
+        <a:presentation>
+            <a:main 
+              collapsed-height = "26"
+              min-height       = "150"
+              min-width        = "660"
+              container        = "div[6]" 
+              drag             = "div[3]" 
+              title            = "div[3]/text()" 
+              icon             = "div[3]/span"
+              buttons          = "div[3]/blockquote">
+                <div class="win_saf4">
+                    <div class="wsaf4_corner_tl"> </div>
+                    <div class="wsaf4_corner_tr"> </div>
+                    <div class="wsaf4_title">
+                        -
+                        <blockquote> </blockquote>
+                        <span class="icon"> </span>
+                    </div>
+                    
+                    <div class="wsaf4_border_l"> </div>
+                    <div class="wsaf4_border_r"> </div>
+                    <div class="wsaf4_content"> </div>
+                    
+                    <div class="wsaf4_corner_bl"> </div>
+                    <div class="wsaf4_corner_br"> </div>
+                    <div class="wsaf4_border_b"> </div>
+                    <div class="wsaf4_border_t"> </div>
+                    <div class="wsaf4_browser_bar">
+                        <div class="wsaf4_toolbar">
+                            <div class="wsaf4_buttons1"></div>
+                            <div class="wsaf4_buttons2"></div>
+                            <div class="wsaf4_buttons3"></div>
+                            <div class="wsaf4_input1">
+                                http://www.google.com
+                                <div class="wsaf4_left"></div>
+                                <div class="wsaf4_right"></div>
+                                <div class="wsaf4_icon"></div>
+                            </div>
+                            <div class="wsaf4_input2">
+                                Google
+                                <div class="wsaf4_left"></div>
+                                <div class="wsaf4_right"></div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </a:main>
+            <a:button>
+                <div> </div>
+            </a:button>
+            <a:cover>
+                <div class="cover"> </div>
+            </a:cover>
+        </a:presentation>
+    </a:modalwindow>
+    <a:modalwindow name="chrome41">
         <a:style><![CDATA[
             .win_ch41 {
                 position : relative;
