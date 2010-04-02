@@ -1,4 +1,197 @@
 <a:skin xmlns:a="http://ajax.org/2005/aml">
+    <a:modalwindow name="iphone">
+        <a:style><![CDATA[
+            .win_iphone {
+                position : relative;
+                width    : 389px;
+                height   : 719px;
+                overflow : hidden;
+            }
+            
+            .win_iphone .wiphone_corner_tl {
+                background-image    : url(images/win_iphone_corner_tl.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 36px;
+                height              : 120px;
+                position            : absolute;
+                top                 : 0;
+                left                : 0;
+            }
+            
+            .win_iphone .wiphone_corner_tr {
+                background-image    : url(images/win_iphone_corner_tr.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 33px;
+                height              : 120px;
+                position            : absolute;
+                top                 : 0;
+                right               : 0;
+            }
+            
+            .win_iphone .wiphone_border_t {
+                background-image    : url(images/win_iphone_border_t.png);
+                background-position : 0 0;
+                background-repeat   : repeat-x;
+                height              : 120px;
+                width               : 320px;
+                position            : absolute;
+                top                 : 0;
+                left                : 36px;
+            }
+            
+            .win_iphone .wiphone_corner_bl {
+                background-image    : url(images/win_iphone_corner_bl.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 36px;
+                height              : 119px;
+                position            : absolute;
+                bottom              : 0;
+                left                : 0;
+            }
+            
+            .win_iphone .wiphone_corner_br {
+                background-image    : url(images/win_iphone_corner_br.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+                width               : 33px;
+                height              : 119px;
+                position            : absolute;
+                bottom              : 0;
+                right               : 0;
+            }
+            
+            .win_iphone .wiphone_border_b {
+                background-image    : url(images/win_iphone_border_b.png);
+                background-position : 0 0;
+                background-repeat   : repeat-x;
+                height              : 119px;
+                width               : 320px;
+                position            : absolute;
+                bottom              : 0;
+                left                : 36px;
+            }
+            
+            .win_iphone .wiphone_border_l {
+                background-image    : url(images/win_iphone_border_l.png);
+                background-position : 0 0;
+                background-repeat   : repeat-y;
+                width               : 36px;
+                height              : 480px;
+                position            : absolute;
+                top                 : 120px;
+                left                : 0;
+            }
+            
+            .win_iphone .wiphone_border_r {
+                background-image    : url(images/win_iphone_border_r.png);
+                background-position : 0 0;
+                background-repeat   : repeat-y;
+                width               : 33px;
+                height              : 480px;
+                position            : absolute;
+                top                 : 120px;
+                right               : 0;
+            }
+            
+            .win_iphone .wiphone_browser_bar {
+                display : none;
+            }
+            
+            .win_iphone .wiphone_content {
+                position            : absolute;
+                overflow            : hidden;
+                top                 : 120px;
+                right               : 33px;
+                bottom              : 119px;
+                left                : 36px;
+                background-color    : white;
+                font-family         : Tahoma;
+                font-size           : 11px;
+                background-image    : url(images/win_iphone_welcomscreen.png);
+                background-position : 0 0;
+                background-repeat   : no-repeat;
+            }
+            
+            .win_iphone .wiphone_title BLOCKQUOTE,
+            .win_iphone .wiphone_title SPAN.icon,
+            .win_iphone .wiphone_title {
+                display : none;
+            }
+            
+            .cover {
+                background : white;
+                opacity    : 0.3;
+                filter     : progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+                position   : absolute;
+                left       : 0;
+                top        : 0;
+                width      : 100%;
+                height     : 100%;
+                height     : expression(document.documentElement.offsetHeight);
+                z-index    : 10000;
+            }
+            
+            #apf_outline {
+    
+            }
+            
+            #apf_outline.drag {
+                border     : 1px solid black;
+                background : #CCC;
+                opacity    : 0.4;
+            }
+            
+            #apf_outline.resize {
+                border     : 3px solid black;
+                background : #CCC;
+                opacity    : 0.3;
+            }
+        ]]></a:style>
+        
+        <a:presentation>
+            <a:main 
+              collapsed-height = "26"
+              min-height       = "150"
+              min-width        = "660"
+              container        = "div[6]" 
+              drag             = "div[3]" 
+              title            = "div[3]/text()" 
+              icon             = "div[3]/span"
+              buttons          = "div[3]/blockquote">
+                <div class="win_iphone">
+                    <div class="wiphone_corner_tl"> </div>
+                    <div class="wiphone_corner_tr"> </div>
+                    <div class="wiphone_title">
+                        -
+                        <blockquote> </blockquote>
+                        <span class="icon"> </span>
+                    </div>
+                    
+                    <div class="wiphone_border_l"> </div>
+                    <div class="wiphone_border_r"> </div>
+                    <div class="wiphone_content"> </div>
+                    
+                    <div class="wiphone_corner_bl"> </div>
+                    <div class="wiphone_corner_br"> </div>
+                    <div class="wiphone_border_b"> </div>
+                    <div class="wiphone_border_t"> </div>
+                    <div class="wiphone_browser_bar">
+                       
+                    </div>
+                </div>
+            </a:main>
+            <a:button>
+                <div> </div>
+            </a:button>
+            <a:cover>
+                <div class="cover"> </div>
+            </a:cover>
+        </a:presentation>
+    </a:modalwindow>
+    
     <a:modalwindow name="safari4">
         <a:style><![CDATA[
             .win_saf4 {
