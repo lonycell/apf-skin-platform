@@ -122,6 +122,7 @@
                 border           : 1px solid #cccccc;
                 margin           : 2px;
                 opacity          : 0.7;
+                cursor   : pointer;
             }
             
             .gridMode .apfgal_bar .apfgal_thumbs .apfgal_t_body .apfgal_thumbnail DIV {
@@ -135,11 +136,8 @@
             
             .gridMode .apfgal_bar .apfgal_thumbs .apfgal_t_body .selected {
                 opacity : 1;
-            }
-            
-            .gridMode .apfgal_bar .apfgal_thumbs .apfgal_t_body .selected DIV{
-                border : 2px solid #F39719;
-                margin : 8px;
+                border  : 2px solid #F39719;
+                margin  : 1px;
             }
             
             /* ====== BAR MODE ======= */
