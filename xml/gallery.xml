@@ -4,7 +4,6 @@
             .apf_gallery {
                 font-family      : Tahoma;
                 position         : relative;
-                width            : 700px;
                 overflow         : hidden;
                 background-color : white;
             }
@@ -114,7 +113,7 @@
             
             /* ====== GRID MODE ======= */
             
-            .gridMode .apfgal_bar .apfgal_thumbs .apfgal_t_body .apfgal_thumbnail {
+            .apf_gallerygridMode .apfgal_bar .apfgal_thumbs .apfgal_t_body .apfgal_thumbnail {
                 height           : 120px;
                 width            : 169px;
                 float            : left;
@@ -122,10 +121,10 @@
                 border           : 1px solid #cccccc;
                 margin           : 2px;
                 opacity          : 0.7;
-                cursor   : pointer;
+                cursor           : pointer;
             }
             
-            .gridMode .apfgal_bar .apfgal_thumbs .apfgal_t_body .apfgal_thumbnail DIV {
+            .apf_gallerygridMode .apfgal_bar .apfgal_thumbs .apfgal_t_body .apfgal_thumbnail DIV {
                 background-position : 50% 50%;
                 background-repeat   : no-repeat;
                 width               : 149px;
@@ -134,7 +133,7 @@
                 cursor              : pointer;
             }
             
-            .gridMode .apfgal_bar .apfgal_thumbs .apfgal_t_body .selected {
+            .apf_gallerygridMode .apfgal_bar .apfgal_thumbs .apfgal_t_body .selected {
                 opacity : 1;
                 border  : 2px solid #F39719;
                 margin  : 1px;
@@ -142,18 +141,18 @@
             
             /* ====== BAR MODE ======= */
 
-            .barMode .apfgal_bar .apfgal_descr {
+            .apf_gallerybarMode .apfgal_bar .apfgal_descr {
                 padding : 10px 0;
             }
             
-            .barMode .apfgal_bar .apfgal_thumbs {
+            .apf_gallerybarMode .apfgal_bar .apfgal_thumbs {
                 height           : 49px;
                 overflow         : hidden;
                 position         : relative;
                 background-color : white;
             }
             
-            .barMode .apfgal_bar .apfgal_thumbs .apfgal_t_body {
+            .apf_gallerybarMode .apfgal_bar .apfgal_thumbs .apfgal_t_body {
                 overflow         : hidden;
                 position         : absolute;
                 width            : auto;
@@ -164,13 +163,13 @@
                 background-color : white;
             }
             
-            .barMode .apfgal_bar .apfgal_thumbs .apfgal_t_body > DIV {
+            .apf_gallerybarMode .apfgal_bar .apfgal_thumbs .apfgal_t_body > DIV {
                 width            : 9000px;
                 height           : 49px;
                 position         : relative;
             }
 
-            .barMode .apfgal_bar .apfgal_thumbs .apfgal_t_body .apfgal_thumbnail {
+            .apf_gallerybarMode .apfgal_bar .apfgal_thumbs .apfgal_t_body .apfgal_thumbnail {
                 width    : 68px;
                 height   : 45px;
                 overflow : hidden;
@@ -181,22 +180,22 @@
                 cursor   : pointer;
             }
             
-            .barMode .apfgal_bar .apfgal_thumbs .apfgal_t_body .apfgal_thumbnail DIV {
+            .apf_gallerybarMode .apfgal_bar .apfgal_thumbs .apfgal_t_body .apfgal_thumbnail DIV {
                 background-position : 50% 50%;
                 background-repeat   : no-repeat;
                 width               : 100%;
                 height              : 100%;
             }
             
-            .barMode .apfgal_bar .apfgal_thumbs .apfgal_t_body .apfgal_thumbnail IMG {
+            .apf_gallerybarMode .apfgal_bar .apfgal_thumbs .apfgal_t_body .apfgal_thumbnail IMG {
             }
             
-            .barMode .apfgal_bar .apfgal_thumbs .apfgal_t_body .selected {
+            .apf_gallerybarMode .apfgal_bar .apfgal_thumbs .apfgal_t_body .selected {
                 opacity      : 1;
                 border-color : #f39719;
             }
             
-            .barMode .apfgal_bar .apfgal_thumbs .apfgal_t_left_arrow {
+            .apf_gallerybarMode .apfgal_bar .apfgal_thumbs .apfgal_t_left_arrow {
                 width               : 17px;
                 height              : 49px;
                 background-color    : #efefef;
@@ -211,7 +210,7 @@
                 opacity             : 0.6;
             }
 
-            .barMode .apfgal_bar .apfgal_thumbs .apfgal_t_right_arrow {
+            .apf_gallerybarMode .apfgal_bar .apfgal_thumbs .apfgal_t_right_arrow {
                 width               : 17px;
                 height              : 49px;
                 background-color    : #efefef;
@@ -226,17 +225,17 @@
                 opacity             : 0.6;
             }
             
-            .barMode .apfgal_bar .apfgal_thumbs .apfgal_t_left_arrow:hover,
-            .barMode .apfgal_bar .apfgal_thumbs .apfgal_t_right_arrow:hover {
+            .apf_gallerybarMode .apfgal_bar .apfgal_thumbs .apfgal_t_left_arrow:hover,
+            .apf_gallerybarMode .apfgal_bar .apfgal_thumbs .apfgal_t_right_arrow:hover {
                 opacity : 1;
             }
             
-            .barMode .noArrows .apfgal_thumbs .apfgal_t_left_arrow ,
-            .barMode .noArrows .apfgal_thumbs .apfgal_t_right_arrow {
+            .apf_gallerybarMode .noArrows .apfgal_thumbs .apfgal_t_left_arrow ,
+            .apf_gallerybarMode .noArrows .apfgal_thumbs .apfgal_t_right_arrow {
                 display : none;
             }
             
-            .barMode .noArrows .apfgal_thumbs .apfgal_t_body {
+            .apf_gallerybarMode .noArrows .apfgal_thumbs .apfgal_t_body {
                 right : 0;
                 left  : 0;
             }
@@ -286,6 +285,11 @@
             <a:container contents=".">
                 <div class="aristo_options"> </div>
             </a:container>
+            <!--a:item class="." select="div" image="div">
+                <div class="apfgal_thumbnail">
+                    <div> </div>
+                </div>
+            </a:item-->
             <a:item class="." select="img" image="img">
                 <div class="apfgal_thumbnail">
                     <img />
