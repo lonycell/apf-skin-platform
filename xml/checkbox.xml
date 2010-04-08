@@ -5,13 +5,14 @@
                 padding    : 2px 2px 2px 18px;
                 _padding   : 2px; /* IE6 fix */
                 position   : relative;
+                overflow : hidden;
                 min-height : 13px;
-                color      : #4b4b4b;
+                color      : #333;
                 background : url(images/spacer.gif);
                 _clear     : both; /* IE6 fix */
             }
             
-            .cbcontainer span {
+            .cbcontainer SPAN {
                 font-family : Tahoma;
                 font-size   : 11px;
                 cursor      : default;
@@ -23,7 +24,7 @@
                 line-height : 13px;
             }
             
-            .cbcontainerFocus span {
+            .cbcontainerFocus SPAN {
                 padding : 0px 2px 1px 2px;
                 border  : 1px dotted #BBB;
             }
@@ -61,21 +62,21 @@
                 background-position : -12px 0;
             }
     
-            .cbcontainerError span {
+            .cbcontainerError SPAN {
                 background-color : #ffb500;
                 color            : #fbfbfb;
             }
     
-            .cbcontainerDisabled span {
+            .cbcontainerDisabled SPAN {
                 color : #bebebe;
             }
     
-            .cbcontainer br {
+            .cbcontainer BR {
                 display : none;
             }
         ]]></a:style>
         <a:style condition="!apf.isIE"><![CDATA[
-            .cbcontainer br {
+            .cbcontainer BR {
                 line-height : 0;
                 display     : block;
             }
@@ -99,9 +100,12 @@
         </a:style>
     
         <a:presentation>
-            <a:main label="span/text()">
-                <div class='cbcontainer'>
-                    <div class='checkbox'> </div>
+            <a:main 
+              label     = "span/text()" 
+              minheight = "18" 
+              minwidth  = "18">
+                <div class="cbcontainer">
+                    <div class="checkbox"> </div>
                     <span>-</span>
                     <br clear="left" />
                 </div>

@@ -173,7 +173,9 @@
               contnainer = "." 
               navigation = "div[1]" 
               daysofweek = "div[2]" 
-              content    = "div[3]">
+              content    = "div[3]"
+              minwidth   = "164"
+              minheight  = "136">
                 <div class="calendar">
                     <div class="navigation"> </div>
                     <div class="daysofweek"> </div>

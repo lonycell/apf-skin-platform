@@ -674,7 +674,9 @@
               linked     = "textarea"
               iframe     = "true"
               erroffsetx = "0"
-              erroffsety = "100">
+              erroffsety = "100"
+              minwidth   = "550"
+              minheight  = "145">
                 <div class="editor">
                     <div class="toolbar_container">
     
@@ -769,6 +771,111 @@
                     color       : green;
                     font-weight : bold;
                     font-style  : italic;
+                }
+            ]]></a:fontstyles>
+            <a:empty caption=".">
+                <div class="empty"></div>
+            </a:empty>
+        </a:presentation>
+    </a:editor>
+    
+    <a:editor name="editsmall">
+        <a:presentation>
+            <a:main 
+              toolbar   = "div[1]" 
+              editor    = "div[2]" 
+              linked    = "textarea"
+              iframe    = "true"
+              minwidth  = "750"
+              minheight = "115">
+                <div class="editor">
+                    <div class="toolbar_container">
+    
+                    </div>
+                    <div class="editor_Area">
+    
+                    </div>
+                </div>
+            </a:main>
+            <a:toolbar container=".">
+                <div class="editor_Toolbar">
+                    <span class="TB_Start"> </span>
+                </div>
+            </a:toolbar>
+            <a:divider>
+                <span class="editor_seperator"> </span>
+            </a:divider>
+            <a:button label="span">
+                <div class="editor_enabled">
+                    <span> </span>
+                    <div class="right"> </div>
+                </div>
+            </a:button>
+    
+            <a:toolbars>
+                <a:toolbar>
+                    Bold, Italic, Underline, Strikethrough, |,
+                    JustifyLeft, JustifyCenter, JustifyRight, JustifyFull, |,
+                    FontStyle, BlockFormat, Fonts, Fontsize, |, RemoveFormat
+                </a:toolbar>
+                <a:toolbar>
+                    Cut, Copy, Paste, PasteText, |,
+                    Search, Replace, Bullist, NumList, |,
+                    Outdent, Indent, Blockquote, |,
+                    Undo, Redo, |,
+                    Link, Unlink, Anchor, Hr, Table, |,
+                    Forecolor, Backcolor
+                </a:toolbar>
+                <a:toolbar>
+                    Sub, Sup, |,
+                    InsertDate, InsertTime, Charmap, Emotions, |,
+                    Print, Preview, VisualAid, |,
+                    Code
+                </a:toolbar>
+            </a:toolbars>
+            <a:emotions path="images/editor">
+                cool, cry, embarassed, foot-in-mouth, frown, innocent,
+                kiss, laughing, money-mouth, sealed, smile, surprised,
+                tongue-out, undecided, wink, yell
+            </a:emotions>
+            <a:fonts>
+                Andale Mono=andale mono,times;
+                Arial=arial,helvetica,sans-serif;
+                Arial Black=arial black,avant garde;
+                Book Antiqua=book antiqua,palatino;
+                Comic Sans MS=comic sans ms,sans-serif;
+                Courier New=courier new,courier;
+                Georgia=georgia,palatino;
+                Helvetica=helvetica;
+                Impact=impact,chicago;
+                Symbol=symbol;
+                Tahoma=tahoma,arial,helvetica,sans-serif;
+                Terminal=terminal,monaco;
+                Times New Roman=times new roman,times;
+                Trebuchet MS=trebuchet ms,geneva;
+                Verdana=verdana,geneva;
+                Webdings=webdings;
+                Wingdings=wingdings,zapf dingbats
+            </a:fonts>
+            <a:fontsizes>
+                1, 2, 3, 4, 5, 6, 7
+            </a:fontsizes>
+            <a:blockformats>
+                normal, h1, h2, h3, h4, h5, h6, pre, address
+            </a:blockformats>
+            <a:fontstyles><![CDATA[
+                style1 = .style1 {
+                    color: red;
+                    font-weight: bolder;
+                }
+                Another = style2 {
+                    color: navy;
+                    font-size: 16px;
+                }
+                Last one = .style3 {
+                    color: green;
+                    font-weight: bold;
+                    font-style: italic;
                 }
             ]]></a:fontstyles>
             <a:empty caption=".">

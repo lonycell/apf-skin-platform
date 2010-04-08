@@ -1,137 +1,4 @@
 <a:skin xmlns:a="http://ajax.org/2005/aml">
-    <a:dropdown name="dropdowneditor">
-        <a:style><![CDATA[
-            .ddedit{
-                background-color : white;
-                height           : 100px;
-                font-size        : 1px;
-                width            : 148px;
-                border           : 2px inset;
-                border           : 1px solid midnightblue;
-            }
-            
-            #override .ddedit .ddeditbtn {
-                background : #D4D0C8 url(images/arrow_down.gif) no-repeat 50% 50%;
-                width      : 13px;
-                height     : 12px;
-                position   : absolute;
-                right      : 0;
-                left       : expression(this.parentNode.offsetWidth - 18);
-                border     : 2px outset;
-                overflow   : hidden;
-                
-                -moz-border-top-colors    : #D4D0C8 #FFFFFF;
-                -moz-border-left-colors   : #D4D0C8 #FFFFFF;
-                -moz-border-bottom-colors : black gray;
-                -moz-border-right-colors  : black gray;
-            }
-            
-            .ddeditDisabled .ddeditbtn {
-                background-image : url(images/dddisabled.gif);
-            }
-    
-            #override .ddeditdown .ddeditbtn {
-                border : 2px inset;
-                
-                -moz-border-bottom-colors : #FFFFFF #D4D0C8;
-                -moz-border-right-colors  : #FFFFFF #D4D0C8;
-                -moz-border-top-colors    : gray black;
-                -moz-border-left-colors   : gray black;
-            }
-    
-            #override .ddedit .ddeditlabel {
-                white-space   : nowrap;
-                overflow      : hidden;
-                text-overflow : ellipsis;
-                padding       : 1px 1px 0 3px;
-                width         : 98%;
-                height        : 14px;
-                font-size     : 8pt;
-                font-family   : Tahoma;
-                cursor        : default;
-                color         : black;
-            }
-            
-            #override .ddeditFocus .ddeditlabel {
-                background-color : #EEEEEE;
-            }
-    
-            .ddeditcontainer {
-                border     : 1px solid black;
-                background : white;
-                height     : 50px;
-                overflow   : hidden;
-                font-size  : 8pt;
-                display    : none;
-            }
-    
-            .ddeditcontainer span {
-                display          : block;
-                height           : 15px;
-                padding          : 2px 3px 2px 6px;
-                white-space      : nowrap;
-                overflow         : hidden;
-                text-overflow    : ellipsis;
-                background-color : white;
-                font-size        : 8pt;
-                font-family      : Tahoma;
-                color            : black;
-                cursor           : default;
-            }
-    
-            .ddeditcontainer span.hover {
-                background-color : #003265;
-                color            : white;
-            }
-    
-            .ddeditcontainer .selected {
-                color            : black;
-                background-color : #CFCFCF;
-            }
-            
-            .ddeditError {
-                border : 2px inset red;
-            }
-            
-            .ddedit.loading {
-                /*border : 2px inset gray;*/
-            }
-            
-            .ddedit.loaded {
-                /*border : 2px inset green;*/
-            }
-            
-            .ddedit.loading .ddeditbtn {
-                border     : 0;
-                width      : 15px;
-                height     : 16px;
-                background : white url(images/loadingspin.gif) no-repeat 0px 1px;
-            }
-        ]]></a:style>
-    
-        <a:presentation>
-            <a:main label="div[2]/text()" button=".">
-                <div class='ddedit'>
-                    <div class='ddeditbtn'> </div>
-                    <div class='ddeditlabel'>-</div>
-                </div>
-            </a:main>
-            <a:container contents=".">
-                <div class='ddeditcontainer'> </div>
-            </a:container>
-            <a:item
-              class   = "."
-              caption = "text()"
-              select  = "."
-              inherit = "true">
-                <span>-</span>
-            </a:item>
-            <a:empty caption=".">
-                <div class="empty">-</div>
-            </a:empty>
-        </a:presentation>
-    </a:dropdown>
-    
     <a:dropdown name="dropdown">
         <a:style><![CDATA[
             .dropdown {
@@ -301,7 +168,10 @@
               label       = "div[2]/text()" 
               button      = "." 
               width-diff  = "-1" 
-              item-height = "19">
+              item-height = "19"
+              minheight   = "19" 
+              maxheight   = "19"
+              minwidth    = "50">
                 <div class='dropdown'>
                     <div class='dropdownLeftBorder'> </div>
                     <div class='dropdownlabel'>-</div>
@@ -310,6 +180,139 @@
             <a:container contents=".">
                 <div class='optionList'>
                 </div>
+            </a:container>
+            <a:item
+              class   = "."
+              caption = "text()"
+              select  = "."
+              inherit = "true">
+                <span>-</span>
+            </a:item>
+            <a:empty caption=".">
+                <div class="empty">-</div>
+            </a:empty>
+        </a:presentation>
+    </a:dropdown>
+    
+    <a:dropdown name="dropdowneditor">
+        <a:style><![CDATA[
+            .ddedit{
+                background-color : white;
+                height           : 100px;
+                font-size        : 1px;
+                width            : 148px;
+                border           : 2px inset;
+                border           : 1px solid midnightblue;
+            }
+            
+            #override .ddedit .ddeditbtn {
+                background : #D4D0C8 url(images/arrow_down.gif) no-repeat 50% 50%;
+                width      : 13px;
+                height     : 12px;
+                position   : absolute;
+                right      : 0;
+                left       : expression(this.parentNode.offsetWidth - 18);
+                border     : 2px outset;
+                overflow   : hidden;
+                
+                -moz-border-top-colors    : #D4D0C8 #FFFFFF;
+                -moz-border-left-colors   : #D4D0C8 #FFFFFF;
+                -moz-border-bottom-colors : black gray;
+                -moz-border-right-colors  : black gray;
+            }
+            
+            .ddeditDisabled .ddeditbtn {
+                background-image : url(images/dddisabled.gif);
+            }
+    
+            #override .ddeditdown .ddeditbtn {
+                border : 2px inset;
+                
+                -moz-border-bottom-colors : #FFFFFF #D4D0C8;
+                -moz-border-right-colors  : #FFFFFF #D4D0C8;
+                -moz-border-top-colors    : gray black;
+                -moz-border-left-colors   : gray black;
+            }
+    
+            #override .ddedit .ddeditlabel {
+                white-space   : nowrap;
+                overflow      : hidden;
+                text-overflow : ellipsis;
+                padding       : 1px 1px 0 3px;
+                width         : 98%;
+                height        : 14px;
+                font-size     : 8pt;
+                font-family   : Tahoma;
+                cursor        : default;
+                color         : black;
+            }
+            
+            #override .ddeditFocus .ddeditlabel {
+                background-color : #EEEEEE;
+            }
+    
+            .ddeditcontainer {
+                border     : 1px solid black;
+                background : white;
+                height     : 50px;
+                overflow   : hidden;
+                font-size  : 8pt;
+                display    : none;
+            }
+    
+            .ddeditcontainer span {
+                display          : block;
+                height           : 15px;
+                padding          : 2px 3px 2px 6px;
+                white-space      : nowrap;
+                overflow         : hidden;
+                text-overflow    : ellipsis;
+                background-color : white;
+                font-size        : 8pt;
+                font-family      : Tahoma;
+                color            : black;
+                cursor           : default;
+            }
+    
+            .ddeditcontainer span.hover {
+                background-color : #003265;
+                color            : white;
+            }
+    
+            .ddeditcontainer .selected {
+                color            : black;
+                background-color : #CFCFCF;
+            }
+            
+            .ddeditError {
+                border : 2px inset red;
+            }
+            
+            .ddedit.loading {
+                /*border : 2px inset gray;*/
+            }
+            
+            .ddedit.loaded {
+                /*border : 2px inset green;*/
+            }
+            
+            .ddedit.loading .ddeditbtn {
+                border     : 0;
+                width      : 15px;
+                height     : 16px;
+                background : white url(images/loadingspin.gif) no-repeat 0px 1px;
+            }
+        ]]></a:style>
+    
+        <a:presentation>
+            <a:main label="div[2]/text()" button=".">
+                <div class='ddedit'>
+                    <div class='ddeditbtn'> </div>
+                    <div class='ddeditlabel'>-</div>
+                </div>
+            </a:main>
+            <a:container contents=".">
+                <div class='ddeditcontainer'> </div>
             </a:container>
             <a:item
               class   = "."

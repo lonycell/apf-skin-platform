@@ -1,627 +1,4 @@
 <a:skin xmlns:a="http://ajax.org/2005/aml">
-    <a:datagrid name="propedit">
-        <a:style><![CDATA[
-            .propedit {
-                border           : 1px solid #c3c3c3;
-                /*border-left : 14px solid #cfcbc2;*/
-                background-color : white;
-                cursor           : default;
-                font-family      : Tahoma;
-                font-size        : 11px;
-                z-index          : 10000
-                padding          : 0 0 0 0;
-            }
-            
-            div.propedit {
-                position : relative;
-            }
-            
-            .propedit .headings {
-                position         : relative;
-                top              : 0;
-                left             : 0;
-                height           : 17px;
-                z-index          : 10;
-                background-color : #e6e6e6;
-                margin           : 0; /*margin : 0 16px 0 0; Temp disabled for non scrolling */
-                white-space      : nowrap;
-            }
-            
-            .fixed .headings {
-                overflow : hidden;
-                z-index  : 100;
-            }
-            
-            .propedit .headings span {
-                display : inline-block;
-                height  : 15px;
-            }
-            
-            .propedit .headings span b {
-                font-weight   : normal;
-                background    : #e6e6e6 no-repeat 0 50%;
-                overflow      : hidden;
-                text-overflow : ellipsis;
-                padding       : 2px 1px 0px 3px;
-                margin        : 0 -1px 0 -1px;
-                border-right  : 1px solid #cfcbc2;
-                border-left   : 1px solid #cfcbc2;
-                display       : block;
-                height        : 15px;
-                font-weight   : bold;
-            }
-            
-            .propedit .headings span.hover {
-            }
-            
-            .propedit .headings span.down b, 
-            .propedit .headings span.drag b {
-                color            : white;
-                background-color : #25a8e7;
-            }
-            
-            .propedit .headings span.ascending b {
-                background-image    : url(images/sort_asc_n.gif);
-                background-repeat   : no-repeat;
-                background-position : right 6px;
-            }
-            
-            .propedit .headings span.descending b {
-                background-image    : url(images/sort_desc_n.gif);
-                background-repeat   : no-repeat;
-                background-position : right 6px;
-            }
-            
-            .propedit .headings span.drag {
-                border : 1px solid white;
-            }
-            
-            .virtual .records {
-                overflow : hidden;
-            }
-            
-            .fixed .records {
-                overflow-x : auto;
-            }
-            
-            .propedit body.records {
-                overflow    : visible;
-                margin      : 0;
-                border      : 0;
-                padding     : 17px 0 0 0;
-                white-space : nowrap;
-            }
-            
-            .propedit iframe {
-                position : absolute;
-                left   : 0;
-                top    : 0;
-                width  : 100%;
-                height : 100%;
-            }
-            
-            html.propedit {
-                overflow-x : hidden;
-                overflow-y : auto; /* Should be auto. This was scroll */
-                border     : 0;
-                margin     : 0;
-            }
-            
-            html.fixed {
-                overflow-x : auto;
-            }
-            
-            .propedit .records div dl {
-                font-weight : normal;
-                padding     : 2px 1px 2px 3px;
-                display     : block;
-                border      : 1px solid #cfcbc2;
-                overflow    : hidden;
-                min-height  : 13px;
-                margin      : 0 -1px 0 -1px;
-                cursor      : default;
-            }
-            
-            .propedit .records div span {
-                display        : inline-block;
-                vertical-align : top;
-                background     : white no-repeat 0 50%;
-                text-overflow  : ellipsis;
-                white-space    : nowrap;
-            }
-            
-            .propedit .records div {
-                margin-bottom : -1px;
-                position      : relative;
-            }
-            
-            .propedit .records .tall dl {
-                height : 36px;
-            }
-            
-            .propedit .records .tall span {
-                height : 40px;
-            }
-            
-            .propedit .records .tall {
-                height : 41px;
-            }
-            
-            .propedit .records .selected .celllabel dl {
-                background-color : #f0f0f0;
-                color            : black;/*#4b4b4b;*/
-            }
-            
-            .propeditFocus .records .selected .celllabel dl {
-                color            : white;
-                background-color : #25a8e7;
-            }
-            
-            .propedit .records .cellselected dl {
-                background : white;
-                color      : black;
-                cursor     : text;
-            }
-            
-            .propeditFocus .records .cellselected dl {
-            }
-            
-            /*.propedit .records .cellselected {
-                background-color : #f0f0f0;
-                color            : #4b4b4b;
-            }
-            
-            .propeditFocus .records .cellselected {
-                color            : white;
-                background-color : #25a8e7;
-            }*/
-            
-            .propedit .move_pointer {
-                height     : 100px;
-                width      : 2px;
-                position   : absolute;
-                top        : 0;
-                margin     : -10px 0 0 -4px;
-                width      : 9px;
-                height     : 38px;
-                background : url(images/column_picker.gif) no-repeat 0 0;
-                overflow   : hidden;
-                z-index    : 1000;
-            }
-            
-            .propedit .size_pointer {
-                border       : 1px dotted gray;
-                border-width : 0 1px 0 1px;
-                height       : 100%;
-                position     : absolute;
-                top          : 0px;
-                z-index      : 1000;
-                cursor       : w-resize;
-            }
-            
-            .pointer {
-                display : none;
-            }
-            
-            .propedit #txt_rename {
-                font-family      : Tahoma;
-                font-size        : 8pt;
-                word-break       : keep-all;
-                overflow         : hidden;
-                cursor           : text;
-                background-color : white;
-                height           : 14px;
-                border           : 1px solid #cfcbc2;
-                border-width     : 1px 0 1px 0;
-                padding          : 2px 1px 1px 3px;
-                position         : relative;
-                z-index          : 10;
-            }
-            
-            .propedit input#txt_rename {
-                outline      : none;
-                padding      : 2px 0 1px 2px;
-                margin       : 0 -2px 0 -1px;
-                border-width : 1px 1px 1px 1px;
-            }
-            
-            .propedit .ddbtn {
-                width           : 11px;
-                height          : 10px;
-                padding         : 2px 0 2px 2.5px;
-                border          : 2px outset;
-                display         : none;
-                position        : absolute;
-                right           : 0;
-                top             : 0;
-                overflow        : hidden;
-                background      : #cfcbc2 url(images/sort_asc.gif) no-repeat 3px 5px;
-                text-decoration : none;
-                z-index         : 100;
-            }
-            
-            .propeditcontainerdropdown, 
-            .propeditcontainerset, 
-            .ddjmlcontainer {
-                display         : none;
-                text-decoration : none;
-                border          : 1px solid black;
-                background      : white;
-                position        : absolute;
-                overflow        : hidden;
-                margin          : 0;
-                padding         : 0;
-            }
-            
-            .ddjmlcontainer { 
-                /*padding : 5px;*/
-                overflow : hidden;
-            }
-            
-            .propeditcontainerdropdown div, 
-            .propeditcontainerset div {
-                display          : block;
-                height           : 15px;
-                padding          : 1px 3px 1px 3px;
-                white-space      : nowrap;
-                overflow         : hidden;
-                text-overflow    : ellipsis;
-                background-color : white;
-                color            : black;
-                cursor           : default;
-            }
-            
-            .propeditcontainerdropdown div.hover {
-                background-color : #25a8e7;
-                color            : #ffffff;
-            }
-            
-            .propeditcontainerset div.hover {
-                background-color : #eee;
-            }
-            
-            .propeditcontainerset div {
-                padding : 2px 3px 0 1px;
-            }
-            
-            .propeditcontainerset div span {
-                width      : 12px;
-                height     : 12px;
-                overflow   : hidden;
-                margin     : 1px 3px 0 1px;
-                float      : left;
-                background : url("images/checkbox.png") no-repeat 0 -12px;
-            }
-            
-            .propeditcontainerset div.checked span {
-                background-position : 0 -24px;
-            }
-            
-            .propedit .btncustom {
-                width            : 11px;
-                height           : 10px;
-                padding          : 2px 0 2px 2.5px;
-                border           : 2px outset;
-                background-color : #cfcbc2;
-                display          : none;
-                position         : absolute;
-                right            : 0;
-                overflow         : hidden;
-                line-height      : 10px;
-                font-family      : Tahoma;
-                font-size        : 7pt;
-                font-weight      : bold;
-                text-decoration  : none;
-                top              : 0;
-                z-index          : 100;
-            }
-            
-            .propedit u.down {
-                border              : 2px inset;
-                padding             : 3px 0 1px 3.5px;
-                width               : 10px;
-                background-position : 4px 6px;
-            }
-            
-            /*
-            .propeditFocus .btncustom, 
-            .propeditFocus .ddbtn {
-                display : block;
-            }
-            */
-            
-            .propedit .empty, 
-            .propedit .offline, 
-            .propedit .loading {
-                text-align  : center;
-                padding     : 8px 0 0 5px;
-                color       : #AAA;
-                font-weight : normal;
-            }
-            
-            .propedit .item {
-                /*border-bottom : 1px solid #eee;*/
-                padding : 3px 4px 4px 2px;
-                margin  : 0 -3px 0 -3px;
-                cursor  : default;
-            }
-            
-            .propedit .item i {
-                overflow   : hidden;
-                width      : 14px;
-                height     : 14px;
-                background : #eee;
-                text-align : center;
-                margin     : 0 5px 0 2px;
-                font-size  : 10px;
-                float      : left;
-                font-style : normal; 
-            }
-            
-            .propedit .item i:hover {
-                color            : white;
-                background-color : #25a8e7;
-            }
-            
-            .propedit .newitem {
-                padding       : 2px;
-                margin        : -1px 0 -1px 0;
-                cursor        : text;
-                border-bottom : 1px dotted #cfcbc2;
-                height        : 14px;
-            }
-            
-            .propedit div span.propedit_lookupmultiple dl {
-                padding : 0;
-            }
-            
-            .propedit div span.propedit_lookupmultiple dl div, 
-            .propedit div span.propedit_childrenmultiple dl div {
-                position     : relative;
-                padding-left : 22px;
-            }
-            
-            .propedit div span.propedit_lookupmultiple dl div i, 
-            .propedit div span.propedit_childrenmultiple dl div i {
-                position : absolute;
-                left     : 1px;
-            }
-            
-            .propedit div span.propedit_lookupmultiple dl div i {
-                left : 3px;
-            }
-            
-            .propedit div span.propedit_lookupmultiple #txt_rename {
-                margin : -1px;
-            }
-        ]]></a:style>
-        <a:style condition="apf.isIE8 || apf.isIE7Emulate"><![CDATA[
-            .propedit u.down {
-                border : 2px inset #ffffff;
-            }
-            
-            .propedit .btncustom {
-                border : 2px outset #ffffff;
-            }
-            
-            .propedit .ddbtn {
-                border : 2px outset #ffffff;
-            }
-        ]]></a:style>
-        <a:style condition="apf.isIE6"><![CDATA[
-            .propedit {
-                overflow-x    : hidden;
-                padding-right : 16px;
-            }
-            
-            .fixed .headings {
-                width : 100%;
-            }
-            
-            .fixed .records {
-                width        : 100%;
-                padding-left : -16px;
-                text-index   : expression(this.style.paddingLeft='16px');
-            }
-            
-            .fixed .records div {
-                margin-left : -16px;
-            }
-            
-            .fixed .records div span {
-                overflow   : hidden;
-                height     : 19px;
-                margin-top : -1px;
-            }
-            
-            .propedit body.records {
-                padding : 18px 0 0 0;
-            }
-            
-            .fixed .records div span d l{
-                width : expression(this.parentNode.offsetWidth - 5);
-            }
-            
-            .propedit iframe {
-                height : expression(this.parentNode.parentNode.offsetHeight - 2);
-                width  : expression(this.parentNode.parentNode.offsetWidth - 2);
-            }
-            
-            html.propedit body.records {
-                margin-right : -20px;
-            }
-            
-            .propedit .size_pointer {
-                height : expression(this.parentNode.offsetHeight - 2);
-            }
-        ]]></a:style>
-        <a:style condition="!apf.isIE"><![CDATA[
-            .propedit .btncustom, 
-            .propedit .ddbtn {
-                -moz-border-top-colors    : #D4D0C8 #FFFFFF;
-                -moz-border-left-colors   : #D4D0C8 #FFFFFF;
-                -moz-border-bottom-colors : black gray;
-                -moz-border-right-colors  : black gray;
-                
-                /*margin-top : -19px;*/
-            }
-            
-            .propedit u.down {
-                -moz-border-top-colors    : gray black;
-                -moz-border-left-colors   : gray black;
-                -moz-border-bottom-colors : #FFFFFF #D4D0C8;
-                -moz-border-right-colors  : #FFFFFF #D4D0C8;
-            }
-            
-            .propedit .item i {
-                margin      : 0 5px 0 3px;
-                font-size   : 11px;
-                line-height : 11px;
-            }
-            
-            .propedit .records {
-                overflow-x  : hidden;
-                overflow-y  : auto;
-                height      : 100%;
-                position    : absolute;
-                top         : 0;
-                left        : 0;
-                width       : 100%;
-                padding     : 0;
-                white-space : nowrap;
-            }
-            
-            .propedit .records>div:first-child {
-                margin-top : 17px;
-            }
-        ]]></a:style>
-        <a:style condition="apf.isGecko &amp;&amp; apf.versionFF &lt; 3"><![CDATA[
-            .propedit .headings {
-                height : 18px;
-            }
-            
-            .propedit .headings span {
-                height : 18px;
-            }
-            
-            .propedit .records div span {
-                height : 18px;
-            }
-            
-            .propedit .records div {
-                height : 18px;
-            }
-            
-            .propedit .records div span dl {
-                border-width : 0 1px 1px 0;
-            }
-            
-            .propedit .headings span {
-                display  : -moz-inline-grid;
-                overflow : visible;
-                position : relative;
-            }
-            
-            .propedit .records {
-            }
-            
-            .propedit .records div span {
-                display  : -moz-inline-grid;
-                overflow : visible;
-                position : relative;
-            }
-            
-            .propedit input#txt_rename {
-                position : absolute;
-                padding  : 1px 1px 0 2px;
-            }
-        ]]></a:style>
-        <a:style condition="apf.versionFF &gt;= 3">
-            .propedit .records .cellselected dl {
-            }
-        
-            .propedit input#txt_rename {
-                position    : relative;
-                padding-top : 2px;
-            }
-        </a:style>
-    
-        <a:presentation>
-            <a:main
-            head        = "div[1]"
-            body        = "div[3]"
-            pointer     = "div[2]"
-            
-            widthdiff    = "2"
-            defaultwidth = "70"
-            scalerename  = "true"
-            iframe       = "true">
-                <div class="propedit">
-                    <div class='headings'>
-    
-                    </div>
-                    <div class='pointer'> </div>
-                    <div class='records'> </div>
-                </div>
-            </a:main>
-    
-            <a:headitem class="." caption="b/text()">
-                <span>
-                    <b>-</b>
-                </span>
-            </a:headitem>
-        
-            <a:rowheaditem class="." caption="text()">
-                <span>-</span>
-            </a:rowheaditem>
-        
-            <a:row class="." container=".">
-                <div />
-            </a:row>
-        
-            <a:dragindicator>
-                <div class='dragdg'> </div>
-            </a:dragindicator>
-    
-            <a:cell caption="dl">
-                <span>
-                    <dl> </dl>
-                </span>
-            </a:cell>
-    
-            <a:container container=".">
-                <div class="dginfo">-</div>
-            </a:container>
-    
-            <a:dropdown>
-                <u class="ddbtn"> </u>
-            </a:dropdown>
-        
-            <a:dropdown_container item-height="17">
-                <ul class="propeditcontainerdropdown"> </ul>
-            </a:dropdown_container>
-        
-            <a:jml_container jml="true">
-                <ul class="ddjmlcontainer"> </ul>
-            </a:jml_container>
-        
-            <a:custom>
-                <u class="btncustom">...</u>
-            </a:custom>
-        
-            <a:loading>
-                <div class="loading">
-                    <span></span>
-                    <label>Loading...</label>
-                </div>
-            </a:loading>
-        
-            <a:empty caption=".">
-                <div class="empty"> </div>
-            </a:empty>
-        </a:presentation>
-    </a:datagrid>
-    
     <a:datagrid name="datagrid">
         <a:style><![CDATA[
             .datagrid {
@@ -632,20 +9,18 @@
                 font-family      : Tahoma;
                 font-size        : 8pt;
                 padding          : 21px 0 0 0;
+                color            : #333;
             }
-            
-            .draggrid {
-                font-family : Tahoma;
-                font-size   : 8pt;
-            }
-        
+    
             .datagrid .headings {
                 position         : relative;
                 top              : 0;
                 left             : 0;
                 height           : 17px;
                 z-index          : 10;
-                padding-left     : 5px;
+                /*
+                padding-left : 5px;
+                */
                 background-color : #e6e6e6;
                 margin           : -21px 17px 0 0;
                 border           : 1px solid white;
@@ -653,53 +28,58 @@
                 border-right     : 0px solid white;
                 white-space      : nowrap;
             }
-            
             .noscrollbar .headings {
                 margin : -21px 1px 0 0;
             }
-            
             .noscrollbar .datagrid {
                 background : transparant;
             }
-            
-            .datagrid .headings div {
+    
+            .datagrid .headings DIV {
                 display       : inline-block;
-                height        : 15px;
-                border-left   : 1px solid white;
-                margin-right  : -3px;
-                margin-left   : -5px;
-                padding       : 1px 4px 1px 3px;
+                height        : 17px;
+                /*
+                margin-right : -3px;
+                margin-left  : -5px;
+                */
                 background    : #e6e6e6 no-repeat 0 50%;
                 overflow      : hidden;
                 text-overflow : ellipsis;
             }
-            
-            .datagrid .headings div.hover {
-                background-color : #DDD;
+            .datagrid .headings DIV U {
+                padding         : 1px 4px 1px 3px;
+                display         : inline-block;
+                height          : 15px;
+                text-decoration : none;
+                border-left     : 1px solid white;
             }
-            
-            .datagrid .headings div.down, 
-            .datagrid .headings div.drag {
+    
+            .datagrid .headings DIV.hover {
+                background-color: #DDD;
+            }
+    
+            .datagrid .headings DIV.down, 
+            .datagrid .headings DIV.drag {
                 color            : white;
                 background-color : #25a8e7;
             }
-            
-            .datagrid .headings div.drag {
+    
+            .datagrid .headings DIV.drag {
                 border : 1px solid white;
             }
-            
-            .datagrid .headings div.ascending {
+    
+            .datagrid .headings DIV.ascending {
                 background-image    : url(images/sort_asc.gif);
                 background-repeat   : no-repeat;
                 background-position : right 6px;
             }
-            
-            .datagrid .headings div.descending {
+    
+            .datagrid .headings DIV.descending {
                 background-image    : url(images/sort_desc.gif);
                 background-repeat   : no-repeat;
                 background-position : right 6px;
             }
-            
+    
             .datagrid .records {
                 overflow-x   : hidden;
                 overflow-y   : scroll;
@@ -712,62 +92,81 @@
                 white-space  : nowrap;
             }
             
-            .draggrid {
-                white-space : nowrap;
-                cursor      : default;
-                filter      : alpha(opacity=50);
-            }
-            
             .noscrollbar .records {
                 overflow-y : hidden;
             }
-            
-            .datagrid .records div span, 
-            .draggrid span {
+    
+            .datagrid .records .row SPAN {
                 display       : inline-block;
-                margin-right  : -3px;
-                margin-left   : -5px;
-                padding       : 2px 3px 2px 4px;
-                height        : 15px;
-                overflow      : hidden;
+                /*
+                padding : 1px 0 1px 0;
+                */
+                height        : 18px;
                 background    : white no-repeat 0 50%;
-                text-overflow : ellipsis;
-                white-space   : nowrap;
+                border-bottom : 1px solid #eee;
             }
             
-            .noscrollbar .datagrid .records div span {
+            .datagrid .records .row SPAN U {
+                padding         : 2px 3px 2px 4px;
+                height          : 15px;
+                display         : inline-block;
+                text-decoration : none;
+                border-left     : 1px solid #eee;
+                text-overflow   : ellipsis;
+                white-space     : nowrap;
+                overflow        : hidden;
+            }
+    
+            .noscrollbar .datagrid .records .row SPAN {
                 background-color : transparent;
             }
-            
-            .datagrid .records div, 
-            .draggrid {
+    
+            .datagrid .records .row {
                 height       : 19px;
-                padding-left : 5px;
+                padding-left : 0;
             }
-            
-            .datagridFocus .records .indicate span {
+    
+            .datagrid .records .highlight SPAN {
+    
+            }
+    
+            .datagrid .records .highlight {
+    
+            }
+    
+            .datagridFocus .records .indicate SPAN {
+                /*
                 border       : 1px dotted #BBB;
                 border-width : 1px 0 1px 0;
-                padding      : 1px 3px 1px 4px;
-                color        : #4b4b4b;
-                height       : 15px;
+                */
+                padding : 0;
+                color   : #333;
             }
             
-            .datagridFocus .records div span {
+            .datagridFocus .records .indicate SPAN U {
             }
-            
+    
+            .datagridFocus .records .row SPAN {
+            }
+    
             .datagrid .records .selected, 
-            .datagrid .records .selected span {
+            .datagrid .records .selected SPAN {
                 background-color : #f0f0f0;
+                color            : #333;
             }
             
             .datagridFocus .records .selected, 
-            .datagridFocus .records .selected span, 
-            .draggrid, .draggrid span {
+            .datagridFocus .records .selected SPAN {
                 color            : white;
                 background-color : #25a8e7;
             }
             
+            .datagrid .records .editing, 
+            .datagrid .records .editing SPAN {
+                background-color : white;
+                color            : #333;
+            }
+    
             .datagrid .move_pointer {
                 height     : 100px;
                 width      : 2px;
@@ -780,7 +179,7 @@
                 overflow   : hidden;
                 z-index    : 1000;
             }
-            
+    
             .datagrid .size_pointer {
                 border       : 1px dotted gray;
                 border-width : 0 1px 0 1px;
@@ -790,24 +189,52 @@
                 z-index      : 1000;
                 cursor       : w-resize;
             }
+    
+            .datagrid .message {
+                font-weight   : normal;
+                color         : #333;
+                padding       : 0 0 10px 50px;
+                font-size     : 11px;
+                margin-top    : 10px;
+                /*
+                text-align : center;
+                */
+                border-bottom : 1px solid #eee;
+            }
+            
+            .datagrid .message LABEL {
+                padding  : 2px 0 0 4px;
+                height   : 14px;
+                display  : inline-block;
+                position : relative;
+                top      : -3px;
+            }
+            
+            /*.datagrid .message SPAN {
+                background : url(icons/cog.png) no-repeat left bottom;
+                width      : 16px;
+                height     : 16px;
+                display    : inline-block;
+            }*/
             
             .datagrid .loading, 
             .datagrid .empty, 
             .datagrid .offline {
-                font-weight : normal;
-                color       : #aaa;
-                width       : 200px;
-                position    : absolute;
-                left        : 50%;
-                padding     : 5px;
-                margin-left : -100px;
-                text-align  : center;
+                padding : 5px;
+                margin  : 0;
             }
             
+            .datagrid .loading SPAN, 
+            .datagrid .empty SPAN, 
+            .datagrid .offline SPAN {
+                background : white;
+                display : inline;
+            }
+    
             .pointer {
                 display : none;
             }
-            
+    
             .dginfo {
                 display          : none;
                 overflow         : hidden;
@@ -820,70 +247,113 @@
                 left             : -3px;
                 margin-bottom    : 3px;
             }
-            
-            .dginfo h3 {
+    
+            .dginfo H3 {
                 margin : 0 0 5px 0;
             }
-            
-            .dginfo p {
+    
+            .dginfo P {
                 margin : 0;
             }
-            
+    
             .datagrid .records .stdel, 
-            .datagridFocus .records .stdel, 
-            .datagrid .records .stdel span, 
-            .datagridFocus .records .stdel span {
+            .datagridFocus .records .stdel,
+            .datagrid .records .stdel SPAN, 
+            .datagridFocus .records .stdel SPAN {
                 color : #ccc;
             }
-            
+    
             .dragdg {
                 border : 2px solid black;
                 width  : 10px;
                 height : 5px;
             }
-            
+    
             .datagrid .records .dragInsert {
-                border-top  : 1px dotted gray;
-                height      : 17px;
-                padding-top : 1px;
+                border-top : 2px solid gray;
+                height     : 17px;
             }
-            
-            .datagrid .records .dragInsert span {
+    
+            .datagrid .records .dragInsert SPAN {
                 padding-top         : 0px;
                 margin-bottom       : 0;
-                background-position : 0 -1px;
+                background-position : 0 0;
             }
             
-            .datagridDrop {
-                border : 1px solid #25a8e7;
+            .datagrid BLOCKQUOTE {
+                padding    : 0;
+                margin     : 0;
+                display    : none;
+                height     : 0;
+                overflow   : hidden;
+                background : repeat-y 0px center;
+            }
+            
+            .datagrid .records SPAN.treecell U {
+                text-decoration : none;
+                display         : inline-block;
+                padding         : 1px 2px 3px 2px;
+                border          : 0;
+            }
+            
+            .datagrid .treecell STRONG {
+                width    : 9px;
+                height   : 9px;
+                margin   : 4px 4px 0 4px;
+                position : relative;
+                top      : -5px;
+                display  : inline-block;
+            }
+            
+            .datagrid .plus>.treecell STRONG,
+            .datagrid .pluslast>.treecell STRONG {
+                background-image : url(images/plus.png);
+            }
+            
+            .datagrid .min>.treecell STRONG,
+            .datagrid .minlast>.treecell STRONG {
+                background-image : url(images/min.png);
+            }
+            
+            .datagrid .slider {
+                margin : 5px 5px 0 3px;
+            }
+            
+            .datagrid .tb {
+                border      : 0;
+                padding     : 2px 0 4px 4px;
+                background  : white;
+                border-left : 1px solid #eee;
+                height      : 13px;
+                position    : relative;
+                top         : -6px;
             }
         ]]></a:style>
         <a:style condition="apf.isIE &amp;&amp; !apf.isIE8"><![CDATA[
-            .datagrid .headings div {
+            .datagrid .headings DIV {
                 float : left;
             }
-            
-            .datagrid .records div span {
+    
+            .datagrid .records .row SPAN {
                 float : left;
             }
         ]]></a:style>
-        <a:style condition="apf.isGecko &amp;&amp; apf.versionFF &lt; 3"><![CDATA[
+        <a:style condition="apf.isGecko &amp;&amp; apf.versionGecko &lt; 3"><![CDATA[
             .datagrid .headings {
                 padding-top : 2px;
                 height      : 15px;
             }
-            
-            .datagrid .headings div {
-                display    : -moz-inline-box;
-                overflow   : visible;
-                position   : relative;
-                margin-top : -2px;
+    
+            .datagrid .headings DIV {
+                display  : -moz-inline-box;
+                overflow : visible;
+                position : relative;
             }
-            
+    
             .datagrid .records {
             }
-            
-            .datagrid .records div span {
+    
+            .datagrid .records .row SPAN {
                 display  : -moz-inline-box;
                 overflow : visible;
                 position : relative;
@@ -892,11 +362,13 @@
     
         <a:presentation>
             <a:main
-              head      = "div[1]"
-              body      = "div[3]"
-              pointer   = "div[2]"
-              widthdiff = "9"
-              iframe2   = "true">
+                head        = "div[1]"
+                container   = "div[3]"
+                pointer     = "div[2]"
+                widthdiff   = "1"
+                minwidth    = "210"
+                minheight   = "40"
+                iframe2     = "true">
                 <div class="datagrid">
                     <div class='headings'>
     
@@ -906,39 +378,35 @@
                 </div>
             </a:main>
     
-            <a:headitem class="." caption="text()">
-                <div>-
-                    <span></span>
-                </div>
+            <a:headitem class="." caption="u/text()">
+                <div><u>-<span></span></u></div>
             </a:headitem>
-        
+    
             <a:rowheaditem class="." caption="text()">
                 <span>-</span>
             </a:rowheaditem>
-        
-            <a:row class="." container=".">
-                <div />
-            </a:row>
-        
+    
+            <a:item class="." container="following-sibling::blockquote">
+                <div class="row"></div>
+                <blockquote> </blockquote>
+            </a:item>
+    
             <a:dragindicator>
                 <div class='dragdg'> </div>
             </a:dragindicator>
     
-            <a:cell caption=".">
-                <span>-</span>
-            </a:cell>
+            <a:cell caption="u"><span><u>-</u></span></a:cell>
+            
+            <a:treecell caption="u" openclose="strong"><span class="treecell"><strong> </strong><u>-</u></span></a:treecell>
     
             <a:container container=".">
                 <div class="dginfo">-</div>
             </a:container>
     
             <a:loading>
-                <div class="loading">
-                    <span></span>
-                    <label>Loading...</label>
-                </div>
+                <div class="message"><span></span><label>Calculating...</label></div>
             </a:loading>
-        
+    
             <a:empty caption=".">
                 <div class="empty"> </div>
             </a:empty>

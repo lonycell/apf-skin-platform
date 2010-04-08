@@ -8,7 +8,7 @@
                 height      : 17px;
                 margin      : 0;
                 padding     : 2px 18px 0 0;
-                color       : #4b4b4b;
+                color       : #333;
                 font-family : Tahoma;
                 font-size   : 11px;
             }
@@ -100,7 +100,7 @@
                 width            : 120px;
                 margin-top       : -1px;
                 border           : 1px solid #327fbd;
-                background-color : white;
+                background-color : #ffffff;
                 z-index          : 1000;
                 color            : #0d5381;
                 font-family      : Tahoma;
@@ -121,7 +121,7 @@
                 width    : 13px;
                 height   : 13px;
                 position : relative;
-                color    : #4b4b4b;
+                color    : #333;
                 z-index  : 1000;
             }
             
@@ -264,7 +264,12 @@
         ]]></a:style>
     
         <a:presentation>
-            <a:main label="div[2]" button=".">
+            <a:main 
+              label     = "div[2]" 
+              button    = "." 
+              minheight = "19" 
+              maxheight = "19"
+              minwidth  = "80">
                 <div class="caldropdown">
                     <div class="caldropdownLeftBorder"> </div>
                     <div class="caldropdownlabel">-</div>

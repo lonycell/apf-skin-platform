@@ -16,7 +16,7 @@
                 width      : 250px;
             }
             
-            .errorbox .errorboxContent span {
+            .errorbox .errorboxContent SPAN {
                 background : transparent;
             }
             
@@ -32,7 +32,7 @@
                 height     : 16px;
             }
             
-            .errorbox .errorboxTop div {
+            .errorbox .errorboxTop DIV {
                 background : url("images/tooltip_arrow.png") no-repeat top left;
                 width      : 19px;
                 height     : 11px;
@@ -60,13 +60,13 @@
                 background-position : 0 -13px;
             }
             
-            .errorbox span {
+            .errorbox SPAN {
                 display : block;
                 padding : 0 10px 4px 10px;
                 
             }
             
-            .errorbox strong {
+            .errorbox STRONG {
                 display        : block;
                 line-height    : 13px;
                 margin-top     : 0;
@@ -79,7 +79,7 @@
                 margin-left : -205px;
             }
             
-            .rightbox .errorboxTop div {
+            .rightbox .errorboxTop DIV {
                 right : 20px;
                 left  : auto;
             }

@@ -32,12 +32,12 @@
                 z-index  : 100;
             }
     
-            .propedit .headings span {
+            .propedit .headings SPAN {
                 display : inline-block;
                 height  : 15px;
             }
     
-            .propedit .headings span b {
+            .propedit .headings SPAN B {
                 font-weight   : normal;
                 background    : #e6e6e6 no-repeat 0 50%;
                 overflow      : hidden;
@@ -51,28 +51,28 @@
                 font-weight   : bold;
             }
     
-            .propedit .headings span.hover {
+            .propedit .headings SPAN.hover {
             }
     
-            .propedit .headings span.down b, 
-            .propedit .headings span.drag b {
+            .propedit .headings SPAN.down B, 
+            .propedit .headings SPAN.drag B {
                 color            : white;
                 background-color : #25a8e7;
             }
     
-            .propedit .headings span.ascending b {
+            .propedit .headings SPAN.ascending B {
                 background-image    : url(images/sort_asc_n.gif);
                 background-repeat   : no-repeat;
                 background-position : right 6px;
             }
     
-            .propedit .headings span.descending b {
+            .propedit .headings SPAN.descending B {
                 background-image    : url(images/sort_desc_n.gif);
                 background-repeat   : no-repeat;
                 background-position : right 6px;
             }
     
-            .propedit .headings span.drag {
+            .propedit .headings SPAN.drag{
                 border : 1px solid white;
             }
     
@@ -84,7 +84,7 @@
                 overflow-x : auto;
             }
     
-            .propedit body.records {
+            .propedit body.records{
                 overflow    : visible;
                 margin      : 0;
                 border      : 0;
@@ -92,7 +92,7 @@
                 white-space : nowrap;
             }
     
-            .propedit iframe {
+            .propedit IFRAME {
                 position : absolute;
                 left     : 0;
                 top      : 0;
@@ -111,7 +111,7 @@
                 overflow-x : auto;
             }
     
-            .propedit .records div dl {
+            .propedit .records DIV DL {
                 font-weight : normal;
                 padding     : 2px 1px 2px 3px;
                 display     : block;
@@ -122,7 +122,7 @@
                 cursor      : default;
             }
     
-            .propedit .records div span {
+            .propedit .records DIV SPAN {
                 display        : inline-block;
                 vertical-align : top;
                 background     : white no-repeat 0 50%;
@@ -130,52 +130,42 @@
                 white-space    : nowrap;
             }
     
-            .propedit .records div {
+            .propedit .records DIV {
                 margin-bottom : -1px;
             }
     
-            .propedit .records .tall dl {
-                height : 36px;
-            }
-            
-            .propedit .records .tall span {
-                height : 40px;
-            }
-            
-            .propedit .records .tall {
-                height : 41px;
-            }
+            .propedit .records .tall DL {height : 36px;}
+            .propedit .records .tall SPAN {height : 40px;}
+            .propedit .records .tall {height : 41px;}
     
-            .propedit .records .selected .celllabel dl {
+            .propedit .records .selected .celllabel DL {
                 background-color : #f0f0f0;
-                color            : black;/*#4b4b4b;*/
+                color            : black;/*#333;*/
             }
     
-            .propeditFocus .records .selected .celllabel dl {
+            .propeditFocus .records .selected .celllabel DL {
                 color            : white;
                 background-color : #25a8e7;
             }
     
-            .propedit .records .cellselected dl {
+            .propedit .records .cellselected DL {
                 background : white;
                 color      : black;
                 cursor     : text;
             }
     
-            .propeditFocus .records .cellselected dl {
+            .propeditFocus .records .cellselected DL {
             }
     
-            /*
-            .propedit .records .cellselected {
+            /*.propedit .records .cellselected {
                 background-color : #f0f0f0;
-                color            : #4b4b4b;
+                color            : #333;
             }
             
             .propeditFocus .records .cellselected {
                 color            : white;
                 background-color : #25a8e7;
-            }
-            */
+            }*/
     
             .propedit .move_pointer {
                 height     : 100px;
@@ -253,14 +243,12 @@
             }
     
             .ddjmlcontainer {
-                /*
-                padding : 5px;
-                */
-                overflow : hidden;
+                /*padding : 5px;*/
+                overflow  : hidden;
             }
     
-            .propeditcontainerdropdown div, 
-            .propeditcontainerset div {
+            .propeditcontainerdropdown DIV, 
+            .propeditcontainerset DIV {
                 display          : block;
                 height           : 15px;
                 padding          : 1px 3px 1px 3px;
@@ -272,20 +260,20 @@
                 cursor           : default;
             }
     
-            .propeditcontainerdropdown div.hover {
+            .propeditcontainerdropdown DIV.hover {
                 background-color : #25a8e7;
                 color            : #ffffff;
             }
     
-            .propeditcontainerset div.hover {
+            .propeditcontainerset DIV.hover {
                 background-color : #eee;
             }
     
-            .propeditcontainerset div {
+            .propeditcontainerset DIV {
                 padding : 2px 3px 0 1px;
             }
     
-            .propeditcontainerset div span {
+            .propeditcontainerset DIV SPAN {
                 width      : 12px;
                 height     : 12px;
                 overflow   : hidden;
@@ -294,7 +282,7 @@
                 background : url("images/checkbox.png") no-repeat 0 -12px;
             }
     
-            .propeditcontainerset div.checked span {
+            .propeditcontainerset DIV.checked SPAN {
                 background-position : 0 -24px;
             }
     
@@ -323,11 +311,11 @@
                 text-index   : expression(this.style.paddingLeft='16px');
             }
     
-            .fixed .records div {
+            .fixed .records DIV {
                 margin-left : -16px;
             }
     
-            .fixed .records div span {
+            .fixed .records DIV SPAN {
                 overflow   : hidden;
                 height     : 19px;
                 margin-top : -1px;
@@ -337,20 +325,20 @@
                 padding : 18px 0 0 0;
             }
     
-            .fixed .records div span dl {
+            .fixed .records DIV SPAN DL {
                 width : expression(this.parentNode.offsetWidth - 5);
             }
     
-            .propedit iframe {
+            .propedit IFRAME {
                 height : expression(this.parentNode.parentNode.offsetHeight - 2);
                 width  : expression(this.parentNode.parentNode.offsetWidth - 2);
             }
     
-            html.propedit body.records {
+            html.propedit BODY.records {
                 margin-right : -20px;
             }
     
-            .propedit .size_pointer {
+            .propedit .size_pointer{
                 height : expression(this.parentNode.offsetHeight - 2);
             }
         ]]></a:style>
@@ -367,34 +355,32 @@
                 white-space : nowrap;
             }
     
-            .propedit .records>div:first-child {
+            .propedit .records>DIV:first-child {
                 margin-top : 17px;
             }
         ]]></a:style>
-        <a:style condition="apf.isGecko &amp;&amp; apf.versionFF &lt; 3"><![CDATA[
+        <a:style condition="apf.isGecko &amp;&amp; apf.versionGecko &lt; 3"><![CDATA[
             .propedit .headings {
                 height : 18px;
             }
     
-            .propedit .headings span {
+            .propedit .headings SPAN {
                 height : 18px;
             }
     
-            .propedit .records div span {
+            .propedit .records DIV SPAN {
                 height : 18px;
             }
     
-            /*
-            .propedit .records div {
+            /*.propedit .records DIV {
                 height : 18px;
-            }
-            */
+            }*/
     
-            .propedit .records div span dl {
+            .propedit .records DIV SPAN DL {
                 border-width : 0 1px 1px 0;
             }
     
-            .propedit .headings span {
+            .propedit .headings SPAN {
                 display  : -moz-inline-grid;
                 overflow : visible;
                 position : relative;
@@ -403,23 +389,22 @@
             .propedit .records {
             }
     
-            .propedit .records div span {
+            .propedit .records DIV SPAN {
                 display  : -moz-inline-grid;
                 overflow : visible;
                 position : relative;
             }
     
-            .propedit input#txt_rename {
+            .propedit INPUT#txt_rename {
                 position : absolute;
                 padding  : 1px 1px 0 2px;
             }
         ]]></a:style>
         <a:style>
-            .propedit blockquote {
+            .propedit BLOCKQUOTE {
                 margin : 0 0 0 15px;
             }
-            
-            .propedit blockquote blockquote {
+            .propedit BLOCKQUOTE BLOCKQUOTE {
                 margin : -1px 0 -1px 0;
             }
             
@@ -427,26 +412,24 @@
                 margin-left : 15px;
             }
             
-            .propedit .row .row>span {
+            .propedit .row .row>SPAN {
                 background : url(images/cell.gif) white;
                 min-height : 19px;
             }
             
-            .propedit .row .row>span dl {
+            .propedit .row .row>SPAN DL{
                 background : white;
             }
             
-            /*
-            .propedit .row .row .row {
+            /*.propedit .row .row .row{
                 margin-top : -1px;
-            }
-            */
+            }*/
             
-            .propedit .row .selected>span dl {
+            .propedit .row .selected>SPAN DL{
                 background-color : #f0f0f0;
                 color            : black;
             }
-            .propeditFocus .row .selected>span dl{
+            .propeditFocus .row .selected>SPAN DL{
                 color            : white;
                 background-color : #25a8e7;
                 border           : 1px solid #327fbd;
@@ -454,7 +437,7 @@
                 z-index          : 10000;
             }
             
-            .propedit .row>u {
+            .propedit .row>U {
                 display     : block;
                 float       : left;
                 width       : 15px;
@@ -462,12 +445,10 @@
                 background  : no-repeat 3px 5px;
                 margin-left : -15px;
             }
-            
-            .propedit .row>u.min {
+            .propedit .row>U.min {
                 background-image : url(images/min.png);
             }
-            
-            .propedit .row>u.plus {
+            .propedit .row>U.plus {
                 background-image : url(images/plus.png);
             }
             
@@ -475,11 +456,11 @@
                 padding-left : 15px;
             }
             
-            .propedit .headings .first b {
+            .propedit .headings .first B {
                 border-left : 0;
             }
             
-            .propedit .heading>u {
+            .propedit .heading>U {
                 position    : absolute;
                 margin-left : 0;
             }
@@ -489,12 +470,12 @@
                 background : #CCC;
             }
             
-            .propedit .heading>span {
+            .propedit .heading>SPAN {
                 width  : 100%;
                 border : 0;
             }
             
-            .propedit .heading>span dl {
+            .propedit .heading>SPAN DL {
                 border      : 0;
                 background  : #CCC;
                 font-weight : bold;
@@ -523,21 +504,19 @@
     
         <a:presentation>
             <a:main
-                head        = "div[1]"
-                body        = "div[3]"
-                pointer     = "div[2]"
-    
-                widthdiff    = "2"
-                defaultwidth = "70"
-                scalerename  = "true"
-                iframe       = "false"
-            >
+              head         = "div[1]"
+              body         = "div[3]"
+              pointer      = "div[2]"
+              widthdiff    = "2"
+              defaultwidth = "70"
+              scalerename  = "true"
+              iframe       = "false">
                 <div class="propedit">
-                    <div class='headings'>
+                    <div class="headings">
     
                     </div>
-                    <div class='pointer'> </div>
-                    <div class='records'> </div>
+                    <div class="pointer"> </div>
+                    <div class="records"> </div>
                 </div>
             </a:main>
     
