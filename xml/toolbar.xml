@@ -10,11 +10,6 @@
                 position      : relative;
             }
             
-            .noborder .toolbar {
-                border       : 1px solid #c3c3c3;
-                border-width : 0 1px 0 1px;
-            }
-            
             .toolbar .subbar {
                 background    : url(images/toolbar_row.png) repeat-x top left;
                 height        : 25px;
@@ -26,7 +21,21 @@
                 width         : 100%;
             }
             
-            .toolbar .divider {
+            .toolbar>.subbar>* {
+                display : inline-block;
+                float   : left;
+                margin  : 2px;
+            }
+            
+            .toolbar>.subbar>.hbox, 
+            .toolbar>.subbar>.vbox, 
+            .toolbar>.subbar>.table {
+                display : block;
+                float   : none;
+                margin  : 0;
+            }
+    
+            .toolbar>.subbar>.divider {
                 border-left  : 1px solid #c3c3c3;
                 border-right : 1px solid #FFFFFF;
                 height       : 17px;

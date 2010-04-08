@@ -161,6 +161,7 @@
             </a:main>
         </a:presentation>
     </a:button>
+    
     <a:button name="toolbarbutton">
         <a:style><![CDATA[
             .menubar .toolbarbutton {
@@ -206,11 +207,11 @@
             }
     
             .toolbar .subbar .toolbarbutton DIV {
-                float   : left;
-                margin  : 0;
-                height  : 17px;
-                padding : 4px 4px 0 8px;
-                border  : 0;
+                margin   : 0;
+                height   : 17px;
+                padding  : 4px 4px 0 8px;
+                border   : 0;
+                position : relative;
             }
             
             .toolbar .subbar .toolbarbuttonOver {
@@ -221,11 +222,12 @@
                 background : url("images/toolbar_a_hover.png") no-repeat top left;
             }
     
-            .toolbar .subbar .toolbarbuttonDown {
+            .toolbar .subbar .toolbarbuttonDown,
+            .toolbar .subbar .toolbarbuttonChecked {
                 background : url("images/toolbar_a_down_right.png") no-repeat top right;
             }
             
-            .toolbar .subbar .toolbarbuttonDown DIV {
+            .toolbar .subbar .toolbarbuttonDown DIV, .toolbar .subbar .toolbarbuttonChecked DIV {
                 background : url("images/toolbar_a_down.png") no-repeat top left;
             }
     
@@ -265,7 +267,10 @@
             <a:main 
               caption    = "div/span[2]/text()" 
               background = "div/span" 
-              icon       = "div/span">
+              icon       = "div/span"
+              minheight  = "22" 
+              minwidth   = "30"
+              maxheight  = "22">
                 <div class="toolbarbutton">
                     <div>
                         <span class="icon"></span>
@@ -286,7 +291,9 @@
                 font-family : Tahoma;
                 font-size   : 8pt;
                 height      : 25px;
-                width       : 100px;
+                min-width   : 30px;
+                min-height  : 25px;
+                max-height  : 25px;
                 overflow    : hidden;
                 cursor      : default;
             }
@@ -427,7 +434,10 @@
         <a:presentation>
             <a:main 
               caption    = "div[3]/span/text()" 
-              background = ".">
+              background = "."
+              minheight  = "25" 
+              minwidth   = "30"
+              maxheight  = "25">
                 <div class="apf_btn">
                     <div class="left"> </div>
                     <div class="right"> </div>

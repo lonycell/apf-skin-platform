@@ -1,5 +1,6 @@
 <a:skin xmlns:a="http://ajax.org/2005/aml">
-    <a:accordion name="accordion">
+    <a:accordion name="accordion_apf_ver">
+        <a:alias>accordion</a:alias>
         <a:style><![CDATA[
             .accordion_apf_ver {
                 overflow     : hidden;
