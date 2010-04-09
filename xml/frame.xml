@@ -52,7 +52,9 @@
         <a:presentation>
             <a:main 
               container = "." 
-              caption   = "legend/text()">
+              caption   = "legend/text()"
+              minwidth  = "30"
+              minheight = "30">
                 <fieldset class='frame'>
                     <legend class="legend">-</legend>
                 </fieldset>

@@ -257,7 +257,9 @@
               thumbs          = "div[2]/div[2]/div[1]/div"
               arrow_prev      = "div[2]/div[2]/div[2]"
               arrow_next      = "div[2]/div[2]/div[3]"
-              empty           = "div[3]" >
+              empty           = "div[3]"
+              minwidth        = "300"
+              minheight       = "320">
                 <div class="apf_gallery">
                     <div class="apfgal_image_body">
                         <div class="viewport">

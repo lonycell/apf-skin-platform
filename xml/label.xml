@@ -6,8 +6,8 @@
                 font-family : Tahoma;
                 overflow    : hidden;
                 cursor      : default;
-                line-height : 1.5em;
-                padding     : 0 0 0 0;
+                color       : #333;
+                padding     : 2px;
             }
             
             .packTitleText {
@@ -30,7 +30,12 @@
         ]]></a:style>
     
         <a:presentation>
-            <a:main caption="." for="@for">
+            <a:main 
+              caption   = "." 
+              for       = "@for" 
+              minheight = "19" 
+              maxheight = "19" 
+              minwidth  = "30">
                 <div class="label"> </div>
             </a:main>
         </a:presentation>

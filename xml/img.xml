@@ -8,7 +8,10 @@
         ]]></a:style>
     
         <a:presentation>
-            <a:main image="img/@src">
+            <a:main 
+              image     = "img/@src"
+              minwidth  = "40"
+              minheight = "40">
                 <div class="imgbasic">
                     <img src="" />
                 </div>
@@ -36,7 +39,10 @@
         ]]></a:style>
     
         <a:presentation>
-            <a:main image="img/@src">
+            <a:main 
+              image="img/@src"
+              minwidth  = "40"
+              minheight = "40">
                 <div class="img">
                     <img src="" />
                 </div>
