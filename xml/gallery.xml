@@ -28,6 +28,14 @@
                 overflow : hidden;
             }
             
+            .apf_gallery .apfgal_image_body .viewport {
+                position       : relative;
+                width          : 100%;
+                height         : 100%;
+                vertical-align : middle;
+                overflow       : hidden;
+            }
+            
             .apf_gallery .apfgal_image_body .apfgal_next {
                 position            : absolute;
                 top                 : 0;
@@ -56,16 +64,7 @@
                 opacity             : 0;
             }
             
-            .apf_gallery .apfgal_image_body .viewport {
-                position       : absolute;
-                top            : 0;
-                right          : 0;
-                left           : 0;
-                bottom         : 0;
-                vertical-align : middle;
-            }
-            
-            .apf_gallery .apfgal_image_body .viewport .zoomIcon {
+            .apf_gallery .apfgal_image_body .zoomIcon {
                 background-image    : url(images/wide-view-icn.png);
                 background-repeat   : no-repeat;
                 background-position : 0 0;
@@ -80,8 +79,10 @@
             }
             
             .apf_gallery .apfgal_image_body .viewport .apfgal_image {
-                display : none;
-                opacity : 0;
+                display    : none;
+                opacity    : 0;
+                min-width  : 10px;
+                min-height : 10px;
             }
             
             .apf_gallery .apfgal_image_body .viewport .apfgal_image_base {
@@ -128,6 +129,7 @@
                 margin           : 2px;
                 opacity          : 0.7;
                 cursor           : pointer;
+                overflow         : hidden;
             }
             
             .apf_gallerygridMode .apfgal_bar .apfgal_thumbs .apfgal_t_body .apfgal_thumbnail DIV {
@@ -252,13 +254,13 @@
               container       = "."
               image_container = "div[1]"
               viewport        = "div[1]/div"
-              zoom_icon       = "div[1]/div/div[1]"
               next            = "div[1]/div[2]"
               previous        = "div[1]/div[3]"
               loader          = "div[1]/div[4]"
+              zoom_icon       = "div[1]/div[5]"
               image           = "div[1]/div[1]/img[1]"
               image_base      = "div[1]/div[1]/img[2]"
-              media           = "div[1]/div[1]/div[2]"
+              media           = "div[1]/div[1]/div[1]"
               bar             = "div[2]"
               descr           = "div[2]/div[1]"
               thumbs          = "div[2]/div[2]/div[1]/div"
@@ -270,7 +272,6 @@
                         <div class="viewport">
                             <img class="apfgal_image" />
                             <img class="apfgal_image_base" />
-                            <div class="zoomIcon"> </div>
                             <div class="media">
                                
                             </div>
@@ -278,6 +279,7 @@
                         <div class="apfgal_next"> </div>
                         <div class="apfgal_previous"> </div>
                         <div class="apfgal_loader"> </div>
+                        <div class="zoomIcon"> </div>
                     </div>
                     <div class="apfgal_bar">
                         <div class="apfgal_descr"> </div>
