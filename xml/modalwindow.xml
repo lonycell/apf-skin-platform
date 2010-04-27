@@ -154,8 +154,10 @@
         <a:presentation>
             <a:main 
               collapsed-height = "26"
-              min-height       = "150"
-              min-width        = "660"
+              minheight        = "719"
+              maxheigh         = "719"
+              minwidth         = "389"
+              maxwidth         = "389"
               container        = "div[6]" 
               drag             = "div[3]" 
               title            = "div[3]/text()" 
@@ -567,8 +569,8 @@
         <a:presentation>
             <a:main 
               collapsed-height = "26"
-              min-height       = "150"
-              min-width        = "660"
+              minheight        = "115"
+              minwidth         = "650"
               container        = "div[6]" 
               drag             = "div[3]" 
               title            = "div[3]/text()" 
@@ -796,7 +798,7 @@
             .win_ch41 .wch41_content {
                 position         : absolute;
                 overflow         : hidden;
-                top              : 85px;
+                top              : 79px;
                 right            : 4px;
                 bottom           : 4px;
                 left             : 4px;
@@ -968,8 +970,8 @@
         <a:presentation>
             <a:main 
               collapsed-height = "47"
-              min-height       = "150"
-              min-width        = "595"
+              minheight        = "150"
+              minwidth         = "540"
               container        = "div[6]" 
               drag             = "div[3]" 
               title            = "div[3]/div/div/text()" 
@@ -1454,8 +1456,8 @@
         <a:presentation>
             <a:main 
               collapsed-height = "26"
-              min-height       = "150"
-              min-width        = "595"
+              minheight        = "150"
+              minwidth         = "595"
               container        = "div[6]" 
               drag             = "div[3]" 
               title            = "div[3]/text()" 
@@ -2038,8 +2040,8 @@
         <a:presentation>
             <a:main 
               collapsed-height = "26"
-              min-height       = "200"
-              min-width        = "680"
+              minheight        = "200"
+              minwidth         = "680"
               container        = "div[6]/div" 
               drag             = "div[3]" 
               title            = "div[3]/text()" 
@@ -2619,8 +2621,8 @@
         <a:presentation>
             <a:main 
               collapsed-height = "26"
-              min-height       = "180"
-              min-width        = "600"
+              minheight        = "180"
+              minwidth         = "600"
               container        = "div[6]" 
               drag             = "div[3]" 
               title            = "div[3]/text()" 
@@ -3125,8 +3127,8 @@
         <a:presentation>
             <a:main 
               collapsed-height = "26"
-              min-height       = "170"
-              min-width        = "600"
+              minheight        = "170"
+              minwidth         = "600"
               container        = "div[6]" 
               drag             = "div[3]" 
               title            = "div[3]/text()" 
@@ -3669,8 +3671,8 @@
         <a:presentation>
             <a:main 
               collapsed-height = "26"
-              min-height       = "150"
-              min-width        = "595"
+              minheight        = "150"
+              minwidth         = "595"
               container        = "div[6]" 
               drag             = "div[3]" 
               title            = "div[3]/text()" 
@@ -3857,8 +3859,8 @@
         <a:presentation>
             <a:main 
               collapsed-height = "22"
-              min-width        = "150" 
-              min-height       = "80" 
+              minwidth         = "150" 
+              minheight        = "80" 
               caption          = "div[1]/text()"
               container        = "div[2]" 
               drag             = "div[1]"
@@ -4025,8 +4027,8 @@
         <a:presentation>
             <a:main 
               collapsed-height = "22"
-              min-width        = "150" 
-              min-height       = "80"
+              minwidth         = "150" 
+              minheight        = "80"
               container        = "div[3]" 
               drag             = "div[1]" 
               title            = "div[1]/text()" 
@@ -4273,8 +4275,8 @@
         <a:presentation>
             <a:main 
               collapsed-height = "30"
-              min-width        = "150" 
-              min-height       = "80"
+              minwidth         = "150" 
+              minheight        = "80"
               container        = "div[6]" 
               drag             = "div[3]" 
               title            = "div[3]/text()" 
@@ -4426,8 +4428,9 @@
         ]]></a:style>
     
         <a:presentation>
-        <!--  min-width="50" min-height="50"  -->
             <a:main 
+              minwidth         = "100"
+              minheight        = "50"
               collapsed-height = "30"
               container        = "div[5]" 
               drag             = "div[3]" 
@@ -4693,8 +4696,8 @@
         <a:presentation>
             <a:main 
               collapsed-height = "30"
-              min-width        = "150" 
-              min-height       = "80"
+              minwidth         = "150" 
+              minheight        = "80"
               container        = "div[6]" 
               drag             = "div[3]" 
               title            = "div[3]/text()" 
@@ -4940,8 +4943,8 @@
         <a:presentation>
             <a:main 
               collapsed-height = "30"
-              min-width        = "150" 
-              min-height       = "80"
+              minwidth         = "150" 
+              minheight        = "80"
               container        = "div[6]" 
               drag             = "div[3]" 
               title            = "div[3]/text()" 

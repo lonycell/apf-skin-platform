@@ -76,6 +76,7 @@
                 color      : #4b4b4b;
                 cursor     : default;
                 _clear     : both; /* IE6 fix */
+                overflow   : hidden;
             }
             
             .rbcontainer SPAN {
@@ -132,7 +133,10 @@
         ]]></a:style>
     
         <a:presentation>
-            <a:main label="span">
+            <a:main 
+              label     = "span" 
+              minheight = "21" 
+              maxheight = "21">
                 <div class="rbcontainer">
                     <div class="radio"> </div>
                     <span>-</span>

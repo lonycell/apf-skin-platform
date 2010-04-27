@@ -106,7 +106,12 @@
         </a:style>
     
         <a:presentation>
-            <a:main progress="div[2]/div" caption="div[1]/span/text()">
+            <a:main 
+              progress  = "div[2]/div" 
+              caption   = "div[1]/span/text()"
+              minheight = "8"
+              maxheight = "8"
+              minwidth  = "60">
                 <div class="progressbar">
                     <div class="lbl">
                         <span>0%</span>

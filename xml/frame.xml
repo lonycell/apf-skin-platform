@@ -53,8 +53,8 @@
             <a:main 
               container = "." 
               caption   = "legend/text()"
-              minwidth  = "30"
-              minheight = "30">
+              minwidth  = "80"
+              minheight = "80">
                 <fieldset class='frame'>
                     <legend class="legend">-</legend>
                 </fieldset>

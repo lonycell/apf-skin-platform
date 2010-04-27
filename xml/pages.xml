@@ -16,7 +16,10 @@
         ]]></a:style>
     
         <a:presentation>
-            <a:main pages=".">
+            <a:main 
+              pages     = "."
+              minwidth  = "150"
+              minheight = "50">
                 <div class="pages">
                 </div>
             </a:main>

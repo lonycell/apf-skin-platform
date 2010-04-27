@@ -20,7 +20,10 @@
             }
         ]]></a:style>
         <a:presentation>
-            <a:main image="img/@src">
+            <a:main 
+              image     = "img/@src"
+              minwidth  = "50"
+              minheight = "50">
                 <div class="preview">
                     <img src="" />
                 </div>

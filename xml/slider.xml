@@ -187,7 +187,10 @@
               container = "."
               button    = "div[1]"
               status    = "div[2]/input"
-              direction = "horizontal">
+              direction = "horizontal"
+              minheight = "19"
+              maxheight = "19"
+              minwidth  = "60">
                 <div class="tslider">
                     <div class="button"> </div>
                     <div class="fixdiv">
@@ -268,7 +271,10 @@
               container = "." 
               status2   = "div[2]/text()"
               markers   = "." 
-              direction = "vertical">
+              direction = "vertical"
+              minwidth  = "8"
+              maxwidth  = "8"
+              minheight = "50">
                 <div class="sliderHigh_ver">
                     <div class="grabber"> </div>
                     <div class="top"> </div>
@@ -346,7 +352,10 @@
               progress  = "div[2]" 
               status2   = "div[2]/text()" 
               markers   = "." 
-              direction = "vertical">
+              direction = "vertical"
+              minwidth  = "16"
+              maxwidth  = "16"
+              minheight = "60">
                 <div class="slider16media_ver">
                     <div class="grabber"> </div>
                     <div class="top"> </div>
@@ -415,7 +424,10 @@
               container = "." 
               status2   = "div[2]/text()" 
               markers   = "." 
-              direction = "vertical">
+              direction = "vertical"
+              minwidth  = "8"
+              maxwidth  = "8"
+              minheight = "40">
                 <div class="slidermedia_ver">
                     <div class="grabber"> </div>
                     <div class="top"> </div>
@@ -480,7 +492,10 @@
               container = "." 
               status2   = "div[2]/text()"
               markers   = "." 
-              direction = "vertical">
+              direction = "vertical"
+              minwidth  = "11"
+              maxwidth  = "11"
+              minheight = "50">
                 <div class="slider11_ver">
                     <div class="grabber"> </div>
                     <div class="top"> </div>
@@ -560,7 +575,10 @@
               container = "." 
               status2   = "div[2]/text()"
               markers   = "." 
-              direction = "vertical">
+              direction = "vertical"
+              minwidth  = "16"
+              maxwidth  = "16"
+              minheight = "50">
                 <div class="slider16_ver">
                     <div class="grabber"> </div>
                     <div class="top"> </div>
@@ -623,7 +641,10 @@
               container = "." 
               status2   = "div[2]/text()"
               markers   = "." 
-              direction = "vertical">
+              direction = "vertical"
+              minwidth  = "8"
+              maxwidth  = "8"
+              minheight = "40">
                 <div class="slider_ver">
                     <div class="grabber"> </div>
                     <div class="top"> </div>
@@ -723,7 +744,10 @@
               status    = "div[3]/text()"
               markers   = "div[2]" 
               direction = "horizontal" 
-              balloon   = "div[3]">
+              balloon   = "div[3]"
+              minheight = "8"
+              maxheight = "8"
+              minwidth  = "40">
                 <div class="slider">
                     <div class="grabber"> </div>
                     <div class="left"> </div>
@@ -791,7 +815,10 @@
               container = "." 
               status2   = "div[2]/text()"
               markers   = "." 
-              direction = "horizontal">
+              direction = "horizontal"
+              minheight = "8"
+              maxheight = "8"
+              minwidth  = "40">
                 <div class="sliderHigh">
                     <div class="grabber"> </div>
                     <div class="left"> </div>
@@ -853,8 +880,15 @@
         ]]></a:style>
         
         <a:presentation>
-            <a:main slider="div[1]" container="." status2="div[2]/text()"
-              markers="." direction="horizontal">
+            <a:main 
+              slider    = "div[1]" 
+              container = "." 
+              status2   = "div[2]/text()"
+              markers   = "." 
+              direction = "horizontal"
+              minheight = "16"
+              maxheight = "16"
+              minwidth  = "60">
                 <div class="slider16">
                     <div class="grabber"> </div>
                     <div class="left"> </div>

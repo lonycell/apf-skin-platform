@@ -37,7 +37,7 @@
                 top         : 22px;
             }
         
-            .palette .custom span {
+            .palette .custom SPAN {
                 border-width : 1px 1px 0 0;
             }
         
@@ -54,9 +54,13 @@
     
         <a:presentation>
             <a:main 
-              viewer   = "blockquote" 
-              standard = "div[1]" 
-              custom   = "div[2]">
+              viewer    = "blockquote" 
+              standard  = "div[1]" 
+              custom    = "div[2]"
+              minwidth  = "145"
+              minheight = "37"
+              maxwidth  = "145"
+              maxheight = "37">
                 <div class='palette'>
                     <blockquote> </blockquote>
                     <div class='standard'> </div>
