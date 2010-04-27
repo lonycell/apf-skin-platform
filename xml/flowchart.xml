@@ -102,7 +102,7 @@
             }
         
             .flowchart .empty {
-                background       : url(images/emptyblock.jpg) repeat-x 0 0;
+                background       : url(images/flowchart/emptyblock.jpg) repeat-x 0 0;
                 background-color : #e1e1e1;
             }
             
@@ -135,7 +135,7 @@
             }
             
             .flowchart .arrow {
-                background : url(images/con_end_arrow5.png) no-repeat 0 0;
+                background : url(images/flowchart/con_end_arrow5.png) no-repeat 0 0;
             }
             
             .flowchart .ortop {
@@ -165,7 +165,7 @@
             }
         
             .flowchart .seg_ver {
-                background-image    : url(images/seg_ver.png);
+                background-image    : url(images/flowchart/seg_ver.png);
                 background-position : 0 0;
             }
         
@@ -185,7 +185,7 @@
             }
         
             .flowchart .seg_hor {
-                background-image    : url(images/seg_hor.png);
+                background-image    : url(images/flowchart/seg_hor.png);
                 background-position : 0 0;
             }
         
@@ -207,7 +207,7 @@
         
             .flowchart .input {
                 position            : absolute;
-                background-image    : url(images/output.png);
+                background-image    : url(images/flowchart/output.png);
                 background-repeat   : no-repeat;
                 background-position : 50% 50%;
                 background-color    : transparent;
@@ -219,7 +219,7 @@
             }
             
             .flowchart .inputHover {
-                background-image : url(images/output_hover.png);
+                background-image : url(images/flowchart/output_hover.png);
                 border           : 6px solid red;
                 background-color : red;
                 margin-left      : -6px;
@@ -227,7 +227,7 @@
             }
         
             .flowchart .inputSelected {
-                background-image : url(images/output_selected.png);
+                background-image : url(images/flowchart/output_selected.png);
             }
         
             .flowchart .vMB {
