@@ -327,9 +327,9 @@
                 background-color    : white;
                 font-family         : Tahoma;
                 font-size           : 11px;
-                background-image    : url(images/win_iphone_welcomscreen.png);
+                /*background-image    : url(images/win_iphone_welcomscreen.png);
                 background-position : 0 0;
-                background-repeat   : no-repeat;
+                background-repeat   : no-repeat;*/
             }
             
             .win_iphone .wiphone_title BLOCKQUOTE,
@@ -376,7 +376,7 @@
               minwidth         = "389"
               maxwidth         = "389"
               container        = "div[6]" 
-              drag             = "div[3]" 
+              drag             = "." 
               title            = "div[3]/text()" 
               icon             = "div[3]/span"
               buttons          = "div[3]/blockquote">
