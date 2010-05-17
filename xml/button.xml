@@ -287,165 +287,146 @@
         
         <a:style><![CDATA[
             .apf_btn {
-                color       : #4b4b4b;
+                color       : #333;
                 font-family : Tahoma;
                 font-size   : 8pt;
                 height      : 25px;
-                width       : auto;
+                min-width   : 30px;
+                min-height  : 25px;
+                max-height  : 25px;
                 overflow    : hidden;
                 cursor      : default;
+                position    : relative;
             }
-        
+    
             .apf_btn .left {
                 float         : left;
                 width         : 8px;
                 height        : 25px;
                 _margin-right : -3px; /* IE6 bug fix */
             }
-        
+    
             .apf_btn .lbl {
                 height        : 20px;
-                width         : auto;
-                float         : left;
                 padding-top   : 5px;
                 text-align    : center;
-                margin        : 0;
+                margin        : 0 8px;
                 _margin       : 0; /* IE6 fix */
                 white-space   : nowrap;
                 overflow      : hidden;
                 text-overflow : ellipsis;
             }
-        
+    
             .apf_btn .right {
-                float       : left;
-                width       : 9px;
-                height      : 25px;
-               _margin-left : -3px; /* IE6 bug fix */
+                float        : right;
+                width        : 8px;
+                height       : 25px;
+                _margin-left : -3px; /* IE6 bug fix */
             }
-        
+    
             .apf_btn .left {
                 background : url("images/button_left.png") no-repeat 0 -25px;
             }
-        
+    
             .apf_btn .lbl {
                 background : url("images/button_middle.png") repeat-x 0 -25px;
             }
-        
+    
             .apf_btn .right {
                 background : url("images/button_right.png") no-repeat 0 -25px;
             }
-        
+    
             .apf_btnDefault .left {
                 background : url("images/button_left.png") no-repeat top left;
             }
-        
+    
             .apf_btnDefault .lbl {
                 background : url("images/button_middle.png") repeat-x top left;
             }
-        
+    
             .apf_btnDefault .right {
                 background : url("images/button_right.png") no-repeat top left;
             }
-        
-            .redBtn {
-                color : #ffffff;
-            }
-        
-            .redBtn .left {
-                background-image : url("images/red_button_left.png");
-            }
-        
-            .redBtn .lbl {
-                background-image : url("images/red_button_middle.png");
-            }
-        
-            .redBtn .right {
-                background-image : url("images/red_button_right.png");
-            }
-        
+    
             .apf_btn span {
-                padding  : 1px 0 1px 0;
+                padding  : 1px 2px 1px 2px;
                 border   : 1px solid transparent;
                 position : relative;
                 _border  : 0;
+                _padding : 2px 2px 2px 2px;
                 _margin  : 0;
-                _padding : 1px 4px;
+                overflow : hidden;
+                
             }
-        
-            .apf_btnDisabled  {
+    
+            .apf_btnDisabled {
                 color : #bebebe;
             }
-        
+    
             .apf_btnDisabled .left {
                 background : url("images/button_left.png") no-repeat 0 -50px;
             }
-        
+    
             .apf_btnDisabled .lbl {
                 background : url("images/button_middle.png") repeat-x 0 -50px;
             }
-        
+    
             .apf_btnDisabled .right {
                 background : url("images/button_right.png") no-repeat 0 -50px;
             }
+            
             .apf_btnFocus {
             }
-        
+    
             .apf_btnFocus span {
-                border   : 1px dotted #BBB;
-                padding  : 1px 0 1px 0;
-                _padding : 1px 3px;
+                border  : 1px dotted #BBB;
+                padding : 1px 2px 1px 2px;
             }
-        
+    
             .apf_btnDown .left {
                 background : url("images/button_left.png") no-repeat 0 -75px;
             }
-        
+    
             .apf_btnDown .lbl {
                 background : url("images/button_middle.png") repeat-x 0 -75px;
             }
-        
+    
             .apf_btnDown .right {
                 background : url("images/button_right.png") no-repeat 0 -75px;
             }
-            .apf_btnDown.redBtn .left {
-                background-image : url("images/red_button_left.png");
-            }
-        
-            .apf_btnDown.redBtn .lbl {
-                background-image : url("images/red_button_middle.png");
-            }
-        
-            .apf_btnDown.redBtn .right {
-                background-image : url("images/red_button_right.png");
-            }
-            
+    
             .apf_btnOver {
             }
         ]]></a:style>
+        <a:style condition="apf.isChrome || apf.isSafari"><![CDATA[
+            .apf_btn .lbl {
+                margin : 0;
+            }
+        ]]></a:style>
+
         <a:style condition="apf.isIE7"><![CDATA[
             .apf_btn .right {
                 margin : 0;
             }
-        
+    
             .apf_btn .left {
                 margin : 0;
             }
         ]]></a:style>
-    
+        
         <a:presentation>
             <a:main 
-              caption    = "div[2]/span/text()" 
+              caption    = "div[3]/span" 
+              label      = "div[3]/span"
               background = "."
               minheight  = "25" 
               minwidth   = "30"
               maxheight  = "25">
                 <div class="apf_btn">
                     <div class="left"> </div>
-                    <div class="lbl">
-                        <span>-</span>
-                    </div>
                     <div class="right"> </div>
-                </div>
+                    <div class="lbl"><span>-</span></div>
+                 </div>
             </a:main>
         </a:presentation>
     </a:button>
