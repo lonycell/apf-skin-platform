@@ -283,4 +283,128 @@
             </a:empty>
         </a:presentation>
     </a:flowchart>
+    <a:flowchart name="flowchart2">
+        <a:style><![CDATA[
+            .flowchart {
+                position         : relative;
+                width            : 450px;
+                height           : 500px;
+                overflow         : auto;
+                margin           : 0;
+                padding          : 0;
+            }
+            
+            .flowchart .workarea {
+                width               : 800px;
+                height              : 600px;
+                position            : relative;
+                background-color    : #EEEEEE;
+                background-image    : url(images/flowchart/grid.png);
+                background-position : 0 0;
+                padding             : 0;
+                margin              : 0;
+            }
+            
+            .flowchart .block {
+                position         : absolute;
+                overflow         : visible;
+                background-color : red;
+                border           : 1px solid blue;
+            }
+            
+            .flowchart .selected {
+                border : 1px solid yellow;
+            }
+            
+            .flowchart .block .image_container {
+                position : absolute;
+                left     : 0
+                top      : 0;
+                bottom   : 0;
+                right    : 0;
+            }
+            
+            .flowchart .block .image_container IMG {
+                display : block;
+            }
+            
+            .flowchart .block .caption {
+                position         : absolute;
+                left             : 0;
+                bottom           : -16px;
+                height           : 14px;
+                width            : 56px;
+                background-color : blue;
+                color            : white;
+            }
+            
+            /* Inputs */
+            .flowchart .block .input {
+                position : absolute;
+            }
+            
+            .flowchart .block .top,
+            .flowchart .block .bottom {
+                width            : 1px;
+                height           : 4px;
+                background-color : black;
+            }
+            
+            .flowchart .block .top {
+                margin-top : -4px;
+            }
+            
+            .flowchart .block .left,
+            .flowchart .block .right {
+                width            : 4px;
+                height           : 1px;
+                background-color : black;
+            }
+            
+            .flowchart .block .left {
+                margin-left : -4px;
+            }
+            
+            .flowchart .block .left.itype3,
+            .flowchart .block .right.itype3 {
+                height : 3px;
+            } 
+            
+            .flowchart .block .top.itype3,
+            .flowchart .block .bottom.itype3 {
+                width : 3px;
+            } 
+            
+            
+            /* Blocks types */
+            .flowchart .capacitor {
+                
+            }
+
+        ]]></a:style>
+    
+        <a:presentation>
+            <a:main container="div">
+                <div class="flowchart">
+                    <div class="workarea"> </div>
+                </div>
+            </a:main>
+            <a:item
+              select         = "."
+              imagecontainer = "div[1]"
+              image          = "div[1]/img"
+              caption        = "div[2]">
+                <div class="block">
+                    <div class="image_container">
+                        <img src="about:blank" />
+                    </div>
+                    <div class="caption">-</div>
+                </div>
+            </a:item>
+            
+            <a:empty caption="text()">
+                <div class="empty">-</div>
+            </a:empty>
+        </a:presentation>
+    </a:flowchart>
 </a:skin>
