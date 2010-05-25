@@ -116,6 +116,18 @@
                 white-space     : nowrap;
                 overflow        : hidden;
             }
+            
+            .datagrid .records .row span u.iconCell {
+                height          : 15px;
+                padding-left:20px;
+                min-width               : 20px;
+                background-repeat   : no-repeat;
+                background-position : 0 1px;
+            }
+            
+            .datagrid .records .selected span u.iconCell {
+                
+            }
     
             .noscrollbar .datagrid .records .row SPAN {
                 background-color : transparent;
@@ -328,6 +340,9 @@
                 position    : relative;
                 top         : -6px;
             }
+        ]]></a:style>
+        <a:style condition="apf.isChrome"><![CDATA[
+            
         ]]></a:style>
         <a:style condition="apf.isIE &amp;&amp; !apf.isIE8"><![CDATA[
             .datagrid .headings DIV {
