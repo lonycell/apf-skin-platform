@@ -5,6 +5,7 @@
     <a:include src="button.xml" />
     <a:include src="caldropdown.xml" />
     <a:include src="calendar.xml" />
+    <a:include src="calendarlist.xml" />
     <a:include src="chart.xml" />
     <a:include src="checkbox.xml" />
     <a:include src="colorpicker.xml" />

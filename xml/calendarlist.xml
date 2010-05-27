@@ -1,0 +1,172 @@
+<a:skin xmlns:a="http://ajax.org/2005/aml">
+    <a:calendarlist name="calendarlist">
+        <a:style><![CDATA[
+            .calendarlist {
+                overflow            : auto;
+                position            : relative;
+                border              : 0;
+                background-color    : #f0f9ff;
+                cursor              : default;
+            }
+        
+            .calendarlist {
+                font-size   : 11px;
+                font-family : Trebuchet MS;
+            }
+            
+            .calendarlist .hours {
+                position:relative;
+                display:block;
+                overflow:hidden;
+                z-index:1000;
+            }
+            
+            .calendarlist .hours DIV.hour {
+                height:20px;
+                background-image:url(images/calendarlist_hour_backg.png);
+                backgorund-position:0 0;
+                background-repeat:repeat-x;
+            }
+            
+            .calendarlist .hours DIV.odd {
+                height:20px;
+                backgorund-position:0 -20px;
+            }
+            
+            .calendarlist .hours DIV.hour SPAN {
+                height:16px;
+                padding:2px 5px;
+                display:block;
+                width:25px;
+                text-align:right;
+                background-color    : #f0f9ff;
+            }
+            
+            .calendarlist .hours DIV.midnight SPAN {
+                height:16px;
+                padding:2px 5px;
+                display:block;
+                width:auto;
+                text-align:left;
+            }
+            
+            .calendarlist .container {
+                position:absolute;
+                top:0;
+                left:35px;
+                right:5px;
+                height:100%;
+                display:block;
+                overflow:hidden;
+                z-index:2000;
+            }
+            
+            .calendarlist .container .item {
+                background            : -moz-linear-gradient(center bottom, rgb(243,187,49) 10%, rgb(252,234,141) 100%);
+                background            : linear,left bottom,left top,color-stop(0.2, rgb(243,187,49)),color-stop(1, rgb(252,234,141));
+                height                : 18px;
+                padding               : 0;
+                border                : 1px solid #f5c647;
+                overflow              : hidden;
+                position              : absolute;
+                display               : block;
+                margin                : 10px 0 0 0;
+                left:0;
+                right:0;
+                color                 : #82631a;
+                -moz-border-radius    : 3pt;
+                -webkit-border-radius : 3pt;
+                
+            }
+        
+            .calendarlist .container DIV.item SPAN.caption {
+                margin              : 0;
+                position            : absolute;
+                top                 : 0;
+                left                : 0;
+                right               : 0;
+                bottom:0;
+            }
+        
+            .calendarlist .container DIV.item SPAN.caption U {
+                cursor          : default;
+                text-decoration : none;
+                position        : absolute;
+                top             : 0;
+                left            : 0;
+                right           : 0;
+                height          : 20px;
+                padding-left    : 5px;
+            }
+            
+            .calendarlist #txt_rename {
+                border      : 1px solid black;
+                background  : white;
+                padding     : 1px 15px 1px 1px;
+                font-family : Tahoma;
+                font-size   : 8pt;
+                color       : #333;
+                word-break  : keep-all;
+                overflow    : visible;
+                margin-top  : 4px;
+                margin-left : 17px;
+                cursor      : text;
+                height      : 13px;
+                display     : inline-block;
+                outline     : none;
+            }
+        
+            .calendarlist .empty, 
+            .calendarlist .offline, 
+            .calendarlist .loading {
+                text-align  : center;
+                padding     : 8px 0 0 5px;
+                color       : #AAA;
+                font-weight : normal;
+            }
+        ]]></a:style>
+    
+        <a:presentation>
+            <a:main 
+              hours     = "div[1]"
+              container = "div[2]"
+              minwidth  = "100"
+              minheight = "22">
+                <div class="calendarlist"> 
+                    <div class="hours"> </div>
+                    <div class="container"> </div>
+                </div>
+            </a:main>
+            <a:item
+              class   = "."
+              caption = "span/u"
+              icon    = "span"
+              select  = ".">
+                <div class="item">
+                    <span class="caption">
+                        <u>-</u>
+                    </span>
+                </div>
+            </a:item>
+            <a:hour container="." caption="span/text()">
+                <div class="hour">
+                    <span>-</span>
+                </div>
+            </a:hour>
+            <a:dragindicator>
+                <div class="dragcalendarlist">
+                    <span>
+                        <u>-</u>
+                    </span>
+                    <div></div>
+                </div>
+            </a:dragindicator>
+            <a:loading>
+                <div class="loading">Loading...</div>
+            </a:loading>
+            <a:empty caption=".">
+                <div class="message">-</div>
+            </a:empty>
+        </a:presentation>
+    </a:calendarlist>
+</a:skin>
