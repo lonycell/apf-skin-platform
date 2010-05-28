@@ -15,50 +15,50 @@
             }
             
             .calendarlist .hours {
-                position:relative;
-                display:block;
-                overflow:hidden;
-                z-index:1000;
+                position : relative;
+                display  : block;
+                overflow : hidden;
+                z-index  : 1000;
             }
             
             .calendarlist .hours DIV.hour {
-                height:20px;
-                background-image:url(images/calendarlist_hour_backg.png);
-                backgorund-position:0 0;
-                background-repeat:repeat-x;
+                height              : 20px;
+                background-image    : url(images/calendarlist_hour_backg.png);
+                backgorund-position : 0 0;
+                background-repeat   : repeat-x;
             }
             
             .calendarlist .hours DIV.odd {
-                height:20px;
-                backgorund-position:0 -20px;
+                height              : 20px;
+                backgorund-position : 0 -20px;
             }
             
             .calendarlist .hours DIV.hour SPAN {
-                height:16px;
-                padding:2px 5px;
-                display:block;
-                width:25px;
-                text-align:right;
-                background-color    : #f0f9ff;
+                height           : 16px;
+                padding          : 2px 5px;
+                display          : block;
+                width            : 25px;
+                text-align       : right;
+                background-color : #f0f9ff;
             }
             
             .calendarlist .hours DIV.midnight SPAN {
-                height:16px;
-                padding:2px 5px;
-                display:block;
-                width:auto;
-                text-align:left;
+                height     : 16px;
+                padding    : 2px 5px;
+                display    : block;
+                width      : auto;
+                text-align : left;
             }
             
             .calendarlist .container {
-                position:absolute;
-                top:0;
-                left:35px;
-                right:5px;
-                height:100%;
-                display:block;
-                overflow:hidden;
-                z-index:2000;
+                position : absolute;
+                top      : 0;
+                left     : 38px;
+                right    : 5px;
+                height   : 100%;
+                display  : block;
+                overflow : hidden;
+                z-index  : 2000;
             }
             
             .calendarlist .container .item {
@@ -71,21 +71,20 @@
                 position              : absolute;
                 display               : block;
                 margin                : 10px 0 0 0;
-                left:0;
-                right:0;
+                left                  : 0;
+                right                 : 0;
                 color                 : #82631a;
                 -moz-border-radius    : 3pt;
                 -webkit-border-radius : 3pt;
-                
             }
         
             .calendarlist .container DIV.item SPAN.caption {
-                margin              : 0;
-                position            : absolute;
-                top                 : 0;
-                left                : 0;
-                right               : 0;
-                bottom:0;
+                margin   : 0;
+                position : absolute;
+                top      : 0;
+                left     : 0;
+                right    : 0;
+                bottom   : 0;
             }
         
             .calendarlist .container DIV.item SPAN.caption U {
@@ -148,7 +147,7 @@
                     </span>
                 </div>
             </a:item>
-            <a:hour container="." caption="span/text()">
+            <a:hour container="." caption="span">
                 <div class="hour">
                     <span>-</span>
                 </div>
