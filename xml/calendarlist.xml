@@ -50,6 +50,39 @@
                 text-align : left;
             }
             
+            .calendarlist .note_field {
+                position : absolute;
+                top      : 0;
+                left     : 38px;
+                right    : 5px;
+                height   : 100px;
+                display  : none;
+                overflow : visible;
+                -moz-border-radius    : 3pt;
+                -webkit-border-radius : 3pt;
+                background-color:#d1e8f2;
+                padding:5px 5px 5px 12px;
+                z-index  : 3000;
+            }
+            
+            .calendarlist .note_field .ico {
+                position:absolute;
+                top:50%;
+                left:-8px;
+                background-image:url(images/calendarlist_plus_btn.png);
+                background-repeat:no-repeat;
+                background-position:0 0;
+                width:18px;
+                height:18px;
+                margin:-9px 0 0 0;
+            }
+            
+            .calendarlist .note_field .content {
+                width:100%;
+                height:100%;
+                position:relative;
+            }
+            
             .calendarlist .container {
                 position : absolute;
                 top      : 0;
@@ -64,6 +97,8 @@
             .calendarlist .container .item {
                 background            : -moz-linear-gradient(center bottom, rgb(243,187,49) 10%, rgb(252,234,141) 100%);
                 background            : linear,left bottom,left top,color-stop(0.2, rgb(243,187,49)),color-stop(1, rgb(252,234,141));
+                -moz-border-radius    : 3pt;
+                -webkit-border-radius : 3pt;
                 height                : 18px;
                 padding               : 0;
                 border                : 1px solid #f5c647;
@@ -74,8 +109,6 @@
                 left                  : 0;
                 right                 : 0;
                 color                 : #82631a;
-                -moz-border-radius    : 3pt;
-                -webkit-border-radius : 3pt;
             }
         
             .calendarlist .container DIV.item SPAN.caption {
@@ -127,13 +160,19 @@
     
         <a:presentation>
             <a:main 
-              hours     = "div[1]"
-              container = "div[2]"
-              minwidth  = "100"
-              minheight = "22">
+              hours         = "div[1]"
+              container     = "div[2]"
+              note_field     = "div[3]"
+              note_field_con = "div[3]/div[1]"
+              minwidth      = "100"
+              minheight     = "22">
                 <div class="calendarlist"> 
                     <div class="hours"> </div>
                     <div class="container"> </div>
+                    <div class="note_field">
+                        <span class="ico"> </span>
+                        <div class="content"> </div>
+                    </div>
                 </div>
             </a:main>
             <a:item
