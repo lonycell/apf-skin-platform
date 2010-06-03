@@ -1,5 +1,5 @@
 <a:skin xmlns:a="http://ajax.org/2005/aml">
-    <a:flowchart name="flowchart">
+    <!--a:flowchart name="flowchart">
         <a:style><![CDATA[
             .flowchart {
                 border           : 1px solid #c3c3c3;
@@ -282,7 +282,7 @@
                 <div class="empty">-</div>
             </a:empty>
         </a:presentation>
-    </a:flowchart>
+    </a:flowchart-->
     <a:flowchart name="flowchart2">
         <a:style><![CDATA[
             .flowchart {
@@ -308,7 +308,7 @@
             .flowchart .block {
                 position         : absolute;
                 overflow         : visible;
-                background-color : red;
+                /*background-color : red;*/
                 border           : 1px solid blue;
             }
             
@@ -322,10 +322,12 @@
                 top      : 0;
                 bottom   : 0;
                 right    : 0;
+                overflow : visible;
             }
             
-            .flowchart .block .image_container IMG {
-                display : block;
+            .flowchart .block .image_container IMG,
+            .flowchart .block .image_container CANVAS {
+                display  : block;
             }
             
             .flowchart .block .caption {
