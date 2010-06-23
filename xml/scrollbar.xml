@@ -125,4 +125,133 @@
             </a:main>
         </a:presentation>
     </a:scrollbar>
+    <a:scrollbar name="winscrollbar">
+        <a:style><![CDATA[
+            .winscrollbar {
+                height     : 100px;
+                position   : absolute;
+                background : #D4D0C8 url(images/scrollbar/raster.gif);
+                width      : 16px;
+                overflow   : hidden;
+            }
+    
+            .winscrollbar .btnup, 
+            .winscrollbar .btndown, 
+            .winscrollbar .indicator {
+                font-family      : MS Sans Serif;
+                font-size        : 8pt;
+                width            : 100%;
+                overflow         : hidden;
+                text-align       : center;
+                font-weight      : bold;
+                cursor           : default;
+                position         : relative;
+                background-color : #D4D0C8;
+    
+                -moz-border-top-colors    : #D4D0C8 #FFFFFF;
+                -moz-border-left-colors   : #D4D0C8 #FFFFFF;
+                -moz-border-bottom-colors : black gray;
+                -moz-border-right-colors  : black gray;
+            }
+            
+            .winscrollbar img {
+                visibility : hidden;
+            }
+    
+            .winscrollbar .btnup div, 
+            .winscrollbar .btndown div {
+                border : 2px outset;
+            }
+    
+            body .winscrollbar .btnupdown div, 
+            body .winscrollbar .btndowndown div {
+                border  : 1px solid gray;
+                padding : 1px 1px 1px 1px;
+            }
+            
+            body .winscrollbar .btnupdown span, 
+            body .winscrollbar .btndowndown span {
+                margin : -1px 0 0 -3px;
+            }
+    
+            .winscrollbar .btndown span, 
+            .winscrollbar .btnup span {
+                position : absolute;
+                left     : 50%;
+                top      : 50%;
+                width    : 7px;
+                height   : 4px;
+                margin   : -2px 0 0 -4px;
+            }
+    
+            .winscrollbar .btnup span {
+                background : #D4D0C8 url(images/scrollbar/scrollup.gif) no-repeat;
+            }
+    
+            .winscrollbar .btndown {
+                position : absolute;
+                bottom   : 0px;
+            }
+            
+            .winscrollbar .btndown span {
+                background : #D4D0C8 url(images/scrollbar/scrolldown.gif) no-repeat;
+            }
+    
+            .winscrollbar .indicator {
+                height           : 6px;
+                display          : none;
+                position         : absolute;
+                overflow         : hidden;
+                background-color : #D4D0C8;
+                width            : 100%;
+                padding-bottom   : 4px;
+            }
+            
+            .winscrollbar .indicator div {
+                border : 2px outset;
+                height : 100%;
+            }
+    
+            .winscrollbar .slidefast {
+                position         : absolute;
+                overflow         : hidden;
+                background-color : #353535;
+                height           : 10px;
+                width            : 100%;
+                display          : none;
+                overflow         : hidden;
+            }
+            
+            .winscrollbarDisabled .btnup span {
+                background : #D4D0C8 url(images/scrollbar/scrollupdisabled.gif) no-repeat;
+                width      : 8px;
+                height     : 5px;
+                margin     : -3px 0 0 -4px;
+            }
+            .winscrollbarDisabled .btndown span {
+                background : #D4D0C8 url(images/scrollbar/scrolldowndisabled.gif) no-repeat;
+                width      : 8px;
+                height     : 5px;
+                margin     : -3px 0 0 -4px;
+            }
+        ]]></a:style>
+        <a:style condition="apf.isIE &gt; 7"><![CDATA[
+            .winscrollbar .btnup div, 
+            .winscrollbar .btndown div, 
+            .winscrollbar .indicator div {
+                border : 2px outset white;
+            }
+        ]]></a:style>
+    
+        <a:presentation>
+            <a:main btnup="div[1]" indicator="div[2]" btndown="div[3]" slidefast="div[4]">
+                <div class='winscrollbar'>
+                    <div class='btnup'><span> </span><div><img src="images/spacer.gif" width="100%"/></div></div>
+                    <div class='indicator'> <div> </div> </div>
+                    <div class='btndown'><span> </span><div><img src="images/spacer.gif" width="100%"/></div></div>
+                    <div class='slidefast'> </div>
+                </div>
+            </a:main>
+        </a:presentation>
+    </a:scrollbar>
 </a:skin>
