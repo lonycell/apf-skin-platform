@@ -31,6 +31,7 @@
     <a:include src="progressbar.xml" />
     <a:include src="propedit.xml" />
     <a:include src="radiobutton.xml" />
+    <a:include src="scrollbar.xml" />
     <a:include src="slider.xml" />
     <a:include src="slideshow.xml" />
     <a:include src="spinner.xml" />

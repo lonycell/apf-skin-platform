@@ -1,0 +1,128 @@
+<a:skin xmlns:a="http://ajax.org/2005/aml">
+    <a:scrollbar name="scrollbar">
+        <a:style><![CDATA[
+            .scrollbar {
+                height     : 100px;
+                position   : relative;
+                background : url(images/scrollbar/sbtop.png) no-repeat 0 0;
+                width      : 17px;
+                overflow   : hidden;
+                padding    : 8px 0 8px 0;
+            }
+            
+            .scrollbar span {
+                width      : 17px;
+                bottom     : 0;
+                height     : 8px;
+                position   : absolute;
+                background : url(images/scrollbar/sbbottom.png) no-repeat 0 0;
+            }
+            
+            .scrollbar .filler {
+                height     : 100%;
+                width      : 17px;
+                background : url(images/scrollbar/sbrepeat.png);
+                position   : relative;
+            }
+            
+            .scrollbarDisabled {
+                background-position : -17px 0;
+            }
+            
+            .scrollbarDisabled span {
+                background-position : -17px 0;
+            }
+            
+            .scrollbarDisabled .filler {
+                background-position : -17px 0;
+            }
+    
+            .scrollbar .indicator {
+                height   : 6px;
+                width    : 11px;
+                display  : none;
+                position : absolute;
+                overflow : hidden;
+                width    : 11px;
+                margin   : 0 0 0 3px;
+            }
+        ]]></a:style>
+    
+        <a:presentation>
+            <a:main indicator="div/div" 
+              img        = "style/skinimg/scrollbar/grabber.png" 
+              img-scroll = "style/skinimg/scrollbar/grabber_down.png">
+                <div class='scrollbar'>
+                    <div class="filler"> 
+                        <div class='indicator'> </div>
+                    </div>
+                    <span> </span>
+                </div>
+            </a:main>
+        </a:presentation>
+    </a:scrollbar>
+    
+    <a:scrollbar name="sbhorizontal">
+        <a:style><![CDATA[
+            .sbhor {
+                width      : 100px;
+                position   : absolute;
+                background : url(images/scrollbar/sbtop_hor.png) no-repeat 0 -17px;
+                height     : 17px;
+                overflow   : hidden;
+                padding    : 0 8px 0 8px;
+            }
+            
+            .sbhor span {
+                height     : 17px;
+                right      : 0;
+                top        : 0;
+                width      : 8px;
+                position   : absolute;
+                background : url(images/scrollbar/sbbottom_hor.png) no-repeat 0 -17px;
+            }
+            
+            .sbhor .filler {
+                width      : 100%;
+                height     : 17px;
+                background : url(images/scrollbar/sbrepeat_hor.png) 0 -17px;
+                position   : relative;
+            }
+            
+            .sbhorDisabled {
+                background-position : 0 0;
+            }
+            
+            .sbhorDisabled span {
+                background-position : 0 0;
+            }
+            
+            .sbhorDisabled .filler {
+                background-position : 0 0;
+            }
+    
+            .sbhor .indicator {
+                width    : 6px;
+                display  : none;
+                position : absolute;
+                overflow : hidden;
+                height   : 11px;
+                margin   : 3px 0 0 0;
+            }
+        ]]></a:style>
+    
+        <a:presentation>
+            <a:main indicator="div/div" 
+              img        = "style/skinimg/scrollbar/grabber_hor.png" 
+              img-scroll = "style/skinimg/scrollbar/grabber_down_hor.png"
+              horizontal = "1">
+                <div class='sbhor'>
+                    <div class="filler"> 
+                        <div class='indicator'> </div>
+                    </div>
+                    <span> </span>
+                </div>
+            </a:main>
+        </a:presentation>
+    </a:scrollbar>
+</a:skin>
