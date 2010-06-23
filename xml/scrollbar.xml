@@ -130,7 +130,7 @@
             .winscrollbar {
                 height     : 100px;
                 position   : absolute;
-                background : #D4D0C8 url(images/scrollbar/raster.gif);
+                background : #D4D0C8 url(images/raster.gif);
                 width      : 16px;
                 overflow   : hidden;
             }
