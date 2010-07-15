@@ -1,4 +1,18 @@
 <a:skin xmlns:a="http://ajax.org/2005/aml">
+    <a:bar name="basic">
+        <a:style><![CDATA[
+            .basic {
+                position : relative;
+            }
+        ]]></a:style>
+    
+        <a:presentation>
+            <a:main container=".">
+                <div class="basic">
+                </div>
+            </a:main>
+        </a:presentation>
+    </a:bar>
     <a:bar name="bar">
         <a:style><![CDATA[
             .bar {
