@@ -1,0 +1,27 @@
+<a:skin xmlns:a="http://ajax.org/2005/aml">
+    <a:loadindicator name="loadindicator">
+        <a:style><![CDATA[
+            .loadindicator {
+                cursor   : pointer;
+                display  : none;
+                overflow : hidden;
+                position : relative;
+            }
+            .loadindicator div {
+                left     : 0;
+                top      : 0;
+                position : absolute;
+            }
+        ]]></a:style>
+    
+        <a:presentation>
+            <a:main 
+              container = "."
+              spinner   = "div">
+                <div class="loadindicator">
+                    <div> </div>
+                </div>
+            </a:main>
+        </a:presentation>
+    </a:loadindicator>
+</a:skin>
