@@ -193,4 +193,105 @@
             </a:empty>
         </a:presentation>
     </a:dropdown>
+    
+    <a:dropdown name="ddinline">
+        <a:style><![CDATA[
+            .ddinline {
+                position    : relative;
+                margin      : 0;
+                padding     : 0 3px 0 0;
+                color       : #333;
+                line-height : 1.2em;
+                cursor      : default;
+            }
+            
+            .ddinlinelabel {
+                background : url(images/arrow_down_black.png) no-repeat right 50%;
+                padding    : 0 10px 0 0;
+            }
+
+            .ddinlineError {
+                background : orange;
+            }
+
+            .ddinlineDisabled {
+                color : gray;
+            }
+
+            .ddinlineFocus {
+                
+            }
+
+            .ddinlineOver {
+                
+            }
+
+            .ddinlineDown {
+                background : #f0f0f0;
+            }
+
+            .ddinlinelist {
+                position    : absolute;
+                top         : 0;
+                left        : 0;
+                width       : 120px;
+                margin-top  : 2px;
+                margin-left : -1px;
+                border      : 1px solid #333;
+                z-index     : 1000;
+                color       : #0d5381;
+                font-family : Tahoma;
+                font-size   : 11px;
+                display     : none;
+                overflow    : auto;
+                min-width   : 100px;
+            }
+
+            .ddinlinelist SPAN {
+                display          : block;
+                height           : 15px;
+                padding          : 2px 3px 2px 6px;
+                white-space      : nowrap;
+                overflow         : hidden;
+                text-overflow    : ellipsis;
+                background-color : white;
+                color            : black;
+                cursor           : default;
+            }
+
+            .ddinlinelist span.hover {
+                background-color : #25a8e7;
+                color            : #ffffff;
+            }
+
+            .ddinlinelist .selected {
+                background-color : #f0f0f0;
+            }
+        ]]></a:style>
+
+        <a:presentation>
+            <a:main label="div" button="." width-diff="-1" item-height="20">
+                <div class='ddinline'>
+                    <div class="ddinlinelabel">
+                        
+                    </div>
+                </div>
+            </a:main>
+            <a:container contents=".">
+                <div class='ddinlinelist'>
+                </div>
+            </a:container>
+            <a:item
+                class       = "."
+                caption     = "text()"
+                select      = "."
+                inherit     = "true"
+            >
+                <span>-</span>
+            </a:item>
+            <a:empty caption=".">
+                <div class="empty">-</div>
+            </a:empty>
+        </a:presentation>
+    </a:dropdown>
 </a:skin>
