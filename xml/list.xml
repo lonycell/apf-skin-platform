@@ -443,9 +443,7 @@
     
         <a:presentation>
             <a:main 
-              container = "."
-              minwidth  = "100"
-              minheight = "50">
+              container = ".">
                 <div class="list">
                 </div>
             </a:main>

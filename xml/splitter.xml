@@ -2,11 +2,11 @@
     <a:splitter name="splitter">
         <a:style><![CDATA[
             .splitter {
-                position   : absolute;
                 zIndex     : 100;
                 overflow   : hidden;
                 background : url(images/spacer.gif);
                 padding    : 1px;
+                position   : relative;
             }
             
             .packager .splitter {
@@ -27,8 +27,12 @@
                 cursor : n-resize;
             }
             
-            .moving {
+            .splitterMoving {
                 background-color : gray;
+            }
+            
+            .splitterRealtime{
+                background : url(images/spacer.gif);
             }
             
             .horizontal div {
